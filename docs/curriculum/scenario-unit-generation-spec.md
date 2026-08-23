@@ -1,6 +1,10 @@
 # Scenario Unit Generation Spec
 
-A repeatable pipeline for producing all ~40 scenario units at the quality of the flagship medical unit. Designed to run through Claude Code: feed a one-line scenario definition + this spec, get back a structured unit that maps directly to your Postgres tables.
+A repeatable pipeline for producing all 141 scenario units at the quality of the flagship medical unit.
+
+**This spec is implemented in `backend/generate_unit.py` — run that, don't do it by hand.** It reads the
+registry entry, generates, validates, and writes `content/<locale>/<id>.json`. Measured cost **$0.30/unit**
+(~$45 for the whole catalogue). Section 4b lists the rules device testing added; they are enforced in code.
 
 The benchmark file (`flagship-unit-medical-centre.md`) is the **gold reference** — the generator's output for any scenario must be judged against it, not against a blank page.
 
@@ -67,6 +71,7 @@ One JSON object per unit. Field names map to content tables.
     "targets": [
       {
         "sound": "th",
+        "scoring_method": "minimal_pair",
         "words_in_context": ["throat", "three", "teeth"],
         "minimal_pairs": [["three", "tree"], ["teeth", "teet"]],
         "why_it_matters_here": "string"
@@ -83,7 +88,9 @@ One JSON object per unit. Field names map to content tables.
         { "speaker": "doctor", "text": "What brings you in today?" },
         { "speaker": "patient", "text": "I have a fever and a cough." }
       ],
-      "shadow_focus_lines": ["My throat is sore", "twice a day for five days"]
+      "shadow_focus_lines": [
+        { "text": "twice a day for five days", "targets": ["numbers", "final_consonants"] }
+      ]
     }
   ],
   "chunk_drills": [
@@ -164,6 +171,35 @@ Run this in Claude Code with the registry entry and the flagship file both in co
 >
 > **Input:** `{{registry_entry}}`
 > **Output:** one JSON object per the schema. No prose outside the JSON.
+
+---
+
+## 4b. Rules added by device testing (2026-08-23) — these are enforced in code
+
+`backend/generate_unit.py` implements this spec. Everything below came out of Step 0 and Step 2
+testing and is **enforced by `validate()`**, which fails loudly and never auto-fixes. Full evidence
+in `spike/README.md` §6b–6e.
+
+| Rule | Why |
+|---|---|
+| **`scoring_method` on every sound target** | Not all sounds can be measured the same way |
+| `th` → **`minimal_pair`** | Phoneme scoring for /θ/ returned **61–100 across six flawless native takes**. Unusable. Score by word recognition of real minimal pairs instead |
+| `word_stress`, `intonation`, `weak_forms` → **`unscored`** | The vendor returns prosody data for **en-US only**. These are taught and drilled but never metered — better than a number that means nothing |
+| everything else → `phoneme` | Final consonants, clusters and `/r/`–`/l/` scored a stable 100 across six native voices |
+| **minimal_pairs of real words on every target** | Word-level detection is the fallback whenever a number is untrustworthy — which testing showed is often |
+| **A2 dialogue 6–12 lines; B1 dialogue 14–22** | A tester said "the conversation is a bit too short". A thin B1 is the most common generation failure |
+| **shadow_focus_lines: 4 per dialogue, under 8 words, each naming its `targets`** | Billed per second of audio and drilled to automaticity, so short and repeatable. `targets` is what the coverage check reads |
+| **Learner lines sayable by a nervous beginner** | A lower-proficiency speaker's *best effort* scores ~58 where a proficient one scores 67. Write for 58 |
+| **Thai left null except the registry's `title_th`** | Invented Thai is unverifiable. `translate.py` drafts, a native speaker reviews (`mark_reviewed.py`) |
+
+**Two things the score does NOT measure**, both of which shape content design:
+
+- **Numeric scores compress at low proficiency.** 67 (proficient) vs 58 (learner's best effort) is
+  not enough spread to build a meter on. **Error flags** discriminated cleanly with zero false
+  positives — so units are designed around detectable word-level errors, not score deltas.
+- **A rushed take measures anxiety, not articulation.** A tester hurrying to match a fast persona
+  mispronounced the hardest phrase in the unit. Personas must give time back, never fill silence,
+  and ask for an unclear word again rather than guessing past it.
 
 ---
 
