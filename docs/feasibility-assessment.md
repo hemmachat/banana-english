@@ -1,4 +1,4 @@
-# Feasibility Assessment — Papaya
+# Feasibility Assessment — Banana English
 
 Researched 2026-08-23. Verdict: **technically feasible, economically feasible only with metering,
 and market-constrained in a way that changes the business model — not the product.**

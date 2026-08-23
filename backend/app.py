@@ -1,4 +1,4 @@
-"""Papaya backend. One file on purpose - see PLAN.md Step 1.
+"""Banana English backend. One file on purpose - see PLAN.md Step 1.
 
     python3 -m venv .venv && .venv/bin/pip install flask psycopg[binary]
     cp .env.example .env
@@ -16,7 +16,7 @@ for _line in open(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".env
         k, v = _line.split("=", 1)
         os.environ.setdefault(k.strip(), v.strip().strip('"').strip("'"))
 
-DSN = os.environ.get("DATABASE_URL", "postgresql:///papaya")
+DSN = os.environ.get("DATABASE_URL", "postgresql:///banana")
 app = Flask(__name__)
 
 

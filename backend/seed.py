@@ -7,7 +7,7 @@ import yaml
 LOCALE_PACKS = {"en-AU": "docs/curriculum/locale-pack-australia.yaml"}
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DSN = os.environ.get("DATABASE_URL", "postgresql:///papaya")
+DSN = os.environ.get("DATABASE_URL", "postgresql:///banana")
 
 with psycopg.connect(DSN, autocommit=True) as conn:
     n = 0

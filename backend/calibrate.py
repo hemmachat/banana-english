@@ -29,7 +29,7 @@ def _cfg():
 
 def native_accuracy(text, voice, locale):
     """Synthesize one line in one voice, score it against itself, return AccuracyScore."""
-    wav = os.path.join(tempfile.gettempdir(), f"papaya_cal_{abs(hash((text, voice)))}.wav")
+    wav = os.path.join(tempfile.gettempdir(), f"banana_cal_{abs(hash((text, voice)))}.wav")
     tts = _cfg()
     tts.speech_synthesis_voice_name = voice
     tts.set_speech_synthesis_output_format(speechsdk.SpeechSynthesisOutputFormat.Riff16Khz16BitMonoPcm)

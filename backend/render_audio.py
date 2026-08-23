@@ -18,7 +18,8 @@ SPEECH_RATE = os.environ.get("SPEECH_RATE", "+18%")
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
-VOICE = {"en-AU": "en-AU-NatashaNeural", "global": "en-AU-NatashaNeural"}
+# Tina chosen by ear over Natasha, Freya and William Multilingual (voice_test.py).
+VOICE = {"en-AU": "en-AU-TinaNeural", "global": "en-AU-TinaNeural"}
 
 for _l in open(os.path.join(HERE, ".env")) if os.path.exists(os.path.join(HERE, ".env")) else []:
     if "=" in _l and not _l.strip().startswith("#"):

@@ -3,7 +3,7 @@
 One question: **when a Thai speaker drops a final consonant, does Azure report a pronunciation error
 on the right word and phoneme — or does it just recognise a different word and move on?**
 
-Everything in Papaya's retention engine (per-sound accuracy meters, adaptive drilling) needs the first
+Everything in Banana English's retention engine (per-sound accuracy meters, adaptive drilling) needs the first
 answer. If it's the second, the product needs rethinking. Budget: one afternoon, about $0.
 
 ---
@@ -12,13 +12,13 @@ answer. If it's the second, the product needs rethinking. Budget: one afternoon,
 
 1. portal.azure.com → **Create a resource** → search **Speech** → Create.
 2. Region: **Australia East**. Pricing tier: **F0 (free)** — 5 audio-hours/month, plenty for this.
-3. Once deployed, **click into the Speech resource itself** (e.g. `papaya-speech`) — not the resource
+3. Once deployed, **click into the Speech resource itself** (e.g. `banana-speech`) — not the resource
    group that contains it. The resource group page has no keys; its left menu shows Deployments/Policies/
    Locks. Inside the resource, left nav → **Resource Management → Keys and Endpoint** → copy Key 1.
 
    Or skip the portal entirely:
    ```bash
-   az cognitiveservices account keys list -n papaya-speech -g Papaya --query key1 -o tsv
+   az cognitiveservices account keys list -n banana-speech -g Banana English --query key1 -o tsv
    ```
 
 ```bash
@@ -155,7 +155,7 @@ nok        card       wrong         61.0      12.0  'Car.' card:Mispronunciation
   `word_stress` and `intonation` sound targets therefore have **no scorer** in the launch locale.
   Options: score those drills against `en-US` while everything else runs `en-AU`, or drop those two
   targets from the AU launch. Decide it now — it affects the registry, not just the code.
-  (`PAPAYA_LOCALE=en-US .venv/bin/python assess.py recordings/` to compare.)
+  (`BANANA_LOCALE=en-US .venv/bin/python assess.py recordings/` to compare.)
 
 ---
 

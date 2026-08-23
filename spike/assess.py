@@ -38,7 +38,7 @@ TESTS = {
     "thirteen":   ("thirteen",          (0, -1), "say 'thirty' instead"),
     "garbage":    ("bulk billed",       None,    "say something unrelated - guards against a scorer that rewards anything"),
 }
-LOCALE = os.environ.get("PAPAYA_LOCALE", "en-AU")
+LOCALE = os.environ.get("BANANA_LOCALE", "en-AU")
 
 
 def assess(wav_path, reference_text):

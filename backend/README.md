@@ -1,9 +1,9 @@
-# Papaya backend
+# Banana English backend
 
 ```bash
 brew services start postgresql@18
-createdb papaya
-psql -d papaya -f schema.sql
+createdb banana
+psql -d banana -f schema.sql
 
 python3 -m venv .venv && .venv/bin/pip install flask "psycopg[binary]"
 cp .env.example .env

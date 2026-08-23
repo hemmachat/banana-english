@@ -1,4 +1,4 @@
--- Papaya schema. Three tables on purpose (PLAN.md Step 1).
+-- Banana English schema. Three tables on purpose (PLAN.md Step 1).
 -- A unit is a document, read whole, written once -> jsonb, not 7 normalised tables.
 -- Streaks, XP and per-sound meters are all GROUP BY over attempts -> no progress/streak/xp tables.
 

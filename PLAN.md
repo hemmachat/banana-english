@@ -1,4 +1,4 @@
-# Build Plan — Papaya
+# Build Plan — Banana English
 
 Read `CLAUDE.md` first, then `docs/feasibility-assessment.md` for the verified costs and market numbers
 this plan assumes. Ordered by **risk retired per day of work**, not by architectural layer.
@@ -251,7 +251,7 @@ app-store discovery. Neither matters at n=10.
       this is a real decision for them, not a rounding error. One hour of work, real signal.
 - [ ] **[HUMAN]** Ask every tester the AMEP question again, after they've used it. The answer changes
       once someone has actually rehearsed a GP conversation twenty times.
-- [ ] **[HUMAN]** "Papaya" trademark clearance before any public-facing name use (`docs/brand/brand-guide.md`).
+- [ ] **[HUMAN]** "Banana English" trademark clearance before any public-facing name use (`docs/brand/brand-guide.md`).
       Hold off on domains and store listings until it clears — renaming later is cheap, wasted spend isn't.
 
 **Exit**: evidence the loop is worth scaling — or a redesign that costs one week, not three months.

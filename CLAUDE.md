@@ -1,4 +1,4 @@
-# CLAUDE.md — Papaya
+# CLAUDE.md — Banana English
 
 Context file for Claude Code. Read this in full before starting any work on this repo. It summarizes product, strategy, architecture, and decisions made so far. Detailed specs live in `docs/` — this file tells you what exists and where, not the full content of each doc.
 
@@ -6,7 +6,7 @@ Context file for Claude Code. Read this in full before starting any work on this
 
 ## 1. What this is
 
-**Papaya** is a mobile app (iOS + Android) that teaches **Thai people to speak English**, with a speaking-first, situational-scenario curriculum — think Duolingo's habit mechanics combined with ELSA Speak's pronunciation scoring, but built specifically around how Thai speakers mispronounce English and around real-life situations, not abstract grammar.
+**Banana English** is a mobile app (iOS + Android) that teaches **Thai people to speak English**, with a speaking-first, situational-scenario curriculum — think Duolingo's habit mechanics combined with ELSA Speak's pronunciation scoring, but built specifically around how Thai speakers mispronounce English and around real-life situations, not abstract grammar.
 
 **Market reality (researched 2026-08-23 — full detail and sources in `docs/feasibility-assessment.md`):**
 83,779 Thailand-born people live in Australia; 16.7% (~14,000) speak English "not well or not at all".
@@ -30,15 +30,19 @@ transaction to automaticity, scores pronunciation (AMEP does not), and **lets yo
 fear of losing face is this audience's documented barrier and a classroom is where it bites hardest.
 That answer is a hypothesis until real users confirm it.
 
-**Audience is Thai people only** — not a general ESL app. This is a deliberate niche-over-scale bet. It keeps the brand (Papaya / som tam), the Thai-L1 pronunciation targeting, and the localization math (only ~22 scenarios differ per country) all coherent. Don't generalize the product to other L1 groups without revisiting this decision explicitly with the founder.
+**Audience is Thai people only** — not a general ESL app. This is a deliberate niche-over-scale bet. It keeps the brand (Banana English / som tam), the Thai-L1 pronunciation targeting, and the localization math (only ~22 scenarios differ per country) all coherent. Don't generalize the product to other L1 groups without revisiting this decision explicitly with the founder.
 
 ---
 
 ## 2. Brand
 
-Name: **Papaya**. Full naming rationale, rejected alternatives, visual identity, palette, mascot ("Paya"), and outstanding trademark work → `docs/brand/brand-guide.md`. Read it before writing any user-facing copy, app-store listing, or marketing material.
+Name: **Banana English**. Full naming rationale, rejected alternatives, visual identity, palette, mascot ("Paya"), and outstanding trademark work → `docs/brand/brand-guide.md`. Read it before writing any user-facing copy, app-store listing, or marketing material.
 
-Key point not to lose: "Papaya" is the trademark asset; "English" is a generic, swappable descriptor that belongs in the subtitle, not the core name.
+Key point not to lose: **กล้วยๆ (gluay-gluay) is Thai slang for "easy peasy"** — so to a Thai speaker
+the name reads as *"English? Easy."* That is the brand's core asset: a promise in the user's own
+language, aimed at this audience's real barrier (fear of speaking, not ability), and invisible to
+everyone else. Tagline: **"อังกฤษ? กล้วยๆ"**. Note that "English" now sits inside the name, so only
+"Banana" is distinctive — trademark clearance matters more than it did, not less.
 
 ---
 
@@ -174,7 +178,7 @@ removing the learner's sense of a deadline.
    never regenerated, even under `--retranslate`, and the UI's ไทย: DRAFT badge clears per unit.
 3. **Australian system facts (Medicare, Centrelink, TFN, bond rules, citizenship test format, etc.) are written at founder/author confidence, not verified.** These need a local fact-check (ideally someone who works in or recently navigated these systems) before shipping — wrong health/welfare information is the highest-trust-cost error this product can make.
 4. Locale content must pass the cross-country leakage check (no US/UK terms in an AU unit, and vice versa) — see the QA section of the locale addendum.
-5. "Papaya" trademark clearance is **not done** — see brand-guide.md. Don't treat the name as legally locked yet.
+5. "Banana English" trademark clearance is **not done** — see brand-guide.md. Don't treat the name as legally locked yet.
 6. Don't expand the audience beyond Thai people, and don't add a new country that isn't primarily English-speaking, without an explicit decision from the founder — both were deliberate scope calls.
 7. **Never ship unlimited scored speaking or uncapped roleplay**, in any tier, at any point. See Section 4 — this is an economics constraint, and it is irreversible once users have it.
 8. Every piece of user-facing positioning must survive the question **"why not just do AMEP?"** (Section 1).
