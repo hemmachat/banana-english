@@ -1,0 +1,19 @@
+# secrets
+.env
+**/.env
+
+# virtualenvs
+.venv/
+**/.venv/
+__pycache__/
+*.pyc
+
+# generated audio (rebuild with backend/render_audio.py)
+backend/static/audio/
+
+# spike recordings — personal voice data, not for the repo
+spike/raw/
+spike/recordings/
+
+# macOS
+.DS_Store

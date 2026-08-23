@@ -1,0 +1,1023 @@
+# ============================================================
+# SCENARIO REGISTRY — English speaking app for Thai learners
+# 121 scenarios across 16 life domains, tiered A1–B2
+# ------------------------------------------------------------
+# This is the curriculum backbone. Each entry is one generation
+# run through the pipeline in scenario-unit-generation-spec.md.
+#
+# FIELD MAPPING to the spec's registry format:
+#   id     -> scenario_id
+#   en/th  -> title_en / title_th
+#   tier   -> tier (1 survival … 4 fluency)
+#   cefr   -> cefr_range (always spans >=2 levels: scripted -> off-script)
+#   sounds -> sound_targets (the Thai L1 errors THIS scenario stresses)
+#   hook   -> killer_contrast + local_context, condensed
+#
+# NOT authored here (the generator proposes, human reviews):
+#   sub_steps, vocabulary, dialogues, drills, rubric, culture note.
+#
+# ⚠️ THAI STRINGS ARE FIRST-DRAFT. Every `th:` value must be
+#    checked by a native speaker before it reaches the product.
+#
+# sound_targets vocabulary:
+#   r_l, str_cluster, clusters, final_consonants, th, numbers,
+#   word_stress, weak_forms, intonation, vowel_glides, no_visual
+# ============================================================
+
+# ---------- TIER 1: DAILY SURVIVAL ----------
+
+# --- Domain: Getting around (transport & directions) ---
+- id: asking_directions
+  en: Asking for Directions
+  th: การถามทาง
+  tier: 1
+  cefr: [A1, B1]
+  sounds: [r_l, str_cluster, final_consonants]
+  hook: "KILLER: left vs right (/l/–/r/) — wrong = you go the wrong way. straight, turn, corner. Landmarks: 7-Eleven, the soi."
+
+- id: bts_mrt_skytrain
+  en: Taking the BTS / MRT
+  th: การขึ้นรถไฟฟ้า
+  tier: 1
+  cefr: [A1, A2]
+  sounds: [final_consonants, numbers]
+  hook: "'next station', exit numbers, topping up a Rabbit card, 'which line for…'"
+
+- id: taxi_grab
+  en: Taxi & Grab Rides
+  th: การเรียกแท็กซี่และแกร็บ
+  tier: 1
+  cefr: [A1, B1]
+  sounds: [final_consonants, r_l]
+  hook: "'turn left here', 'stop here', 'use the meter please', giving an address/soi"
+
+- id: motorbike_taxi_songthaew
+  en: Motorbike Taxi & Songthaew
+  th: มอเตอร์ไซค์รับจ้างและรถสองแถว
+  tier: 1
+  cefr: [A1, A2]
+  sounds: [numbers, final_consonants]
+  hook: "fare before you go, 'how much to…', 'stop here', 'straight ahead'"
+
+- id: buying_transport_tickets
+  en: Buying Travel Tickets
+  th: การซื้อตั๋วเดินทาง
+  tier: 1
+  cefr: [A1, A2]
+  sounds: [numbers, clusters]
+  hook: "platform, one-way / return, 'what time', ticket machine broken (B1 branch)"
+
+- id: at_the_airport_checkin
+  en: Airport Check-in
+  th: การเช็คอินที่สนามบิน
+  tier: 2
+  cefr: [A2, B1]
+  sounds: [clusters, final_consonants]
+  hook: "boarding pass, gate, 'window or aisle', baggage, 'is my flight delayed'"
+
+- id: airport_immigration_arrival
+  en: Immigration on Arrival
+  th: ด่านตรวจคนเข้าเมืองขาเข้า
+  tier: 2
+  cefr: [A2, B1]
+  sounds: [th, final_consonants]
+  hook: "'purpose of visit', 'how long are you staying', 'where are you staying'"
+
+- id: asking_about_bus_routes
+  en: Asking About Bus Routes
+  th: การถามเส้นทางรถเมล์
+  tier: 2
+  cefr: [A2, B1]
+  sounds: [final_consonants, numbers]
+  hook: "'which bus goes to…', 'how many stops', 'does this bus stop at…'"
+
+- id: renting_a_vehicle
+  en: Renting a Motorbike or Car
+  th: การเช่ารถ
+  tier: 2
+  cefr: [A2, B1]
+  sounds: [clusters, numbers]
+  hook: "deposit, helmet, 'is insurance included', reporting damage on return"
+
+- id: lost_and_asking_for_help
+  en: When You're Lost
+  th: เมื่อหลงทาง
+  tier: 1
+  cefr: [A1, B1]
+  sounds: [r_l, clusters]
+  hook: "'I'm lost', 'can you help me find…', describing landmarks around you"
+
+# --- Domain: Shopping & money ---
+- id: market_bargaining
+  en: Bargaining at the Market
+  th: การต่อราคาที่ตลาด
+  tier: 1
+  cefr: [A1, A2]
+  sounds: [numbers, final_consonants]
+  hook: "'how much', 'too expensive', 'can you lower it', 'cheaper'; fifteen vs fifty"
+
+- id: seven_eleven_convenience
+  en: At 7-Eleven
+  th: ที่ร้านสะดวกซื้อ
+  tier: 1
+  cefr: [A1, A2]
+  sounds: [final_consonants, numbers]
+  hook: "'do you want a bag', hot/cold, 'heat it up', paying, 'do you have…'"
+
+- id: shopping_for_clothes
+  en: Shopping for Clothes
+  th: การซื้อเสื้อผ้า
+  tier: 1
+  cefr: [A1, B1]
+  sounds: [final_consonants, vowel_glides]
+  hook: "size, 'can I try this on', fitting room, colour, 'do you have a bigger size'"
+
+- id: at_the_bank
+  en: At the Bank
+  th: ที่ธนาคาร
+  tier: 2
+  cefr: [A2, B1]
+  sounds: [th, numbers]
+  hook: "open an account, withdraw/deposit, 'this / these', account balance"
+
+- id: currency_exchange
+  en: Currency Exchange
+  th: การแลกเงิน
+  tier: 1
+  cefr: [A1, A2]
+  sounds: [numbers, th]
+  hook: "'what's the rate', 'how much in baht', small notes; number clarity"
+
+- id: mobile_phone_shop_sim
+  en: Mobile Shop & SIM Cards
+  th: ร้านมือถือและซิม
+  tier: 2
+  cefr: [A2, B1]
+  sounds: [numbers, clusters]
+  hook: "data plan, top up, 'how many gigs', 'my phone screen is cracked'"
+
+- id: returns_and_refunds
+  en: Returns & Refunds
+  th: การคืนสินค้าและขอเงินคืน
+  tier: 2
+  cefr: [A2, B1]
+  sounds: [final_consonants, r_l]
+  hook: "'it's broken', 'it doesn't work', receipt, 'can I get a refund'"
+
+- id: online_shopping_delivery
+  en: Online Orders & Delivery
+  th: การสั่งของออนไลน์
+  tier: 2
+  cefr: [A2, B1]
+  sounds: [final_consonants, numbers]
+  hook: "track order, 'it hasn't arrived', 'wrong item', delivery address"
+
+- id: paying_and_splitting_bill
+  en: Paying & Splitting the Bill
+  th: การจ่ายเงินและแยกบิล
+  tier: 1
+  cefr: [A1, A2]
+  sounds: [numbers, th]
+  hook: "'separately or together', 'card or cash', 'keep the change'"
+
+# --- Domain: Food & dining ---
+- id: ordering_at_restaurant
+  en: Ordering at a Restaurant
+  th: การสั่งอาหารที่ร้าน
+  tier: 1
+  cefr: [A1, A2]
+  sounds: [final_consonants, th]
+  hook: "'I'd like…', menu, 'what do you recommend', 'the bill please'"
+
+- id: street_food_ordering
+  en: Ordering Street Food
+  th: การสั่งอาหารริมทาง
+  tier: 1
+  cefr: [A1, A2]
+  sounds: [numbers, final_consonants]
+  hook: "spicy level, 'not too spicy', 'takeaway', 'add an egg'"
+
+- id: cafe_coffee_order
+  en: Ordering Coffee
+  th: การสั่งกาแฟ
+  tier: 1
+  cefr: [A1, A2]
+  sounds: [final_consonants, vowel_glides]
+  hook: "size, iced/hot, oat milk, 'less sugar', 'for here or to go'"
+
+- id: dietary_restrictions_allergies
+  en: Dietary Needs & Allergies
+  th: ข้อจำกัดด้านอาหารและภูมิแพ้
+  tier: 2
+  cefr: [A2, B1]
+  sounds: [th, r_l]
+  hook: "'I'm allergic to…', vegetarian, 'no MSG', 'does this contain…'"
+
+- id: making_a_reservation
+  en: Making a Reservation
+  th: การจองโต๊ะ
+  tier: 2
+  cefr: [A2, B1]
+  sounds: [numbers, final_consonants]
+  hook: "'a table for four', 'at seven', 'under the name…', by phone (harder)"
+
+- id: complaining_about_food
+  en: Complaining About Food
+  th: การร้องเรียนเรื่องอาหาร
+  tier: 3
+  cefr: [B1, B1]
+  sounds: [final_consonants, intonation]
+  hook: "'this isn't what I ordered', 'it's cold', polite-but-firm intonation"
+
+- id: asking_about_ingredients
+  en: Asking About Ingredients
+  th: การถามส่วนผสม
+  tier: 2
+  cefr: [A2, B1]
+  sounds: [th, final_consonants]
+  hook: "'what's in this', 'is there pork', 'is it spicy'"
+
+- id: fast_food_combo
+  en: Fast Food Ordering
+  th: การสั่งฟาสต์ฟู้ด
+  tier: 1
+  cefr: [A1, A2]
+  sounds: [final_consonants, numbers]
+  hook: "combo/set, 'make it large', 'for here or to go', 'no ice'"
+
+- id: hosting_being_a_guest_meal
+  en: Meals as Host or Guest
+  th: การเป็นเจ้าภาพหรือแขกในมื้ออาหาร
+  tier: 3
+  cefr: [B1, B1]
+  sounds: [weak_forms, intonation]
+  hook: "offering ('would you like…'), accepting/declining, table small talk"
+
+# --- Domain: Social glue ---
+- id: greetings_small_talk
+  en: Greetings & Small Talk
+  th: การทักทายและพูดคุยเล็กน้อย
+  tier: 1
+  cefr: [A1, A2]
+  sounds: [final_consonants, weak_forms]
+  hook: "'how's it going', 'nice weather', the social opener before every scenario"
+
+# ---------- TIER 2: HIGHER-STAKES LIFE ADMIN ----------
+
+# --- Domain: Health & medical ---
+- id: medical_centre
+  en: At the Medical Centre  # FLAGSHIP — built out in full
+  th: ที่คลินิก / โรงพยาบาล
+  tier: 2
+  cefr: [A2, B1]
+  sounds: [th, final_consonants, r_l, numbers]
+  hook: "throat/three/teeth (th), dosage numbers, 'allergic', describe symptoms"
+
+- id: at_the_pharmacy
+  en: At the Pharmacy
+  th: ที่ร้านขายยา
+  tier: 2
+  cefr: [A2, B1]
+  sounds: [r_l, numbers]
+  hook: "dosage, 'over the counter', 'for a headache', side effects; spirals medical"
+
+- id: making_medical_appointment_phone
+  en: Booking a Medical Appointment (Phone)
+  th: การนัดหมอทางโทรศัพท์
+  tier: 2
+  cefr: [A2, B1]
+  sounds: [numbers, th, no_visual]
+  hook: "hardest channel — no body language; times, 'the earliest available'"
+
+- id: describing_pain_symptoms
+  en: Describing Pain & Symptoms
+  th: การบอกอาการเจ็บปวด
+  tier: 2
+  cefr: [A2, B1]
+  sounds: [th, final_consonants]
+  hook: "location + type (sharp/dull) + severity (0–10) + timing; 'it comes and goes'"
+
+- id: dentist_visit
+  en: At the Dentist
+  th: ที่คลินิกทันตกรรม
+  tier: 2
+  cefr: [A2, B1]
+  sounds: [th, final_consonants]
+  hook: "teeth, toothache, 'a filling', 'it's sensitive to cold'"
+
+- id: emergency_room
+  en: Emergency Room
+  th: ห้องฉุกเฉิน
+  tier: 3
+  cefr: [B1, B1]
+  sounds: [final_consonants, clusters]
+  hook: "'I need help now', accident, 'he can't breathe' — high stakes, clarity critical"
+
+- id: eye_test_optician
+  en: Eye Test & Glasses
+  th: การตรวจตาและตัดแว่น
+  tier: 2
+  cefr: [A2, B1]
+  sounds: [final_consonants, vowel_glides]
+  hook: "'blurry', 'I can't see far', frames, prescription"
+
+- id: mental_health_counselling
+  en: Talking to a Counsellor
+  th: การพูดคุยกับนักบำบัด
+  tier: 3
+  cefr: [B1, B2]
+  sounds: [th, weak_forms]
+  hook: "'I've been feeling…', describing stress/mood, present perfect for duration"
+
+- id: health_insurance_claims
+  en: Health Insurance & Claims
+  th: ประกันสุขภาพและการเคลม
+  tier: 3
+  cefr: [B1, B2]
+  sounds: [final_consonants, numbers]
+  hook: "'is this covered', claim, 'what's the excess', policy numbers"
+
+# --- Domain: Housing & living ---
+- id: renting_apartment_viewing
+  en: Viewing an Apartment
+  th: การดูห้องเช่า
+  tier: 2
+  cefr: [A2, B1]
+  sounds: [final_consonants, clusters]
+  hook: "deposit, lease, 'is water included', 'when can I move in'"
+
+- id: talking_to_landlord_problems
+  en: Reporting Problems to a Landlord
+  th: การแจ้งปัญหากับเจ้าของห้อง
+  tier: 3
+  cefr: [B1, B1]
+  sounds: [final_consonants, r_l]
+  hook: "'the aircon is broken', 'there's a leak', polite-firm request to fix"
+
+- id: calling_a_technician
+  en: Calling a Repair Technician
+  th: การเรียกช่างซ่อม
+  tier: 2
+  cefr: [A2, B1]
+  sounds: [clusters, final_consonants]
+  hook: "'it's not working', 'when can you come', describing the fault by phone"
+
+- id: utilities_internet_setup
+  en: Utilities & Internet Setup
+  th: การติดตั้งน้ำไฟและอินเทอร์เน็ต
+  tier: 2
+  cefr: [A2, B1]
+  sounds: [numbers, th]
+  hook: "bill, 'the wifi is down', account number, 'set up an appointment'"
+
+- id: dealing_with_neighbours
+  en: Dealing with Neighbours
+  th: การจัดการกับเพื่อนบ้าน
+  tier: 3
+  cefr: [B1, B1]
+  sounds: [weak_forms, intonation]
+  hook: "'could you keep it down', polite complaint, softening language"
+
+- id: buying_furniture_appliances
+  en: Buying Furniture & Appliances
+  th: การซื้อเฟอร์นิเจอร์และเครื่องใช้ไฟฟ้า
+  tier: 2
+  cefr: [A2, B1]
+  sounds: [final_consonants, numbers]
+  hook: "'do you deliver', assembly, 'does it come with a warranty'"
+
+- id: moving_house
+  en: Moving House
+  th: การย้ายบ้าน
+  tier: 3
+  cefr: [B1, B1]
+  sounds: [clusters, final_consonants]
+  hook: "movers, 'be careful with this', 'which room', dates"
+
+- id: condo_facilities_rules
+  en: Condo Facilities & Rules
+  th: สิ่งอำนวยความสะดวกและกฎของคอนโด
+  tier: 2
+  cefr: [A2, B1]
+  sounds: [final_consonants, th]
+  hook: "pool/gym hours, 'is this allowed', 'are pets ok', key card"
+
+# --- Domain: Government / admin (Thailand-specific + general) ---
+- id: immigration_visa_extension
+  en: Visa Extension
+  th: การต่อวีซ่า
+  tier: 3
+  cefr: [B1, B1]
+  sounds: [final_consonants, numbers]
+  hook: "'extend my visa', overstay, documents needed, dates"
+
+- id: ninety_day_reporting
+  en: 90-Day Reporting
+  th: การรายงานตัว 90 วัน
+  tier: 2
+  cefr: [A2, B1]
+  sounds: [numbers, final_consonants]
+  hook: "forms, 'where do I go', appointment, 'I'm here to report'"
+
+- id: work_permit_office
+  en: Work Permit Office
+  th: สำนักงานใบอนุญาตทำงาน
+  tier: 3
+  cefr: [B1, B2]
+  sounds: [clusters, final_consonants]
+  hook: "documents, employer letter, 'what else do I need'"
+
+- id: police_reporting_incident
+  en: Reporting to the Police
+  th: การแจ้งความ
+  tier: 3
+  cefr: [B1, B1]
+  sounds: [final_consonants, clusters]
+  hook: "'my bag was stolen', 'I need a police report', describing what happened"
+
+- id: embassy_consular_services
+  en: Embassy & Consular Services
+  th: บริการสถานทูตและกงสุล
+  tier: 3
+  cefr: [B1, B2]
+  sounds: [th, final_consonants]
+  hook: "passport renewal, notary, 'I need to…', appointment"
+
+- id: post_office_shipping
+  en: Post Office & Shipping
+  th: ที่ทำการไปรษณีย์
+  tier: 2
+  cefr: [A2, B1]
+  sounds: [numbers, final_consonants]
+  hook: "parcel, weight, 'how much to send to…', customs form, tracking"
+
+- id: drivers_license_office
+  en: Driver's License Office
+  th: สำนักงานขนส่ง (ใบขับขี่)
+  tier: 2
+  cefr: [A2, B1]
+  sounds: [clusters, final_consonants]
+  hook: "renewal, 'take the test', documents, 'fill out this form'"
+
+- id: filling_official_forms
+  en: Filling Out Official Forms
+  th: การกรอกแบบฟอร์มราชการ
+  tier: 2
+  cefr: [A2, B1]
+  sounds: [final_consonants, th]
+  hook: "'sign here', date format, 'what does this field mean', spelling your name"
+
+# --- Domain: Phone & digital ---
+- id: phone_call_basics
+  en: Making a Phone Call
+  th: การโทรศัพท์เบื้องต้น
+  tier: 2
+  cefr: [A2, B1]
+  sounds: [no_visual, numbers]
+  hook: "'can I speak to…', 'this is…calling', 'could you repeat that'"
+
+- id: leaving_voicemail
+  en: Leaving a Voicemail
+  th: การฝากข้อความเสียง
+  tier: 2
+  cefr: [A2, B1]
+  sounds: [final_consonants, numbers]
+  hook: "name + reason + callback number, slowly and clearly"
+
+- id: spelling_name_number
+  en: Spelling Names & Numbers
+  th: การสะกดชื่อและบอกตัวเลข
+  tier: 1
+  cefr: [A1, A2]
+  sounds: [numbers, final_consonants]
+  hook: "'D for David', phone numbers, 'was that thirteen or thirty'"
+
+- id: video_call_tech_issues
+  en: Video Call Problems
+  th: ปัญหาการวิดีโอคอล
+  tier: 2
+  cefr: [A2, B1]
+  sounds: [clusters, final_consonants]
+  hook: "'can you hear me', 'you're muted', 'you're breaking up', 'share your screen'"
+
+- id: texting_messaging
+  en: Texting & Messaging
+  th: การส่งข้อความ
+  tier: 2
+  cefr: [A2, B1]
+  sounds: [final_consonants]  # spills into writing / informal register
+  hook: "informal register, common abbreviations, 'brb', 'on my way'"
+
+- id: social_media_replies
+  en: Social Media Comments
+  th: การตอบคอมเมนต์โซเชียล
+  tier: 3
+  cefr: [B1, B1]
+  sounds: [final_consonants]  # writing + informal
+  hook: "casual tone, replying, reacting, 'lol', 'same here'"
+
+# ---------- TIER 3: WORK & ADVANCEMENT ----------
+
+# --- Domain: Getting a job ---
+- id: job_interview_intro
+  en: Interview: Introducing Yourself
+  th: สัมภาษณ์งาน: แนะนำตัว
+  tier: 3
+  cefr: [B1, B2]
+  sounds: [word_stress, weak_forms]
+  hook: "'tell me about yourself', concise self-summary, controlled nerves"
+
+- id: job_interview_experience
+  en: Interview: Your Experience
+  th: สัมภาษณ์งาน: ประสบการณ์
+  tier: 3
+  cefr: [B1, B2]
+  sounds: [word_stress, final_consonants]
+  hook: "'I've worked as…', past achievements, STAR-style answers"
+
+- id: job_interview_asking_questions
+  en: Interview: Asking Questions
+  th: สัมภาษณ์งาน: การถามคำถาม
+  tier: 3
+  cefr: [B1, B2]
+  sounds: [intonation, weak_forms]
+  hook: "'what are the hours', 'is there room to grow', question intonation"
+
+- id: strengths_weaknesses
+  en: Talking About Strengths & Weaknesses
+  th: การพูดถึงจุดแข็งจุดอ่อน
+  tier: 3
+  cefr: [B1, B2]
+  sounds: [th, word_stress]
+  hook: "'my strength is…', reframing a weakness, 'I think'"
+
+- id: negotiating_salary
+  en: Negotiating Salary
+  th: การต่อรองเงินเดือน
+  tier: 4
+  cefr: [B2, B2]
+  sounds: [numbers, weak_forms]
+  hook: "'I was hoping for…', 'is there flexibility', number clarity"
+
+- id: networking_intro
+  en: Networking & Elevator Intro
+  th: การแนะนำตัวในงานเน็ตเวิร์ก
+  tier: 3
+  cefr: [B1, B1]
+  sounds: [word_stress, final_consonants]
+  hook: "'I work in…', 30-second self-intro, exchanging contacts"
+
+# --- Domain: On the job ---
+- id: first_day_introductions
+  en: First Day Introductions
+  th: การแนะนำตัววันแรกของงาน
+  tier: 2
+  cefr: [A2, B1]
+  sounds: [final_consonants, word_stress]
+  hook: "'I'm the new…', 'nice to meet you', roles/departments"
+
+- id: workplace_small_talk
+  en: Small Talk at Work
+  th: การคุยเล่นที่ทำงาน
+  tier: 3
+  cefr: [B1, B1]
+  sounds: [weak_forms, intonation]
+  hook: "'how was your weekend', coffee-machine chat, wrapping up politely"
+
+- id: team_meeting_participation
+  en: Participating in Meetings
+  th: การมีส่วนร่วมในการประชุม
+  tier: 3
+  cefr: [B1, B2]
+  sounds: [word_stress, intonation]
+  hook: "interrupting politely, 'can I add something', agreeing/disagreeing"
+
+- id: giving_status_update
+  en: Giving a Status Update
+  th: การรายงานความคืบหน้า
+  tier: 3
+  cefr: [B1, B2]
+  sounds: [word_stress, final_consonants]
+  hook: "'on track', 'behind schedule', 'the deadline is…', 'reCORD' vs 'REcord'"
+
+- id: asking_for_help_at_work
+  en: Asking for Help at Work
+  th: การขอความช่วยเหลือที่ทำงาน
+  tier: 2
+  cefr: [A2, B1]
+  sounds: [r_l, final_consonants]
+  hook: "'could you help me with…', 'I'm not sure how to…', 'do you have a minute'"
+
+- id: clarifying_instructions
+  en: Clarifying Instructions
+  th: การถามให้ชัดเจน
+  tier: 2
+  cefr: [A2, B1]
+  sounds: [th, weak_forms]
+  hook: "'do you mean…', 'just to check', 'could you show me'"
+
+- id: disagreeing_politely
+  en: Disagreeing Politely
+  th: การไม่เห็นด้วยอย่างสุภาพ
+  tier: 4
+  cefr: [B2, B2]
+  sounds: [weak_forms, intonation]
+  hook: "'I see your point, but…', softening, 'I'm not sure I agree'"
+
+- id: giving_receiving_feedback
+  en: Giving & Receiving Feedback
+  th: การให้และรับฟีดแบ็ก
+  tier: 4
+  cefr: [B2, B2]
+  sounds: [word_stress, th]
+  hook: "'one thing I'd suggest…', 'thanks, that's helpful', staying constructive"
+
+- id: conference_call
+  en: Phone & Conference Calls at Work
+  th: การประชุมทางโทรศัพท์
+  tier: 3
+  cefr: [B1, B2]
+  sounds: [no_visual, final_consonants]
+  hook: "'you're breaking up', 'let's move on', talking without visual cues"
+
+- id: workplace_email
+  en: Work Email & Messages
+  th: อีเมลและข้อความในที่ทำงาน
+  tier: 3
+  cefr: [B1, B1]
+  sounds: [final_consonants]  # spills to writing
+  hook: "'just following up', 'please find attached', tone control"
+
+- id: reporting_problem_delay
+  en: Reporting a Problem or Delay
+  th: การรายงานปัญหาหรือความล่าช้า
+  tier: 3
+  cefr: [B1, B2]
+  sounds: [final_consonants, clusters]
+  hook: "'we've hit a problem', 'it'll be late because…', proposing a fix"
+
+- id: asking_for_time_off
+  en: Asking for Time Off
+  th: การขอลางาน
+  tier: 2
+  cefr: [A2, B1]
+  sounds: [numbers, final_consonants]
+  hook: "'I'd like to take leave on…', 'is it ok if…', dates"
+
+# --- Domain: Service & tourism jobs (major Thai employer) ---
+- id: hotel_reception_staff
+  en: Hotel Reception (as Staff)
+  th: พนักงานต้อนรับโรงแรม
+  tier: 2
+  cefr: [A2, B1]
+  sounds: [final_consonants, r_l]
+  hook: "'welcome, how can I help', check-in, 'your room is on the…floor'"
+
+- id: hotel_guest_requests
+  en: Handling Guest Requests
+  th: การรับมือคำขอของแขก
+  tier: 3
+  cefr: [B1, B1]
+  sounds: [final_consonants, intonation]
+  hook: "'I'll sort that out', apologising, 'right away, sir/ma'am'"
+
+- id: restaurant_server_staff
+  en: Serving Tables (as Staff)
+  th: พนักงานเสิร์ฟ
+  tier: 2
+  cefr: [A2, B1]
+  sounds: [final_consonants, th]
+  hook: "'are you ready to order', 'anything else', 'the special today is…'"
+
+- id: tour_guide_explaining
+  en: Tour Guiding
+  th: การเป็นไกด์นำเที่ยว
+  tier: 3
+  cefr: [B1, B2]
+  sounds: [word_stress, intonation]
+  hook: "explaining history/sights, 'on your left you'll see…', engaging delivery"
+
+- id: spa_massage_service
+  en: Spa & Massage Service
+  th: บริการสปาและนวด
+  tier: 2
+  cefr: [A2, B1]
+  sounds: [r_l, final_consonants]
+  hook: "'is the pressure ok', 'please relax', 'lie down', 'turn over'"
+
+- id: retail_assistant
+  en: Retail Assistant
+  th: พนักงานขายในร้าน
+  tier: 2
+  cefr: [A2, B1]
+  sounds: [final_consonants, numbers]
+  hook: "'can I help you find something', sizes, 'it's on sale', 'cash or card'"
+
+- id: grab_driver_chat
+  en: Driving Passengers (as Grab/Taxi Driver)
+  th: การรับผู้โดยสาร (คนขับ)
+  tier: 1
+  cefr: [A1, B1]
+  sounds: [final_consonants, r_l]
+  hook: "'where to', confirming the route, light small talk, 'we're here'"
+
+- id: handling_customer_complaint
+  en: Handling a Customer Complaint
+  th: การรับมือคำร้องเรียนของลูกค้า
+  tier: 3
+  cefr: [B1, B2]
+  sounds: [weak_forms, intonation]
+  hook: "'I'm sorry to hear that', staying calm, 'let me fix this'"
+
+- id: giving_local_recommendations
+  en: Recommending Local Places
+  th: การแนะนำสถานที่ท้องถิ่น
+  tier: 3
+  cefr: [B1, B1]
+  sounds: [word_stress, final_consonants]
+  hook: "'you should try…', 'it's famous for…', 'about 10 minutes away'"
+
+# ---------- TIER 4: SOCIAL, TRAVEL, LIFE ----------
+
+# --- Domain: Social & relationships ---
+- id: introducing_yourself
+  en: Introducing Yourself
+  th: การแนะนำตัวเอง
+  tier: 1
+  cefr: [A1, A2]
+  sounds: [final_consonants, th]
+  hook: "name, 'I'm from…', 'nice to meet you', job/interests"
+
+- id: small_talk_weather_weekend
+  en: Everyday Small Talk
+  th: การพูดคุยประจำวัน
+  tier: 1
+  cefr: [A1, B1]
+  sounds: [weak_forms, intonation]
+  hook: "weather, weekend, 'how've you been', keeping it going"
+
+- id: making_plans
+  en: Making Plans with Friends
+  th: การนัดกับเพื่อน
+  tier: 2
+  cefr: [A2, B1]
+  sounds: [numbers, weak_forms]
+  hook: "'are you free…', 'how about Saturday', 'let's meet at…'"
+
+- id: accepting_declining_invitations
+  en: Accepting & Declining Invitations
+  th: การตอบรับและปฏิเสธคำเชิญ
+  tier: 2
+  cefr: [A2, B1]
+  sounds: [weak_forms, intonation]
+  hook: "'I'd love to', 'I'd love to but…', softening a no"
+
+- id: giving_opinions
+  en: Giving Opinions & Agreeing
+  th: การแสดงความคิดเห็น
+  tier: 3
+  cefr: [B1, B1]
+  sounds: [th, intonation]
+  hook: "'I think…', 'me too', 'I'm not sure about that'"
+
+- id: telling_a_story
+  en: Telling a Story
+  th: การเล่าเรื่อง
+  tier: 3
+  cefr: [B1, B1]
+  sounds: [final_consonants, weak_forms]
+  hook: "past tense endings (-ed final consonants!), 'so then…', 'you won't believe…'"
+
+- id: compliments_and_responses
+  en: Compliments
+  th: การชมและการตอบรับคำชม
+  tier: 2
+  cefr: [A2, B1]
+  sounds: [final_consonants, intonation]
+  hook: "'I love your…', 'thanks, that's kind', graceful responses"
+
+- id: apologizing
+  en: Apologizing & Forgiving
+  th: การขอโทษและให้อภัย
+  tier: 2
+  cefr: [A2, B1]
+  sounds: [th, weak_forms]
+  hook: "'I'm so sorry', 'it's ok', 'no worries', 'my fault'"
+
+- id: dating_getting_to_know
+  en: Dating & Getting to Know Someone
+  th: การออกเดตและทำความรู้จัก
+  tier: 3
+  cefr: [B1, B1]
+  sounds: [weak_forms, intonation]
+  hook: "'what do you do for fun', open questions, showing interest"
+
+- id: saying_goodbye
+  en: Saying Goodbye & Keeping in Touch
+  th: การกล่าวลา
+  tier: 1
+  cefr: [A1, A2]
+  sounds: [final_consonants]
+  hook: "'take care', 'keep in touch', 'see you soon', 'let's do this again'"
+
+# --- Domain: Travel & tourism (as traveller) ---
+- id: booking_hotel_room
+  en: Booking a Hotel Room
+  th: การจองห้องพัก
+  tier: 2
+  cefr: [A2, B1]
+  sounds: [numbers, final_consonants]
+  hook: "'do you have a room for…', dates, 'how much per night', breakfast included"
+
+- id: hotel_checkin_guest
+  en: Hotel Check-in / Check-out (as Guest)
+  th: การเช็คอิน/เช็คเอาต์ (แขก)
+  tier: 1
+  cefr: [A1, B1]
+  sounds: [final_consonants, numbers]
+  hook: "'I have a reservation', 'checkout time', 'can I leave my bags'"
+
+- id: tourist_information
+  en: Asking at Tourist Information
+  th: การถามข้อมูลนักท่องเที่ยว
+  tier: 2
+  cefr: [A2, B1]
+  sounds: [r_l, final_consonants]
+  hook: "'what's worth seeing', 'how do I get to…', opening hours, maps"
+
+- id: booking_tours_activities
+  en: Booking Tours & Activities
+  th: การจองทัวร์และกิจกรรม
+  tier: 2
+  cefr: [A2, B1]
+  sounds: [numbers, clusters]
+  hook: "'what time does it start', 'is transport included', 'how long is it'"
+
+- id: beach_water_activities
+  en: At the Beach
+  th: ที่ชายหาด
+  tier: 1
+  cefr: [A1, A2]
+  sounds: [final_consonants]
+  hook: "renting gear, 'how much for an hour', 'is it safe to swim'"
+
+- id: sightseeing_temple_etiquette
+  en: Temples & Sightseeing Etiquette
+  th: มารยาทการเที่ยวชมวัด
+  tier: 2
+  cefr: [A2, B1]
+  sounds: [th, final_consonants]
+  hook: "'can I take a photo', 'do I need to cover up', 'is there an entrance fee'"
+
+- id: travel_problems
+  en: Dealing with Travel Problems
+  th: การแก้ปัญหาการเดินทาง
+  tier: 3
+  cefr: [B1, B1]
+  sounds: [clusters, final_consonants]
+  hook: "'my flight is cancelled', 'I missed my connection', 'what are my options'"
+
+# --- Domain: Emergencies & problems ---
+- id: calling_emergency_services
+  en: Calling Emergency Services
+  th: การโทรแจ้งเหตุฉุกเฉิน
+  tier: 3
+  cefr: [B1, B1]
+  sounds: [final_consonants, numbers, no_visual]
+  hook: "clarity is life-or-death; location, 'there's been an accident', staying calm"
+
+- id: reporting_lost_stolen
+  en: Reporting Lost or Stolen Items
+  th: การแจ้งของหายหรือถูกขโมย
+  tier: 3
+  cefr: [B1, B1]
+  sounds: [final_consonants, clusters]
+  hook: "'my phone was stolen', describing it, 'when did you last have it'"
+
+- id: minor_accident_first_aid
+  en: Minor Accidents & First Aid
+  th: อุบัติเหตุเล็กน้อยและปฐมพยาบาล
+  tier: 3
+  cefr: [B1, B1]
+  sounds: [final_consonants, clusters]
+  hook: "'are you ok', 'I cut my hand', 'do you need a doctor'"
+
+- id: urgent_help_on_street
+  en: Getting Urgent Help
+  th: การขอความช่วยเหลือด่วน
+  tier: 1
+  cefr: [A1, B1]
+  sounds: [r_l, clusters]
+  hook: "'help!', 'call the police', 'someone's hurt' — must be instant and clear"
+
+- id: car_breakdown
+  en: Car or Bike Breakdown
+  th: รถเสีย
+  tier: 3
+  cefr: [B1, B1]
+  sounds: [clusters, final_consonants]
+  hook: "'my car broke down', 'I have a flat tyre', location, 'can you send help'"
+
+- id: disaster_safety_instructions
+  en: Following Safety Instructions
+  th: การปฏิบัติตามคำแนะนำด้านความปลอดภัย
+  tier: 3
+  cefr: [B1, B2]
+  sounds: [final_consonants]
+  hook: "understanding urgent instructions: 'evacuate', 'stay inside', 'move away from…'"
+
+# --- Domain: Education & learning ---
+- id: enrolling_in_a_course
+  en: Enrolling in a Course
+  th: การลงทะเบียนเรียน
+  tier: 2
+  cefr: [A2, B1]
+  sounds: [final_consonants, numbers]
+  hook: "'I'd like to sign up', schedule, fees, levels"
+
+- id: classroom_participation
+  en: Participating in Class
+  th: การมีส่วนร่วมในชั้นเรียน
+  tier: 2
+  cefr: [A2, B1]
+  sounds: [th, intonation]
+  hook: "'can you repeat that', 'I have a question', 'what does…mean'"
+
+- id: parent_teacher_communication
+  en: Parent-Teacher Communication
+  th: การสื่อสารระหว่างผู้ปกครองกับครู
+  tier: 3
+  cefr: [B1, B1]
+  sounds: [word_stress, final_consonants]
+  hook: "'how is my child doing', 'is there anything I can do at home'"
+
+- id: university_admin
+  en: University Admin & Registration
+  th: งานธุรการมหาวิทยาลัย
+  tier: 3
+  cefr: [B1, B2]
+  sounds: [clusters, final_consonants]
+  hook: "registration, 'what documents', deadlines, 'who do I ask about…'"
+
+- id: studying_abroad_orientation
+  en: Studying Abroad Orientation
+  th: การปฐมนิเทศนักเรียนต่างชาติ
+  tier: 3
+  cefr: [B1, B2]
+  sounds: [word_stress, weak_forms]
+  hook: "settling in, asking about services, meeting classmates"
+
+# --- Domain: Everyday errands & services ---
+- id: hair_salon_barber
+  en: Hair Salon & Barber
+  th: ร้านทำผมและตัดผม
+  tier: 2
+  cefr: [A2, B1]
+  sounds: [final_consonants, r_l]
+  hook: "'just a trim', 'not too short', 'a bit off the top', describing style"
+
+- id: laundry_dry_cleaning
+  en: Laundry & Dry Cleaning
+  th: ซักรีดและซักแห้ง
+  tier: 1
+  cefr: [A1, A2]
+  sounds: [final_consonants, numbers]
+  hook: "'when will it be ready', 'how much per item', stains"
+
+- id: gym_membership
+  en: Gym Membership
+  th: สมาชิกฟิตเนส
+  tier: 2
+  cefr: [A2, B1]
+  sounds: [numbers, clusters]
+  hook: "'what are the plans', 'is there a joining fee', 'can I freeze it'"
+
+- id: booking_generic_appointment
+  en: Booking Any Appointment
+  th: การนัดหมายทั่วไป
+  tier: 2
+  cefr: [A2, B1]
+  sounds: [numbers, final_consonants]
+  hook: "reusable pattern: 'I'd like to book…', 'what times are available', confirm"
+
+- id: receiving_deliveries
+  en: Receiving Deliveries
+  th: การรับพัสดุ
+  tier: 1
+  cefr: [A1, A2]
+  sounds: [final_consonants, numbers]
+  hook: "'sign here', 'leave it at the door', 'this isn't mine'"
+
+- id: tipping_service_charge
+  en: Tipping & Service Charge
+  th: การให้ทิปและค่าบริการ
+  tier: 2
+  cefr: [A2, B1]
+  sounds: [numbers, th]
+  hook: "'is service included', 'keep the change', cultural norms note"
+
+# ============================================================
+# COUNT: 121 scenarios
+# Tier 1 (survival): ~28  | Tier 2 (life admin): ~46
+# Tier 3 (work/advanced): ~37 | Tier 4 (fluency): ~10
+# ============================================================

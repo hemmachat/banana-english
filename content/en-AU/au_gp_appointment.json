@@ -1,0 +1,849 @@
+{
+  "scenario_id": "au_gp_appointment",
+  "locale": "en-AU",
+  "title_en": "Seeing a GP (Medicare)",
+  "title_th": "การพบแพทย์ทั่วไป (เมดิแคร์)",
+  "tier": 2,
+  "cefr_range": [
+    "A2",
+    "B1"
+  ],
+  "model_accent": "en-AU",
+  "prerequisites": [
+    "greetings_small_talk",
+    "phone_call_basics",
+    "au_enrol_medicare"
+  ],
+  "recycles": [
+    "numbers",
+    "time_dates",
+    "how_much",
+    "describing_symptoms"
+  ],
+  "register": "casual_polite",
+  "source": "hand-authored flagship (docs/curriculum/au-flagship-unit-gp-appointment.md)",
+  "sound_target_box": {
+    "note_th": null,
+    "_th_status": "not_authored - needs native Thai author, do not auto-generate",
+    "targets": [
+      {
+        "sound": "th",
+        "scoring_method": "minimal_pair",
+        "_why_method": "Step 0: phoneme scoring for /th/ ranged 61-100 across six perfect native takes. Unusable. Score by word recognition of real minimal pairs instead.",
+        "words_in_context": [
+          "throat",
+          "three",
+          "teeth",
+          "months"
+        ],
+        "minimal_pairs": [
+          [
+            "three",
+            "tree"
+          ],
+          [
+            "throat",
+            "troat"
+          ],
+          [
+            "teeth",
+            "teet"
+          ]
+        ],
+        "why_it_matters_here": "Dosage is spoken in threes and this is a health context - 'three times a day' misheard is a real safety problem."
+      },
+      {
+        "sound": "final_consonants",
+        "scoring_method": "phoneme",
+        "words_in_context": [
+          "bulk billed",
+          "script",
+          "card",
+          "test",
+          "cough",
+          "back",
+          "rash"
+        ],
+        "minimal_pairs": [
+          [
+            "card",
+            "car"
+          ],
+          [
+            "test",
+            "tes"
+          ],
+          [
+            "script",
+            "scrip"
+          ]
+        ],
+        "why_it_matters_here": "'Medicare card' and 'bulk billed' are the two phrases you must be understood on at reception, and both end in stops Thai speakers drop."
+      },
+      {
+        "sound": "clusters",
+        "scoring_method": "phoneme",
+        "words_in_context": [
+          "bulk billed",
+          "script",
+          "specialist"
+        ],
+        "minimal_pairs": [
+          [
+            "billed",
+            "bin"
+          ],
+          [
+            "script",
+            "sprit"
+          ]
+        ],
+        "why_it_matters_here": "'Bulk billed' stacks two clusters and two final stops - the single hardest phrase in the unit and the one that decides whether you pay."
+      },
+      {
+        "sound": "r_l",
+        "scoring_method": "phoneme",
+        "words_in_context": [
+          "referral",
+          "prescription",
+          "allergic",
+          "pathology",
+          "specialist"
+        ],
+        "minimal_pairs": [
+          [
+            "referral",
+            "refellal"
+          ]
+        ],
+        "why_it_matters_here": "'Referral' is the gate to seeing a specialist on Medicare. Say it wrong and you cannot ask for the thing you need."
+      },
+      {
+        "sound": "numbers",
+        "scoring_method": "phoneme",
+        "words_in_context": [
+          "thirteen",
+          "thirty",
+          "fifteen",
+          "fifty",
+          "three days",
+          "twice a day"
+        ],
+        "minimal_pairs": [
+          [
+            "thirteen",
+            "thirty"
+          ],
+          [
+            "fifteen",
+            "fifty"
+          ]
+        ],
+        "why_it_matters_here": "Dosage, appointment times, and gap fees are all numbers. 13 vs 30 changes the medicine you take."
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "en": "GP",
+      "th": "หมอทั่วไป หมอคนแรกที่เราไปหาเวลาไม่สบาย ถ้าต้องเจอหมอเฉพาะทาง ต้องให้ GP ส่งต่อให้",
+      "group": "people_places",
+      "audio_needed": true,
+      "audio": "/static/audio/en-AU/gp.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "reception",
+      "th": "เคาน์เตอร์หน้าคลินิก ตรงที่เข้าไปบอกชื่อ ยื่นบัตร นัดหมอ จ่ายเงิน",
+      "group": "people_places",
+      "audio_needed": true,
+      "audio": "/static/audio/en-AU/reception.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "the clinic / the surgery",
+      "th": "คลินิกหมอ คนออสซี่เรียก surgery ก็ได้ ไม่ได้แปลว่าผ่าตัดนะ แค่หมายถึงที่ทำการของหมอ",
+      "group": "people_places",
+      "audio_needed": true,
+      "audio": "/static/audio/en-AU/the-clinic-the-surgery.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "the chemist",
+      "th": "ร้านขายยา ที่ไปยื่นใบ script เอายา แถวนี้เรียก chemist ไม่ค่อยเรียก pharmacy",
+      "group": "people_places",
+      "audio_needed": true,
+      "audio": "/static/audio/en-AU/the-chemist.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "pathology",
+      "th": "แล็บตรวจเลือด ตรวจปัสสาวะ ส่วนใหญ่เป็นคนละที่กับคลินิก หมอจะให้ใบมาแล้วเราเดินไปเอง",
+      "group": "people_places",
+      "audio_needed": true,
+      "audio": "/static/audio/en-AU/pathology.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "Medicare card",
+      "th": "บัตร Medicare บัตรประกันสุขภาพรัฐ ต้องพกไปทุกครั้ง ยื่นให้ reception ตอนเช็คอิน",
+      "group": "medicare",
+      "audio_needed": true,
+      "audio": "/static/audio/en-AU/medicare-card.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "bulk billed",
+      "th": "หมอเก็บเงินจาก Medicare ตรง ๆ เราไม่ต้องจ่ายสักบาท แต่ไม่ใช่ทุกคลินิกที่ทำแบบนี้ ต้องถามก่อน",
+      "group": "medicare",
+      "audio_needed": true,
+      "audio": "/static/audio/en-AU/bulk-billed.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "gap fee / out-of-pocket",
+      "th": "ส่วนต่างที่เราต้องควักจ่ายเอง Medicare ช่วยได้บางส่วน ที่เหลือเราจ่าย ปกติราว 30-50 เหรียญ",
+      "group": "medicare",
+      "audio_needed": true,
+      "audio": "/static/audio/en-AU/gap-fee-out-of-pocket.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "referral",
+      "th": "ใบส่งตัวจาก GP ไปหาหมอเฉพาะทาง ถ้าไม่มีใบนี้ Medicare ไม่ช่วยจ่าย แล้วแพงมาก",
+      "group": "medicare",
+      "audio_needed": true,
+      "audio": "/static/audio/en-AU/referral.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "fever",
+      "th": "ตัวร้อน เป็นไข้",
+      "group": "symptoms",
+      "audio_needed": true,
+      "audio": "/static/audio/en-AU/fever.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "cough",
+      "th": "ไอ",
+      "group": "symptoms",
+      "audio_needed": true,
+      "audio": "/static/audio/en-AU/cough.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "sore throat",
+      "th": "เจ็บคอ",
+      "group": "symptoms",
+      "audio_needed": true,
+      "audio": "/static/audio/en-AU/sore-throat.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "rash",
+      "th": "ผื่นขึ้น ผิวแดง ๆ คัน ๆ",
+      "group": "symptoms",
+      "audio_needed": true,
+      "audio": "/static/audio/en-AU/rash.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "run-down",
+      "th": "เพลีย ๆ ไม่มีแรง ไม่ได้ป่วยหนักแต่รู้สึกโทรม ๆ พูดกับหมอได้เลยว่า I've been feeling run-down",
+      "group": "symptoms",
+      "audio_needed": true,
+      "audio": "/static/audio/en-AU/run-down.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "script (prescription)",
+      "th": "ใบสั่งยาจากหมอ เอาไปยื่นที่ chemist เพื่อรับยา",
+      "group": "outcomes",
+      "audio_needed": true,
+      "audio": "/static/audio/en-AU/script-prescription.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "blood test",
+      "th": "ตรวจเลือด หมอให้ใบมา แล้วเราไปที่ pathology เอง",
+      "group": "outcomes",
+      "audio_needed": true,
+      "audio": "/static/audio/en-AU/blood-test.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "follow-up",
+      "th": "นัดครั้งถัดไป มาฟังผลหรือให้หมอดูอาการอีกที",
+      "group": "outcomes",
+      "audio_needed": true,
+      "audio": "/static/audio/en-AU/follow-up.mp3",
+      "th_status": "draft_unverified"
+    }
+  ],
+  "model_dialogues": [
+    {
+      "cefr": "A2",
+      "label": "A standard GP visit",
+      "lines": [
+        {
+          "speaker": "reception",
+          "text": "Hi there! Have you got your Medicare card?",
+          "audio": "/static/audio/en-AU/hi-there-have-you-got-your-medicare-card.mp3",
+          "th": "สวัสดีค่ะ มีบัตร Medicare มาด้วยไหมคะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "patient",
+          "text": "Yes, here you go. Is it bulk billed?",
+          "audio": "/static/audio/en-AU/yes-here-you-go-is-it-bulk-billed.mp3",
+          "ceiling": 99.0,
+          "ceiling_spread": [
+            98.0,
+            100.0
+          ],
+          "ceiling_voices": 4,
+          "th": "มีค่ะ นี่เลย แล้วที่นี่ bulk billed ใช่ไหมคะ (คือ Medicare จ่ายให้หมด เราไม่ต้องควักเงินเอง)",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "reception",
+          "text": "It is, no charge today. Take a seat, the doctor won't be long.",
+          "audio": "/static/audio/en-AU/it-is-no-charge-today-take-a-seat-the-doctor-won-t-be-long.mp3",
+          "th": "ใช่ค่ะ วันนี้ไม่เสียสักบาท นั่งรอก่อนนะคะ เดี๋ยวหมอเรียก ไม่นาน",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "gp",
+          "text": "G'day, what brings you in today?",
+          "audio": "/static/audio/en-AU/g-day-what-brings-you-in-today.mp3",
+          "th": "สวัสดีครับ วันนี้มาด้วยเรื่องอะไรครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "patient",
+          "text": "I've had a sore throat and a fever for three days.",
+          "audio": "/static/audio/en-AU/i-ve-had-a-sore-throat-and-a-fever-for-three-days.mp3",
+          "ceiling": 100.0,
+          "ceiling_spread": [
+            100.0,
+            100.0
+          ],
+          "ceiling_voices": 4,
+          "th": "เจ็บคอแล้วก็มีไข้มาสามวันแล้วค่ะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "gp",
+          "text": "Let's have a look. It's a throat infection. I'll write you a script - take it twice a day for five days.",
+          "audio": "/static/audio/en-AU/let-s-have-a-look-it-s-a-throat-infection-i-ll-write-you-a-s.mp3",
+          "th": "ขอดูหน่อยนะ… คออักเสบติดเชื้อ เดี๋ยวเขียน script ให้ (ใบสั่งยาไปซื้อที่ร้านยา) กินวันละ 2 ครั้ง 5 วัน",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "patient",
+          "text": "Thanks. Where's the nearest chemist?",
+          "audio": "/static/audio/en-AU/thanks-where-s-the-nearest-chemist.mp3",
+          "ceiling": 100.0,
+          "ceiling_spread": [
+            100.0,
+            100.0
+          ],
+          "ceiling_voices": 4,
+          "th": "ขอบคุณค่ะ แถวนี้ chemist (ร้านขายยา) ที่ใกล้สุดอยู่ตรงไหนคะ",
+          "th_status": "draft_unverified"
+        }
+      ],
+      "shadow_focus_lines": [
+        {
+          "text": "Is it bulk billed?",
+          "targets": [
+            "clusters",
+            "final_consonants"
+          ],
+          "ceiling": 100.0,
+          "ceiling_spread": [
+            100.0,
+            100.0
+          ],
+          "ceiling_voices": 4,
+          "audio": "/static/audio/en-AU/is-it-bulk-billed.mp3"
+        },
+        {
+          "text": "for three days",
+          "targets": [
+            "th",
+            "numbers"
+          ],
+          "ceiling": 98.2,
+          "ceiling_spread": [
+            98.0,
+            99.0
+          ],
+          "ceiling_voices": 4,
+          "audio": "/static/audio/en-AU/for-three-days.mp3"
+        },
+        {
+          "text": "take it twice a day",
+          "targets": [
+            "numbers",
+            "final_consonants"
+          ],
+          "ceiling": 100.0,
+          "ceiling_spread": [
+            100.0,
+            100.0
+          ],
+          "ceiling_voices": 4,
+          "audio": "/static/audio/en-AU/take-it-twice-a-day.mp3"
+        },
+        {
+          "text": "the nearest chemist",
+          "targets": [
+            "final_consonants"
+          ],
+          "ceiling": 100.0,
+          "ceiling_spread": [
+            100.0,
+            100.0
+          ],
+          "ceiling_voices": 4,
+          "audio": "/static/audio/en-AU/the-nearest-chemist.mp3"
+        }
+      ]
+    },
+    {
+      "cefr": "B1",
+      "label": "The same visit, gone off-script (gap fee, allergies, referral, pathology)",
+      "lines": [
+        {
+          "speaker": "reception",
+          "text": "Morning! Have you been here before? I'll just need your Medicare card.",
+          "audio": "/static/audio/en-AU/morning-have-you-been-here-before-i-ll-just-need-your-medica.mp3",
+          "th": "อรุณสวัสดิ์ค่ะ เคยมาที่นี่ไหมคะ ขอบัตร Medicare หน่อยนะคะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "patient",
+          "text": "Here you are. Sorry, is there a gap fee?",
+          "audio": "/static/audio/en-AU/here-you-are-sorry-is-there-a-gap-fee.mp3",
+          "ceiling": 96.5,
+          "ceiling_spread": [
+            95.0,
+            98.0
+          ],
+          "ceiling_voices": 4,
+          "th": "นี่ค่ะ ขอโทษนะคะ ต้องจ่าย gap fee ไหม (ส่วนต่างที่เราต้องจ่ายเองเพิ่ม)",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "reception",
+          "text": "There is, yeah — we don't bulk bill. It's forty dollars after the Medicare rebate.",
+          "audio": "/static/audio/en-AU/there-is-yeah-we-don-t-bulk-bill-it-s-forty-dollars-after-th.mp3",
+          "th": "มีค่ะ ที่นี่ไม่ได้ bulk bill หัก Medicare rebate (เงินที่ Medicare คืนให้) แล้ว ต้องจ่ายเพิ่มอีก 40 เหรียญ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "patient",
+          "text": "Okay. Do I pay now or after?",
+          "audio": "/static/audio/en-AU/okay-do-i-pay-now-or-after.mp3",
+          "ceiling": 99.2,
+          "ceiling_spread": [
+            99.0,
+            100.0
+          ],
+          "ceiling_voices": 4,
+          "th": "โอเคค่ะ จ่ายตอนนี้เลย หรือจ่ายทีหลัง",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "reception",
+          "text": "After you see the doctor. Take a seat, she won't be long.",
+          "audio": "/static/audio/en-AU/after-you-see-the-doctor-take-a-seat-she-won-t-be-long.mp3",
+          "th": "จ่ายหลังเจอหมอค่ะ นั่งรอก่อนนะคะ เดี๋ยวคุณหมอเรียก ไม่นาน",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "gp",
+          "text": "G'day, I'm Dr Ellis. What's been going on?",
+          "audio": "/static/audio/en-AU/g-day-i-m-dr-ellis-what-s-been-going-on.mp3",
+          "th": "สวัสดีครับ ผมหมอ Ellis เป็นอะไรมาครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "patient",
+          "text": "I've had a sore throat for about a week and I'm really run-down.",
+          "audio": "/static/audio/en-AU/i-ve-had-a-sore-throat-for-about-a-week-and-i-m-really-run-d.mp3",
+          "ceiling": 100.0,
+          "ceiling_spread": [
+            100.0,
+            100.0
+          ],
+          "ceiling_voices": 4,
+          "th": "เจ็บคอมาประมาณอาทิตย์นึงแล้วค่ะ แล้วก็เพลียมาก ไม่มีแรงเลย",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "gp",
+          "text": "A week's a fair while. Any fever with it, and is it hard to swallow?",
+          "audio": "/static/audio/en-AU/a-week-s-a-fair-while-any-fever-with-it-and-is-it-hard-to-sw.mp3",
+          "th": "อาทิตย์นึงก็นานอยู่นะ มีไข้ด้วยไหม แล้วกลืนลำบากรึเปล่า",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "patient",
+          "text": "It hurts when I swallow. I think I had a fever on the weekend.",
+          "audio": "/static/audio/en-AU/it-hurts-when-i-swallow-i-think-i-had-a-fever-on-the-weekend.mp3",
+          "ceiling": 100.0,
+          "ceiling_spread": [
+            100.0,
+            100.0
+          ],
+          "ceiling_voices": 4,
+          "th": "กลืนแล้วเจ็บค่ะ แล้วเสาร์อาทิตย์ที่ผ่านมารู้สึกเหมือนมีไข้ด้วย",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "gp",
+          "text": "Right. Are you allergic to anything — penicillin, any medications?",
+          "audio": "/static/audio/en-AU/right-are-you-allergic-to-anything-penicillin-any-medication.mp3",
+          "th": "โอเค แล้วแพ้อะไรไหม เช่น penicillin หรือยาตัวอื่น",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "patient",
+          "text": "I'm allergic to penicillin. It gives me a rash.",
+          "audio": "/static/audio/en-AU/i-m-allergic-to-penicillin-it-gives-me-a-rash.mp3",
+          "ceiling": 99.2,
+          "ceiling_spread": [
+            99.0,
+            100.0
+          ],
+          "ceiling_voices": 4,
+          "th": "แพ้ penicillin ค่ะ กินแล้วขึ้นผื่น",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "gp",
+          "text": "Good to know, I'll avoid that. I'd like a blood test to rule a few things out, and I'll refer you to an ENT specialist if it doesn't settle.",
+          "audio": "/static/audio/en-AU/good-to-know-i-ll-avoid-that-i-d-like-a-blood-test-to-rule-a.mp3",
+          "th": "ดีที่บอก เดี๋ยวเลี่ยงให้ ผมอยากให้ไปเจาะเลือดตรวจก่อน จะได้ตัดโรคอื่นออก แล้วถ้ายังไม่ดีขึ้น เดี๋ยวเขียน refer ส่งไปหาหมอเฉพาะทาง ENT (หู คอ จมูก) ให้",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "patient",
+          "text": "Sorry, what does the referral do? Do I need it to see the specialist?",
+          "audio": "/static/audio/en-AU/sorry-what-does-the-referral-do-do-i-need-it-to-see-the-spec.mp3",
+          "ceiling": 97.0,
+          "ceiling_spread": [
+            96.0,
+            98.0
+          ],
+          "ceiling_voices": 4,
+          "th": "ขอโทษนะคะ ใบ referral นี่คืออะไรคะ ต้องมีถึงจะไปหาหมอเฉพาะทางได้เหรอ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "gp",
+          "text": "You do — without it Medicare won't cover the visit. I'll print it now, and it's valid for twelve months.",
+          "audio": "/static/audio/en-AU/you-do-without-it-medicare-won-t-cover-the-visit-i-ll-print-.mp3",
+          "th": "ต้องมีครับ ถ้าไม่มี Medicare จะไม่ช่วยจ่ายค่าตรวจให้ เดี๋ยวปริ้นให้เลย ใช้ได้ 12 เดือน",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "patient",
+          "text": "And where do I go for the blood test?",
+          "audio": "/static/audio/en-AU/and-where-do-i-go-for-the-blood-test.mp3",
+          "ceiling": 100.0,
+          "ceiling_spread": [
+            100.0,
+            100.0
+          ],
+          "ceiling_voices": 4,
+          "th": "แล้วเจาะเลือดต้องไปที่ไหนคะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "gp",
+          "text": "Pathology's on the ground floor. Take the form down, no appointment needed. Results in a couple of days.",
+          "audio": "/static/audio/en-AU/pathology-s-on-the-ground-floor-take-the-form-down-no-appoin.mp3",
+          "th": "Pathology (แล็บตรวจเลือด) อยู่ชั้นล่าง ถือใบนี้ลงไปยื่นได้เลย ไม่ต้องนัด ผลออกประมาณสองสามวัน",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "patient",
+          "text": "Could you write that down for me, please?",
+          "audio": "/static/audio/en-AU/could-you-write-that-down-for-me-please.mp3",
+          "ceiling": 100.0,
+          "ceiling_spread": [
+            100.0,
+            100.0
+          ],
+          "ceiling_voices": 4,
+          "th": "รบกวนเขียนให้หน่อยได้ไหมคะ",
+          "th_status": "draft_unverified"
+        }
+      ],
+      "shadow_focus_lines": [
+        {
+          "text": "Sorry, is there a gap fee?",
+          "targets": [
+            "final_consonants",
+            "clusters"
+          ],
+          "audio": "/static/audio/en-AU/sorry-is-there-a-gap-fee.mp3",
+          "ceiling": 93.8,
+          "ceiling_spread": [
+            92.0,
+            95.0
+          ],
+          "ceiling_voices": 4
+        },
+        {
+          "text": "I'm allergic to penicillin.",
+          "targets": [
+            "r_l",
+            "final_consonants"
+          ],
+          "audio": "/static/audio/en-AU/i-m-allergic-to-penicillin.mp3",
+          "ceiling": 98.5,
+          "ceiling_spread": [
+            98.0,
+            100.0
+          ],
+          "ceiling_voices": 4
+        },
+        {
+          "text": "Do I need it to see the specialist?",
+          "targets": [
+            "clusters",
+            "final_consonants"
+          ],
+          "audio": "/static/audio/en-AU/do-i-need-it-to-see-the-specialist.mp3",
+          "ceiling": 99.5,
+          "ceiling_spread": [
+            99.0,
+            100.0
+          ],
+          "ceiling_voices": 4
+        },
+        {
+          "text": "Could you write that down for me, please?",
+          "targets": [
+            "final_consonants",
+            "r_l"
+          ],
+          "audio": "/static/audio/en-AU/could-you-write-that-down-for-me-please.mp3",
+          "ceiling": 100.0,
+          "ceiling_spread": [
+            100.0,
+            100.0
+          ],
+          "ceiling_voices": 4
+        }
+      ]
+    }
+  ],
+  "chunk_drills": [
+    {
+      "label": "Symptom formula (recycled from core medical unit)",
+      "pattern": "I have (a) ___ / My ___ hurts",
+      "examples": [
+        "I have a fever.",
+        "My throat hurts."
+      ],
+      "spiralled_grammar": "present perfect for duration: I've had this cough for two days"
+    },
+    {
+      "label": "Pain description",
+      "pattern": "location + type (sharp/dull) + severity (0-10) + timing",
+      "examples": [
+        "It's a sharp pain in my lower back, about a seven out of ten.",
+        "It comes and goes."
+      ],
+      "spiralled_grammar": "for + duration, since + point in time"
+    },
+    {
+      "label": "The money question (AU-specific)",
+      "pattern": "Is it bulk billed? / Is there a gap fee? / How much is the appointment?",
+      "examples": [
+        "Is it bulk billed?",
+        "Is there a gap fee?"
+      ],
+      "spiralled_grammar": "recycles 'how much' from shopping scenarios"
+    },
+    {
+      "label": "Referral and script (AU-specific)",
+      "pattern": "Do I need a ___? / Can you write me a ___?",
+      "examples": [
+        "Do I need a referral?",
+        "Can you write me a script?",
+        "Is there a generic?",
+        "Do I need a blood test?"
+      ],
+      "spiralled_grammar": "modal questions for requests"
+    },
+    {
+      "label": "Clarification (recycled everywhere)",
+      "pattern": "Sorry, could you ___?",
+      "examples": [
+        "Sorry, could you say that again?",
+        "Could you write it down?"
+      ],
+      "spiralled_grammar": "polite request with could"
+    }
+  ],
+  "listening_items": [
+    {
+      "audio_text": "We've got nothing till this arvo - is 3:15 okay?",
+      "channel": "phone",
+      "question": "What time is offered?",
+      "answer": "3:15 pm",
+      "distractor_focus": "AU slang 'arvo' + time comprehension"
+    },
+    {
+      "audio_text": "Take one tablet three times a day for seven days.",
+      "channel": "in_person",
+      "question": "How many per day? For how long?",
+      "answer": "3 per day, 7 days",
+      "distractor_focus": "three/tree and number discrimination"
+    },
+    {
+      "audio_text": "I'll refer you to a skin specialist - you'll need this letter to book in.",
+      "channel": "in_person",
+      "question": "What do you need to bring to the specialist?",
+      "answer": "the referral letter",
+      "distractor_focus": "referral concept + /r/-/l/"
+    },
+    {
+      "audio_text": "That'll be a thirty dollar gap, or is it thirteen? Let me check - thirty.",
+      "channel": "in_person",
+      "question": "How much is the gap fee?",
+      "answer": "$30",
+      "distractor_focus": "thirteen/thirty"
+    }
+  ],
+  "guided_roleplay": {
+    "learner_role": "patient",
+    "flow": [
+      "book by phone",
+      "check in and ask if it's bulk billed",
+      "describe symptoms with the formula",
+      "answer how long / how bad",
+      "understand the outcome (script / referral / test)",
+      "ask where to go next"
+    ],
+    "sentence_frames": [
+      "I've had a ___ for ___ days.",
+      "Is it bulk billed?",
+      "It's about a ___ out of ten.",
+      "Sorry, could you say that again?",
+      "Where's the nearest chemist?"
+    ],
+    "hints_available": true
+  },
+  "free_roleplay": {
+    "ai_persona": "an Australian GP - casual, warm, uses first names, slightly time-pressured but kind",
+    "a2_behavior": "stays on the standard script: greeting, symptoms, diagnosis, script, done",
+    "b1_curveballs": [
+      "asks about allergies or current medication",
+      "refers the patient to a specialist and explains the referral and the gap",
+      "orders a blood test and sends them to pathology",
+      "the clinic doesn't bulk bill - there's a $40 gap"
+    ],
+    "roleplay_rubric": [
+      {
+        "criterion": "completed all five sub-steps",
+        "type": "required"
+      },
+      {
+        "criterion": "asked the Medicare / bulk-billing question at reception",
+        "type": "required"
+      },
+      {
+        "criterion": "used the symptom formula correctly (location/type/severity/timing)",
+        "type": "required"
+      },
+      {
+        "criterion": "understood the outcome - script dosage OR referral/test next-step (verified by a comprehension turn)",
+        "type": "required"
+      },
+      {
+        "criterion": "asked at least one clarification question when needed",
+        "type": "required"
+      },
+      {
+        "criterion": "th / final consonants (incl. 'bulk billed') / 'referral' / numbers intelligible",
+        "type": "pronunciation"
+      },
+      {
+        "criterion": "register stayed appropriately casual-polite",
+        "type": "required"
+      },
+      {
+        "criterion": "coped with an off-script curveball (gap fee / referral / test) without breaking down",
+        "type": "stretch_b1"
+      }
+    ]
+  },
+  "register_culture_note": {
+    "en": "Australian medical register is casual - GPs often use first names and a relaxed tone. Asking 'Is it bulk billed?' is completely normal and not rude; clinics expect it. The GP is a gatekeeper: you generally can't self-refer to a specialist and claim Medicare, so say 'I'd like a referral to...' rather than booking the specialist directly.",
+    "th": null,
+    "_th_status": "not_authored - needs native Thai author, do not auto-generate",
+    "do_dont": [
+      {
+        "avoid": "Give me strong medicine.",
+        "prefer": "What treatment do you recommend?"
+      },
+      {
+        "avoid": "I'm allergic to antibiotics.",
+        "prefer": "I'm allergic to penicillin. (name the drug and the reaction)"
+      }
+    ],
+    "thai_cultural_note": "Australian GPs expect you to describe symptoms proactively and ask questions. Under-reporting to avoid being a bother can lead to worse care - being specific is helpful, not impolite."
+  },
+  "can_do_checkpoints": [
+    {
+      "cefr": "A2",
+      "statement": "I can book a GP appointment and check in with my Medicare card."
+    },
+    {
+      "cefr": "A2",
+      "statement": "I can ask whether the appointment is bulk billed."
+    },
+    {
+      "cefr": "A2",
+      "statement": "I can describe common symptoms and understand a script's dosage."
+    },
+    {
+      "cefr": "B1",
+      "statement": "I can describe pain by location, type, severity, and timing."
+    },
+    {
+      "cefr": "B1",
+      "statement": "I can understand a referral or a blood-test request and ask what to do next."
+    },
+    {
+      "cefr": "sound",
+      "statement": "My th, final consonants ('bulk billed', 'script'), 'referral', and numbers are intelligible."
+    }
+  ],
+  "gamification": {
+    "xp_per_substep": true,
+    "unlocks": [
+      "au_pharmacy_pbs",
+      "au_specialist_referral"
+    ],
+    "sound_meters": [
+      "th",
+      "final_consonants",
+      "clusters",
+      "r_l",
+      "numbers"
+    ]
+  },
+  "_review_status": {
+    "thai_strings": "DRAFT - machine-generated, tagged th_status=draft_unverified. A native Thai speaker must review every string and set th_status='reviewed'.",
+    "au_facts": "UNVERIFIED - author-level knowledge of Medicare/bulk billing/referrals; needs local fact-check before shipping"
+  }
+}

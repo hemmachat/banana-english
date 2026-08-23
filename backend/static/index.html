@@ -1,0 +1,725 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+<title>Papaya</title>
+<script src="https://aka.ms/csspeech/jsbrowserpackageraw"></script>
+<style>
+  :root{--orange:#FF8A3D;--coral:#F4603E;--green:#7CB83A;--char:#2E2A2B;--cream:#FFE9CE}
+  *{box-sizing:border-box}
+  body{margin:0;font:16px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+       color:var(--char);background:var(--cream)}
+  header{background:var(--orange);color:#fff;padding:14px 18px}
+  header b{font-size:19px}header span{opacity:.9;font-size:13px;display:block}
+  main{max-width:640px;margin:0 auto;padding:16px}
+  .card{background:#fff;border-radius:14px;padding:16px;margin-bottom:14px;
+        box-shadow:0 1px 3px rgba(0,0,0,.09)}
+  h2{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:#8a7f7a;margin:0 0 10px}
+  .vocab{display:flex;flex-wrap:wrap;gap:7px}
+  .vocab button{background:var(--cream);color:var(--char);border-radius:999px;padding:7px 13px;
+                font-size:14px;font-weight:500;display:inline-flex;gap:6px;align-items:center}
+  .vocab button.playing{background:var(--orange);color:#fff}
+  .listen{background:#fff;color:var(--orange);border:1.5px solid var(--orange);padding:9px 14px;margin-right:8px}
+  .listen.playing{background:var(--orange);color:#fff}
+  .row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+  .line{border-top:1px solid #f0ebe6;padding:13px 0}.line:first-of-type{border-top:0}
+  .line p{margin:0 0 9px;font-size:19px;font-weight:600}
+  .tags{font-size:12px;color:#8a7f7a;margin-left:6px;font-weight:400}
+  button{font:inherit;border:0;border-radius:10px;padding:11px 17px;background:var(--orange);
+         color:#fff;font-weight:600;cursor:pointer;-webkit-tap-highlight-color:transparent}
+  button:disabled{opacity:.45}
+  button.rec{background:var(--coral)}
+  .res{margin-top:9px;font-size:14px;display:none}
+  .res.show{display:block}
+  .bar{height:9px;border-radius:5px;background:#eee;overflow:hidden;margin:7px 0}
+  .bar i{display:block;height:100%;background:var(--green);width:0;transition:width .4s}
+  .verdict{font-size:17px;font-weight:700;margin-bottom:7px}
+  .verdict.good{color:var(--green)}.verdict.work{color:var(--coral)}
+  .meta{color:#8a7f7a;font-size:12.5px}
+  .err{color:#c0392b}
+  .word{display:inline-block;padding:1px 5px;border-radius:5px;margin:2px 2px 0 0;font-size:13.5px;background:#f3f0ec}
+  .word.bad{background:#fde3de;color:#a03428;font-weight:600}
+  #boot{padding:16px;font-size:14px;color:#8a7f7a}
+  .stats{display:flex;gap:10px;text-align:center}
+  .stats div{flex:1;background:var(--cream);border-radius:11px;padding:10px 6px}
+  .stats b{display:block;font-size:22px;line-height:1.15}
+  .stats span{font-size:11px;color:#8a7f7a;text-transform:uppercase;letter-spacing:.05em}
+  .ach{display:flex;gap:11px;align-items:center;padding:9px 0;border-top:1px solid #f0ebe6}
+  .ach:first-child{border-top:0}
+  .ach .medal{width:37px;height:37px;border-radius:50%;display:grid;place-items:center;
+              background:#f3f0ec;font-size:18px;flex:0 0 auto;filter:grayscale(1);opacity:.45}
+  .ach.on .medal{background:var(--orange);filter:none;opacity:1}
+  .ach b{font-size:14.5px;display:block}
+  .ach small{color:#8a7f7a;font-size:12.5px}
+  .ach .pbar{height:5px;border-radius:3px;background:#eee;margin-top:5px;overflow:hidden}
+  .ach .pbar i{display:block;height:100%;background:var(--orange)}
+  input{font:inherit;padding:10px 12px;border:1.5px solid #e6ded6;border-radius:10px;width:100%;
+        margin-bottom:9px;background:#fff}
+  .code{font-family:ui-monospace,Menlo,monospace;font-size:19px;letter-spacing:.09em;
+        background:var(--cream);padding:9px 13px;border-radius:9px;display:inline-block}
+  .chat{max-height:340px;overflow-y:auto;margin-bottom:11px}
+  .msg{padding:9px 13px;border-radius:15px;margin:6px 0;max-width:82%;font-size:15px;line-height:1.45}
+  .msg.them{background:var(--cream);border-bottom-left-radius:5px}
+  .msg.me{background:var(--orange);color:#fff;margin-left:auto;border-bottom-right-radius:5px}
+  .msg.sys{background:none;color:#8a7f7a;font-size:13px;text-align:center;max-width:100%}
+  .lvl{display:inline-flex;gap:0;border:1.5px solid var(--orange);border-radius:9px;overflow:hidden}
+  .lvl button{background:#fff;color:var(--orange);padding:6px 14px;border-radius:0;font-size:14px}
+  .lvl button.on{background:var(--orange);color:#fff}
+  .crit{padding:11px 0;border-top:1px solid #f0ebe6;font-size:14px;display:flex;gap:10px}
+  .crit .tick{flex:0 0 auto;width:21px;height:21px;border-radius:50%;display:grid;place-items:center;
+              font-size:12px;background:#eee;color:#999;margin-top:1px}
+  .crit.ok .tick{background:var(--green);color:#fff}
+  .said{background:#eef7e3;border-left:3px solid var(--green);padding:7px 10px;border-radius:0 8px 8px 0;
+        margin:6px 0;font-size:14px}
+  .try{background:var(--cream);border-left:3px solid var(--orange);padding:7px 10px;
+       border-radius:0 8px 8px 0;margin:6px 0;font-size:14px}
+  .said b,.try b{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.06em;
+                 color:#8a7f7a;font-weight:700;margin-bottom:2px}
+  .say-btn{background:none;color:var(--orange);padding:2px 0;font-size:13px;font-weight:600}
+  .result{text-align:center;padding:18px 0 6px}
+  .ring{width:118px;height:118px;margin:0 auto 10px;border-radius:50%;display:grid;place-items:center;
+        background:conic-gradient(var(--green) calc(var(--p)*1%), #eee 0)}
+  .ring div{width:94px;height:94px;border-radius:50%;background:#fff;display:grid;place-items:center;
+            line-height:1.05}
+  .ring b{font-size:31px;display:block}
+  .ring small{font-size:11px;color:#8a7f7a;text-transform:uppercase;letter-spacing:.06em}
+  .band{font-size:21px;font-weight:800;margin-bottom:3px}
+  .next{background:var(--char);color:#fff;border-radius:12px;padding:13px 15px;margin:14px 0 4px;
+        text-align:left;font-size:14.5px;line-height:1.5}
+  .next b{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.07em;opacity:.65;
+          margin-bottom:4px}
+  .goals{margin-top:16px}
+  .pace{background:var(--cream);border-radius:10px;padding:10px 13px;margin-bottom:11px;
+        font-size:13.5px;line-height:1.5}
+  .pace b{font-weight:700}
+  .dlg{border-radius:11px;padding:11px 13px;margin:7px 0;transition:background .25s}
+  .dlg.them{background:#f5f2ee}
+  .dlg.you{background:var(--cream);border-left:3px solid var(--orange)}
+  .dlg.now{background:#ffe0c2;box-shadow:0 0 0 2px var(--orange)}
+  .who{font-size:11px;text-transform:uppercase;letter-spacing:.07em;color:#8a7f7a;font-weight:700;
+       margin-bottom:3px}
+  .dlg.you .who{color:var(--coral)}
+  .dlg p{margin:0 0 7px;font-size:16px;line-height:1.45}
+  .mini{background:none;color:var(--orange);padding:3px 0;font-size:13px;font-weight:600;margin-right:14px}
+  .th{font-size:14px;color:#6b625d;line-height:1.55;margin:2px 0 6px}
+  body.nothai .th{display:none}
+  .vocab button{flex-direction:column;align-items:flex-start;text-align:left;max-width:100%}
+  .vocab .th{font-size:12.5px;margin:2px 0 0;white-space:normal}
+  .draft{font-size:10px;background:#ffe0c2;color:#a35a12;border-radius:4px;padding:1px 5px;
+         margin-left:6px;font-weight:700;letter-spacing:.03em;vertical-align:1px}
+  .thtoggle{background:none;color:var(--orange);font-size:13px;padding:4px 0}
+  .dots i{display:inline-block;width:7px;height:7px;border-radius:50%;background:#bbb;margin-right:3px;
+          animation:bl 1.2s infinite}
+  .dots i:nth-child(2){animation-delay:.2s}.dots i:nth-child(3){animation-delay:.4s}
+  @keyframes bl{0%,60%,100%{opacity:.25}30%{opacity:1}}
+  #jserr{background:#fde3de;color:#a03428;padding:11px 14px;font-size:13px;display:none}
+  .done{background:linear-gradient(160deg,var(--orange),var(--coral));color:#fff;text-align:center;
+        border-radius:14px;padding:22px 18px;margin-bottom:14px;display:none}
+  .done.show{display:block;animation:pop .45s ease-out}
+  @keyframes pop{from{transform:scale(.94);opacity:0}to{transform:scale(1);opacity:1}}
+  .done h3{margin:0 0 4px;font-size:22px}
+  .done .big{font-size:44px;font-weight:800;line-height:1.05;margin:10px 0 2px}
+  .done .sm{opacity:.92;font-size:14px}
+  .done .grid{display:flex;gap:9px;margin:15px 0 4px}
+  .done .grid div{flex:1;background:rgba(255,255,255,.2);border-radius:10px;padding:9px 5px}
+  .done .grid b{display:block;font-size:19px}
+  .done .grid span{font-size:11px;opacity:.9;text-transform:uppercase;letter-spacing:.04em}
+  .done button{background:#fff;color:var(--coral);margin-top:15px;width:100%}
+</style>
+
+<header><b>Papaya</b><span id="sub">loading…</span>
+  <button class="thtoggle" id="thToggle" style="position:absolute;right:14px;top:16px;color:#fff">ไทย ✓</button>
+</header>
+<div id="jserr"></div>
+<main id="app"><div id="boot">Starting…</div></main>
+<template id="doneTpl"><div class="done" id="done"></div></template>
+
+<script>
+const SDK = window.SpeechSDK;
+function fatal(msg) {
+  const b = document.getElementById('jserr');
+  b.style.display = 'block';
+  b.textContent = msg;
+}
+window.addEventListener('error', e => fatal('Error: ' + e.message));
+window.addEventListener('unhandledrejection', e => fatal('Error: ' + (e.reason?.message || e.reason)));
+if (!SDK) fatal('Speech SDK did not load — check your connection and reload.');
+const $ = (h) => { const t = document.createElement('template'); t.innerHTML = h.trim(); return t.content.firstChild; };
+let USER, UNIT, TOKEN;
+const player = new Audio();
+
+function play(src, btn) {
+  document.querySelectorAll('.playing').forEach(b => b.classList.remove('playing'));
+  if (!src) return;
+  player.pause();
+  player.src = src;
+  player.play().catch(() => {});          // iOS needs the tap; a rejected promise is not fatal
+  btn && btn.classList.add('playing');
+  player.onended = () => btn && btn.classList.remove('playing');
+}
+
+async function api(path, body) {
+  const r = await fetch(path, body ? {method:'POST', headers:{'content-type':'application/json'}, body:JSON.stringify(body)} : {});
+  if (!r.ok) throw new Error(path + ' -> ' + r.status);
+  return r.json();
+}
+
+// device identity, no auth (PLAN.md step 1)
+async function identify() {
+  let id = localStorage.getItem('papaya_uid');
+  const tz = Intl.DateTimeFormat().resolvedOptions().timeZone || 'Australia/Sydney';
+  id = (await api('/users', {id: id || undefined, tz})).id;
+  localStorage.setItem('papaya_uid', id);
+  return id;
+}
+
+async function speechConfig() {
+  // token is short-lived; refetch per attempt rather than caching and handling expiry
+  const t = await api('/speech-token');
+  const c = SDK.SpeechConfig.fromAuthorizationToken(t.token, t.region);
+  c.speechRecognitionLanguage = 'en-AU';
+  return c;
+}
+
+function shadow(line, opts) {
+  const ceiling = line.ceiling || 100;
+  const compact = opts && opts.compact;
+  const el = $(`<div class="line" ${compact ? 'style="border:0;padding:4px 0 0"' : ''}>
+      ${compact ? '' : `<p>${line.text}<span class="tags">${(line.targets||[]).join(' · ')}</span></p>`}
+      <div class="row">
+        ${compact ? '' : '<button class="listen">▶ Listen</button>'}
+        <button class="rec-btn">🎤 ${compact ? 'Record' : 'Record'}</button>
+      </div>
+      <div class="res"></div>
+    </div>`);
+  const listen = el.querySelector('.listen');
+  const btn = el.querySelector('.rec-btn'), res = el.querySelector('.res');
+  if (listen) {
+    listen.onclick = () => play(line.audio, listen);
+    if (!line.audio) listen.disabled = true;
+  }
+
+  let session = null;               // non-null while recording
+
+  async function begin() {
+    btn.classList.add('rec'); btn.textContent = '⏹ Stop';
+    res.className = 'res';
+    const t0 = Date.now();
+    const tick = setInterval(() => {
+      if (session) btn.textContent = `⏹ Stop  ${((Date.now() - t0) / 1000).toFixed(1)}s`;
+    }, 100);
+
+    let rec, settled = false;
+    const finish = (result, err) => {
+      if (settled) return;
+      settled = true;
+      clearInterval(tick);
+      session = null;
+      btn.classList.remove('rec'); btn.textContent = '🎤 Record again';
+      try { rec && rec.close(); } catch (e) {}
+      if (err) { show(null, err); } else { show(result, null, (Date.now() - t0) / 1000); }
+    };
+
+    try {
+      const cfg = await speechConfig();
+      // end the utterance quickly after a short line instead of waiting on the default timeout
+      try { cfg.setProperty(SDK.PropertyId.Speech_SegmentationSilenceTimeoutMs, '800'); } catch (e) {}
+
+      const pron = new SDK.PronunciationAssessmentConfig(
+        line.text, SDK.PronunciationAssessmentGradingSystem.HundredMark,
+        SDK.PronunciationAssessmentGranularity.Phoneme, true);
+      rec = new SDK.SpeechRecognizer(cfg, SDK.AudioConfig.fromDefaultMicrophoneInput());
+      pron.applyTo(rec);
+
+      // continuous rather than recognizeOnce, so the learner can stop it themselves
+      rec.recognized = (_s, e) => {
+        if (e.result.reason === SDK.ResultReason.RecognizedSpeech && e.result.text) {
+          rec.stopContinuousRecognitionAsync(() => finish(e.result), () => finish(e.result));
+        }
+      };
+      rec.canceled = (_s, e) => finish(null, e.errorDetails || 'Recognition cancelled');
+
+      session = {
+        stop: () => rec.stopContinuousRecognitionAsync(
+          () => finish(null, settled ? null : "Didn't catch that - try again, a bit louder."),
+          () => finish(null, 'Could not stop cleanly')),
+      };
+      rec.startContinuousRecognitionAsync(() => {}, (e) => finish(null, String(e)));
+    } catch (e) {
+      finish(null, e.message);
+    }
+  }
+
+  function show(result, err, secs) {
+    if (err) { res.innerHTML = `<span class="err">${err}</span>`; res.classList.add('show'); return; }
+    const pa = SDK.PronunciationAssessmentResult.fromResult(result);
+    const raw = pa.accuracyScore;
+    // Step 0: a perfect native take does not score 100, so always show relative to the ceiling
+    const score = Math.max(0, Math.min(100, raw / ceiling * 100));
+
+    const all = pa.detailResult?.Words || [];
+    const bad = all.filter(w => w.PronunciationAssessment?.ErrorType &&
+                                w.PronunciationAssessment.ErrorType !== 'None');
+    // spike/README.md 6d: the number compresses at low proficiency, the error flag does not
+    const verdict = bad.length
+      ? `<div class="verdict work">Work on: <b>${bad.map(w => w.Word).join(', ')}</b></div>`
+      : `<div class="verdict good">\u2713 All words clear</div>`;
+    const words = all.map(w => {
+      const isBad = w.PronunciationAssessment?.ErrorType &&
+                    w.PronunciationAssessment.ErrorType !== 'None';
+      return `<span class="word${isBad ? ' bad' : ''}">${w.Word}</span>`;
+    }).join('');
+    const clipped = pa.completenessScore === 0 || pa.fluencyScore === 0;
+
+    res.innerHTML = verdict + `<div>${words}</div>
+      <div class="bar"><i style="width:${score}%"></i></div>
+      <div class="meta">${clipped ? '\u26a0\ufe0e recording was very short \u2014 leave a beat before and after \u00b7 ' : ''}
+        clarity ${score.toFixed(0)}/100 \u00b7 heard \u201c${result.text || '\u2014'}\u201d</div>`;
+    res.classList.add('show');
+
+    api('/attempts', {
+      user_id: USER, scenario_id: UNIT.scenario_id, stage: 'shadow',
+      sound_target: (line.targets || [])[0] || null, scoring_method: 'phoneme',
+      raw_score: raw, ceiling, seconds_spoken: secs || 0,
+      line_ref: line.text,
+      raw: pa.detailResult || null,
+    }).then(refreshProgress).catch(() => {});
+  }
+
+  btn.onclick = () => session ? session.stop() : begin();
+
+  return el;
+}
+
+async function refreshProgress() {
+  const p = await api(`/users/${USER}/progress`);
+  document.getElementById('sub').textContent = p.display_name
+    ? `${p.display_name} · ${p.streak_days}d streak` : 'Speak English with confidence';
+
+  const stats = document.getElementById('stats');
+  if (stats) stats.innerHTML = `
+    <div><b>${p.total_minutes_spoken}</b><span>min spoken</span></div>
+    <div><b>${p.streak_days}</b><span>day streak</span></div>
+    <div><b>${p.xp}</b><span>XP</span></div>
+    <div><b>${p.clean_takes}</b><span>clear takes</span></div>`;
+
+  const ach = document.getElementById('ach');
+  if (ach) ach.innerHTML = p.achievements.map(a => `
+    <div class="ach ${a.earned ? 'on' : ''}">
+      <div class="medal">${a.earned ? '★' : '☆'}</div>
+      <div style="flex:1">
+        <b>${a.title}</b><small>${a.blurb}</small>
+        ${a.earned ? '' : `<div class="pbar"><i style="width:${a.progress / a.target * 100}%"></i></div>`}
+      </div>
+    </div>`).join('');
+
+  renderProfile(p);
+  maybeFinish(p);
+
+  const box = document.getElementById('meters');
+  if (!box) return;
+  box.innerHTML = p.sound_meters.length
+    ? p.sound_meters.map(m => `<div style="margin:8px 0">
+        <div class="meta">${m.sound_target} <b style="color:var(--char)">${m.avg_score}</b>
+          <span style="opacity:.7">(${m.attempts})</span></div>
+        <div class="bar"><i style="width:${m.avg_score}%"></i></div></div>`).join('')
+    : '<div class="meta">Record a line to start your sound meters.</div>';
+
+  if (p.weakest_line) {
+    box.innerHTML += `<div class="meta" style="margin-top:10px">
+      Come back to: <b style="color:var(--char)">“${p.weakest_line}”</b></div>`;
+  }
+}
+
+// The end of a session is where the next visit is earned. Show it once, when they've actually
+// done the work - not on every progress refresh.
+let doneShown = false;
+function maybeFinish(p) {
+  const t = p.today || {};
+  const linesDone = new Set(
+    (p.lines || []).map(l => l.line_ref)).size >= 3;
+  const enough = (t.shadow_takes >= 3 && t.roleplays >= 1) || linesDone && t.roleplays >= 1;
+  if (!enough || doneShown) return;
+  doneShown = true;
+
+  const imp = t.improved;
+  const el = document.getElementById('done');
+  el.innerHTML = `
+    <h3>Nice work${p.display_name ? ', ' + p.display_name : ''}</h3>
+    <div class="sm">You spoke English for</div>
+    <div class="big">${t.minutes} min</div>
+    ${imp && Number(imp.gain) > 0
+      ? `<div class="sm">Your <b>${imp.sound_target.replace(/_/g, ' ')}</b> improved
+           <b>+${imp.gain}</b> points today — now ${imp.now}.</div>`
+      : `<div class="sm">Every take counts. Come back tomorrow and it gets easier.</div>`}
+    <div class="grid">
+      <div><b>${t.shadow_takes}</b><span>lines</span></div>
+      <div><b>${t.roleplays}</b><span>conversation${t.roleplays == 1 ? '' : 's'}</span></div>
+      <div><b>${p.streak_days}</b><span>day streak</span></div>
+    </div>
+    ${p.weakest_line ? `<div class="sm" style="margin-top:10px">
+       Tomorrow, start with “${p.weakest_line}”.</div>` : ''}
+    <button id="doneOk">Keep going</button>`;
+  el.classList.add('show');
+  el.scrollIntoView({behavior: 'smooth', block: 'center'});
+  document.getElementById('doneOk').onclick = () => el.classList.remove('show');
+}
+
+function renderProfile(p) {
+  const el = document.getElementById('profile');
+  if (!el || el.dataset.editing) return;
+  el.innerHTML = `
+    <input id="pname" placeholder="What should we call you?" value="${p.display_name || ''}">
+    <input id="pgoal" placeholder="Why are you learning? (e.g. talk to my GP)" value="${p.goal || ''}">
+    <input id="pmail" type="email" placeholder="Email (optional, to get your progress back)" value="">
+    <button id="psave">Save</button>
+    <div class="meta" style="margin-top:12px">
+      Your restore code - write this down. It brings your progress back on a new phone.<br>
+      <span class="code">${p.restore_code || '—'}</span>
+    </div>`;
+  ['pname', 'pgoal', 'pmail'].forEach(id =>
+    el.querySelector('#' + id).onfocus = () => el.dataset.editing = '1');
+  el.querySelector('#psave').onclick = async () => {
+    const body = {
+      display_name: el.querySelector('#pname').value.trim() || null,
+      goal: el.querySelector('#pgoal').value.trim() || null,
+    };
+    const mail = el.querySelector('#pmail').value.trim();
+    if (mail) body.email = mail;
+    const r = await fetch(`/users/${USER}`, {method: 'PATCH',
+      headers: {'content-type': 'application/json'}, body: JSON.stringify(body)});
+    delete el.dataset.editing;
+    if (!r.ok) { el.querySelector('#psave').textContent = (await r.json()).error || 'Failed'; return; }
+    refreshProgress();
+  };
+}
+
+// --- free roleplay ---------------------------------------------------------------------------
+const RP = {messages: [], level: 'A2', busy: false, started: null, session: null};
+
+function bubble(cls, text) {
+  const c = document.getElementById('chat');
+  c.appendChild($(`<div class="msg ${cls}">${text}</div>`));
+  c.scrollTop = c.scrollHeight;
+}
+
+// Matches SPEECH_RATE in render_audio.py. A tester found the default rate unrealistic - real
+// Australians speak faster, and a slowed-down model teaches a target that doesn't exist.
+const SPEECH_RATE = '+18%';
+const xmlEsc = (t) => t.replace(/[<>&'"]/g,
+  c => ({'<': '&lt;', '>': '&gt;', '&': '&amp;', "'": '&apos;', '"': '&quot;'}[c]));
+
+async function speak(text) {
+  // runtime TTS is justified here and only here: the reply is generated, not fixed content
+  try {
+    const t = await api('/speech-token');
+    const cfg = SDK.SpeechConfig.fromAuthorizationToken(t.token, t.region);
+    const ssml = `<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="en-AU">`
+      + `<voice name="en-AU-NatashaNeural"><prosody rate="${SPEECH_RATE}">`
+      + `${xmlEsc(text)}</prosody></voice></speak>`;
+    await new Promise((done) => {
+      const sy = new SDK.SpeechSynthesizer(cfg);
+      sy.speakSsmlAsync(ssml, () => { sy.close(); done(); }, () => { sy.close(); done(); });
+    });
+  } catch (e) { /* speech is a bonus; the text is already on screen */ }
+}
+
+async function rpTurn(said) {
+  if (said) { RP.messages.push({role: 'user', content: said}); bubble('me', said); }
+  // the model takes ~3-4s; without this the chat looks frozen
+  const c = document.getElementById('chat');
+  [...c.querySelectorAll('.msg.sys')].forEach(n => { if (n.textContent === 'Starting…') n.remove(); });
+  const wait = $('<div class="msg them dots"><i></i><i></i><i></i></div>');
+  c.appendChild(wait); c.scrollTop = c.scrollHeight;
+  try {
+    const r = await api('/roleplay', {
+      scenario_id: UNIT.scenario_id, level: RP.level, messages: RP.messages});
+    wait.remove();
+    if (r.error) { bubble('sys', r.message || r.error); return; }
+    RP.messages.push({role: 'assistant', content: r.reply});
+    bubble('them', r.reply);
+    speak(r.reply);
+  } catch (e) {
+    wait.remove();
+    bubble('sys', 'Connection problem — ' + e.message);
+  }
+}
+
+async function rpListen() {
+  const btn = document.getElementById('rpTalk');
+  if (RP.session) { RP.session.stop(); return; }      // second tap = stop and send
+  if (RP.busy) return;
+
+  RP.busy = true;
+  RP.started = RP.started || Date.now();
+  const t0 = Date.now();
+  btn.classList.add('rec');
+  const tick = setInterval(() => {
+    if (RP.session) btn.textContent = `⏹ Stop  ${((Date.now() - t0) / 1000).toFixed(1)}s`;
+  }, 100);
+
+  let rec, settled = false;
+  const finish = async (said, err) => {
+    if (settled) return;
+    settled = true;
+    clearInterval(tick);
+    RP.session = null;
+    btn.classList.remove('rec'); btn.textContent = '🎤 Speak';
+    try { rec && rec.close(); } catch (e) {}
+    if (err) bubble('sys', err);
+    else if (!said) bubble('sys', "Didn't catch that — tap Speak and try again.");
+    else { btn.textContent = '…'; await rpTurn(said); btn.textContent = '🎤 Speak'; }
+    RP.busy = false;
+  };
+
+  try {
+    const t = await api('/speech-token');
+    const cfg = SDK.SpeechConfig.fromAuthorizationToken(t.token, t.region);
+    cfg.speechRecognitionLanguage = 'en-AU';
+    // longer than the shadow drill: conversational speech has natural mid-sentence pauses,
+    // and learners pause more, not less
+    // 2.5s: a tester rushed to keep up with the GP and mispronounced 'bulk billed'. Being cut
+    // off mid-sentence adds the exact time pressure we're trying to remove. Err long.
+    try { cfg.setProperty(SDK.PropertyId.Speech_SegmentationSilenceTimeoutMs, '2500'); } catch (e) {}
+
+    rec = new SDK.SpeechRecognizer(cfg, SDK.AudioConfig.fromDefaultMicrophoneInput());
+    let heard = '';
+    rec.recognized = (_s, e) => {
+      if (e.result.reason === SDK.ResultReason.RecognizedSpeech && e.result.text) {
+        heard = (heard ? heard + ' ' : '') + e.result.text.trim();
+        rec.stopContinuousRecognitionAsync(() => finish(heard), () => finish(heard));
+      }
+    };
+    rec.canceled = (_s, e) => finish('', e.errorDetails || 'Recognition cancelled');
+
+    RP.session = {
+      stop: () => rec.stopContinuousRecognitionAsync(
+        () => finish(heard), () => finish(heard)),
+    };
+    btn.textContent = '⏹ Stop  0.0s';
+    rec.startContinuousRecognitionAsync(() => {}, (e) => finish('', String(e)));
+  } catch (e) {
+    finish('', e.message);
+  }
+}
+
+// Never start on its own: it costs an API call on every page load and startles the learner with
+// a voice they didn't ask for. They begin when they're ready.
+function rpReset(autostart) {
+  if (RP.session) { try { RP.session.stop(); } catch (e) {} }
+  RP.messages = []; RP.started = null; RP.busy = false; RP.session = null;
+  document.getElementById('chat').innerHTML = '';
+  document.getElementById('rpScore').innerHTML = '';
+  document.getElementById('rpTalk').style.display = autostart ? '' : 'none';
+  document.getElementById('rpStart').style.display = autostart ? 'none' : '';
+  if (!autostart) {
+    bubble('sys', RP.level === 'A2'
+      ? 'The GP will stay on the usual script. Ready when you are.'
+      : 'The GP may go off-script this time. Ready when you are.');
+    return;
+  }
+  bubble('sys', 'Starting…');
+  rpTurn('').catch(e => bubble('sys', 'Could not start: ' + e.message));
+}
+
+async function rpFinish() {
+  if (!RP.messages.length) return;
+  const box = document.getElementById('rpScore');
+  box.innerHTML = '<div class="meta">Scoring…</div>';
+  const secs = RP.started ? (Date.now() - RP.started) / 1000 : 0;
+  const r = await api('/roleplay/score', {
+    user_id: USER, scenario_id: UNIT.scenario_id, messages: RP.messages, seconds_spoken: secs});
+  if (r.error) { box.innerHTML = `<div class="meta err">${r.message || r.error}</div>`; return; }
+  box.innerHTML = `
+    <div class="result">
+      <div class="ring" style="--p:${r.pct}"><div>
+        <span><b>${r.passed}<small style="font-size:19px">/${r.of}</small></b>
+        <small>goals</small></span>
+      </div></div>
+      <div class="band">${r.band}</div>
+      <div class="meta" style="font-size:14.5px;line-height:1.5">${r.headline}</div>
+      ${r.next_time ? `<div class="next"><b>Next time</b>${r.next_time}
+        <button class="say-btn" style="color:var(--orange)"
+          data-say="${(r.next_time.match(/["“](.*?)["”]/) || [0, r.next_time])[1].replace(/"/g, '&quot;')}"
+          >▶ Hear it</button></div>` : ''}
+    </div>
+    <div class="goals">` +
+    r.results.map((c, i) => `
+      <div class="crit ${c.met ? 'ok' : ''}">
+        <span class="tick">${c.met ? '✓' : ''}</span>
+        <span style="flex:1">
+          <b style="font-weight:600;font-size:15px">${c.goal || c.criterion}</b>
+          ${c.quote ? `<div class="said"><b>You said</b>“${c.quote}”</div>` : ''}
+          ${c.say_this ? `<div class="try"><b>Say this next time</b>“${c.say_this}”
+             <button class="say-btn" data-say="${c.say_this.replace(/"/g, '&quot;')}">▶ Hear it</button>
+             </div>` : ''}
+          ${c.why ? `<div class="meta">${c.why}</div>` : ''}
+        </span>
+      </div>`).join('') + '</div>';
+  // they can hear the model phrase in an Australian accent right where they're told to use it
+  box.querySelectorAll('.say-btn').forEach(b => b.onclick = () => speak(b.dataset.say));
+  refreshProgress();
+}
+
+// --- the model dialogue: hear the real exchange, then practise your own lines ----------------
+function dialogueLine(line, role) {
+  const mine = line.speaker === role;
+  const el = $(`<div class="dlg ${mine ? 'you' : 'them'}" data-audio="${line.audio || ''}">
+      <div class="who">${mine ? 'You' : line.speaker}</div>
+      <p>${line.text}</p>
+      ${line.th ? `<div class="th">${line.th}</div>` : ''}
+      <div><button class="mini listen-one">▶ Listen</button>
+        ${mine ? '<button class="mini practise">🎤 Practise this</button>' : ''}</div>
+      <div class="res"></div>
+    </div>`);
+  el.querySelector('.listen-one').onclick = () => play(line.audio, null);
+  if (mine) {
+    const holder = el.querySelector('.res');
+    el.querySelector('.practise').onclick = () => {
+      // reuse the shadow recorder, rendered inline under this line
+      if (holder.dataset.ready) return;
+      holder.dataset.ready = '1';
+      holder.appendChild(shadow(line, {compact: true}));
+    };
+  }
+  return el;
+}
+
+async function playAll(lines) {
+  const btn = document.getElementById('playAll');
+  const nodes = [...document.querySelectorAll('#dialogue .dlg')];
+  btn.disabled = true; btn.textContent = '■ Playing…';
+  for (let i = 0; i < lines.length; i++) {
+    if (!lines[i].audio) continue;
+    nodes.forEach(n => n.classList.remove('now'));
+    nodes[i].classList.add('now');
+    nodes[i].scrollIntoView({behavior: 'smooth', block: 'center'});
+    await new Promise(done => {
+      player.pause(); player.src = lines[i].audio;
+      player.onended = done; player.onerror = done;
+      player.play().catch(done);
+    });
+    await new Promise(r => setTimeout(r, 380));      // a beat between turns, like real speech
+  }
+  nodes.forEach(n => n.classList.remove('now'));
+  btn.disabled = false; btn.textContent = '▶ Play the whole thing';
+}
+
+// Thai is draft until a native speaker clears it (CLAUDE.md non-negotiable #2), so it is
+// visibly labelled and can be switched off to practise without the crutch.
+function applyThai(on) {
+  document.body.classList.toggle('nothai', !on);
+  document.getElementById('thToggle').textContent = on ? 'ไทย ✓' : 'ไทย';
+  try { localStorage.setItem('papaya_thai', on ? '1' : '0'); } catch (e) {}
+}
+
+(async function boot() {
+  try {
+    USER = await identify();
+    UNIT = await api('/scenarios/au_gp_appointment?locale=en-AU');
+
+    const app = document.getElementById('app');
+    app.innerHTML = `
+      <div class="done" id="done"></div>
+      <div class="card"><div class="stats" id="stats"></div></div>
+      <div class="card"><h2>${UNIT.title_en}</h2>
+        <div class="meta">${UNIT.title_th} · ${UNIT.cefr_range.join('–')}</div></div>
+      <div class="card"><h2>Warm-up vocabulary
+        <span class="draft">ไทย: DRAFT</span></h2>
+        <div class="meta" style="margin:-4px 0 10px">Tap to hear it in an Australian accent.</div>
+        <div class="vocab">${UNIT.vocabulary.map((v, i) =>
+          `<button data-audio="${v.audio || ''}"><span>▶ ${v.en}</span>
+            ${v.th ? `<span class="th">${v.th}</span>` : ''}</button>`).join('')}</div></div>
+      <div class="card" id="convo">
+        <h2>The whole conversation <span class="draft">ไทย: DRAFT</span></h2>
+        <div class="meta" style="margin:-4px 0 10px">
+          Hear how it really goes, then practise your lines. You are the
+          <b>${UNIT.guided_roleplay.learner_role}</b>.</div>
+        <div class="row" style="margin-bottom:8px">
+          <span class="lvl" id="dlgLvl">${UNIT.model_dialogues.map((d, i) =>
+            `<button data-i="${i}" class="${i === 0 ? 'on' : ''}">${d.cefr}</button>`).join('')}</span>
+          <span class="meta" id="dlgHint"></span>
+        </div>
+        <div class="row" style="margin-bottom:10px">
+          <button id="playAll">▶ Play the whole thing</button>
+        </div>
+        <div id="dialogue"></div>
+      </div>
+      <div class="card" id="shadow"><h2>Drill the tricky bits</h2>
+        <div class="meta" style="margin:-4px 0 4px">The hardest phrases, on their own.</div></div>
+      <div class="card"><h2>Your sounds</h2><div id="meters"></div></div>
+      <div class="card" id="rp"><h2>Free roleplay</h2>
+        <div class="meta" style="margin:-4px 0 10px">
+          Talk to an Australian GP. Speak naturally — they'll respond.</div>
+        <div class="row" style="margin-bottom:10px">
+          <span class="lvl" id="rpLvl"><button data-lvl="A2" class="on">A2 · scripted</button><button data-lvl="B1">B1 · off-script</button></span>
+          <span class="meta" id="lvlHint">Predictable. Same script every time.</span>
+        </div>
+        <div class="pace">🐢 <b>Take your time.</b> The doctor talks fast — you don't have to.
+          Clear beats quick, and they'll wait.
+        </div>
+        <div class="chat" id="chat"></div>
+        <div class="row">
+          <button id="rpStart">▶ Start the conversation</button>
+          <button id="rpTalk" style="display:none">🎤 Speak</button>
+          <button id="rpEnd" class="listen" style="border-color:#ccc;color:#8a7f7a">Finish &amp; score</button>
+          <button id="rpAgain" class="listen" style="border-color:#ccc;color:#8a7f7a">Start over</button>
+        </div>
+        <div id="rpScore"></div>
+      </div>
+      <div class="card"><h2>Rewards</h2><div id="ach"></div></div>
+      <div class="card"><h2>Your profile</h2><div id="profile"></div></div>`;
+    const role = UNIT.guided_roleplay.learner_role;
+    let current = 0;
+
+    function showDialogue(i) {
+      current = i;
+      const d = UNIT.model_dialogues[i];
+      const box = document.getElementById('dialogue');
+      box.innerHTML = '';
+      d.lines.forEach(l => box.appendChild(dialogueLine(l, role)));
+      document.getElementById('dlgHint').textContent = d.label || '';
+      document.getElementById('playAll').onclick = () => playAll(d.lines);
+      // the drill section follows whichever dialogue you're on
+      const sh = document.getElementById('shadow');
+      [...sh.querySelectorAll('.line')].forEach(n => n.remove());
+      (d.shadow_focus_lines || []).forEach(l => sh.appendChild(shadow(l)));
+    }
+
+    document.querySelectorAll('#dlgLvl button').forEach(b => b.onclick = () => {
+      document.querySelectorAll('#dlgLvl button').forEach(x => x.classList.remove('on'));
+      b.classList.add('on');
+      showDialogue(Number(b.dataset.i));
+    });
+    showDialogue(0);
+    app.querySelectorAll('.vocab button').forEach(b =>
+      b.onclick = () => play(b.dataset.audio, b));
+
+    document.getElementById('rpTalk').onclick = rpListen;
+    document.getElementById('rpEnd').onclick = rpFinish;
+    // scope to #rpLvl: '.lvl button' also matches the dialogue switcher and silently stole it
+    document.querySelectorAll('#rpLvl button').forEach(b => b.onclick = () => {
+      if (RP.level === b.dataset.lvl) return;
+      document.querySelectorAll('#rpLvl button').forEach(x => x.classList.remove('on'));
+      b.classList.add('on');
+      RP.level = b.dataset.lvl;
+      document.getElementById('lvlHint').textContent = RP.level === 'A2'
+        ? 'Predictable. Same script every time.'
+        : 'They might throw something unexpected at you.';
+      rpReset(false);          // the level changes the whole encounter, so start a new one
+    });
+    let thaiOn = true;
+    try { thaiOn = localStorage.getItem('papaya_thai') !== '0'; } catch (e) {}
+    applyThai(thaiOn);
+    document.getElementById('thToggle').onclick = () => {
+      thaiOn = !thaiOn; applyThai(thaiOn);
+    };
+
+    document.getElementById('rpAgain').onclick = () => rpReset(false);
+    document.getElementById('rpStart').onclick = () => rpReset(true);
+    rpReset(false);                       // idle until they choose to begin
+    refreshProgress();
+  } catch (e) {
+    document.getElementById('app').innerHTML = `<div class="card err">${e.message}</div>`;
+  }
+})();
+</script>

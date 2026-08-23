@@ -1,0 +1,254 @@
+# ============================================================
+# LOCALE PACK — AUSTRALIA  (locale: en-AU)
+# ------------------------------------------------------------
+# Layer B config + Layer C country-specific scenarios.
+# Combine with the ~110 invariant core scenarios from
+# scenario-registry.yaml (minus the dropped Thailand items).
+#
+# Same field format as the core registry:
+#   id / en / th / tier / cefr / sounds / hook
+# Feeds the generation pipeline with locale + locale_context.
+#
+# ⚠️ Thai strings = first-draft, need native review.
+# ⚠️ AU system facts = author-level knowledge, need a local
+#    review pass before shipping (details change).
+# ============================================================
+
+config:
+  locale: en-AU
+  model_accent: Australian English      # TTS voices + pronunciation targets
+  spelling: en-AU                       # organise, colour, centre, enrolment
+  currency: "AUD ($)"
+  number_format: "1,234.56"
+  date_format: DD/MM/YYYY
+  emergency_number: "000"
+  transit_cards: [Opal (NSW), Myki (VIC), Go card (QLD), Metrocard (SA)]
+  politeness_note: >
+    Casual register is the norm; first names are common even with officials;
+    "no worries", "how ya going", "cheers" are everyday. Directness is fine
+    and expected — under-reporting to avoid trouble can backfire.
+
+# ---------- DROP from core for AU (replaced below) ----------
+drops_from_core:
+  - ninety_day_reporting        # Thailand-resident
+  - immigration_visa_extension  # Thailand version
+  - work_permit_office          # Thailand version
+  - bts_mrt_skytrain            # -> au_public_transport_ticketing
+  - motorbike_taxi_songthaew    # no AU equivalent
+
+# ============================================================
+# LAYER C — AUSTRALIA-SPECIFIC SCENARIOS
+# ============================================================
+
+# --- Health system ---
+- id: au_gp_appointment
+  en: Seeing a GP (Medicare)
+  th: การพบแพทย์ทั่วไป (เมดิแคร์)
+  tier: 2
+  cefr: [A2, B1]
+  sounds: [th, final_consonants, r_l, numbers]
+  hook: "book at the clinic, 'is this bulk billed', Medicare card, describe symptoms, referral. AU flagship — port of the medical unit."
+
+- id: au_enrol_medicare
+  en: Enrolling in Medicare
+  th: การลงทะเบียนเมดิแคร์
+  tier: 2
+  cefr: [A2, B1]
+  sounds: [final_consonants, numbers]
+  hook: "'I'd like to enrol', eligibility, documents, Medicare number, by phone/at a service centre"
+
+- id: au_hospital_emergency
+  en: Hospital & Emergency (ED)
+  th: โรงพยาบาลและห้องฉุกเฉิน
+  tier: 3
+  cefr: [B1, B1]
+  sounds: [final_consonants, clusters, numbers]
+  hook: "000 for emergencies, triage, 'how long is the wait', Medicare vs private"
+
+- id: au_pharmacy_pbs
+  en: At the Chemist (PBS)
+  th: ที่ร้านขายยา
+  tier: 2
+  cefr: [A2, B1]
+  sounds: [r_l, numbers, th]
+  hook: "'the chemist', prescription vs over-the-counter, PBS subsidy, 'is there a generic'"
+
+- id: au_specialist_referral
+  en: Seeing a Specialist (Referral)
+  th: การพบแพทย์เฉพาะทาง (ใบส่งตัว)
+  tier: 3
+  cefr: [B1, B1]
+  sounds: [th, final_consonants]
+  hook: "GP gatekeeps: 'I need a referral', gap fees, wait lists, making the specialist appointment"
+
+- id: au_childrens_health
+  en: Kids' Health & Immunisations
+  th: สุขภาพเด็กและวัคซีน
+  tier: 2
+  cefr: [A2, B1]
+  sounds: [final_consonants, numbers]
+  hook: "child health nurse, immunisation schedule, 'is my child up to date'"
+
+# --- Welfare / government services ---
+- id: au_centrelink_appointment
+  en: A Centrelink Appointment
+  th: การนัดหมายเซนเตอร์ลิงก์
+  tier: 3
+  cefr: [B1, B1]
+  sounds: [final_consonants, clusters, numbers]
+  hook: "'I'm here for my appointment', payments, 'what documents do I need', reporting income"
+
+- id: au_mygov_phone
+  en: myGov & Services Australia (Phone)
+  th: myGov และเซอร์วิสออสเตรเลีย (ทางโทรศัพท์)
+  tier: 3
+  cefr: [B1, B2]
+  sounds: [no_visual, numbers, final_consonants]
+  hook: "hardest channel; linking services, 'I'm locked out of my account', reference numbers, hold queues"
+
+- id: au_proof_of_identity
+  en: Proving Your Identity
+  th: การยืนยันตัวตน
+  tier: 2
+  cefr: [A2, B1]
+  sounds: [final_consonants, numbers]
+  hook: "100-point ID check, 'what counts as ID', passport + visa + bills"
+
+# --- Education ---
+- id: au_enrol_child_school
+  en: Enrolling Your Child in School
+  th: การสมัครเรียนให้ลูกที่โรงเรียน
+  tier: 3
+  cefr: [B1, B1]
+  sounds: [final_consonants, clusters, numbers]
+  hook: "catchment/zoning, 'which grade', enrolment form, uniform, term dates"
+
+- id: au_parent_teacher_interview
+  en: Parent-Teacher Interview
+  th: การประชุมผู้ปกครองกับครู
+  tier: 3
+  cefr: [B1, B2]
+  sounds: [word_stress, final_consonants, th]
+  hook: "'how is my child going', 'is there anything I can do at home', understanding feedback"
+
+- id: au_childcare_kindy
+  en: Childcare & Kindy
+  th: สถานรับเลี้ยงเด็กและอนุบาล
+  tier: 2
+  cefr: [A2, B1]
+  sounds: [final_consonants, numbers]
+  hook: "'is there a place available', childcare subsidy, hours, 'what should I pack'"
+
+- id: au_tafe_adult_study
+  en: Studying at TAFE
+  th: การเรียนที่ TAFE
+  tier: 3
+  cefr: [B1, B2]
+  sounds: [clusters, final_consonants]
+  hook: "vocational courses, 'how do I enrol', fees/subsidies, English/AMEP classes"
+
+# --- Housing ---
+- id: au_rental_application
+  en: Applying to Rent a Place
+  th: การสมัครเช่าที่พัก
+  tier: 3
+  cefr: [B1, B1]
+  sounds: [final_consonants, clusters, numbers]
+  hook: "inspection, 'I'd like to apply', rental references, 'how much is the bond'"
+
+- id: au_bond_and_agent
+  en: Bond & Real Estate Agent
+  th: เงินประกันและตัวแทนอสังหาฯ
+  tier: 3
+  cefr: [B1, B1]
+  sounds: [final_consonants, r_l]
+  hook: "bond (~4 weeks), condition report, 'when do I get the bond back', repairs"
+
+- id: au_connect_utilities
+  en: Connecting Utilities
+  th: การต่อน้ำไฟและอินเทอร์เน็ต
+  tier: 2
+  cefr: [A2, B1]
+  sounds: [numbers, th, final_consonants]
+  hook: "electricity/gas/NBN, 'set up an account', 'when can it be connected', by phone"
+
+# --- Banking & tax ---
+- id: au_open_bank_account
+  en: Opening a Bank Account
+  th: การเปิดบัญชีธนาคาร
+  tier: 2
+  cefr: [A2, B1]
+  sounds: [final_consonants, numbers, th]
+  hook: "as a newcomer, ID needed, 'everyday account', debit card, 'no monthly fee'"
+
+- id: au_get_tfn
+  en: Getting a Tax File Number (TFN)
+  th: การขอหมายเลขประจำตัวผู้เสียภาษี (TFN)
+  tier: 2
+  cefr: [A2, B1]
+  sounds: [final_consonants, numbers]
+  hook: "'apply for a TFN', why you need it for work, giving it to your employer"
+
+- id: au_tax_and_super
+  en: Tax & Superannuation Basics
+  th: ภาษีและกองทุนสำรองเลี้ยงชีพ
+  tier: 3
+  cefr: [B1, B2]
+  sounds: [word_stress, numbers, th]
+  hook: "'super' explained, tax return, ATO, 'which super fund', payslip questions"
+
+# --- Immigration & citizenship ---
+- id: au_immigration_enquiry
+  en: Immigration / Visa Enquiry
+  th: การสอบถามเรื่องวีซ่า/ตรวจคนเข้าเมือง
+  tier: 3
+  cefr: [B1, B2]
+  sounds: [final_consonants, numbers]
+  hook: "visa conditions, 'can I work on this visa', bridging visa, checking status"
+
+- id: au_citizenship_test_interview
+  en: Citizenship Test & Interview
+  th: การสอบและสัมภาษณ์สัญชาติ
+  tier: 4
+  cefr: [B1, B2]
+  sounds: [word_stress, th, final_consonants]
+  hook: "the interview, answering about values/history, 'the pledge', formal register"
+
+# --- Work culture ---
+- id: au_workplace_culture
+  en: Aussie Workplace Culture
+  th: วัฒนธรรมการทำงานแบบออสเตรเลีย
+  tier: 3
+  cefr: [B1, B2]
+  sounds: [weak_forms, intonation, word_stress]
+  hook: "casual register with the boss, 'how ya going', smoko/lunch chat, direct-but-friendly"
+
+- id: au_job_interview_local
+  en: Job Interview (Australian Style)
+  th: การสัมภาษณ์งาน (แบบออสเตรเลีย)
+  tier: 3
+  cefr: [B1, B2]
+  sounds: [word_stress, weak_forms, final_consonants]
+  hook: "'tell us about yourself', casual-professional tone, 'right to work', referees"
+
+# --- Transport specifics ---
+- id: au_public_transport_ticketing
+  en: Public Transport & Ticketing
+  th: ระบบขนส่งสาธารณะและการซื้อตั๋ว
+  tier: 1
+  cefr: [A1, B1]
+  sounds: [final_consonants, numbers, r_l]
+  hook: "tap on/off with Opal/Myki/Go card, 'top up', 'which platform', 'does this go to…'"
+
+- id: au_drivers_licence_transfer
+  en: Transferring Your Driver's Licence
+  th: การโอนใบขับขี่
+  tier: 2
+  cefr: [A2, B1]
+  sounds: [clusters, final_consonants]
+  hook: "convert overseas licence, 'do I need to take a test', at the transport authority"
+
+# ============================================================
+# AU PACK COUNT: 25 locale-specific scenarios + config
+# Combined with ~110 core = ~135 scenarios for the AU app.
+# ============================================================
