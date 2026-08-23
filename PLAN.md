@@ -19,7 +19,10 @@ this plan assumes. Ordered by **risk retired per day of work**, not by architect
 
 **The three things actually blocking progress**, none of which are code:
 
-1. **[HUMAN]** Review the drafted Thai and set `th_status: "reviewed"` — only the founder can.
+1. **[HUMAN]** Review the drafted Thai. **Approach validated 2026-08-23** (founder spot-checked: quality
+   and the keep-AU-terms-in-English decision are right), but 1,461 strings across 27 units are still
+   `draft_unverified`. Clear them incrementally: `backend/mark_reviewed.py <scenario_id>`, `--status` to
+   see what's left. Start with the units you'd put in front of a tester.
 2. **[HUMAN]** Sit with 2–3 lower-proficiency Thai Australians: will they speak, and why not AMEP?
 3. **[HUMAN]** Fact-check the AU claims (Medicare, bulk billing, referral validity, pathology walk-in).
 

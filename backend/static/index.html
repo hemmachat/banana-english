@@ -94,6 +94,15 @@
   .next b{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.07em;opacity:.65;
           margin-bottom:4px}
   .goals{margin-top:16px}
+  .pick{display:block;width:100%;text-align:left;background:#fff;color:var(--char);
+        border:1px solid #efe9e3;border-radius:11px;padding:12px 14px;margin-bottom:7px}
+  .pick.on{border-color:var(--orange);background:var(--cream)}
+  .pick b{display:block;font-size:15.5px;font-weight:600}
+  .pick span{font-size:13px;color:#8a7f7a}
+  .pick .t{float:right;font-size:11px;background:#f0ebe6;border-radius:5px;padding:2px 7px;
+           color:#8a7f7a;font-weight:700}
+  #pickList{max-height:0;overflow:hidden;transition:max-height .3s ease}
+  #pickList.open{max-height:1400px;overflow-y:auto}
   .pace{background:var(--cream);border-radius:10px;padding:10px 13px;margin-bottom:11px;
         font-size:13.5px;line-height:1.5}
   .pace b{font-weight:700}
@@ -143,6 +152,15 @@
 </header>
 <div id="jserr"></div>
 <main id="app"><div id="boot">Starting…</div></main>
+<template id="pickTpl">
+  <div class="card">
+    <div class="row" style="justify-content:space-between;align-items:center">
+      <h2 style="margin:0">Choose a situation</h2>
+      <button id="pickToggle" class="thtoggle">Change ▾</button>
+    </div>
+    <div id="pickList"></div>
+  </div>
+</template>
 <template id="doneTpl"><div class="done" id="done"></div></template>
 
 <script>
@@ -656,25 +674,49 @@ function applyThai(on) {
   try { localStorage.setItem('papaya_thai', on ? '1' : '0'); } catch (e) {}
 }
 
+// badge only while a native speaker hasn't cleared this unit (backend/mark_reviewed.py)
+const thaiDraft = (u) => (u.vocabulary || []).some(v => v.th && v.th_status !== 'reviewed');
+
+function renderPicker(list, currentId) {
+  const box = document.getElementById('pickList');
+  box.innerHTML = list.map(s => `
+    <button class="pick ${s.scenario_id === currentId ? 'on' : ''}" data-id="${s.scenario_id}">
+      <span class="t">T${s.tier}</span>
+      <b>${s.title_en}</b><span>${s.title_th || ''}</span>
+    </button>`).join('');
+  box.querySelectorAll('.pick').forEach(b => b.onclick = () => loadUnit(b.dataset.id));
+}
+
+async function loadUnit(scenarioId) {
+  try { localStorage.setItem('papaya_unit', scenarioId); } catch (e) {}
+  location.hash = scenarioId;
+  location.reload();          // simplest correct reset: every stage rebuilds from the new unit
+}
+
 (async function boot() {
   try {
     USER = await identify();
-    UNIT = await api('/scenarios/au_gp_appointment?locale=en-AU');
+    const list = await api('/scenarios?locale=en-AU');
+    let want = location.hash.slice(1);
+    try { want = want || localStorage.getItem('papaya_unit') || ''; } catch (e) {}
+    if (!list.some(s => s.scenario_id === want)) want = list[0].scenario_id;
+    UNIT = await api(`/scenarios/${want}?locale=en-AU`);
 
     const app = document.getElementById('app');
-    app.innerHTML = `
+    app.innerHTML = document.getElementById('pickTpl').innerHTML + `
       <div class="done" id="done"></div>
       <div class="card"><div class="stats" id="stats"></div></div>
       <div class="card"><h2>${UNIT.title_en}</h2>
         <div class="meta">${UNIT.title_th} · ${UNIT.cefr_range.join('–')}</div></div>
       <div class="card"><h2>Warm-up vocabulary
-        <span class="draft">ไทย: DRAFT</span></h2>
+        ${thaiDraft(UNIT) ? '<span class="draft">ไทย: DRAFT</span>' : ''}</h2>
         <div class="meta" style="margin:-4px 0 10px">Tap to hear it in an Australian accent.</div>
         <div class="vocab">${UNIT.vocabulary.map((v, i) =>
           `<button data-audio="${v.audio || ''}"><span>▶ ${v.en}</span>
             ${v.th ? `<span class="th">${v.th}</span>` : ''}</button>`).join('')}</div></div>
       <div class="card" id="convo">
-        <h2>The whole conversation <span class="draft">ไทย: DRAFT</span></h2>
+        <h2>The whole conversation
+          ${thaiDraft(UNIT) ? '<span class="draft">ไทย: DRAFT</span>' : ''}</h2>
         <div class="meta" style="margin:-4px 0 10px">
           Hear how it really goes, then practise your lines. You are the
           <b>${UNIT.guided_roleplay.learner_role}</b>.</div>
@@ -758,6 +800,14 @@ function applyThai(on) {
       document.addEventListener(ev, () => warmToken().catch(() => {}), {once: true}));
     document.getElementById('thToggle').onclick = () => {
       thaiOn = !thaiOn; applyThai(thaiOn);
+    };
+
+    renderPicker(list, want);
+    const pl = document.getElementById('pickList');
+    document.getElementById('pickToggle').onclick = () => {
+      pl.classList.toggle('open');
+      document.getElementById('pickToggle').textContent =
+        pl.classList.contains('open') ? 'Close ▴' : 'Change ▾';
     };
 
     document.getElementById('rpAgain').onclick = () => rpReset(false);

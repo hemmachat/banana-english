@@ -165,7 +165,13 @@ removing the learner's sense of a deadline.
 ## 7. Non-negotiables (apply to all future content generation)
 
 1. Every generated unit must be checked against the relevant flagship (`flagship-unit-medical-centre.md` for generic, `au-flagship-unit-gp-appointment.md` for AU) — depth, structure, and Thai-targeting must match, not just the schema.
-2. **Thai strings in every file so far are first-draft and unverified.** A native Thai speaker must review all `th:` fields before anything ships. Do not treat existing Thai text as final.
+2. **Thai strings are machine-drafted and unverified.** A native Thai speaker must review all `th:`
+   fields before anything ships. **The founder spot-checked the drafts on 2026-08-23 and confirmed the
+   approach and quality are right** — keeping AU system terms in English with a Thai explanation, natural
+   spoken register — so `translate.py` can be trusted to run at scale. But **1,461 strings across 27 units
+   are still `draft_unverified`**; approach-validated is not string-verified. Clear units one at a time
+   with `backend/mark_reviewed.py <scenario_id>`; check progress with `--status`. A `reviewed` string is
+   never regenerated, even under `--retranslate`, and the UI's ไทย: DRAFT badge clears per unit.
 3. **Australian system facts (Medicare, Centrelink, TFN, bond rules, citizenship test format, etc.) are written at founder/author confidence, not verified.** These need a local fact-check (ideally someone who works in or recently navigated these systems) before shipping — wrong health/welfare information is the highest-trust-cost error this product can make.
 4. Locale content must pass the cross-country leakage check (no US/UK terms in an AU unit, and vice versa) — see the QA section of the locale addendum.
 5. "Papaya" trademark clearance is **not done** — see brand-guide.md. Don't treat the name as legally locked yet.
