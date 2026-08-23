@@ -35,6 +35,7 @@ drops_from_core:
   - work_permit_office          # Thailand version
   - bts_mrt_skytrain            # -> au_public_transport_ticketing
   - motorbike_taxi_songthaew    # no AU equivalent
+  - market_bargaining           # Thailand-only; AU retail has fixed prices
 
 # ============================================================
 # LAYER C — AUSTRALIA-SPECIFIC SCENARIOS

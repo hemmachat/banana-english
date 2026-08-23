@@ -18,7 +18,7 @@ this plan assumes. Ordered by **risk retired per day of work**, not by architect
 | 5 · Scale | Tier 1 content done (26 units). Tier 2–4 + AU pack remain: 114 units, ~$40. Gamification already done early |
 
 **27 units live** — all 26 Tier 1 core scenarios plus the AU GP flagship, each with A2 + B1 dialogues,
-calibrated ceilings, en-AU audio and drafted Thai. An en-AU learner resolves to 25 (locale drops applied).
+calibrated ceilings, en-AU audio and drafted Thai. An en-AU learner resolves to 24 (locale drops applied).
 
 **The three things actually blocking progress**, none of which are code:
 
@@ -298,10 +298,9 @@ key that future country packs should follow.
 ## Step 5 — Scale content, price it, finish the loop
 
 - [x] **Tier 1 core generated** — 26 units, all valid, $7.80. Next: the AU pack (25, ~$8), then Tier 2 (51, ~$18).
-- [ ] **[HUMAN]** Read 5 generated units end to end before generating more. The validator checks
-      structure and has no opinion about quality. Suggested: `small_talk_weather_weekend` (the most
-      ambitious — rise/fall intonation), `urgent_help_on_street` (highest stakes if wrong), and
-      `market_bargaining` (does bargaining belong in an AU curriculum at all, or should the pack drop it?).
+- [x] **[HUMAN]** Read 5 generated units end to end — **done 2026-08-24**. Outcome: `market_bargaining`
+      is Thailand-only (AU retail has fixed prices) and is now in the AU pack's `drops_from_core`.
+      **UK/US packs will need the same drop.** Overall quality verdict still to be recorded here.
 - [ ] Fill in the remaining 4 unit stages in the client once one full unit is worth completing.
 - [x] Gamification UI — **done early in Step 2**: streak (minutes spoken), XP, sound meters, 8 derived
       achievements, end-of-session summary. All read from `attempts`; no extra tables, and the
