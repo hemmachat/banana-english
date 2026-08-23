@@ -53,8 +53,15 @@ assert len(unit["model_dialogues"][0]["shadow_focus_lines"]) == 4
 th = next(t for t in unit["sound_target_box"]["targets"] if t["sound"] == "th")
 assert th["scoring_method"] == "minimal_pair", th
 
-assert len(call("GET", "/scenarios?locale=en-AU")) == 1
+listing = call("GET", "/scenarios?locale=en-AU")
+ids = {s["scenario_id"] for s in listing}
+assert "au_gp_appointment" in ids, "the AU flagship should resolve for an en-AU learner"
+# the AU pack drops Thailand-resident scenarios; without this an Australian learner is offered
+# lessons on the Bangkok Skytrain
+assert "bts_mrt_skytrain" not in ids, "locale drops are not being applied"
+assert "bts_mrt_skytrain" in {s["scenario_id"] for s in call("GET", "/scenarios?locale=global")}, \
+    "a Thailand learner should still get the Skytrain unit"
 
-print("all checks passed")
+print(f"all checks passed  ({len(listing)} units resolve for en-AU)")
 print(f"  sound meters: {meters}")
 print(f"  xp={p['xp']} minutes={p['total_minutes_spoken']} streak={p['streak_days']}d")
