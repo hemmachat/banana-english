@@ -427,9 +427,9 @@
           "speaker": "patient",
           "text": "Here you are. Sorry, is there a gap fee?",
           "audio": "/static/audio/en-AU/here-you-are-sorry-is-there-a-gap-fee.mp3",
-          "ceiling": 96.5,
+          "ceiling": 96.8,
           "ceiling_spread": [
-            95.0,
+            96.0,
             98.0
           ],
           "ceiling_voices": 4,
@@ -620,7 +620,7 @@
             "final_consonants"
           ],
           "audio": "/static/audio/en-AU/do-i-need-it-to-see-the-specialist.mp3",
-          "ceiling": 99.5,
+          "ceiling": 99.2,
           "ceiling_spread": [
             99.0,
             100.0

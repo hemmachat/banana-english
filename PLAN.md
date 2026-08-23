@@ -14,7 +14,7 @@ this plan assumes. Ordered by **risk retired per day of work**, not by architect
 | 1 · Backend | **Done.** Flask + Postgres, three tables, `backend/test_api.py` green |
 | 2 · Web slice | **Done and validated on a real iPhone.** No technical risks left |
 | 3 · Real users | Blocked on the two Step 0 human items and the Thai review |
-| 4 · Generator | Not started — and now better informed by what Step 2 revealed |
+| 4 · Generator | **Done.** First unit generated, validated and served. $0.29/unit |
 | 5 · Scale | Not started. Gamification already done early |
 
 **The three things actually blocking progress**, none of which are code:
@@ -253,23 +253,39 @@ Read n=10 as directional only; friends of the founder are polite and the sample 
 
 ---
 
-## Step 4 — Content generator, calibrated (~2 days)
+## Step 4 — Content generator — **DONE 2026-08-23**
 
 Only now, because the prompt should be tuned against something users actually reacted to.
 
-- [ ] `backend/scripts/generate_unit.py` — one file: read registry entry (+ `locale_context`), call the
-      API with the Section 4 prompt, run `validate(unit)`, write `content/<locale>/<id>.json`.
-- [ ] `validate()` = plain checks from spec §5 + addendum §4 (required fields non-empty, ≥2 CEFR levels,
+- [x] `backend/generate_unit.py` — reads the registry entry (+ locale config), generates, validates,
+      writes `content/<locale>/<id>.json`. Rejects go to `<id>.REJECTED.json` and are never published.
+      **$0.29/unit** — about $41 for all 141 scenarios.
+- [x] `validate()` — spec §5 + addendum §4, **plus the rules device testing produced**: `scoring_method`
+      per sound (`th` must be `minimal_pair`), minimal_pairs on every target, A2 6–12 lines and B1 14–22,
+      shadow lines under 8 words with named targets, every sound actually stressed in a spoken line, and
+      Thai left null except the registry's `title_th`. Original: (required fields non-empty, ≥2 CEFR levels,
       every registry `sound_target` present in the box *and* a shadow line/curveball, all `required`
       rubric criteria, Thai fields actually Thai (codepoint range), no cross-country term leakage,
       en-AU spelling). Raise with the specific reason. Never auto-fix.
-- [ ] Calibration: regenerate `medical_centre` and `au_gp_appointment`, diff against the hand-authored
-      flagships. Drift → fix the prompt, not the output. **This diff is structural, not qualitative** —
+- [x] Calibration — **the hand-authored AU flagship passes every rule the generator enforces**, and the
+      first generated unit passed on the first attempt. Original: diff against the flagships,
+      drift → fix the prompt not the output. **Structural, not qualitative** —
       it cannot tell you the dialogue sounds like a textbook. Only a human read of the first 5 can, and
       "structurally valid but pedagogically mediocre" is how the content moat quietly dies.
-- [ ] Ingest = `psql`-able loop dumping each JSON into `units.data`.
+- [x] Ingest — `seed.py`. Full chain: `generate_unit.py → render_audio.py → calibrate.py →
+      translate.py → seed.py`, every step idempotent.
+- [ ] **[HUMAN]** Read the first 5 generated units end to end. The validator checks structure, never
+      quality — "structurally valid but pedagogically mediocre" is how the content moat dies quietly.
 
-**Exit**: generating a known unit reproduces flagship depth.
+**Exit**: generating a known unit reproduces flagship depth. ✅ `asking_directions` came back with real
+killer-contrast reasoning ("if 'right' comes out as 'light', the stranger points you the opposite way"),
+a 19-line B1 where the passer-by corrects the learner's read-back, and a culture note about Thai
+strangers guessing rather than saying "I don't know".
+
+**Two latent bugs found while wiring this up:** `scenario-registry.yaml` and `locale-pack-australia.yaml`
+were both **invalid YAML** — unquoted colons in the job-interview titles, and a top-level sequence mixed
+into a mapping. Nothing had ever parsed them. Fixed; the pack's scenarios now sit under a `scenarios:`
+key that future country packs should follow.
 
 ---
 

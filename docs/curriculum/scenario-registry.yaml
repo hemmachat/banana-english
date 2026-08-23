@@ -520,24 +520,24 @@
 
 # --- Domain: Getting a job ---
 - id: job_interview_intro
-  en: Interview: Introducing Yourself
-  th: สัมภาษณ์งาน: แนะนำตัว
+  en: "Interview: Introducing Yourself"
+  th: "สัมภาษณ์งาน: แนะนำตัว"
   tier: 3
   cefr: [B1, B2]
   sounds: [word_stress, weak_forms]
   hook: "'tell me about yourself', concise self-summary, controlled nerves"
 
 - id: job_interview_experience
-  en: Interview: Your Experience
-  th: สัมภาษณ์งาน: ประสบการณ์
+  en: "Interview: Your Experience"
+  th: "สัมภาษณ์งาน: ประสบการณ์"
   tier: 3
   cefr: [B1, B2]
   sounds: [word_stress, final_consonants]
   hook: "'I've worked as…', past achievements, STAR-style answers"
 
 - id: job_interview_asking_questions
-  en: Interview: Asking Questions
-  th: สัมภาษณ์งาน: การถามคำถาม
+  en: "Interview: Asking Questions"
+  th: "สัมภาษณ์งาน: การถามคำถาม"
   tier: 3
   cefr: [B1, B2]
   sounds: [intonation, weak_forms]
