@@ -28,6 +28,15 @@ FLAGSHIP = os.path.join(ROOT, "docs/curriculum/au-flagship-unit-gp-appointment.m
 
 # /th/ cannot be scored by phoneme - 61-100 across six perfect native takes (spike/README.md 6b)
 MINIMAL_PAIR_SOUNDS = {"th"}
+# Azure returns ProsodyScore for en-US ONLY, so these are taught and drilled but never metered.
+# Marking them explicitly beats pretending a phoneme score means something for them.
+UNSCORED_SOUNDS = {"word_stress", "intonation", "weak_forms"}
+
+
+def scoring_method_for(sound):
+    if sound in UNSCORED_SOUNDS:
+        return "unscored"
+    return "minimal_pair" if sound in MINIMAL_PAIR_SOUNDS else "phoneme"
 
 BASE_RULES = """You are an English-education content designer building situational speaking lessons
 for Thai adult learners (CEFR A1-B2). Return ONE JSON object, no prose outside it.
@@ -46,10 +55,12 @@ NON-NEGOTIABLES
 
 WHAT DEVICE TESTING PROVED - these are requirements, not suggestions:
 
-8. scoring_method on every sound target. "th" MUST be "minimal_pair" - phoneme scoring for it is
-   unusable (it scored 61-100 across six flawless native takes). Every other sound is "phoneme".
-   Every target needs a minimal_pairs list of REAL WORDS, because word-level recognition is the
-   fallback whenever the number is untrustworthy.
+8. scoring_method on every sound target - use exactly the values supplied in the request.
+   "th" is "minimal_pair": phoneme scoring for it is unusable (61-100 across six flawless native
+   takes). Prosodic targets (word_stress, intonation, weak_forms) are "unscored": the vendor
+   returns no prosody data for en-AU, so they are taught and drilled but never metered. Everything
+   else is "phoneme". Every target still needs minimal_pairs of REAL WORDS - word-level
+   recognition is the fallback whenever a number is untrustworthy.
 
 9. Dialogue length. The A2 dialogue is 7-10 lines. The B1 dialogue is 15-20 lines - it must be
    visibly harder and longer, with the learner handling something unexpected. A short B1 dialogue
@@ -129,7 +140,7 @@ def locale_context(locale):
 def generate(entry, locale):
     import anthropic
     sounds = entry.get("sounds", [])
-    methods = {s: ("minimal_pair" if s in MINIMAL_PAIR_SOUNDS else "phoneme") for s in sounds}
+    methods = {s: scoring_method_for(s) for s in sounds}
     system = BASE_RULES
     if locale != "global":
         system += LOCALE_RULES.format(locale=locale, context=locale_context(locale))
@@ -175,9 +186,11 @@ def validate(unit, entry, locale):
     for s in entry.get("sounds", []):
         need(s in got, f"registry sound_target '{s}' missing from sound_target_box")
     for t in targets:
-        want = "minimal_pair" if t.get("sound") in MINIMAL_PAIR_SOUNDS else "phoneme"
+        want = scoring_method_for(t.get("sound"))
         need(t.get("scoring_method") == want,
              f"sound '{t.get('sound')}' must use scoring_method '{want}' (spike/README.md 6b)")
+        need(t.get("scoring_method") != "phoneme" or t.get("sound") not in UNSCORED_SOUNDS,
+             f"prosodic sound '{t.get('sound')}' cannot be phoneme-scored - no en-AU prosody data")
         need(t.get("minimal_pairs"), f"sound '{t.get('sound')}' has no minimal_pairs")
         need(t.get("why_it_matters_here"), f"sound '{t.get('sound')}' has no why_it_matters_here")
 
@@ -196,14 +209,19 @@ def validate(unit, entry, locale):
             need(words <= 8, f"shadow line '{sl.get('text')}' is {words} words, keep it under 8")
             need(sl.get("targets"), f"shadow line '{sl.get('text')}' has no targets")
 
-    # every sound target must actually be stressed somewhere the learner speaks
+    # every sound target must be stressed somewhere the learner speaks. Check the structured
+    # `targets` field, not a substring match - prosodic targets have no literal word to find, and
+    # words_in_context legitimately carries IPA annotations that never match plain line text.
+    tagged = {tag for d in unit.get("model_dialogues", [])
+              for sl in d.get("shadow_focus_lines", []) for tag in sl.get("targets", [])}
     spoken = " ".join(sl.get("text", "") for d in unit.get("model_dialogues", [])
                       for sl in d.get("shadow_focus_lines", [])).lower()
     curve = " ".join(unit.get("free_roleplay", {}).get("b1_curveballs", [])).lower()
     for t in targets:
-        words = [w.lower() for w in t.get("words_in_context", [])]
-        need(any(w in spoken or w in curve for w in words),
-             f"sound '{t.get('sound')}' never appears in a shadow line or curveball")
+        sound = t.get("sound")
+        words = [re.sub(r"\s*\(.*", "", w).lower() for w in t.get("words_in_context", [])]
+        need(sound in tagged or any(w and (w in spoken or w in curve) for w in words),
+             f"sound '{sound}' is not named in any shadow line's targets")
 
     rubric = unit.get("free_roleplay", {}).get("roleplay_rubric", [])
     need(sum(1 for c in rubric if c.get("type") == "required") >= 4, "rubric needs 4+ required criteria")

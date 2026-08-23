@@ -1,0 +1,847 @@
+{
+  "scenario_id": "motorbike_taxi_songthaew",
+  "locale": "global",
+  "title_en": "Motorbike Taxi & Songthaew",
+  "title_th": "มอเตอร์ไซค์รับจ้างและรถสองแถว",
+  "tier": 1,
+  "cefr_range": [
+    "A2",
+    "B1"
+  ],
+  "prerequisites": [
+    "greetings_small_talk",
+    "numbers_and_prices",
+    "asking_directions"
+  ],
+  "recycles": [
+    "numbers 13–90",
+    "prices and 'How much?'",
+    "polite requests with please",
+    "left / right / straight ahead",
+    "clarification: 'Sorry, could you say that again?'",
+    "time expressions: 'five minutes', 'how long?'"
+  ],
+  "register": "Casual-polite street register — short, friendly, spoken over engine noise; first-name-free, no honorifics needed",
+  "sound_target_box": {
+    "note_th": null,
+    "targets": [
+      {
+        "sound": "numbers",
+        "scoring_method": "phoneme",
+        "words_in_context": [
+          "thirteen",
+          "thirty",
+          "fifteen",
+          "fifty",
+          "sixteen",
+          "sixty",
+          "forty",
+          "a hundred",
+          "four hundred metres",
+          "five minutes"
+        ],
+        "minimal_pairs": [
+          [
+            "thirteen",
+            "thirty"
+          ],
+          [
+            "fifteen",
+            "fifty"
+          ],
+          [
+            "sixteen",
+            "sixty"
+          ],
+          [
+            "fourteen",
+            "forty"
+          ],
+          [
+            "nineteen",
+            "ninety"
+          ]
+        ],
+        "why_it_matters_here": "The fare is agreed by voice, before you get on, with the engine running. If your 'thirty' lands as 'thirteen', the driver stops halfway and argues; if you hear 'fifty' when he said 'fifteen', you hand over three times the fare and get no change back. Stress the first syllable for -ty and release the final -n for -teen."
+      },
+      {
+        "sound": "final_consonants",
+        "scoring_method": "phoneme",
+        "words_in_context": [
+          "stop here",
+          "turn left",
+          "straight ahead",
+          "the front gate",
+          "helmet",
+          "market",
+          "bridge",
+          "change",
+          "back",
+          "get off"
+        ],
+        "minimal_pairs": [
+          [
+            "right",
+            "ride"
+          ],
+          [
+            "back",
+            "bag"
+          ],
+          [
+            "stop",
+            "stock"
+          ],
+          [
+            "left",
+            "let"
+          ],
+          [
+            "seat",
+            "seed"
+          ],
+          [
+            "change",
+            "chain"
+          ]
+        ],
+        "why_it_matters_here": "Stopping instructions are one or two words long, shouted forward over an engine. A swallowed final /p/ in 'stop' or /ft/ in 'left' means the driver keeps going and you are dropped a kilometre past your street, in the dark, paying extra to come back. Release the last sound — that final consonant is the whole message."
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "en": "motorbike taxi",
+      "th": "มอเตอร์ไซค์รับจ้าง — ที่ออสเตรเลียไม่มีแบบนี้ ต้องอธิบายให้ฝรั่งฟังว่าเป็นแท็กซี่ที่เป็นมอเตอร์ไซค์",
+      "group": "vehicles_people",
+      "audio_needed": true,
+      "audio": "/static/audio/global/motorbike-taxi.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "songthaew (shared pickup truck)",
+      "th": "รถสองแถว — ภาษาอังกฤษไม่มีคำนี้ ใช้ทับศัพท์แล้วบอกว่าเป็นรถกระบะนั่งรวมกันข้างหลัง จ่ายคนละนิดหน่อย",
+      "group": "vehicles_people",
+      "audio_needed": true,
+      "audio": "/static/audio/global/songthaew-shared-pickup-truck.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "driver",
+      "th": "คนขับ",
+      "group": "vehicles_people",
+      "audio_needed": true,
+      "audio": "/static/audio/global/driver.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "passenger",
+      "th": "คนนั่ง ผู้โดยสาร",
+      "group": "vehicles_people",
+      "audio_needed": true,
+      "audio": "/static/audio/global/passenger.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "helmet",
+      "th": "หมวกกันน็อก — ที่นี่บังคับใส่ ปั่นจักรยานก็ต้องใส่ ไม่ใส่โดนปรับ",
+      "group": "safety_logistics",
+      "audio_needed": true,
+      "audio": "/static/audio/global/helmet.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "get on / get off",
+      "th": "ขึ้นรถ / ลงรถ",
+      "group": "safety_logistics",
+      "audio_needed": true,
+      "audio": "/static/audio/global/get-on-get-off.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "in the back",
+      "th": "นั่งข้างหลัง ท้ายรถ",
+      "group": "safety_logistics",
+      "audio_needed": true,
+      "audio": "/static/audio/global/in-the-back.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "hold on",
+      "th": "จับไว้ให้แน่น",
+      "group": "safety_logistics",
+      "audio_needed": true,
+      "audio": "/static/audio/global/hold-on.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "fare",
+      "th": "ค่ารถ ค่าโดยสาร",
+      "group": "money_fare",
+      "audio_needed": true,
+      "audio": "/static/audio/global/fare.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "How much to…?",
+      "th": "\"ไป...เท่าไหร่?\" ใช้ถามราคาก่อนขึ้นรถ",
+      "group": "money_fare",
+      "audio_needed": true,
+      "audio": "/static/audio/global/how-much-to.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "per person / each",
+      "th": "คนละ (เช่น คนละ 5 เหรียญ)",
+      "group": "money_fare",
+      "audio_needed": true,
+      "audio": "/static/audio/global/per-person-each.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "change (money back)",
+      "th": "เงินทอน",
+      "group": "money_fare",
+      "audio_needed": true,
+      "audio": "/static/audio/global/change-money-back.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "small notes",
+      "th": "แบงก์ย่อย เงินย่อย",
+      "group": "money_fare",
+      "audio_needed": true,
+      "audio": "/static/audio/global/small-notes.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "too expensive",
+      "th": "แพงไป",
+      "group": "money_fare",
+      "audio_needed": true,
+      "audio": "/static/audio/global/too-expensive.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "stop here",
+      "th": "\"จอดตรงนี้\"",
+      "group": "directions_stopping",
+      "audio_needed": true,
+      "audio": "/static/audio/global/stop-here.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "straight ahead",
+      "th": "ตรงไป",
+      "group": "directions_stopping",
+      "audio_needed": true,
+      "audio": "/static/audio/global/straight-ahead.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "turn left / turn right",
+      "th": "เลี้ยวซ้าย / เลี้ยวขวา",
+      "group": "directions_stopping",
+      "audio_needed": true,
+      "audio": "/static/audio/global/turn-left-turn-right.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "at the corner",
+      "th": "ตรงหัวมุม",
+      "group": "directions_stopping",
+      "audio_needed": true,
+      "audio": "/static/audio/global/at-the-corner.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "the front gate",
+      "th": "ประตูหน้า หน้ารั้ว",
+      "group": "directions_stopping",
+      "audio_needed": true,
+      "audio": "/static/audio/global/the-front-gate.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "the bridge",
+      "th": "สะพาน",
+      "group": "directions_stopping",
+      "audio_needed": true,
+      "audio": "/static/audio/global/the-bridge.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "the market",
+      "th": "ตลาด",
+      "group": "directions_stopping",
+      "audio_needed": true,
+      "audio": "/static/audio/global/the-market.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "the main road",
+      "th": "ถนนใหญ่ ถนนเส้นหลัก",
+      "group": "directions_stopping",
+      "audio_needed": true,
+      "audio": "/static/audio/global/the-main-road.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "How far is it?",
+      "th": "\"ไกลไหม? ไกลแค่ไหน?\"",
+      "group": "directions_stopping",
+      "audio_needed": true,
+      "audio": "/static/audio/global/how-far-is-it.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "the road is closed",
+      "th": "ถนนปิด ผ่านไม่ได้",
+      "group": "directions_stopping",
+      "audio_needed": true,
+      "audio": "/static/audio/global/the-road-is-closed.mp3",
+      "th_status": "draft_unverified"
+    }
+  ],
+  "model_dialogues": [
+    {
+      "cefr": "A2",
+      "label": "Motorbike taxi — agree the fare, then stop where you want",
+      "lines": [
+        {
+          "speaker": "Learner",
+          "text": "Excuse me, how much to the train station?",
+          "audio": "/static/audio/global/excuse-me-how-much-to-the-train-station.mp3",
+          "th": "ขอโทษนะ ไปสถานีรถไฟเท่าไหร่?",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Driver",
+          "text": "Sixty baht.",
+          "audio": "/static/audio/global/sixty-baht.mp3",
+          "th": "หกสิบบาท",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Sixty, not sixteen?",
+          "audio": "/static/audio/global/sixty-not-sixteen.mp3",
+          "th": "หกสิบ ไม่ใช่สิบหกใช่ไหม?",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Driver",
+          "text": "Sixty. Six-zero.",
+          "audio": "/static/audio/global/sixty-six-zero.mp3",
+          "th": "หกสิบ หก-ศูนย์",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Okay. Do you have a helmet?",
+          "audio": "/static/audio/global/okay-do-you-have-a-helmet.mp3",
+          "th": "โอเค มีหมวกกันน็อคไหม?",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Driver",
+          "text": "Yeah, here you go. Hop on.",
+          "audio": "/static/audio/global/yeah-here-you-go-hop-on.mp3",
+          "th": "มี นี่เลย ขึ้นมาได้",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Please stop at the front gate.",
+          "audio": "/static/audio/global/please-stop-at-the-front-gate.mp3",
+          "th": "ขอจอดตรงหน้าประตูนะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Driver",
+          "text": "No problem. … Okay, the front gate.",
+          "audio": "/static/audio/global/no-problem-okay-the-front-gate.mp3",
+          "th": "ได้เลย … เอ้า ถึงหน้าประตูแล้ว",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Thanks. Here's sixty baht.",
+          "audio": "/static/audio/global/thanks-here-s-sixty-baht.mp3",
+          "th": "ขอบคุณ นี่หกสิบบาท",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Driver",
+          "text": "Thanks. Have a good trip.",
+          "audio": "/static/audio/global/thanks-have-a-good-trip.mp3",
+          "th": "ขอบคุณ เดินทางปลอดภัยนะ",
+          "th_status": "draft_unverified"
+        }
+      ],
+      "shadow_focus_lines": [
+        {
+          "text": "How much to the station?",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/how-much-to-the-station.mp3"
+        },
+        {
+          "text": "Sixty, not sixteen?",
+          "targets": [
+            "numbers",
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/sixty-not-sixteen.mp3"
+        },
+        {
+          "text": "Do you have a helmet?",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/do-you-have-a-helmet.mp3"
+        },
+        {
+          "text": "Stop at the front gate.",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/stop-at-the-front-gate.mp3"
+        }
+      ]
+    },
+    {
+      "cefr": "B1",
+      "label": "Songthaew — waiting for passengers, a closed road, and no change",
+      "lines": [
+        {
+          "speaker": "Driver",
+          "text": "Where are you going?",
+          "audio": "/static/audio/global/where-are-you-going.mp3",
+          "th": "จะไปไหนเหรอ?",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "To the old market. How much?",
+          "audio": "/static/audio/global/to-the-old-market-how-much.mp3",
+          "th": "ไปตลาดเก่า เท่าไหร่?",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Driver",
+          "text": "Thirty each. Get in the back.",
+          "audio": "/static/audio/global/thirty-each-get-in-the-back.mp3",
+          "th": "คนละสามสิบ ขึ้นข้างหลังเลย",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Thirty each, right?",
+          "audio": "/static/audio/global/thirty-each-right.mp3",
+          "th": "คนละสามสิบใช่ไหม?",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Driver",
+          "text": "Right, thirty. But we wait — I need two more people.",
+          "audio": "/static/audio/global/right-thirty-but-we-wait-i-need-two-more-people.mp3",
+          "th": "ใช่ สามสิบ แต่ขอรอก่อนนะ ขออีกสองคน",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Sorry, how long? Five or fifteen?",
+          "audio": "/static/audio/global/sorry-how-long-five-or-fifteen.mp3",
+          "th": "ขอโทษนะ รอนานไหม? ห้านาทีหรือสิบห้านาที?",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Driver",
+          "text": "Five minutes. No more than five.",
+          "audio": "/static/audio/global/five-minutes-no-more-than-five.mp3",
+          "th": "ห้านาที ไม่เกินห้านาที",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Okay, I'll wait.",
+          "audio": "/static/audio/global/okay-i-ll-wait.mp3",
+          "th": "โอเค งั้นรอ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Driver",
+          "text": "Right, we're off. … Ah — the road at the bridge is closed today.",
+          "audio": "/static/audio/global/right-we-re-off-ah-the-road-at-the-bridge-is-closed-today.mp3",
+          "th": "เอาละ ไปละ … อ้าว วันนี้ถนนตรงสะพานปิด",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Sorry, could you say that again?",
+          "audio": "/static/audio/global/sorry-could-you-say-that-again.mp3",
+          "th": "ขอโทษ พูดอีกทีได้ไหม?",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Driver",
+          "text": "I can't reach the market. I stop at the temple, then you walk.",
+          "audio": "/static/audio/global/i-can-t-reach-the-market-i-stop-at-the-temple-then-you-walk.mp3",
+          "th": "เข้าตลาดไม่ได้ ผมจอดที่วัด แล้วคุณเดินต่อเอานะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "How far is the walk?",
+          "audio": "/static/audio/global/how-far-is-the-walk.mp3",
+          "th": "ต้องเดินไกลไหม?",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Driver",
+          "text": "Four hundred metres. Straight ahead, then left at the corner.",
+          "audio": "/static/audio/global/four-hundred-metres-straight-ahead-then-left-at-the-corner.mp3",
+          "th": "สี่ร้อยเมตร ตรงไปแล้วเลี้ยวซ้ายตรงหัวมุม",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Straight ahead, then left. Got it.",
+          "audio": "/static/audio/global/straight-ahead-then-left-got-it.mp3",
+          "th": "ตรงไป แล้วเลี้ยวซ้าย เข้าใจแล้ว",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Driver",
+          "text": "Okay — the temple. Stop here?",
+          "audio": "/static/audio/global/okay-the-temple-stop-here.mp3",
+          "th": "เอ้า ถึงวัดแล้ว จอดตรงนี้นะ?",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Yes, stop here, please.",
+          "audio": "/static/audio/global/yes-stop-here-please.mp3",
+          "th": "ใช่ จอดตรงนี้เลย",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Sorry, I only have a hundred.",
+          "audio": "/static/audio/global/sorry-i-only-have-a-hundred.mp3",
+          "th": "ขอโทษนะ ผมมีแต่แบงค์ร้อย",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Driver",
+          "text": "A hundred? I've only got twenty in change.",
+          "audio": "/static/audio/global/a-hundred-i-ve-only-got-twenty-in-change.mp3",
+          "th": "ร้อยเหรอ? มีเงินทอนแค่ยี่สิบเองนะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Wait — I have a fifty.",
+          "audio": "/static/audio/global/wait-i-have-a-fifty.mp3",
+          "th": "เดี๋ยวนะ มีห้าสิบ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Driver",
+          "text": "Fifty, good. Twenty back for you. Take care.",
+          "audio": "/static/audio/global/fifty-good-twenty-back-for-you-take-care.mp3",
+          "th": "ห้าสิบ ดีเลย ทอนยี่สิบนะ เดินทางปลอดภัย",
+          "th_status": "draft_unverified"
+        }
+      ],
+      "shadow_focus_lines": [
+        {
+          "text": "Thirty each, right?",
+          "targets": [
+            "numbers",
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/thirty-each-right.mp3"
+        },
+        {
+          "text": "Five or fifteen?",
+          "targets": [
+            "numbers"
+          ],
+          "audio": "/static/audio/global/five-or-fifteen.mp3"
+        },
+        {
+          "text": "Straight ahead, then left.",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/straight-ahead-then-left.mp3"
+        },
+        {
+          "text": "I only have a hundred.",
+          "targets": [
+            "numbers",
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/i-only-have-a-hundred.mp3"
+        }
+      ]
+    }
+  ],
+  "chunk_drills": [
+    {
+      "label": "Fare before you go",
+      "pattern": "How much to + [place]?",
+      "examples": [
+        "How much to the market?",
+        "How much to the bus station?",
+        "How much to the airport?",
+        "How much per person?"
+      ],
+      "spiralled_grammar": "Recycles 'How much…?' from prices/shopping; adds destination with 'to +' place noun. Ask BEFORE getting on."
+    },
+    {
+      "label": "Check the number you heard",
+      "pattern": "[number], not [confusable number]? / Did you say [number]?",
+      "examples": [
+        "Thirty, not thirteen?",
+        "Fifty, not fifteen?",
+        "Did you say sixty?",
+        "Sixty. Six-zero, yes?"
+      ],
+      "spiralled_grammar": "Rising-intonation confirmation question with no auxiliary; recycles numbers 13–90."
+    },
+    {
+      "label": "Push back on the price",
+      "pattern": "That's a bit much. Can you do [number]?",
+      "examples": [
+        "That's a bit much. Can you do forty?",
+        "Forty, and we go now?",
+        "Okay, thirty each — deal.",
+        "No thanks, too expensive."
+      ],
+      "spiralled_grammar": "'Can you…?' request form for negotiating; softener 'a bit'."
+    },
+    {
+      "label": "Stop and steer",
+      "pattern": "Stop [here / at the ___], please. / Straight ahead, then [left / right].",
+      "examples": [
+        "Stop here, please.",
+        "Stop at the corner, please.",
+        "Straight ahead, then right.",
+        "Turn left after the bridge.",
+        "Not here — the next one."
+      ],
+      "spiralled_grammar": "Polite imperative + 'please'; prepositions of place (at / after / before). Say it early, not at the last second."
+    },
+    {
+      "label": "Paying and change",
+      "pattern": "Here's [amount]. / Do you have change for [note]?",
+      "examples": [
+        "Here's sixty baht.",
+        "Do you have change for a hundred?",
+        "Sorry, I only have a five hundred.",
+        "Keep the change.",
+        "I have a fifty — is that okay?"
+      ],
+      "spiralled_grammar": "'Here's…' for handing something over; 'Do you have…?' recycled from shopping."
+    },
+    {
+      "label": "Repair and clarify",
+      "pattern": "Sorry, could you say that again? / Sorry, how long? / How far is it?",
+      "examples": [
+        "Sorry, could you say that again?",
+        "Sorry, how long?",
+        "How far is it?",
+        "Slowly, please.",
+        "Can you write the price?"
+      ],
+      "spiralled_grammar": "Recycled clarification set from greetings and directions units; use it instead of nodding."
+    }
+  ],
+  "listening_items": [
+    {
+      "audio_text": "Fifty baht each, or ninety for the two of you.",
+      "channel": "roadside, engine idling",
+      "question": "How much for two people?",
+      "answer": "Ninety baht (fifty each on its own)",
+      "distractor_focus": "fifty vs fifteen; ninety vs nineteen"
+    },
+    {
+      "audio_text": "We wait for two more people — about fifteen minutes.",
+      "channel": "songthaew stand, background chatter",
+      "question": "How long is the wait?",
+      "answer": "About fifteen minutes",
+      "distractor_focus": "fifteen vs fifty; 'two more people' vs 'two minutes'"
+    },
+    {
+      "audio_text": "The bridge is closed, so I'll drop you at the temple. It's four hundred metres from there.",
+      "channel": "in-vehicle, wind and road noise",
+      "question": "Where does the driver stop, and how far do you walk?",
+      "answer": "At the temple; about four hundred metres",
+      "distractor_focus": "four hundred vs forty; 'drop' final /p/"
+    },
+    {
+      "audio_text": "Straight ahead, then left at the market — I can't stop on the main road.",
+      "channel": "in-vehicle, driver speaking forward over shoulder",
+      "question": "Which way after going straight?",
+      "answer": "Left at the market",
+      "distractor_focus": "left vs let / right; unreleased final /t/ and /ft/"
+    },
+    {
+      "audio_text": "Sorry, no change for a five hundred. Have you got anything smaller?",
+      "channel": "phone call to book a pickup",
+      "question": "What is the problem, and what does the driver want?",
+      "answer": "He can't change a 500 note; he wants smaller notes",
+      "distractor_focus": "five hundred vs fifty; 'smaller' vs 'small'"
+    }
+  ],
+  "guided_roleplay": {
+    "learner_role": "Passenger taking a motorbike taxi to the night market, then a songthaew back to the guesthouse",
+    "flow": [
+      "Step 1 — Approach the driver and name your destination: 'Excuse me, how much to the night market?'",
+      "Step 2 — Hear the price and repeat it back to confirm ('Sixty, not sixteen?').",
+      "Step 3 — Settle the fare: accept, or ask 'Can you do forty?' Agree BEFORE getting on.",
+      "Step 4 — Sort out logistics: ask for a helmet, or ask 'Is this one going to the market?' for the songthaew.",
+      "Step 5 — Give the stopping instruction early: 'Stop at the front gate, please' / 'Straight ahead, then left.'",
+      "Step 6 — Pay and deal with change: 'Here's a hundred — do you have change?'",
+      "Step 7 — Close politely: 'Thanks. Have a good day.'"
+    ],
+    "sentence_frames": [
+      "Excuse me, how much to ___?",
+      "___, not ___? (thirty, not thirteen?)",
+      "That's a bit much. Can you do ___?",
+      "Do you have a helmet?",
+      "Is this one going to ___?",
+      "Stop at the ___, please.",
+      "Straight ahead, then ___.",
+      "Here's ___. Do you have change?",
+      "Sorry, could you say that again?",
+      "Thanks. Have a good day."
+    ],
+    "hints_available": true
+  },
+  "free_roleplay": {
+    "ai_persona": "A friendly, brisk local driver who works a motorbike-taxi stand and also drives a songthaew. Speaks short, simple English over engine noise, uses numbers fast, and does not repeat unless asked. Never hostile — just busy.",
+    "a2_behavior": "Gives a clear price when asked, confirms the number when the learner repeats it, waits for the learner to name a stop, and takes payment with correct change. Stays on the standard sequence: price → get on → stop → pay.",
+    "b1_curveballs": [
+      "No change: 'Sorry, I can't break a five hundred — have you got anything smaller?'",
+      "Road closed: the driver can only get within 400 metres and gives walking directions the learner must read back.",
+      "Price goes up mid-ride: 'It's raining / you've got a big bag — make it eighty.'",
+      "Waiting game: 'We go when I have four passengers — maybe fifteen minutes.' Learner must ask how long and decide.",
+      "Wrong destination: the driver repeats a similar-sounding place ('the new market?') and heads the wrong way until corrected.",
+      "Number trap: the driver says 'thirty' but the learner hears 'thirteen' — payment mismatch must be repaired politely."
+    ],
+    "roleplay_rubric": [
+      {
+        "criterion": "Agreed the fare out loud BEFORE getting on or in",
+        "type": "required"
+      },
+      {
+        "criterion": "Repeated the number back to confirm it (e.g. 'Thirty, not thirteen?')",
+        "type": "required"
+      },
+      {
+        "criterion": "Gave a clear stopping instruction early enough ('Stop here, please' / 'Straight ahead, then left')",
+        "type": "required"
+      },
+      {
+        "criterion": "Handled payment and change, including a note that was too large",
+        "type": "required"
+      },
+      {
+        "criterion": "Asked at least one clarification question instead of nodding along",
+        "type": "required"
+      },
+      {
+        "criterion": "Register stayed casual-polite — short requests with 'please', no shouting or bare commands",
+        "type": "required"
+      },
+      {
+        "criterion": "Pronunciation: -teen/-ty numbers distinguishable and final consonants released in 'stop', 'left', 'right', 'front gate'",
+        "type": "pronunciation"
+      },
+      {
+        "criterion": "Stretch (B1): coped with an off-script problem — no change, closed road, mid-ride price change — and still finished the ride and paid",
+        "type": "stretch_b1"
+      }
+    ]
+  },
+  "register_culture_note": {
+    "en": "Street transport English is short, friendly and loud enough to be heard over an engine. Full sentences are not expected — 'How much to the market?', 'Stop here, please', 'Thanks' is a complete, polite conversation. Two habits protect you: say the price out loud before you get on, and repeat any number back to the driver. Asking the price is never rude; it is what every local passenger does.",
+    "th": null,
+    "do_dont": [
+      {
+        "avoid": "Shouting just 'Stop!' at the last second",
+        "prefer": "'Stop here, please' — said a few seconds early, with the final /p/ released"
+      },
+      {
+        "avoid": "'I go Big C.'",
+        "prefer": "'How much to Big C?' then 'Can you take me to Big C?'"
+      },
+      {
+        "avoid": "Answering a price with a mumbled 'sixty' that lands as 'sixteen'",
+        "prefer": "'Sixty. Six-zero.' — spell the number out when it matters"
+      },
+      {
+        "avoid": "Nodding and smiling when you didn't understand the detour",
+        "prefer": "'Sorry, could you say that again?' / 'How far is the walk?'"
+      },
+      {
+        "avoid": "Getting on first and asking the price later",
+        "prefer": "'How much to ___?' … 'Okay, forty. Let's go.'"
+      }
+    ],
+    "thai_cultural_note": "In many Thai towns the fare is posted at the motorbike-taxi stand or fixed by route for the songthaew, so passengers rarely need to negotiate or confirm anything out loud. Outside that system — in another country, or with an unfamiliar driver — silence is read as agreement, and a fare you never said aloud is a fare you can be charged twice for. The same goes for stopping: waiting quietly rather than interrupting the driver, out of consideration, is what leaves people standing a kilometre past their street. Speaking up early here is not pushy; drivers expect it and prefer it."
+  },
+  "can_do_checkpoints": [
+    {
+      "cefr": "A2",
+      "statement": "I can ask how much a ride costs and agree the fare before I get on."
+    },
+    {
+      "cefr": "A2",
+      "statement": "I can repeat a price back to check I heard it right (thirty, not thirteen)."
+    },
+    {
+      "cefr": "A2",
+      "statement": "I can tell a driver where to stop and say straight / left / right."
+    },
+    {
+      "cefr": "A2",
+      "statement": "I can pay and ask for change."
+    },
+    {
+      "cefr": "B1",
+      "statement": "I can negotiate a fare and ask about a per-person price or a wait time."
+    },
+    {
+      "cefr": "B1",
+      "statement": "I can understand a detour or a drop-off change, ask how far I must walk, and read the directions back."
+    },
+    {
+      "cefr": "Sound",
+      "statement": "My -teen/-ty numbers are distinguishable and my final consonants in 'stop', 'left', 'right' and 'front gate' are clearly released."
+    }
+  ],
+  "gamification": {
+    "xp_per_substep": true,
+    "unlocks": [
+      "taxi_and_ride_apps",
+      "asking_directions_on_foot",
+      "buying_bus_and_train_tickets",
+      "haggling_at_the_market"
+    ],
+    "sound_meters": [
+      "numbers",
+      "final_consonants"
+    ]
+  },
+  "_review_status": {
+    "thai_strings": "DRAFT - machine-generated, tagged th_status=draft_unverified. A native Thai speaker must review every string and set th_status='reviewed'.",
+    "facts": "UNVERIFIED - generated content, needs a local fact-check before shipping",
+    "generated_by": "claude-opus-5"
+  }
+}

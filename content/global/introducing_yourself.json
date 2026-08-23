@@ -1,0 +1,844 @@
+{
+  "scenario_id": "introducing_yourself",
+  "locale": "global",
+  "title_en": "Introducing Yourself",
+  "title_th": "การแนะนำตัวเอง",
+  "tier": 1,
+  "cefr_range": [
+    "A2",
+    "B1"
+  ],
+  "prerequisites": [],
+  "recycles": [
+    "greetings_small_talk: hello / hi / good morning",
+    "polite_basics: thanks, sorry, please",
+    "numbers_and_time: age, phone numbers, 'for three months'",
+    "clarification_repair: 'Sorry, could you say that again?'",
+    "yes/no short answers: 'Yes, I am.' / 'No, I'm not.'"
+  ],
+  "register": "Casual-polite (first names, short turns, two-way questions)",
+  "sound_target_box": {
+    "note_th": null,
+    "targets": [
+      {
+        "sound": "th",
+        "scoring_method": "minimal_pair",
+        "words_in_context": [
+          "Thanks",
+          "three years",
+          "three months",
+          "I'm thirty",
+          "this is my third week",
+          "my brother",
+          "birthday",
+          "the health clinic"
+        ],
+        "minimal_pairs": [
+          [
+            "three",
+            "tree"
+          ],
+          [
+            "thanks",
+            "tanks"
+          ],
+          [
+            "thirty",
+            "dirty"
+          ],
+          [
+            "think",
+            "sink"
+          ],
+          [
+            "mouth",
+            "mouse"
+          ],
+          [
+            "they",
+            "day"
+          ]
+        ],
+        "why_it_matters_here": "The two facts people ask for first are how long you've been here and how old you are. 'I'm thirty' said with /d/ becomes 'I'm dirty', and 'three years' becomes 'tree years' — the other person laughs or freezes, and the introduction is over before it starts. 'Thanks' as 'tanks' is the very last thing they hear from you."
+      },
+      {
+        "sound": "final_consonants",
+        "scoring_method": "phoneme",
+        "words_in_context": [
+          "Nice to meet you",
+          "my nickname",
+          "I work at a bank",
+          "I've worked in design",
+          "Do you have a card?",
+          "I'm a student",
+          "It's my third week",
+          "Bangkok"
+        ],
+        "minimal_pairs": [
+          [
+            "work",
+            "word"
+          ],
+          [
+            "back",
+            "bag"
+          ],
+          [
+            "nice",
+            "night"
+          ],
+          [
+            "card",
+            "cart"
+          ],
+          [
+            "hard",
+            "heart"
+          ],
+          [
+            "send",
+            "sent"
+          ]
+        ],
+        "why_it_matters_here": "Your name, your job and your phone number all live on final consonants. Drop the /k/ in 'work' and 'I work at a bank' sounds like 'I were at a ban' — the other person stops trying. Drop the /d/ in 'card' and they hand you a shopping cart joke instead of a contact."
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "en": "Hi, I'm…",
+      "th": "\"สวัสดี ผม/ฉันชื่อ…\" ใช้แนะนำตัวได้ทุกที่ ไม่ต้องเป็นทางการ",
+      "group": "name & greeting",
+      "audio_needed": true,
+      "audio": "/static/audio/global/hi-i-m.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "Nice to meet you",
+      "th": "\"ยินดีที่ได้รู้จัก\" พูดตอนเจอกันครั้งแรก",
+      "group": "name & greeting",
+      "audio_needed": true,
+      "audio": "/static/audio/global/nice-to-meet-you.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "Nice to meet you too",
+      "th": "\"ยินดีที่ได้รู้จักเช่นกัน\" ตอบกลับเวลาเขาพูดก่อน ใส่ too ท้ายประโยค",
+      "group": "name & greeting",
+      "audio_needed": true,
+      "audio": "/static/audio/global/nice-to-meet-you-too.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "nickname",
+      "th": "ชื่อเล่น คนออสฯ ก็มีเหมือนกัน เช่น Michael เรียก Mike ถ้าชื่อจริงเราออกเสียงยาก บอกชื่อเล่นไปเลยได้",
+      "group": "name & greeting",
+      "audio_needed": true,
+      "audio": "/static/audio/global/nickname.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "first name / last name",
+      "th": "ชื่อ / นามสกุล ในฟอร์มออสฯ มักเขียนว่า given name กับ family name หรือ surname",
+      "group": "name & greeting",
+      "audio_needed": true,
+      "audio": "/static/audio/global/first-name-last-name.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "Could you spell that?",
+      "th": "\"สะกดให้หน่อยได้ไหม\" ใช้ได้เลยไม่เสียมารยาท คนที่นี่ถามกันปกติเวลาชื่อไม่คุ้น",
+      "group": "name & greeting",
+      "audio_needed": true,
+      "audio": "/static/audio/global/could-you-spell-that.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "I'm from…",
+      "th": "\"ผม/ฉันมาจาก…\" ตามด้วยประเทศหรือเมือง",
+      "group": "origin & home",
+      "audio_needed": true,
+      "audio": "/static/audio/global/i-m-from.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "originally",
+      "th": "\"เดิมที / แต่เดิม\" ใช้ตอนบอกว่าเกิดที่ไหน เช่น originally from Thailand แต่ตอนนี้อยู่ที่นี่",
+      "group": "origin & home",
+      "audio_needed": true,
+      "audio": "/static/audio/global/originally.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "I've been here for three months",
+      "th": "\"อยู่ที่นี่มาสามเดือนแล้ว\" บอกว่ามาอยู่นานแค่ไหน",
+      "group": "origin & home",
+      "audio_needed": true,
+      "audio": "/static/audio/global/i-ve-been-here-for-three-months.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "I live near…",
+      "th": "\"อยู่แถวๆ…\" ไม่ต้องบอกที่อยู่จริง บอกชื่อย่านพอ",
+      "group": "origin & home",
+      "audio_needed": true,
+      "audio": "/static/audio/global/i-live-near.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "What do you do?",
+      "th": "\"ทำงานอะไร\" คำถามยอดฮิตเวลาคุยกันครั้งแรก ถามแบบสบายๆ ไม่ได้เสือก",
+      "group": "job & study",
+      "audio_needed": true,
+      "audio": "/static/audio/global/what-do-you-do.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "I'm a graphic designer",
+      "th": "\"เป็นกราฟิกดีไซเนอร์\" ตอบอาชีพ ใช้ I'm a + อาชีพ",
+      "group": "job & study",
+      "audio_needed": true,
+      "audio": "/static/audio/global/i-m-a-graphic-designer.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "I work at a bank",
+      "th": "\"ทำงานที่ธนาคาร\" ถ้าอยากบอกที่ทำงานแทนตำแหน่ง ใช้ I work at + ที่",
+      "group": "job & study",
+      "audio_needed": true,
+      "audio": "/static/audio/global/i-work-at-a-bank.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "I'm a student",
+      "th": "\"เป็นนักเรียน/นักศึกษา\" คนที่นี่ถามต่อว่าเรียนอะไร ที่ไหน",
+      "group": "job & study",
+      "audio_needed": true,
+      "audio": "/static/audio/global/i-m-a-student.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "full-time / part-time",
+      "th": "เต็มเวลา / พาร์ทไทม์ ที่ออสฯ full-time ประมาณ 38 ชม.ต่อสัปดาห์ ที่เหลือถือเป็น part-time",
+      "group": "job & study",
+      "audio_needed": true,
+      "audio": "/static/audio/global/full-time-part-time.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "In my free time I…",
+      "th": "\"เวลาว่างก็…\" เปิดประโยคเล่าเรื่องงานอดิเรก",
+      "group": "interests",
+      "audio_needed": true,
+      "audio": "/static/audio/global/in-my-free-time-i.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "I'm into cooking",
+      "th": "\"ชอบทำอาหาร\" be into = ชอบ สนใจ แบบภาษาพูด ฟังดูเป็นกันเองกว่า I like",
+      "group": "interests",
+      "audio_needed": true,
+      "audio": "/static/audio/global/i-m-into-cooking.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "I play football",
+      "th": "\"เล่นฟุตบอล\" ที่ออสฯ football อาจหมายถึง AFL หรือรักบี้ ถ้าหมายถึงฟุตบอลจริงๆ พูด soccer ชัดกว่า",
+      "group": "interests",
+      "audio_needed": true,
+      "audio": "/static/audio/global/i-play-football.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "And you?",
+      "th": "\"แล้วคุณล่ะ\" โยนคำถามเดิมกลับไป สั้นๆ ง่ายๆ",
+      "group": "keeping it two-way",
+      "audio_needed": true,
+      "audio": "/static/audio/global/and-you.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "What about you?",
+      "th": "\"แล้วคุณล่ะ\" เหมือนกัน แต่ฟังนุ่มกว่า ใช้เปลี่ยนไปคุยเรื่องอื่นก็ได้",
+      "group": "keeping it two-way",
+      "audio_needed": true,
+      "audio": "/static/audio/global/what-about-you.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "Sorry, could you say that again?",
+      "th": "\"ขอโทษนะ พูดอีกทีได้ไหม\" ใช้ได้เลยเวลาฟังไม่ทัน คนที่นี่ไม่ว่าอะไร",
+      "group": "repair",
+      "audio_needed": true,
+      "audio": "/static/audio/global/sorry-could-you-say-that-again.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "Sorry, I didn't catch your name",
+      "th": "\"ขอโทษนะ ฟังชื่อไม่ทัน\" สุภาพกว่าถามซ้ำเฉยๆ ไม่ได้แปลว่าเราไม่สนใจ",
+      "group": "repair",
+      "audio_needed": true,
+      "audio": "/static/audio/global/sorry-i-didn-t-catch-your-name.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "Do you have a card?",
+      "th": "\"มีนามบัตรไหม\" ขอเบอร์หรือข้อมูลติดต่อแบบไม่เก้อ",
+      "group": "closing",
+      "audio_needed": true,
+      "audio": "/static/audio/global/do-you-have-a-card.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "Good to meet you — see you around",
+      "th": "\"ยินดีที่ได้รู้จักนะ ไว้เจอกัน\" ใช้ตอนลา see you around ไม่ได้แปลว่านัดกันจริง แค่พูดลาแบบเป็นมิตร",
+      "group": "closing",
+      "audio_needed": true,
+      "audio": "/static/audio/global/good-to-meet-you-see-you-around.mp3",
+      "th_status": "draft_unverified"
+    }
+  ],
+  "model_dialogues": [
+    {
+      "cefr": "A2",
+      "label": "First day at a shared office — a short, standard introduction",
+      "lines": [
+        {
+          "speaker": "Anna",
+          "text": "Hi! You're new here, right? I'm Anna.",
+          "audio": "/static/audio/global/hi-you-re-new-here-right-i-m-anna.mp3",
+          "th": "หวัดดี! เพิ่งมาใหม่ใช่ปะ? เราชื่อแอนนา",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner (Nok)",
+          "text": "Hi Anna. I'm Nok. Nice to meet you.",
+          "audio": "/static/audio/global/hi-anna-i-m-nok-nice-to-meet-you.mp3",
+          "th": "หวัดดีแอนนา เราชื่อนก ยินดีที่ได้รู้จักนะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Anna",
+          "text": "Nice to meet you too. Where are you from?",
+          "audio": "/static/audio/global/nice-to-meet-you-too-where-are-you-from.mp3",
+          "th": "ยินดีเหมือนกัน มาจากไหนเหรอ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner (Nok)",
+          "text": "I'm from Chiang Mai, in Thailand.",
+          "audio": "/static/audio/global/i-m-from-chiang-mai-in-thailand.mp3",
+          "th": "มาจากเชียงใหม่ ประเทศไทย",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Anna",
+          "text": "Oh cool. And what do you do?",
+          "audio": "/static/audio/global/oh-cool-and-what-do-you-do.mp3",
+          "th": "อ๋อ เจ๋งดี แล้วทำงานอะไรเหรอ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner (Nok)",
+          "text": "I'm a graphic designer. And you?",
+          "audio": "/static/audio/global/i-m-a-graphic-designer-and-you.mp3",
+          "th": "เป็นกราฟิกดีไซเนอร์ แล้วคุณล่ะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Anna",
+          "text": "I work at the café downstairs. How long have you been here?",
+          "audio": "/static/audio/global/i-work-at-the-caf-downstairs-how-long-have-you-been-here.mp3",
+          "th": "เราทำงานที่คาเฟ่ข้างล่าง มาอยู่ที่นี่นานยัง",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner (Nok)",
+          "text": "Three months. Not long.",
+          "audio": "/static/audio/global/three-months-not-long.mp3",
+          "th": "สามเดือน ยังไม่นานเท่าไหร่",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Anna",
+          "text": "Well, welcome. Shout if you need anything.",
+          "audio": "/static/audio/global/well-welcome-shout-if-you-need-anything.mp3",
+          "th": "งั้นก็ยินดีต้อนรับนะ ต้องการอะไรก็เรียกได้เลย",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner (Nok)",
+          "text": "Thanks, Anna. See you around.",
+          "audio": "/static/audio/global/thanks-anna-see-you-around.mp3",
+          "th": "ขอบคุณนะแอนนา ไว้เจอกัน",
+          "th_status": "draft_unverified"
+        }
+      ],
+      "shadow_focus_lines": [
+        {
+          "text": "Hi Anna. I'm Nok.",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/hi-anna-i-m-nok.mp3"
+        },
+        {
+          "text": "Nice to meet you",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/nice-to-meet-you.mp3"
+        },
+        {
+          "text": "Three months. Not long.",
+          "targets": [
+            "th",
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/three-months-not-long.mp3"
+        },
+        {
+          "text": "Thanks, Anna. See you around.",
+          "targets": [
+            "th",
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/thanks-anna-see-you-around.mp3"
+        }
+      ]
+    },
+    {
+      "cefr": "B1",
+      "label": "Work networking night — your name is misheard, and you're asked things you didn't prepare for",
+      "lines": [
+        {
+          "speaker": "Dan",
+          "text": "Mind if I stand here? Everyone's crowded round the coffee.",
+          "audio": "/static/audio/global/mind-if-i-stand-here-everyone-s-crowded-round-the-coffee.mp3",
+          "th": "ขอยืนตรงนี้ได้ไหม ตรงกาแฟคนแน่นไปหมด",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner (Nok)",
+          "text": "Sure, please. I'm Nok.",
+          "audio": "/static/audio/global/sure-please-i-m-nok.mp3",
+          "th": "ได้เลย เชิญ เราชื่อนก",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Dan",
+          "text": "Sorry — Nick?",
+          "audio": "/static/audio/global/sorry-nick.mp3",
+          "th": "โทษที — นิค เหรอ?",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner (Nok)",
+          "text": "No, Nok. N-O-K. It's my nickname.",
+          "audio": "/static/audio/global/no-nok-n-o-k-it-s-my-nickname.mp3",
+          "th": "ไม่ใช่ นก N-O-K เป็นชื่อเล่นน่ะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Dan",
+          "text": "Got it, Nok. I'm Dan. So what brings you along tonight?",
+          "audio": "/static/audio/global/got-it-nok-i-m-dan-so-what-brings-you-along-tonight.mp3",
+          "th": "อ๋อ นก เข้าใจแล้ว เราแดน แล้วคืนนี้มางานนี้ด้วยเรื่องอะไรเหรอ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner (Nok)",
+          "text": "I'm looking for freelance work. I'm a designer.",
+          "audio": "/static/audio/global/i-m-looking-for-freelance-work-i-m-a-designer.mp3",
+          "th": "กำลังหางานฟรีแลนซ์อยู่ เราเป็นดีไซเนอร์",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Dan",
+          "text": "Nice one. Are you studying alongside that, or is it full-time?",
+          "audio": "/static/audio/global/nice-one-are-you-studying-alongside-that-or-is-it-full-time.mp3",
+          "th": "ดีเลย แล้วเรียนไปด้วยรึเปล่า หรือทำเต็มเวลาไปเลย",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner (Nok)",
+          "text": "Sorry, could you say that again?",
+          "audio": "/static/audio/global/sorry-could-you-say-that-again.mp3",
+          "th": "โทษนะ พูดอีกทีได้ไหม",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Dan",
+          "text": "Sorry, I talk fast. Are you a student, or is design your full-time job?",
+          "audio": "/static/audio/global/sorry-i-talk-fast-are-you-a-student-or-is-design-your-full-t.mp3",
+          "th": "โทษที เราพูดเร็วไปหน่อย คือจะถามว่าเป็นนักเรียนอยู่ หรือทำงานดีไซน์เต็มเวลา",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner (Nok)",
+          "text": "It's full-time. I've worked in design for three years.",
+          "audio": "/static/audio/global/it-s-full-time-i-ve-worked-in-design-for-three-years.mp3",
+          "th": "เต็มเวลาเลย ทำสายดีไซน์มาสามปีแล้ว",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Dan",
+          "text": "Three years, that's solid. Who do you work with?",
+          "audio": "/static/audio/global/three-years-that-s-solid-who-do-you-work-with.mp3",
+          "th": "สามปี แน่นเลยนะเนี่ย แล้วทำงานให้ใครบ้าง",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner (Nok)",
+          "text": "Small cafés, and one health clinic. And you?",
+          "audio": "/static/audio/global/small-caf-s-and-one-health-clinic-and-you.mp3",
+          "th": "คาเฟ่เล็กๆ หลายร้าน กับคลินิกอีกที่นึง แล้วคุณล่ะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Dan",
+          "text": "I run a little print shop over on Baker Street.",
+          "audio": "/static/audio/global/i-run-a-little-print-shop-over-on-baker-street.mp3",
+          "th": "เราเปิดร้านพิมพ์เล็กๆ อยู่แถวถนนเบเกอร์",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner (Nok)",
+          "text": "Oh, that's useful for me.",
+          "audio": "/static/audio/global/oh-that-s-useful-for-me.mp3",
+          "th": "โอ้ อันนี้มีประโยชน์กับเราเลย",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Dan",
+          "text": "Could be useful both ways, honestly. Do you have a card?",
+          "audio": "/static/audio/global/could-be-useful-both-ways-honestly-do-you-have-a-card.mp3",
+          "th": "จริงๆ น่าจะได้ประโยชน์กันทั้งคู่นะ มีนามบัตรไหม",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner (Nok)",
+          "text": "Sorry, I don't. Can I take your number?",
+          "audio": "/static/audio/global/sorry-i-don-t-can-i-take-your-number.mp3",
+          "th": "โทษที ไม่มีอ่ะ ขอเบอร์คุณได้ไหม",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Dan",
+          "text": "Yeah — oh-seven-double-three, four-nine-two, six-one-five.",
+          "audio": "/static/audio/global/yeah-oh-seven-double-three-four-nine-two-six-one-five.mp3",
+          "th": "ได้ — ศูนย์ เจ็ด สาม สาม สี่ เก้า สอง หก หนึ่ง ห้า",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner (Nok)",
+          "text": "Sorry, four-nine-two, then?",
+          "audio": "/static/audio/global/sorry-four-nine-two-then.mp3",
+          "th": "โทษที สี่ เก้า สอง ใช่ไหม",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Dan",
+          "text": "Four-nine-two, six-one-five. Text me and I'll save yours.",
+          "audio": "/static/audio/global/four-nine-two-six-one-five-text-me-and-i-ll-save-yours.mp3",
+          "th": "สี่ เก้า สอง หก หนึ่ง ห้า ทักมาเลย เดี๋ยวเราเซฟเบอร์ไว้",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner (Nok)",
+          "text": "I will. Thanks, Dan. Good to meet you.",
+          "audio": "/static/audio/global/i-will-thanks-dan-good-to-meet-you.mp3",
+          "th": "เดี๋ยวทักไปนะ ขอบคุณแดน ดีใจที่ได้เจอ",
+          "th_status": "draft_unverified"
+        }
+      ],
+      "shadow_focus_lines": [
+        {
+          "text": "No, Nok. It's my nickname.",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/no-nok-it-s-my-nickname.mp3"
+        },
+        {
+          "text": "Sorry, could you say that again?",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/sorry-could-you-say-that-again.mp3"
+        },
+        {
+          "text": "worked in design for three years",
+          "targets": [
+            "th",
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/worked-in-design-for-three-years.mp3"
+        },
+        {
+          "text": "Thanks, Dan. Good to meet you.",
+          "targets": [
+            "th",
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/thanks-dan-good-to-meet-you.mp3"
+        }
+      ]
+    }
+  ],
+  "chunk_drills": [
+    {
+      "label": "Name + rescue when they mishear it",
+      "pattern": "I'm ___. / It's ___ — ___-___-___. / It's my nickname.",
+      "examples": [
+        "I'm Nok. — Sorry, Nick? — No, Nok. N-O-K.",
+        "I'm Ploy. It's my nickname.",
+        "My full name is long, so just call me Bee.",
+        "Sorry, I didn't catch your name."
+      ],
+      "spiralled_grammar": "'to be' + name; spelling aloud; recycles polite repair from greetings_small_talk"
+    },
+    {
+      "label": "Where you're from + how long you've been here",
+      "pattern": "I'm from ___, in ___. / I've been here for ___.",
+      "examples": [
+        "I'm from Chiang Mai, in Thailand.",
+        "I'm from Bangkok, but I live near the station now.",
+        "I've been here for three months.",
+        "I've been here since March."
+      ],
+      "spiralled_grammar": "present perfect + for/since; recycles numbers and time expressions"
+    },
+    {
+      "label": "Job and study",
+      "pattern": "I'm a/an ___. / I work at ___. / I've worked in ___ for ___ years.",
+      "examples": [
+        "I'm a graphic designer.",
+        "I'm an engineer.",
+        "I work at a bank.",
+        "I've worked in design for three years.",
+        "I'm a student — I study nursing."
+      ],
+      "spiralled_grammar": "a/an with jobs; present simple for facts; present perfect for duration"
+    },
+    {
+      "label": "Interests (the second thing everybody asks)",
+      "pattern": "In my free time I ___. / I'm into ___.",
+      "examples": [
+        "In my free time I cook.",
+        "I'm into running.",
+        "I play football on Sundays.",
+        "Not much, honestly — I work a lot."
+      ],
+      "spiralled_grammar": "gerund after 'into'; present simple + frequency"
+    },
+    {
+      "label": "Bounce the question back (keeps the conversation two-way)",
+      "pattern": "And you? / What about you? / How about yourself?",
+      "examples": [
+        "I'm a designer. And you?",
+        "Three months. What about you?",
+        "I'm from Thailand. How about yourself?"
+      ],
+      "spiralled_grammar": "elliptical questions; recycles short answers"
+    },
+    {
+      "label": "Repair and close",
+      "pattern": "Sorry, could you ___? / Do you have a card? / Good to meet you.",
+      "examples": [
+        "Sorry, could you say that again?",
+        "Sorry, could you spell that?",
+        "Could you speak a bit slowly?",
+        "Do you have a card?",
+        "Good to meet you — see you around."
+      ],
+      "spiralled_grammar": "'could you' requests; recycles clarification_repair"
+    }
+  ],
+  "listening_items": [
+    {
+      "audio_text": "Hi, I'm Beth — that's B-E-T-H. I work with Sam on the design team.",
+      "channel": "video call",
+      "question": "What is her name, and how is it spelled?",
+      "answer": "Beth — B-E-T-H",
+      "distractor_focus": "final /θ/ — 'Beth' vs 'Bet'; learners who neutralise final th write 'Bet'"
+    },
+    {
+      "audio_text": "My name's Thanet, but everyone here just calls me Tan.",
+      "channel": "face-to-face, quiet room",
+      "question": "What should you call him?",
+      "answer": "Tan (his nickname), not Thanet",
+      "distractor_focus": "full name vs nickname; initial /θ/ in Thanet vs /t/ in Tan"
+    },
+    {
+      "audio_text": "I've been here for thirteen months now, so a bit over a year.",
+      "channel": "phone",
+      "question": "How long has she been here?",
+      "answer": "Thirteen months (just over a year)",
+      "distractor_focus": "thirteen vs thirty — final /n/ + stress; 'thirty months' would be 2.5 years"
+    },
+    {
+      "audio_text": "No, I'm not a student — I finished last year. I work at a hotel now.",
+      "channel": "face-to-face, noisy party",
+      "question": "Is he studying or working? Where?",
+      "answer": "Working, at a hotel",
+      "distractor_focus": "final /k/ in 'work' vs 'were'; hearing the negative 'I'm not a student'"
+    },
+    {
+      "audio_text": "Nice to meet you both. This is my third week, so I still get lost.",
+      "channel": "face-to-face, small group",
+      "question": "How long has she been there?",
+      "answer": "Three weeks (it's her third week)",
+      "distractor_focus": "'third' /θ/ + /rd/ cluster; confusing 'third week' with 'thirty weeks'"
+    }
+  ],
+  "guided_roleplay": {
+    "learner_role": "You're new — first day at a shared office, class, or volunteer group. A friendly person comes over and starts talking to you.",
+    "flow": [
+      "1. Return the greeting and give your name: 'Hi, I'm ___.'",
+      "2. Rescue your name when they mishear it: 'No, ___. Spell it: ___-___-___.'",
+      "3. Say where you're from and how long you've been here (recycles numbers/time).",
+      "4. Say what you do — job or study — in one short sentence.",
+      "5. Bounce the question back: 'And you?'",
+      "6. Add one interest: 'In my free time I ___.'",
+      "7. Ask for repetition once when you don't catch something.",
+      "8. Close it: 'Good to meet you — see you around.'"
+    ],
+    "sentence_frames": [
+      "Hi, I'm ___. Nice to meet you.",
+      "No — it's ___. ___-___-___. It's my nickname.",
+      "I'm from ___, in ___.",
+      "I've been here for three months.",
+      "I'm a ___. / I work at ___.",
+      "I've worked in ___ for three years.",
+      "And you? / What about you?",
+      "In my free time I ___.",
+      "Sorry, could you say that again?",
+      "Do you have a card?",
+      "Thanks. Good to meet you."
+    ],
+    "hints_available": true
+  },
+  "free_roleplay": {
+    "ai_persona": "Alex — a warm, slightly chatty colleague at a welcome lunch. Uses first names, short turns, asks follow-up questions, and genuinely reacts to what you say.",
+    "a2_behavior": "Alex sticks to the predictable order: name → where are you from → what do you do → how long have you been here → one interest → friendly close. Speaks slowly, repeats when asked, accepts short answers.",
+    "b1_curveballs": [
+      "Mishears your name twice and asks you to spell it out letter by letter.",
+      "Asks 'Where's home for you originally?' and then 'Whereabouts in Thailand?' — you must give a place plus a detail.",
+      "Wrongly assumes you're a student or a tourist; you must correct it politely: 'Actually, I work here.'",
+      "Asks 'So what does that involve, day to day?' — you must expand your job into two or three sentences.",
+      "Speaks fast about a mutual contact; you must ask for repetition and keep going.",
+      "Asks for your phone number and reads it back wrong; you must correct the digits.",
+      "Pulls a third person over: 'This is Sam' — you must introduce yourself again to someone new."
+    ],
+    "roleplay_rubric": [
+      {
+        "criterion": "Gave name and returned the greeting in the first two turns, without a long apology about their English",
+        "type": "required"
+      },
+      {
+        "criterion": "Gave origin AND duration ('I'm from ___' + 'I've been here for ___')",
+        "type": "required"
+      },
+      {
+        "criterion": "Gave job or study in a clear short sentence with correct a/an",
+        "type": "required"
+      },
+      {
+        "criterion": "Bounced at least one question back ('And you?' / 'What about you?') so the talk stayed two-way",
+        "type": "required"
+      },
+      {
+        "criterion": "Used a clarification question at least once instead of nodding through something they didn't understand",
+        "type": "required"
+      },
+      {
+        "criterion": "Closed the conversation politely rather than stopping dead ('Good to meet you — see you around')",
+        "type": "required"
+      },
+      {
+        "criterion": "Pronunciation: final consonants audible in 'work', 'nice', 'meet', 'card', 'nickname'; /θ/ clear in 'thanks', 'three', 'thirty', 'third'",
+        "type": "pronunciation"
+      },
+      {
+        "criterion": "Handled a curveball — spelled the name out, corrected a wrong assumption, or fixed a misheard number — without abandoning the conversation",
+        "type": "stretch_b1"
+      }
+    ]
+  },
+  "register_culture_note": {
+    "en": "Introductions in English are short, first-name, and two-way. Give your name, one line about where you're from, one line about what you do — then ask them back. Titles, full names, ages and job ranks are not needed. A long, formal self-introduction ('My name is Miss...') sounds like a job interview at a coffee break. Apologising for your English at the start makes the other person work harder, not less; just start, and ask for repetition if you need it.",
+    "th": null,
+    "do_dont": [
+      {
+        "avoid": "\"My name is Miss Nok Suwannaphong, I am thirty-two years old, and I am sorry, my English is not good.\"",
+        "prefer": "\"Hi, I'm Nok. Nice to meet you.\""
+      },
+      {
+        "avoid": "Saying \"tanks\" and \"tree years\" (dropped /θ/) — heard as 'tanks' and 'tree'",
+        "prefer": "\"Thanks.\" / \"I've been here three years.\" — tongue lightly between the teeth"
+      },
+      {
+        "avoid": "\"I wer' in a ban'\" (dropped final /k/ and /ŋk/)",
+        "prefer": "\"I work at a bank.\" — let the final consonant be heard"
+      },
+      {
+        "avoid": "Opening with \"How old are you?\" or \"How much do you earn?\"",
+        "prefer": "\"What do you do?\" / \"How long have you been here?\""
+      },
+      {
+        "avoid": "Answering and then going silent, waiting to be asked again",
+        "prefer": "Answer, then add \"And you?\""
+      },
+      {
+        "avoid": "Nodding and smiling when you didn't understand",
+        "prefer": "\"Sorry, could you say that again?\""
+      }
+    ],
+    "thai_cultural_note": "In Thai, giving your nickname is completely normal — keep doing it in English too; it's welcomed and easier for people to remember. Two things do differ. First, questions about age, salary and marital status are ordinary Thai warmth but can shut an English conversation down; keep them out of a first meeting. Second, in Thai it can be polite to wait to be asked and let the senior person lead. In English, waiting looks like disinterest — the person expects you to ask a question back within a turn or two. Asking 'And you?' isn't forward; it's what keeps them talking to you."
+  },
+  "can_do_checkpoints": [
+    {
+      "cefr": "A2",
+      "statement": "I can give my name, say 'Nice to meet you', and spell my name when someone mishears it."
+    },
+    {
+      "cefr": "A2",
+      "statement": "I can say where I'm from and how long I've been here."
+    },
+    {
+      "cefr": "A2",
+      "statement": "I can say what I do in one clear sentence and ask 'And you?'"
+    },
+    {
+      "cefr": "B1",
+      "statement": "I can expand on my job and interests when someone asks a follow-up question."
+    },
+    {
+      "cefr": "B1",
+      "statement": "I can politely correct a wrong assumption about me and confirm a misheard name or number."
+    },
+    {
+      "cefr": "Sound",
+      "statement": "My final consonants ('work', 'nice', 'card', 'nickname') are audible and my 'th' in 'thanks', 'three' and 'thirty' is clear."
+    }
+  ],
+  "gamification": {
+    "xp_per_substep": true,
+    "unlocks": [
+      "greetings_small_talk_extended",
+      "phone_call_basics",
+      "making_plans_with_a_new_friend",
+      "first_day_at_work"
+    ],
+    "sound_meters": [
+      "th",
+      "final_consonants"
+    ]
+  },
+  "_review_status": {
+    "thai_strings": "DRAFT - machine-generated, tagged th_status=draft_unverified. A native Thai speaker must review every string and set th_status='reviewed'.",
+    "facts": "UNVERIFIED - generated content, needs a local fact-check before shipping",
+    "generated_by": "claude-opus-5"
+  }
+}

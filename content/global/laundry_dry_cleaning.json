@@ -1,0 +1,840 @@
+{
+  "scenario_id": "laundry_dry_cleaning",
+  "locale": "global",
+  "title_en": "Laundry & Dry Cleaning",
+  "title_th": "ซักรีดและซักแห้ง",
+  "tier": 1,
+  "cefr_range": [
+    "A2",
+    "B1"
+  ],
+  "prerequisites": [
+    "greetings_small_talk",
+    "shopping_and_paying",
+    "telling_time"
+  ],
+  "recycles": [
+    "numbers 1–100 (teens vs tens)",
+    "prices and 'How much is it?'",
+    "days of the week and clock times",
+    "clarification questions: 'Sorry, could you say that again?'",
+    "polite requests with 'Can I…?' / 'I'd like…'"
+  ],
+  "register": "casual-polite service-counter English (first-name-free, friendly, transactional; short turns)",
+  "sound_target_box": {
+    "note_th": null,
+    "targets": [
+      {
+        "sound": "final_consonants",
+        "scoring_method": "phoneme",
+        "words_in_context": [
+          "shirt",
+          "shirts",
+          "washed",
+          "pressed",
+          "stained",
+          "silk",
+          "belt",
+          "coat",
+          "ticket",
+          "next week",
+          "dry clean",
+          "receipt"
+        ],
+        "minimal_pairs": [
+          [
+            "coat",
+            "code"
+          ],
+          [
+            "back",
+            "bag"
+          ],
+          [
+            "wash",
+            "watch"
+          ],
+          [
+            "press",
+            "pressed"
+          ],
+          [
+            "stain",
+            "stains"
+          ],
+          [
+            "shirt",
+            "shirts"
+          ]
+        ],
+        "why_it_matters_here": "The whole transaction is carried by the endings. 'Two shirts pressed' with dropped finals becomes 'two shirt press' — the counter staff writes down one item, wash only, and you come back to one un-ironed shirt and pay a second time. 'Washed' vs 'wash' is also the difference between 'it's already done' and 'please do it'."
+      },
+      {
+        "sound": "numbers",
+        "scoring_method": "phoneme",
+        "words_in_context": [
+          "fifteen dollars",
+          "fifty",
+          "ticket number thirty-one",
+          "fourteen instead of ten",
+          "thirty-four all up",
+          "Thursday after five",
+          "three fifty each"
+        ],
+        "minimal_pairs": [
+          [
+            "thirteen",
+            "thirty"
+          ],
+          [
+            "fourteen",
+            "forty"
+          ],
+          [
+            "fifteen",
+            "fifty"
+          ],
+          [
+            "eighteen",
+            "eighty"
+          ],
+          [
+            "nineteen",
+            "ninety"
+          ]
+        ],
+        "why_it_matters_here": "You say your ticket number out loud and you hear the price and the pick-up day exactly once. Say 'thirty' when your ticket is 'thirteen' and you are handed a stranger's clothes; hear 'fifteen' when the price is 'fifty' and you arrive at the counter without enough money."
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "en": "dry cleaner's / laundry shop",
+      "th": "ร้านซักแห้ง / ร้านซักรีด — ที่เอาเสื้อผ้าไปให้เขาซักให้",
+      "group": "places_people",
+      "audio_needed": true,
+      "audio": "/static/audio/global/dry-cleaner-s-laundry-shop.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "counter staff",
+      "th": "พนักงานหน้าเคาน์เตอร์ คนที่รับของกับคิดเงิน",
+      "group": "places_people",
+      "audio_needed": true,
+      "audio": "/static/audio/global/counter-staff.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "laundromat",
+      "th": "laundromat — ร้านซักผ้าหยอดเหรียญ ซักเองเอง ไม่มีคนซักให้",
+      "group": "places_people",
+      "audio_needed": true,
+      "audio": "/static/audio/global/laundromat.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "wash",
+      "th": "ซัก (ซักน้ำธรรมดา)",
+      "group": "services",
+      "audio_needed": true,
+      "audio": "/static/audio/global/wash.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "dry clean",
+      "th": "dry clean — ซักแห้ง ใช้น้ำยาแทนน้ำ สำหรับผ้าที่ซักน้ำไม่ได้ เช่น สูท ไหม",
+      "group": "services",
+      "audio_needed": true,
+      "audio": "/static/audio/global/dry-clean.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "iron / press",
+      "th": "รีด",
+      "group": "services",
+      "audio_needed": true,
+      "audio": "/static/audio/global/iron-press.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "same-day service",
+      "th": "same-day service — เอามาเช้า รับได้เย็นวันเดียวกัน",
+      "group": "services",
+      "audio_needed": true,
+      "audio": "/static/audio/global/same-day-service.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "express (extra charge)",
+      "th": "express — เร่งด่วน ได้เร็วกว่าปกติ แต่จ่ายเพิ่ม",
+      "group": "services",
+      "audio_needed": true,
+      "audio": "/static/audio/global/express-extra-charge.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "shirt",
+      "th": "เสื้อเชิ้ต",
+      "group": "items",
+      "audio_needed": true,
+      "audio": "/static/audio/global/shirt.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "trousers / pants",
+      "th": "กางเกงขายาว",
+      "group": "items",
+      "audio_needed": true,
+      "audio": "/static/audio/global/trousers-pants.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "jacket",
+      "th": "แจ็คเก็ต เสื้อคลุมตัวสั้น",
+      "group": "items",
+      "audio_needed": true,
+      "audio": "/static/audio/global/jacket.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "dress",
+      "th": "เดรส ชุดกระโปรงติดกันของผู้หญิง",
+      "group": "items",
+      "audio_needed": true,
+      "audio": "/static/audio/global/dress.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "coat",
+      "th": "โค้ท เสื้อคลุมกันหนาวตัวยาว",
+      "group": "items",
+      "audio_needed": true,
+      "audio": "/static/audio/global/coat.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "silk / wool",
+      "th": "ผ้าไหม / ผ้าขนสัตว์ — ผ้าบอบบาง ส่วนใหญ่ต้อง dry clean",
+      "group": "items",
+      "audio_needed": true,
+      "audio": "/static/audio/global/silk-wool.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "stain",
+      "th": "รอยเปื้อน เช่น กาแฟหก น้ำมันกระเด็น",
+      "group": "problems",
+      "audio_needed": true,
+      "audio": "/static/audio/global/stain.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "collar",
+      "th": "ปกเสื้อ",
+      "group": "problems",
+      "audio_needed": true,
+      "audio": "/static/audio/global/collar.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "sleeve / cuff",
+      "th": "แขนเสื้อ / ปลายแขน ตรงข้อมือ",
+      "group": "problems",
+      "audio_needed": true,
+      "audio": "/static/audio/global/sleeve-cuff.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "a missing button",
+      "th": "กระดุมหาย ขาดไปเม็ดนึง",
+      "group": "problems",
+      "audio_needed": true,
+      "audio": "/static/audio/global/a-missing-button.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "shrink / it shrank",
+      "th": "หด / มันหดไปแล้ว — ซักแล้วเสื้อเล็กลง",
+      "group": "problems",
+      "audio_needed": true,
+      "audio": "/static/audio/global/shrink-it-shrank.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "re-clean (do it again)",
+      "th": "ซักใหม่อีกรอบ ถ้ารอบแรกยังไม่สะอาด ปกติเขาทำให้ฟรี",
+      "group": "problems",
+      "audio_needed": true,
+      "audio": "/static/audio/global/re-clean-do-it-again.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "ticket / receipt",
+      "th": "ใบรับของ / ใบเสร็จ ต้องเก็บไว้ ตอนมารับของเขาขอดู",
+      "group": "money_time",
+      "audio_needed": true,
+      "audio": "/static/audio/global/ticket-receipt.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "per item",
+      "th": "คิดเป็นชิ้น ชิ้นละเท่าไหร่",
+      "group": "money_time",
+      "audio_needed": true,
+      "audio": "/static/audio/global/per-item.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "the total",
+      "th": "ยอดรวมทั้งหมด ที่ต้องจ่ายจริง",
+      "group": "money_time",
+      "audio_needed": true,
+      "audio": "/static/audio/global/the-total.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "ready",
+      "th": "เสร็จแล้ว พร้อมให้มารับ",
+      "group": "money_time",
+      "audio_needed": true,
+      "audio": "/static/audio/global/ready.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "pick up / drop off",
+      "th": "มารับของ / เอาของมาฝาก",
+      "group": "money_time",
+      "audio_needed": true,
+      "audio": "/static/audio/global/pick-up-drop-off.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "on a hanger / folded",
+      "th": "แขวนไม้แขวน / พับใส่ถุง — เขาจะถามว่าเอาแบบไหน",
+      "group": "money_time",
+      "audio_needed": true,
+      "audio": "/static/audio/global/on-a-hanger-folded.mp3",
+      "th_status": "draft_unverified"
+    }
+  ],
+  "model_dialogues": [
+    {
+      "cefr": "A2",
+      "label": "Dropping clothes off — standard counter visit",
+      "lines": [
+        {
+          "speaker": "Staff",
+          "text": "Hi there, what can I do for you?",
+          "audio": "/static/audio/global/hi-there-what-can-i-do-for-you.mp3",
+          "th": "สวัสดีค่ะ มีอะไรให้ช่วยคะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "I'd like these washed, please.",
+          "audio": "/static/audio/global/i-d-like-these-washed-please.mp3",
+          "th": "ขอซักพวกนี้หน่อยครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Staff",
+          "text": "Sure. Two shirts and a jacket, yeah?",
+          "audio": "/static/audio/global/sure-two-shirts-and-a-jacket-yeah.mp3",
+          "th": "ได้เลย เสื้อเชิ้ตสองตัวกับแจ็คเก็ตหนึ่งตัวใช่มั้ย",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Yes. And this shirt has a stain.",
+          "audio": "/static/audio/global/yes-and-this-shirt-has-a-stain.mp3",
+          "th": "ใช่ครับ แล้วเสื้อตัวนี้มีรอยเปื้อนด้วย",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Staff",
+          "text": "On the collar — I see it. We'll have a go. That's fifteen dollars.",
+          "audio": "/static/audio/global/on-the-collar-i-see-it-we-ll-have-a-go-that-s-fifteen-dollar.mp3",
+          "th": "ตรงคอเสื้อ เห็นแล้ว เดี๋ยวลองดูให้ ทั้งหมดสิบห้าเหรียญ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Sorry, fifteen or fifty?",
+          "audio": "/static/audio/global/sorry-fifteen-or-fifty.mp3",
+          "th": "ขอโทษนะ สิบห้าหรือห้าสิบ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Staff",
+          "text": "Fifteen. Five-oh would be a bit rough!",
+          "audio": "/static/audio/global/fifteen-five-oh-would-be-a-bit-rough.mp3",
+          "th": "สิบห้า ถ้าห้าสิบนี่โหดไปหน่อยแล้ว!",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Okay. When will it be ready?",
+          "audio": "/static/audio/global/okay-when-will-it-be-ready.mp3",
+          "th": "โอเค แล้วจะเสร็จเมื่อไหร่",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Staff",
+          "text": "Thursday after five. Here's your ticket — don't lose it.",
+          "audio": "/static/audio/global/thursday-after-five-here-s-your-ticket-don-t-lose-it.mp3",
+          "th": "วันพฤหัสหลังห้าโมง นี่ใบรับของ อย่าทำหายนะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Thursday after five. Thanks.",
+          "audio": "/static/audio/global/thursday-after-five-thanks.mp3",
+          "th": "วันพฤหัสหลังห้าโมง ขอบคุณครับ",
+          "th_status": "draft_unverified"
+        }
+      ],
+      "shadow_focus_lines": [
+        {
+          "text": "I'd like these washed, please.",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/i-d-like-these-washed-please.mp3"
+        },
+        {
+          "text": "This shirt has a stain.",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/this-shirt-has-a-stain.mp3"
+        },
+        {
+          "text": "Sorry, fifteen or fifty?",
+          "targets": [
+            "numbers",
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/sorry-fifteen-or-fifty.mp3"
+        },
+        {
+          "text": "Thursday after five.",
+          "targets": [
+            "numbers",
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/thursday-after-five.mp3"
+        }
+      ]
+    },
+    {
+      "cefr": "B1",
+      "label": "Picking up — the stain is still there and the price has changed",
+      "lines": [
+        {
+          "speaker": "Staff",
+          "text": "Afternoon. Have you got your ticket?",
+          "audio": "/static/audio/global/afternoon-have-you-got-your-ticket.mp3",
+          "th": "สวัสดีตอนบ่าย เอาใบรับของมามั้ย",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Here it is. Number thirty-one.",
+          "audio": "/static/audio/global/here-it-is-number-thirty-one.mp3",
+          "th": "นี่ครับ เบอร์สามสิบเอ็ด",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Staff",
+          "text": "Thirty-one… hang on. Right — two shirts and the jacket.",
+          "audio": "/static/audio/global/thirty-one-hang-on-right-two-shirts-and-the-jacket.mp3",
+          "th": "สามสิบเอ็ด… เดี๋ยวนะ อ้อ ได้แล้ว เสื้อเชิ้ตสองตัวกับแจ็คเก็ต",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Thanks. Can I check them?",
+          "audio": "/static/audio/global/thanks-can-i-check-them.mp3",
+          "th": "ขอบคุณครับ ขอเช็คหน่อยได้มั้ย",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Staff",
+          "text": "Go ahead, take your time.",
+          "audio": "/static/audio/global/go-ahead-take-your-time.mp3",
+          "th": "เชิญเลย ดูตามสบาย",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Sorry — the stain is still here.",
+          "audio": "/static/audio/global/sorry-the-stain-is-still-here.mp3",
+          "th": "ขอโทษนะ รอยเปื้อนยังอยู่เลย",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Staff",
+          "text": "Ah, on the collar. That was coffee, wasn't it? Some stains don't come out first go.",
+          "audio": "/static/audio/global/ah-on-the-collar-that-was-coffee-wasn-t-it-some-stains-don-t.mp3",
+          "th": "อ๋อ ตรงคอเสื้อ อันนี้กาแฟใช่มั้ย รอยบางอย่างมันไม่ออกตั้งแต่รอบแรกหรอก",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Can you try again?",
+          "audio": "/static/audio/global/can-you-try-again.mp3",
+          "th": "ลองซักอีกรอบได้มั้ย",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Staff",
+          "text": "We can, but you'd get it Monday. Is that alright?",
+          "audio": "/static/audio/global/we-can-but-you-d-get-it-monday-is-that-alright.mp3",
+          "th": "ได้ แต่ต้องมารับวันจันทร์นะ โอเคมั้ย",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Monday's fine. Is there a charge?",
+          "audio": "/static/audio/global/monday-s-fine-is-there-a-charge.mp3",
+          "th": "วันจันทร์ก็ได้ครับ ต้องจ่ายเพิ่มมั้ย",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Staff",
+          "text": "No charge for a re-clean. But there's a bit extra on the jacket — it's silk, so it's hand-finished. Fourteen instead of ten.",
+          "audio": "/static/audio/global/no-charge-for-a-re-clean-but-there-s-a-bit-extra-on-the-jack.mp3",
+          "th": "ซักซ้ำไม่คิดเงิน แต่แจ็คเก็ตแพงขึ้นนิดนึง เป็นผ้าไหม ต้องรีดมือ เป็นสิบสี่ ไม่ใช่สิบ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Sorry, fourteen or forty?",
+          "audio": "/static/audio/global/sorry-fourteen-or-forty.mp3",
+          "th": "ขอโทษนะ สิบสี่หรือสี่สิบ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Staff",
+          "text": "Four-teen. One four.",
+          "audio": "/static/audio/global/four-teen-one-four.mp3",
+          "th": "สิบ-สี่ หนึ่งกับสี่",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Okay. So what's the total today?",
+          "audio": "/static/audio/global/okay-so-what-s-the-total-today.mp3",
+          "th": "โอเค วันนี้รวมทั้งหมดเท่าไหร่",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Staff",
+          "text": "Thirty-four dollars all up, and nothing to pay on Monday.",
+          "audio": "/static/audio/global/thirty-four-dollars-all-up-and-nothing-to-pay-on-monday.mp3",
+          "th": "สามสิบสี่เหรียญครบ วันจันทร์ไม่ต้องจ่ายอะไรอีก",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Can I pay by card?",
+          "audio": "/static/audio/global/can-i-pay-by-card.mp3",
+          "th": "จ่ายบัตรได้มั้ย",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Staff",
+          "text": "Course you can. Tap there. And keep this ticket for Monday.",
+          "audio": "/static/audio/global/course-you-can-tap-there-and-keep-this-ticket-for-monday.mp3",
+          "th": "ได้สิ แตะตรงนี้เลย แล้วเก็บใบรับนี้ไว้มาวันจันทร์นะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Got it. Monday after five?",
+          "audio": "/static/audio/global/got-it-monday-after-five.mp3",
+          "th": "โอเคครับ วันจันทร์หลังห้าโมงใช่มั้ย",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Staff",
+          "text": "We shut at six, so any time before that.",
+          "audio": "/static/audio/global/we-shut-at-six-so-any-time-before-that.mp3",
+          "th": "ร้านปิดหกโมง มาก่อนหกโมงก็ได้",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Great. Thanks very much.",
+          "audio": "/static/audio/global/great-thanks-very-much.mp3",
+          "th": "เยี่ยมเลย ขอบคุณมากครับ",
+          "th_status": "draft_unverified"
+        }
+      ],
+      "shadow_focus_lines": [
+        {
+          "text": "The stain is still here.",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/the-stain-is-still-here.mp3"
+        },
+        {
+          "text": "Sorry, fourteen or forty?",
+          "targets": [
+            "numbers"
+          ],
+          "audio": "/static/audio/global/sorry-fourteen-or-forty.mp3"
+        },
+        {
+          "text": "Is there an extra charge?",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/is-there-an-extra-charge.mp3"
+        },
+        {
+          "text": "Thirty-four dollars all up.",
+          "targets": [
+            "numbers",
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/thirty-four-dollars-all-up.mp3"
+        }
+      ]
+    }
+  ],
+  "chunk_drills": [
+    {
+      "label": "Asking for a service (causative get)",
+      "pattern": "Can I get these + [past participle]?",
+      "examples": [
+        "Can I get these washed?",
+        "Can I get this dry cleaned?",
+        "Can I get these shirts pressed?",
+        "Can I get this jacket cleaned by Friday?"
+      ],
+      "spiralled_grammar": "get + past participle; the -ed/-t ending must be audible or the service changes"
+    },
+    {
+      "label": "Reporting a problem",
+      "pattern": "There's a stain on the + [part of the item].",
+      "examples": [
+        "There's a stain on the collar.",
+        "There's a stain on the sleeve.",
+        "There's a mark on the cuff.",
+        "A button is missing on this shirt."
+      ],
+      "spiralled_grammar": "there is + prepositional phrase; recycles clothing/body-part location language"
+    },
+    {
+      "label": "Time and readiness",
+      "pattern": "When will it be ready? / Will it be ready by + [day/time]?",
+      "examples": [
+        "When will it be ready?",
+        "Will it be ready by Friday?",
+        "Can I pick it up tomorrow morning?",
+        "Do you do same-day?"
+      ],
+      "spiralled_grammar": "will for scheduled future; recycles days of the week and clock times"
+    },
+    {
+      "label": "Price checking",
+      "pattern": "How much is it per + [item]? / What's the total?",
+      "examples": [
+        "How much is it per shirt?",
+        "How much is it per kilo?",
+        "Is express extra?",
+        "What's the total?"
+      ],
+      "spiralled_grammar": "recycles 'How much…?' and prices; forces teen/ty discrimination in the answer"
+    },
+    {
+      "label": "Clarifying a number (the safety chunk)",
+      "pattern": "Sorry, did you say [teen] or [ty]?",
+      "examples": [
+        "Sorry, did you say fifteen or fifty?",
+        "Sorry, thirteen or thirty?",
+        "Could you say that again, please?",
+        "Could you write it down?"
+      ],
+      "spiralled_grammar": "recycled clarification routine from earlier units; alternative question intonation"
+    }
+  ],
+  "listening_items": [
+    {
+      "audio_text": "That'll be forty-five dollars, and it'll be ready Friday after four.",
+      "channel": "counter, in person",
+      "question": "How much is it, and when can you collect it?",
+      "answer": "$45; Friday after four o'clock.",
+      "distractor_focus": "forty-five vs fourteen-five; 'four' vs 'Friday' time slot"
+    },
+    {
+      "audio_text": "We can do same-day if you drop it off before ten, otherwise it's next day.",
+      "channel": "phone",
+      "question": "What time do you have to drop it off for same-day service?",
+      "answer": "Before ten in the morning.",
+      "distractor_focus": "ten vs two; 'same-day' vs 'next day'"
+    },
+    {
+      "audio_text": "Hi, it's Sunshine Cleaners. Your order's ready, but the jacket needs one more day. Ticket nineteen.",
+      "channel": "voicemail",
+      "question": "Which item is not ready, and what is the ticket number?",
+      "answer": "The jacket; ticket nineteen (19).",
+      "distractor_focus": "nineteen vs ninety; jacket vs ticket (final consonants)"
+    },
+    {
+      "audio_text": "Shirts are three fifty each washed and pressed. Dry cleaning's eight.",
+      "channel": "counter, in person",
+      "question": "How much for two shirts washed and pressed?",
+      "answer": "Seven dollars.",
+      "distractor_focus": "three fifty vs thirteen fifty; 'washed and pressed' vs 'wash and press'"
+    },
+    {
+      "audio_text": "Sorry, the machine's down — cash only today. Your total's thirteen dollars.",
+      "channel": "counter, in person",
+      "question": "How can you pay, and how much?",
+      "answer": "Cash only; thirteen dollars.",
+      "distractor_focus": "thirteen vs thirty; 'cash' vs 'catch'"
+    }
+  ],
+  "guided_roleplay": {
+    "learner_role": "Customer dropping off two shirts and a silk jacket, then coming back to collect them",
+    "flow": [
+      "Step 1 — Greet and state what you want: 'Hi, can I get these washed, please?'",
+      "Step 2 — Confirm the items and count them out loud (two shirts, one jacket).",
+      "Step 3 — Point out the stain and say where it is (collar / sleeve).",
+      "Step 4 — Ask the price: 'How much is it per shirt?' and repeat the number back.",
+      "Step 5 — Ask when it will be ready and repeat the day and time back.",
+      "Step 6 — Take the ticket; at pick-up, say your ticket number and check the clothes before you leave.",
+      "Step 7 — If something is wrong, ask for a re-clean and ask if there is a charge."
+    ],
+    "sentence_frames": [
+      "Hi, can I get these ___, please?",
+      "Two shirts and one ___.",
+      "There's a stain on the ___.",
+      "How much is it per ___?",
+      "Sorry, did you say ___ or ___?",
+      "When will it be ready?",
+      "Ticket number ___, please.",
+      "Sorry — the stain is still here. Can you try again?",
+      "Is there a charge for that?"
+    ],
+    "hints_available": true
+  },
+  "free_roleplay": {
+    "ai_persona": "Counter staff at a busy neighbourhood dry cleaner. Friendly, quick, a bit rushed; uses short service-counter turns, says prices and days once, and expects the customer to check their own items.",
+    "a2_behavior": "Keeps to the standard script: takes the items, counts them back, quotes a simple price, gives one pick-up day and time, hands over a ticket. Repeats numbers clearly if the learner asks.",
+    "b1_curveballs": [
+      "The stain can't be fully removed — offers a re-clean for Monday instead.",
+      "The silk jacket costs more than the price on the sign because it is hand-finished.",
+      "Asks a choice question the learner didn't expect: 'On hangers or folded?'",
+      "Asks for a phone number and reads it back with one digit wrong.",
+      "The card machine is down — cash only today.",
+      "The learner has lost the ticket; staff asks for a name and a description of the items.",
+      "One item is not ready and has to be collected the next day."
+    ],
+    "roleplay_rubric": [
+      {
+        "criterion": "Completed the full transaction: stated the service, confirmed the items and count, got a price, and got a pick-up day/time",
+        "type": "required"
+      },
+      {
+        "criterion": "Reported the problem clearly — named the stain and its location on the garment",
+        "type": "required"
+      },
+      {
+        "criterion": "Repeated back or confirmed at least one number (price, ticket number, or time) so it could be checked",
+        "type": "required"
+      },
+      {
+        "criterion": "Asked at least one clarification question ('Sorry, fifteen or fifty?' / 'Could you say that again?') instead of nodding through",
+        "type": "required"
+      },
+      {
+        "criterion": "Register stayed casual-polite: 'Can I get…', 'please', 'thanks' — no commands to the staff",
+        "type": "required"
+      },
+      {
+        "criterion": "Pronunciation: final consonants and clusters audible ('shirts', 'washed', 'pressed', 'silk', 'ticket') and teen/ty numbers distinguishable",
+        "type": "pronunciation"
+      },
+      {
+        "criterion": "Coped with a curveball (re-clean, extra charge, cash only, lost ticket) — negotiated a new day or price without abandoning the conversation",
+        "type": "stretch_b1"
+      }
+    ]
+  },
+  "register_culture_note": {
+    "en": "A laundry counter is fast and informal. Short turns win: 'Hi, can I get these washed?' is complete and polite. You are expected to say the number of items out loud, to repeat prices and days back, and — at pick-up — to open the bag and look before you leave the shop. Checking your own clothes at the counter is normal customer behaviour, not distrust.",
+    "th": null,
+    "do_dont": [
+      {
+        "avoid": "You wash this. Tomorrow.",
+        "prefer": "Can I get this washed by tomorrow, please?"
+      },
+      {
+        "avoid": "Two shir', please. (finals dropped — staff logs one item, wash only)",
+        "prefer": "Two shirts, washed and pressed, please."
+      },
+      {
+        "avoid": "Nodding and saying 'yes' when you didn't catch the price",
+        "prefer": "Sorry, did you say fifteen or fifty?"
+      },
+      {
+        "avoid": "This is very dirty, you must clean it.",
+        "prefer": "There's a stain on the collar — can you get it out?"
+      },
+      {
+        "avoid": "Saying nothing about a bad result and leaving quietly",
+        "prefer": "Sorry — the stain is still here. Can you try again?"
+      }
+    ],
+    "thai_cultural_note": "In Thailand many laundry shops price by the kilo, know their regulars, and will sort things out informally later. Abroad, dry cleaners usually price per item and run on the paper ticket: no ticket, slow problem. Two habits follow from that difference — say your item count and your ticket number clearly, and raise a problem at the counter on the day rather than waiting to avoid making a fuss. Complaining politely on the spot is the expected, easiest route to a free re-clean; a week later it is much harder."
+  },
+  "can_do_checkpoints": [
+    {
+      "cefr": "A2",
+      "statement": "I can drop off clothes and say what service I want (wash / dry clean / press)."
+    },
+    {
+      "cefr": "A2",
+      "statement": "I can ask how much it costs per item and understand the total."
+    },
+    {
+      "cefr": "A2",
+      "statement": "I can ask when it will be ready and repeat the day and time back correctly."
+    },
+    {
+      "cefr": "B1",
+      "statement": "I can point out a stain or damage, say exactly where it is, and ask for a re-clean."
+    },
+    {
+      "cefr": "B1",
+      "statement": "I can handle a change of plan — a higher price, a later day, or cash only — and agree on new arrangements."
+    },
+    {
+      "cefr": "Sound",
+      "statement": "My final consonants ('shirts', 'washed', 'pressed', 'ticket') and my teen/ty numbers are clear enough that the counter writes down the right order."
+    }
+  ],
+  "gamification": {
+    "xp_per_substep": true,
+    "unlocks": [
+      "Stain Spotter — reported a stain with its exact location three times",
+      "Ticket Master — said a two-digit ticket number that was understood first time",
+      "Teen/Ty Champion — 10 correct number discriminations in a row",
+      "Second Chance — successfully negotiated a free re-clean in free roleplay",
+      "Unlocks next unit: Shoe repair & alterations"
+    ],
+    "sound_meters": [
+      "final_consonants",
+      "numbers"
+    ]
+  },
+  "_review_status": {
+    "thai_strings": "DRAFT - machine-generated, tagged th_status=draft_unverified. A native Thai speaker must review every string and set th_status='reviewed'.",
+    "facts": "UNVERIFIED - generated content, needs a local fact-check before shipping",
+    "generated_by": "claude-opus-5"
+  }
+}

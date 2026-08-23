@@ -1,0 +1,854 @@
+{
+  "scenario_id": "paying_and_splitting_bill",
+  "locale": "global",
+  "title_en": "Paying & Splitting the Bill",
+  "title_th": "การจ่ายเงินและแยกบิล",
+  "tier": 1,
+  "cefr_range": [
+    "A2",
+    "B1"
+  ],
+  "prerequisites": [
+    "greetings_small_talk",
+    "ordering_food_basics",
+    "numbers_and_prices"
+  ],
+  "recycles": [
+    "numbers 1-100 and prices",
+    "'How much is it?'",
+    "'Can I have...?' / 'Could we get...?'",
+    "polite requests with 'please'",
+    "'Sorry, could you say that again?'",
+    "food and drink items from ordering_food_basics",
+    "thanking and closing a service interaction"
+  ],
+  "register": "Casual-polite service register — friendly, short turns, first-name-free; direct money questions are normal",
+  "sound_target_box": {
+    "note_th": null,
+    "targets": [
+      {
+        "sound": "numbers",
+        "scoring_method": "phoneme",
+        "words_in_context": [
+          "thirteen dollars",
+          "thirty dollars",
+          "twenty-three fifty",
+          "fifteen each",
+          "fifty euros",
+          "forty-five",
+          "ten percent"
+        ],
+        "minimal_pairs": [
+          [
+            "thirteen",
+            "thirty"
+          ],
+          [
+            "fifteen",
+            "fifty"
+          ],
+          [
+            "sixteen",
+            "sixty"
+          ],
+          [
+            "fourteen",
+            "forty"
+          ],
+          [
+            "nineteen",
+            "ninety"
+          ]
+        ],
+        "why_it_matters_here": "If 'thirteen' comes out sounding like 'thirty' when you say what you owe, you either underpay in front of your friends or hand over more than double the real amount. Teen numbers carry stress on the second syllable and end in a clear /n/; Thai speakers often drop that final /n/ and flatten the stress, so the cashier hears the wrong price and repeats it back wrong."
+      },
+      {
+        "sound": "th",
+        "scoring_method": "minimal_pair",
+        "words_in_context": [
+          "three of us",
+          "thirteen",
+          "thirty-three",
+          "thanks",
+          "together",
+          "the bill",
+          "that's mine",
+          "another card"
+        ],
+        "minimal_pairs": [
+          [
+            "three",
+            "tree"
+          ],
+          [
+            "thirty",
+            "dirty"
+          ],
+          [
+            "thanks",
+            "tanks"
+          ],
+          [
+            "think",
+            "sink"
+          ],
+          [
+            "they",
+            "day"
+          ],
+          [
+            "there",
+            "dare"
+          ]
+        ],
+        "why_it_matters_here": "'Three of us' becoming 'tree of us' makes the server split the bill wrong, and 'together' said with a hard /t/ or /d/ gets confused with nothing at all — the server just asks again while your friends wait. 'Thirty' said as 'dirty' is the single most common price mishearing in restaurants."
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "en": "the bill / the check",
+      "th": "บิล ใบเก็บเงิน — ที่ออสฯ เรียก bill ส่วน check เป็นคำอเมริกัน คนออสฯ ไม่ค่อยใช้",
+      "group": "asking to pay",
+      "audio_needed": true,
+      "audio": "/static/audio/global/the-bill-the-check.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "Could we get the bill, please?",
+      "th": "\"ขอบิลด้วยครับ/ค่ะ\" — ประโยคมาตรฐาน สุภาพ ใช้ได้ทุกร้าน หรือจะยกมือทำท่าเขียนก็เข้าใจกัน",
+      "group": "asking to pay",
+      "audio_needed": true,
+      "audio": "/static/audio/global/could-we-get-the-bill-please.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "together",
+      "th": "จ่ายรวมกัน คือรวมทุกคนเป็นบิลเดียว",
+      "group": "splitting",
+      "audio_needed": true,
+      "audio": "/static/audio/global/together.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "separately",
+      "th": "แยกจ่าย ต่างคนต่างจ่ายของตัวเอง บอกพนักงานว่า \"Separately, please\" ตั้งแต่ตอนสั่งจะง่ายกว่า",
+      "group": "splitting",
+      "audio_needed": true,
+      "audio": "/static/audio/global/separately.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "split it",
+      "th": "หารกัน แบ่งกันจ่าย เป็นคำพูดง่ายๆ ที่คนใช้จริง",
+      "group": "splitting",
+      "audio_needed": true,
+      "audio": "/static/audio/global/split-it.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "split it evenly",
+      "th": "หารเท่ากันทุกคน ไม่สนว่าใครกินเยอะกินน้อย",
+      "group": "splitting",
+      "audio_needed": true,
+      "audio": "/static/audio/global/split-it-evenly.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "each",
+      "th": "คนละ... เช่น \"$20 each\" = คนละ 20 เหรียญ",
+      "group": "splitting",
+      "audio_needed": true,
+      "audio": "/static/audio/global/each.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "my share",
+      "th": "ส่วนของฉัน เงินที่ฉันต้องจ่าย เช่น \"This is my share\" พร้อมยื่นเงินให้",
+      "group": "splitting",
+      "audio_needed": true,
+      "audio": "/static/audio/global/my-share.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "cash",
+      "th": "เงินสด บางร้านเล็กๆ รับแต่เงินสด หรือรูดบัตรขั้นต่ำ $10",
+      "group": "payment method",
+      "audio_needed": true,
+      "audio": "/static/audio/global/cash.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "card",
+      "th": "บัตร ทั้งเดบิตและเครดิต ที่ออสฯ ใช้บัตรกันเกือบหมด บางร้านคิดค่าธรรมเนียมบัตรเพิ่มนิดหน่อย",
+      "group": "payment method",
+      "audio_needed": true,
+      "audio": "/static/audio/global/card.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "tap / contactless",
+      "th": "แตะจ่าย ไม่ต้องเสียบบัตร แค่แตะที่เครื่อง ต่ำกว่า $100 ปกติไม่ต้องกด PIN",
+      "group": "payment method",
+      "audio_needed": true,
+      "audio": "/static/audio/global/tap-contactless.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "PIN",
+      "th": "รหัสบัตร 4 ตัว ถ้าเครื่องขึ้นให้กด PIN ก็กดแล้วกด Enter (ปุ่มเขียว)",
+      "group": "payment method",
+      "audio_needed": true,
+      "audio": "/static/audio/global/pin.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "declined",
+      "th": "บัตรไม่ผ่าน อาจเพราะเงินไม่พอ บัตรมีปัญหา หรือสัญญาณเครื่อง ลองใหม่หรือเปลี่ยนบัตร",
+      "group": "payment problems",
+      "audio_needed": true,
+      "audio": "/static/audio/global/declined.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "change",
+      "th": "เงินทอน",
+      "group": "cash handling",
+      "audio_needed": true,
+      "audio": "/static/audio/global/change.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "Keep the change.",
+      "th": "\"ไม่ต้องทอน\" — ให้เก็บเงินทอนไว้เลย ที่ออสฯ ไม่จำเป็นต้องพูด แต่พูดได้ถ้าเศษนิดเดียว",
+      "group": "cash handling",
+      "audio_needed": true,
+      "audio": "/static/audio/global/keep-the-change.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "small notes / small bills",
+      "th": "แบงก์ย่อย เวลาจ่ายด้วยแบงก์ใหญ่แล้วอยากได้ทอนเป็นใบเล็ก",
+      "group": "cash handling",
+      "audio_needed": true,
+      "audio": "/static/audio/global/small-notes-small-bills.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "receipt",
+      "th": "ใบเสร็จ ถ้าต้องการต้องขอ เพราะหลายร้านไม่ให้อัตโนมัติ เก็บไว้เผื่อเคลมหรือคืนของ",
+      "group": "after paying",
+      "audio_needed": true,
+      "audio": "/static/audio/global/receipt.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "tip",
+      "th": "ทิป — ที่ออสฯ ไม่บังคับ ไม่ให้ก็ไม่ผิดมารยาท เพราะพนักงานได้ค่าแรงขั้นต่ำอยู่แล้ว ร้านดีๆ อาจให้สัก 10%",
+      "group": "extra charges",
+      "audio_needed": true,
+      "audio": "/static/audio/global/tip.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "service charge",
+      "th": "ค่าบริการที่ร้านคิดเพิ่มเอง ที่ออสฯ ส่วนใหญ่ไม่มี แต่วันหยุดนักขัตฤกษ์มักบวก 10-15% (surcharge) เขียนติดไว้หน้าเมนู",
+      "group": "extra charges",
+      "audio_needed": true,
+      "audio": "/static/audio/global/service-charge.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "included",
+      "th": "รวมอยู่แล้ว เช่น \"GST included\" = ราคารวมภาษีแล้ว ไม่ต้องบวกเพิ่มเหมือนอเมริกา",
+      "group": "extra charges",
+      "audio_needed": true,
+      "audio": "/static/audio/global/included.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "total",
+      "th": "ยอดรวมทั้งหมดที่ต้องจ่าย",
+      "group": "extra charges",
+      "audio_needed": true,
+      "audio": "/static/audio/global/total.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "That's not mine.",
+      "th": "\"อันนี้ไม่ใช่ของฉัน\" — ใช้ตอนในบิลมีของที่เราไม่ได้สั่ง พูดตรงๆ ได้เลย ไม่เสียมารยาท",
+      "group": "checking the bill",
+      "audio_needed": true,
+      "audio": "/static/audio/global/that-s-not-mine.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "I think there's a mistake.",
+      "th": "\"คิดว่าน่าจะมีอะไรผิดนะ\" — วิธีทักท้วงแบบสุภาพ ไม่กล่าวหาใคร คนออสฯ ใช้กันปกติ",
+      "group": "checking the bill",
+      "audio_needed": true,
+      "audio": "/static/audio/global/i-think-there-s-a-mistake.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "three of us",
+      "th": "พวกเรา 3 คน เช่น \"There's three of us\" ตอนบอกจำนวนคนที่หน้าร้าน",
+      "group": "numbers of people",
+      "audio_needed": true,
+      "audio": "/static/audio/global/three-of-us.mp3",
+      "th_status": "draft_unverified"
+    }
+  ],
+  "model_dialogues": [
+    {
+      "cefr": "A2",
+      "label": "Standard: asking for the bill and paying your own share",
+      "lines": [
+        {
+          "speaker": "Server",
+          "text": "All finished here? Can I take these?",
+          "audio": "/static/audio/global/all-finished-here-can-i-take-these.mp3",
+          "th": "ทานเสร็จแล้วใช่ไหมคะ เก็บจานได้เลยไหม",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Customer",
+          "text": "Yes, thank you. Could we get the bill?",
+          "audio": "/static/audio/global/yes-thank-you-could-we-get-the-bill.mp3",
+          "th": "เสร็จแล้วครับ ขอบคุณ ขอบิลหน่อยได้ไหม",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Server",
+          "text": "Sure. Together or separately?",
+          "audio": "/static/audio/global/sure-together-or-separately.mp3",
+          "th": "ได้เลย จะรวมบิลเดียว หรือแยกจ่ายคนละส่วน",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Customer",
+          "text": "Separately, please. There are three of us.",
+          "audio": "/static/audio/global/separately-please-there-are-three-of-us.mp3",
+          "th": "แยกกันนะ พวกเรามีสามคน",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Server",
+          "text": "No problem. Yours is thirteen fifty.",
+          "audio": "/static/audio/global/no-problem-yours-is-thirteen-fifty.mp3",
+          "th": "ได้เลย ของคุณสิบสามเหรียญห้าสิบ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Customer",
+          "text": "Sorry — thirteen, not thirty?",
+          "audio": "/static/audio/global/sorry-thirteen-not-thirty.mp3",
+          "th": "ขอโทษนะ สิบสาม หรือสามสิบ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Server",
+          "text": "Thirteen. One three. Thirteen fifty.",
+          "audio": "/static/audio/global/thirteen-one-three-thirteen-fifty.mp3",
+          "th": "สิบสาม หนึ่ง-สาม สิบสามเหรียญห้าสิบ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Customer",
+          "text": "Okay. Can I pay by card?",
+          "audio": "/static/audio/global/okay-can-i-pay-by-card.mp3",
+          "th": "โอเค จ่ายบัตรได้ไหม",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Server",
+          "text": "Of course. You can tap right here.",
+          "audio": "/static/audio/global/of-course-you-can-tap-right-here.mp3",
+          "th": "ได้เลย แตะบัตรตรงนี้ได้เลย",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Customer",
+          "text": "Thanks. Keep the change.",
+          "audio": "/static/audio/global/thanks-keep-the-change.mp3",
+          "th": "ขอบคุณ ไม่ต้องทอนนะ",
+          "th_status": "draft_unverified"
+        }
+      ],
+      "shadow_focus_lines": [
+        {
+          "text": "Together or separately?",
+          "targets": [
+            "th"
+          ],
+          "audio": "/static/audio/global/together-or-separately.mp3"
+        },
+        {
+          "text": "There are three of us.",
+          "targets": [
+            "th",
+            "numbers"
+          ],
+          "audio": "/static/audio/global/there-are-three-of-us.mp3"
+        },
+        {
+          "text": "Thirteen, not thirty?",
+          "targets": [
+            "numbers",
+            "th"
+          ],
+          "audio": "/static/audio/global/thirteen-not-thirty.mp3"
+        },
+        {
+          "text": "Thanks. Keep the change.",
+          "targets": [
+            "th"
+          ],
+          "audio": "/static/audio/global/thanks-keep-the-change.mp3"
+        }
+      ]
+    },
+    {
+      "cefr": "B1",
+      "label": "Off-script: uneven split, a declined card, and a service charge you didn't expect",
+      "lines": [
+        {
+          "speaker": "Server",
+          "text": "How was everything tonight?",
+          "audio": "/static/audio/global/how-was-everything-tonight.mp3",
+          "th": "คืนนี้เป็นยังไงบ้างคะ อาหารโอเคไหม",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Customer",
+          "text": "Really good, thanks. Could we get the bill?",
+          "audio": "/static/audio/global/really-good-thanks-could-we-get-the-bill.mp3",
+          "th": "อร่อยมากเลย ขอบคุณ ขอบิลหน่อยได้ไหม",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Server",
+          "text": "Of course. Together or separately?",
+          "audio": "/static/audio/global/of-course-together-or-separately.mp3",
+          "th": "ได้เลยค่ะ รวมบิลเดียว หรือแยกกันจ่าย",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Customer",
+          "text": "Separately, please. Three of us.",
+          "audio": "/static/audio/global/separately-please-three-of-us.mp3",
+          "th": "แยกกันนะ สามคน",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Server",
+          "text": "Alright — do you remember who had what?",
+          "audio": "/static/audio/global/alright-do-you-remember-who-had-what.mp3",
+          "th": "ได้เลย จำได้ไหมว่าใครสั่งอะไรบ้าง",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Customer",
+          "text": "I had the fish and one juice.",
+          "audio": "/static/audio/global/i-had-the-fish-and-one-juice.mp3",
+          "th": "ผมสั่งปลา กับน้ำผลไม้หนึ่งแก้ว",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Server",
+          "text": "Let me check… that's thirty-three eighty for you.",
+          "audio": "/static/audio/global/let-me-check-that-s-thirty-three-eighty-for-you.mp3",
+          "th": "ขอเช็กแป๊บนึงนะ… ของคุณสามสิบสามเหรียญแปดสิบ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Customer",
+          "text": "Sorry, thirty-three or twenty-three?",
+          "audio": "/static/audio/global/sorry-thirty-three-or-twenty-three.mp3",
+          "th": "ขอโทษนะ สามสิบสาม หรือยี่สิบสาม",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Server",
+          "text": "Thirty-three. Three three, eighty cents.",
+          "audio": "/static/audio/global/thirty-three-three-three-eighty-cents.mp3",
+          "th": "สามสิบสาม สาม-สาม แล้วก็แปดสิบเซ็นต์",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Customer",
+          "text": "Okay. Can I pay by card?",
+          "audio": "/static/audio/global/okay-can-i-pay-by-card.mp3",
+          "th": "โอเค จ่ายบัตรได้ไหม",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Server",
+          "text": "Sure, tap here… Hmm. Sorry, it's been declined.",
+          "audio": "/static/audio/global/sure-tap-here-hmm-sorry-it-s-been-declined.mp3",
+          "th": "ได้เลย แตะตรงนี้… เอ๊ะ ขอโทษนะคะ บัตรไม่ผ่าน",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Customer",
+          "text": "Oh. Let me try another card.",
+          "audio": "/static/audio/global/oh-let-me-try-another-card.mp3",
+          "th": "อ้าว งั้นขอลองอีกใบนะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Server",
+          "text": "Take your time, no rush at all.",
+          "audio": "/static/audio/global/take-your-time-no-rush-at-all.mp3",
+          "th": "ตามสบายเลยค่ะ ไม่ต้องรีบ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Customer",
+          "text": "This one should work. Sorry about that.",
+          "audio": "/static/audio/global/this-one-should-work-sorry-about-that.mp3",
+          "th": "ใบนี้น่าจะได้ ขอโทษด้วยนะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Server",
+          "text": "That went through. And just so you know, there's a ten percent service charge on the total.",
+          "audio": "/static/audio/global/that-went-through-and-just-so-you-know-there-s-a-ten-percent.mp3",
+          "th": "ผ่านแล้วค่ะ อ้อ บอกไว้ก่อนนะ ในบิลมี service charge สิบเปอร์เซ็นต์ของยอดรวมด้วย",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Customer",
+          "text": "Sorry — is the service charge already included?",
+          "audio": "/static/audio/global/sorry-is-the-service-charge-already-included.mp3",
+          "th": "ขอโทษนะ ค่า service charge นี่รวมอยู่ในยอดแล้วใช่ไหม",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Server",
+          "text": "Yes, it's on the bottom line, so you don't need to leave anything extra.",
+          "audio": "/static/audio/global/yes-it-s-on-the-bottom-line-so-you-don-t-need-to-leave-anyth.mp3",
+          "th": "ใช่ค่ะ รวมอยู่ในยอดสุดท้ายแล้ว ไม่ต้องให้ทิปเพิ่มอีก",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Customer",
+          "text": "Got it, thanks. Could I have the receipt?",
+          "audio": "/static/audio/global/got-it-thanks-could-i-have-the-receipt.mp3",
+          "th": "เข้าใจแล้ว ขอบคุณ ขอใบเสร็จด้วยได้ไหม",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Server",
+          "text": "Here you go. Have a good night!",
+          "audio": "/static/audio/global/here-you-go-have-a-good-night.mp3",
+          "th": "นี่ค่ะ ขอให้มีคืนที่ดีนะคะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Customer",
+          "text": "Thanks. You too.",
+          "audio": "/static/audio/global/thanks-you-too.mp3",
+          "th": "ขอบคุณ เช่นกันนะ",
+          "th_status": "draft_unverified"
+        }
+      ],
+      "shadow_focus_lines": [
+        {
+          "text": "Separately, please. Three of us.",
+          "targets": [
+            "th",
+            "numbers"
+          ],
+          "audio": "/static/audio/global/separately-please-three-of-us.mp3"
+        },
+        {
+          "text": "Thirty-three or twenty-three?",
+          "targets": [
+            "numbers",
+            "th"
+          ],
+          "audio": "/static/audio/global/thirty-three-or-twenty-three.mp3"
+        },
+        {
+          "text": "Let me try another card.",
+          "targets": [
+            "th"
+          ],
+          "audio": "/static/audio/global/let-me-try-another-card.mp3"
+        },
+        {
+          "text": "Is the service charge included?",
+          "targets": [
+            "th"
+          ],
+          "audio": "/static/audio/global/is-the-service-charge-included.mp3"
+        }
+      ]
+    }
+  ],
+  "chunk_drills": [
+    {
+      "label": "Asking for the bill",
+      "pattern": "Could we get the ___, please? / Can I have the ___?",
+      "examples": [
+        "Could we get the bill, please?",
+        "Can I have the check, please?",
+        "Could we get the receipt too?",
+        "Can I have the bill when you have a moment?"
+      ],
+      "spiralled_grammar": "Polite requests with 'Could we / Can I' — recycled from ordering_food_basics."
+    },
+    {
+      "label": "Together or separately",
+      "pattern": "___, please. There are ___ of us.",
+      "examples": [
+        "Separately, please. There are three of us.",
+        "Together, please.",
+        "Separately, please. There are two of us.",
+        "Together — I'm paying for both."
+      ],
+      "spiralled_grammar": "'There are + number + of us' — recycles numbers 1-10 and the plural 'there are'."
+    },
+    {
+      "label": "Saying and checking a price",
+      "pattern": "Sorry — ___ or ___? / Did you say ___?",
+      "examples": [
+        "Sorry — thirteen or thirty?",
+        "Did you say fifteen fifty?",
+        "Sorry, is that forty or fourteen?",
+        "So the total is sixty-six? Six six?"
+      ],
+      "spiralled_grammar": "Clarification question with rising intonation; recycles 'How much is it?' and number pairs."
+    },
+    {
+      "label": "Splitting the amount",
+      "pattern": "Let's split it ___ . / That's ___ each.",
+      "examples": [
+        "Let's split it evenly.",
+        "That's fifteen each.",
+        "I'll pay for my drinks only.",
+        "Can we split it three ways?"
+      ],
+      "spiralled_grammar": "'each' after a number; 'let's + verb' for suggestions."
+    },
+    {
+      "label": "Paying and change",
+      "pattern": "Can I pay by ___? / Keep the change.",
+      "examples": [
+        "Can I pay by card?",
+        "Can I pay in cash?",
+        "Do you take cards?",
+        "Keep the change, thanks."
+      ],
+      "spiralled_grammar": "'by + payment method'; short fixed closing formulas."
+    },
+    {
+      "label": "Handling a problem with the bill",
+      "pattern": "I think there's a mistake — ___ . / That's not ___ .",
+      "examples": [
+        "I think there's a mistake — we didn't order the wine.",
+        "That's not mine, I had the soup.",
+        "Sorry, is the service charge included?",
+        "Could you check this line, please?"
+      ],
+      "spiralled_grammar": "'I think there's...' softener + simple past for what you ordered."
+    }
+  ],
+  "listening_items": [
+    {
+      "audio_text": "That'll be thirteen fifty for you, and thirty for your friend.",
+      "channel": "in_person_restaurant",
+      "question": "How much does the listener pay?",
+      "answer": "13.50 (the friend pays 30)",
+      "distractor_focus": "thirteen vs thirty in the same sentence"
+    },
+    {
+      "audio_text": "The total's ninety, so that's fifteen each for the six of you.",
+      "channel": "in_person_restaurant",
+      "question": "How much does each person pay?",
+      "answer": "15 each",
+      "distractor_focus": "fifteen vs fifty; 'each' after a number"
+    },
+    {
+      "audio_text": "Sorry, the card's been declined — have you got another one, or cash?",
+      "channel": "in_person_counter",
+      "question": "What is the problem, and what two options are offered?",
+      "answer": "The card was declined; another card or cash",
+      "distractor_focus": "'declined' vs 'the line'; hearing a problem stated politely"
+    },
+    {
+      "answer": "No — it's already included in the total",
+      "audio_text": "There's a ten percent service charge on the bill, so no need to tip on top.",
+      "channel": "in_person_restaurant",
+      "question": "Do you need to leave a tip?",
+      "distractor_focus": "'included' vs 'extra'; percent numbers"
+    },
+    {
+      "audio_text": "Together or separately? If it's separately, I'll need to know who had what.",
+      "channel": "in_person_restaurant",
+      "question": "What does the server need if you pay separately?",
+      "answer": "To know who ordered which items",
+      "distractor_focus": "'together' vs 'separately'; the /ð/ in 'together'"
+    },
+    {
+      "audio_text": "I've only got a fifty — do you have anything smaller?",
+      "channel": "friend_at_table",
+      "question": "What is your friend asking for?",
+      "answer": "Smaller notes / change for a 50",
+      "distractor_focus": "fifty vs fifteen"
+    }
+  ],
+  "guided_roleplay": {
+    "learner_role": "You are eating out with two friends. You ask for the bill, pay only your own part, check a price you didn't hear well, and finish the payment.",
+    "flow": [
+      "Step 1 — Get the server's attention and ask for the bill.",
+      "Step 2 — Answer 'Together or separately?' and say how many people.",
+      "Step 3 — Say what you had ('I had the fish and one juice').",
+      "Step 4 — Hear the amount and check it back ('Sorry — thirteen or thirty?').",
+      "Step 5 — Choose a payment method ('Can I pay by card?').",
+      "Step 6 — Deal with one small problem (declined card / no change / service charge).",
+      "Step 7 — Close politely: ask for the receipt, say thanks."
+    ],
+    "sentence_frames": [
+      "Excuse me — could we get the bill, please?",
+      "Separately, please. There are three of us.",
+      "I had the ___ and one ___.",
+      "Sorry — ___ or ___?",
+      "Can I pay by card? / Can I pay in cash?",
+      "Sorry, is the service charge included?",
+      "Let me try another card.",
+      "Could I have the receipt, please?",
+      "Keep the change. Thanks."
+    ],
+    "hints_available": true
+  },
+  "free_roleplay": {
+    "ai_persona": "A friendly, slightly busy server in a mid-range restaurant. Speaks in short natural turns, uses 'no worries', 'take your time', and states prices quickly the first time.",
+    "a2_behavior": "Stays on the standard script: asks 'Together or separately?', gives one clear amount, accepts card or cash, repeats the number slowly if the learner asks.",
+    "b1_curveballs": [
+      "Says the price fast and only repeats it if the learner asks ('thirty-three eighty').",
+      "The learner's card is declined and they must offer another way to pay.",
+      "There is a ten percent service charge already on the bill — the learner must ask whether it's included.",
+      "The bill has an item the group didn't order and the learner must point it out politely.",
+      "The restaurant can't split the bill on the machine: 'Sorry, we can only take one payment — can you sort it out between you?'",
+      "The server has no change for a large note and asks for something smaller."
+    ],
+    "roleplay_rubric": [
+      {
+        "criterion": "Asked for the bill politely and answered 'together or separately' correctly",
+        "type": "required"
+      },
+      {
+        "criterion": "Stated their own items or their share clearly enough for the server to act",
+        "type": "required"
+      },
+      {
+        "criterion": "Checked or confirmed the amount when it was unclear (e.g. 'thirteen or thirty?')",
+        "type": "required"
+      },
+      {
+        "criterion": "Chose and completed a payment method, including asking about change or receipt",
+        "type": "required"
+      },
+      {
+        "criterion": "Used at least one clarification question instead of going silent",
+        "type": "required"
+      },
+      {
+        "criterion": "Register stayed casual-polite — asked about money directly without over-apologising",
+        "type": "required"
+      },
+      {
+        "criterion": "Pronunciation: teen/ty numbers distinguishable and 'three / together / thanks' recognisable as /θ/, /ð/",
+        "type": "pronunciation"
+      },
+      {
+        "criterion": "Handled the curveball (declined card, service charge, one-payment-only, wrong item) and finished the transaction",
+        "type": "stretch_b1"
+      }
+    ]
+  },
+  "register_culture_note": {
+    "en": "Talking about money at the table is normal and expected in most English-speaking countries. Saying 'Separately, please' or 'Sorry, is the service charge included?' is not rude — servers hear it fifty times a night. Keep your turns short and direct: long apologies before a simple question make the interaction slower and can confuse the server. If the price is unclear, always check it out loud; guessing is what causes real embarrassment.",
+    "th": null,
+    "do_dont": [
+      {
+        "avoid": "Saying 'tree of us' for 'three of us'",
+        "prefer": "Push the tongue tip to the teeth: 'three of us' — otherwise the split is wrong"
+      },
+      {
+        "avoid": "Saying 'dirty' when you mean 'thirty'",
+        "prefer": "'Thirty — three zero.' Add the digits when the number matters"
+      },
+      {
+        "avoid": "Saying just 'Bill.' or 'Pay.'",
+        "prefer": "'Could we get the bill, please?'"
+      },
+      {
+        "avoid": "Nodding and paying when you didn't hear the amount",
+        "prefer": "'Sorry — thirteen or thirty?'"
+      },
+      {
+        "avoid": "Dropping the final /n/ in 'thirteen', 'fifteen', 'nineteen'",
+        "prefer": "Hold the ending and stress the second syllable: thir-TEEN"
+      },
+      {
+        "avoid": "'I no have small money.'",
+        "prefer": "'Sorry, I've only got a fifty — is that okay?'"
+      }
+    ],
+    "thai_cultural_note": "In Thailand one person often quietly picks up the whole bill, and asking to split it item by item can feel awkward. In most English-speaking countries splitting is the default for friends and colleagues, and the server will actively ask 'Together or separately?' — answering 'separately' is neutral and expected, not stingy. Equally, a Thai learner may feel that questioning a charge is impolite; in these contexts checking the bill and asking 'Is the service charge included?' is treated as sensible, not confrontational."
+  },
+  "can_do_checkpoints": [
+    {
+      "cefr": "A2",
+      "statement": "I can ask for the bill politely and say whether we are paying together or separately."
+    },
+    {
+      "cefr": "A2",
+      "statement": "I can say how many people are in my group and what I ordered."
+    },
+    {
+      "cefr": "A2",
+      "statement": "I can ask to pay by card or cash and understand the amount I owe."
+    },
+    {
+      "cefr": "B1",
+      "statement": "I can check an amount I misheard and confirm it digit by digit."
+    },
+    {
+      "cefr": "B1",
+      "statement": "I can deal with a problem at payment — a declined card, no change, a service charge, or a wrong item — and finish the transaction."
+    },
+    {
+      "cefr": "Sound",
+      "statement": "My teen/ty numbers (thirteen vs thirty, fifteen vs fifty) and my 'th' in three, thirty, thanks, together are clear enough that the server gets the amount right first time."
+    }
+  ],
+  "gamification": {
+    "xp_per_substep": true,
+    "unlocks": [
+      "Bill Splitter badge — complete the guided roleplay with a correct split",
+      "Number Nerve badge — pass six teen/ty minimal-pair items in a row",
+      "Cool Under Pressure badge — finish the free roleplay after a declined card",
+      "Unlocks scenario: tipping_and_service_charges",
+      "Unlocks scenario: disputing_a_charge"
+    ],
+    "sound_meters": [
+      {
+        "sound": "numbers",
+        "display": "Teen vs Ty accuracy meter (phoneme score across thirteen/thirty, fifteen/fifty, sixteen/sixty)"
+      },
+      {
+        "sound": "th",
+        "display": "TH meter (minimal-pair hit rate on three/tree, thirty/dirty, thanks/tanks, they/day)"
+      }
+    ]
+  },
+  "_review_status": {
+    "thai_strings": "DRAFT - machine-generated, tagged th_status=draft_unverified. A native Thai speaker must review every string and set th_status='reviewed'.",
+    "facts": "UNVERIFIED - generated content, needs a local fact-check before shipping",
+    "generated_by": "claude-opus-5"
+  }
+}

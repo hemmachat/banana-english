@@ -1,0 +1,916 @@
+{
+  "scenario_id": "lost_and_asking_for_help",
+  "locale": "global",
+  "title_en": "When You're Lost",
+  "title_th": "เมื่อหลงทาง",
+  "tier": 1,
+  "cefr_range": [
+    "A2",
+    "B1"
+  ],
+  "prerequisites": [
+    "greetings_small_talk",
+    "numbers_1_100",
+    "telling_the_time"
+  ],
+  "recycles": [
+    "Excuse me / Sorry to bother you / Thank you so much",
+    "numbers 1–100 (bus numbers, blocks, minutes)",
+    "clock times (last bus at eleven-thirty)",
+    "How far / How long does it take?",
+    "clarification: Sorry, could you say that again?",
+    "public transport words: bus stop, taxi, train station"
+  ],
+  "register": "Polite-casual with strangers — short, friendly, slightly apologetic openers; no heavy formality",
+  "sound_target_box": {
+    "note_th": null,
+    "targets": [
+      {
+        "sound": "r_l",
+        "scoring_method": "phoneme",
+        "words_in_context": [
+          "left",
+          "right",
+          "turn right at the lights",
+          "railway",
+          "riverside",
+          "library",
+          "pharmacy",
+          "corner",
+          "traffic lights",
+          "Green Street"
+        ],
+        "minimal_pairs": [
+          [
+            "right",
+            "light"
+          ],
+          [
+            "road",
+            "load"
+          ],
+          [
+            "arrive",
+            "alive"
+          ],
+          [
+            "correct",
+            "collect"
+          ],
+          [
+            "pray",
+            "play"
+          ],
+          [
+            "grass",
+            "glass"
+          ]
+        ],
+        "why_it_matters_here": "If 'right' comes out as 'light', the stranger points you the wrong way and you walk twenty minutes further from where you need to be — at night, with a dying phone, that is the difference between getting home and being stuck. 'Library' and 'railway' are landmark names: mixing r and l here means you get sent to the wrong building."
+      },
+      {
+        "sound": "clusters",
+        "scoring_method": "phoneme",
+        "words_in_context": [
+          "I'm lost",
+          "straight ahead",
+          "street",
+          "bus stop",
+          "two blocks",
+          "left",
+          "cross the bridge",
+          "closed",
+          "first",
+          "next"
+        ],
+        "minimal_pairs": [
+          [
+            "street",
+            "sweet"
+          ],
+          [
+            "stop",
+            "top"
+          ],
+          [
+            "left",
+            "let"
+          ],
+          [
+            "next",
+            "neck"
+          ],
+          [
+            "blocks",
+            "box"
+          ],
+          [
+            "first",
+            "fist"
+          ]
+        ],
+        "why_it_matters_here": "Directions are almost entirely cluster words. If 'left' loses its final /ft/ it sounds like 'let', and 'straight' without /str/ is not a word anyone recognises. When you are lost you usually get one chance with a busy stranger — if 'street' and 'stop' collapse, they cannot even tell what you are looking for."
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "en": "lost",
+      "th": "หลงทาง ไม่รู้ว่าตัวเองอยู่ตรงไหน",
+      "group": "asking for help",
+      "audio_needed": true,
+      "audio": "/static/audio/global/lost.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "Excuse me",
+      "th": "ใช้เรียกให้คนแปลกหน้าหันมาก่อนจะถามทาง สุภาพ ใช้ได้ทุกที่",
+      "group": "asking for help",
+      "audio_needed": true,
+      "audio": "/static/audio/global/excuse-me.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "Can you help me?",
+      "th": "ช่วยหน่อยได้ไหม",
+      "group": "asking for help",
+      "audio_needed": true,
+      "audio": "/static/audio/global/can-you-help-me.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "I'm looking for…",
+      "th": "\"กำลังหา...\" แล้วต่อด้วยชื่อที่ที่จะไป",
+      "group": "asking for help",
+      "audio_needed": true,
+      "audio": "/static/audio/global/i-m-looking-for.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "Do you know it?",
+      "th": "รู้จักที่นี่ไหม / รู้ไหมว่าอยู่ตรงไหน",
+      "group": "asking for help",
+      "audio_needed": true,
+      "audio": "/static/audio/global/do-you-know-it.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "corner",
+      "th": "หัวมุมถนน ตรงที่ถนนสองเส้นมาบรรจบกัน",
+      "group": "landmarks",
+      "audio_needed": true,
+      "audio": "/static/audio/global/corner.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "traffic lights",
+      "th": "ไฟจราจร ไฟแดง คนที่นี่ชอบบอกทางว่า \"เลี้ยวตรงไฟแดง\"",
+      "group": "landmarks",
+      "audio_needed": true,
+      "audio": "/static/audio/global/traffic-lights.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "bridge",
+      "th": "สะพาน",
+      "group": "landmarks",
+      "audio_needed": true,
+      "audio": "/static/audio/global/bridge.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "pharmacy",
+      "th": "ร้านขายยา ที่ที่เอา script ไปรับยา คนออสเตรเลียมักเรียก chemist",
+      "group": "landmarks",
+      "audio_needed": true,
+      "audio": "/static/audio/global/pharmacy.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "library",
+      "th": "ห้องสมุด",
+      "group": "landmarks",
+      "audio_needed": true,
+      "audio": "/static/audio/global/library.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "petrol station / gas station",
+      "th": "ปั๊มน้ำมัน ที่ออสเตรเลียพูด petrol ไม่ค่อยพูด gas",
+      "group": "landmarks",
+      "audio_needed": true,
+      "audio": "/static/audio/global/petrol-station-gas-station.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "roundabout",
+      "th": "วงเวียน ที่นี่มีเยอะมาก ใช้บอกทางบ่อย",
+      "group": "landmarks",
+      "audio_needed": true,
+      "audio": "/static/audio/global/roundabout.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "train station",
+      "th": "สถานีรถไฟ",
+      "group": "landmarks",
+      "audio_needed": true,
+      "audio": "/static/audio/global/train-station.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "bus stop",
+      "th": "ป้ายรถเมล์",
+      "group": "transport",
+      "audio_needed": true,
+      "audio": "/static/audio/global/bus-stop.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "taxi rank",
+      "th": "จุดจอดแท็กซี่ แท็กซี่มาต่อคิวรอตรงนั้น ไม่ต้องโบก",
+      "group": "transport",
+      "audio_needed": true,
+      "audio": "/static/audio/global/taxi-rank.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "the number 12 bus",
+      "th": "รถเมล์สาย 12",
+      "group": "transport",
+      "audio_needed": true,
+      "audio": "/static/audio/global/the-number-12-bus.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "go straight",
+      "th": "ตรงไป",
+      "group": "directions",
+      "audio_needed": true,
+      "audio": "/static/audio/global/go-straight.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "turn left",
+      "th": "เลี้ยวซ้าย",
+      "group": "directions",
+      "audio_needed": true,
+      "audio": "/static/audio/global/turn-left.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "turn right",
+      "th": "เลี้ยวขวา",
+      "group": "directions",
+      "audio_needed": true,
+      "audio": "/static/audio/global/turn-right.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "cross the road",
+      "th": "ข้ามถนน",
+      "group": "directions",
+      "audio_needed": true,
+      "audio": "/static/audio/global/cross-the-road.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "two blocks",
+      "th": "สองช่วงตึก คือเดินผ่านสี่แยกไปสองแยก",
+      "group": "directions",
+      "audio_needed": true,
+      "audio": "/static/audio/global/two-blocks.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "the second street on the right",
+      "th": "ถนนเส้นที่สองทางขวา (เส้นแรกไม่ต้องเลี้ยว)",
+      "group": "directions",
+      "audio_needed": true,
+      "audio": "/static/audio/global/the-second-street-on-the-right.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "opposite / across from",
+      "th": "ตรงข้าม อยู่อีกฝั่งถนน",
+      "group": "describing where you are",
+      "audio_needed": true,
+      "audio": "/static/audio/global/opposite-across-from.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "next to",
+      "th": "อยู่ติดกัน ข้างๆ",
+      "group": "describing where you are",
+      "audio_needed": true,
+      "audio": "/static/audio/global/next-to.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "in front of",
+      "th": "อยู่ด้านหน้าของ...",
+      "group": "describing where you are",
+      "audio_needed": true,
+      "audio": "/static/audio/global/in-front-of.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "on the corner of…",
+      "th": "อยู่หัวมุมถนน... ตัดกับถนน...",
+      "group": "describing where you are",
+      "audio_needed": true,
+      "audio": "/static/audio/global/on-the-corner-of.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "How far is it?",
+      "th": "ไกลไหม อีกไกลแค่ไหน",
+      "group": "distance and time",
+      "audio_needed": true,
+      "audio": "/static/audio/global/how-far-is-it.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "about five minutes' walk",
+      "th": "เดินประมาณห้านาที",
+      "group": "distance and time",
+      "audio_needed": true,
+      "audio": "/static/audio/global/about-five-minutes-walk.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "closed for repairs",
+      "th": "ปิดปรับปรุง กำลังซ่อมอยู่ เข้าไม่ได้",
+      "group": "problems",
+      "audio_needed": true,
+      "audio": "/static/audio/global/closed-for-repairs.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "My phone's nearly dead",
+      "th": "แบตมือถือจะหมดแล้ว พูดตอนขอให้เขาช่วยบอกทางหรือเขียนให้",
+      "group": "problems",
+      "audio_needed": true,
+      "audio": "/static/audio/global/my-phone-s-nearly-dead.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "Sorry, could you say that again?",
+      "th": "\"ขอโทษ พูดอีกทีได้ไหม\" ใช้ได้เลย ไม่ต้องอาย",
+      "group": "clarification",
+      "audio_needed": true,
+      "audio": "/static/audio/global/sorry-could-you-say-that-again.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "Could you write it down?",
+      "th": "เขียนให้หน่อยได้ไหม จดใส่กระดาษหรือพิมพ์ในมือถือก็ได้",
+      "group": "clarification",
+      "audio_needed": true,
+      "audio": "/static/audio/global/could-you-write-it-down.mp3",
+      "th_status": "draft_unverified"
+    }
+  ],
+  "model_dialogues": [
+    {
+      "cefr": "A2",
+      "label": "Lost near a market — asking one stranger, daytime, everything goes to plan",
+      "lines": [
+        {
+          "speaker": "Learner",
+          "text": "Excuse me, sorry — I think I'm lost.",
+          "audio": "/static/audio/global/excuse-me-sorry-i-think-i-m-lost.mp3",
+          "th": "ขอโทษนะคะ/ครับ พอดีหลงทางอยู่",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Stranger",
+          "text": "No worries. Where are you trying to get to?",
+          "audio": "/static/audio/global/no-worries-where-are-you-trying-to-get-to.mp3",
+          "th": "ไม่เป็นไร จะไปไหนเหรอ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "The train station. Is it far?",
+          "audio": "/static/audio/global/the-train-station-is-it-far.mp3",
+          "th": "สถานีรถไฟ ไกลไหม",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Stranger",
+          "text": "Not far at all. Go straight, then turn left at the traffic lights.",
+          "audio": "/static/audio/global/not-far-at-all-go-straight-then-turn-left-at-the-traffic-lig.mp3",
+          "th": "ไม่ไกลเลย ตรงไปแล้วเลี้ยวซ้ายตรงไฟแดง",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Sorry — left or right?",
+          "audio": "/static/audio/global/sorry-left-or-right.mp3",
+          "th": "ขอโทษ ซ้ายหรือขวานะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Stranger",
+          "text": "Left. Then it's the second street on your right.",
+          "audio": "/static/audio/global/left-then-it-s-the-second-street-on-your-right.mp3",
+          "th": "ซ้าย แล้วก็ซอยที่สองทางขวามือ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Turn left, then second street on the right?",
+          "audio": "/static/audio/global/turn-left-then-second-street-on-the-right.mp3",
+          "th": "เลี้ยวซ้าย แล้วซอยที่สองทางขวา ใช่ไหม",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Stranger",
+          "text": "That's it. About five minutes' walk.",
+          "audio": "/static/audio/global/that-s-it-about-five-minutes-walk.mp3",
+          "th": "ใช่เลย เดินประมาณห้านาที",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Great. Thank you so much.",
+          "audio": "/static/audio/global/great-thank-you-so-much.mp3",
+          "th": "ดีเลย ขอบคุณมากนะ",
+          "th_status": "draft_unverified"
+        }
+      ],
+      "shadow_focus_lines": [
+        {
+          "text": "I think I'm lost.",
+          "targets": [
+            "clusters"
+          ],
+          "audio": "/static/audio/global/i-think-i-m-lost.mp3"
+        },
+        {
+          "text": "Sorry, left or right?",
+          "targets": [
+            "r_l",
+            "clusters"
+          ],
+          "audio": "/static/audio/global/sorry-left-or-right.mp3"
+        },
+        {
+          "text": "Go straight, then turn left.",
+          "targets": [
+            "clusters",
+            "r_l"
+          ],
+          "audio": "/static/audio/global/go-straight-then-turn-left.mp3"
+        },
+        {
+          "text": "Second street on the right.",
+          "targets": [
+            "clusters",
+            "r_l"
+          ],
+          "audio": "/static/audio/global/second-street-on-the-right.mp3"
+        }
+      ]
+    },
+    {
+      "cefr": "B1",
+      "label": "Lost at night — the bridge is closed, the bus stop has moved, and your phone is dying",
+      "lines": [
+        {
+          "speaker": "Learner",
+          "text": "Excuse me, I'm a bit lost.",
+          "audio": "/static/audio/global/excuse-me-i-m-a-bit-lost.mp3",
+          "th": "ขอโทษนะ พอดีหลงทางนิดหน่อย",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Attendant",
+          "text": "Sure, no problem. Where are you headed?",
+          "audio": "/static/audio/global/sure-no-problem-where-are-you-headed.mp3",
+          "th": "ได้เลย ไม่มีปัญหา จะไปไหนเหรอ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "The Riverside Hotel. Do you know it?",
+          "audio": "/static/audio/global/the-riverside-hotel-do-you-know-it.mp3",
+          "th": "โรงแรม Riverside รู้จักไหม",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Attendant",
+          "text": "Yeah, it's across the river. Normally you'd just walk over the bridge, but it's closed for repairs tonight.",
+          "audio": "/static/audio/global/yeah-it-s-across-the-river-normally-you-d-just-walk-over-the.mp3",
+          "th": "รู้ อยู่ฝั่งตรงข้ามแม่น้ำ ปกติเดินข้ามสะพานไปเลย แต่คืนนี้สะพานปิดซ่อม",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Closed? So how do I cross?",
+          "audio": "/static/audio/global/closed-so-how-do-i-cross.mp3",
+          "th": "ปิดเหรอ แล้วจะข้ามยังไง",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Attendant",
+          "text": "Take the number 12 bus. It goes round the long way, but it drops you right outside.",
+          "audio": "/static/audio/global/take-the-number-12-bus-it-goes-round-the-long-way-but-it-dro.mp3",
+          "th": "นั่งรถเมล์สาย 12 สิ มันอ้อมหน่อยนะ แต่ลงหน้าโรงแรมเลย",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Okay. Where's the bus stop?",
+          "audio": "/static/audio/global/okay-where-s-the-bus-stop.mp3",
+          "th": "โอเค แล้วป้ายรถเมล์อยู่ตรงไหน",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Attendant",
+          "text": "Ah — they moved it last week. It's in front of the pharmacy now, not the library.",
+          "audio": "/static/audio/global/ah-they-moved-it-last-week-it-s-in-front-of-the-pharmacy-now.mp3",
+          "th": "อ๋อ เขาเพิ่งย้ายป้ายอาทิตย์ที่แล้ว ตอนนี้อยู่หน้าร้านขายยา ไม่ใช่หน้าห้องสมุดแล้ว",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Sorry, could you say that again slowly?",
+          "audio": "/static/audio/global/sorry-could-you-say-that-again-slowly.mp3",
+          "th": "ขอโทษนะ พูดอีกทีช้าๆ ได้ไหม",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Attendant",
+          "text": "Of course. The stop is in front of the pharmacy, on Green Street.",
+          "audio": "/static/audio/global/of-course-the-stop-is-in-front-of-the-pharmacy-on-green-stre.mp3",
+          "th": "ได้สิ ป้ายอยู่หน้าร้านขายยา ถนน Green Street",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Green Street. Left or right from here?",
+          "audio": "/static/audio/global/green-street-left-or-right-from-here.mp3",
+          "th": "Green Street... จากตรงนี้เลี้ยวซ้ายหรือขวา",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Attendant",
+          "text": "Turn right at the lights, walk two blocks, and it's on your left.",
+          "audio": "/static/audio/global/turn-right-at-the-lights-walk-two-blocks-and-it-s-on-your-le.mp3",
+          "th": "เลี้ยวขวาตรงไฟแดง เดินไปสองบล็อก แล้วอยู่ทางซ้ายมือ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "My phone's nearly dead. Could you write it down?",
+          "audio": "/static/audio/global/my-phone-s-nearly-dead-could-you-write-it-down.mp3",
+          "th": "มือถือใกล้แบตหมดแล้ว ช่วยเขียนให้หน่อยได้ไหม",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Attendant",
+          "text": "Here you go — number 12, pharmacy stop, Green Street.",
+          "audio": "/static/audio/global/here-you-go-number-12-pharmacy-stop-green-street.mp3",
+          "th": "นี่เลย — สาย 12 ป้ายหน้าร้านขายยา ถนน Green Street",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Thanks. How long does the bus take?",
+          "audio": "/static/audio/global/thanks-how-long-does-the-bus-take.mp3",
+          "th": "ขอบคุณนะ รถเมล์ใช้เวลานานไหม",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Attendant",
+          "text": "About fifteen minutes. But the last one leaves at eleven-thirty, so don't hang about.",
+          "audio": "/static/audio/global/about-fifteen-minutes-but-the-last-one-leaves-at-eleven-thir.mp3",
+          "th": "ประมาณสิบห้านาที แต่คันสุดท้ายออกห้าทุ่มครึ่ง อย่ามัวชักช้าล่ะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Eleven-thirty? And if I miss it?",
+          "audio": "/static/audio/global/eleven-thirty-and-if-i-miss-it.mp3",
+          "th": "ห้าทุ่มครึ่งเหรอ แล้วถ้าตกรถล่ะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Attendant",
+          "text": "Then grab a taxi from the rank outside the train station. It's a straight run from here.",
+          "audio": "/static/audio/global/then-grab-a-taxi-from-the-rank-outside-the-train-station-it-.mp3",
+          "th": "ก็ไปเรียกแท็กซี่ที่จุดจอดหน้าสถานีรถไฟ จากตรงนี้ไปตรงๆ เลย",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Got it. Thanks a lot — you've saved me.",
+          "audio": "/static/audio/global/got-it-thanks-a-lot-you-ve-saved-me.mp3",
+          "th": "เข้าใจแล้ว ขอบคุณมากๆ ช่วยชีวิตเลย",
+          "th_status": "draft_unverified"
+        }
+      ],
+      "shadow_focus_lines": [
+        {
+          "text": "I'm a bit lost.",
+          "targets": [
+            "clusters"
+          ],
+          "audio": "/static/audio/global/i-m-a-bit-lost.mp3"
+        },
+        {
+          "text": "Left or right from here?",
+          "targets": [
+            "r_l"
+          ],
+          "audio": "/static/audio/global/left-or-right-from-here.mp3"
+        },
+        {
+          "text": "Could you write it down?",
+          "targets": [
+            "r_l",
+            "clusters"
+          ],
+          "audio": "/static/audio/global/could-you-write-it-down.mp3"
+        },
+        {
+          "text": "Walk two blocks, then left.",
+          "targets": [
+            "clusters",
+            "r_l"
+          ],
+          "audio": "/static/audio/global/walk-two-blocks-then-left.mp3"
+        }
+      ]
+    }
+  ],
+  "chunk_drills": [
+    {
+      "label": "Opening — flag yourself as lost in three words",
+      "pattern": "Excuse me, I'm (a bit) lost. / I think I'm lost.",
+      "examples": [
+        "Excuse me, I'm lost.",
+        "Sorry, I think I'm lost.",
+        "Excuse me, I'm a bit lost. Can you help me?"
+      ],
+      "spiralled_grammar": "Recycles 'Excuse me / Sorry' from greetings_small_talk; present simple with contraction I'm."
+    },
+    {
+      "label": "Naming your destination",
+      "pattern": "I'm looking for ___ . / I'm trying to get to ___ .",
+      "examples": [
+        "I'm looking for the train station.",
+        "I'm trying to get to Green Street.",
+        "I'm looking for the Riverside Hotel. Do you know it?"
+      ],
+      "spiralled_grammar": "Present continuous for a current goal; 'the' with named places."
+    },
+    {
+      "label": "Describing where you are right now (landmarks)",
+      "pattern": "I'm in front of / next to / opposite ___ . / There's a ___ on the corner.",
+      "examples": [
+        "I'm in front of a pharmacy.",
+        "There's a big bridge next to me.",
+        "I'm opposite the library, on Green Street."
+      ],
+      "spiralled_grammar": "Prepositions of place + 'there's a…' for existence; recycles landmark nouns."
+    },
+    {
+      "label": "Checking the direction back (the r/l safety check)",
+      "pattern": "Sorry — left or right? / So, ___ , then ___ ?",
+      "examples": [
+        "Sorry — left or right?",
+        "So, turn right, then two blocks?",
+        "Left at the lights, then the second street?"
+      ],
+      "spiralled_grammar": "Echo questions with rising intonation; sequencing with 'then'."
+    },
+    {
+      "label": "Distance and time",
+      "pattern": "How far is it? / How long does it take? → About ___ minutes' walk.",
+      "examples": [
+        "How far is the bus stop?",
+        "How long does the bus take?",
+        "About fifteen minutes' walk?"
+      ],
+      "spiralled_grammar": "Recycles numbers and time from numbers_1_100 / telling_the_time; 'How + adjective' questions."
+    },
+    {
+      "label": "Rescue chunks when you don't follow",
+      "pattern": "Sorry, could you say that again (slowly)? / Could you write it down? / Could you show me on the map?",
+      "examples": [
+        "Sorry, could you say that again slowly?",
+        "Could you write it down, please?",
+        "My phone's nearly dead. Could you write it down?"
+      ],
+      "spiralled_grammar": "Polite requests with 'Could you…?'; recycled from every service unit."
+    }
+  ],
+  "listening_items": [
+    {
+      "audio_text": "Go straight for two blocks, then turn left at the traffic lights. It's on your right, opposite the library.",
+      "channel": "street, face-to-face, slightly noisy",
+      "question": "Which side of the street is it on?",
+      "answer": "On the right, opposite the library.",
+      "distractor_focus": "r_l — the speaker says 'left at the lights' then 'on your right'; learners who hear only one of them pick the wrong side."
+    },
+    {
+      "audio_text": "The bridge is closed tonight, so you'll need the number 12 bus. The stop moved — it's in front of the pharmacy now, not the library.",
+      "channel": "street, face-to-face",
+      "question": "Where is the bus stop now?",
+      "answer": "In front of the pharmacy (not the library).",
+      "distractor_focus": "r_l in 'pharmacy' vs 'library'; clusters in 'closed' and 'stop'."
+    },
+    {
+      "audio_text": "Cross at the roundabout, take the first street on the left, and the taxi rank is just past the petrol station.",
+      "channel": "phone call, mid-quality",
+      "question": "Do you take the first or the second street?",
+      "answer": "The first street, on the left.",
+      "distractor_focus": "clusters — 'first' vs 'fist', 'street' vs 'sweet', and the /st/ in 'past the petrol station'."
+    },
+    {
+      "audio_text": "Attention passengers: the last bus to Riverside leaves at eleven-thirty from stop C, not stop B.",
+      "channel": "station PA announcement",
+      "question": "What time does the last bus leave, and from which stop?",
+      "answer": "Eleven-thirty, from stop C.",
+      "distractor_focus": "number clarity recycled from numbers/time (eleven-thirty vs eleven-thirteen) plus the /st/ cluster in 'stop'."
+    },
+    {
+      "audio_text": "Hi, it's me — I'm standing outside a pharmacy on the corner of Green Street. There's a big red bridge behind me.",
+      "channel": "voice message from a lost friend",
+      "question": "What two landmarks can you use to find this person?",
+      "answer": "A pharmacy on the corner of Green Street, and a big red bridge behind them.",
+      "distractor_focus": "r_l in 'pharmacy', 'Green', 'red bridge'; clusters in 'standing', 'street'."
+    }
+  ],
+  "guided_roleplay": {
+    "learner_role": "You are lost in an unfamiliar part of town. You need to reach the Riverside Hotel before your phone dies.",
+    "flow": [
+      "Step 1 — Open: stop a stranger politely and say you're lost.",
+      "Step 2 — Destination: say where you want to go and ask if they know it.",
+      "Step 3 — Describe your position: name one or two landmarks around you.",
+      "Step 4 — Take the directions: listen, then repeat them back ('So, right at the lights, then two blocks?').",
+      "Step 5 — Check the r/l detail: confirm left or right at least once.",
+      "Step 6 — Ask distance or time: 'How far is it?' / 'How long does it take?'",
+      "Step 7 — Rescue move: ask them to repeat slowly OR to write it down.",
+      "Step 8 — Close: thank them and read the route back to yourself."
+    ],
+    "sentence_frames": [
+      "Excuse me, I'm a bit lost.",
+      "I'm looking for ___ . Do you know it?",
+      "I'm in front of ___ .",
+      "Sorry — left or right?",
+      "So, ___ , then ___ ?",
+      "How far is it from here?",
+      "Sorry, could you say that again slowly?",
+      "Could you write it down, please?",
+      "Thanks a lot."
+    ],
+    "hints_available": true
+  },
+  "free_roleplay": {
+    "ai_persona": "A friendly local in their 30s working the counter at a petrol station at night. Warm, a bit busy, uses casual speech ('no worries', 'just past the lights'), speaks at natural speed but will slow down if asked.",
+    "a2_behavior": "Gives simple, one-step-at-a-time directions to a nearby place. Confirms left/right when the learner checks. Repeats slowly on request and never introduces a problem.",
+    "b1_curveballs": [
+      "The bridge or main road is closed, so the direct route is impossible and the learner must accept a longer alternative.",
+      "The bus stop has moved since the map was printed — the learner must catch the new landmark (pharmacy, not library).",
+      "The local gives three steps in one fast breath and the learner must ask for a repeat or a write-down.",
+      "The local doesn't know the hotel and asks the learner to describe it or name a nearby landmark instead.",
+      "The last bus leaves in twelve minutes — the learner must ask what to do if they miss it.",
+      "The learner's phone dies mid-conversation and they must get the route without a map."
+    ],
+    "roleplay_rubric": [
+      {
+        "criterion": "Opened politely and stated clearly that they are lost",
+        "type": "required"
+      },
+      {
+        "criterion": "Named the destination and described their current position with at least one landmark",
+        "type": "required"
+      },
+      {
+        "criterion": "Repeated the directions back to confirm (including checking left vs right at least once)",
+        "type": "required"
+      },
+      {
+        "criterion": "Asked at least one clarification question ('say that again' / 'write it down') when the directions were too fast",
+        "type": "required"
+      },
+      {
+        "criterion": "Asked about distance or time and understood the answer",
+        "type": "required"
+      },
+      {
+        "criterion": "Closed with thanks in an appropriately casual-polite register",
+        "type": "required"
+      },
+      {
+        "criterion": "Pronunciation: 'left/right', 'library/pharmacy' (r_l) and 'street/stop/blocks/straight' (clusters) were intelligible to the listener without repair",
+        "type": "pronunciation"
+      },
+      {
+        "criterion": "Coped with an off-script problem (closed bridge, moved stop, last bus) and still finished with a usable plan",
+        "type": "stretch_b1"
+      }
+    ]
+  },
+  "register_culture_note": {
+    "en": "Stopping a stranger for directions is normal almost everywhere, but keep it short and front-load the problem: 'Excuse me, I'm lost — I'm looking for ___.' People decide in two seconds whether they can help you, so a long polite preamble loses them. Repeating the directions back ('So, right at the lights, then two blocks?') is not rude or doubting — it is what confident native speakers do, and it is your best protection against an r/l mix-up. If you don't understand, say so immediately; 'Sorry, could you say that again slowly?' is a completely normal thing to say and almost always gets a friendlier, slower answer.",
+    "th": null,
+    "do_dont": [
+      {
+        "avoid": "Nodding and saying 'yes, yes, okay' when you didn't catch the directions",
+        "prefer": "'Sorry, could you say that again slowly?' — then repeat it back."
+      },
+      {
+        "avoid": "'Go there' / pointing without words while looking at your phone",
+        "prefer": "'I'm looking for the train station. Is it far?'"
+      },
+      {
+        "avoid": "Saying 'light' when you mean 'right' — a mistake that sends you the wrong way",
+        "prefer": "Over-articulate the r: 'Right? R-right, at the traffic lights.' Or gesture with your hand while saying it."
+      },
+      {
+        "avoid": "Dropping cluster endings: 'I'm los', 'two blo', 'stree'",
+        "prefer": "'I'm lost.' / 'two blocks' / 'street' — finish the word, even if you have to slow down."
+      },
+      {
+        "avoid": "'You go where hotel?' (word-by-word translation)",
+        "prefer": "'Do you know the Riverside Hotel?'"
+      }
+    ],
+    "thai_cultural_note": "Many Thai learners hesitate to stop a stranger because it feels like เกรงใจ — an imposition on someone busy. In most English-speaking countries, giving directions is a small, low-cost social favour that people are generally happy to do, and refusing takes two seconds if they can't help. Waiting until you're desperate, or walking away half-understanding to avoid troubling someone twice, is the riskier choice. Also note: a stranger may answer with just 'Second on the left, mate' and walk on — this brevity is not coldness, it's efficiency."
+  },
+  "can_do_checkpoints": [
+    {
+      "cefr": "A2",
+      "statement": "I can stop a stranger politely and say that I am lost."
+    },
+    {
+      "cefr": "A2",
+      "statement": "I can say where I want to go and ask if it is far."
+    },
+    {
+      "cefr": "A2",
+      "statement": "I can follow and repeat back simple directions (straight, left, right, two blocks)."
+    },
+    {
+      "cefr": "A2",
+      "statement": "I can ask someone to repeat something slowly or write it down."
+    },
+    {
+      "cefr": "B1",
+      "statement": "I can describe where I am using two or three landmarks so someone can find me."
+    },
+    {
+      "cefr": "B1",
+      "statement": "I can handle a problem in the directions — a closed road, a moved bus stop, a last bus — and still agree a plan."
+    },
+    {
+      "cefr": "Sound",
+      "statement": "My 'left' and 'right' are never confused, and my cluster words ('street', 'stop', 'blocks', 'straight', 'lost') are intelligible first time."
+    }
+  ],
+  "gamification": {
+    "xp_per_substep": true,
+    "unlocks": [
+      "Landmark Spotter — describe your position with three different landmarks",
+      "No Wrong Turns — complete a roleplay with zero left/right confusions",
+      "Night Shift — finish the B1 curveball roleplay (closed bridge + last bus)",
+      "Ask Twice — use two different clarification chunks in one conversation"
+    ],
+    "sound_meters": [
+      {
+        "sound": "r_l",
+        "tracked_words": [
+          "right",
+          "left",
+          "library",
+          "pharmacy",
+          "corner",
+          "straight run"
+        ]
+      },
+      {
+        "sound": "clusters",
+        "tracked_words": [
+          "lost",
+          "street",
+          "stop",
+          "blocks",
+          "straight",
+          "first",
+          "closed",
+          "next"
+        ]
+      }
+    ]
+  },
+  "_review_status": {
+    "thai_strings": "DRAFT - machine-generated, tagged th_status=draft_unverified. A native Thai speaker must review every string and set th_status='reviewed'.",
+    "facts": "UNVERIFIED - generated content, needs a local fact-check before shipping",
+    "generated_by": "claude-opus-5"
+  }
+}

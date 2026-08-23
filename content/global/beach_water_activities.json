@@ -1,0 +1,779 @@
+{
+  "scenario_id": "beach_water_activities",
+  "locale": "global",
+  "title_en": "At the Beach",
+  "title_th": "ที่ชายหาด",
+  "tier": 1,
+  "cefr_range": [
+    "A2",
+    "B1"
+  ],
+  "prerequisites": [
+    "greetings_small_talk",
+    "numbers_prices_basics",
+    "asking_how_much"
+  ],
+  "recycles": [
+    "numbers and prices ('two hundred', 'one fifty')",
+    "telling the time ('before four o'clock', 'for one hour')",
+    "'How much is/for...?'",
+    "clarification chunks ('Sorry, could you say that again?')",
+    "polite requests ('..., please' / 'Can I...?')"
+  ],
+  "register": "Casual-friendly (beach staff and lifeguards use first names, short sentences, no formality needed)",
+  "sound_target_box": {
+    "note_th": null,
+    "targets": [
+      {
+        "sound": "final_consonants",
+        "scoring_method": "phoneme",
+        "words_in_context": [
+          "board (\"How much for a board?\")",
+          "card (\"Here's my card.\")",
+          "cost / cash (\"How much does it cost?\" / \"Cash or card?\")",
+          "safe (\"Is it safe to swim?\")",
+          "back (\"I'll bring it back at four.\")",
+          "deep (\"Only waist deep.\")",
+          "flag / flags (\"Stay inside the flags.\")",
+          "rent (\"I want to rent a kayak.\")",
+          "life jacket",
+          "deposit"
+        ],
+        "minimal_pairs": [
+          [
+            "card",
+            "car"
+          ],
+          [
+            "board",
+            "bore"
+          ],
+          [
+            "safe",
+            "say"
+          ],
+          [
+            "back",
+            "bag"
+          ],
+          [
+            "cost",
+            "cause"
+          ],
+          [
+            "wet",
+            "wed"
+          ],
+          [
+            "deep",
+            "deed"
+          ],
+          [
+            "flag",
+            "flat"
+          ]
+        ],
+        "why_it_matters_here": "Beaches are loud — wind, waves, engines — and staff are two metres away. If you drop the final sound, 'Here's my card' becomes 'Here's my car', 'board' becomes 'bore', and 'Is it safe?' becomes 'Is it say?'. Worse, 'waist deep' heard as 'waist dee' or 'flag' heard as 'flat' means you miss a safety instruction and swim past the line. Dropping the final /d/ in 'board' when you meant a paddleboard can also get you charged for the wrong item on the deposit slip."
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "en": "surfboard / board",
+      "th": "กระดานโต้คลื่น เรียกสั้นๆ ว่า board ก็ได้",
+      "group": "gear",
+      "audio_needed": true,
+      "audio": "/static/audio/global/surfboard-board.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "kayak",
+      "th": "เรือคายัค เรือลำเล็ก พายเอง นั่งได้ 1-2 คน",
+      "group": "gear",
+      "audio_needed": true,
+      "audio": "/static/audio/global/kayak.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "snorkel and mask",
+      "th": "ท่อหายใจกับหน้ากากดำน้ำ ไว้ลอยหน้าดูปลา",
+      "group": "gear",
+      "audio_needed": true,
+      "audio": "/static/audio/global/snorkel-and-mask.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "life jacket",
+      "th": "เสื้อชูชีพ ใส่แล้วลอยน้ำได้ ที่นี่เขาให้ใส่จริงจัง",
+      "group": "gear",
+      "audio_needed": true,
+      "audio": "/static/audio/global/life-jacket.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "deck chair",
+      "th": "เก้าอี้ผ้าใบ ไว้นั่งเอนริมหาด",
+      "group": "gear",
+      "audio_needed": true,
+      "audio": "/static/audio/global/deck-chair.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "umbrella",
+      "th": "ร่ม ที่ชายหาดคือร่มใหญ่ปักทราย กันแดด",
+      "group": "gear",
+      "audio_needed": true,
+      "audio": "/static/audio/global/umbrella.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "to rent",
+      "th": "เช่า จ่ายเงินยืมใช้ แล้วเอามาคืน",
+      "group": "gear",
+      "audio_needed": true,
+      "audio": "/static/audio/global/to-rent.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "per hour / for an hour",
+      "th": "คิดเป็นชั่วโมง เช่น $15 per hour = ชั่วโมงละ 15 เหรียญ",
+      "group": "price_and_payment",
+      "audio_needed": true,
+      "audio": "/static/audio/global/per-hour-for-an-hour.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "deposit",
+      "th": "deposit คือเงินมัดจำ วางไว้ก่อน เอาของมาคืนครบก็ได้คืน",
+      "group": "price_and_payment",
+      "audio_needed": true,
+      "audio": "/static/audio/global/deposit.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "cash or card",
+      "th": "จ่ายเงินสดหรือบัตร เขาจะถามแบบนี้ตอนคิดเงิน",
+      "group": "price_and_payment",
+      "audio_needed": true,
+      "audio": "/static/audio/global/cash-or-card.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "extra charge / late fee",
+      "th": "ค่าเพิ่ม เช่น คืนของช้ากว่าเวลา ต้องจ่ายเพิ่ม",
+      "group": "price_and_payment",
+      "audio_needed": true,
+      "audio": "/static/audio/global/extra-charge-late-fee.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "ID card / passport",
+      "th": "บัตรประชาชนหรือพาสปอร์ต ร้านเช่ามักขอไว้เป็นหลักประกัน",
+      "group": "price_and_payment",
+      "audio_needed": true,
+      "audio": "/static/audio/global/id-card-passport.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "lifeguard",
+      "th": "lifeguard คือเจ้าหน้าที่ดูแลความปลอดภัยที่ชายหาด คอยช่วยคนจมน้ำ",
+      "group": "safety",
+      "audio_needed": true,
+      "audio": "/static/audio/global/lifeguard.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "red flag / yellow flag",
+      "th": "ธงแดงกับธงเหลือง ที่ออสฯ ให้ลงเล่นน้ำ 'ระหว่าง' ธงแดง-เหลืองสองอัน ตรงนั้นปลอดภัย มีคนดูแล ถ้าเห็นธงแดงล้วน = ห้ามลง อันตราย",
+      "group": "safety",
+      "audio_needed": true,
+      "audio": "/static/audio/global/red-flag-yellow-flag.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "current (strong current)",
+      "th": "กระแสน้ำ ถ้าแรงมันจะดูดเราออกทะเล อันตรายมาก",
+      "group": "safety",
+      "audio_needed": true,
+      "audio": "/static/audio/global/current-strong-current.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "waist deep",
+      "th": "น้ำลึกแค่เอว ยืนได้ ยังไม่ท่วมหัว",
+      "group": "safety",
+      "audio_needed": true,
+      "audio": "/static/audio/global/waist-deep.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "safe to swim",
+      "th": "เล่นน้ำได้ ปลอดภัย ไม่มีอันตราย",
+      "group": "safety",
+      "audio_needed": true,
+      "audio": "/static/audio/global/safe-to-swim.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "jellyfish",
+      "th": "แมงกะพรุน โดนแล้วแสบ บางตัวที่นี่อันตรายจริงๆ",
+      "group": "safety",
+      "audio_needed": true,
+      "audio": "/static/audio/global/jellyfish.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "bring it back",
+      "th": "เอามาคืน คืนของที่เช่าไป",
+      "group": "time_and_return",
+      "audio_needed": true,
+      "audio": "/static/audio/global/bring-it-back.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "before four o'clock",
+      "th": "ก่อนสี่โมงเย็น เช่น คืนของก่อนสี่โมง",
+      "group": "time_and_return",
+      "audio_needed": true,
+      "audio": "/static/audio/global/before-four-o-clock.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "half an hour",
+      "th": "ครึ่งชั่วโมง = 30 นาที",
+      "group": "time_and_return",
+      "audio_needed": true,
+      "audio": "/static/audio/global/half-an-hour.mp3",
+      "th_status": "draft_unverified"
+    }
+  ],
+  "model_dialogues": [
+    {
+      "cefr": "A2",
+      "label": "Renting a board — everything goes to plan",
+      "lines": [
+        {
+          "speaker": "Staff",
+          "text": "Hey! Looking for a board?",
+          "audio": "/static/audio/global/hey-looking-for-a-board.mp3",
+          "th": "เฮ้! หาบอร์ดอยู่เหรอ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Yes. How much for an hour?",
+          "audio": "/static/audio/global/yes-how-much-for-an-hour.mp3",
+          "th": "ใช่ ชั่วโมงละเท่าไหร่",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Staff",
+          "text": "Two hundred for one hour, three fifty for two.",
+          "audio": "/static/audio/global/two-hundred-for-one-hour-three-fifty-for-two.mp3",
+          "th": "ชั่วโมงเดียว 200 สองชั่วโมง 350",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Okay. One hour, please.",
+          "audio": "/static/audio/global/okay-one-hour-please.mp3",
+          "th": "โอเค เอาชั่วโมงเดียว",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Staff",
+          "text": "No problem. I need a card or ID as a deposit.",
+          "audio": "/static/audio/global/no-problem-i-need-a-card-or-id-as-a-deposit.mp3",
+          "th": "ได้เลย ขอบัตรหรือ ID วางไว้เป็นมัดจำหน่อย",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Here's my card.",
+          "audio": "/static/audio/global/here-s-my-card.mp3",
+          "th": "นี่บัตร",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Staff",
+          "text": "Thanks. Stay inside the flags — it's safe there.",
+          "audio": "/static/audio/global/thanks-stay-inside-the-flags-it-s-safe-there.mp3",
+          "th": "ขอบคุณ เล่นในเขตธงนะ ตรงนั้นปลอดภัย",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Where do I bring it back?",
+          "audio": "/static/audio/global/where-do-i-bring-it-back.mp3",
+          "th": "เอามาคืนที่ไหน",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Staff",
+          "text": "Right here, before four o'clock.",
+          "audio": "/static/audio/global/right-here-before-four-o-clock.mp3",
+          "th": "ตรงนี้แหละ ก่อนสี่โมง",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Got it. Back before four.",
+          "audio": "/static/audio/global/got-it-back-before-four.mp3",
+          "th": "เข้าใจแล้ว คืนก่อนสี่โมง",
+          "th_status": "draft_unverified"
+        }
+      ],
+      "shadow_focus_lines": [
+        {
+          "text": "How much for an hour?",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/how-much-for-an-hour.mp3"
+        },
+        {
+          "text": "Here's my card.",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/here-s-my-card.mp3"
+        },
+        {
+          "text": "Stay inside the flags.",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/stay-inside-the-flags.mp3"
+        },
+        {
+          "text": "Back before four o'clock.",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/back-before-four-o-clock.mp3"
+        }
+      ]
+    },
+    {
+      "cefr": "B1",
+      "label": "Red flag day — the rental you wanted is closed",
+      "lines": [
+        {
+          "speaker": "Staff",
+          "text": "Morning! What can I get you?",
+          "audio": "/static/audio/global/morning-what-can-i-get-you.mp3",
+          "th": "สวัสดีตอนเช้า! รับอะไรดี",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Two kayaks for one hour.",
+          "audio": "/static/audio/global/two-kayaks-for-one-hour.mp3",
+          "th": "เอาคายัคสองลำ ชั่วโมงนึง",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Staff",
+          "text": "Sorry — the red flag's up. No kayaks or boards today.",
+          "audio": "/static/audio/global/sorry-the-red-flag-s-up-no-kayaks-or-boards-today.mp3",
+          "th": "ขอโทษนะ วันนี้ธงแดงขึ้น เช่าคายัคกับบอร์ดไม่ได้",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Red flag? What does that mean?",
+          "audio": "/static/audio/global/red-flag-what-does-that-mean.mp3",
+          "th": "ธงแดง? แปลว่าอะไร",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Staff",
+          "text": "Strong current past the rocks. Too dangerous.",
+          "audio": "/static/audio/global/strong-current-past-the-rocks-too-dangerous.mp3",
+          "th": "เลยโขดหินไปกระแสน้ำแรงมาก อันตรายเกินไป",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Can we swim near the beach?",
+          "audio": "/static/audio/global/can-we-swim-near-the-beach.mp3",
+          "th": "แล้วว่ายน้ำแถวชายหาดได้ไหม",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Staff",
+          "text": "Only in front of the lifeguard, and only waist deep.",
+          "audio": "/static/audio/global/only-in-front-of-the-lifeguard-and-only-waist-deep.mp3",
+          "th": "ได้เฉพาะตรงหน้าไลฟ์การ์ด และลึกแค่ระดับเอวเท่านั้น",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Okay. What else can we rent?",
+          "audio": "/static/audio/global/okay-what-else-can-we-rent.mp3",
+          "th": "โอเค แล้วมีอะไรให้เช่าอีก",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Staff",
+          "text": "Two deck chairs and an umbrella — one fifty for the whole day.",
+          "audio": "/static/audio/global/two-deck-chairs-and-an-umbrella-one-fifty-for-the-whole-day.mp3",
+          "th": "เก้าอี้ชายหาดสองตัวกับร่มหนึ่งคัน 150 ได้ทั้งวัน",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "That's fine. Two chairs, please.",
+          "audio": "/static/audio/global/that-s-fine-two-chairs-please.mp3",
+          "th": "โอเคเลย เอาเก้าอี้สองตัว",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Staff",
+          "text": "I'll need a deposit — cash or an ID card.",
+          "audio": "/static/audio/global/i-ll-need-a-deposit-cash-or-an-id-card.mp3",
+          "th": "ต้องมีมัดจำนะ เงินสดหรือบัตรประชาชนก็ได้",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "How much is the deposit?",
+          "audio": "/static/audio/global/how-much-is-the-deposit.mp3",
+          "th": "มัดจำเท่าไหร่",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Staff",
+          "text": "Five hundred, and you get it back when you return the chairs.",
+          "audio": "/static/audio/global/five-hundred-and-you-get-it-back-when-you-return-the-chairs.mp3",
+          "th": "500 ได้คืนตอนเอาเก้าอี้มาคืน",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Sorry — five hundred or fifteen hundred?",
+          "audio": "/static/audio/global/sorry-five-hundred-or-fifteen-hundred.mp3",
+          "th": "ขอโทษนะ 500 หรือ 1500",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Staff",
+          "text": "Five. Five zero zero.",
+          "audio": "/static/audio/global/five-five-zero-zero.mp3",
+          "th": "ห้าร้อย ห้า-ศูนย์-ศูนย์",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Okay, here's five hundred.",
+          "audio": "/static/audio/global/okay-here-s-five-hundred.mp3",
+          "th": "โอเค นี่ 500",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Staff",
+          "text": "Perfect. Chairs are down there, near the yellow umbrella.",
+          "audio": "/static/audio/global/perfect-chairs-are-down-there-near-the-yellow-umbrella.mp3",
+          "th": "เยี่ยม เก้าอี้อยู่ตรงโน้น แถวร่มสีเหลือง",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "And if the flag changes?",
+          "audio": "/static/audio/global/and-if-the-flag-changes.mp3",
+          "th": "แล้วถ้าธงเปลี่ยนสีล่ะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Staff",
+          "text": "If it goes yellow, come back and I'll sort you a board.",
+          "audio": "/static/audio/global/if-it-goes-yellow-come-back-and-i-ll-sort-you-a-board.mp3",
+          "th": "ถ้าเปลี่ยนเป็นธงเหลือง กลับมาได้เลย เดี๋ยวจัดบอร์ดให้",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Great. Thanks a lot.",
+          "audio": "/static/audio/global/great-thanks-a-lot.mp3",
+          "th": "ดีเลย ขอบคุณมาก",
+          "th_status": "draft_unverified"
+        }
+      ],
+      "shadow_focus_lines": [
+        {
+          "text": "What does that mean?",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/what-does-that-mean.mp3"
+        },
+        {
+          "text": "Can we swim near the beach?",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/can-we-swim-near-the-beach.mp3"
+        },
+        {
+          "text": "How much is the deposit?",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/how-much-is-the-deposit.mp3"
+        },
+        {
+          "text": "Five hundred or fifteen hundred?",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/five-hundred-or-fifteen-hundred.mp3"
+        }
+      ]
+    }
+  ],
+  "chunk_drills": [
+    {
+      "label": "Asking the price by time",
+      "pattern": "How much for + (a/an) + time period / item?",
+      "examples": [
+        "How much for an hour?",
+        "How much for two hours?",
+        "How much for half a day?",
+        "How much for a snorkel and mask?"
+      ],
+      "spiralled_grammar": "Recycles 'How much...?' + numbers/prices from the shopping unit; adds 'for + duration'."
+    },
+    {
+      "label": "Renting: I'd like to rent...",
+      "pattern": "I'd like to rent + (number) + item + for + duration.",
+      "examples": [
+        "I'd like to rent a kayak for one hour.",
+        "I'd like to rent two deck chairs.",
+        "I want to rent a board for the afternoon.",
+        "Can I rent a life jacket too?"
+      ],
+      "spiralled_grammar": "Polite request forms ('I'd like...' / 'Can I...?') recycled from ordering food."
+    },
+    {
+      "label": "Safety questions",
+      "pattern": "Is it safe to + verb? / Can I + verb + here?",
+      "examples": [
+        "Is it safe to swim here?",
+        "Is it safe for kids?",
+        "Can I swim past the flags?",
+        "Are there jellyfish today?"
+      ],
+      "spiralled_grammar": "Yes/no questions with 'is/can'; the final /f/ of 'safe' is the scored sound."
+    },
+    {
+      "label": "Deposit and payment",
+      "pattern": "Do you need + (a deposit / my ID)? / Cash or card?",
+      "examples": [
+        "Do you need a deposit?",
+        "How much is the deposit?",
+        "Can I pay by card?",
+        "Do I get the deposit back?"
+      ],
+      "spiralled_grammar": "Recycles payment chunks from the shopping/taxi units; 'get it back' as a phrasal chunk."
+    },
+    {
+      "label": "Return time",
+      "pattern": "I'll bring it back + at/before + time.",
+      "examples": [
+        "I'll bring it back at three.",
+        "I'll bring it back before four o'clock.",
+        "What time do I bring it back?",
+        "Can I keep it one more hour?"
+      ],
+      "spiralled_grammar": "Recycles clock times; 'bring it back' drills final /k/ in 'back'."
+    },
+    {
+      "label": "Clarifying a number or an instruction",
+      "pattern": "Sorry — X or Y? / Sorry, could you say that again?",
+      "examples": [
+        "Sorry — five hundred or fifteen hundred?",
+        "Sorry — thirty or thirteen?",
+        "Sorry, could you say that again?",
+        "So, only waist deep. Is that right?"
+      ],
+      "spiralled_grammar": "Repair strategies recycled from the phone-call and shopping units."
+    }
+  ],
+  "listening_items": [
+    {
+      "audio_text": "Boards are three hundred for one hour, or five hundred for the whole afternoon.",
+      "channel": "Rental staff, face-to-face, wind and waves in the background",
+      "question": "How much is one hour?",
+      "answer": "Three hundred",
+      "distractor_focus": "three hundred vs five hundred; 'hour' vs 'afternoon' as the time unit"
+    },
+    {
+      "audio_text": "Leave your ID card, not cash — you'll get it back when you return the kayak.",
+      "channel": "Rental staff, face-to-face",
+      "question": "What do you leave as a deposit?",
+      "answer": "Your ID card (not cash)",
+      "distractor_focus": "card vs car vs cash — final consonant discrimination"
+    },
+    {
+      "audio_text": "Attention swimmers: the red flag is up. Please stay out of the water.",
+      "channel": "Lifeguard loudspeaker, echoey",
+      "question": "Can you swim now?",
+      "answer": "No — the red flag means stay out of the water",
+      "distractor_focus": "red flag vs yellow flag; 'flag' vs 'flat'"
+    },
+    {
+      "audio_text": "You can swim here, but only waist deep, and stay in front of the tower.",
+      "channel": "Lifeguard, face-to-face, shouting slightly",
+      "question": "How deep can you go?",
+      "answer": "Waist deep only, in front of the tower",
+      "distractor_focus": "'deep' vs 'deed'; missing the final /p/ makes the limit unclear"
+    },
+    {
+      "audio_text": "Bring the board back at four thirty, please — after that it's an extra hundred.",
+      "channel": "Rental staff, face-to-face",
+      "question": "What time is the return, and what happens if you're late?",
+      "answer": "Four thirty; a hundred extra",
+      "distractor_focus": "four thirty vs four thirteen; 'back' vs 'bag'"
+    }
+  ],
+  "guided_roleplay": {
+    "learner_role": "A tourist at a beach rental stand who wants gear for one hour and needs to know if swimming is safe",
+    "flow": [
+      "Step 1 — Greet the staff and say what you want: 'Hi. I'd like to rent a board.'",
+      "Step 2 — Ask the price by time: 'How much for an hour?'",
+      "Step 3 — Ask about the deposit and payment: 'Do you need a deposit? Cash or card?'",
+      "Step 4 — Ask the safety question: 'Is it safe to swim here today?' and listen for the flag colour.",
+      "Step 5 — Confirm the return time and place: 'What time do I bring it back?' and repeat it: 'Back before four.'",
+      "Step 6 — Clarify anything you didn't catch: 'Sorry — five hundred or fifteen hundred?'"
+    ],
+    "sentence_frames": [
+      "Hi. I'd like to rent ___.",
+      "How much for an hour?",
+      "Do you need a deposit?",
+      "Here's my card.",
+      "Is it safe to swim here?",
+      "What time do I bring it back?",
+      "Sorry, could you say that again?",
+      "Okay — back before ___."
+    ],
+    "hints_available": true
+  },
+  "free_roleplay": {
+    "ai_persona": "A friendly, fast-talking beach rental operator (first names, short sentences, a bit of wind noise). Warm but busy; will repeat if asked.",
+    "a2_behavior": "Stays on the standard script: quotes a per-hour price, takes an ID or card deposit, says the water is fine inside the flags, gives a clear return time. Repeats numbers slowly when the learner asks.",
+    "b1_curveballs": [
+      "The red flag is up — the gear the learner wants is off-limits today; offer chairs and an umbrella instead.",
+      "The deposit is much bigger than expected (five hundred vs fifteen hundred) and the learner must clarify the number.",
+      "There is an extra charge: a life jacket is compulsory and costs fifty more.",
+      "The learner returns the board twenty minutes late and there's a late fee to discuss.",
+      "The staff points out a scratch on the board and asks who did it."
+    ],
+    "roleplay_rubric": [
+      {
+        "criterion": "Asked the price with a time period ('How much for an hour?')",
+        "type": "required"
+      },
+      {
+        "criterion": "Handled the deposit: asked how much and/or offered card, cash or ID",
+        "type": "required"
+      },
+      {
+        "criterion": "Asked at least one safety question and acted on the answer (flag colour / depth limit)",
+        "type": "required"
+      },
+      {
+        "criterion": "Confirmed and repeated the return time and place",
+        "type": "required"
+      },
+      {
+        "criterion": "Used a clarification chunk when a number or instruction was unclear",
+        "type": "required"
+      },
+      {
+        "criterion": "Final consonants audible in card, board, back, safe, cost, deep, flag",
+        "type": "pronunciation"
+      },
+      {
+        "criterion": "Coped with a curveball (red flag, extra charge, late fee) and negotiated an alternative without giving up",
+        "type": "stretch_b1"
+      }
+    ]
+  },
+  "register_culture_note": {
+    "en": "Beach rental and lifeguard talk is casual and fast. Short, direct sentences are normal and polite — 'One hour, please.' is perfectly friendly. You do not need 'Excuse me, sir'. Asking the price and the deposit before you hand anything over is completely normal; nobody thinks it's rude. Lifeguard instructions are orders, not suggestions: if you hear 'stay inside the flags' or 'waist deep only', say 'Okay' and follow it.",
+    "th": null,
+    "do_dont": [
+      {
+        "avoid": "'Here's my car.' (final /d/ dropped)",
+        "prefer": "'Here's my card.' — say the /d/, or hold up the card while you speak."
+      },
+      {
+        "avoid": "'How much?' with no time period",
+        "prefer": "'How much for an hour?' — otherwise you may be quoted the all-day price."
+      },
+      {
+        "avoid": "Silent nodding when you don't understand a number",
+        "prefer": "'Sorry — five hundred or fifteen hundred?'"
+      },
+      {
+        "avoid": "'Can I swim?' after being told the red flag is up",
+        "prefer": "'Is it safe today? What about tomorrow?'"
+      },
+      {
+        "avoid": "'I take board.' (missing final /d/, no article)",
+        "prefer": "'I'd like to rent a board.'"
+      }
+    ],
+    "thai_cultural_note": "At many Thai beaches you can negotiate, pay later, and swim wherever you like; flag systems are often not enforced. In most other countries the flag system is legally enforced and a lifeguard will whistle you back — arguing or smiling and continuing reads as ignoring a safety order, not as being easy-going. Also, deposits are usually taken up front and returned in full; handing over your passport is common, but it is fine to ask 'Can I leave a card instead?'"
+  },
+  "can_do_checkpoints": [
+    {
+      "cefr": "A2",
+      "statement": "I can ask to rent beach gear and ask the price for one hour."
+    },
+    {
+      "cefr": "A2",
+      "statement": "I can ask about a deposit and say how I want to pay."
+    },
+    {
+      "cefr": "A2",
+      "statement": "I can ask if it is safe to swim and understand a simple yes/no answer."
+    },
+    {
+      "cefr": "A2",
+      "statement": "I can confirm and repeat the return time."
+    },
+    {
+      "cefr": "B1",
+      "statement": "I can understand a flag or depth instruction from a lifeguard and ask a follow-up question."
+    },
+    {
+      "cefr": "B1",
+      "statement": "I can handle an unexpected problem — a closed rental, an extra charge, or a late fee — and negotiate an alternative."
+    },
+    {
+      "cefr": "Sound",
+      "statement": "My final consonants in card, board, back, safe, cost, deep and flag are clear enough to be understood over wind and waves."
+    }
+  ],
+  "gamification": {
+    "xp_per_substep": true,
+    "unlocks": [
+      "Beach Bargainer badge — asked price, deposit and return time in one conversation",
+      "Flag Reader badge — correctly acted on a red/yellow flag instruction",
+      "Curveball Survivor badge — completed a B1 roleplay with an extra charge or late fee",
+      "Next scenario: boat trips and island tours"
+    ],
+    "sound_meters": [
+      {
+        "sound": "final_consonants",
+        "display": "Final-sound meter (card / board / back / safe / deep)"
+      }
+    ]
+  },
+  "_review_status": {
+    "thai_strings": "DRAFT - machine-generated, tagged th_status=draft_unverified. A native Thai speaker must review every string and set th_status='reviewed'.",
+    "facts": "UNVERIFIED - generated content, needs a local fact-check before shipping",
+    "generated_by": "claude-opus-5"
+  }
+}

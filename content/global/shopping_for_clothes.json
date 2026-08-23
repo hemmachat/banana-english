@@ -1,0 +1,840 @@
+{
+  "scenario_id": "shopping_for_clothes",
+  "locale": "global",
+  "title_en": "Shopping for Clothes",
+  "title_th": "การซื้อเสื้อผ้า",
+  "tier": 1,
+  "cefr_range": [
+    "A2",
+    "B1"
+  ],
+  "prerequisites": [
+    "greetings_small_talk",
+    "numbers_and_prices",
+    "asking_for_help_politely"
+  ],
+  "recycles": [
+    "numbers and prices",
+    "How much is it?",
+    "colours",
+    "polite requests with Can I / Could I",
+    "Sorry, could you say that again?",
+    "present continuous for what you're doing now"
+  ],
+  "register": "Friendly service register — polite but relaxed; first-name-free, no honorifics, short direct requests",
+  "sound_target_box": {
+    "note_th": null,
+    "targets": [
+      {
+        "sound": "final_consonants",
+        "scoring_method": "phoneme",
+        "words_in_context": [
+          "size",
+          "large",
+          "belt",
+          "black",
+          "shirt",
+          "coat",
+          "it fits",
+          "too tight",
+          "card",
+          "receipt",
+          "cash",
+          "small"
+        ],
+        "minimal_pairs": [
+          [
+            "size",
+            "sigh"
+          ],
+          [
+            "belt",
+            "bell"
+          ],
+          [
+            "card",
+            "car"
+          ],
+          [
+            "coat",
+            "code"
+          ],
+          [
+            "short",
+            "shore"
+          ],
+          [
+            "cash",
+            "catch"
+          ]
+        ],
+        "why_it_matters_here": "Thai finals are unreleased, so 'Do you have a large size?' comes out as 'lar' 'sigh' and the assistant brings the wrong garment or nothing at all. At the till, 'card' said as 'car' makes staff ask twice or hand you a cash total, and 'receipt' without the final /t/ loses you the proof you need to exchange a sale item."
+      },
+      {
+        "sound": "vowel_glides",
+        "scoring_method": "phoneme",
+        "words_in_context": [
+          "size",
+          "try it on",
+          "white",
+          "grey",
+          "sale",
+          "eight",
+          "take",
+          "coat",
+          "show me",
+          "brown",
+          "pay"
+        ],
+        "minimal_pairs": [
+          [
+            "sale",
+            "sell"
+          ],
+          [
+            "coat",
+            "cot"
+          ],
+          [
+            "white",
+            "wet"
+          ],
+          [
+            "eight",
+            "eat"
+          ],
+          [
+            "grey",
+            "grow"
+          ],
+          [
+            "show",
+            "shoe"
+          ]
+        ],
+        "why_it_matters_here": "Thai speakers flatten English diphthongs, so 'It's on sale' sounds like 'It's on sell' and 'thirty-eight' sounds like 'thirty-eat' — you pay the wrong price or agree to the wrong item. Asking for a 'coat' but saying 'cot', or 'white' but saying 'wet', sends the assistant to the wrong shelf while you wait."
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "en": "size (small / medium / large / extra large)",
+      "th": "ไซส์เสื้อผ้า — small เล็ก, medium กลาง, large ใหญ่, extra large ใหญ่พิเศษ ป้ายมักเขียนย่อว่า S M L XL",
+      "group": "sizes",
+      "audio_needed": true,
+      "audio": "/static/audio/global/size-small-medium-large-extra-large.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "a bigger size",
+      "th": "ไซส์ใหญ่ขึ้นอีกเบอร์ — พูดกับพนักงานว่า \"Do you have a bigger size?\"",
+      "group": "sizes",
+      "audio_needed": true,
+      "audio": "/static/audio/global/a-bigger-size.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "a smaller size",
+      "th": "ไซส์เล็กลงอีกเบอร์ — \"Do you have a smaller size?\"",
+      "group": "sizes",
+      "audio_needed": true,
+      "audio": "/static/audio/global/a-smaller-size.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "shirt",
+      "th": "เสื้อเชิ้ต เสื้อมีกระดุมหน้า (เสื้อยืดธรรมดาเรียก t-shirt)",
+      "group": "clothes",
+      "audio_needed": true,
+      "audio": "/static/audio/global/shirt.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "coat / jacket",
+      "th": "เสื้อโค้ท / เสื้อแจ็คเก็ต ใส่คลุมกันหนาว",
+      "group": "clothes",
+      "audio_needed": true,
+      "audio": "/static/audio/global/coat-jacket.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "jeans / trousers",
+      "th": "jeans คือกางเกงยีนส์ ส่วน trousers คือกางเกงขายาวทั่วไป คนออสฯ ชอบพูดว่า pants มากกว่า",
+      "group": "clothes",
+      "audio_needed": true,
+      "audio": "/static/audio/global/jeans-trousers.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "dress",
+      "th": "เดรส ชุดกระโปรงติดกันชิ้นเดียว",
+      "group": "clothes",
+      "audio_needed": true,
+      "audio": "/static/audio/global/dress.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "shoes",
+      "th": "รองเท้า (เป็นคำพหูพจน์เสมอ พูดว่า a pair of shoes = รองเท้าหนึ่งคู่)",
+      "group": "clothes",
+      "audio_needed": true,
+      "audio": "/static/audio/global/shoes.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "belt",
+      "th": "เข็มขัด",
+      "group": "clothes",
+      "audio_needed": true,
+      "audio": "/static/audio/global/belt.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "black / white / grey / brown / navy",
+      "th": "สี — ดำ / ขาว / เทา / น้ำตาล / กรมท่า (navy คือน้ำเงินเข้ม)",
+      "group": "colours",
+      "audio_needed": true,
+      "audio": "/static/audio/global/black-white-grey-brown-navy.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "fitting room / changing room",
+      "th": "ห้องลองเสื้อ ถามว่า \"Where's the fitting room?\" บางร้านจำกัดจำนวนชิ้นที่เอาเข้าไปได้",
+      "group": "in the shop",
+      "audio_needed": true,
+      "audio": "/static/audio/global/fitting-room-changing-room.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "try it on",
+      "th": "ลองใส่ดู — \"Can I try it on?\" = ขอลองได้ไหม",
+      "group": "in the shop",
+      "audio_needed": true,
+      "audio": "/static/audio/global/try-it-on.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "the till / checkout",
+      "th": "เคาน์เตอร์จ่ายเงิน คนออสฯ พูดว่า till หรือ checkout ก็ได้ ถ้าหลง ถามว่า \"Where do I pay?\"",
+      "group": "in the shop",
+      "audio_needed": true,
+      "audio": "/static/audio/global/the-till-checkout.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "on sale / discount",
+      "th": "ลดราคา on sale = กำลังลด, discount = ส่วนลด ป้ายมักเขียน % off",
+      "group": "money",
+      "audio_needed": true,
+      "audio": "/static/audio/global/on-sale-discount.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "How much is it?",
+      "th": "ราคาเท่าไหร่ — ถ้าถือของอยู่ ชี้แล้วพูดว่า \"How much is this?\" ก็พอ",
+      "group": "money",
+      "audio_needed": true,
+      "audio": "/static/audio/global/how-much-is-it.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "pay by card / pay cash",
+      "th": "จ่ายบัตรหรือเงินสด ร้านส่วนใหญ่ในออสฯ รูดบัตรหมด บางร้านจ่ายบัตรมีค่าธรรมเนียมเพิ่มนิดหน่อย (surcharge)",
+      "group": "money",
+      "audio_needed": true,
+      "audio": "/static/audio/global/pay-by-card-pay-cash.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "receipt",
+      "th": "ใบเสร็จ เก็บไว้ให้ดี ถ้าจะเอามาคืนหรือเปลี่ยนต้องใช้",
+      "group": "money",
+      "audio_needed": true,
+      "audio": "/static/audio/global/receipt.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "It fits.",
+      "th": "ใส่พอดี — \"It fits\" คือขนาดกำลังดี",
+      "group": "fit words",
+      "audio_needed": true,
+      "audio": "/static/audio/global/it-fits.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "too tight / too loose",
+      "th": "คับไป / หลวมไป",
+      "group": "fit words",
+      "audio_needed": true,
+      "audio": "/static/audio/global/too-tight-too-loose.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "too long / too short",
+      "th": "ยาวไป / สั้นไป",
+      "group": "fit words",
+      "audio_needed": true,
+      "audio": "/static/audio/global/too-long-too-short.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "out of stock",
+      "th": "ของหมด ไม่มีสต็อก พนักงานอาจบอกว่า \"Sorry, we're out of stock in that size\"",
+      "group": "problems",
+      "audio_needed": true,
+      "audio": "/static/audio/global/out-of-stock.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "return / exchange",
+      "th": "return = เอามาคืนเอาเงินคืน, exchange = เปลี่ยนตัวใหม่ ส่วนใหญ่ต้องมีใบเสร็จและคืนภายในเวลาที่ร้านกำหนด",
+      "group": "problems",
+      "audio_needed": true,
+      "audio": "/static/audio/global/return-exchange.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "I'm just looking, thanks.",
+      "th": "\"ขอดูเฉยๆ ก่อนนะ ขอบคุณ\" — ใช้ตอบเวลาพนักงานเข้ามาถามว่าต้องการให้ช่วยไหม พูดแล้วเขาจะปล่อยให้เราเดินดูเอง",
+      "group": "in the shop",
+      "audio_needed": true,
+      "audio": "/static/audio/global/i-m-just-looking-thanks.mp3",
+      "th_status": "draft_unverified"
+    }
+  ],
+  "model_dialogues": [
+    {
+      "cefr": "A2",
+      "label": "Buying a shirt — the standard sequence",
+      "lines": [
+        {
+          "speaker": "Assistant",
+          "text": "Hi! Can I help you find anything?",
+          "audio": "/static/audio/global/hi-can-i-help-you-find-anything.mp3",
+          "th": "สวัสดีค่ะ กำลังหาอะไรอยู่รึเปล่าคะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Yes, I like this shirt. Do you have a large?",
+          "audio": "/static/audio/global/yes-i-like-this-shirt-do-you-have-a-large.mp3",
+          "th": "ค่ะ ชอบเสื้อตัวนี้ มีไซซ์ L ไหม",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Assistant",
+          "text": "Let me check. Yep, here's a large in black.",
+          "audio": "/static/audio/global/let-me-check-yep-here-s-a-large-in-black.mp3",
+          "th": "ขอเช็คแป๊บนะคะ มีค่ะ นี่ไซซ์ L สีดำ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Thanks. Can I try it on?",
+          "audio": "/static/audio/global/thanks-can-i-try-it-on.mp3",
+          "th": "ขอบคุณค่ะ ขอลองได้ไหม",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Assistant",
+          "text": "Sure, the fitting room is on the right.",
+          "audio": "/static/audio/global/sure-the-fitting-room-is-on-the-right.mp3",
+          "th": "ได้เลยค่ะ ห้องลองอยู่ทางขวา",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "It's a bit tight. Do you have a bigger size?",
+          "audio": "/static/audio/global/it-s-a-bit-tight-do-you-have-a-bigger-size.mp3",
+          "th": "คับไปนิดนึง มีใหญ่กว่านี้ไหม",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Assistant",
+          "text": "I've got an extra large, but only in grey.",
+          "audio": "/static/audio/global/i-ve-got-an-extra-large-but-only-in-grey.mp3",
+          "th": "มี XL ค่ะ แต่เหลือแค่สีเทา",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "That's fine. I'll take the grey one. How much is it?",
+          "audio": "/static/audio/global/that-s-fine-i-ll-take-the-grey-one-how-much-is-it.mp3",
+          "th": "ไม่เป็นไร เอาสีเทาก็ได้ ราคาเท่าไหร่",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Assistant",
+          "text": "It's on sale — twenty-eight ninety-five.",
+          "audio": "/static/audio/global/it-s-on-sale-twenty-eight-ninety-five.mp3",
+          "th": "กำลังลดราคาอยู่ค่ะ 28.95",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Great. Can I pay by card?",
+          "audio": "/static/audio/global/great-can-i-pay-by-card.mp3",
+          "th": "ดีเลย จ่ายบัตรได้ไหม",
+          "th_status": "draft_unverified"
+        }
+      ],
+      "shadow_focus_lines": [
+        {
+          "text": "Do you have a large?",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/do-you-have-a-large.mp3"
+        },
+        {
+          "text": "Can I try it on?",
+          "targets": [
+            "vowel_glides",
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/can-i-try-it-on.mp3"
+        },
+        {
+          "text": "It's a bit tight.",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/it-s-a-bit-tight.mp3"
+        },
+        {
+          "text": "I'll take the grey one.",
+          "targets": [
+            "vowel_glides"
+          ],
+          "audio": "/static/audio/global/i-ll-take-the-grey-one.mp3"
+        }
+      ]
+    },
+    {
+      "cefr": "B1",
+      "label": "Buying a coat — the size is out of stock and it's a final-sale item",
+      "lines": [
+        {
+          "speaker": "Assistant",
+          "text": "Hi there, are you after anything in particular?",
+          "audio": "/static/audio/global/hi-there-are-you-after-anything-in-particular.mp3",
+          "th": "สวัสดีค่ะ มองหาอะไรอยู่รึเปล่าคะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Yes, I'm looking for a coat. Something warm.",
+          "audio": "/static/audio/global/yes-i-m-looking-for-a-coat-something-warm.mp3",
+          "th": "ค่ะ หาเสื้อโค้ทอยู่ เอาแบบอุ่นๆ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Assistant",
+          "text": "These ones just came in. What size are you?",
+          "audio": "/static/audio/global/these-ones-just-came-in-what-size-are-you.mp3",
+          "th": "ตัวพวกนี้เพิ่งเข้าใหม่เลยค่ะ ใส่ไซซ์อะไรคะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Medium, I think. Can I try this white one?",
+          "audio": "/static/audio/global/medium-i-think-can-i-try-this-white-one.mp3",
+          "th": "น่าจะ M มั้ง ขอลองตัวสีขาวนี้ได้ไหม",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Assistant",
+          "text": "Of course. The fitting rooms are just past the shoes.",
+          "audio": "/static/audio/global/of-course-the-fitting-rooms-are-just-past-the-shoes.mp3",
+          "th": "ได้เลยค่ะ ห้องลองอยู่เลยตรงรองเท้าไปนิดเดียว",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "The sleeves are too long. Do you have a small?",
+          "audio": "/static/audio/global/the-sleeves-are-too-long-do-you-have-a-small.mp3",
+          "th": "แขนยาวไป มีไซซ์ S ไหม",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Assistant",
+          "text": "Sorry, we're out of small in white. I've got small in grey and navy.",
+          "audio": "/static/audio/global/sorry-we-re-out-of-small-in-white-i-ve-got-small-in-grey-and.mp3",
+          "th": "ขอโทษค่ะ สีขาวไซซ์ S หมด เหลือ S สีเทากับสีกรมท่า",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Hmm. Can you check another shop?",
+          "audio": "/static/audio/global/hmm-can-you-check-another-shop.mp3",
+          "th": "อืม... ช่วยเช็คสาขาอื่นให้หน่อยได้ไหม",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Assistant",
+          "text": "I can order the white one online — it'd get here Thursday.",
+          "audio": "/static/audio/global/i-can-order-the-white-one-online-it-d-get-here-thursday.mp3",
+          "th": "สั่งออนไลน์ตัวสีขาวให้ได้นะคะ น่าจะถึงวันพฤหัสฯ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "How much is delivery?",
+          "audio": "/static/audio/global/how-much-is-delivery.mp3",
+          "th": "ค่าส่งเท่าไหร่",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Assistant",
+          "text": "Free over fifty. But online it's not on sale, I'm afraid.",
+          "audio": "/static/audio/global/free-over-fifty-but-online-it-s-not-on-sale-i-m-afraid.mp3",
+          "th": "เกิน 50 ส่งฟรีค่ะ แต่ซื้อออนไลน์จะไม่ได้ราคาลดนะคะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "So the grey one is cheaper today?",
+          "audio": "/static/audio/global/so-the-grey-one-is-cheaper-today.mp3",
+          "th": "งั้นวันนี้สีเทาถูกกว่าใช่ไหม",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Assistant",
+          "text": "Yeah — grey's thirty-eight, the white one's forty-five online.",
+          "audio": "/static/audio/global/yeah-grey-s-thirty-eight-the-white-one-s-forty-five-online.mp3",
+          "th": "ใช่ค่ะ สีเทา 38 ส่วนสีขาวออนไลน์ 45",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Sorry, thirty-eight or forty-eight?",
+          "audio": "/static/audio/global/sorry-thirty-eight-or-forty-eight.mp3",
+          "th": "โทษที 38 หรือ 48 นะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Assistant",
+          "text": "Thirty-eight. Three, eight.",
+          "audio": "/static/audio/global/thirty-eight-three-eight.mp3",
+          "th": "38 ค่ะ สาม-แปด",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Okay. I'll take the grey small.",
+          "audio": "/static/audio/global/okay-i-ll-take-the-grey-small.mp3",
+          "th": "โอเค เอาสีเทาไซซ์ S",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Assistant",
+          "text": "Nice choice. Just so you know, sale items are exchange only.",
+          "audio": "/static/audio/global/nice-choice-just-so-you-know-sale-items-are-exchange-only.mp3",
+          "th": "เลือกได้ดีค่ะ บอกไว้ก่อนนะคะ ของลดราคาเปลี่ยนได้อย่างเดียว คืนเงินไม่ได้",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Can I exchange it if it doesn't fit?",
+          "audio": "/static/audio/global/can-i-exchange-it-if-it-doesn-t-fit.mp3",
+          "th": "ถ้าใส่ไม่พอดี เอามาเปลี่ยนได้ใช่ไหม",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Assistant",
+          "text": "Yep, within fourteen days, and you'll need the receipt.",
+          "audio": "/static/audio/global/yep-within-fourteen-days-and-you-ll-need-the-receipt.mp3",
+          "th": "ได้ค่ะ ภายใน 14 วัน แล้วต้องเอาใบเสร็จมาด้วยนะคะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "That's fine. Can I pay by card?",
+          "audio": "/static/audio/global/that-s-fine-can-i-pay-by-card.mp3",
+          "th": "โอเคค่ะ จ่ายบัตรได้ไหม",
+          "th_status": "draft_unverified"
+        }
+      ],
+      "shadow_focus_lines": [
+        {
+          "text": "Do you have a small?",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/do-you-have-a-small.mp3"
+        },
+        {
+          "text": "Thirty-eight or forty-eight?",
+          "targets": [
+            "vowel_glides",
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/thirty-eight-or-forty-eight.mp3"
+        },
+        {
+          "text": "The sleeves are too long.",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/the-sleeves-are-too-long.mp3"
+        },
+        {
+          "text": "Can I pay by card?",
+          "targets": [
+            "final_consonants",
+            "vowel_glides"
+          ],
+          "audio": "/static/audio/global/can-i-pay-by-card.mp3"
+        }
+      ]
+    }
+  ],
+  "chunk_drills": [
+    {
+      "label": "Asking for a size or colour",
+      "pattern": "Do you have this in ___?",
+      "examples": [
+        "Do you have this in a large?",
+        "Do you have this in black?",
+        "Do you have this in a smaller size?",
+        "Do you have these in an eight?"
+      ],
+      "spiralled_grammar": "Yes/No questions with 'do' + this/these (recycled from shop and café units); singular vs plural item words (shirt / jeans)"
+    },
+    {
+      "label": "Asking to try something on",
+      "pattern": "Can I try ___ on?",
+      "examples": [
+        "Can I try it on?",
+        "Can I try this on?",
+        "Can I try these shoes on?",
+        "Where's the fitting room?"
+      ],
+      "spiralled_grammar": "Polite requests with Can I / Could I (recycled from asking_for_help_politely); object pronoun between verb and 'on'"
+    },
+    {
+      "label": "Saying what's wrong with the fit",
+      "pattern": "It's too ___. / It's a bit ___.",
+      "examples": [
+        "It's too tight.",
+        "It's too long.",
+        "It's a bit loose.",
+        "The sleeves are too short.",
+        "It fits perfectly."
+      ],
+      "spiralled_grammar": "too + adjective vs a bit + adjective for softening; present simple 'it fits'"
+    },
+    {
+      "label": "Checking the price and the number",
+      "pattern": "How much is ___? / Sorry, is that ___ or ___?",
+      "examples": [
+        "How much is this coat?",
+        "How much are these?",
+        "Sorry, is that thirty or thirteen?",
+        "Sorry, is that fifteen or fifty?",
+        "Is it on sale?"
+      ],
+      "spiralled_grammar": "How much is/are + singular/plural (recycled from numbers_and_prices); alternative questions with 'or' for repair"
+    },
+    {
+      "label": "Buying, returning, exchanging",
+      "pattern": "I'll take ___. / Can I return it if ___?",
+      "examples": [
+        "I'll take the grey one.",
+        "I'll take two, please.",
+        "Can I return it if it doesn't fit?",
+        "Can I exchange it if the size is wrong?",
+        "Could I have a receipt, please?"
+      ],
+      "spiralled_grammar": "'I'll' for decisions made now; first conditional 'if it doesn't fit' with present simple in the if-clause"
+    }
+  ],
+  "listening_items": [
+    {
+      "audio_text": "We haven't got that in small, sorry — but I can order it in for Thursday.",
+      "channel": "in_person, shop floor",
+      "question": "What does the assistant offer to do?",
+      "answer": "Order the small size in, arriving Thursday",
+      "distractor_focus": "'haven't got' contraction; learners hear 'got' as an offer rather than a refusal"
+    },
+    {
+      "audio_text": "That's thirty-eight ninety, and it's exchange only because it's on sale.",
+      "channel": "in_person, checkout",
+      "question": "How much is it, and can you get your money back?",
+      "answer": "38.90 — no refund, exchange only",
+      "distractor_focus": "thirty-eight vs forty-eight; 'on sale' vs 'on sell' (vowel glide)"
+    },
+    {
+      "audio_text": "Attention shoppers: all winter coats are half price today at the front of the store.",
+      "channel": "store PA announcement",
+      "question": "What is half price and where is it?",
+      "answer": "Winter coats, at the front of the store",
+      "distractor_focus": "coats vs cots (vowel glide) and the final /s/ on 'coats'"
+    },
+    {
+      "audio_text": "Hi, it's Riverside Clothing. Your size eight in white is in — we'll hold it till Friday.",
+      "channel": "phone voicemail",
+      "question": "Which size and colour is ready, and until when will they hold it?",
+      "answer": "Size eight in white, held until Friday",
+      "distractor_focus": "eight vs eat; white vs wet; final /t/ on 'eight' and 'white'"
+    },
+    {
+      "audio_text": "The fitting rooms are down the back, past the shoes, on your left.",
+      "channel": "in_person, shop floor",
+      "question": "Where are the fitting rooms?",
+      "answer": "At the back, past the shoes, on the left",
+      "distractor_focus": "'left' final cluster /ft/ heard as 'lef'; 'past' final /st/"
+    }
+  ],
+  "guided_roleplay": {
+    "learner_role": "A customer buying one item of clothing in a mid-size high-street shop, with on-screen frames and a hint button",
+    "flow": [
+      "Step 1 — Greet the assistant and say what you want (or say 'I'm just looking, thanks').",
+      "Step 2 — Ask for your size and colour.",
+      "Step 3 — Ask to try it on and find the fitting room.",
+      "Step 4 — Come out and describe the fit problem; ask for a different size or colour.",
+      "Step 5 — Handle the complication (out of stock / different price / sale item) and check the number you heard.",
+      "Step 6 — Say you'll take it, ask about paying, and ask the return or exchange rule."
+    ],
+    "sentence_frames": [
+      "Hi, I'm looking for a ___.",
+      "Do you have this in ___?",
+      "Can I try it on?",
+      "Where's the fitting room?",
+      "It's too ___. Do you have a bigger size?",
+      "Sorry, is that ___ or ___?",
+      "Is it on sale?",
+      "I'll take the ___ one.",
+      "Can I pay by card?",
+      "Can I return it if it doesn't fit?"
+    ],
+    "hints_available": true
+  },
+  "free_roleplay": {
+    "ai_persona": "A friendly, slightly busy shop assistant in a high-street clothing store. Warm, uses short casual service language ('No worries', 'Let me check for you'), speaks at natural speed, and does not slow down unless the learner asks.",
+    "a2_behavior": "Stays on the standard sequence: greets, finds the size, points to the fitting room, confirms the fit, states a clear price, takes payment.",
+    "b1_curveballs": [
+      "The size the learner wants is out of stock; only another colour is available.",
+      "Says a price fast with a confusable number ('thirty-eight' / 'forty-eight') and waits to see if the learner checks.",
+      "Explains that sale items are exchange only and a receipt is needed.",
+      "Offers to order the item online and asks for a delivery address and phone number.",
+      "Asks 'Would you like to try the next size up?' and then asks how it feels in detail (shoulders, sleeves, waist).",
+      "The card payment fails and the learner must offer cash or another card.",
+      "Offers a loyalty card sign-up the learner has to politely decline."
+    ],
+    "roleplay_rubric": [
+      {
+        "criterion": "Completed all six sub-steps: stated the need, asked for a size, asked to try it on, described the fit, handled the complication, paid",
+        "type": "required"
+      },
+      {
+        "criterion": "Asked for a specific size and colour (not just pointing or saying 'this one')",
+        "type": "required"
+      },
+      {
+        "criterion": "Described the fit problem with too/a bit + adjective and asked for an alternative",
+        "type": "required"
+      },
+      {
+        "criterion": "Confirmed the price or number with a repair question ('Sorry, is that thirty or thirteen?') at least once",
+        "type": "required"
+      },
+      {
+        "criterion": "Asked at least one transaction question: payment method, receipt, or return/exchange rule",
+        "type": "required"
+      },
+      {
+        "criterion": "Register stayed polite-casual: used 'Can I / Could I / please / thanks', no bare commands",
+        "type": "required"
+      },
+      {
+        "criterion": "Pronunciation: final consonants on size, large, coat, card, receipt released; diphthongs in sale, eight, white, grey, try clearly distinct",
+        "type": "pronunciation"
+      },
+      {
+        "criterion": "Coped with an off-script curveball (out of stock, failed payment, exchange-only rule) and kept the conversation going to a decision",
+        "type": "stretch_b1"
+      }
+    ]
+  },
+  "register_culture_note": {
+    "en": "In most fixed-price shops, staff greet you first and expect a short, friendly answer — 'I'm just looking, thanks' is completely normal and not rude. You do not need formal language; 'Can I try this on?' with 'please' or 'thanks' is exactly right. Trying clothes on, asking for another size, and walking out without buying are all expected behaviour, not an imposition. Prices are fixed in chain stores, so asking for a discount is unusual — ask 'Is this on sale?' instead. Do ask about returns and receipts before you pay; staff answer this question all day long.",
+    "th": null,
+    "do_dont": [
+      {
+        "avoid": "Give me size L.",
+        "prefer": "Do you have this in a large, please?"
+      },
+      {
+        "avoid": "I want try.",
+        "prefer": "Can I try it on?"
+      },
+      {
+        "avoid": "Cheaper? Discount?",
+        "prefer": "Is this on sale?"
+      },
+      {
+        "avoid": "Nodding and saying yes when you didn't catch the price",
+        "prefer": "Sorry, is that thirty or thirteen?"
+      },
+      {
+        "avoid": "Saying 'sigh' or 'lar' with no final sound",
+        "prefer": "Say the final sound: si-ZE, lar-JE, coa-T, car-D"
+      },
+      {
+        "avoid": "Buying something that doesn't fit because you feel embarrassed",
+        "prefer": "Thanks, I'll leave it today."
+      }
+    ],
+    "thai_cultural_note": "In Thai markets, bargaining is normal and trying clothes on is often not possible, so many Thai learners either haggle in a fixed-price shop or skip the fitting room and buy the wrong size. In most global chain stores the opposite is true: the price will not move, but trying on, changing your mind and returning an item are all built into the system. Also, accepting help from an assistant does not oblige you to buy — leaving with a simple 'Thanks, I'll think about it' is polite and expected, not a loss of face for either side."
+  },
+  "can_do_checkpoints": [
+    {
+      "cefr": "A2",
+      "statement": "I can say what item I'm looking for and ask for a specific size and colour."
+    },
+    {
+      "cefr": "A2",
+      "statement": "I can ask to try something on and find the fitting room."
+    },
+    {
+      "cefr": "A2",
+      "statement": "I can ask how much something is and understand a spoken price."
+    },
+    {
+      "cefr": "B1",
+      "statement": "I can describe a fit problem in detail and ask for a different size, colour or item."
+    },
+    {
+      "cefr": "B1",
+      "statement": "I can handle a complication — out of stock, a sale price, exchange-only — and still reach a decision."
+    },
+    {
+      "cefr": "B1",
+      "statement": "I can ask about payment, receipts and the return or exchange policy before I buy."
+    },
+    {
+      "cefr": "Sound",
+      "statement": "My final consonants (size, large, coat, card, receipt) and my diphthongs (sale, eight, white, grey) are clear enough that the assistant brings the right item at the right price."
+    }
+  ],
+  "gamification": {
+    "xp_per_substep": true,
+    "unlocks": [
+      "returning_an_item",
+      "shopping_for_shoes",
+      "market_bargaining",
+      "online_order_and_delivery"
+    ],
+    "sound_meters": [
+      "final_consonants",
+      "vowel_glides",
+      "number_clarity_carryover"
+    ]
+  },
+  "_review_status": {
+    "thai_strings": "DRAFT - machine-generated, tagged th_status=draft_unverified. A native Thai speaker must review every string and set th_status='reviewed'.",
+    "facts": "UNVERIFIED - generated content, needs a local fact-check before shipping",
+    "generated_by": "claude-opus-5"
+  }
+}

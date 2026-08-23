@@ -1,0 +1,880 @@
+{
+  "scenario_id": "taxi_grab",
+  "locale": "global",
+  "title_en": "Taxi & Grab Rides",
+  "title_th": "การเรียกแท็กซี่และแกร็บ",
+  "tier": 1,
+  "cefr_range": [
+    "A2",
+    "B1"
+  ],
+  "prerequisites": [
+    "greetings_small_talk",
+    "numbers_and_prices",
+    "phone_call_basics"
+  ],
+  "recycles": [
+    "numbers and prices (\"How much is it?\", 240, 15 vs 50)",
+    "time expressions (\"in three minutes\", \"about ten minutes\")",
+    "place words and directions (left, right, corner, near the bank)",
+    "clarification phrases (\"Sorry, could you say that again?\")",
+    "polite requests with could you (\"Could you help me?\")"
+  ],
+  "register": "Casual-polite. Short, direct requests with 'please' or 'could you'; first names or no name at all; no honorifics, no long apologies.",
+  "sound_target_box": {
+    "note_th": null,
+    "targets": [
+      {
+        "sound": "final_consonants",
+        "scoring_method": "phoneme",
+        "words_in_context": [
+          "stop here",
+          "turn left",
+          "the airport",
+          "cash or card",
+          "the traffic light",
+          "next soi / next street",
+          "please wait for me",
+          "the south gate",
+          "which road"
+        ],
+        "minimal_pairs": [
+          [
+            "right",
+            "ride"
+          ],
+          [
+            "card",
+            "car"
+          ],
+          [
+            "stop",
+            "stock"
+          ],
+          [
+            "back",
+            "bag"
+          ],
+          [
+            "next",
+            "neck"
+          ],
+          [
+            "cash",
+            "cast"
+          ]
+        ],
+        "why_it_matters_here": "In a moving car the driver has about one second to act. If the final /t/ in 'left' or the /p/ in 'stop' disappears, the driver keeps going and you are a kilometre past your street. 'Card' said without the /d/ sounds like 'car', so the driver hands you the machine back and thinks you said something about the vehicle. Dropping the /t/ in 'airport' at pickup is the difference between the terminal and a random port road."
+      },
+      {
+        "sound": "r_l",
+        "scoring_method": "phoneme",
+        "words_in_context": [
+          "turn right / turn left",
+          "the red building",
+          "Lake Road",
+          "the ring road",
+          "please pull over",
+          "arrive",
+          "the corner",
+          "the railway station"
+        ],
+        "minimal_pairs": [
+          [
+            "right",
+            "light"
+          ],
+          [
+            "road",
+            "load"
+          ],
+          [
+            "arrive",
+            "alive"
+          ],
+          [
+            "collect",
+            "correct"
+          ],
+          [
+            "rate",
+            "late"
+          ],
+          [
+            "pray",
+            "play"
+          ]
+        ],
+        "why_it_matters_here": "'Turn right' and 'turn light' is not a small mistake — it is a wrong turn into traffic. Street names are the same problem: 'Lake Road' and 'Rake Load' get typed into the driver's app as nothing at all, and you end up re-explaining your address while the meter runs. 'Pull over' with an /l/-less /r/ sounds like 'poor over' and the driver just keeps driving."
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "en": "taxi rank / taxi stand",
+      "th": "จุดจอดแท็กซี่ ที่ออสฯ เรียก taxi rank มีตามสถานีรถไฟ สนามบิน ห้าง ไปยืนต่อคิวได้เลย ไม่ต้องโบก",
+      "group": "getting a ride",
+      "audio_needed": true,
+      "audio": "/static/audio/global/taxi-rank-taxi-stand.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "pick-up point",
+      "th": "จุดที่ให้รถมารับ ในแอปต้องเลือกให้ถูก บางที่มีป้าย pick-up ติดไว้ชัดเจน",
+      "group": "getting a ride",
+      "audio_needed": true,
+      "audio": "/static/audio/global/pick-up-point.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "drop-off",
+      "th": "จุดที่รถจอดส่งเรา บางที่โรงพยาบาลหรือสนามบินแยก drop-off กับ pick-up คนละทาง",
+      "group": "getting a ride",
+      "audio_needed": true,
+      "audio": "/static/audio/global/drop-off.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "the pin (in the app)",
+      "th": "หมุดในแอป บอกว่าเรายืนอยู่ตรงไหน ต้องเลื่อนให้ตรงจริง ๆ ไม่งั้นคนขับหาไม่เจอ",
+      "group": "getting a ride",
+      "audio_needed": true,
+      "audio": "/static/audio/global/the-pin-in-the-app.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "the meter",
+      "th": "มิเตอร์ แท็กซี่จริงจะกดมิเตอร์ ราคาขึ้นตามระยะทางกับเวลา",
+      "group": "money",
+      "audio_needed": true,
+      "audio": "/static/audio/global/the-meter.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "fixed price / app price",
+      "th": "ราคาที่แอปบอกไว้ตั้งแต่แรก จ่ายเท่านั้น ไม่ขึ้นตามมิเตอร์ ถึงรถติดก็ราคาเดิม",
+      "group": "money",
+      "audio_needed": true,
+      "audio": "/static/audio/global/fixed-price-app-price.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "toll",
+      "th": "ค่าผ่านทางด่วน ปกติเขาบวกเพิ่มในค่ารถ ถามได้ว่า Does that include tolls?",
+      "group": "money",
+      "audio_needed": true,
+      "audio": "/static/audio/global/toll.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "waiting time (extra charge)",
+      "th": "ค่ารอ ถ้าให้คนขับรอนาน เขาคิดเงินเพิ่มเป็นนาที",
+      "group": "money",
+      "audio_needed": true,
+      "audio": "/static/audio/global/waiting-time-extra-charge.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "cash or card",
+      "th": "เงินสดหรือบัตร คนขับมักถามก่อนออกรถ ถ้าเรียกผ่านแอปมันตัดบัตรให้เอง",
+      "group": "money",
+      "audio_needed": true,
+      "audio": "/static/audio/global/cash-or-card.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "change (money back)",
+      "th": "เงินทอน ถ้าไม่เอาทอนพูดว่า Keep the change",
+      "group": "money",
+      "audio_needed": true,
+      "audio": "/static/audio/global/change-money-back.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "turn left",
+      "th": "เลี้ยวซ้าย",
+      "group": "directions",
+      "audio_needed": true,
+      "audio": "/static/audio/global/turn-left.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "turn right",
+      "th": "เลี้ยวขวา",
+      "group": "directions",
+      "audio_needed": true,
+      "audio": "/static/audio/global/turn-right.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "go straight",
+      "th": "ตรงไป",
+      "group": "directions",
+      "audio_needed": true,
+      "audio": "/static/audio/global/go-straight.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "at the traffic light",
+      "th": "ตรงไฟแดง ใช้บอกจุด เช่น เลี้ยวซ้ายตรงไฟแดง",
+      "group": "directions",
+      "audio_needed": true,
+      "audio": "/static/audio/global/at-the-traffic-light.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "at the corner",
+      "th": "ตรงหัวมุมถนน",
+      "group": "directions",
+      "audio_needed": true,
+      "audio": "/static/audio/global/at-the-corner.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "stop here, please",
+      "th": "จอดตรงนี้ครับ/ค่ะ พูดสุภาพ ใช้ได้ทุกที่",
+      "group": "directions",
+      "audio_needed": true,
+      "audio": "/static/audio/global/stop-here-please.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "pull over",
+      "th": "บอกให้จอดชิดข้างทาง คนออสฯ ใช้บ่อยมาก เช่น Just pull over here",
+      "group": "directions",
+      "audio_needed": true,
+      "audio": "/static/audio/global/pull-over.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "the next street / the next soi",
+      "th": "ถนนถัดไป ที่ออสฯ ไม่มีซอย มีแต่ street กับ road บอกเป็นชื่อถนนไปเลยง่ายกว่า",
+      "group": "directions",
+      "audio_needed": true,
+      "audio": "/static/audio/global/the-next-street-the-next-soi.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "house number",
+      "th": "เลขที่บ้าน ที่นี่พูดเลขก่อนแล้วค่อยตามด้วยชื่อถนน เช่น 42 Smith Street",
+      "group": "address",
+      "audio_needed": true,
+      "audio": "/static/audio/global/house-number.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "street name",
+      "th": "ชื่อถนน ถ้าออกเสียงไม่ชัด เปิดหน้าจอให้คนขับดูได้เลย",
+      "group": "address",
+      "audio_needed": true,
+      "audio": "/static/audio/global/street-name.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "near the bank / opposite the park",
+      "th": "ใช้บอกจุดสังเกต opposite แปลว่าตรงข้าม เช่น ตรงข้ามสวน",
+      "group": "address",
+      "audio_needed": true,
+      "audio": "/static/audio/global/near-the-bank-opposite-the-park.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "the red building",
+      "th": "ตึกสีแดง บอกสีตึกช่วยให้คนขับหาเจอง่ายขึ้น",
+      "group": "address",
+      "audio_needed": true,
+      "audio": "/static/audio/global/the-red-building.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "the airport / terminal two",
+      "th": "สนามบิน ต้องบอกเทอร์มินอลด้วย เพราะสนามบินใหญ่มีหลายอาคาร ในประเทศกับต่างประเทศคนละที่",
+      "group": "destinations",
+      "audio_needed": true,
+      "audio": "/static/audio/global/the-airport-terminal-two.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "the railway station",
+      "th": "สถานีรถไฟ พูดว่า train station ก็เข้าใจ ใช้บ่อยกว่าด้วย",
+      "group": "destinations",
+      "audio_needed": true,
+      "audio": "/static/audio/global/the-railway-station.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "the ring road",
+      "th": "ถนนวงแหวนรอบเมือง เลี่ยงรถติดในเมือง แต่บางสายมี toll",
+      "group": "destinations",
+      "audio_needed": true,
+      "audio": "/static/audio/global/the-ring-road.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "road closed / roadworks",
+      "th": "ปิดถนน / ซ่อมถนน เจอบ่อยที่นี่ ทำให้ต้องอ้อมและใช้เวลานานขึ้น",
+      "group": "problems",
+      "audio_needed": true,
+      "audio": "/static/audio/global/road-closed-roadworks.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "heavy traffic / a traffic jam",
+      "th": "รถติด ถ้านัดหมอไว้ เผื่อเวลาไว้เยอะ ๆ",
+      "group": "problems",
+      "audio_needed": true,
+      "audio": "/static/audio/global/heavy-traffic-a-traffic-jam.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "I'm running late",
+      "th": "จะไปสายแล้ว ถ้าไปหาหมอไม่ทัน โทรบอกคลินิกไว้ก่อนดีกว่าเงียบ ไม่งั้นบางที่คิดค่าไม่มาตามนัด",
+      "group": "problems",
+      "audio_needed": true,
+      "audio": "/static/audio/global/i-m-running-late.mp3",
+      "th_status": "draft_unverified"
+    }
+  ],
+  "model_dialogues": [
+    {
+      "cefr": "A2",
+      "label": "Street taxi to the railway station — meter, two directions, paying",
+      "lines": [
+        {
+          "speaker": "Driver",
+          "text": "Where to?",
+          "audio": "/static/audio/global/where-to.mp3",
+          "th": "ไปไหนครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "You",
+          "text": "The railway station, please.",
+          "audio": "/static/audio/global/the-railway-station-please.mp3",
+          "th": "ไปสถานีรถไฟครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Driver",
+          "text": "Okay. Hop in.",
+          "audio": "/static/audio/global/okay-hop-in.mp3",
+          "th": "ได้เลย ขึ้นมาเลย",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "You",
+          "text": "Could you use the meter, please?",
+          "audio": "/static/audio/global/could-you-use-the-meter-please.mp3",
+          "th": "ขอเปิดมิเตอร์ด้วยได้ไหมครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Driver",
+          "text": "Meter's on. Which way at the lights?",
+          "audio": "/static/audio/global/meter-s-on-which-way-at-the-lights.mp3",
+          "th": "เปิดแล้ว ถึงไฟแดงเลี้ยวทางไหน",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "You",
+          "text": "Turn left at the traffic light.",
+          "audio": "/static/audio/global/turn-left-at-the-traffic-light.mp3",
+          "th": "เลี้ยวซ้ายตรงไฟแดงเลย",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Driver",
+          "text": "Left. And then?",
+          "audio": "/static/audio/global/left-and-then.mp3",
+          "th": "ซ้ายนะ แล้วไงต่อ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "You",
+          "text": "It's the red building on the right. Stop here, please.",
+          "audio": "/static/audio/global/it-s-the-red-building-on-the-right-stop-here-please.mp3",
+          "th": "ตึกสีแดงทางขวามือ จอดตรงนี้เลยครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Driver",
+          "text": "Two hundred and forty, thanks. Cash or card?",
+          "audio": "/static/audio/global/two-hundred-and-forty-thanks-cash-or-card.mp3",
+          "th": "240 นะครับ จ่ายเงินสดหรือบัตร",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "You",
+          "text": "Card, please. Thank you!",
+          "audio": "/static/audio/global/card-please-thank-you.mp3",
+          "th": "บัตรครับ ขอบคุณครับ",
+          "th_status": "draft_unverified"
+        }
+      ],
+      "shadow_focus_lines": [
+        {
+          "text": "Could you use the meter?",
+          "targets": [
+            "final_consonants",
+            "r_l"
+          ],
+          "audio": "/static/audio/global/could-you-use-the-meter.mp3"
+        },
+        {
+          "text": "Turn left at the light.",
+          "targets": [
+            "final_consonants",
+            "r_l"
+          ],
+          "audio": "/static/audio/global/turn-left-at-the-light.mp3"
+        },
+        {
+          "text": "The red building on the right.",
+          "targets": [
+            "r_l",
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/the-red-building-on-the-right.mp3"
+        },
+        {
+          "text": "Stop here, please. Card.",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/stop-here-please-card.mp3"
+        }
+      ]
+    },
+    {
+      "cefr": "B1",
+      "label": "App ride that goes wrong — wrong pin, extra stop, closed road, cash-only toll",
+      "lines": [
+        {
+          "speaker": "Driver (phone)",
+          "text": "Hi, I'm outside the mall at the north gate. I can't see you.",
+          "audio": "/static/audio/global/hi-i-m-outside-the-mall-at-the-north-gate-i-can-t-see-you.mp3",
+          "th": "ฮัลโหล ผมยืนอยู่หน้าห้าง ประตูทางเหนือ ไม่เห็นรถเลย",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "You",
+          "text": "Sorry — I'm at the south gate, near the bank.",
+          "audio": "/static/audio/global/sorry-i-m-at-the-south-gate-near-the-bank.mp3",
+          "th": "โทษทีครับ ผมอยู่ประตูทางใต้ ตรงแถวธนาคาร",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Driver (phone)",
+          "text": "Ah, the app put the pin on the wrong side. Can you walk over?",
+          "audio": "/static/audio/global/ah-the-app-put-the-pin-on-the-wrong-side-can-you-walk-over.mp3",
+          "th": "อ๋อ แอปมันปักหมุดผิดฝั่ง เดินมาได้ไหม",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "You",
+          "text": "It's a long walk. Could you drive around?",
+          "audio": "/static/audio/global/it-s-a-long-walk-could-you-drive-around.mp3",
+          "th": "เดินไกลอยู่นะ ขับอ้อมมารับได้ไหม",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Driver (phone)",
+          "text": "No problem. Give me three minutes.",
+          "audio": "/static/audio/global/no-problem-give-me-three-minutes.mp3",
+          "th": "ได้เลย ขอสามนาที",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Driver",
+          "text": "Right — Riverside Hotel, is that correct?",
+          "audio": "/static/audio/global/right-riverside-hotel-is-that-correct.mp3",
+          "th": "เอาละ โรงแรมริเวอร์ไซด์ ใช่ไหมครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "You",
+          "text": "Yes, but can we stop at a pharmacy first?",
+          "audio": "/static/audio/global/yes-but-can-we-stop-at-a-pharmacy-first.mp3",
+          "th": "ใช่ แต่ขอแวะร้านขายยาก่อนได้ไหม",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Driver",
+          "text": "Sure. There's one on Lake Road, two minutes away.",
+          "audio": "/static/audio/global/sure-there-s-one-on-lake-road-two-minutes-away.mp3",
+          "th": "ได้สิ มีร้านนึงอยู่ถนน Lake Road สองนาทีก็ถึง",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "You",
+          "text": "Great. Please wait for me. I'll be quick.",
+          "audio": "/static/audio/global/great-please-wait-for-me-i-ll-be-quick.mp3",
+          "th": "ดีเลย รอผมแป๊บนึงนะ เดี๋ยวรีบออกมา",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Driver",
+          "text": "Just so you know, waiting time costs extra.",
+          "audio": "/static/audio/global/just-so-you-know-waiting-time-costs-extra.mp3",
+          "th": "บอกไว้ก่อนนะ เวลาที่รอมันคิดเงินเพิ่มด้วย",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "You",
+          "text": "That's okay. How much extra?",
+          "audio": "/static/audio/global/that-s-okay-how-much-extra.mp3",
+          "th": "ไม่เป็นไร เพิ่มเท่าไหร่",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Driver",
+          "text": "About twenty a minute. Oh — and Bridge Street is closed tonight.",
+          "audio": "/static/audio/global/about-twenty-a-minute-oh-and-bridge-street-is-closed-tonight.mp3",
+          "th": "ประมาณนาทีละยี่สิบ อ้อ แล้วคืนนี้ถนน Bridge Street ปิดด้วยนะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "You",
+          "text": "Closed? So which road will we take?",
+          "audio": "/static/audio/global/closed-so-which-road-will-we-take.mp3",
+          "th": "ปิดเหรอ แล้วจะไปทางไหนล่ะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Driver",
+          "text": "I'll take the ring road. It's longer, but it's faster.",
+          "audio": "/static/audio/global/i-ll-take-the-ring-road-it-s-longer-but-it-s-faster.mp3",
+          "th": "ผมจะไปทางถนนวงแหวน อ้อมกว่าแต่เร็วกว่า",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "You",
+          "text": "Will the app price change?",
+          "audio": "/static/audio/global/will-the-app-price-change.mp3",
+          "th": "ราคาในแอปจะเปลี่ยนไหม",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Driver",
+          "text": "A little. There's a toll on the ring road, and the toll is cash only.",
+          "audio": "/static/audio/global/a-little-there-s-a-toll-on-the-ring-road-and-the-toll-is-cas.mp3",
+          "th": "นิดหน่อย ถนนวงแหวนมีค่าผ่านทาง แล้วต้องจ่ายเงินสดอย่างเดียว",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "You",
+          "text": "Sorry, could you say that again?",
+          "audio": "/static/audio/global/sorry-could-you-say-that-again.mp3",
+          "th": "โทษที พูดอีกทีได้ไหม",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Driver",
+          "text": "The toll. I need cash for it — forty.",
+          "audio": "/static/audio/global/the-toll-i-need-cash-for-it-forty.mp3",
+          "th": "ค่าผ่านทางน่ะ ผมต้องใช้เงินสด สี่สิบ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "You",
+          "text": "I only have a card. Is there an ATM near here?",
+          "audio": "/static/audio/global/i-only-have-a-card-is-there-an-atm-near-here.mp3",
+          "th": "ผมมีแต่บัตร แถวนี้มีตู้ ATM ไหม",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Driver",
+          "text": "There's one at the petrol station before the toll. I'll pull over there.",
+          "audio": "/static/audio/global/there-s-one-at-the-petrol-station-before-the-toll-i-ll-pull-.mp3",
+          "th": "มีที่ปั๊มน้ำมันก่อนถึงด่าน เดี๋ยวผมจอดให้",
+          "th_status": "draft_unverified"
+        }
+      ],
+      "shadow_focus_lines": [
+        {
+          "text": "I'm at the south gate.",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/i-m-at-the-south-gate.mp3"
+        },
+        {
+          "text": "Could you drive around?",
+          "targets": [
+            "r_l",
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/could-you-drive-around.mp3"
+        },
+        {
+          "text": "Which road will we take?",
+          "targets": [
+            "r_l",
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/which-road-will-we-take.mp3"
+        },
+        {
+          "text": "I only have a card.",
+          "targets": [
+            "r_l",
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/i-only-have-a-card.mp3"
+        }
+      ]
+    }
+  ],
+  "chunk_drills": [
+    {
+      "label": "Destination first (say it in one breath)",
+      "pattern": "[Place], please. / Can you take me to [place]?",
+      "examples": [
+        "The airport, please. Terminal two.",
+        "The railway station, please.",
+        "Can you take me to Lake Road?",
+        "Can you take me to the red building next to the bank?"
+      ],
+      "spiralled_grammar": "Recycles place vocabulary + 'Can you...?' request from greetings_small_talk. Final consonants in 'airport', 'road', 'next' are the scored part."
+    },
+    {
+      "label": "Live directions (short, one instruction at a time)",
+      "pattern": "Turn [left/right] at the [landmark]. / Go straight. / Stop here, please.",
+      "examples": [
+        "Turn right at the corner.",
+        "Turn left at the traffic light.",
+        "Go straight, then turn left.",
+        "Stop here, please.",
+        "Please pull over after the bridge."
+      ],
+      "spiralled_grammar": "Imperatives + 'at the' + landmark. Directly drills r_l ('right'/'left', 'road') and final consonants ('left', 'stop')."
+    },
+    {
+      "label": "Meter / price check",
+      "pattern": "Could you use the meter, please? / Is it a fixed price? / How much is it to [place]?",
+      "examples": [
+        "Could you use the meter, please?",
+        "Is the toll included?",
+        "How much is it to the airport?",
+        "Is that the app price?"
+      ],
+      "spiralled_grammar": "Recycles 'How much...?' from numbers_and_prices; adds 'Could you...' polite request."
+    },
+    {
+      "label": "Fixing the pick-up",
+      "pattern": "I'm at [the / near] [place]. / The pin is wrong. / Could you drive around?",
+      "examples": [
+        "I'm at the south gate, near the bank.",
+        "I'm outside 7-Eleven, opposite the park.",
+        "The pin is on the wrong side.",
+        "Could you drive around? It's a long walk."
+      ],
+      "spiralled_grammar": "Present continuous 'I'm at...' + prepositions of place (near / outside / opposite), recycled from directions."
+    },
+    {
+      "label": "Paying and change",
+      "pattern": "Cash / Card, please. / Do you have change for [amount]? / Keep the change.",
+      "examples": [
+        "Card, please.",
+        "Do you have change for five hundred?",
+        "Keep the change, thanks.",
+        "Can I get a receipt?"
+      ],
+      "spiralled_grammar": "Recycles numbers and prices; 'Do you have...?' question form."
+    },
+    {
+      "label": "Clarify without panicking",
+      "pattern": "Sorry, could you say that again? / Do you mean [X]? / Could you show me on the map?",
+      "examples": [
+        "Sorry, could you say that again?",
+        "Do you mean the toll is extra?",
+        "Sorry — fifteen or fifty?",
+        "Could you show me on the map?"
+      ],
+      "spiralled_grammar": "Recycled clarification set from phone_call_basics; 'Do you mean...?' checks understanding."
+    }
+  ],
+  "listening_items": [
+    {
+      "audio_text": "I'm two minutes away. I'll wait at the corner by the petrol station.",
+      "channel": "phone call from the driver",
+      "question": "Where will the driver wait?",
+      "answer": "At the corner, by the petrol station.",
+      "distractor_focus": "Learners who miss the final /t/ in 'petrol station' vs 'police station' pick the wrong landmark."
+    },
+    {
+      "audio_text": "That'll be fifty with the toll, or fifteen without it.",
+      "channel": "in-car, driver speaking over engine noise",
+      "question": "How much is it with the toll?",
+      "answer": "Fifty.",
+      "distractor_focus": "fifteen / fifty — final stress and the -teen ending; recycles numbers_and_prices."
+    },
+    {
+      "audio_text": "Bridge Street is closed, so I'll take the ring road. It's a bit longer.",
+      "channel": "in-car",
+      "question": "Why is the driver taking a different way?",
+      "answer": "Because Bridge Street is closed.",
+      "distractor_focus": "'ring road' vs 'link road' (r_l); 'closed' final /zd/ vs 'close'."
+    },
+    {
+      "audio_text": "Turn right after the lights, then it's the second building on the left.",
+      "channel": "app voice message",
+      "question": "Which way at the lights, and which side is the building?",
+      "answer": "Turn right at the lights; the building is on the left.",
+      "distractor_focus": "right/left confusion is the whole point — r_l plus final /t/."
+    },
+    {
+      "audio_text": "Sorry, the card machine isn't working today. Cash only, is that okay?",
+      "channel": "in-car, end of the trip",
+      "question": "How can you pay?",
+      "answer": "Cash only — the card machine is broken.",
+      "distractor_focus": "'card' vs 'car'; 'cash' vs 'cast'."
+    }
+  ],
+  "guided_roleplay": {
+    "learner_role": "Passenger taking an app ride to a hotel, with on-screen frames and a hint button",
+    "flow": [
+      "Step 1 — Fix the pick-up: the driver phones and can't find you. Say where you are using a landmark.",
+      "Step 2 — Confirm the destination: get in, greet, confirm the hotel name and check the price/meter.",
+      "Step 3 — Give live directions: two instructions (turn left / turn right at a landmark).",
+      "Step 4 — Handle one problem: the road is closed, or the driver asks for an extra stop.",
+      "Step 5 — Arrive and pay: 'Stop here, please', ask the price, choose cash or card, ask for a receipt."
+    ],
+    "sentence_frames": [
+      "I'm at the ___, near the ___.",
+      "Could you drive around, please?",
+      "The ___ Hotel, please. Is that the app price?",
+      "Could you use the meter, please?",
+      "Turn left at the ___.",
+      "Turn right at the corner.",
+      "Sorry, could you say that again?",
+      "How much extra is that?",
+      "Stop here, please.",
+      "Card, please. / Cash, please.",
+      "Can I get a receipt?"
+    ],
+    "hints_available": true
+  },
+  "free_roleplay": {
+    "ai_persona": "A friendly, slightly chatty driver who talks while driving, uses short casual phrases ('No worries', 'Hop in', 'Which way, mate?'), and needs answers fast because the car is moving.",
+    "a2_behavior": "Stays on the standard script: asks 'Where to?', confirms the destination, asks 'Which way?' once or twice, states the price at the end, and asks 'Cash or card?'. Repeats slowly if the learner asks.",
+    "b1_curveballs": [
+      "The app pin is on the wrong side of the building — the driver asks the learner to walk, and the learner must ask him to drive around instead.",
+      "The driver says the meter is broken and offers a fixed price — the learner must ask how much and either accept or ask for the meter.",
+      "A road is closed and the driver takes a longer route; the learner must ask why and whether the price changes.",
+      "The driver asks the learner to add a stop or change the destination mid-trip.",
+      "The card machine doesn't work and the driver needs cash; the learner must ask for an ATM.",
+      "The driver mishears 'right' as 'light' or drops past the stop; the learner must correct him immediately."
+    ],
+    "roleplay_rubric": [
+      {
+        "criterion": "Stated the destination clearly and confirmed it (place name understood on the first or second try)",
+        "type": "required"
+      },
+      {
+        "criterion": "Gave at least two live directions (left/right + landmark) in time for the driver to act",
+        "type": "required"
+      },
+      {
+        "criterion": "Asked about money once — meter, app price, extra charge, or toll",
+        "type": "required"
+      },
+      {
+        "criterion": "Ended the ride correctly: 'Stop here, please', paid, and confirmed cash or card",
+        "type": "required"
+      },
+      {
+        "criterion": "Used at least one clarification question when something was unclear ('Sorry, could you say that again?')",
+        "type": "required"
+      },
+      {
+        "criterion": "Pronunciation: 'left', 'right', 'road', 'stop', 'card' intelligible — final consonants audible and /r/–/l/ distinct",
+        "type": "pronunciation"
+      },
+      {
+        "criterion": "Register stayed casual-polite: short requests with 'please', no over-apologising, no long formal sentences",
+        "type": "required"
+      },
+      {
+        "criterion": "Coped with an off-script curveball (wrong pin, closed road, broken card machine) and still finished the ride",
+        "type": "stretch_b1"
+      }
+    ]
+  },
+  "register_culture_note": {
+    "en": "Taxi talk is short and direct. 'Stop here, please' is polite enough — you do not need 'Excuse me sir, I would like to request that you stop the car.' Long sentences are actually worse in a car, because the driver only hears the first three words before the turn is gone. Keep one instruction per sentence, say it early ('Turn left at the next light' — not after the light), and use 'please' at the end rather than a long apology at the start.",
+    "th": null,
+    "do_dont": [
+      {
+        "avoid": "\"Turn light here\" (r/l swap)",
+        "prefer": "\"Turn right here\" — press the /r/, curl the tongue back and do not touch the roof of the mouth"
+      },
+      {
+        "avoid": "\"Stop!\" shouted late, with the /p/ swallowed",
+        "prefer": "\"Stop here, please\" said one building early, with an audible /p/"
+      },
+      {
+        "avoid": "\"Go Lake Loa\" (final consonant dropped, r/l swapped)",
+        "prefer": "\"Lake Road\" — or show the name on your phone screen while you say it"
+      },
+      {
+        "avoid": "\"Car, please\" when you mean the payment method",
+        "prefer": "\"Card, please\" — let the /d/ be heard"
+      },
+      {
+        "avoid": "Silently accepting when the driver says a price you did not understand",
+        "prefer": "\"Sorry — fifteen or fifty?\" / \"Is the toll included?\""
+      },
+      {
+        "avoid": "Saying only \"Soi 5\" in a country with no soi system",
+        "prefer": "House number + street name: \"Twenty-two Lake Road\" — then add the landmark"
+      }
+    ],
+    "thai_cultural_note": "In Thailand it is normal to navigate by landmark and soi, and to agree a price before getting in. In most metered or app-based systems abroad the price is not negotiable, and trying to agree a fare first can read as distrust rather than politeness. The other difference is address shape: drivers outside Thailand expect a house number and a street name first, and treat the landmark as a bonus. Also, correcting the driver mid-route is expected, not rude — if he misses your turn, say so straight away. Staying quiet to avoid causing trouble just means you pay for the extra kilometres."
+  },
+  "can_do_checkpoints": [
+    {
+      "cefr": "A2",
+      "statement": "I can tell a driver where I want to go and ask him to use the meter."
+    },
+    {
+      "cefr": "A2",
+      "statement": "I can give simple directions while the car is moving: turn left, turn right, go straight, stop here."
+    },
+    {
+      "cefr": "A2",
+      "statement": "I can understand the fare and say whether I am paying by cash or card."
+    },
+    {
+      "cefr": "B1",
+      "statement": "I can fix a wrong pick-up point on the phone by describing where I am with a landmark."
+    },
+    {
+      "cefr": "B1",
+      "statement": "I can deal with a problem during the ride — a closed road, an extra stop, a toll or a broken card machine — and ask what it means for the price."
+    },
+    {
+      "cefr": "Sound",
+      "statement": "My final consonants ('left', 'stop', 'card') and my /r/–/l/ ('right' vs 'light', 'road') are clear enough that the driver turns the correct way the first time."
+    }
+  ],
+  "gamification": {
+    "xp_per_substep": true,
+    "unlocks": [
+      "Badge: 'Pin Fixer' — resolved a wrong pick-up point without walking",
+      "Badge: 'Right Not Light' — ten correct r_l direction calls in a row",
+      "Badge: 'Clean Stop' — audible final consonant on 'stop here, please' five times",
+      "Unlocks scenario: airport_arrival_transfer",
+      "Unlocks scenario: asking_for_directions_street"
+    ],
+    "sound_meters": [
+      "final_consonants",
+      "r_l"
+    ]
+  },
+  "_review_status": {
+    "thai_strings": "DRAFT - machine-generated, tagged th_status=draft_unverified. A native Thai speaker must review every string and set th_status='reviewed'.",
+    "facts": "UNVERIFIED - generated content, needs a local fact-check before shipping",
+    "generated_by": "claude-opus-5"
+  }
+}

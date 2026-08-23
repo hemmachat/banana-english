@@ -1,0 +1,862 @@
+{
+  "scenario_id": "urgent_help_on_street",
+  "locale": "global",
+  "title_en": "Getting Urgent Help",
+  "title_th": "การขอความช่วยเหลือด่วน",
+  "tier": 1,
+  "cefr_range": [
+    "A2",
+    "B1"
+  ],
+  "prerequisites": [
+    "greetings_small_talk",
+    "phone_call_basics",
+    "numbers_and_times"
+  ],
+  "recycles": [
+    "numbers",
+    "time and duration",
+    "body parts and symptoms",
+    "asking someone to repeat",
+    "street directions and locations"
+  ],
+  "register": "Urgent-direct (politeness softeners dropped; short imperatives are correct, not rude)",
+  "sound_target_box": {
+    "note_th": null,
+    "targets": [
+      {
+        "sound": "r_l",
+        "scoring_method": "phoneme",
+        "words_in_context": [
+          "police",
+          "ambulance",
+          "please",
+          "call",
+          "help",
+          "hurt",
+          "bleeding",
+          "fell",
+          "left",
+          "right",
+          "road",
+          "clearly",
+          "hurry"
+        ],
+        "minimal_pairs": [
+          [
+            "right",
+            "light"
+          ],
+          [
+            "road",
+            "load"
+          ],
+          [
+            "correct",
+            "collect"
+          ],
+          [
+            "fry",
+            "fly"
+          ],
+          [
+            "grass",
+            "glass"
+          ],
+          [
+            "pray",
+            "play"
+          ],
+          [
+            "arrive",
+            "alive"
+          ]
+        ],
+        "why_it_matters_here": "An operator sends the ambulance to the address you say. If 'Green Road' comes out as 'Green Load', or 'turn right' as 'turn light', the crew drives to the wrong place while someone is bleeding. 'Police' and 'please' also collapse together — the operator must hear which service you need in the first two seconds."
+      },
+      {
+        "sound": "clusters",
+        "scoring_method": "phoneme",
+        "words_in_context": [
+          "help",
+          "stop",
+          "street",
+          "crash",
+          "breathing",
+          "bleeding",
+          "please",
+          "ambulance",
+          "can't move",
+          "he's hurt",
+          "fell down",
+          "press hard"
+        ],
+        "minimal_pairs": [
+          [
+            "stop",
+            "top"
+          ],
+          [
+            "street",
+            "treat"
+          ],
+          [
+            "crash",
+            "cash"
+          ],
+          [
+            "please",
+            "peas"
+          ],
+          [
+            "held",
+            "head"
+          ],
+          [
+            "fast",
+            "fat"
+          ],
+          [
+            "burnt",
+            "burn"
+          ]
+        ],
+        "why_it_matters_here": "The single most important word in this unit — 'help' — ends in a cluster Thai does not allow, and shouted across a street it can land as 'hep' or 'he'. 'Crash' heard as 'cash' sends police, not an ambulance. Dropping the final /t/ in 'can't move' reverses the meaning and the operator will tell you to move an injured person."
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "en": "Help!",
+      "th": "\"ช่วยด้วย!\" ตะโกนได้เลยเวลาต้องการคนมาช่วย",
+      "group": "shout words",
+      "audio_needed": true,
+      "audio": "/static/audio/global/help.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "ambulance",
+      "th": "รถพยาบาล เรียกโดยโทร 000 — ในออสฯ ส่วนใหญ่ Medicare ไม่จ่ายค่ารถพยาบาล แต่ตอนฉุกเฉินอย่าลังเล เรียกก่อน",
+      "group": "services",
+      "audio_needed": true,
+      "audio": "/static/audio/global/ambulance.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "police",
+      "th": "ตำรวจ",
+      "group": "services",
+      "audio_needed": true,
+      "audio": "/static/audio/global/police.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "fire brigade",
+      "th": "หน่วยดับเพลิง (รถดับเพลิง)",
+      "group": "services",
+      "audio_needed": true,
+      "audio": "/static/audio/global/fire-brigade.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "emergency number",
+      "th": "เบอร์ฉุกเฉิน ในออสเตรเลียคือ 000 โทรฟรีทุกเครื่อง แม้ไม่มีเงินในซิม",
+      "group": "services",
+      "audio_needed": true,
+      "audio": "/static/audio/global/emergency-number.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "operator",
+      "th": "คนรับสาย 000 เขาจะถามก่อนเลยว่าจะเอา ตำรวจ รถพยาบาล หรือดับเพลิง",
+      "group": "services",
+      "audio_needed": true,
+      "audio": "/static/audio/global/operator.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "an accident",
+      "th": "อุบัติเหตุ",
+      "group": "what happened",
+      "audio_needed": true,
+      "audio": "/static/audio/global/an-accident.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "a crash",
+      "th": "รถชน",
+      "group": "what happened",
+      "audio_needed": true,
+      "audio": "/static/audio/global/a-crash.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "a fire",
+      "th": "ไฟไหม้",
+      "group": "what happened",
+      "audio_needed": true,
+      "audio": "/static/audio/global/a-fire.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "He fell.",
+      "th": "\"เขาล้ม\" ใช้บอกว่ามีคนหกล้ม",
+      "group": "what happened",
+      "audio_needed": true,
+      "audio": "/static/audio/global/he-fell.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "Someone's hurt.",
+      "th": "\"มีคนเจ็บ\" บอกสั้นๆ แค่นี้เขาเข้าใจแล้ว",
+      "group": "what happened",
+      "audio_needed": true,
+      "audio": "/static/audio/global/someone-s-hurt.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "bleeding",
+      "th": "เลือดออก / เลือดไหล",
+      "group": "condition",
+      "audio_needed": true,
+      "audio": "/static/audio/global/bleeding.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "breathing",
+      "th": "หายใจ — เขาจะถาม \"Is he breathing?\" คือ ยังหายใจอยู่ไหม",
+      "group": "condition",
+      "audio_needed": true,
+      "audio": "/static/audio/global/breathing.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "awake / conscious",
+      "th": "ยังรู้สึกตัวไหม ลืมตา พูดตอบได้ไหม",
+      "group": "condition",
+      "audio_needed": true,
+      "audio": "/static/audio/global/awake-conscious.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "He can't move.",
+      "th": "\"เขาขยับไม่ได้\"",
+      "group": "condition",
+      "audio_needed": true,
+      "audio": "/static/audio/global/he-can-t-move.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "on the street",
+      "th": "อยู่บนถนน ใช้บอกว่าเกิดเหตุตรงไหน",
+      "group": "location",
+      "audio_needed": true,
+      "audio": "/static/audio/global/on-the-street.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "near the bus stop",
+      "th": "ใกล้ป้ายรถเมล์",
+      "group": "location",
+      "audio_needed": true,
+      "audio": "/static/audio/global/near-the-bus-stop.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "on the corner",
+      "th": "ตรงหัวมุมถนน",
+      "group": "location",
+      "audio_needed": true,
+      "audio": "/static/audio/global/on-the-corner.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "cross street",
+      "th": "ถนนเส้นที่ตัดกับถนนที่เราอยู่ เขาจะถามหาเพื่อจะได้หาเราเจอเร็วขึ้น ถ้าไม่รู้ชื่อ บอกร้านหรือตึกใกล้ๆ ก็ได้",
+      "group": "location",
+      "audio_needed": true,
+      "audio": "/static/audio/global/cross-street.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "Stay on the line.",
+      "th": "\"อย่าวางสาย\" ถือสายรอไว้ เขาจะคุยกับเราไปจนกว่ารถจะถึง",
+      "group": "operator instructions",
+      "audio_needed": true,
+      "audio": "/static/audio/global/stay-on-the-line.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "Don't move him.",
+      "th": "\"อย่าขยับตัวเขา\" ถ้าล้มแรงๆ การเคลื่อนย้ายเองอาจทำให้แย่ลง",
+      "group": "operator instructions",
+      "audio_needed": true,
+      "audio": "/static/audio/global/don-t-move-him.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "Press hard.",
+      "th": "\"กดแผลแรงๆ\" เอาผ้ากดห้ามเลือดไว้",
+      "group": "operator instructions",
+      "audio_needed": true,
+      "audio": "/static/audio/global/press-hard.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "Hurry, please.",
+      "th": "\"รีบหน่อยนะ\" พูดได้ ไม่เสียมารยาท",
+      "group": "shout words",
+      "audio_needed": true,
+      "audio": "/static/audio/global/hurry-please.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "Sorry, could you repeat that?",
+      "th": "\"ขอโทษ พูดอีกทีได้ไหม\" ฟังไม่ทันบอกได้เลย ไม่ต้องอาย เขาชินอยู่แล้ว",
+      "group": "clarification",
+      "audio_needed": true,
+      "audio": "/static/audio/global/sorry-could-you-repeat-that.mp3",
+      "th_status": "draft_unverified"
+    }
+  ],
+  "model_dialogues": [
+    {
+      "cefr": "A2",
+      "label": "On the street — getting a stranger to help",
+      "lines": [
+        {
+          "speaker": "Learner (bystander)",
+          "text": "Help! Please help!",
+          "audio": "/static/audio/global/help-please-help.mp3",
+          "th": "ช่วยด้วย! ช่วยหน่อย!",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Passer-by",
+          "text": "What's wrong? Are you okay?",
+          "audio": "/static/audio/global/what-s-wrong-are-you-okay.mp3",
+          "th": "เกิดอะไรขึ้น ไหวมั้ย",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner (bystander)",
+          "text": "A man fell. He's hurt.",
+          "audio": "/static/audio/global/a-man-fell-he-s-hurt.mp3",
+          "th": "มีผู้ชายล้ม เขาเจ็บ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Passer-by",
+          "text": "Where is he?",
+          "audio": "/static/audio/global/where-is-he.mp3",
+          "th": "เขาอยู่ไหน",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner (bystander)",
+          "text": "Here, on the street. Call an ambulance!",
+          "audio": "/static/audio/global/here-on-the-street-call-an-ambulance.mp3",
+          "th": "ตรงนี้ บนถนน เรียกรถพยาบาลเร็ว!",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Passer-by",
+          "text": "Okay, I'm calling now. Is he breathing?",
+          "audio": "/static/audio/global/okay-i-m-calling-now-is-he-breathing.mp3",
+          "th": "ได้ กำลังโทรอยู่ เขาหายใจอยู่มั้ย",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner (bystander)",
+          "text": "Yes, he's breathing. His head is bleeding.",
+          "audio": "/static/audio/global/yes-he-s-breathing-his-head-is-bleeding.mp3",
+          "th": "หายใจอยู่ แต่หัวเลือดออก",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Passer-by",
+          "text": "Don't move him. Stay with him.",
+          "audio": "/static/audio/global/don-t-move-him-stay-with-him.mp3",
+          "th": "อย่าขยับเขานะ อยู่กับเขาไว้",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner (bystander)",
+          "text": "Okay. Please hurry.",
+          "audio": "/static/audio/global/okay-please-hurry.mp3",
+          "th": "ได้ รีบหน่อยนะ",
+          "th_status": "draft_unverified"
+        }
+      ],
+      "shadow_focus_lines": [
+        {
+          "text": "Help! Please help!",
+          "targets": [
+            "clusters",
+            "r_l"
+          ],
+          "audio": "/static/audio/global/help-please-help.mp3"
+        },
+        {
+          "text": "Call an ambulance!",
+          "targets": [
+            "r_l",
+            "clusters"
+          ],
+          "audio": "/static/audio/global/call-an-ambulance.mp3"
+        },
+        {
+          "text": "A man fell. He's hurt.",
+          "targets": [
+            "clusters",
+            "r_l"
+          ],
+          "audio": "/static/audio/global/a-man-fell-he-s-hurt.mp3"
+        },
+        {
+          "text": "His head is bleeding.",
+          "targets": [
+            "clusters",
+            "r_l"
+          ],
+          "audio": "/static/audio/global/his-head-is-bleeding.mp3"
+        }
+      ]
+    },
+    {
+      "cefr": "B1",
+      "label": "Calling the emergency operator — road crash, and you don't know the address",
+      "lines": [
+        {
+          "speaker": "Operator",
+          "text": "Emergency services. Do you need police, fire or ambulance?",
+          "audio": "/static/audio/global/emergency-services-do-you-need-police-fire-or-ambulance.mp3",
+          "th": "หน่วยฉุกเฉินค่ะ ต้องการตำรวจ รถดับเพลิง หรือรถพยาบาลคะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner (caller)",
+          "text": "Ambulance, please. There's been a crash.",
+          "audio": "/static/audio/global/ambulance-please-there-s-been-a-crash.mp3",
+          "th": "รถพยาบาลครับ มีรถชนกัน",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Operator",
+          "text": "Stay calm, I'm sending help. What's your exact location?",
+          "audio": "/static/audio/global/stay-calm-i-m-sending-help-what-s-your-exact-location.mp3",
+          "th": "ใจเย็นนะคะ กำลังส่งคนไป อยู่ตรงไหนแน่ชัดคะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner (caller)",
+          "text": "I'm on Green Road, near a bus stop.",
+          "audio": "/static/audio/global/i-m-on-green-road-near-a-bus-stop.mp3",
+          "th": "อยู่ถนน Green Road ใกล้ๆ ป้ายรถเมล์",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Operator",
+          "text": "Green Road. Do you know the cross street?",
+          "audio": "/static/audio/global/green-road-do-you-know-the-cross-street.mp3",
+          "th": "Green Road นะคะ รู้มั้ยว่าตัดกับถนนอะไร",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner (caller)",
+          "text": "Sorry, I don't know. There's a pharmacy on the corner.",
+          "audio": "/static/audio/global/sorry-i-don-t-know-there-s-a-pharmacy-on-the-corner.mp3",
+          "th": "ขอโทษครับ ไม่รู้ แต่ตรงหัวมุมมีร้านขายยา",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Operator",
+          "text": "That's fine, that's enough. How many people are hurt?",
+          "audio": "/static/audio/global/that-s-fine-that-s-enough-how-many-people-are-hurt.mp3",
+          "th": "ไม่เป็นไรค่ะ แค่นี้พอ มีคนเจ็บกี่คนคะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner (caller)",
+          "text": "Two. One is walking. One can't move.",
+          "audio": "/static/audio/global/two-one-is-walking-one-can-t-move.mp3",
+          "th": "สองคน คนนึงเดินได้ อีกคนขยับไม่ได้",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Operator",
+          "text": "The one who can't move — is he awake and talking to you?",
+          "audio": "/static/audio/global/the-one-who-can-t-move-is-he-awake-and-talking-to-you.mp3",
+          "th": "คนที่ขยับไม่ได้ — เขารู้สึกตัวมั้ย พูดกับคุณได้มั้ยคะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner (caller)",
+          "text": "He's awake, but he can't speak clearly.",
+          "audio": "/static/audio/global/he-s-awake-but-he-can-t-speak-clearly.mp3",
+          "th": "รู้สึกตัวอยู่ แต่พูดไม่ค่อยชัด",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Operator",
+          "text": "Right. Don't move him at all. Is he bleeding?",
+          "audio": "/static/audio/global/right-don-t-move-him-at-all-is-he-bleeding.mp3",
+          "th": "โอเคค่ะ อย่าขยับเขาเลยนะ เขาเลือดออกมั้ยคะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner (caller)",
+          "text": "Yes, his leg is bleeding a lot.",
+          "audio": "/static/audio/global/yes-his-leg-is-bleeding-a-lot.mp3",
+          "th": "ออกครับ ขาเลือดออกเยอะเลย",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Operator",
+          "text": "Press on the leg with a cloth, firmly. Can you do that?",
+          "audio": "/static/audio/global/press-on-the-leg-with-a-cloth-firmly-can-you-do-that.mp3",
+          "th": "เอาผ้ากดที่ขาไว้ กดแรงๆ นะคะ ทำได้มั้ย",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner (caller)",
+          "text": "Sorry, could you repeat that? Press with what?",
+          "audio": "/static/audio/global/sorry-could-you-repeat-that-press-with-what.mp3",
+          "th": "ขอโทษครับ พูดอีกทีได้มั้ย ให้กดด้วยอะไรนะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Operator",
+          "text": "A cloth — a shirt, a scarf, anything. Press hard and don't stop.",
+          "audio": "/static/audio/global/a-cloth-a-shirt-a-scarf-anything-press-hard-and-don-t-stop.mp3",
+          "th": "ผ้าค่ะ — เสื้อ ผ้าพันคอ อะไรก็ได้ กดแรงๆ แล้วอย่าปล่อยนะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner (caller)",
+          "text": "Okay, I'm pressing now.",
+          "audio": "/static/audio/global/okay-i-m-pressing-now.mp3",
+          "th": "โอเค กำลังกดอยู่",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Operator",
+          "text": "Good. The ambulance is three minutes away. Stay on the line.",
+          "audio": "/static/audio/global/good-the-ambulance-is-three-minutes-away-stay-on-the-line.mp3",
+          "th": "ดีค่ะ รถพยาบาลอีกสามนาทีถึง อย่าเพิ่งวางสายนะคะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner (caller)",
+          "text": "I'll stay. Please tell them to hurry.",
+          "audio": "/static/audio/global/i-ll-stay-please-tell-them-to-hurry.mp3",
+          "th": "ไม่วางครับ ช่วยบอกให้เขารีบหน่อย",
+          "th_status": "draft_unverified"
+        }
+      ],
+      "shadow_focus_lines": [
+        {
+          "text": "There's been a crash.",
+          "targets": [
+            "clusters"
+          ],
+          "audio": "/static/audio/global/there-s-been-a-crash.mp3"
+        },
+        {
+          "text": "I'm on Green Road.",
+          "targets": [
+            "r_l",
+            "clusters"
+          ],
+          "audio": "/static/audio/global/i-m-on-green-road.mp3"
+        },
+        {
+          "text": "His leg is bleeding.",
+          "targets": [
+            "r_l",
+            "clusters"
+          ],
+          "audio": "/static/audio/global/his-leg-is-bleeding.mp3"
+        },
+        {
+          "text": "Please tell them to hurry.",
+          "targets": [
+            "r_l"
+          ],
+          "audio": "/static/audio/global/please-tell-them-to-hurry.mp3"
+        }
+      ]
+    }
+  ],
+  "chunk_drills": [
+    {
+      "label": "Shout for help in two seconds",
+      "pattern": "Help! + Call ___!",
+      "examples": [
+        "Help! Call an ambulance!",
+        "Help! Call the police!",
+        "Help! Call the fire brigade!",
+        "Please help! Someone's hurt!"
+      ],
+      "spiralled_grammar": "Bare imperative with no softener; recycles 'please' from greetings_small_talk but placed before or after, never as a hedge."
+    },
+    {
+      "label": "Say what happened",
+      "pattern": "There's been a ___. / Someone has ___.",
+      "examples": [
+        "There's been a crash.",
+        "There's been an accident.",
+        "There's a fire in the building.",
+        "Someone has fallen.",
+        "A man fell off his bike."
+      ],
+      "spiralled_grammar": "Present perfect for a just-happened event, contrasted with past simple 'fell' — recycled from describing symptoms ('I've had this for two days')."
+    },
+    {
+      "label": "Give your location fast",
+      "pattern": "I'm on ___, near ___. / It's opposite the ___.",
+      "examples": [
+        "I'm on Green Road, near the bus stop.",
+        "I'm on Market Street, near the train station.",
+        "It's opposite the pharmacy.",
+        "There's a red sign on the corner."
+      ],
+      "spiralled_grammar": "Prepositions of place (on / near / opposite / on the corner) recycled from the directions unit."
+    },
+    {
+      "label": "Describe the person's condition",
+      "pattern": "He's / She's ___. + He can't ___.",
+      "examples": [
+        "She's bleeding.",
+        "He's breathing, but he's not awake.",
+        "He can't move his leg.",
+        "She can't speak clearly.",
+        "He stopped breathing."
+      ],
+      "spiralled_grammar": "Present continuous for what is happening now + can't for inability; recycles body-part vocabulary from symptoms."
+    },
+    {
+      "label": "Answer the operator's numbers",
+      "pattern": "___ people. / About ___ minutes ago. / He's about ___.",
+      "examples": [
+        "Two people are hurt.",
+        "It happened five minutes ago.",
+        "He's about thirty, not thirteen.",
+        "I've been here for fifteen minutes."
+      ],
+      "spiralled_grammar": "Numbers and duration with 'for' and 'ago' — recycled from the numbers/time unit; stress the final syllable in -teen numbers."
+    },
+    {
+      "label": "Get it repeated without losing time",
+      "pattern": "Sorry, could you ___ again? / ___ with what?",
+      "examples": [
+        "Sorry, could you repeat that?",
+        "Sorry, could you say that again?",
+        "Press with what?",
+        "Say it slowly, please."
+      ],
+      "spiralled_grammar": "Clarification requests recycled from every earlier unit; short wh-fragment questions ('With what?') are natural under pressure."
+    }
+  ],
+  "listening_items": [
+    {
+      "audio_text": "Emergency services. Do you need police, fire or ambulance?",
+      "channel": "phone (operator, fast)",
+      "question": "What must you answer first?",
+      "answer": "Which service you need — for example, 'Ambulance, please.'",
+      "distractor_focus": "Learners often answer with the story first; also 'police' vs 'please' confusion (r_l)."
+    },
+    {
+      "audio_text": "Is he breathing normally?",
+      "channel": "phone (operator)",
+      "question": "What is the operator asking about?",
+      "answer": "Whether the injured person is breathing normally.",
+      "distractor_focus": "'breathing' vs 'bleeding' — cluster plus /r/–/l/ contrast."
+    },
+    {
+      "audio_text": "Don't move him. Wait for the ambulance.",
+      "channel": "phone (operator)",
+      "question": "Should you move the injured person?",
+      "answer": "No — do not move him; wait for the ambulance.",
+      "distractor_focus": "Dropped final /t/ in 'don't' flips the instruction to 'move him'."
+    },
+    {
+      "audio_text": "The ambulance is fifteen minutes away, not fifty.",
+      "channel": "phone (operator)",
+      "question": "How long until the ambulance arrives?",
+      "answer": "Fifteen minutes.",
+      "distractor_focus": "fifteen / fifty — final /n/ and stress placement."
+    },
+    {
+      "audio_text": "Turn right at the lights and wave at the driver.",
+      "channel": "phone (paramedic on the way)",
+      "question": "Which way should you go, and what should you do there?",
+      "answer": "Turn right at the traffic lights and wave at the driver.",
+      "distractor_focus": "right / light and 'wave' vs 'wait' — r_l plus final consonant."
+    },
+    {
+      "audio_text": "There's been a crash on Green Road, near the corner shop.",
+      "channel": "street (another bystander)",
+      "question": "Where did it happen?",
+      "answer": "On Green Road, near the corner shop.",
+      "distractor_focus": "crash / cash and Road / load."
+    }
+  ],
+  "guided_roleplay": {
+    "learner_role": "A bystander who sees a motorbike hit a pedestrian on a busy street, then calls the emergency operator",
+    "flow": [
+      "Step 1 — Shout for help and pick one person: 'Help! You, in the blue shirt — call an ambulance!'",
+      "Step 2 — Say what happened in one short sentence: 'There's been a crash. A man is hurt.'",
+      "Step 3 — Call the operator and name the service first: 'Ambulance, please.'",
+      "Step 4 — Give your location: street + one landmark; spell the street name if asked.",
+      "Step 5 — Answer the operator's condition questions: breathing? awake? bleeding? how many people?",
+      "Step 6 — Ask for a repeat when you miss an instruction: 'Sorry, could you repeat that?'",
+      "Step 7 — Confirm the instruction and the arrival time: 'Don't move him — okay. Three minutes?'",
+      "Step 8 — Stay on the line and say what you are doing now: 'I'm pressing on his leg.'"
+    ],
+    "sentence_frames": [
+      "Help! Call an ambulance!",
+      "There's been a ___.",
+      "Someone's hurt.",
+      "Ambulance, please.",
+      "I'm on ___ , near ___.",
+      "He's bleeding / breathing / awake.",
+      "He can't move.",
+      "Two people are hurt.",
+      "Sorry, could you repeat that?",
+      "Okay, I'm ___ now.",
+      "Please hurry."
+    ],
+    "hints_available": true
+  },
+  "free_roleplay": {
+    "ai_persona": "A calm, fast-talking emergency call operator. Warm but businesslike, asks one question at a time, repeats key instructions, never scolds the caller for imperfect English but does ask again if the location or service is unclear.",
+    "a2_behavior": "Follows the standard call script: service → location → what happened → how many hurt → breathing? → 'help is on the way, stay on the line.' Accepts a street plus one landmark, repeats the address back, and speaks slowly if the caller hesitates.",
+    "b1_curveballs": [
+      "Asks for the cross street or a house number the caller does not know, and pushes: 'Anything else you can see? A shop name? A bus stop number?'",
+      "Mishears the service — 'Sorry, did you say police?' — and the caller must correct it clearly.",
+      "Gives a first-aid instruction the caller must query and then confirm: 'Press firmly on the wound and don't lift the cloth.'",
+      "Asks the caller to do something while still talking: 'Can you go to the corner and wave the ambulance in? Stay on the line while you walk.'",
+      "The condition changes mid-call: 'He's stopped breathing' — the operator switches to CPR instructions and asks 'Are you with me?'",
+      "Asks for the caller's own name and phone number and repeats digits back for confirmation."
+    ],
+    "roleplay_rubric": [
+      {
+        "criterion": "Named the service needed within the first turn ('Ambulance, please') without telling the story first",
+        "type": "required"
+      },
+      {
+        "criterion": "Gave a usable location: street name plus at least one landmark, and repeated it when asked",
+        "type": "required"
+      },
+      {
+        "criterion": "Described the person's condition using at least two of: breathing / bleeding / awake / can't move",
+        "type": "required"
+      },
+      {
+        "criterion": "Asked for clarification at least once instead of guessing at an instruction",
+        "type": "required"
+      },
+      {
+        "criterion": "Confirmed and acted on the operator's instruction ('Don't move him — okay, I'm not moving him')",
+        "type": "required"
+      },
+      {
+        "criterion": "Pronunciation: 'help', 'crash', 'street', 'can't move' keep their clusters, and 'police / please', 'road / load', 'right / light', 'bleeding / breathing' are distinguishable",
+        "type": "pronunciation"
+      },
+      {
+        "criterion": "Register stayed urgent-direct — no long polite hedging, no apologising for calling",
+        "type": "required"
+      },
+      {
+        "criterion": "Coped with a curveball (unknown cross street, misheard service, or condition change) and kept the call going without going silent",
+        "type": "stretch_b1"
+      }
+    ]
+  },
+  "register_culture_note": {
+    "en": "In an emergency, English drops its politeness layer. 'Help! Call an ambulance!' is the correct register — short, loud, imperative. Adding 'Excuse me, sorry to bother you, I was wondering if…' is not more polite here; it delays help and makes bystanders think nothing serious is happening. Once you are on the phone, the operator controls the order of the conversation: answer the question you were asked, in as few words as possible, and stay on the line until told you can hang up. Hanging up early is the most common way callers lose the ambulance.",
+    "th": null,
+    "do_dont": [
+      {
+        "avoid": "Excuse me, sorry to bother you, could you maybe help me a little?",
+        "prefer": "Help! Call an ambulance!"
+      },
+      {
+        "avoid": "Shouting to the whole crowd and hoping someone acts.",
+        "prefer": "You, in the blue shirt — call an ambulance now!"
+      },
+      {
+        "avoid": "He's not good. / Not okay. (too vague for the operator)",
+        "prefer": "He's bleeding and he can't move."
+      },
+      {
+        "avoid": "It's over there, near that place.",
+        "prefer": "I'm on Green Road, near the bus stop, opposite the pharmacy."
+      },
+      {
+        "avoid": "Saying 'okay okay' when you did not understand the instruction.",
+        "prefer": "Sorry, could you repeat that? Press with what?"
+      },
+      {
+        "avoid": "Hanging up as soon as you finish your story.",
+        "prefer": "Should I stay on the line?"
+      }
+    ],
+    "thai_cultural_note": "Two habits transfer badly here. First, greng jai — not wanting to trouble strangers — makes many Thai speakers soften or delay the request, or wait for someone else to act; in an emergency abroad, bystanders read hesitation as 'nothing serious', and picking one specific person and giving them a direct order is expected behaviour, not rudeness. Second, in Thailand it is common to move an injured person straight into a car or a rescue-foundation pickup and go to hospital. In most other countries the operator will tell you not to move the person and to wait for trained crew — following that instruction, and saying so out loud, is part of doing it right."
+  },
+  "can_do_checkpoints": [
+    {
+      "cefr": "A2",
+      "statement": "I can shout for help and tell one specific person to call an ambulance or the police."
+    },
+    {
+      "cefr": "A2",
+      "statement": "I can say what happened in one short sentence: 'There's been a crash. Someone's hurt.'"
+    },
+    {
+      "cefr": "A2",
+      "statement": "I can give my location using a street name and one landmark."
+    },
+    {
+      "cefr": "A2",
+      "statement": "I can say whether the person is breathing, bleeding, awake, or can't move."
+    },
+    {
+      "cefr": "B1",
+      "statement": "I can complete an emergency phone call, answer the operator's questions in order, and stay on the line."
+    },
+    {
+      "cefr": "B1",
+      "statement": "I can ask for an instruction to be repeated and then confirm that I am doing it."
+    },
+    {
+      "cefr": "B1",
+      "statement": "I can cope when the operator asks for information I don't have, and offer what I can see instead."
+    },
+    {
+      "cefr": "Sound",
+      "statement": "My 'help', 'crash', 'street' and 'can't move' keep their final clusters, and 'police/please', 'road/load', 'right/light', 'bleeding/breathing' are clearly different when I say them."
+    }
+  ],
+  "gamification": {
+    "xp_per_substep": true,
+    "unlocks": [
+      "First Responder — completed the A2 street dialogue with all four shadow lines above target",
+      "Clear Line — finished the B1 operator call without going silent",
+      "Address Locked — gave a usable location on the first attempt three times",
+      "Say Again — used a clarification question instead of guessing",
+      "Curveball Survivor — handled the 'he's stopped breathing' turn in free roleplay"
+    ],
+    "sound_meters": [
+      "r_l",
+      "clusters"
+    ]
+  },
+  "_review_status": {
+    "thai_strings": "DRAFT - machine-generated, tagged th_status=draft_unverified. A native Thai speaker must review every string and set th_status='reviewed'.",
+    "facts": "UNVERIFIED - generated content, needs a local fact-check before shipping",
+    "generated_by": "claude-opus-5"
+  }
+}

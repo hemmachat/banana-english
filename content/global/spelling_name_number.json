@@ -1,0 +1,844 @@
+{
+  "scenario_id": "spelling_name_number",
+  "locale": "global",
+  "title_en": "Spelling Names & Numbers",
+  "title_th": "การสะกดชื่อและบอกตัวเลข",
+  "tier": 1,
+  "cefr_range": [
+    "A2",
+    "B1"
+  ],
+  "prerequisites": [
+    "greetings_small_talk",
+    "phone_call_basics",
+    "numbers_0_100"
+  ],
+  "recycles": [
+    "numbers 0-100 and the -teen/-ty contrast",
+    "times and dates (\"Friday before five\")",
+    "\"Sorry, could you say that again?\"",
+    "\"Could you write it down?\"",
+    "polite openers: \"Hi, I'm calling about...\"",
+    "giving personal details (name, phone, address) from greetings_small_talk"
+  ],
+  "register": "Neutral-polite service register: friendly, short turns, frequent confirmation and read-back",
+  "sound_target_box": {
+    "note_th": null,
+    "targets": [
+      {
+        "sound": "numbers",
+        "scoring_method": "phoneme",
+        "words_in_context": [
+          "thirteen, not thirty",
+          "fifteen, not fifty",
+          "nineteen ninety",
+          "double two",
+          "oh-nine-one-four",
+          "flat thirteen, Bell Street",
+          "four-one-five-eight",
+          "before five"
+        ],
+        "minimal_pairs": [
+          [
+            "thirteen",
+            "thirty"
+          ],
+          [
+            "fifteen",
+            "fifty"
+          ],
+          [
+            "fourteen",
+            "forty"
+          ],
+          [
+            "sixteen",
+            "sixty"
+          ],
+          [
+            "eighteen",
+            "eighty"
+          ],
+          [
+            "nineteen",
+            "ninety"
+          ]
+        ],
+        "why_it_matters_here": "If \"thirteen\" comes out as \"thirty\", your parcel goes to flat 30, your callback number rings a stranger, and the courier marks the delivery failed. The stress is on the LAST syllable in -teen (thir-TEEN) and the /n/ must be heard."
+      },
+      {
+        "sound": "final_consonants",
+        "scoring_method": "phoneme",
+        "words_in_context": [
+          "spell that",
+          "last name",
+          "first name",
+          "eight",
+          "five",
+          "correct",
+          "K for kilo",
+          "that's right",
+          "flat thirteen",
+          "read it back"
+        ],
+        "minimal_pairs": [
+          [
+            "car",
+            "card"
+          ],
+          [
+            "nine",
+            "night"
+          ],
+          [
+            "bag",
+            "back"
+          ],
+          [
+            "pass",
+            "past"
+          ],
+          [
+            "fine",
+            "find"
+          ],
+          [
+            "ten",
+            "tent"
+          ]
+        ],
+        "why_it_matters_here": "Spelling is nothing but final sounds. If the /t/ in \"eight\" or the /d/ in \"card\" disappears, the agent types \"ate\" or \"car\" and the booking cannot be found. Dropped endings on \"first / last / correct\" also make your correction sound like agreement."
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "en": "spell",
+      "th": "สะกดคำ — เวลาเขาถามว่า \"How do you spell that?\" คือให้อ่านทีละตัวอักษร เช่น S-O-M-C-H-A-I",
+      "group": "spelling",
+      "audio_needed": true,
+      "audio": "/static/audio/global/spell.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "letter",
+      "th": "ตัวอักษร A B C แต่ละตัว เวลาสะกดชื่อเขาจะพูดว่า \"the letter S\" หมายถึงตัว S",
+      "group": "spelling",
+      "audio_needed": true,
+      "audio": "/static/audio/global/letter.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "capital letter",
+      "th": "ตัวพิมพ์ใหญ่ เช่น S ไม่ใช่ s — ชื่อคนกับชื่อเมืองต้องขึ้นต้นด้วยตัวพิมพ์ใหญ่เสมอ",
+      "group": "spelling",
+      "audio_needed": true,
+      "audio": "/static/audio/global/capital-letter.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "double (double L)",
+      "th": "ตัวซ้ำสองตัว แทนที่จะพูด L-L ฝรั่งพูดว่า \"double L\" เร็วกว่า เช่น Bill = B-I-double L",
+      "group": "spelling",
+      "audio_needed": true,
+      "audio": "/static/audio/global/double-double-l.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "B for Bravo / D for David",
+      "th": "เวลาสายไม่ชัด คนออสจะบอกตัวอักษรด้วยคำช่วย \"B for Bravo\" คือตัว B นะ ไม่ใช่ D — เราก็ใช้ได้เหมือนกัน ใช้คำอะไรก็ได้ที่นึกออก \"P for Peter\"",
+      "group": "spelling",
+      "audio_needed": true,
+      "audio": "/static/audio/global/b-for-bravo-d-for-david.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "first name",
+      "th": "ชื่อจริง ชื่อต้น — ที่คลินิกเขาจะถามอันนี้ก่อน",
+      "group": "personal details",
+      "audio_needed": true,
+      "audio": "/static/audio/global/first-name.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "last name / surname",
+      "th": "นามสกุล — surname กับ last name คืออันเดียวกัน ใช้สลับกันได้",
+      "group": "personal details",
+      "audio_needed": true,
+      "audio": "/static/audio/global/last-name-surname.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "middle name",
+      "th": "ชื่อกลาง คนไทยส่วนใหญ่ไม่มี ถ้าไม่มีก็บอกไปเลยว่า \"I don't have one\" ไม่แปลก",
+      "group": "personal details",
+      "audio_needed": true,
+      "audio": "/static/audio/global/middle-name.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "nickname",
+      "th": "ชื่อเล่น — แต่ในเอกสารทางการเขาต้องการชื่อตามพาสปอร์ต ชื่อเล่นบอกได้แต่บอกว่าเป็นชื่อเล่นนะ",
+      "group": "personal details",
+      "audio_needed": true,
+      "audio": "/static/audio/global/nickname.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "mobile number",
+      "th": "เบอร์มือถือ ของออสขึ้นต้น 04 เสมอ มี 10 หลัก",
+      "group": "numbers",
+      "audio_needed": true,
+      "audio": "/static/audio/global/mobile-number.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "area code",
+      "th": "รหัสพื้นที่ของเบอร์บ้าน เช่น Sydney กับ Melbourne ใช้ 02 กับ 03 ถ้าโทรในรัฐเดียวกันไม่ต้องกดก็ได้",
+      "group": "numbers",
+      "audio_needed": true,
+      "audio": "/static/audio/global/area-code.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "zero / oh",
+      "th": "เลข 0 คนออสพูดว่า \"oh\" มากกว่า \"zero\" เวลาอ่านเบอร์โทร เช่น 0412 = \"oh four one two\"",
+      "group": "numbers",
+      "audio_needed": true,
+      "audio": "/static/audio/global/zero-oh.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "digit",
+      "th": "ตัวเลขหนึ่งตัว เวลาเขาบอก \"the last four digits\" คือเลขสี่ตัวท้าย",
+      "group": "numbers",
+      "audio_needed": true,
+      "audio": "/static/audio/global/digit.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "reference number",
+      "th": "reference number — เลขอ้างอิงที่เขาให้ไว้หลังจองหรือยื่นเรื่อง เก็บไว้ให้ดี เวลาโทรถามเขาจะขออันนี้",
+      "group": "numbers",
+      "audio_needed": true,
+      "audio": "/static/audio/global/reference-number.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "tracking number",
+      "th": "tracking number — เลขติดตามพัสดุ เอาไปใส่ในเว็บดูว่าของอยู่ไหนแล้ว",
+      "group": "numbers",
+      "audio_needed": true,
+      "audio": "/static/audio/global/tracking-number.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "postcode / zip code",
+      "th": "postcode — รหัสไปรษณีย์ ของออสมี 4 หลัก (zip code เป็นคำอเมริกัน ที่นี่ใช้ postcode)",
+      "group": "numbers",
+      "audio_needed": true,
+      "audio": "/static/audio/global/postcode-zip-code.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "flat / apartment number",
+      "th": "เลขห้อง/เลขยูนิต ถ้าอยู่คอนโดหรืออพาร์ตเมนต์ ต้องบอกด้วย เขียนแบบนี้ 5/22 King St = ห้อง 5 บ้านเลขที่ 22",
+      "group": "numbers",
+      "audio_needed": true,
+      "audio": "/static/audio/global/flat-apartment-number.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "read it back",
+      "th": "ให้เขาทวนสิ่งที่จดไปให้เราฟังอีกรอบ — พูดได้เลยว่า \"Can you read it back to me?\" กันจดผิด",
+      "group": "confirming",
+      "audio_needed": true,
+      "audio": "/static/audio/global/read-it-back.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "That's right / That's correct",
+      "th": "ใช่แล้ว ถูกต้อง — ตอบสั้นๆ แบบนี้พอ เวลาเขาทวนแล้วถูก",
+      "group": "confirming",
+      "audio_needed": true,
+      "audio": "/static/audio/global/that-s-right-that-s-correct.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "Actually, it's...",
+      "th": "เวลาเขาจดผิดแล้วเราจะแก้ — ขึ้นต้นด้วย \"Actually, it's...\" ฟังนุ่มกว่า ไม่ห้วน ไม่ต้องขอโทษ",
+      "group": "confirming",
+      "audio_needed": true,
+      "audio": "/static/audio/global/actually-it-s.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "Sorry, was that ___ or ___?",
+      "th": "ไม่แน่ใจว่าได้ยินถูกไหม ถามได้เลย \"Sorry, was that fifteen or fifty?\" คนออสถามกันแบบนี้ปกติมาก",
+      "group": "confirming",
+      "audio_needed": true,
+      "audio": "/static/audio/global/sorry-was-that-or.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "slowly, one more time",
+      "th": "ขอให้พูดช้าๆ อีกรอบ — \"Could you say that slowly, one more time?\" ขอได้ไม่ต้องเกรงใจ",
+      "group": "confirming",
+      "audio_needed": true,
+      "audio": "/static/audio/global/slowly-one-more-time.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "under the name of...",
+      "th": "จองไว้ในชื่อ... — เวลาไปถึงคลินิกบอกว่า \"It's under the name of Somchai\" คือนัดจองไว้ชื่อนี้",
+      "group": "confirming",
+      "audio_needed": true,
+      "audio": "/static/audio/global/under-the-name-of.mp3",
+      "th_status": "draft_unverified"
+    }
+  ],
+  "model_dialogues": [
+    {
+      "cefr": "A2",
+      "label": "Giving your name and phone number at a reception desk",
+      "lines": [
+        {
+          "speaker": "Receptionist",
+          "text": "Hi! Can I get your name, please?",
+          "audio": "/static/audio/global/hi-can-i-get-your-name-please.mp3",
+          "th": "สวัสดีค่ะ ขอชื่อหน่อยค่ะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Nattaya Kittisak.",
+          "audio": "/static/audio/global/nattaya-kittisak.mp3",
+          "th": "ณัฐธยา กิตติศักดิ์ (Nattaya Kittisak) ค่ะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Receptionist",
+          "text": "Sorry, how do you spell that?",
+          "audio": "/static/audio/global/sorry-how-do-you-spell-that.mp3",
+          "th": "ขอโทษนะคะ สะกดยังไงคะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "N for November. N-A-T-T-A-Y-A.",
+          "audio": "/static/audio/global/n-for-november-n-a-t-t-a-y-a.mp3",
+          "th": "N แบบ November ค่ะ — N-A-T-T-A-Y-A",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Receptionist",
+          "text": "Got it. And a mobile number?",
+          "audio": "/static/audio/global/got-it-and-a-mobile-number.mp3",
+          "th": "ได้แล้วค่ะ แล้วเบอร์มือถือล่ะคะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Oh-nine-double-two, four-one-five-eight.",
+          "audio": "/static/audio/global/oh-nine-double-two-four-one-five-eight.mp3",
+          "th": "ศูนย์-เก้า-สอง-สอง (double two คือเลข 2 สองตัว) สี่-หนึ่ง-ห้า-แปด",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Receptionist",
+          "text": "Oh-nine-two-two, four-one-five-eight. Is that right?",
+          "audio": "/static/audio/global/oh-nine-two-two-four-one-five-eight-is-that-right.mp3",
+          "th": "0-9-2-2, 4-1-5-8 ถูกไหมคะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Yes, that's right.",
+          "audio": "/static/audio/global/yes-that-s-right.mp3",
+          "th": "ใช่ค่ะ ถูกแล้ว",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Receptionist",
+          "text": "Perfect. Take a seat, it'll be about ten minutes.",
+          "audio": "/static/audio/global/perfect-take-a-seat-it-ll-be-about-ten-minutes.mp3",
+          "th": "เรียบร้อยค่ะ นั่งรอสักครู่นะคะ ประมาณสิบนาที",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Thanks.",
+          "audio": "/static/audio/global/thanks.mp3",
+          "th": "ขอบคุณค่ะ",
+          "th_status": "draft_unverified"
+        }
+      ],
+      "shadow_focus_lines": [
+        {
+          "text": "N for November.",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/n-for-november.mp3"
+        },
+        {
+          "text": "Oh-nine-double-two.",
+          "targets": [
+            "numbers",
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/oh-nine-double-two.mp3"
+        },
+        {
+          "text": "Four-one-five-eight.",
+          "targets": [
+            "numbers",
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/four-one-five-eight.mp3"
+        },
+        {
+          "text": "Yes, that's right.",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/yes-that-s-right.mp3"
+        }
+      ]
+    },
+    {
+      "cefr": "B1",
+      "label": "Phone call about a parcel — the name isn't in the system and the address number is wrong",
+      "lines": [
+        {
+          "speaker": "Agent",
+          "text": "Good morning, Redline Delivery, Sam speaking.",
+          "audio": "/static/audio/global/good-morning-redline-delivery-sam-speaking.mp3",
+          "th": "สวัสดีครับ Redline Delivery แซมพูดสายครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Hi Sam. I'm calling about a parcel.",
+          "audio": "/static/audio/global/hi-sam-i-m-calling-about-a-parcel.mp3",
+          "th": "สวัสดีค่ะแซม พอดีโทรมาเรื่องพัสดุค่ะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Agent",
+          "text": "No worries. Have you got the tracking number?",
+          "audio": "/static/audio/global/no-worries-have-you-got-the-tracking-number.mp3",
+          "th": "ได้เลยครับ มีเลข tracking number ไหมครับ (เลขติดตามพัสดุ)",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Yes. R-K-nine-one-three-oh.",
+          "audio": "/static/audio/global/yes-r-k-nine-one-three-oh.mp3",
+          "th": "มีค่ะ R-K-9-1-3-0",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Agent",
+          "text": "R-K-nine-one-three-zero. And the last name on the order?",
+          "audio": "/static/audio/global/r-k-nine-one-three-zero-and-the-last-name-on-the-order.mp3",
+          "th": "R-K-9-1-3-0 นะครับ แล้วนามสกุลที่ใช้สั่งของล่ะครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Kittisak. K for kilo.",
+          "audio": "/static/audio/global/kittisak-k-for-kilo.mp3",
+          "th": "Kittisak ค่ะ K แบบ kilo",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Agent",
+          "text": "Sorry, was that Kitti-sack, with a C?",
+          "audio": "/static/audio/global/sorry-was-that-kitti-sack-with-a-c.mp3",
+          "th": "ขอโทษนะครับ Kitti-sack สะกดตัวท้ายด้วย C หรือเปล่าครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "No, with a K. K-I-double-T-I-S-A-K.",
+          "audio": "/static/audio/global/no-with-a-k-k-i-double-t-i-s-a-k.mp3",
+          "th": "ไม่ใช่ค่ะ ใช้ K — K-I-T-T-I-S-A-K (double T คือ T สองตัว)",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Agent",
+          "text": "Thanks. Hmm... I've got nothing under that name.",
+          "audio": "/static/audio/global/thanks-hmm-i-ve-got-nothing-under-that-name.mp3",
+          "th": "ขอบคุณครับ เอ่อ... ไม่เจอชื่อนี้ในระบบเลยครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Try my first name — Nattaya.",
+          "audio": "/static/audio/global/try-my-first-name-nattaya.mp3",
+          "th": "ลองหาจากชื่อจริงดูค่ะ — Nattaya",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Agent",
+          "text": "Ah, here we go. Flat thirty, Bell Street?",
+          "audio": "/static/audio/global/ah-here-we-go-flat-thirty-bell-street.mp3",
+          "th": "อ๋อ เจอแล้วครับ ห้อง 30 ถนน Bell ใช่ไหมครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Sorry, thirty or thirteen?",
+          "audio": "/static/audio/global/sorry-thirty-or-thirteen.mp3",
+          "th": "เดี๋ยวนะคะ 30 หรือ 13 คะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Agent",
+          "text": "Three, zero. Thirty.",
+          "audio": "/static/audio/global/three-zero-thirty.mp3",
+          "th": "สาม-ศูนย์ ครับ สามสิบ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "That's wrong. It's one-three, thirteen.",
+          "audio": "/static/audio/global/that-s-wrong-it-s-one-three-thirteen.mp3",
+          "th": "ไม่ถูกค่ะ ต้องเป็น หนึ่ง-สาม สิบสามค่ะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Agent",
+          "text": "Ah, good catch. I'll change it now.",
+          "audio": "/static/audio/global/ah-good-catch-i-ll-change-it-now.mp3",
+          "th": "อ๋อ ดีเลยที่ทักครับ เดี๋ยวแก้ให้ตอนนี้เลย",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Could you read it back?",
+          "audio": "/static/audio/global/could-you-read-it-back.mp3",
+          "th": "ช่วยอ่านทวนอีกทีได้ไหมคะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Agent",
+          "text": "Flat thirteen, Bell Street, and the driver comes Friday before five.",
+          "audio": "/static/audio/global/flat-thirteen-bell-street-and-the-driver-comes-friday-before.mp3",
+          "th": "ห้อง 13 ถนน Bell คนขับไปส่งวันศุกร์ ก่อนห้าโมงเย็นครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Friday before five. Great.",
+          "audio": "/static/audio/global/friday-before-five-great.mp3",
+          "th": "วันศุกร์ ก่อนห้าโมงเย็น โอเคเลยค่ะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Agent",
+          "text": "I'll text you a new confirmation. Same number, oh-nine-two-two, four-one-five-eight?",
+          "audio": "/static/audio/global/i-ll-text-you-a-new-confirmation-same-number-oh-nine-two-two.mp3",
+          "th": "เดี๋ยวส่ง SMS ยืนยันใหม่ไปให้นะครับ เบอร์เดิมใช่ไหม 0-9-2-2, 4-1-5-8",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "That's correct. Thanks, Sam.",
+          "audio": "/static/audio/global/that-s-correct-thanks-sam.mp3",
+          "th": "ถูกต้องค่ะ ขอบคุณนะคะแซม",
+          "th_status": "draft_unverified"
+        }
+      ],
+      "shadow_focus_lines": [
+        {
+          "text": "K for kilo.",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/k-for-kilo.mp3"
+        },
+        {
+          "text": "Sorry, thirty or thirteen?",
+          "targets": [
+            "numbers",
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/sorry-thirty-or-thirteen.mp3"
+        },
+        {
+          "text": "It's one-three, thirteen.",
+          "targets": [
+            "numbers",
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/it-s-one-three-thirteen.mp3"
+        },
+        {
+          "text": "Could you read it back?",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/could-you-read-it-back.mp3"
+        }
+      ]
+    }
+  ],
+  "chunk_drills": [
+    {
+      "label": "Spelling with a keyword",
+      "pattern": "___ for ___ (letter + easy word)",
+      "examples": [
+        "B for Bravo.",
+        "D for David.",
+        "K for kilo, not C.",
+        "M for Mike, not N for November.",
+        "S for Sierra, A, M — Sam."
+      ],
+      "spiralled_grammar": "Recycles the noun-phrase pattern from greetings_small_talk; no new grammar, pure fixed chunk so the learner can produce it under stress."
+    },
+    {
+      "label": "Reading a number in groups",
+      "pattern": "group + group + group (with 'double' and 'oh')",
+      "examples": [
+        "Oh-nine-double-two, four-one-five-eight.",
+        "Zero-two-one, triple five, eight-four.",
+        "It's nine-one-three-oh.",
+        "Postcode: one-oh-double-two-four."
+      ],
+      "spiralled_grammar": "Recycles numbers 0-100; introduces 'double/triple' as a counting shortcut and 'oh' as spoken zero."
+    },
+    {
+      "label": "Checking a risky number",
+      "pattern": "Sorry, was that ___ or ___?",
+      "examples": [
+        "Sorry, was that thirteen or thirty?",
+        "Sorry, was that fifteen or fifty?",
+        "Was that nineteen or ninety?",
+        "Sorry — one-four or four-oh?"
+      ],
+      "spiralled_grammar": "Recycles the clarification question from phone_call_basics; 'or' alternative question with rising-then-falling intonation."
+    },
+    {
+      "label": "Read-back confirmation",
+      "pattern": "So that's ___ , is that right?",
+      "examples": [
+        "So that's flat thirteen, is that right?",
+        "So that's K-I-M, is that right?",
+        "Let me read it back: four-one-five-eight.",
+        "Could you read it back to me?"
+      ],
+      "spiralled_grammar": "Tag-style confirmation question; recycles 'Is that right?' / 'That's correct.'"
+    },
+    {
+      "label": "Correcting politely",
+      "pattern": "Actually, it's ___, not ___.",
+      "examples": [
+        "Actually, it's thirteen, not thirty.",
+        "Actually, it's with a K, not a C.",
+        "Sorry, that's wrong — it's one-three.",
+        "Almost — double T, please."
+      ],
+      "spiralled_grammar": "Contrast with 'not'; softeners 'actually / sorry' recycled from greetings_small_talk."
+    },
+    {
+      "label": "Asking for slower repetition",
+      "pattern": "Sorry, could you say that again, more slowly?",
+      "examples": [
+        "Sorry, could you say that again?",
+        "One more time, more slowly, please.",
+        "Could you spell that for me?",
+        "Could you text it to me?"
+      ],
+      "spiralled_grammar": "Recycles 'Could you...?' polite request from phone_call_basics."
+    }
+  ],
+  "listening_items": [
+    {
+      "audio_text": "Your reference is B for Bravo, four, oh, seven.",
+      "channel": "phone",
+      "question": "Write the reference exactly.",
+      "answer": "B407",
+      "distractor_focus": "B / V / P confusion; 'oh' meaning zero, not the letter O."
+    },
+    {
+      "audio_text": "Call me back on oh-two-one, five-five-six, eight-four.",
+      "channel": "voicemail",
+      "question": "What are the last two digits?",
+      "answer": "eight-four (84)",
+      "distractor_focus": "84 vs 48 — digit order; final /t/ in 'eight'."
+    },
+    {
+      "audio_text": "That'll be fifty dollars, and you can collect it at counter fifteen.",
+      "channel": "face-to-face",
+      "question": "How much is it, and which counter?",
+      "answer": "Fifty dollars; counter fifteen.",
+      "distractor_focus": "fifteen vs fifty — stress placement and the final /n/."
+    },
+    {
+      "audio_text": "Passenger Silva — S-I-L-V-A — please come to gate nineteen.",
+      "channel": "PA announcement",
+      "question": "Which gate?",
+      "answer": "Gate nineteen (19)",
+      "distractor_focus": "nineteen vs ninety; letter V heard as B or W."
+    },
+    {
+      "audio_text": "Is that Ann with an E on the end, or just A-N-N?",
+      "channel": "phone",
+      "question": "What is the agent asking you to confirm?",
+      "answer": "Whether the name is spelled Anne (with a final E) or Ann.",
+      "distractor_focus": "Silent final letters; hearing 'with an E on the end' as part of the name."
+    },
+    {
+      "audio_text": "Delivery to flat thirteen — one, three — Bell Street, Thursday before four.",
+      "channel": "phone",
+      "question": "Which flat, and when will it arrive?",
+      "answer": "Flat 13; Thursday before four.",
+      "distractor_focus": "thirteen vs thirty; Thursday vs Tuesday; four vs fourteen."
+    }
+  ],
+  "guided_roleplay": {
+    "learner_role": "You are calling a delivery company to fix the details on your order. You must give your name, spell it, give your phone number, and correct one wrong number.",
+    "flow": [
+      "Step 1 — Open the call: say why you are calling ('Hi, I'm calling about a parcel.')",
+      "Step 2 — Give your last name, then spell it letter by letter using keywords ('K for kilo').",
+      "Step 3 — Give your mobile number in groups, using 'oh' and 'double'.",
+      "Step 4 — The agent reads a number back wrongly. Check it: 'Sorry, was that thirteen or thirty?'",
+      "Step 5 — Correct it: 'Actually, it's thirteen — one, three.'",
+      "Step 6 — Ask for a read-back and confirm: 'Could you read it back?' / 'Yes, that's right.'"
+    ],
+    "sentence_frames": [
+      "Hi, I'm calling about ___.",
+      "My last name is ___. I'll spell it.",
+      "___ for ___ , ___ for ___ .",
+      "It's oh-___-___ , double ___ , ___-___.",
+      "Sorry, was that ___ or ___?",
+      "Actually, it's ___, not ___.",
+      "Could you read it back?",
+      "Yes, that's right. Thanks."
+    ],
+    "hints_available": true
+  },
+  "free_roleplay": {
+    "ai_persona": "A friendly but fast-talking call-centre agent at a delivery/booking company. Uses first names, short turns, and does not slow down unless asked.",
+    "a2_behavior": "Asks for name, spelling, and phone number in that order. Reads everything back clearly and accepts the learner's confirmation. Never introduces an error unless the learner is comfortable.",
+    "b1_curveballs": [
+      "Mishears the surname and enters it with the wrong letter ('with a C?') — learner must correct the letter.",
+      "Cannot find the booking under the surname — learner must offer the first name or a nickname.",
+      "Reads the address back as 'thirty' instead of 'thirteen' — learner must catch and correct it.",
+      "Asks for a reference number that mixes letters and digits (R-K-9-1-3-0) and repeats it back with one digit wrong.",
+      "Asks 'Is that Anne with an E?' — learner must confirm or correct a silent final letter.",
+      "Speaks too fast on the callback number and the learner must ask for a slower repeat."
+    ],
+    "roleplay_rubric": [
+      {
+        "criterion": "Gave first and last name and spelled the last name letter by letter without being asked twice",
+        "type": "required"
+      },
+      {
+        "criterion": "Used at least two 'X for X' keywords when spelling (e.g. 'K for kilo')",
+        "type": "required"
+      },
+      {
+        "criterion": "Said a phone or reference number in groups, using 'oh' and/or 'double' correctly",
+        "type": "required"
+      },
+      {
+        "criterion": "Caught at least one wrong digit or letter and corrected it ('Actually, it's...')",
+        "type": "required"
+      },
+      {
+        "criterion": "Asked for a read-back or a slower repeat when unsure",
+        "type": "required"
+      },
+      {
+        "criterion": "Pronunciation: -teen vs -ty contrast audible, and final consonants on spelled letters and numbers (eight, five, correct, that's) clearly released",
+        "type": "pronunciation"
+      },
+      {
+        "criterion": "Handled the off-script problem (name not found / mixed letter-digit reference) and kept the call going to a confirmed outcome",
+        "type": "stretch_b1"
+      }
+    ]
+  },
+  "register_culture_note": {
+    "en": "Service staff on the phone or at a desk expect you to spell proactively and to confirm numbers out loud. Saying 'I'll spell it for you' before they ask is helpful, not pushy. Correcting a mistake is also expected — 'Actually, it's thirteen, not thirty' is polite, not rude. Use 'oh' for zero in phone numbers, and 'double seven' rather than 'seven seven'.",
+    "th": null,
+    "do_dont": [
+      {
+        "avoid": "\"My name is very difficult. You write it.\"",
+        "prefer": "\"It's a long one — I'll spell it for you.\""
+      },
+      {
+        "avoid": "Spelling fast with bare letters (B, V, P, D all sound alike on a phone).",
+        "prefer": "\"B for Bravo, D for David.\""
+      },
+      {
+        "avoid": "\"Thirty\" when you mean 13 (stress on the first syllable, no final /n/).",
+        "prefer": "\"Thirteen — one, three.\" Stress the -TEEN and add the digits."
+      },
+      {
+        "avoid": "\"Same same\" or silence when the agent reads it back.",
+        "prefer": "\"Yes, that's right.\" / \"Actually, that's not correct.\""
+      },
+      {
+        "avoid": "Dropping final sounds: \"eigh\", \"fi\", \"correc\", \"tha righ\".",
+        "prefer": "Release the ending: \"eight\", \"five\", \"correct\", \"that's right\"."
+      }
+    ],
+    "thai_cultural_note": "Thai names are written in Thai script and are usually shortened to a nickname in daily life, so many Thai learners have little practice spelling a romanised name aloud — and the romanisation itself can vary (Kittisak / Kittisuk). Decide on ONE spelling for your documents and rehearse it as a fixed chunk. Also, in Thailand it can feel impolite to correct a staff member; in English-speaking service contexts, silently accepting a wrong digit is what causes the real problem, and staff are grateful when you catch it."
+  },
+  "can_do_checkpoints": [
+    {
+      "cefr": "A2",
+      "statement": "I can say and spell my first and last name using keywords ('K for kilo')."
+    },
+    {
+      "cefr": "A2",
+      "statement": "I can give my phone number in groups, using 'oh' for zero and 'double'."
+    },
+    {
+      "cefr": "A2",
+      "statement": "I can confirm details with 'Yes, that's right.'"
+    },
+    {
+      "cefr": "B1",
+      "statement": "I can ask 'Was that thirteen or thirty?' and correct a wrong digit or letter politely."
+    },
+    {
+      "cefr": "B1",
+      "statement": "I can handle a reference number with mixed letters and digits and ask for a read-back."
+    },
+    {
+      "cefr": "Sound",
+      "statement": "My -teen/-ty numbers and my final consonants (eight, five, correct, that's right) are intelligible on a phone line."
+    }
+  ],
+  "gamification": {
+    "xp_per_substep": true,
+    "unlocks": [
+      "Keyword Alphabet badge — spell a 9-letter name with no repeats needed",
+      "Zero Errors badge — read back a 10-digit number with 100% digit accuracy",
+      "Caught It! badge — detect and correct three planted -teen/-ty errors",
+      "Unlocks: phone_call_basics advanced turn, booking_an_appointment"
+    ],
+    "sound_meters": [
+      {
+        "sound": "numbers",
+        "display": "-teen / -ty accuracy meter",
+        "target_score": 75
+      },
+      {
+        "sound": "final_consonants",
+        "display": "Endings released meter",
+        "target_score": 75
+      }
+    ]
+  },
+  "_review_status": {
+    "thai_strings": "DRAFT - machine-generated, tagged th_status=draft_unverified. A native Thai speaker must review every string and set th_status='reviewed'.",
+    "facts": "UNVERIFIED - generated content, needs a local fact-check before shipping",
+    "generated_by": "claude-opus-5"
+  }
+}

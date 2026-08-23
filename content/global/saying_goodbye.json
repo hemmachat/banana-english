@@ -1,0 +1,797 @@
+{
+  "scenario_id": "saying_goodbye",
+  "locale": "global",
+  "title_en": "Saying Goodbye & Keeping in Touch",
+  "title_th": "การกล่าวลา",
+  "tier": 1,
+  "cefr_range": [
+    "A2",
+    "B1"
+  ],
+  "prerequisites": [
+    "greetings_small_talk"
+  ],
+  "recycles": [
+    "greetings_small_talk",
+    "phone_call_basics",
+    "time_and_dates",
+    "numbers_and_spelling",
+    "making_plans"
+  ],
+  "register": "Casual-friendly — warm, informal, first names; no heavy formality",
+  "sound_target_box": {
+    "note_th": null,
+    "targets": [
+      {
+        "sound": "final_consonants",
+        "scoring_method": "phoneme",
+        "words_in_context": [
+          "take care",
+          "keep in touch",
+          "text me next week",
+          "thanks for dinner",
+          "drive safe",
+          "see you Sunday night",
+          "send me the address",
+          "I'd better get going",
+          "write it down",
+          "last day"
+        ],
+        "minimal_pairs": [
+          [
+            "keep",
+            "key"
+          ],
+          [
+            "touch",
+            "tough"
+          ],
+          [
+            "safe",
+            "say"
+          ],
+          [
+            "next",
+            "neck"
+          ],
+          [
+            "night",
+            "nine"
+          ],
+          [
+            "week",
+            "we"
+          ],
+          [
+            "send",
+            "sent"
+          ],
+          [
+            "late",
+            "lay"
+          ],
+          [
+            "card",
+            "car"
+          ],
+          [
+            "thanks",
+            "thank"
+          ]
+        ],
+        "why_it_matters_here": "Goodbye language is almost all short, consonant-final phrases said quickly at the door or on a noisy street. If Thai unreleased finals swallow them, 'text me next week' becomes 'tek me neck we' and your friend has no idea whether you meant a day, a week, or nothing at all — so the plan never gets made and the contact is lost. 'Drive safe' heard as 'dry say' and 'Sunday night' heard as 'Sunday nine' send people to the wrong place at the wrong hour."
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "en": "I'd better get going",
+      "th": "\"ไปดีกว่า\" — บอกว่าถึงเวลาต้องกลับแล้ว พูดแบบสุภาพ ไม่ห้วน ใช้ตอนจะลุกจากบ้านเพื่อน",
+      "group": "signalling_departure",
+      "audio_needed": true,
+      "audio": "/static/audio/global/i-d-better-get-going.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "head off",
+      "th": "\"ออกตัวแล้วนะ / ไปแล้วนะ\" — แปลว่ากลับ/ออกเดินทาง ฝรั่งใช้บ่อยมาก เช่น I'd better head off",
+      "group": "signalling_departure",
+      "audio_needed": true,
+      "audio": "/static/audio/global/head-off.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "make a move",
+      "th": "\"ขอตัวก่อนนะ\" — ความหมายเดียวกับ head off คือจะกลับแล้ว ฟังดูสบายๆ เป็นกันเอง",
+      "group": "signalling_departure",
+      "audio_needed": true,
+      "audio": "/static/audio/global/make-a-move.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "It's getting late",
+      "th": "\"ดึกแล้วนะ\" — ใช้เป็นเหตุผลนุ่มๆ ว่าจะกลับ ไม่ต้องบอกตรงๆ ว่าอยากกลับ",
+      "group": "signalling_departure",
+      "audio_needed": true,
+      "audio": "/static/audio/global/it-s-getting-late.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "early start",
+      "th": "\"พรุ่งนี้ต้องตื่นเช้า\" — เหตุผลยอดฮิตตอนจะกลับบ้าน เช่น I've got an early start tomorrow",
+      "group": "signalling_departure",
+      "audio_needed": true,
+      "audio": "/static/audio/global/early-start.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "Thanks for dinner",
+      "th": "\"ขอบคุณสำหรับมื้อเย็นนะ\" — พูดกับคนที่ทำอาหารหรือเลี้ยงข้าว ต้องพูดก่อนกลับทุกครั้ง",
+      "group": "thanking_on_the_way_out",
+      "audio_needed": true,
+      "audio": "/static/audio/global/thanks-for-dinner.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "Thanks for having me",
+      "th": "\"ขอบคุณที่ชวนมานะ\" — ขอบคุณเจ้าของบ้านที่ให้มาเที่ยวบ้าน ไม่ใช่ขอบคุณเรื่องอาหารอย่างเดียว",
+      "group": "thanking_on_the_way_out",
+      "audio_needed": true,
+      "audio": "/static/audio/global/thanks-for-having-me.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "Thanks for everything",
+      "th": "\"ขอบคุณสำหรับทุกอย่าง\" — ขอบคุณรวมๆ ทั้งหมด ใช้ตอนเขาดูแลเราดีมาก",
+      "group": "thanking_on_the_way_out",
+      "audio_needed": true,
+      "audio": "/static/audio/global/thanks-for-everything.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "take care",
+      "th": "\"ดูแลตัวเองด้วยนะ\" — คำลาทั่วไป ไม่ได้แปลว่าเราป่วยหรืออะไร แค่ลาแบบอบอุ่น",
+      "group": "warm_closings",
+      "audio_needed": true,
+      "audio": "/static/audio/global/take-care.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "drive safe",
+      "th": "\"ขับรถดีๆ นะ\" — พูดกับคนที่กำลังจะขับรถกลับ เป็นมารยาทปกติของที่นี่",
+      "group": "warm_closings",
+      "audio_needed": true,
+      "audio": "/static/audio/global/drive-safe.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "safe travels",
+      "th": "\"เดินทางปลอดภัยนะ\" — ใช้ได้ทั้งขับรถ ขึ้นรถไฟ หรือขึ้นเครื่อง ทางไกลหน่อย",
+      "group": "warm_closings",
+      "audio_needed": true,
+      "audio": "/static/audio/global/safe-travels.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "see you soon",
+      "th": "\"เจอกันเร็วๆ นี้นะ\" — ไม่ได้นัดวันจริงๆ แค่พูดลาแบบเป็นมิตร",
+      "group": "warm_closings",
+      "audio_needed": true,
+      "audio": "/static/audio/global/see-you-soon.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "see you Sunday",
+      "th": "\"เจอกันวันอาทิตย์นะ\" — อันนี้นัดกันไว้จริง มีวันชัดเจนแล้ว",
+      "group": "warm_closings",
+      "audio_needed": true,
+      "audio": "/static/audio/global/see-you-sunday.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "keep in touch",
+      "th": "\"ติดต่อกันบ้างนะ\" — บอกว่าอย่าหายไปเลย ให้ทักมาคุยกันบ้าง",
+      "group": "keeping_in_touch",
+      "audio_needed": true,
+      "audio": "/static/audio/global/keep-in-touch.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "Don't be a stranger",
+      "th": "\"อย่าหายไปนานนะ\" — สำนวน ไม่ได้แปลว่าคนแปลกหน้า หมายถึงแวะมาหาบ่อยๆ ทักมาบ้าง",
+      "group": "keeping_in_touch",
+      "audio_needed": true,
+      "audio": "/static/audio/global/don-t-be-a-stranger.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "Let's do this again",
+      "th": "\"ไว้มาเจอกันอีกนะ\" — บอกว่าสนุก อยากนัดกันอีก เป็นการชมกลายๆ",
+      "group": "keeping_in_touch",
+      "audio_needed": true,
+      "audio": "/static/audio/global/let-s-do-this-again.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "text me",
+      "th": "\"ส่งข้อความมานะ\" — text คือ SMS หรือแชท ที่นี่นิยมส่งข้อความมากกว่าโทร",
+      "group": "keeping_in_touch",
+      "audio_needed": true,
+      "audio": "/static/audio/global/text-me.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "add me on LINE",
+      "th": "\"แอดไลน์กันไว้นะ\" — คนออสฯ ส่วนใหญ่ใช้ WhatsApp หรือ Messenger แต่พูดแบบนี้ได้เลย",
+      "group": "swapping_contacts",
+      "audio_needed": true,
+      "audio": "/static/audio/global/add-me-on-line.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "Can I get your number?",
+      "th": "\"ขอเบอร์หน่อยได้ไหม\" — ถามเบอร์โทร แบบสุภาพ ไม่ห้วน",
+      "group": "swapping_contacts",
+      "audio_needed": true,
+      "audio": "/static/audio/global/can-i-get-your-number.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "Could you write it down?",
+      "th": "\"ช่วยเขียนให้หน่อยได้ไหม\" — ขอให้เขาเขียนลงกระดาษ ใช้ได้ดีเวลาฟังไม่ทัน ไม่ใช่เรื่องน่าอาย",
+      "group": "swapping_contacts",
+      "audio_needed": true,
+      "audio": "/static/audio/global/could-you-write-it-down.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "My phone's dead",
+      "th": "\"แบตหมด/มือถือดับ\" — dead แปลว่าแบตหมดเกลี้ยง ไม่ใช่โทรศัพท์พัง",
+      "group": "swapping_contacts",
+      "audio_needed": true,
+      "audio": "/static/audio/global/my-phone-s-dead.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "I'd love to, but…",
+      "th": "\"อยากไปนะ แต่...\" — วิธีปฏิเสธแบบนุ่มๆ ไม่ให้เสียน้ำใจ ตามด้วยเหตุผล",
+      "group": "declining_rescheduling",
+      "audio_needed": true,
+      "audio": "/static/audio/global/i-d-love-to-but.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "How about Sunday?",
+      "th": "\"วันอาทิตย์ดีไหม\" — เสนอวันนัด แบบถามความเห็น ไม่ใช่สั่ง",
+      "group": "declining_rescheduling",
+      "audio_needed": true,
+      "audio": "/static/audio/global/how-about-sunday.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "That works for me",
+      "th": "\"ได้เลย สะดวก\" — ตอบรับว่าวันเวลานั้นโอเคสำหรับเรา",
+      "group": "declining_rescheduling",
+      "audio_needed": true,
+      "audio": "/static/audio/global/that-works-for-me.mp3",
+      "th_status": "draft_unverified"
+    }
+  ],
+  "model_dialogues": [
+    {
+      "cefr": "A2",
+      "label": "Leaving a friend's place after dinner (scripted, standard shape)",
+      "lines": [
+        {
+          "speaker": "Nan (learner)",
+          "text": "It's getting late. I'd better get going.",
+          "audio": "/static/audio/global/it-s-getting-late-i-d-better-get-going.mp3",
+          "th": "ดึกแล้ว เราขอตัวกลับก่อนนะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Emma (host)",
+          "text": "Already? Oh, thanks for coming!",
+          "audio": "/static/audio/global/already-oh-thanks-for-coming.mp3",
+          "th": "เร็วจังเลย โอเค ขอบคุณที่มานะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Nan (learner)",
+          "text": "Thanks for dinner. It was great.",
+          "audio": "/static/audio/global/thanks-for-dinner-it-was-great.mp3",
+          "th": "ขอบคุณสำหรับมื้อเย็นนะ อร่อยมาก",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Emma (host)",
+          "text": "Any time. Let's do this again soon.",
+          "audio": "/static/audio/global/any-time-let-s-do-this-again-soon.mp3",
+          "th": "ยินดีเลย ไว้มากินกันอีกนะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Nan (learner)",
+          "text": "Yes! Text me next week.",
+          "audio": "/static/audio/global/yes-text-me-next-week.mp3",
+          "th": "เอาสิ! อาทิตย์หน้าทักมานะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Emma (host)",
+          "text": "Will do. Drive safe, okay?",
+          "audio": "/static/audio/global/will-do-drive-safe-okay.mp3",
+          "th": "ได้เลย ขับรถดีๆ นะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Nan (learner)",
+          "text": "Thanks. Take care.",
+          "audio": "/static/audio/global/thanks-take-care.mp3",
+          "th": "ขอบใจนะ ดูแลตัวเองด้วย",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Emma (host)",
+          "text": "You too. See you soon!",
+          "audio": "/static/audio/global/you-too-see-you-soon.mp3",
+          "th": "เธอด้วย ไว้เจอกันเร็วๆ นี้!",
+          "th_status": "draft_unverified"
+        }
+      ],
+      "shadow_focus_lines": [
+        {
+          "text": "I'd better get going.",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/i-d-better-get-going.mp3"
+        },
+        {
+          "text": "Thanks for dinner.",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/thanks-for-dinner.mp3"
+        },
+        {
+          "text": "Text me next week.",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/text-me-next-week.mp3"
+        },
+        {
+          "text": "Take care. See you soon.",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/take-care-see-you-soon.mp3"
+        }
+      ]
+    },
+    {
+      "cefr": "B1",
+      "label": "Last day at work — swapping contacts when things don't go to plan (off-script)",
+      "lines": [
+        {
+          "speaker": "Marco (colleague)",
+          "text": "So today's your last day. It won't be the same without you.",
+          "audio": "/static/audio/global/so-today-s-your-last-day-it-won-t-be-the-same-without-you.mp3",
+          "th": "วันนี้วันสุดท้ายแล้วสินะ ไม่มีเธอคงไม่เหมือนเดิมแน่ๆ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Nan (learner)",
+          "text": "Thanks, Marco. I'll miss this team.",
+          "audio": "/static/audio/global/thanks-marco-i-ll-miss-this-team.mp3",
+          "th": "ขอบคุณนะมาร์โก้ จะคิดถึงทีมนี้มากเลย",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Marco (colleague)",
+          "text": "We should keep in touch properly — not just 'see you around', you know?",
+          "audio": "/static/audio/global/we-should-keep-in-touch-properly-not-just-see-you-around-you.mp3",
+          "th": "ติดต่อกันจริงๆ จังๆ นะ ไม่ใช่แค่พูดว่า 'ไว้เจอกัน' เฉยๆ เข้าใจใช่มั้ย",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Nan (learner)",
+          "text": "Definitely. Can I get your number?",
+          "audio": "/static/audio/global/definitely-can-i-get-your-number.mp3",
+          "th": "แน่นอน ขอเบอร์หน่อยได้มั้ย",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Marco (colleague)",
+          "text": "Sure. Ready? It's oh-four-one-two, three four five, six seven eight.",
+          "audio": "/static/audio/global/sure-ready-it-s-oh-four-one-two-three-four-five-six-seven-ei.mp3",
+          "th": "ได้สิ พร้อมนะ ศูนย์-สี่-หนึ่ง-สอง สาม-สี่-ห้า หก-เจ็ด-แปด",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Nan (learner)",
+          "text": "Sorry — my phone's dead. Could you write it down?",
+          "audio": "/static/audio/global/sorry-my-phone-s-dead-could-you-write-it-down.mp3",
+          "th": "โทษที มือถือแบตหมด เขียนให้หน่อยได้มั้ย",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Marco (colleague)",
+          "text": "No worries. Here. I'll put my email on there too.",
+          "audio": "/static/audio/global/no-worries-here-i-ll-put-my-email-on-there-too.mp3",
+          "th": "ไม่เป็นไร นี่ เดี๋ยวใส่อีเมลให้ด้วยเลย",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Nan (learner)",
+          "text": "Thanks. I'll text you tonight.",
+          "audio": "/static/audio/global/thanks-i-ll-text-you-tonight.mp3",
+          "th": "ขอบคุณนะ คืนนี้จะทักไปหา",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Marco (colleague)",
+          "text": "Oh — actually, a few of us are going out Saturday. Come along?",
+          "audio": "/static/audio/global/oh-actually-a-few-of-us-are-going-out-saturday-come-along.mp3",
+          "th": "อ๋อ จริงสิ วันเสาร์พวกเราจะไปเที่ยวกันอยู่ ไปด้วยกันมั้ย",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Nan (learner)",
+          "text": "I'd love to, but I'm working Saturday.",
+          "audio": "/static/audio/global/i-d-love-to-but-i-m-working-saturday.mp3",
+          "th": "อยากไปนะ แต่วันเสาร์ติดทำงาน",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Marco (colleague)",
+          "text": "Ah, that's a shame. What about Sunday, then?",
+          "audio": "/static/audio/global/ah-that-s-a-shame-what-about-sunday-then.mp3",
+          "th": "โห น่าเสียดายจัง งั้นวันอาทิตย์ล่ะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Nan (learner)",
+          "text": "Sunday works. What time?",
+          "audio": "/static/audio/global/sunday-works-what-time.mp3",
+          "th": "อาทิตย์ได้ กี่โมงดี",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Marco (colleague)",
+          "text": "Let's say six, at that place near the station.",
+          "audio": "/static/audio/global/let-s-say-six-at-that-place-near-the-station.mp3",
+          "th": "เอาหกโมงละกัน ที่ร้านแถวๆ สถานี",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Nan (learner)",
+          "text": "Sorry, which place?",
+          "audio": "/static/audio/global/sorry-which-place.mp3",
+          "th": "เอ๊ะ ร้านไหนนะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Marco (colleague)",
+          "text": "The little Thai spot by the north exit. I'll send you the address.",
+          "audio": "/static/audio/global/the-little-thai-spot-by-the-north-exit-i-ll-send-you-the-add.mp3",
+          "th": "ร้านอาหารไทยเล็กๆ ตรงทางออกด้านเหนือน่ะ เดี๋ยวส่งที่อยู่ไปให้",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Nan (learner)",
+          "text": "Great. Send me the address.",
+          "audio": "/static/audio/global/great-send-me-the-address.mp3",
+          "th": "ดีเลย ส่งที่อยู่มาด้วยนะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Marco (colleague)",
+          "text": "Will do. And don't be a stranger, alright?",
+          "audio": "/static/audio/global/will-do-and-don-t-be-a-stranger-alright.mp3",
+          "th": "ได้เลย แล้วอย่าหายไปเลยนะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Nan (learner)",
+          "text": "I won't. Thanks for everything.",
+          "audio": "/static/audio/global/i-won-t-thanks-for-everything.mp3",
+          "th": "ไม่หายแน่นอน ขอบคุณสำหรับทุกอย่างนะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Marco (colleague)",
+          "text": "Take care of yourself, Nan.",
+          "audio": "/static/audio/global/take-care-of-yourself-nan.mp3",
+          "th": "ดูแลตัวเองด้วยนะแนน",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Nan (learner)",
+          "text": "You too. See you Sunday night!",
+          "audio": "/static/audio/global/you-too-see-you-sunday-night.mp3",
+          "th": "เธอก็เหมือนกัน เจอกันคืนวันอาทิตย์!",
+          "th_status": "draft_unverified"
+        }
+      ],
+      "shadow_focus_lines": [
+        {
+          "text": "Can I get your number?",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/can-i-get-your-number.mp3"
+        },
+        {
+          "text": "Could you write it down?",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/could-you-write-it-down.mp3"
+        },
+        {
+          "text": "I'm working Saturday.",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/i-m-working-saturday.mp3"
+        },
+        {
+          "text": "See you Sunday night.",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/see-you-sunday-night.mp3"
+        }
+      ]
+    }
+  ],
+  "chunk_drills": [
+    {
+      "label": "Signalling you're about to leave (don't just stand up)",
+      "pattern": "It's getting late. / I'd better + [verb]",
+      "examples": [
+        "I'd better get going.",
+        "I'd better head off.",
+        "I'd better make a move.",
+        "It's getting late — I've got an early start."
+      ],
+      "spiralled_grammar": "'had better' + bare infinitive; recycles time expressions and clock time from time_and_dates ('It's almost ten')."
+    },
+    {
+      "label": "Thanking on the way out",
+      "pattern": "Thanks for + [noun / -ing]",
+      "examples": [
+        "Thanks for dinner.",
+        "Thanks for having me.",
+        "Thanks for the coffee.",
+        "Thanks for everything."
+      ],
+      "spiralled_grammar": "Gerund after preposition; recycles the thanking and compliment moves from greetings_small_talk."
+    },
+    {
+      "label": "Keeping the door open",
+      "pattern": "Let's + [base verb] / Text me + [time]",
+      "examples": [
+        "Let's keep in touch.",
+        "Let's do this again soon.",
+        "Text me next week.",
+        "Send me a message when you land."
+      ],
+      "spiralled_grammar": "'Let's' + base form for soft suggestions; imperative + time phrase, recycling days and 'next week' from time_and_dates."
+    },
+    {
+      "label": "Swapping contact details",
+      "pattern": "Can I get your + [number / email]? / Could you + [write it down / say that again]?",
+      "examples": [
+        "Can I get your number?",
+        "What's your email?",
+        "Could you write it down?",
+        "Sorry, could you say that again?"
+      ],
+      "spiralled_grammar": "Polite request forms 'Can I…?' / 'Could you…?'; recycles digit-by-digit numbers and the clarification moves from phone_call_basics and numbers_and_spelling."
+    },
+    {
+      "label": "Saying no without closing the door (B1)",
+      "pattern": "I'd love to, but + [present continuous]. How about + [day]?",
+      "examples": [
+        "I'd love to, but I'm working Saturday.",
+        "I'd love to, but I've got plans.",
+        "How about Sunday?",
+        "Sunday works for me."
+      ],
+      "spiralled_grammar": "Present continuous for fixed future arrangements; recycles day/time negotiation from making_plans."
+    },
+    {
+      "label": "Warm closings",
+      "pattern": "Take care. / Drive safe. / See you + [time]",
+      "examples": [
+        "Take care.",
+        "Drive safe.",
+        "Safe travels.",
+        "See you Sunday night."
+      ],
+      "spiralled_grammar": "Imperative as a friendly wish; 'see you' + time phrase, recycled from greetings_small_talk."
+    }
+  ],
+  "listening_items": [
+    {
+      "audio_text": "I'd better head off — I've got an early start tomorrow.",
+      "channel": "in_person",
+      "question": "Why is she leaving now?",
+      "answer": "She has to start early tomorrow morning.",
+      "distractor_focus": "'early start' vs 'early star'; the /rt/ and /st/ endings carry the whole reason."
+    },
+    {
+      "audio_text": "Can't really talk now — text me tonight, okay?",
+      "channel": "phone",
+      "question": "What should you do, and when?",
+      "answer": "Send him a text message tonight.",
+      "distractor_focus": "'text' vs 'tex'; 'tonight' vs 'tonigh' — a dropped /t/ loses the deadline."
+    },
+    {
+      "audio_text": "Save my number: oh-four-one-two, three four five, six seven eight.",
+      "channel": "voice_message",
+      "question": "What are the last three digits?",
+      "answer": "Six seven eight.",
+      "distractor_focus": "Digit groups said fast; 'eight' vs 'ate' vs a swallowed final /t/."
+    },
+    {
+      "audio_text": "Let's catch up next week — Thursday works for me.",
+      "channel": "in_person",
+      "question": "Which day does he suggest?",
+      "answer": "Thursday, next week.",
+      "distractor_focus": "'next' vs 'neck'; Thursday vs Tuesday when the final consonants blur."
+    },
+    {
+      "audio_text": "Don't be a stranger — send me a message when you land.",
+      "channel": "in_person",
+      "question": "When does she want you to message her?",
+      "answer": "When your plane arrives / when you land.",
+      "distractor_focus": "'send' vs 'sent'; 'land' vs 'lan' — the /nd/ ending is the whole instruction."
+    }
+  ],
+  "guided_roleplay": {
+    "learner_role": "You are leaving a farewell dinner at a colleague's home. You want to leave politely, thank the host, swap contact details, and agree on a time to meet again.",
+    "flow": [
+      "Step 1 — Signal you're leaving: mention the time and use 'I'd better…'.",
+      "Step 2 — Thank the host: 'Thanks for + …' with one specific detail (the food, the invitation).",
+      "Step 3 — Keep the door open: suggest meeting again ('Let's do this again').",
+      "Step 4 — Swap contacts: ask for the number or email; if you can't hear it, ask them to repeat it or write it down.",
+      "Step 5 — Agree a day and time: accept, or say 'I'd love to, but…' and offer another day.",
+      "Step 6 — Close warmly: 'Take care.' / 'Drive safe.' / 'See you Sunday night.'"
+    ],
+    "sentence_frames": [
+      "It's getting late — I'd better get going.",
+      "Thanks for _____. It was great.",
+      "Let's do this again soon.",
+      "Can I get your number?",
+      "Sorry, could you say that again?",
+      "Could you write it down?",
+      "I'd love to, but I'm working _____.",
+      "How about _____? / _____ works for me.",
+      "Take care. See you _____."
+    ],
+    "hints_available": true
+  },
+  "free_roleplay": {
+    "ai_persona": "Alex — a warm, chatty friend or colleague at the end of an evening. Uses first names, informal language, and a few filler words ('oh, actually…', 'no worries'). Never formal, never scolding; keeps the conversation moving even if the learner stumbles.",
+    "a2_behavior": "Alex follows the standard shape: notices you're leaving, thanks you for coming, suggests keeping in touch, offers a phone number slowly, and closes with 'take care'. Repeats or slows down when asked.",
+    "b1_curveballs": [
+      "Alex says the phone number fast, in three digit groups — the learner must ask for a repeat or ask him to write it down.",
+      "Alex invites the learner out on a day they are busy — the learner must decline warmly and propose another day.",
+      "Alex names a meeting place the learner doesn't know ('the place near the north exit') — the learner must ask which place and ask for the address.",
+      "Alex tries to keep chatting after the learner has already said goodbye — the learner must close a second time without being rude.",
+      "Alex says he's moving overseas next month and asks how to stay in contact — the learner must offer a channel (LINE, email, messages) and confirm it."
+    ],
+    "roleplay_rubric": [
+      {
+        "criterion": "Signalled the departure before leaving (time reason + 'I'd better…') instead of leaving abruptly",
+        "type": "required"
+      },
+      {
+        "criterion": "Thanked the host/friend with a specific 'Thanks for + …' chunk",
+        "type": "required"
+      },
+      {
+        "criterion": "Made a keep-in-touch move (contact swap or 'let's do this again') and confirmed the detail",
+        "type": "required"
+      },
+      {
+        "criterion": "Asked at least one clarification question ('Sorry, could you say that again?' / 'Could you write it down?') when information was unclear",
+        "type": "required"
+      },
+      {
+        "criterion": "Closed warmly with a fixed farewell ('Take care', 'Drive safe', 'See you + time') rather than a flat 'Goodbye'",
+        "type": "required"
+      },
+      {
+        "criterion": "Register stayed casual-friendly — first names, no over-formal phrasing",
+        "type": "required"
+      },
+      {
+        "criterion": "Final consonants released and audible in 'take care', 'next week', 'text', 'send', 'Sunday night', 'drive safe'",
+        "type": "pronunciation"
+      },
+      {
+        "criterion": "Handled the curveball — declined an invitation warmly and negotiated a new day/time, or recovered a misheard number, without breaking down",
+        "type": "stretch_b1"
+      }
+    ]
+  },
+  "register_culture_note": {
+    "en": "Goodbyes in English are a short, predictable little routine, not one word. You signal (‘I'd better get going’), thank, promise contact, and close (‘Take care’). Saying only 'Goodbye' sounds cold and oddly final to many listeners — it's the word used when you may never meet again. 'Keep in touch' and 'Let's do this again' are friendly closing formulas, not binding promises: warm intent counts more than the literal commitment. Two or three exchanges at the door is normal; leaving in total silence reads as unhappy.",
+    "th": null,
+    "do_dont": [
+      {
+        "avoid": "Goodbye. (said alone, flat)",
+        "prefer": "Bye — take care! / See you soon!"
+      },
+      {
+        "avoid": "I go first.",
+        "prefer": "I'd better get going."
+      },
+      {
+        "avoid": "Please contact me.",
+        "prefer": "Keep in touch — text me anytime."
+      },
+      {
+        "avoid": "'tay ca' — swallowing the /k/ and /r/ in 'take care'",
+        "prefer": "take care — release both final sounds so it's heard as a farewell, not a mumble"
+      },
+      {
+        "avoid": "'nek we' for 'next week'",
+        "prefer": "next week — the /kst/ and /k/ endings are what fix the plan"
+      },
+      {
+        "avoid": "Saying nothing when you can't hear a phone number",
+        "prefer": "Sorry, could you say that again? / Could you write it down?"
+      }
+    ],
+    "thai_cultural_note": "In Thai, leaving is often handled with a soft ไปก่อนนะ and a wai, and the details (‘when will we meet?’) may be left deliberately open so nobody is put on the spot. In English-speaking settings the opposite is expected: the person leaving usually names a concrete next step — a day, a message, a number — and the other person expects to hear it. Asking directly for someone's number or email is friendly, not forward, and proposing an alternative day when you're busy ('I'd love to, but…') is read as interest, not refusal. Staying vague to avoid imposing usually means the contact quietly disappears."
+  },
+  "can_do_checkpoints": [
+    {
+      "cefr": "A2",
+      "statement": "I can signal that I'm leaving and thank my host with a short, natural phrase."
+    },
+    {
+      "cefr": "A2",
+      "statement": "I can close a conversation warmly with 'take care', 'see you soon' or 'drive safe'."
+    },
+    {
+      "cefr": "A2",
+      "statement": "I can ask for someone's phone number or email and ask them to repeat it."
+    },
+    {
+      "cefr": "B1",
+      "statement": "I can agree a specific day and time to meet again, or decline warmly and suggest an alternative."
+    },
+    {
+      "cefr": "B1",
+      "statement": "I can keep a goodbye going when something unexpected happens — a dead phone, a place I don't know, a number said too fast."
+    },
+    {
+      "cefr": "Sound",
+      "statement": "My final consonants are audible: 'take care', 'next week', 'text', 'send', 'Sunday night' are understood first time."
+    }
+  ],
+  "gamification": {
+    "xp_per_substep": true,
+    "unlocks": [
+      "Badge: Clean Exit — completed all six guided sub-steps without hints",
+      "Badge: Contact Saved — correctly read back a phone number after one clarification",
+      "Badge: Rain Check — declined an invitation and successfully rescheduled",
+      "Unlocks scenario: making_plans (arranging the catch-up you just promised)"
+    ],
+    "sound_meters": [
+      "final_consonants"
+    ]
+  },
+  "_review_status": {
+    "thai_strings": "DRAFT - machine-generated, tagged th_status=draft_unverified. A native Thai speaker must review every string and set th_status='reviewed'.",
+    "facts": "UNVERIFIED - generated content, needs a local fact-check before shipping",
+    "generated_by": "claude-opus-5"
+  }
+}

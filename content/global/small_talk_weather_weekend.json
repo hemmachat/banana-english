@@ -1,0 +1,917 @@
+{
+  "scenario_id": "small_talk_weather_weekend",
+  "locale": "global",
+  "title_en": "Everyday Small Talk",
+  "title_th": "การพูดคุยประจำวัน",
+  "tier": 1,
+  "cefr_range": [
+    "A2",
+    "B1"
+  ],
+  "prerequisites": [
+    "greetings_and_goodbyes"
+  ],
+  "recycles": [
+    "greetings_and_goodbyes",
+    "days_and_times",
+    "numbers",
+    "weather_words",
+    "asking_for_clarification"
+  ],
+  "register": "Casual-friendly (first names, contractions, short turns; workplace-neutral)",
+  "sound_target_box": {
+    "note_th": null,
+    "targets": [
+      {
+        "sound": "weak_forms",
+        "scoring_method": "unscored",
+        "words_in_context": [
+          "How've you been? (/haʊv jə bɪn/)",
+          "Not bad, thanks. And you? (/ən juː/)",
+          "How about you? (/haʊ əˈbaʊt jə/)",
+          "It depends on the weather. (/ən ðə/)",
+          "a bit of a mad month (/ə bɪd əv ə/)",
+          "I'd better run. (/aɪd betə/)"
+        ],
+        "minimal_pairs": [
+          [
+            "can",
+            "can't"
+          ],
+          [
+            "was",
+            "wasn't"
+          ],
+          [
+            "for",
+            "four"
+          ],
+          [
+            "been",
+            "bean"
+          ],
+          [
+            "and",
+            "end"
+          ]
+        ],
+        "why_it_matters_here": "Small talk lives inside unstressed function words. If you say 'How HAVE YOU BEEN?' with every word full and equal, it lands like a job interview and the other person gives you a one-word answer and walks off. And in the other direction: if you cannot hear weak 'can' /kən/ against stressed 'can't' /kɑːnt/, you will agree to Friday drinks you already said you couldn't make, and then not turn up.",
+        "_note": "taught and drilled, never metered - vendor gives no en-AU prosody data"
+      },
+      {
+        "sound": "intonation",
+        "scoring_method": "unscored",
+        "words_in_context": [
+          "Cold today, isn't it? (rise on the tag)",
+          "And you? (rise — hands the turn back)",
+          "Four hours? (rise — surprise, 'tell me more')",
+          "Really cold. (fall — agreement, not a question)",
+          "Sorry, Dan's thing? (rise — I didn't catch that)",
+          "Good to see you! (warm fall — closing)"
+        ],
+        "minimal_pairs": [
+          [
+            "Really? (rise)",
+            "Really. (fall)"
+          ],
+          [
+            "Yeah? (rise)",
+            "Yeah. (fall)"
+          ],
+          [
+            "You moved? (rise)",
+            "You moved. (fall)"
+          ],
+          [
+            "Okay? (rise)",
+            "Okay. (fall)"
+          ],
+          [
+            "Nice? (rise)",
+            "Nice! (warm fall)"
+          ]
+        ],
+        "why_it_matters_here": "In small talk, intonation IS the meaning. A flat 'Nice.' after your colleague says they got married reads as bored or sarcastic, and people remember that. A flat 'And you.' closes the conversation instead of passing it back, so the chat dies in three seconds and you get labelled unfriendly at work — when you were only being careful with your English.",
+        "_note": "taught and drilled, never metered - vendor gives no en-AU prosody data"
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "en": "How's it going?",
+      "th": "\"เป็นไงบ้าง\" ทักทายแบบสบายๆ กับคนที่เจอกันบ่อย ตอบสั้นๆ พอ ไม่ต้องเล่าชีวิต",
+      "group": "openers",
+      "audio_needed": true,
+      "audio": "/static/audio/global/how-s-it-going.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "How've you been?",
+      "th": "\"ช่วงนี้เป็นไงบ้าง\" ใช้กับคนที่ไม่ได้เจอกันมาสักพัก",
+      "group": "openers",
+      "audio_needed": true,
+      "audio": "/static/audio/global/how-ve-you-been.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "Long time no see",
+      "th": "\"ไม่เจอกันนานเลยนะ\" พูดตอนเจอคนที่ห่างหายไปนาน",
+      "group": "openers",
+      "audio_needed": true,
+      "audio": "/static/audio/global/long-time-no-see.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "How was your weekend?",
+      "th": "\"เสาร์อาทิตย์ที่ผ่านมาเป็นไงบ้าง\" คนออสเตรเลียถามกันประจำเช้าวันจันทร์",
+      "group": "openers",
+      "audio_needed": true,
+      "audio": "/static/audio/global/how-was-your-weekend.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "Not bad",
+      "th": "\"ก็โอเคนะ\" ฟังดูเฉยๆ แต่จริงๆ แปลว่าค่อนข้างดี",
+      "group": "safe answers",
+      "audio_needed": true,
+      "audio": "/static/audio/global/not-bad.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "Pretty good",
+      "th": "\"ก็ดีอยู่นะ\" ดีกว่า not bad นิดหน่อย",
+      "group": "safe answers",
+      "audio_needed": true,
+      "audio": "/static/audio/global/pretty-good.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "Busy, actually",
+      "th": "\"ยุ่งเลยแหละช่วงนี้\" คำว่า actually เหมือนบอกว่า จะบอกตามตรงนะ",
+      "group": "safe answers",
+      "audio_needed": true,
+      "audio": "/static/audio/global/busy-actually.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "Not much",
+      "th": "\"ก็ไม่มีอะไร\" ใช้ตอบเวลาโดนถามว่าทำอะไรอยู่ ช่วงนี้เป็นไง",
+      "group": "safe answers",
+      "audio_needed": true,
+      "audio": "/static/audio/global/not-much.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "Nothing special",
+      "th": "\"ไม่มีอะไรพิเศษ\" ใช้ตอบเรื่องวันหยุดที่ผ่านมา",
+      "group": "safe answers",
+      "audio_needed": true,
+      "audio": "/static/audio/global/nothing-special.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "Just the usual",
+      "th": "\"ก็เหมือนเดิมแหละ\" ชีวิตปกติ ไม่มีอะไรเปลี่ยน",
+      "group": "safe answers",
+      "audio_needed": true,
+      "audio": "/static/audio/global/just-the-usual.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "cold / freezing",
+      "th": "หนาว / หนาวมาก — freezing คือพูดเว่อร์ว่าหนาวจะแข็งตายอยู่แล้ว",
+      "group": "weather",
+      "audio_needed": true,
+      "audio": "/static/audio/global/cold-freezing.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "boiling / stinking hot",
+      "th": "ร้อนมาก — stinking hot เป็นคำออสซี่ แปลว่าร้อนจนทนไม่ไหว",
+      "group": "weather",
+      "audio_needed": true,
+      "audio": "/static/audio/global/boiling-stinking-hot.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "It's supposed to rain",
+      "th": "\"เขาว่าฝนจะตกนะ\" คือตามพยากรณ์อากาศ ยังไม่ตกจริง",
+      "group": "weather",
+      "audio_needed": true,
+      "audio": "/static/audio/global/it-s-supposed-to-rain.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "It's clearing up",
+      "th": "ฟ้าเริ่มเปิด ฝนเริ่มซา อากาศกำลังจะดีขึ้น",
+      "group": "weather",
+      "audio_needed": true,
+      "audio": "/static/audio/global/it-s-clearing-up.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "a lovely day",
+      "th": "\"อากาศดีจัง\" ใช้ชมวันที่แดดดี ไม่ร้อนไม่หนาว",
+      "group": "weather",
+      "audio_needed": true,
+      "audio": "/static/audio/global/a-lovely-day.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "have people over",
+      "th": "ชวนคนมาที่บ้าน มากินข้าว มานั่งเล่นกัน",
+      "group": "weekend & free time",
+      "audio_needed": true,
+      "audio": "/static/audio/global/have-people-over.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "catch up with friends",
+      "th": "นัดเจอเพื่อน ไปนั่งคุยอัพเดทชีวิตกัน",
+      "group": "weekend & free time",
+      "audio_needed": true,
+      "audio": "/static/audio/global/catch-up-with-friends.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "get some rest",
+      "th": "อยู่บ้านพักผ่อน ไม่ได้ไปไหน",
+      "group": "weekend & free time",
+      "audio_needed": true,
+      "audio": "/static/audio/global/get-some-rest.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "the market",
+      "th": "ตลาดนัดเสาร์อาทิตย์ คนที่นี่ชอบไปเดินกัน",
+      "group": "weekend & free time",
+      "audio_needed": true,
+      "audio": "/static/audio/global/the-market.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "leaving drinks",
+      "th": "งานเลี้ยงส่งเพื่อนร่วมงานที่กำลังจะลาออก ปกติไปนั่งดื่มกันหลังเลิกงาน",
+      "group": "weekend & free time",
+      "audio_needed": true,
+      "audio": "/static/audio/global/leaving-drinks.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "Really?",
+      "th": "\"จริงเหรอ\" พูดเพื่อแสดงว่าเราสนใจ ฟังอยู่นะ",
+      "group": "reactions",
+      "audio_needed": true,
+      "audio": "/static/audio/global/really.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "Oh no.",
+      "th": "\"ตายแล้ว\" ใช้ตอบเวลาเขาเล่าเรื่องไม่ดี",
+      "group": "reactions",
+      "audio_needed": true,
+      "audio": "/static/audio/global/oh-no.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "That's awful.",
+      "th": "\"แย่จังเลย\" แสดงความเห็นใจ แรงกว่า Oh no หน่อย",
+      "group": "reactions",
+      "audio_needed": true,
+      "audio": "/static/audio/global/that-s-awful.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "Nice!",
+      "th": "\"ดีจัง!\" ตอบรับเรื่องดีๆ ที่เขาเล่า",
+      "group": "reactions",
+      "audio_needed": true,
+      "audio": "/static/audio/global/nice.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "Fair enough.",
+      "th": "\"อ๋อ เข้าใจละ\" คือรับฟังเหตุผลแล้วโอเค ไม่ซักต่อ",
+      "group": "reactions",
+      "audio_needed": true,
+      "audio": "/static/audio/global/fair-enough.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "Where to?",
+      "th": "\"จะไปไหนเหรอ\" ถามสั้นๆ แบบเป็นกันเอง",
+      "group": "keeping it going",
+      "audio_needed": true,
+      "audio": "/static/audio/global/where-to.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "How come?",
+      "th": "\"ทำไมล่ะ\" ถามแบบสบายๆ ไม่ได้จับผิด",
+      "group": "keeping it going",
+      "audio_needed": true,
+      "audio": "/static/audio/global/how-come.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "How long for?",
+      "th": "\"ไปนานแค่ไหน\" ถามระยะเวลา",
+      "group": "keeping it going",
+      "audio_needed": true,
+      "audio": "/static/audio/global/how-long-for.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "And you?",
+      "th": "\"แล้วคุณล่ะ\" ถามกลับหลังตอบคำถามเขาแล้ว มารยาทสำคัญมาก",
+      "group": "keeping it going",
+      "audio_needed": true,
+      "audio": "/static/audio/global/and-you.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "Anyway, ...",
+      "th": "\"เอาเถอะ...\" ใช้เปลี่ยนเรื่อง หรือส่งสัญญาณว่าจะจบบทสนทนาแล้ว",
+      "group": "closing",
+      "audio_needed": true,
+      "audio": "/static/audio/global/anyway.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "I'd better run.",
+      "th": "\"ต้องไปแล้วล่ะ\" บอกลาแบบรีบๆ",
+      "group": "closing",
+      "audio_needed": true,
+      "audio": "/static/audio/global/i-d-better-run.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "Good to see you!",
+      "th": "\"ดีใจที่ได้เจอนะ\" พูดตอนกำลังจะแยกย้าย",
+      "group": "closing",
+      "audio_needed": true,
+      "audio": "/static/audio/global/good-to-see-you.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "Have a good one.",
+      "th": "\"ขอให้เป็นวันที่ดีนะ\" คำลาแบบลำลอง ใช้ได้ทั้งกับคนรู้จักและพนักงานร้าน",
+      "group": "closing",
+      "audio_needed": true,
+      "audio": "/static/audio/global/have-a-good-one.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "See you Monday.",
+      "th": "\"เจอกันวันจันทร์นะ\" ลาแบบรู้ว่าจะได้เจอกันอีกเมื่อไหร่",
+      "group": "closing",
+      "audio_needed": true,
+      "audio": "/static/audio/global/see-you-monday.mp3",
+      "th_status": "draft_unverified"
+    }
+  ],
+  "model_dialogues": [
+    {
+      "cefr": "A2",
+      "label": "Two minutes in the office kitchen (scripted, predictable)",
+      "lines": [
+        {
+          "speaker": "Sam (colleague)",
+          "text": "Morning! How's it going?",
+          "audio": "/static/audio/global/morning-how-s-it-going.mp3",
+          "th": "อรุณสวัสดิ์! เป็นไงบ้าง",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "You",
+          "text": "Not bad, thanks. And you?",
+          "audio": "/static/audio/global/not-bad-thanks-and-you.mp3",
+          "th": "ก็เรื่อยๆ นะ ขอบใจ แล้วเธอล่ะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Sam (colleague)",
+          "text": "Yeah, pretty good. Bit cold today, isn't it?",
+          "audio": "/static/audio/global/yeah-pretty-good-bit-cold-today-isn-t-it.mp3",
+          "th": "ก็ดีนะ วันนี้หนาวไปหน่อยเนอะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "You",
+          "text": "Really cold. I need a hot coffee.",
+          "audio": "/static/audio/global/really-cold-i-need-a-hot-coffee.mp3",
+          "th": "หนาวมาก อยากได้กาแฟร้อนๆ สักแก้ว",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Sam (colleague)",
+          "text": "Ha, same. Doing anything on the weekend?",
+          "audio": "/static/audio/global/ha-same-doing-anything-on-the-weekend.mp3",
+          "th": "ฮ่า เหมือนกันเลย เสาร์อาทิตย์นี้มีแผนอะไรมั้ย",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "You",
+          "text": "Not much. Maybe the market on Sunday. You?",
+          "audio": "/static/audio/global/not-much-maybe-the-market-on-sunday-you.mp3",
+          "th": "ไม่มีอะไรมาก วันอาทิตย์อาจจะไปเดินตลาด แล้วเธอล่ะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Sam (colleague)",
+          "text": "We're taking the kids to the beach, if it's dry.",
+          "audio": "/static/audio/global/we-re-taking-the-kids-to-the-beach-if-it-s-dry.mp3",
+          "th": "จะพาลูกไปทะเล ถ้าฝนไม่ตกนะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "You",
+          "text": "Nice! Have a good one.",
+          "audio": "/static/audio/global/nice-have-a-good-one.mp3",
+          "th": "ดีจัง! ขอให้สนุกนะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Sam (colleague)",
+          "text": "You too. See you Monday!",
+          "audio": "/static/audio/global/you-too-see-you-monday.mp3",
+          "th": "เธอด้วย เจอกันวันจันทร์!",
+          "th_status": "draft_unverified"
+        }
+      ],
+      "shadow_focus_lines": [
+        {
+          "text": "Not bad, thanks. And you?",
+          "targets": [
+            "weak_forms",
+            "intonation"
+          ],
+          "audio": "/static/audio/global/not-bad-thanks-and-you.mp3"
+        },
+        {
+          "text": "Bit cold today, isn't it?",
+          "targets": [
+            "intonation"
+          ],
+          "audio": "/static/audio/global/bit-cold-today-isn-t-it.mp3"
+        },
+        {
+          "text": "Maybe the market on Sunday.",
+          "targets": [
+            "weak_forms"
+          ],
+          "audio": "/static/audio/global/maybe-the-market-on-sunday.mp3"
+        },
+        {
+          "text": "Nice! Have a good one.",
+          "targets": [
+            "intonation",
+            "weak_forms"
+          ],
+          "audio": "/static/audio/global/nice-have-a-good-one.mp3"
+        }
+      ]
+    },
+    {
+      "cefr": "B1",
+      "label": "Bumping into someone you haven't seen in months (off-script: bad news, a topic jump, and an invitation you don't understand)",
+      "lines": [
+        {
+          "speaker": "Sam (colleague)",
+          "text": "Hey! Long time no see. How've you been?",
+          "audio": "/static/audio/global/hey-long-time-no-see-how-ve-you-been.mp3",
+          "th": "เฮ้ย! ไม่เจอกันตั้งนาน เป็นไงบ้าง",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "You",
+          "text": "Good, thanks. Busy. How about you?",
+          "audio": "/static/audio/global/good-thanks-busy-how-about-you.mp3",
+          "th": "สบายดี ขอบใจ ยุ่งๆ หน่อย แล้วเธอล่ะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Sam (colleague)",
+          "text": "Oh, you know. Bit of a mad month, actually — we moved house.",
+          "audio": "/static/audio/global/oh-you-know-bit-of-a-mad-month-actually-we-moved-house.mp3",
+          "th": "ก็อย่างที่รู้แหละ เดือนนี้วุ่นมาก คือเราย้ายบ้านกัน",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "You",
+          "text": "You moved? Where to?",
+          "audio": "/static/audio/global/you-moved-where-to.mp3",
+          "th": "ย้ายบ้านเหรอ ย้ายไปไหน",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Sam (colleague)",
+          "text": "Just across town, near the station. We're still living out of boxes.",
+          "audio": "/static/audio/global/just-across-town-near-the-station-we-re-still-living-out-of-.mp3",
+          "th": "ก็อีกฝั่งของเมืองนี่แหละ ใกล้ๆ สถานีรถไฟ ตอนนี้ยังรื้อของจากกล่องอยู่เลย",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "You",
+          "text": "Oh no. Was it stressful?",
+          "audio": "/static/audio/global/oh-no-was-it-stressful.mp3",
+          "th": "โอ๊ย เครียดมั้ยเนี่ย",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Sam (colleague)",
+          "text": "Honestly? The worst. The van turned up four hours late.",
+          "audio": "/static/audio/global/honestly-the-worst-the-van-turned-up-four-hours-late.mp3",
+          "th": "บอกตรงๆ นะ แย่ที่สุด รถขนของมาช้าไปตั้งสี่ชั่วโมง",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "You",
+          "text": "Four hours? That's awful.",
+          "audio": "/static/audio/global/four-hours-that-s-awful.mp3",
+          "th": "สี่ชั่วโมงเลยเหรอ แย่มาก",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Sam (colleague)",
+          "text": "Yeah. Anyway, we got there in the end. How's your weekend looking?",
+          "audio": "/static/audio/global/yeah-anyway-we-got-there-in-the-end-how-s-your-weekend-looki.mp3",
+          "th": "ใช่ เอาเถอะ สุดท้ายก็ผ่านมาได้ แล้วเสาร์อาทิตย์นี้เธอมีแผนอะไร",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "You",
+          "text": "Nothing special. Maybe the gym.",
+          "audio": "/static/audio/global/nothing-special-maybe-the-gym.mp3",
+          "th": "ไม่มีอะไรพิเศษ อาจจะไปยิม",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Sam (colleague)",
+          "text": "Fair enough. It's supposed to rain Saturday, I think.",
+          "audio": "/static/audio/global/fair-enough-it-s-supposed-to-rain-saturday-i-think.mp3",
+          "th": "ก็ดีนะ เห็นว่าวันเสาร์ฝนจะตกนะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "You",
+          "text": "Again? It rained all last weekend.",
+          "audio": "/static/audio/global/again-it-rained-all-last-weekend.mp3",
+          "th": "อีกแล้วเหรอ อาทิตย์ที่แล้วก็ตกทั้งสองวัน",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Sam (colleague)",
+          "text": "I know. It's been like this for weeks. Oh — are you coming to Dan's thing on Friday?",
+          "audio": "/static/audio/global/i-know-it-s-been-like-this-for-weeks-oh-are-you-coming-to-da.mp3",
+          "th": "นั่นสิ เป็นแบบนี้มาหลายอาทิตย์แล้ว อ้อ วันศุกร์ไปงานของแดนมั้ย",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "You",
+          "text": "Sorry, Dan's thing?",
+          "audio": "/static/audio/global/sorry-dan-s-thing.mp3",
+          "th": "เอ๊ะ งานอะไรของแดนเหรอ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Sam (colleague)",
+          "text": "His leaving drinks. Six o'clock, at the pub near the office.",
+          "audio": "/static/audio/global/his-leaving-drinks-six-o-clock-at-the-pub-near-the-office.mp3",
+          "th": "งานเลี้ยงส่งเขาไง หกโมงเย็น ที่ผับใกล้ๆ ออฟฟิศ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "You",
+          "text": "Oh, right. I'll try. Six is a bit early for me.",
+          "audio": "/static/audio/global/oh-right-i-ll-try-six-is-a-bit-early-for-me.mp3",
+          "th": "อ๋อ เข้าใจแล้ว จะพยายามไปนะ แต่หกโมงมันเร็วไปหน่อยสำหรับเรา",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Sam (colleague)",
+          "text": "No worries, come when you can. Right, I'd better run — I've got a meeting.",
+          "audio": "/static/audio/global/no-worries-come-when-you-can-right-i-d-better-run-i-ve-got-a.mp3",
+          "th": "ไม่เป็นไร ว่างเมื่อไหร่ก็มา เอาล่ะ เราต้องไปแล้ว มีประชุม",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "You",
+          "text": "Yeah, me too. Good to see you!",
+          "audio": "/static/audio/global/yeah-me-too-good-to-see-you.mp3",
+          "th": "เราด้วย ดีใจที่ได้เจอนะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Sam (colleague)",
+          "text": "You too. See you Friday, hopefully!",
+          "audio": "/static/audio/global/you-too-see-you-friday-hopefully.mp3",
+          "th": "เช่นกัน หวังว่าจะเจอกันวันศุกร์นะ",
+          "th_status": "draft_unverified"
+        }
+      ],
+      "shadow_focus_lines": [
+        {
+          "text": "Good, thanks. How about you?",
+          "targets": [
+            "weak_forms",
+            "intonation"
+          ],
+          "audio": "/static/audio/global/good-thanks-how-about-you.mp3"
+        },
+        {
+          "text": "Four hours? That's awful.",
+          "targets": [
+            "intonation",
+            "weak_forms"
+          ],
+          "audio": "/static/audio/global/four-hours-that-s-awful.mp3"
+        },
+        {
+          "text": "Sorry, Dan's thing?",
+          "targets": [
+            "intonation"
+          ],
+          "audio": "/static/audio/global/sorry-dan-s-thing.mp3"
+        },
+        {
+          "text": "Yeah, me too. Good to see you!",
+          "targets": [
+            "weak_forms",
+            "intonation"
+          ],
+          "audio": "/static/audio/global/yeah-me-too-good-to-see-you.mp3"
+        }
+      ]
+    }
+  ],
+  "chunk_drills": [
+    {
+      "label": "Open it (and hand it straight back)",
+      "pattern": "[opener] + ... + \"And you?\" / \"How about you?\"",
+      "examples": [
+        "How's it going? — Not bad, thanks. And you?",
+        "How was your weekend? — Quiet, actually. How about you?",
+        "How've you been? — Busy! And you?"
+      ],
+      "spiralled_grammar": "Recycles greetings_and_goodbyes; adds present perfect in the fixed chunk \"How've you been?\" with the weak form /haʊv jə bɪn/ — learners say it as a chunk, not as grammar."
+    },
+    {
+      "label": "The safe vague answer + one small detail",
+      "pattern": "\"Not much. / Nothing special. / Just the usual.\" + \"Maybe ___.\"",
+      "examples": [
+        "Not much. Maybe the market on Sunday.",
+        "Nothing special. Maybe the gym.",
+        "Just the usual. I might catch up with friends."
+      ],
+      "spiralled_grammar": "Recycles days_and_times ('on Sunday', 'Saturday morning') and 'maybe / might' for unfixed plans."
+    },
+    {
+      "label": "Weather + tag question (rising)",
+      "pattern": "\"[Adjective] today, isn't it?\" / \"It's supposed to ___, isn't it?\"",
+      "examples": [
+        "Bit cold today, isn't it?",
+        "Lovely day, isn't it?",
+        "It's supposed to rain Saturday, isn't it?"
+      ],
+      "spiralled_grammar": "Recycles weather_words; tag questions drilled purely for rising intonation, not for tag formation rules."
+    },
+    {
+      "label": "Keep it going: one short follow-up question",
+      "pattern": "React + \"[Wh- fragment]?\"",
+      "examples": [
+        "You moved? Where to?",
+        "Really? How come?",
+        "Nice! How long for?",
+        "Oh no. Was it stressful?"
+      ],
+      "spiralled_grammar": "Short elliptical questions ('Where to?', 'How long for?') — full sentences not required at A2."
+    },
+    {
+      "label": "React before you answer",
+      "pattern": "\"Really? / Oh no. / That's awful. / Nice! / Fair enough.\" + your line",
+      "examples": [
+        "Four hours? That's awful.",
+        "Oh no. I hope it's better now.",
+        "Nice! Which beach?",
+        "Fair enough. Rain again, then."
+      ],
+      "spiralled_grammar": "Fixed reaction chunks; scored on intonation contour rather than on words."
+    },
+    {
+      "label": "Ask again without panic",
+      "pattern": "\"Sorry, ___?\" / \"Sorry, say that again?\" / \"Sorry — who's Dan?\"",
+      "examples": [
+        "Sorry, Dan's thing?",
+        "Sorry, what time?",
+        "Sorry, say that again?"
+      ],
+      "spiralled_grammar": "Recycles asking_for_clarification; rising intonation on the repeated word signals 'I missed that', not 'I disagree'."
+    },
+    {
+      "label": "Close it politely",
+      "pattern": "\"Anyway, I'd better ___.\" + \"Good to see you! / Have a good one.\"",
+      "examples": [
+        "Anyway, I'd better run. Good to see you!",
+        "Anyway, I'd better get back. Have a good one.",
+        "Right, I'd better go. See you Monday!"
+      ],
+      "spiralled_grammar": "'I'd better + verb' taught as one chunk with weak /aɪd/; recycles days_and_times in the goodbye."
+    }
+  ],
+  "listening_items": [
+    {
+      "audio_text": "Hey, how's it going? Haven't seen you in ages — how've you been?",
+      "channel": "face-to-face, office corridor, fast and friendly",
+      "question": "Is the speaker asking about right now, or about the last few weeks?",
+      "answer": "About the last few weeks — 'How've you been?' (they haven't seen you in a long time).",
+      "distractor_focus": "'How've you been' compressed to /haʊv jə bɪn/ can be heard as 'How you been' or 'How are you' — learners must catch the weak 've'."
+    },
+    {
+      "audio_text": "I can't make Friday, sorry — but I can do Saturday afternoon.",
+      "channel": "voice message from a friend",
+      "question": "Which day is the speaker free?",
+      "answer": "Saturday afternoon. They cannot do Friday.",
+      "distractor_focus": "Weak 'can' /kən/ versus stressed 'can't' /kɑːnt/ — mishearing this reverses the whole message."
+    },
+    {
+      "audio_text": "You're coming on Friday?",
+      "channel": "face-to-face, one short turn",
+      "question": "Is this a question or a statement?",
+      "answer": "A question — the voice rises at the end, so they want an answer.",
+      "distractor_focus": "Same words, falling contour ('You're coming on Friday.') would just be confirming a fact; intonation is the only clue."
+    },
+    {
+      "audio_text": "It's his leaving drinks. Six o'clock, at the pub near the station — not the office one.",
+      "channel": "face-to-face, slightly noisy kitchen",
+      "question": "What time, and which pub?",
+      "answer": "Six o'clock, at the pub near the station (not the one near the office).",
+      "distractor_focus": "Recycled numbers plus a correction tucked into the end of the turn — learners often stop listening after the time."
+    },
+    {
+      "audio_text": "Oh, that's lovely. Really.",
+      "channel": "face-to-face, flat falling delivery",
+      "question": "Does the speaker sound genuinely pleased or unimpressed?",
+      "answer": "Unimpressed / not really interested — the flat, falling delivery makes 'lovely' sound insincere.",
+      "distractor_focus": "Trains learners to hear (and then avoid producing) flat contours on reaction words like 'lovely', 'nice', 'great'."
+    }
+  ],
+  "guided_roleplay": {
+    "learner_role": "You are at work on Monday morning. A friendly colleague you like — but don't know well — starts chatting while the kettle boils. Keep the conversation alive for about a minute, then leave politely.",
+    "flow": [
+      "Step 1 — Answer the opener and hand it back: reply to 'How's it going?' in two or three words, then ask 'And you?'",
+      "Step 2 — Do the weather: agree with their comment, or start one yourself with a rising tag ('Cold today, isn't it?').",
+      "Step 3 — Weekend exchange: give a vague answer plus one small detail, then ask them the same question.",
+      "Step 4 — Keep it going: react ('Really? / Oh no. / Nice!') and ask ONE short follow-up question ('Where to?', 'How come?').",
+      "Step 5 — Repair: they mention a name, a place or a time you don't know. Say 'Sorry, ___?' and get it repeated.",
+      "Step 6 — Close it: 'Anyway, I'd better run. Good to see you!' — with warm falling intonation, not an abrupt stop."
+    ],
+    "sentence_frames": [
+      "Not bad, thanks. And you?",
+      "Pretty good. Busy, actually.",
+      "Bit cold today, isn't it?",
+      "Not much. Maybe ___ on ___.",
+      "Nothing special. How about you?",
+      "Really? Where to?",
+      "Oh no. Was it stressful?",
+      "Nice! How long for?",
+      "Sorry, ___?",
+      "Sorry, say that again?",
+      "Anyway, I'd better run.",
+      "Good to see you! / Have a good one."
+    ],
+    "hints_available": true
+  },
+  "free_roleplay": {
+    "ai_persona": "Sam — a warm, chatty colleague in their thirties. Uses first names, contractions and very short turns. Never lectures, never corrects grammar mid-chat; if the learner stalls, Sam offers a friendly prompt ('Big weekend, or a quiet one?') and waits.",
+    "a2_behavior": "Sam stays on the predictable script: greeting → weather → weekend plans → warm goodbye. Short turns, one question at a time, generous pauses. Sam accepts vague answers ('Not much') and models the follow-up question the learner didn't ask.",
+    "b1_curveballs": [
+      "Sam drops mild bad news — 'we moved house and it was a nightmare' or 'I've been off sick, actually' — and the learner must react appropriately and ask one follow-up before moving on.",
+      "Sam jumps topic with no warning: from the weather straight to 'Are you coming to Dan's thing on Friday?' The learner must ask 'Sorry, Dan's thing?' and get the details.",
+      "Sam invites the learner somewhere at an awkward time ('six o'clock Friday') and the learner must half-decline without killing the mood ('I'll try — six is a bit early for me').",
+      "Sam asks the learner a question back that needs more than a word: 'So what have you been up to?' — the learner must produce two or three linked sentences.",
+      "Sam uses fast weak forms and swallowed words ('Whaddya up to this weekend?', 'D'you wanna come?') and the learner must ask for a repeat instead of guessing.",
+      "Sam tries to end the chat first ('Right, I'd better run') and the learner must close warmly rather than keep talking."
+    ],
+    "roleplay_rubric": [
+      {
+        "criterion": "Answered the opener briefly and handed the turn back with 'And you?' / 'How about you?'",
+        "type": "required"
+      },
+      {
+        "criterion": "Covered at least two small-talk topics (e.g. weather and weekend), recycling days, times or weather words",
+        "type": "required"
+      },
+      {
+        "criterion": "Kept it going: reacted at least twice ('Really?', 'Oh no.', 'Nice!') and asked at least one follow-up question",
+        "type": "required"
+      },
+      {
+        "criterion": "Used a clarification move ('Sorry, ___?') instead of guessing or going silent when something was missed",
+        "type": "required"
+      },
+      {
+        "criterion": "Closed the conversation politely with a closing chunk ('Anyway, I'd better run. Good to see you!') rather than stopping dead",
+        "type": "required"
+      },
+      {
+        "criterion": "Stayed casual-friendly: contractions, short turns, no over-formal 'I am very fine, thank you very much'",
+        "type": "required"
+      },
+      {
+        "criterion": "Pronunciation: weak forms in 'And you?', 'How about you?', 'I'd better run' are reduced, and intonation rises on questions/tags and falls warmly on reactions and the goodbye",
+        "type": "pronunciation"
+      },
+      {
+        "criterion": "Stretch (B1): handled a curveball — mild bad news, a sudden topic jump, or an awkward invitation — with an appropriate reaction and kept the chat going for another turn or two",
+        "type": "stretch_b1"
+      }
+    ]
+  },
+  "register_culture_note": {
+    "en": "Small talk is not information exchange — it is a two-minute friendliness ritual. Nobody wants a full report. 'Not bad, you?' is a complete, successful answer. The two rules that matter: keep your turns short, and always pass the ball back with a question. Use contractions and reductions ('How've you been?', 'And you?'); full careful forms sound like an interview. Safe topics almost everywhere: weather, weekend, traffic, food, the coffee. Risky in English-speaking workplaces: money, weight, age, relationship status, religion.",
+    "th": null,
+    "do_dont": [
+      {
+        "avoid": "\"I am very fine, thank you, and how are you?\" (full forms, every word stressed)",
+        "prefer": "\"Not bad, thanks. And you?\" — short, with weak 'and' and a rising 'you?'"
+      },
+      {
+        "avoid": "Answering 'How've you been?' with a two-minute account of your health, your family and your job",
+        "prefer": "One line plus a question: \"Busy, actually. How about you?\""
+      },
+      {
+        "avoid": "Going silent when you miss a word, then smiling and nodding",
+        "prefer": "\"Sorry, Dan's thing?\" — repeating the word with a rise is friendly, not rude"
+      },
+      {
+        "avoid": "Flat, falling \"Nice.\" or \"Really.\" after someone's news (sounds bored or sarcastic)",
+        "prefer": "\"Nice! Which beach?\" — reaction with a rise or a warm fall, plus a follow-up"
+      },
+      {
+        "avoid": "\"You look tired. How old are you? How much do you earn?\"",
+        "prefer": "\"Busy week? / How was your weekend? / Any plans for the long weekend?\""
+      },
+      {
+        "avoid": "Walking away mid-topic with no closing line",
+        "prefer": "\"Anyway, I'd better run. Good to see you!\""
+      }
+    ],
+    "thai_cultural_note": "Two habits carry over from Thai and cause real trouble. First, questions that are ordinary care in Thai — how old are you, how much do you earn, have you put on weight, are you married yet — read as intrusive in most English-speaking workplaces; keep to weather, weekend and food until you know someone well. Second, in Thai it is often polite to let a senior colleague lead and to answer briefly without asking back; in English, not returning the question ('And you?') is read as coldness or disinterest, not respect. Your job in small talk is to keep the ball in the air for a minute — even with your boss. Also note: 'How are you?' from a passing colleague is a greeting, not a real enquiry, so a short cheerful answer is exactly right; and this is one of the few situations where mild complaining about the weather counts as being friendly."
+  },
+  "can_do_checkpoints": [
+    {
+      "cefr": "A2",
+      "statement": "I can answer 'How's it going?' briefly and hand the question back with 'And you?'"
+    },
+    {
+      "cefr": "A2",
+      "statement": "I can make and answer a comment about the weather using a tag question."
+    },
+    {
+      "cefr": "A2",
+      "statement": "I can say what I did or might do at the weekend in one or two short sentences."
+    },
+    {
+      "cefr": "A2",
+      "statement": "I can end a short chat politely with 'Anyway, I'd better run. Good to see you!'"
+    },
+    {
+      "cefr": "B1",
+      "statement": "I can keep a conversation going for a minute or more by reacting and asking short follow-up questions."
+    },
+    {
+      "cefr": "B1",
+      "statement": "I can respond appropriately when someone shares mild bad news, and then move the chat on."
+    },
+    {
+      "cefr": "B1",
+      "statement": "I can handle a sudden topic change or an unclear invitation by asking for clarification and getting the details."
+    },
+    {
+      "cefr": "Sound",
+      "statement": "My weak forms ('And you?', 'How've you been?', 'I'd better run') are reduced, and my intonation rises on questions and falls warmly on reactions and goodbyes."
+    }
+  ],
+  "gamification": {
+    "xp_per_substep": true,
+    "unlocks": [
+      "Topic Juggler badge — three topics in one conversation without a dead stop",
+      "Ball Back badge — returned the question five times in a row",
+      "Repair Kit badge — used 'Sorry, ___?' successfully instead of guessing",
+      "Smooth Exit badge — closed three chats with a natural closing chunk",
+      "Unlocks scenario: workplace_coffee_break",
+      "Unlocks scenario: meeting_new_people_at_a_party"
+    ],
+    "sound_meters": [
+      "weak_forms — reduction meter on 'And you?', 'How about you?', 'How've you been?', 'I'd better run'",
+      "intonation — rise/fall meter: rising tags and questions vs warm falling reactions and goodbyes",
+      "Streak meter: consecutive turns where reaction + follow-up question both landed"
+    ]
+  },
+  "_review_status": {
+    "thai_strings": "DRAFT - machine-generated, tagged th_status=draft_unverified. A native Thai speaker must review every string and set th_status='reviewed'.",
+    "facts": "UNVERIFIED - generated content, needs a local fact-check before shipping",
+    "generated_by": "claude-opus-5"
+  }
+}

@@ -1,0 +1,828 @@
+{
+  "scenario_id": "receiving_deliveries",
+  "locale": "global",
+  "title_en": "Receiving Deliveries",
+  "title_th": "การรับพัสดุ",
+  "tier": 1,
+  "cefr_range": [
+    "A2",
+    "B1"
+  ],
+  "prerequisites": [
+    "greetings_small_talk",
+    "phone_call_basics",
+    "giving_your_address"
+  ],
+  "recycles": [
+    "numbers 1-100 (flat / unit numbers)",
+    "telling the time and 'in ten minutes'",
+    "spelling your name out loud",
+    "polite requests: 'Could you ...?' / 'Can you ...?'",
+    "clarification: 'Sorry, could you say that again?'",
+    "thanking and closing a short exchange"
+  ],
+  "register": "Casual-polite, fast and transactional — the driver is in a hurry, so short clear sentences win",
+  "sound_target_box": {
+    "note_th": null,
+    "targets": [
+      {
+        "sound": "final_consonants",
+        "scoring_method": "phoneme",
+        "words_in_context": [
+          "Sign here, please.",
+          "Just leave it at the door.",
+          "It's a big box.",
+          "This isn't mine.",
+          "Wrong flat, sorry.",
+          "Leave it at the front desk.",
+          "I signed for it."
+        ],
+        "minimal_pairs": [
+          [
+            "mine",
+            "mind"
+          ],
+          [
+            "box",
+            "boss"
+          ],
+          [
+            "sign",
+            "size"
+          ],
+          [
+            "back",
+            "bag"
+          ],
+          [
+            "right",
+            "ride"
+          ],
+          [
+            "desk",
+            "des"
+          ]
+        ],
+        "why_it_matters_here": "Thai speakers unrelease final stops, so 'sign' comes out as 'sigh' and 'box' as 'bok'. At a doorstep the driver has 30 seconds: if 'This isn't mine' loses its final /n/ and /d/ sounds, it can be heard as 'This is mine' — and you have just signed for someone else's parcel and become responsible for it."
+      },
+      {
+        "sound": "numbers",
+        "scoring_method": "phoneme",
+        "words_in_context": [
+          "Flat fourteen, not forty.",
+          "It's unit thirteen B.",
+          "I'll be down in five minutes.",
+          "Two parcels, not three.",
+          "Building nineteen, second floor.",
+          "The last four digits are six zero one nine."
+        ],
+        "minimal_pairs": [
+          [
+            "thirteen",
+            "thirty"
+          ],
+          [
+            "fourteen",
+            "forty"
+          ],
+          [
+            "fifteen",
+            "fifty"
+          ],
+          [
+            "sixteen",
+            "sixty"
+          ],
+          [
+            "nineteen",
+            "ninety"
+          ]
+        ],
+        "why_it_matters_here": "The whole delivery hangs on one number. If 'fourteen' is heard as 'forty' over a crackly intercom, your parcel goes to a flat on another floor and the app says 'delivered'. Stress the second syllable and finish the /n/ in -teen."
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "en": "delivery driver / courier",
+      "th": "คนส่งของ คนขับรถเอาพัสดุมาส่งถึงบ้าน",
+      "group": "people",
+      "audio_needed": true,
+      "audio": "/static/audio/global/delivery-driver-courier.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "front desk / reception",
+      "th": "เคาน์เตอร์หน้าตึก จุดที่มีเจ้าหน้าที่นั่งอยู่ บางตึกเขารับของไว้ให้",
+      "group": "people_places",
+      "audio_needed": true,
+      "audio": "/static/audio/global/front-desk-reception.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "neighbour",
+      "th": "เพื่อนบ้าน บ้านข้างๆ หรือห้องข้างๆ",
+      "group": "people",
+      "audio_needed": true,
+      "audio": "/static/audio/global/neighbour.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "lobby",
+      "th": "โถงหน้าตึก ตรงทางเข้าก่อนถึงลิฟต์",
+      "group": "people_places",
+      "audio_needed": true,
+      "audio": "/static/audio/global/lobby.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "intercom / buzzer",
+      "th": "อินเตอร์คอมหน้าตึก กดเลขห้องแล้วคุยกันได้ ข้างบนกดเปิดประตูให้เราลงไปรับของ",
+      "group": "people_places",
+      "audio_needed": true,
+      "audio": "/static/audio/global/intercom-buzzer.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "parcel / package",
+      "th": "พัสดุ กล่องของที่ส่งมา ที่ออสเตรเลียคนใช้คำว่า parcel บ่อยกว่า package",
+      "group": "the_item",
+      "audio_needed": true,
+      "audio": "/static/audio/global/parcel-package.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "box",
+      "th": "กล่อง",
+      "group": "the_item",
+      "audio_needed": true,
+      "audio": "/static/audio/global/box.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "envelope",
+      "th": "ซอง แบบซองจดหมายหรือซองเอกสารบางๆ",
+      "group": "the_item",
+      "audio_needed": true,
+      "audio": "/static/audio/global/envelope.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "label",
+      "th": "ป้ายหรือสติกเกอร์ที่แปะบนกล่อง มีชื่อกับที่อยู่คนรับ",
+      "group": "the_item",
+      "audio_needed": true,
+      "audio": "/static/audio/global/label.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "tracking number",
+      "th": "เลขพัสดุ เอาไปเช็คออนไลน์ได้ว่าของไปถึงไหนแล้ว",
+      "group": "the_item",
+      "audio_needed": true,
+      "audio": "/static/audio/global/tracking-number.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "sign here",
+      "th": "เซ็นตรงนี้ครับ คนส่งของจะให้เราเซ็นรับ บางทีเซ็นบนจอมือถือเขา",
+      "group": "actions",
+      "audio_needed": true,
+      "audio": "/static/audio/global/sign-here.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "leave it at the door",
+      "th": "วางไว้หน้าประตูเลย ไม่ต้องรอเจอตัวเรา",
+      "group": "actions",
+      "audio_needed": true,
+      "audio": "/static/audio/global/leave-it-at-the-door.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "drop it off",
+      "th": "เอาไปส่ง เอาไปวางไว้ให้ ไม่ได้อยู่รอ",
+      "group": "actions",
+      "audio_needed": true,
+      "audio": "/static/audio/global/drop-it-off.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "pick it up / collect it",
+      "th": "ไปรับของเอง เช่น ของไม่ถึงบ้าน ต้องไปรับที่ post office",
+      "group": "actions",
+      "audio_needed": true,
+      "audio": "/static/audio/global/pick-it-up-collect-it.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "I'll be down in a minute",
+      "th": "\"เดี๋ยวลงไปนะ แป๊บเดียว\" พูดตอบคนส่งของทางอินเตอร์คอม",
+      "group": "actions",
+      "audio_needed": true,
+      "audio": "/static/audio/global/i-ll-be-down-in-a-minute.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "This isn't mine",
+      "th": "\"อันนี้ไม่ใช่ของผม/ของฉัน\" ใช้ตอนเขาส่งผิดคน",
+      "group": "problems",
+      "audio_needed": true,
+      "audio": "/static/audio/global/this-isn-t-mine.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "wrong address",
+      "th": "ที่อยู่ผิด ส่งมาผิดบ้านผิดห้อง",
+      "group": "problems",
+      "audio_needed": true,
+      "audio": "/static/audio/global/wrong-address.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "damaged / broken",
+      "th": "ของเสียหาย กล่องบุบ ของข้างในแตก",
+      "group": "problems",
+      "audio_needed": true,
+      "audio": "/static/audio/global/damaged-broken.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "missing",
+      "th": "ของหาย ไม่มาถึงสักที หรือของในกล่องขาดไปชิ้นนึง",
+      "group": "problems",
+      "audio_needed": true,
+      "audio": "/static/audio/global/missing.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "redeliver / come back tomorrow",
+      "th": "ให้เอามาส่งใหม่อีกรอบ ปกติเขาจะมาส่งพรุ่งนี้ หรือทิ้งใบไว้ให้เราไปรับเอง",
+      "group": "problems",
+      "audio_needed": true,
+      "audio": "/static/audio/global/redeliver-come-back-tomorrow.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "cash on delivery (COD)",
+      "th": "COD จ่ายเงินตอนรับของ ที่ออสเตรเลียเจอน้อยมาก ส่วนใหญ่จ่ายออนไลน์ไปแล้ว",
+      "group": "money_id",
+      "audio_needed": true,
+      "audio": "/static/audio/global/cash-on-delivery-cod.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "delivery fee",
+      "th": "ค่าส่ง เงินที่จ่ายเพิ่มนอกจากค่าของ",
+      "group": "money_id",
+      "audio_needed": true,
+      "audio": "/static/audio/global/delivery-fee.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "ID / photo ID",
+      "th": "บัตรที่มีรูปเรา เช่น ใบขับขี่ พาสปอร์ต บางของต้องโชว์ก่อนถึงจะรับได้",
+      "group": "money_id",
+      "audio_needed": true,
+      "audio": "/static/audio/global/id-photo-id.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "receipt",
+      "th": "ใบเสร็จ เก็บไว้ด้วย เผื่อของมีปัญหาจะได้เคลมได้",
+      "group": "money_id",
+      "audio_needed": true,
+      "audio": "/static/audio/global/receipt.mp3",
+      "th_status": "draft_unverified"
+    }
+  ],
+  "model_dialogues": [
+    {
+      "cefr": "A2",
+      "label": "A standard doorstep delivery — confirm, sign, done",
+      "lines": [
+        {
+          "speaker": "Driver",
+          "text": "Afternoon! Delivery for Pim Suwan?",
+          "audio": "/static/audio/global/afternoon-delivery-for-pim-suwan.mp3",
+          "th": "สวัสดีตอนบ่ายครับ! พัสดุของคุณพิม สุวรรณ ใช่ไหมครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Yes, that's me.",
+          "audio": "/static/audio/global/yes-that-s-me.mp3",
+          "th": "ใช่ค่ะ ตัวเองเลย",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Driver",
+          "text": "Great. Two parcels today. Can you sign here, please?",
+          "audio": "/static/audio/global/great-two-parcels-today-can-you-sign-here-please.mp3",
+          "th": "ดีครับ วันนี้มีสองกล่อง เซ็นตรงนี้หน่อยได้ไหมครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Sure. Where do I sign?",
+          "audio": "/static/audio/global/sure-where-do-i-sign.mp3",
+          "th": "ได้ค่ะ เซ็นตรงไหนคะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Driver",
+          "text": "Right there on the screen. Any finger's fine.",
+          "audio": "/static/audio/global/right-there-on-the-screen-any-finger-s-fine.mp3",
+          "th": "ตรงหน้าจอนี่เลยครับ ใช้นิ้วไหนก็ได้",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Okay. Can you put the big box inside the door?",
+          "audio": "/static/audio/global/okay-can-you-put-the-big-box-inside-the-door.mp3",
+          "th": "โอเค ช่วยยกกล่องใหญ่เข้าไปวางในประตูให้หน่อยได้ไหมคะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Driver",
+          "text": "No worries. There you go.",
+          "audio": "/static/audio/global/no-worries-there-you-go.mp3",
+          "th": "ได้เลยครับ นี่ครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Thanks a lot. Have a good one.",
+          "audio": "/static/audio/global/thanks-a-lot-have-a-good-one.mp3",
+          "th": "ขอบคุณมากค่ะ โชคดีนะคะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Driver",
+          "text": "Cheers, mate. Bye!",
+          "audio": "/static/audio/global/cheers-mate-bye.mp3",
+          "th": "โอเคครับ ไปก่อนนะ!",
+          "th_status": "draft_unverified"
+        }
+      ],
+      "shadow_focus_lines": [
+        {
+          "text": "Yes, that's me.",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/yes-that-s-me.mp3"
+        },
+        {
+          "text": "Where do I sign?",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/where-do-i-sign.mp3"
+        },
+        {
+          "text": "Two parcels, not three.",
+          "targets": [
+            "numbers",
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/two-parcels-not-three.mp3"
+        },
+        {
+          "text": "Put the big box inside.",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/put-the-big-box-inside.mp3"
+        }
+      ]
+    },
+    {
+      "cefr": "B1",
+      "label": "Wrong name on the label, then a cash-on-delivery surprise",
+      "lines": [
+        {
+          "speaker": "Driver",
+          "text": "Hi, parcel for flat forty. Is that you?",
+          "audio": "/static/audio/global/hi-parcel-for-flat-forty-is-that-you.mp3",
+          "th": "สวัสดีครับ พัสดุของห้อง 40 ใช่คุณไหมครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Sorry, this is flat fourteen.",
+          "audio": "/static/audio/global/sorry-this-is-flat-fourteen.mp3",
+          "th": "ขอโทษค่ะ ที่นี่ห้อง 14 ค่ะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Driver",
+          "text": "Fourteen? Let me check the label again.",
+          "audio": "/static/audio/global/fourteen-let-me-check-the-label-again.mp3",
+          "th": "14 เหรอครับ ขอดูป้ายอีกทีนะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "One four. Not four zero.",
+          "audio": "/static/audio/global/one-four-not-four-zero.mp3",
+          "th": "หนึ่ง-สี่ ไม่ใช่สี่-ศูนย์ค่ะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Driver",
+          "text": "Ah, you're right. But the name here says Nguyen. Do you know a Nguyen?",
+          "audio": "/static/audio/global/ah-you-re-right-but-the-name-here-says-nguyen-do-you-know-a-.mp3",
+          "th": "อ๋อ ใช่จริงด้วย แต่ชื่อในนี้เขียนว่า Nguyen รู้จักคนชื่อนี้ไหมครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "That's my neighbour, I think.",
+          "audio": "/static/audio/global/that-s-my-neighbour-i-think.mp3",
+          "th": "น่าจะเพื่อนบ้านค่ะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Driver",
+          "text": "Can you take it for them? Saves me a trip up.",
+          "audio": "/static/audio/global/can-you-take-it-for-them-saves-me-a-trip-up.mp3",
+          "th": "รับไว้แทนเขาได้ไหมครับ ผมจะได้ไม่ต้องเดินขึ้นไปอีกรอบ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Okay, but I can't sign their name.",
+          "audio": "/static/audio/global/okay-but-i-can-t-sign-their-name.mp3",
+          "th": "ได้ค่ะ แต่เซ็นชื่อเขาแทนไม่ได้นะคะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Driver",
+          "text": "No, you sign your own name and I'll write 'left with neighbour'. What's your name?",
+          "audio": "/static/audio/global/no-you-sign-your-own-name-and-i-ll-write-left-with-neighbour.mp3",
+          "th": "ไม่ต้องครับ เซ็นชื่อตัวเองเลย เดี๋ยวผมเขียนว่า 'ฝากไว้กับเพื่อนบ้าน' คุณชื่ออะไรครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "It's Pim. P-I-M.",
+          "audio": "/static/audio/global/it-s-pim-p-i-m.mp3",
+          "th": "พิมค่ะ P-I-M",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Driver",
+          "text": "Lovely. Oh — and this second one's cash on delivery. Two hundred and fifteen.",
+          "audio": "/static/audio/global/lovely-oh-and-this-second-one-s-cash-on-delivery-two-hundred.mp3",
+          "th": "เยี่ยมครับ อ้อ — อีกกล่องนึงเป็นแบบเก็บเงินปลายทางนะครับ สองร้อยสิบห้า",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Sorry, how much?",
+          "audio": "/static/audio/global/sorry-how-much.mp3",
+          "th": "ขอโทษค่ะ เท่าไหร่นะคะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Driver",
+          "text": "Two hundred and fifteen. Card or cash?",
+          "audio": "/static/audio/global/two-hundred-and-fifteen-card-or-cash.mp3",
+          "th": "สองร้อยสิบห้าครับ จ่ายบัตรหรือเงินสดดีครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "I didn't order that one.",
+          "audio": "/static/audio/global/i-didn-t-order-that-one.mp3",
+          "th": "กล่องนั้นไม่ได้สั่งค่ะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Driver",
+          "text": "Hmm. Is it also for Nguyen?",
+          "audio": "/static/audio/global/hmm-is-it-also-for-nguyen.mp3",
+          "th": "อืม ของคุณ Nguyen เหมือนกันหรือเปล่าครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Yes. Please don't leave it.",
+          "audio": "/static/audio/global/yes-please-don-t-leave-it.mp3",
+          "th": "ใช่ค่ะ อย่าเพิ่งวางไว้นะคะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Driver",
+          "text": "Fair enough. I'll take it back and try again tomorrow. Can you tell them?",
+          "audio": "/static/audio/global/fair-enough-i-ll-take-it-back-and-try-again-tomorrow-can-you.mp3",
+          "th": "โอเคครับ งั้นเอากลับไปก่อน พรุ่งนี้มาใหม่ ช่วยบอกเขาหน่อยได้ไหมครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Sure. Can you leave a card?",
+          "audio": "/static/audio/global/sure-can-you-leave-a-card.mp3",
+          "th": "ได้ค่ะ ฝากใบแจ้งไว้ให้หน่อยได้ไหมคะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Driver",
+          "text": "Here you go. Thanks for your help.",
+          "audio": "/static/audio/global/here-you-go-thanks-for-your-help.mp3",
+          "th": "นี่ครับ ขอบคุณที่ช่วยนะครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "No problem. Thanks!",
+          "audio": "/static/audio/global/no-problem-thanks.mp3",
+          "th": "ไม่มีปัญหาค่ะ ขอบคุณค่ะ",
+          "th_status": "draft_unverified"
+        }
+      ],
+      "shadow_focus_lines": [
+        {
+          "text": "Sorry, this is flat fourteen.",
+          "targets": [
+            "numbers",
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/sorry-this-is-flat-fourteen.mp3"
+        },
+        {
+          "text": "One four, not four zero.",
+          "targets": [
+            "numbers"
+          ],
+          "audio": "/static/audio/global/one-four-not-four-zero.mp3"
+        },
+        {
+          "text": "I didn't order that one.",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/i-didn-t-order-that-one.mp3"
+        },
+        {
+          "text": "Please don't leave it.",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/please-don-t-leave-it.mp3"
+        }
+      ]
+    }
+  ],
+  "chunk_drills": [
+    {
+      "label": "Confirming who you are",
+      "pattern": "Yes, that's me. / No, that's not me.",
+      "examples": [
+        "Yes, that's me.",
+        "Yes, that's my name.",
+        "No, that's not me — sorry.",
+        "That's my neighbour."
+      ],
+      "spiralled_grammar": "Recycles short answers with 'that's' + possessive from greetings_small_talk."
+    },
+    {
+      "label": "Fixing the number (the big one)",
+      "pattern": "It's flat ___, not flat ___. / One four, not four zero.",
+      "examples": [
+        "It's flat fourteen, not forty.",
+        "It's unit thirteen, not thirty.",
+        "Building nineteen, second floor.",
+        "One five, not five zero."
+      ],
+      "spiralled_grammar": "Recycles numbers 1-100 and correction with 'not'; digit-by-digit repair strategy."
+    },
+    {
+      "label": "Saying where to leave it",
+      "pattern": "Could you leave it ___?",
+      "examples": [
+        "Could you leave it at the door?",
+        "Could you leave it at the front desk?",
+        "Could you leave it with my neighbour in fourteen B?",
+        "Please don't leave it outside."
+      ],
+      "spiralled_grammar": "Recycles 'Could you...?' polite requests + place prepositions at / with / outside."
+    },
+    {
+      "label": "Signing and ID",
+      "pattern": "Where do I sign? / Do you need ID?",
+      "examples": [
+        "Where do I sign?",
+        "Do I have to sign?",
+        "Do you need ID?",
+        "Can I sign for my flatmate?"
+      ],
+      "spiralled_grammar": "Wh-questions with 'do' + have to / can for obligation and permission."
+    },
+    {
+      "label": "Refusing a parcel that isn't yours",
+      "pattern": "Sorry, this isn't mine. / I didn't order that.",
+      "examples": [
+        "Sorry, this isn't mine.",
+        "I didn't order that one.",
+        "Wrong name, sorry.",
+        "Please take it back."
+      ],
+      "spiralled_grammar": "Negative past simple 'didn't order' + possessive pronoun 'mine'."
+    },
+    {
+      "label": "Buying time and clarifying",
+      "pattern": "I'll be down in ___. / Sorry, could you say that again?",
+      "examples": [
+        "I'll be down in two minutes.",
+        "Wait one minute, please.",
+        "Sorry, could you say that again?",
+        "Sorry, how much?"
+      ],
+      "spiralled_grammar": "Recycles 'will' for instant decisions and clarification formulas from phone_call_basics."
+    }
+  ],
+  "listening_items": [
+    {
+      "audio_text": "Hi, it's the courier downstairs. I've got a parcel for flat fifteen — can you buzz me in?",
+      "channel": "intercom",
+      "question": "Which flat is the parcel for?",
+      "answer": "Flat fifteen (15) — not fifty.",
+      "distractor_focus": "fifteen vs fifty (numbers)"
+    },
+    {
+      "audio_text": "Sorry we missed you. Your parcel is at the front desk. Bring photo ID to collect it.",
+      "channel": "voice_message",
+      "question": "Where is the parcel, and what must you bring?",
+      "answer": "At the front desk; bring photo ID.",
+      "distractor_focus": "final consonants in 'desk' and 'ID' vs 'at the door'"
+    },
+    {
+      "audio_text": "I can leave it at the door, but you'll need to confirm in the app. Otherwise you have to sign.",
+      "channel": "doorstep",
+      "question": "What do you have to do if you don't confirm in the app?",
+      "answer": "You have to sign for the parcel.",
+      "distractor_focus": "'sign' vs 'sigh' — dropped final /n/"
+    },
+    {
+      "audio_text": "There are three boxes on the van for you, but only two are on my list. I'll bring the third one tomorrow.",
+      "channel": "doorstep",
+      "question": "How many boxes will you get today?",
+      "answer": "Two today; the third comes tomorrow.",
+      "distractor_focus": "two / three and 'boxes' plural final cluster"
+    },
+    {
+      "audio_text": "Your delivery window is between four thirty and six. The driver's name is Sam.",
+      "channel": "phone",
+      "question": "When will the driver come?",
+      "answer": "Between 4:30 and 6:00.",
+      "distractor_focus": "four thirty vs four thirteen (numbers)"
+    }
+  ],
+  "guided_roleplay": {
+    "learner_role": "You are at home waiting for two parcels. The buzzer rings.",
+    "flow": [
+      "Answer the intercom and confirm your name.",
+      "Correct the flat number clearly (say the digits one by one).",
+      "Tell the driver what to do: come up, wait, or leave it at the door / front desk.",
+      "Sign, and ask where to sign or whether ID is needed.",
+      "Check the label — one parcel has the wrong name. Say it isn't yours.",
+      "Agree the next step: take it back, redeliver tomorrow, or leave a card.",
+      "Thank the driver and close the conversation."
+    ],
+    "sentence_frames": [
+      "Yes, that's me.",
+      "It's flat ___, not ___.",
+      "One four, not four zero.",
+      "I'll be down in two minutes.",
+      "Could you leave it at the door?",
+      "Where do I sign?",
+      "Do you need ID?",
+      "Sorry, this isn't mine.",
+      "I didn't order that one.",
+      "Can you come back tomorrow?",
+      "Sorry, could you say that again?",
+      "Thanks a lot!"
+    ],
+    "hints_available": true
+  },
+  "free_roleplay": {
+    "ai_persona": "A friendly but rushed delivery driver with a van double-parked outside. Speaks fast, uses short casual phrases ('No worries', 'Cheers', 'Sign here for me'), and will repeat more slowly if the learner asks.",
+    "a2_behavior": "Sticks to the standard sequence: confirms the name, states how many parcels, asks for a signature, accepts 'leave it at the door', says goodbye. Repeats numbers on request.",
+    "b1_curveballs": [
+      "Says the wrong flat number and insists it is correct until the learner spells out the digits.",
+      "The label has a neighbour's name and the driver asks the learner to accept it on their behalf.",
+      "Announces an unexpected cash-on-delivery charge and asks 'card or cash?'.",
+      "Says one box is missing from the van and offers redelivery tomorrow or pickup at the depot.",
+      "The box is visibly damaged and the driver asks whether the learner still wants to accept it.",
+      "Refuses to leave it at the door because the item needs a signature and ID.",
+      "Is about to leave the parcel in the lobby and drive off unless the learner stops them."
+    ],
+    "roleplay_rubric": [
+      {
+        "criterion": "Confirmed identity and corrected/confirmed the flat or unit number so the driver repeated it back correctly",
+        "type": "required"
+      },
+      {
+        "criterion": "Gave a clear instruction about where to leave the parcel (door / front desk / neighbour) or came down to collect it",
+        "type": "required"
+      },
+      {
+        "criterion": "Handled signing: asked where to sign, or asked whether ID was needed",
+        "type": "required"
+      },
+      {
+        "criterion": "Refused or flagged a parcel that was not theirs instead of silently accepting it",
+        "type": "required"
+      },
+      {
+        "criterion": "Asked at least one clarification question ('Sorry, could you say that again?' / 'Sorry, how much?')",
+        "type": "required"
+      },
+      {
+        "criterion": "Pronunciation: final consonants ('sign', 'box', 'mine', 'desk') audible and -teen/-ty numbers distinguishable",
+        "type": "pronunciation"
+      },
+      {
+        "criterion": "Coped with the curveball (COD charge, damaged box, missing parcel) and negotiated a next step without abandoning the conversation",
+        "type": "stretch_b1"
+      }
+    ]
+  },
+  "register_culture_note": {
+    "en": "Doorstep delivery talk is fast, friendly and very short. Drivers are on a timer, so full polite sentences are less useful than clear short ones: 'Yes, that's me', 'Flat fourteen', 'Where do I sign?'. Saying no is completely normal — refusing a parcel that isn't yours, or refusing an unexpected charge, is expected behaviour, not rudeness. Repeat digits one by one when a number is misheard.",
+    "th": null,
+    "do_dont": [
+      {
+        "avoid": "Silently taking a parcel with someone else's name on it",
+        "prefer": "Sorry, this isn't mine — wrong name."
+      },
+      {
+        "avoid": "'Fourteen' said with weak stress and no final /n/ (heard as 'forty')",
+        "prefer": "One four. Fourteen, not forty."
+      },
+      {
+        "avoid": "'Put it door' (missing preposition, dropped final sounds)",
+        "prefer": "Could you leave it at the door?"
+      },
+      {
+        "avoid": "Nodding and smiling when you didn't understand the amount",
+        "prefer": "Sorry, how much? Could you say that again?"
+      },
+      {
+        "avoid": "'You must wait me' when you need time",
+        "prefer": "I'll be down in two minutes."
+      },
+      {
+        "avoid": "Signing for a neighbour without saying so",
+        "prefer": "I'll sign, but it's for my neighbour in fourteen B."
+      }
+    ],
+    "thai_cultural_note": "In Thailand it is common and low-risk for a guard, front desk or neighbour to accept parcels for you, and many learners assume the same casual arrangement applies everywhere. In many countries a signature makes you legally responsible for that item, and a COD signature means the money is owed. It is not impolite to say 'Sorry, this isn't mine' or 'Please don't leave it' — drivers hear this every day and simply mark it as refused."
+  },
+  "can_do_checkpoints": [
+    {
+      "cefr": "A2",
+      "statement": "I can confirm my name and flat number at the door or on the intercom."
+    },
+    {
+      "cefr": "A2",
+      "statement": "I can say where I want a parcel left and ask where to sign."
+    },
+    {
+      "cefr": "A2",
+      "statement": "I can understand how many parcels are being delivered and when the driver will return."
+    },
+    {
+      "cefr": "B1",
+      "statement": "I can refuse a parcel that isn't mine and explain why."
+    },
+    {
+      "cefr": "B1",
+      "statement": "I can deal with a surprise — a cash-on-delivery charge, a damaged box or a missing item — and agree a next step."
+    },
+    {
+      "cefr": "Sound",
+      "statement": "My final consonants ('sign', 'box', 'mine', 'desk') are audible and my -teen/-ty numbers are not confused."
+    }
+  ],
+  "gamification": {
+    "xp_per_substep": true,
+    "unlocks": [
+      "Intercom Master — handle a buzzer call with no repeats needed",
+      "Right Flat, Right Box — correct a wrong number so the driver repeats it back correctly",
+      "Not Mine — refuse a mis-addressed parcel politely in under three turns",
+      "Curveball Survivor — complete a B1 roleplay with a COD or damaged-box twist"
+    ],
+    "sound_meters": [
+      "final_consonants",
+      "numbers"
+    ]
+  },
+  "_review_status": {
+    "thai_strings": "DRAFT - machine-generated, tagged th_status=draft_unverified. A native Thai speaker must review every string and set th_status='reviewed'.",
+    "facts": "UNVERIFIED - generated content, needs a local fact-check before shipping",
+    "generated_by": "claude-opus-5"
+  }
+}

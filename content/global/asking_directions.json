@@ -10,17 +10,17 @@
   ],
   "prerequisites": [
     "greetings_small_talk",
-    "numbers_and_time"
+    "numbers_1_100",
+    "polite_requests"
   ],
   "recycles": [
-    "Excuse me / Sorry to bother you (from greetings_small_talk)",
-    "numbers 1-100 (block counts, bus numbers, minutes)",
-    "time expressions: about five minutes, fifteen minutes",
-    "Sorry, could you say that again? (clarification chunk)",
-    "Thanks a lot / No worries (closing a short exchange)",
-    "How much / How long question shapes"
+    "greetings_small_talk (Excuse me / Thank you / No worries)",
+    "numbers_1_100 (fifteen vs fifty, bus number 8, five minutes)",
+    "time_and_duration (How long does it take? About ten minutes)",
+    "clarification_phrases (Sorry, could you say that again?)",
+    "there_is_there_are (Is there a pharmacy near here?)"
   ],
-  "register": "Polite-casual with a stranger in public: short, friendly, no honorifics; opens with 'Excuse me', closes with 'Thanks'.",
+  "register": "Casual-polite with strangers — short, friendly, direct; open with 'Excuse me', close with 'Thanks a lot'.",
   "sound_target_box": {
     "note_th": null,
     "targets": [
@@ -28,92 +28,88 @@
         "sound": "r_l",
         "scoring_method": "phoneme",
         "words_in_context": [
-          "right",
-          "left",
-          "turn right at the corner",
-          "on your left",
-          "red bridge",
+          "turn left",
+          "on your right",
+          "the third street on the right",
+          "the traffic lights",
+          "road works",
           "the railway station",
-          "the third street on the right"
+          "behind the market, on the left"
         ],
         "minimal_pairs": [
           [
-            "right",
-            "light"
+            "light",
+            "right"
           ],
           [
-            "road",
-            "load"
+            "load",
+            "road"
           ],
           [
-            "correct",
-            "collect"
+            "long",
+            "wrong"
           ],
           [
-            "arrive",
-            "alive"
+            "glass",
+            "grass"
           ],
           [
-            "pray",
-            "play"
+            "collect",
+            "correct"
           ]
         ],
-        "why_it_matters_here": "If 'right' comes out as 'light', the stranger points you the opposite way and you walk fifteen minutes in the wrong direction — and in this unit the learner must also repeat the route back, so one wrong /r/ gets confirmed as correct by the other speaker."
+        "why_it_matters_here": "'Left' and 'right' are the entire message. If 'left' comes out as 'reft' or 'right' as 'light', the stranger points the opposite way — or worse, agrees with you and you walk twenty minutes in the wrong direction with your bag."
       },
       {
         "sound": "str_cluster",
         "scoring_method": "phoneme",
         "words_in_context": [
           "go straight",
-          "Green Street",
-          "the third street on the right",
-          "straight down this road",
-          "the street after the market"
+          "straight down this street",
+          "the third street on your right",
+          "across the street",
+          "walk straight past the market"
         ],
         "minimal_pairs": [
+          [
+            "street",
+            "seat"
+          ],
           [
             "straight",
             "state"
           ],
           [
-            "street",
-            "sweet"
-          ],
-          [
-            "string",
-            "sing"
-          ],
-          [
             "strip",
-            "sip"
+            "trip"
           ],
           [
-            "strong",
-            "song"
+            "straight",
+            "great"
+          ],
+          [
+            "stream",
+            "steam"
           ]
         ],
-        "why_it_matters_here": "'Straight' and 'street' are the two most frequent words in any set of walking directions. Dropping the cluster turns 'go straight' into 'go state' and 'third street' into 'third sweet' — the listener stops the conversation to work out what you said, and you lose the rest of the route."
+        "why_it_matters_here": "Thai has no /str/, so 'straight' becomes 'sa-tate' or 'tate' and 'street' becomes 'seat'. 'Take the third seat' is not a direction — the person will stop, look confused, and you lose the one chance you had to ask them."
       },
       {
         "sound": "final_consonants",
         "scoring_method": "phoneme",
         "words_in_context": [
-          "left",
-          "next to the 7-Eleven",
-          "past the market",
-          "the bank",
-          "cross the bridge",
-          "it's closed",
-          "walk five blocks"
+          "turn left",
+          "walk past the bank",
+          "the next street",
+          "two blocks",
+          "the bus stop",
+          "the road is closed",
+          "at the traffic lights"
         ],
         "minimal_pairs": [
           [
             "left",
             "let"
-          ],
-          [
-            "bank",
-            "ban"
           ],
           [
             "past",
@@ -124,35 +120,47 @@
             "neck"
           ],
           [
-            "walk",
-            "war"
+            "bank",
+            "ban"
+          ],
+          [
+            "light",
+            "lie"
           ]
         ],
-        "why_it_matters_here": "Unreleased Thai finals make 'left' sound like 'let' and 'past the market' like 'pass the market' — two completely different instructions. When you repeat the route back to confirm it, a swallowed final consonant makes the stranger think you understood when you didn't."
+        "why_it_matters_here": "Thai finals are unreleased, so 'left' sounds like 'lef', 'next street' like 'neck street', and 'past the bank' like 'pass the ban'. Direction words are almost all one syllable — if the last sound disappears, there is nothing left for the listener to guess from."
       }
     ]
   },
   "vocabulary": [
     {
       "en": "excuse me",
-      "th": "ใช้เรียกคนแปลกหน้าก่อนถาม เหมือน 'ขอโทษนะคะ/ครับ' ตอนจะถามทาง",
-      "group": "opening the exchange",
+      "th": "\"ขอโทษนะคะ/ครับ\" ใช้เรียกคนแปลกหน้าก่อนถามทาง ไม่ได้แปลว่าขอโทษที่ทำผิด",
+      "group": "opening_and_closing",
       "audio_needed": true,
       "audio": "/static/audio/global/excuse-me.mp3",
       "th_status": "draft_unverified"
     },
     {
-      "en": "sorry to bother you",
-      "th": "สุภาพกว่าหน่อย ใช้ตอนเขากำลังยุ่งอยู่ แบบ 'ขอโทษที่รบกวนนะ'",
-      "group": "opening the exchange",
+      "en": "thanks a lot",
+      "th": "ขอบคุณมาก ๆ แบบเป็นกันเอง ใช้ได้ทั่วไป",
+      "group": "opening_and_closing",
       "audio_needed": true,
-      "audio": "/static/audio/global/sorry-to-bother-you.mp3",
+      "audio": "/static/audio/global/thanks-a-lot.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "no worries",
+      "th": "\"ไม่เป็นไร\" คนออสซี่พูดบ่อยมาก ตอบแทนคำว่า you're welcome ก็ได้",
+      "group": "opening_and_closing",
+      "audio_needed": true,
+      "audio": "/static/audio/global/no-worries.mp3",
       "th_status": "draft_unverified"
     },
     {
       "en": "go straight",
-      "th": "ตรงไป ไม่ต้องเลี้ยว",
-      "group": "route verbs",
+      "th": "เดินตรงไป ไม่ต้องเลี้ยว",
+      "group": "directions",
       "audio_needed": true,
       "audio": "/static/audio/global/go-straight.mp3",
       "th_status": "draft_unverified"
@@ -160,7 +168,7 @@
     {
       "en": "turn left",
       "th": "เลี้ยวซ้าย",
-      "group": "route verbs",
+      "group": "directions",
       "audio_needed": true,
       "audio": "/static/audio/global/turn-left.mp3",
       "th_status": "draft_unverified"
@@ -168,110 +176,62 @@
     {
       "en": "turn right",
       "th": "เลี้ยวขวา",
-      "group": "route verbs",
+      "group": "directions",
       "audio_needed": true,
       "audio": "/static/audio/global/turn-right.mp3",
       "th_status": "draft_unverified"
     },
     {
-      "en": "cross the road",
-      "th": "ข้ามถนน (ที่ออสฯ ควรข้ามตรงทางม้าลายหรือไฟคนข้าม)",
-      "group": "route verbs",
-      "audio_needed": true,
-      "audio": "/static/audio/global/cross-the-road.mp3",
-      "th_status": "draft_unverified"
-    },
-    {
-      "en": "go past",
-      "th": "เดินเลยไป ผ่านไป เช่น go past the bank = เดินเลยธนาคารไป",
-      "group": "route verbs",
-      "audio_needed": true,
-      "audio": "/static/audio/global/go-past.mp3",
-      "th_status": "draft_unverified"
-    },
-    {
-      "en": "take the second street",
-      "th": "เลี้ยวเข้าถนนที่สอง นับจากตรงที่ยืนอยู่",
-      "group": "route verbs",
-      "audio_needed": true,
-      "audio": "/static/audio/global/take-the-second-street.mp3",
-      "th_status": "draft_unverified"
-    },
-    {
       "en": "at the corner",
-      "th": "ตรงหัวมุม ตรงสี่แยกพอดี",
-      "group": "position words",
+      "th": "ตรงหัวมุมถนน จุดที่ถนนสองสายมาบรรจบกัน",
+      "group": "directions",
       "audio_needed": true,
       "audio": "/static/audio/global/at-the-corner.mp3",
       "th_status": "draft_unverified"
     },
     {
-      "en": "next to",
-      "th": "อยู่ติดกัน อยู่ข้างๆ",
-      "group": "position words",
+      "en": "the next street",
+      "th": "ถนนถัดไป คือเลยถนนที่อยู่ตรงหน้าไปอีกเส้นหนึ่ง",
+      "group": "directions",
       "audio_needed": true,
-      "audio": "/static/audio/global/next-to.mp3",
+      "audio": "/static/audio/global/the-next-street.mp3",
       "th_status": "draft_unverified"
     },
     {
-      "en": "opposite / across from",
-      "th": "อยู่ฝั่งตรงข้าม คนละฝั่งถนน",
-      "group": "position words",
+      "en": "two blocks",
+      "th": "สองบล็อก คือเดินผ่านสี่แยกไปสองครั้ง คนออสซี่วัดระยะแบบนี้",
+      "group": "directions",
       "audio_needed": true,
-      "audio": "/static/audio/global/opposite-across-from.mp3",
+      "audio": "/static/audio/global/two-blocks.mp3",
       "th_status": "draft_unverified"
     },
     {
-      "en": "behind",
-      "th": "อยู่ด้านหลัง ต้องเดินอ้อมไป",
-      "group": "position words",
+      "en": "cross the road",
+      "th": "ข้ามถนน ไปอีกฝั่ง",
+      "group": "directions",
       "audio_needed": true,
-      "audio": "/static/audio/global/behind.mp3",
-      "th_status": "draft_unverified"
-    },
-    {
-      "en": "on your left",
-      "th": "อยู่ทางซ้ายมือของคุณตอนเดินไป",
-      "group": "position words",
-      "audio_needed": true,
-      "audio": "/static/audio/global/on-your-left.mp3",
-      "th_status": "draft_unverified"
-    },
-    {
-      "en": "at the end of the street",
-      "th": "อยู่สุดถนน เดินไปจนสุดเลย",
-      "group": "position words",
-      "audio_needed": true,
-      "audio": "/static/audio/global/at-the-end-of-the-street.mp3",
-      "th_status": "draft_unverified"
-    },
-    {
-      "en": "the 7-Eleven",
-      "th": "ร้านสะดวกซื้อ เปิด 24 ชม. คนออสฯ ใช้เป็นจุดสังเกตบอกทางบ่อยมาก",
-      "group": "landmarks",
-      "audio_needed": true,
-      "audio": "/static/audio/global/the-7-eleven.mp3",
+      "audio": "/static/audio/global/cross-the-road.mp3",
       "th_status": "draft_unverified"
     },
     {
       "en": "the traffic lights",
-      "th": "ไฟแดง ไฟจราจร ใช้เป็นจุดนับว่าเลี้ยวตรงไหน",
+      "th": "ไฟจราจร ไฟแดง ใช้เป็นจุดสังเกตบอกทางบ่อยมาก",
       "group": "landmarks",
       "audio_needed": true,
       "audio": "/static/audio/global/the-traffic-lights.mp3",
       "th_status": "draft_unverified"
     },
     {
-      "en": "the bridge",
-      "th": "สะพาน",
+      "en": "the 7-Eleven",
+      "th": "ร้านสะดวกซื้อเซเว่น มีทั่วออสเตรเลีย ใช้เป็นจุดสังเกตได้ดี",
       "group": "landmarks",
       "audio_needed": true,
-      "audio": "/static/audio/global/the-bridge.mp3",
+      "audio": "/static/audio/global/the-7-eleven.mp3",
       "th_status": "draft_unverified"
     },
     {
       "en": "the market",
-      "th": "ตลาด ที่ออสฯ มักเป็นตลาดนัดสุดสัปดาห์ ไม่ได้เปิดทุกวันเหมือนบ้านเรา",
+      "th": "ตลาด",
       "group": "landmarks",
       "audio_needed": true,
       "audio": "/static/audio/global/the-market.mp3",
@@ -294,80 +254,104 @@
       "th_status": "draft_unverified"
     },
     {
-      "en": "the pharmacy / chemist",
-      "th": "ร้านขายยา ที่ออสฯ คนพูดว่า chemist มากกว่า pharmacy เป็นที่ไปรับยาตาม script",
+      "en": "the pharmacy",
+      "th": "ร้านขายยา ที่เอา script ไปรับยา",
       "group": "landmarks",
       "audio_needed": true,
-      "audio": "/static/audio/global/the-pharmacy-chemist.mp3",
+      "audio": "/static/audio/global/the-pharmacy.mp3",
       "th_status": "draft_unverified"
     },
     {
-      "en": "the soi (small side street)",
-      "th": "ซอย — ฝรั่งไม่มีคำนี้ ที่ออสฯ พูดว่า lane, side street หรือ small street แทน",
-      "group": "landmarks",
+      "en": "next to",
+      "th": "อยู่ติดกัน อยู่ข้าง ๆ",
+      "group": "position_words",
       "audio_needed": true,
-      "audio": "/static/audio/global/the-soi-small-side-street.mp3",
+      "audio": "/static/audio/global/next-to.mp3",
       "th_status": "draft_unverified"
     },
     {
-      "en": "a block",
-      "th": "ช่วงถนนหนึ่งช่วง จากแยกหนึ่งถึงอีกแยกหนึ่ง เช่น two blocks = เดินผ่านสองแยก ไทยไม่มีคำนี้ ต้องชิน",
-      "group": "distance and time",
+      "en": "opposite / across from",
+      "th": "อยู่ตรงข้าม คนละฝั่งถนน",
+      "group": "position_words",
       "audio_needed": true,
-      "audio": "/static/audio/global/a-block.mp3",
+      "audio": "/static/audio/global/opposite-across-from.mp3",
       "th_status": "draft_unverified"
     },
     {
-      "en": "how far is it?",
-      "th": "ถามว่าไกลไหม อยู่ห่างแค่ไหน",
-      "group": "distance and time",
+      "en": "behind",
+      "th": "อยู่ด้านหลัง",
+      "group": "position_words",
       "audio_needed": true,
-      "audio": "/static/audio/global/how-far-is-it.mp3",
+      "audio": "/static/audio/global/behind.mp3",
       "th_status": "draft_unverified"
     },
     {
-      "en": "about ten minutes on foot",
-      "th": "เดินประมาณสิบนาที (on foot = เดินไป ไม่ได้นั่งรถ)",
-      "group": "distance and time",
+      "en": "in front of",
+      "th": "อยู่ด้านหน้า",
+      "group": "position_words",
       "audio_needed": true,
-      "audio": "/static/audio/global/about-ten-minutes-on-foot.mp3",
+      "audio": "/static/audio/global/in-front-of.mp3",
       "th_status": "draft_unverified"
     },
     {
-      "en": "it's a five-minute walk",
-      "th": "เดินแค่ห้านาทีเอง ใกล้มาก",
-      "group": "distance and time",
+      "en": "on your left",
+      "th": "อยู่ทางซ้ายมือของเรา ตอนเดินไป",
+      "group": "position_words",
       "audio_needed": true,
-      "audio": "/static/audio/global/it-s-a-five-minute-walk.mp3",
+      "audio": "/static/audio/global/on-your-left.mp3",
       "th_status": "draft_unverified"
     },
     {
-      "en": "it's closed / there's construction",
-      "th": "ปิดอยู่ หรือกำลังก่อสร้าง เดินทางนี้ไม่ได้ ต้องอ้อม",
+      "en": "Is it far?",
+      "th": "\"ไกลไหม?\" ถามระยะทางก่อนตัดสินใจว่าจะเดินหรือนั่งรถ",
+      "group": "distance_and_time",
+      "audio_needed": true,
+      "audio": "/static/audio/global/is-it-far.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "about ten minutes",
+      "th": "ประมาณสิบนาที ปกติหมายถึงเดินสิบนาที",
+      "group": "distance_and_time",
+      "audio_needed": true,
+      "audio": "/static/audio/global/about-ten-minutes.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "walking distance",
+      "th": "เดินถึงได้ ไม่ต้องนั่งรถ",
+      "group": "distance_and_time",
+      "audio_needed": true,
+      "audio": "/static/audio/global/walking-distance.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "the road is closed",
+      "th": "ถนนปิด ผ่านไม่ได้ ต้องอ้อมทางอื่น",
       "group": "problems",
       "audio_needed": true,
-      "audio": "/static/audio/global/it-s-closed-there-s-construction.mp3",
+      "audio": "/static/audio/global/the-road-is-closed.mp3",
       "th_status": "draft_unverified"
     },
     {
-      "en": "a dead end",
-      "th": "ทางตัน เดินไปแล้วไปต่อไม่ได้",
+      "en": "road works",
+      "th": "กำลังซ่อมถนน เจอบ่อยมากที่นี่ ทำให้ต้องเดินอ้อม",
       "group": "problems",
       "audio_needed": true,
-      "audio": "/static/audio/global/a-dead-end.mp3",
+      "audio": "/static/audio/global/road-works.mp3",
       "th_status": "draft_unverified"
     },
     {
-      "en": "I think I'm lost",
-      "th": "'ผมว่าผมหลงแล้วล่ะ' พูดแบบนี้ได้เลย คนออสฯ ช่วยบอกทางเต็มใจ",
+      "en": "I'm lost",
+      "th": "\"หลงทาง\" พูดได้เลย ไม่ต้องอาย คนที่นี่ช่วยบอกทางกันปกติ",
       "group": "problems",
       "audio_needed": true,
-      "audio": "/static/audio/global/i-think-i-m-lost.mp3",
+      "audio": "/static/audio/global/i-m-lost.mp3",
       "th_status": "draft_unverified"
     },
     {
       "en": "Sorry, could you say that again?",
-      "th": "ขอให้พูดอีกที ใช้ได้เลยไม่ต้องเกรงใจ ฟังไม่ทันเป็นเรื่องปกติ",
+      "th": "\"ขอโทษ พูดอีกทีได้ไหม\" ใช้เมื่อฟังไม่ทัน สุภาพและใช้ได้บ่อย",
       "group": "clarifying",
       "audio_needed": true,
       "audio": "/static/audio/global/sorry-could-you-say-that-again.mp3",
@@ -375,7 +359,7 @@
     },
     {
       "en": "Left or right?",
-      "th": "ถามย้ำสั้นๆ ว่า ซ้ายหรือขวา? ตอนไม่แน่ใจ",
+      "th": "\"ซ้ายหรือขวา?\" ถามย้ำให้ชัวร์ เวลาฟังแล้วไม่แน่ใจ",
       "group": "clarifying",
       "audio_needed": true,
       "audio": "/static/audio/global/left-or-right.mp3",
@@ -383,25 +367,17 @@
     },
     {
       "en": "Could you show me on the map?",
-      "th": "ขอให้เขาชี้ในแผนที่ในมือถือให้ดู วิธีนี้ง่ายสุดเวลาฟังไม่ออก",
+      "th": "\"ชี้ในแผนที่ให้ดูหน่อยได้ไหม\" เปิดมือถือให้เขาชี้ ง่ายกว่าฟังอย่างเดียวเยอะ",
       "group": "clarifying",
       "audio_needed": true,
       "audio": "/static/audio/global/could-you-show-me-on-the-map.mp3",
-      "th_status": "draft_unverified"
-    },
-    {
-      "en": "Thanks a lot!",
-      "th": "ขอบคุณมาก พูดตอนจบ คนออสฯ ก็ตอบ 'no worries' แปลว่าไม่เป็นไร",
-      "group": "closing",
-      "audio_needed": true,
-      "audio": "/static/audio/global/thanks-a-lot.mp3",
       "th_status": "draft_unverified"
     }
   ],
   "model_dialogues": [
     {
       "cefr": "A2",
-      "label": "Finding a pharmacy on the street — everything goes to plan",
+      "label": "Short ask on the street — pharmacy near the 7-Eleven",
       "lines": [
         {
           "speaker": "Learner",
@@ -414,14 +390,14 @@
           "speaker": "Passer-by",
           "text": "Yeah, there's one on Green Street.",
           "audio": "/static/audio/global/yeah-there-s-one-on-green-street.mp3",
-          "th": "มีสิ อยู่ที่ถนน Green Street",
+          "th": "มีสิ อยู่ถนน Green Street",
           "th_status": "draft_unverified"
         },
         {
           "speaker": "Learner",
           "text": "Sorry, how do I get there?",
           "audio": "/static/audio/global/sorry-how-do-i-get-there.mp3",
-          "th": "ขอโทษนะ แล้วไปยังไงเหรอ",
+          "th": "ขอโทษนะ ไปยังไงเหรอ",
           "th_status": "draft_unverified"
         },
         {
@@ -433,9 +409,9 @@
         },
         {
           "speaker": "Learner",
-          "text": "Straight, then left. Is it far?",
-          "audio": "/static/audio/global/straight-then-left-is-it-far.mp3",
-          "th": "ตรงไป แล้วเลี้ยวซ้าย ไกลไหม",
+          "text": "Turn left at the corner. Is it far?",
+          "audio": "/static/audio/global/turn-left-at-the-corner-is-it-far.mp3",
+          "th": "เลี้ยวซ้ายตรงหัวมุม ไกลไหม",
           "th_status": "draft_unverified"
         },
         {
@@ -449,12 +425,12 @@
           "speaker": "Learner",
           "text": "Next to the 7-Eleven. Thanks a lot!",
           "audio": "/static/audio/global/next-to-the-7-eleven-thanks-a-lot.mp3",
-          "th": "ติดกับ 7-Eleven ขอบคุณมากเลย",
+          "th": "อยู่ข้าง ๆ 7-Eleven ขอบคุณมากเลย",
           "th_status": "draft_unverified"
         },
         {
           "speaker": "Passer-by",
-          "text": "No worries. Good luck!",
+          "text": "No worries. Good luck.",
           "audio": "/static/audio/global/no-worries-good-luck.mp3",
           "th": "ไม่เป็นไร โชคดีนะ",
           "th_status": "draft_unverified"
@@ -462,15 +438,7 @@
       ],
       "shadow_focus_lines": [
         {
-          "text": "Is there a pharmacy near here?",
-          "targets": [
-            "r_l",
-            "final_consonants"
-          ],
-          "audio": "/static/audio/global/is-there-a-pharmacy-near-here.mp3"
-        },
-        {
-          "text": "Go straight, then turn left",
+          "text": "Go straight, then turn left.",
           "targets": [
             "str_cluster",
             "r_l",
@@ -479,105 +447,127 @@
           "audio": "/static/audio/global/go-straight-then-turn-left.mp3"
         },
         {
-          "text": "Next to the 7-Eleven",
-          "targets": [
-            "final_consonants"
-          ],
-          "audio": "/static/audio/global/next-to-the-7-eleven.mp3"
-        },
-        {
-          "text": "Sorry, how do I get there?",
+          "text": "Turn left at the corner.",
           "targets": [
             "r_l",
             "final_consonants"
           ],
-          "audio": "/static/audio/global/sorry-how-do-i-get-there.mp3"
+          "audio": "/static/audio/global/turn-left-at-the-corner.mp3"
+        },
+        {
+          "text": "It's next to the 7-Eleven.",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/it-s-next-to-the-7-eleven.mp3"
+        },
+        {
+          "text": "Is it far from here?",
+          "targets": [
+            "r_l",
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/is-it-far-from-here.mp3"
         }
       ]
     },
     {
       "cefr": "B1",
-      "label": "Getting to the train station — the road is closed and the route changes",
+      "label": "Same situation, off-script — the street is closed and the numbers are confusing",
       "lines": [
         {
           "speaker": "Learner",
-          "text": "Excuse me, how do I get to the train station?",
-          "audio": "/static/audio/global/excuse-me-how-do-i-get-to-the-train-station.mp3",
-          "th": "ขอโทษนะคะ ไปสถานีรถไฟยังไงเหรอ",
+          "text": "Excuse me, sorry — I'm looking for the train station.",
+          "audio": "/static/audio/global/excuse-me-sorry-i-m-looking-for-the-train-station.mp3",
+          "th": "ขอโทษนะคะ พอดีหาสถานีรถไฟอยู่",
           "th_status": "draft_unverified"
         },
         {
-          "speaker": "Passer-by",
-          "text": "The station? You can walk, but Bridge Street is closed today — there's construction.",
-          "audio": "/static/audio/global/the-station-you-can-walk-but-bridge-street-is-closed-today-t.mp3",
-          "th": "สถานีเหรอ เดินไปได้ แต่วันนี้ถนน Bridge Street ปิดนะ กำลังก่อสร้างอยู่",
-          "th_status": "draft_unverified"
-        },
-        {
-          "speaker": "Learner",
-          "text": "Closed? Is there another way?",
-          "audio": "/static/audio/global/closed-is-there-another-way.mp3",
-          "th": "ปิดเหรอ มีทางอื่นไหม",
-          "th_status": "draft_unverified"
-        },
-        {
-          "speaker": "Passer-by",
-          "text": "Yeah. Go straight down this road, past the market, then take the third street on the right.",
-          "audio": "/static/audio/global/yeah-go-straight-down-this-road-past-the-market-then-take-th.mp3",
-          "th": "มี เดินตรงไปตามถนนนี้ ผ่านตลาด แล้วเลี้ยวขวาเข้าซอยที่สาม",
+          "speaker": "Local",
+          "text": "The train station? That's a fair walk from here, mate.",
+          "audio": "/static/audio/global/the-train-station-that-s-a-fair-walk-from-here-mate.mp3",
+          "th": "สถานีรถไฟเหรอ เดินจากนี่ไกลอยู่นะ (mate = คำเรียกแบบเป็นกันเองของคนออสซี่)",
           "th_status": "draft_unverified"
         },
         {
           "speaker": "Learner",
-          "text": "Sorry, the third street? On the right?",
-          "audio": "/static/audio/global/sorry-the-third-street-on-the-right.mp3",
-          "th": "ขอโทษนะ ซอยที่สามใช่ไหม ทางขวาเหรอ",
+          "text": "That's okay. Which way?",
+          "audio": "/static/audio/global/that-s-okay-which-way.mp3",
+          "th": "ไม่เป็นไร ไปทางไหนเหรอ",
           "th_status": "draft_unverified"
         },
         {
-          "speaker": "Passer-by",
-          "text": "On the right, yes. Not the second one — that's a dead end.",
-          "audio": "/static/audio/global/on-the-right-yes-not-the-second-one-that-s-a-dead-end.mp3",
-          "th": "ใช่ ทางขวา อย่าเข้าซอยที่สองนะ อันนั้นทางตัน",
-          "th_status": "draft_unverified"
-        },
-        {
-          "speaker": "Learner",
-          "text": "Okay. Straight, past the market, third right.",
-          "audio": "/static/audio/global/okay-straight-past-the-market-third-right.mp3",
-          "th": "โอเค ตรงไป ผ่านตลาด แล้วขวาซอยที่สาม",
-          "th_status": "draft_unverified"
-        },
-        {
-          "speaker": "Passer-by",
-          "text": "That's it. Then you'll see a red bridge. Cross it, and the station's on your left.",
-          "audio": "/static/audio/global/that-s-it-then-you-ll-see-a-red-bridge-cross-it-and-the-stat.mp3",
-          "th": "ใช่เลย แล้วจะเห็นสะพานสีแดง ข้ามไป สถานีอยู่ทางซ้ายมือ",
+          "speaker": "Local",
+          "text": "Normally you'd go straight down Rail Road and turn right at the end. But that street's closed today — road works.",
+          "audio": "/static/audio/global/normally-you-d-go-straight-down-rail-road-and-turn-right-at-.mp3",
+          "th": "ปกติก็ตรงไปตามถนน Rail Road แล้วเลี้ยวขวาตรงสุดถนน แต่วันนี้ถนนปิด กำลังซ่อมถนนอยู่",
           "th_status": "draft_unverified"
         },
         {
           "speaker": "Learner",
-          "text": "Cross the bridge, station on the left. How far is it?",
-          "audio": "/static/audio/global/cross-the-bridge-station-on-the-left-how-far-is-it.mp3",
-          "th": "ข้ามสะพาน สถานีอยู่ซ้ายมือ ไกลแค่ไหนเหรอ",
+          "text": "Sorry, the street is closed?",
+          "audio": "/static/audio/global/sorry-the-street-is-closed.mp3",
+          "th": "ขอโทษนะ ถนนปิดเหรอ",
           "th_status": "draft_unverified"
         },
         {
-          "speaker": "Passer-by",
-          "text": "About fifteen minutes on foot. Or take the 27 bus from here.",
-          "audio": "/static/audio/global/about-fifteen-minutes-on-foot-or-take-the-27-bus-from-here.mp3",
-          "th": "เดินประมาณสิบห้านาที หรือจะขึ้นรถเมล์สาย 27 จากตรงนี้ก็ได้",
+          "speaker": "Local",
+          "text": "Yeah, they're digging it up. You can't walk through.",
+          "audio": "/static/audio/global/yeah-they-re-digging-it-up-you-can-t-walk-through.mp3",
+          "th": "ใช่ เขาขุดถนนอยู่ เดินผ่านไม่ได้",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "So what should I do?",
+          "audio": "/static/audio/global/so-what-should-i-do.mp3",
+          "th": "แล้วต้องทำยังไงล่ะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Local",
+          "text": "Go left at the traffic lights, then take the third street on your right.",
+          "audio": "/static/audio/global/go-left-at-the-traffic-lights-then-take-the-third-street-on-.mp3",
+          "th": "เลี้ยวซ้ายตรงไฟแดง แล้วเข้าซอยที่สามทางขวามือ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "The third street on the right. Then what?",
+          "audio": "/static/audio/global/the-third-street-on-the-right-then-what.mp3",
+          "th": "ถนนที่สามทางขวา แล้วยังไงต่อ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Local",
+          "text": "Follow that street past the market. The station's behind the market, on the left.",
+          "audio": "/static/audio/global/follow-that-street-past-the-market-the-station-s-behind-the-.mp3",
+          "th": "เดินตามถนนนั้นไป ผ่านตลาด สถานีอยู่หลังตลาด ทางซ้ายมือ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Behind the market. Is it far?",
+          "audio": "/static/audio/global/behind-the-market-is-it-far.mp3",
+          "th": "อยู่หลังตลาด ไกลไหม",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Local",
+          "text": "Fifteen, twenty minutes walking. Or the number 8 bus goes straight there.",
+          "audio": "/static/audio/global/fifteen-twenty-minutes-walking-or-the-number-8-bus-goes-stra.mp3",
+          "th": "เดินสักสิบห้าถึงยี่สิบนาที หรือจะนั่งรถเมล์สาย 8 ก็ไปถึงเลย",
           "th_status": "draft_unverified"
         },
         {
           "speaker": "Learner",
           "text": "Sorry — fifteen or fifty?",
           "audio": "/static/audio/global/sorry-fifteen-or-fifty.mp3",
-          "th": "ขอโทษนะ สิบห้าหรือห้าสิบ",
+          "th": "ขอโทษนะ สิบห้าหรือห้าสิบ (fifteen กับ fifty ฟังคล้ายกันมาก)",
           "th_status": "draft_unverified"
         },
         {
-          "speaker": "Passer-by",
+          "speaker": "Local",
           "text": "Fifteen. One-five.",
           "audio": "/static/audio/global/fifteen-one-five.mp3",
           "th": "สิบห้า หนึ่ง-ห้า",
@@ -585,57 +575,36 @@
         },
         {
           "speaker": "Learner",
-          "text": "Thanks. Where's the bus stop?",
-          "audio": "/static/audio/global/thanks-where-s-the-bus-stop.mp3",
-          "th": "ขอบคุณค่ะ แล้วป้ายรถเมล์อยู่ไหน",
+          "text": "Okay. Where's the bus stop?",
+          "audio": "/static/audio/global/okay-where-s-the-bus-stop.mp3",
+          "th": "โอเค แล้วป้ายรถเมล์อยู่ไหน",
           "th_status": "draft_unverified"
         },
         {
-          "speaker": "Passer-by",
-          "text": "Just behind you, next to the 7-Eleven. But the bus doesn't stop at the station right now.",
-          "audio": "/static/audio/global/just-behind-you-next-to-the-7-eleven-but-the-bus-doesn-t-sto.mp3",
-          "th": "อยู่ข้างหลังคุณนี่เอง ติดกับ 7-Eleven แต่ตอนนี้รถเมล์ไม่จอดที่สถานีนะ",
-          "th_status": "draft_unverified"
-        },
-        {
-          "speaker": "Learner",
-          "text": "It doesn't? So walking is better?",
-          "audio": "/static/audio/global/it-doesn-t-so-walking-is-better.mp3",
-          "th": "ไม่จอดเหรอ งั้นเดินไปดีกว่าไหม",
-          "th_status": "draft_unverified"
-        },
-        {
-          "speaker": "Passer-by",
-          "text": "Probably, yeah. It's not far.",
-          "audio": "/static/audio/global/probably-yeah-it-s-not-far.mp3",
-          "th": "น่าจะดีกว่านะ มันไม่ไกลหรอก",
+          "speaker": "Local",
+          "text": "Just across the road, in front of the 7-Eleven.",
+          "audio": "/static/audio/global/just-across-the-road-in-front-of-the-7-eleven.mp3",
+          "th": "อยู่ฝั่งตรงข้ามถนนนี่แหละ หน้า 7-Eleven",
           "th_status": "draft_unverified"
         },
         {
           "speaker": "Learner",
-          "text": "Okay, I'll walk. Could you say the street again?",
-          "audio": "/static/audio/global/okay-i-ll-walk-could-you-say-the-street-again.mp3",
-          "th": "โอเค งั้นเดินก็ได้ ขอถามชื่อถนนอีกทีได้ไหม",
+          "text": "Across the road. Got it — thanks a lot!",
+          "audio": "/static/audio/global/across-the-road-got-it-thanks-a-lot.mp3",
+          "th": "ข้ามถนนไป เข้าใจแล้ว ขอบคุณมากเลย",
           "th_status": "draft_unverified"
         },
         {
-          "speaker": "Passer-by",
-          "text": "Third street on the right, after the market. You can't miss it.",
-          "audio": "/static/audio/global/third-street-on-the-right-after-the-market-you-can-t-miss-it.mp3",
-          "th": "ซอยที่สามทางขวา เลยตลาดไป ยังไงก็หาเจอแน่นอน",
-          "th_status": "draft_unverified"
-        },
-        {
-          "speaker": "Learner",
-          "text": "Third on the right. Thanks a lot!",
-          "audio": "/static/audio/global/third-on-the-right-thanks-a-lot.mp3",
-          "th": "ซอยที่สามทางขวา ขอบคุณมากเลย",
+          "speaker": "Local",
+          "text": "No worries. You'll be right.",
+          "audio": "/static/audio/global/no-worries-you-ll-be-right.mp3",
+          "th": "ไม่เป็นไร เดี๋ยวก็ถึงเอง (You'll be right = สำนวนออสซี่ แปลว่าไม่ต้องห่วง เอาอยู่)",
           "th_status": "draft_unverified"
         }
       ],
       "shadow_focus_lines": [
         {
-          "text": "The third street on the right",
+          "text": "The third street on the right.",
           "targets": [
             "str_cluster",
             "r_l",
@@ -644,289 +613,290 @@
           "audio": "/static/audio/global/the-third-street-on-the-right.mp3"
         },
         {
-          "text": "Straight, past the market",
-          "targets": [
-            "str_cluster",
-            "final_consonants"
-          ],
-          "audio": "/static/audio/global/straight-past-the-market.mp3"
-        },
-        {
-          "text": "The station's on your left",
-          "targets": [
-            "r_l",
-            "final_consonants"
-          ],
-          "audio": "/static/audio/global/the-station-s-on-your-left.mp3"
-        },
-        {
           "text": "Sorry — fifteen or fifty?",
           "targets": [
+            "final_consonants",
+            "r_l"
+          ],
+          "audio": "/static/audio/global/sorry-fifteen-or-fifty.mp3"
+        },
+        {
+          "text": "Behind the market, on the left.",
+          "targets": [
             "r_l",
             "final_consonants"
           ],
-          "audio": "/static/audio/global/sorry-fifteen-or-fifty.mp3"
+          "audio": "/static/audio/global/behind-the-market-on-the-left.mp3"
+        },
+        {
+          "text": "Just across the road.",
+          "targets": [
+            "r_l",
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/just-across-the-road.mp3"
         }
       ]
     }
   ],
   "chunk_drills": [
     {
-      "label": "Open politely and ask the way",
-      "pattern": "Excuse me, how do I get to + [place]?",
+      "label": "Open and ask",
+      "pattern": "Excuse me, is there a ___ near here? / Excuse me, where's the ___?",
       "examples": [
-        "Excuse me, how do I get to the train station?",
-        "Excuse me, how do I get to Green Street?",
-        "Sorry to bother you — how do I get to the market?"
+        "Excuse me, is there a pharmacy near here?",
+        "Excuse me, is there an ATM near here?",
+        "Excuse me, where's the bus stop?",
+        "Excuse me, where's the train station?"
       ],
-      "spiralled_grammar": "Recycles the 'Excuse me' opener from greetings_small_talk; question word + auxiliary 'do' word order."
+      "spiralled_grammar": "there is / there are + place nouns (recycled from greetings_small_talk and shopping units)"
     },
     {
-      "label": "Ask if something is nearby",
-      "pattern": "Is there a + [place] + near here? / Where's the nearest + [place]?",
+      "label": "Follow the route",
+      "pattern": "Go straight, then turn left / right at the ___.",
       "examples": [
-        "Is there a pharmacy near here?",
-        "Is there a bus stop near here?",
-        "Where's the nearest 7-Eleven?"
+        "Go straight, then turn right at the lights.",
+        "Go straight for two blocks, then turn left.",
+        "Take the third street on your right.",
+        "Walk straight past the bank."
       ],
-      "spiralled_grammar": "there is / there are; superlative 'the nearest'."
+      "spiralled_grammar": "imperatives + ordinal numbers (first, second, third) recycled from numbers_1_100"
     },
     {
-      "label": "Route instructions (listen and repeat back)",
-      "pattern": "Go straight, then turn left / right at + [landmark].",
-      "examples": [
-        "Go straight, then turn right at the traffic lights.",
-        "Go straight down this road, then turn left at the corner.",
-        "Go past the market, then take the third street on the right."
-      ],
-      "spiralled_grammar": "Imperatives in sequence with 'then'; ordinal numbers (second, third) recycled from numbers."
-    },
-    {
-      "label": "Say where it is",
-      "pattern": "It's + [next to / opposite / behind / at the end of] + the [landmark].",
+      "label": "Landmark position",
+      "pattern": "It's next to / opposite / behind / in front of the ___.",
       "examples": [
         "It's next to the 7-Eleven.",
-        "It's opposite the bank.",
-        "It's at the end of the street, on your left."
+        "It's opposite the market.",
+        "It's behind the school.",
+        "It's in front of the bus stop."
       ],
-      "spiralled_grammar": "Prepositions of place + definite article with known landmarks."
+      "spiralled_grammar": "prepositions of place with 'the' + landmark noun"
     },
     {
-      "label": "Confirm the route back (the safety chunk)",
-      "pattern": "So, [step 1], then [step 2]. Is that right?",
+      "label": "How far, how long",
+      "pattern": "Is it far? / How long does it take? — About ___ minutes.",
       "examples": [
-        "So, straight, then left at the corner. Is that right?",
-        "So, past the market, third street on the right. Is that right?",
-        "Cross the bridge, station on the left. Is that right?"
+        "Is it far from here?",
+        "How long does it take to walk?",
+        "About ten minutes.",
+        "Fifteen minutes walking, five by bus."
       ],
-      "spiralled_grammar": "Summarising with 'so'; tag-style confirmation question."
+      "spiralled_grammar": "question forms + numbers/time expressions (recycled from time_and_duration)"
     },
     {
-      "label": "Distance and time",
-      "pattern": "How far is it? / It's about + [number] + minutes on foot.",
+      "label": "Check before you walk",
+      "pattern": "Sorry, did you say ___ or ___? / Could you say that again?",
       "examples": [
-        "How far is it?",
-        "Is it far?",
-        "It's about fifteen minutes on foot."
-      ],
-      "spiralled_grammar": "Recycles 'How much / How long' question family and number + time-unit phrases."
-    },
-    {
-      "label": "Clarify when you didn't catch it",
-      "pattern": "Sorry, could you say that again? / Left or right? / Could you show me on the map?",
-      "examples": [
-        "Sorry, could you say that again — slowly?",
-        "Sorry, left or right?",
+        "Sorry, did you say left or right?",
+        "Sorry, fifteen or fifty?",
+        "Sorry, could you say that again?",
         "Could you show me on the map?"
       ],
-      "spiralled_grammar": "Polite request with 'could you'; alternative question with 'or'."
+      "spiralled_grammar": "alternative questions with 'or' + polite request with 'could' (recycled from clarification_phrases)"
+    },
+    {
+      "label": "Repeat it back (the safety habit)",
+      "pattern": "So, ___ then ___. Is that right?",
+      "examples": [
+        "So, straight then left. Is that right?",
+        "So, third street on the right?",
+        "So, past the market, then behind it?",
+        "So, the bus stop is across the road?"
+      ],
+      "spiralled_grammar": "sequencing with 'then' + confirmation tag 'Is that right?'"
     }
   ],
   "listening_items": [
     {
-      "audio_text": "Go straight for two blocks, then turn left at the traffic lights. It's opposite the bank.",
-      "channel": "street, traffic noise in background",
+      "audio_text": "Go straight for two blocks, then turn left at the traffic lights. It's on your right, next to the bank.",
+      "channel": "face_to_face_street_noise",
       "question": "Which way do you turn at the traffic lights?",
-      "answer": "Left",
-      "distractor_focus": "left vs right (/l/–/r/) — the recording also contains 'straight', so learners who miss the cluster may guess"
+      "answer": "Left (and the place is then on your right).",
+      "distractor_focus": "r_l — 'turn left ... on your right' in one instruction; learners who hear only one of the two words pick the wrong turn."
     },
     {
-      "audio_text": "Don't take the second street — that's a dead end. Take the third street on the right.",
-      "channel": "street, speaker walking",
-      "question": "Which street should you take, and on which side?",
-      "answer": "The third street, on the right",
-      "distractor_focus": "second vs third (ordinals, final /d/) and right vs left"
+      "audio_text": "Take the third street on your right, not the second one. The second one is a dead end.",
+      "channel": "face_to_face",
+      "question": "Which street should you take — the second or the third?",
+      "answer": "The third street.",
+      "distractor_focus": "str_cluster + final consonants — 'third street' vs 'third seat'; and 'second' vs 'third' ordinals."
     },
     {
-      "audio_text": "It's about fifteen minutes on foot, or five minutes by bus. The 27 stops right here.",
-      "channel": "street, next to a bus stop",
-      "question": "How long does it take to walk?",
-      "answer": "About fifteen minutes",
-      "distractor_focus": "fifteen vs fifty vs five — final consonant and stress placement"
+      "audio_text": "It's about fifteen minutes on foot, or you can catch the number 50 bus.",
+      "channel": "phone",
+      "question": "How many minutes on foot, and which bus number?",
+      "answer": "Fifteen minutes; bus number 50.",
+      "distractor_focus": "number clarity — fifteen vs fifty appearing in the same sentence, recycled from numbers_1_100."
     },
     {
-      "audio_text": "Hi, I'm outside the 7-Eleven on Green Street, next to the pharmacy. Can you see me?",
-      "channel": "phone call",
-      "question": "Where exactly is the caller standing?",
-      "answer": "Outside the 7-Eleven on Green Street, next to the pharmacy",
-      "distractor_focus": "Green Street vs Green Sweet (/str/ cluster); 'next to' with the /kst/ cluster"
+      "audio_text": "Sorry, the road is closed for road works. You'll have to go around, past the market.",
+      "channel": "face_to_face",
+      "question": "Why can't you take the road, and what should you walk past?",
+      "answer": "It's closed for road works; walk around, past the market.",
+      "distractor_focus": "final consonants — 'closed', 'past', 'works'; without the finals it sounds like 'the road is clo' and the problem is missed."
     },
     {
-      "audio_text": "Sorry, Bridge Street is closed for construction today. You'll have to go past the market instead.",
-      "channel": "shop counter, indoor",
-      "question": "Why can't you use Bridge Street?",
-      "answer": "It's closed for construction",
-      "distractor_focus": "'closed' vs 'close'; 'past' vs 'pass'"
+      "audio_text": "The bus stop has moved. It's now across the street, in front of the 7-Eleven, not behind it.",
+      "channel": "announcement",
+      "question": "Where is the bus stop now — in front of or behind the 7-Eleven?",
+      "answer": "In front of the 7-Eleven, across the street.",
+      "distractor_focus": "position words in front of / behind, plus 'across the street' with the /str/ cluster."
     }
   ],
   "guided_roleplay": {
-    "learner_role": "A visitor on a busy street who needs to reach the train station but has almost no phone battery.",
+    "learner_role": "A visitor on a busy street who needs to find the train station, with on-screen frames and a hint button.",
     "flow": [
-      "Step 1 — Stop someone politely: 'Excuse me...' and ask the way to the train station.",
-      "Step 2 — Listen to the route and repeat the first two steps back ('So, straight, then left...').",
-      "Step 3 — Ask how far it is and how long it takes on foot.",
-      "Step 4 — Ask for one landmark to check you're right ('Is it near the 7-Eleven?').",
-      "Step 5 — Ask for clarification on one detail you didn't catch (left/right, or the number).",
-      "Step 6 — Confirm the whole route in one short sentence and thank the person."
+      "Step 1 — Stop someone politely: 'Excuse me, sorry...' and say what you're looking for.",
+      "Step 2 — Ask for the route: 'How do I get there?' / 'Which way?'",
+      "Step 3 — Repeat the key instruction back: 'So, straight then left. Is that right?'",
+      "Step 4 — Ask about distance/time: 'Is it far?' / 'How long does it take?'",
+      "Step 5 — Handle one problem: the road is closed, or you didn't catch a number — ask again.",
+      "Step 6 — Confirm the landmark and close: 'Next to the 7-Eleven. Thanks a lot!'"
     ],
     "sentence_frames": [
-      "Excuse me, how do I get to the train station?",
+      "Excuse me, where's the ___?",
       "Is there a ___ near here?",
+      "How do I get there?",
+      "Sorry, did you say left or right?",
+      "So, straight then ___. Is that right?",
+      "Is it far from here?",
+      "How long does it take?",
       "Sorry, could you say that again?",
-      "Left or right?",
-      "So, go straight, then turn ___ at the ___.",
-      "Is it next to the ___?",
-      "How far is it?",
-      "About how many minutes?",
-      "Third street on the right — is that right?",
+      "Could you show me on the map?",
       "Thanks a lot!"
     ],
     "hints_available": true
   },
   "free_roleplay": {
-    "ai_persona": "A friendly local in their 30s, in a hurry but willing to help. Speaks at natural speed, uses landmarks rather than street names, and says 'yeah', 'no worries', 'you can't miss it'.",
-    "a2_behavior": "Gives a simple two-step route (straight + one turn), names one clear landmark, states the walking time in minutes, and repeats slowly if the learner asks. Waits for the learner to confirm the route back before ending.",
+    "ai_persona": "A friendly local in a hurry, standing outside a 7-Eleven. Speaks at natural speed, uses landmarks rather than street names, and is helpful but does not slow down unless asked.",
+    "a2_behavior": "Gives one simple two-step route ('Go straight, turn left at the corner — it's next to the 7-Eleven'), repeats slowly if the learner asks, and confirms 'yes, left' when the learner repeats it back.",
     "b1_curveballs": [
-      "The direct road is closed for construction — the persona gives a longer detour with three steps.",
-      "The persona corrects the learner's read-back: 'No, not the second — the third on the right.'",
-      "The persona offers a choice: walk fifteen minutes or take the number 27 bus, and asks the learner to decide.",
-      "The persona says a number fast (fifteen / fifty) and the learner must ask which one.",
-      "The persona admits 'Sorry, I'm not from here either' and the learner must thank them and ask someone else.",
-      "The persona gives the route by phone, with no gestures and no map to point at."
+      "The street on the direct route is closed for road works — the learner must ask for another way.",
+      "Says 'fifteen' or 'fifty' minutes quickly and only clarifies if the learner asks 'fifteen or fifty?'.",
+      "Offers a choice: 'You can walk twenty minutes or take the number 8 bus' — the learner must pick and ask where the bus stop is.",
+      "Mixes left and right in one instruction: 'Turn left at the lights, then it's on your right.'",
+      "Says 'I'm not from here, sorry' — the learner must thank them and ask a second person.",
+      "Asks a return question: 'Which station do you want — the old one or the new one?'"
     ],
     "roleplay_rubric": [
       {
-        "criterion": "Opened politely with 'Excuse me' and asked a clear question about a destination",
+        "criterion": "Opened politely with 'Excuse me' and stated the destination clearly",
         "type": "required"
       },
       {
-        "criterion": "Repeated the route back to confirm it (at least two steps in order)",
+        "criterion": "Asked for the route and for distance/time (Is it far? / How long?)",
         "type": "required"
       },
       {
-        "criterion": "Asked at least one clarification question (left or right? / say that again? / which number?)",
+        "criterion": "Repeated the key instruction back to confirm (left/right, ordinal street, landmark)",
         "type": "required"
       },
       {
-        "criterion": "Asked about distance or time and understood the answer",
+        "criterion": "Asked at least one clarification question when something was unclear",
         "type": "required"
       },
       {
-        "criterion": "Used at least one landmark or position phrase (next to / opposite / at the corner)",
+        "criterion": "Identified the correct final landmark and closed the conversation with thanks",
         "type": "required"
       },
       {
-        "criterion": "Closed the exchange politely and briefly (Thanks a lot / Thanks for your help)",
-        "type": "required"
-      },
-      {
-        "criterion": "Pronunciation: 'left' vs 'right' distinguishable, /str/ pronounced in 'straight'/'street', final consonants audible in 'left', 'next', 'past'",
+        "criterion": "Pronunciation: 'left' vs 'right' distinguishable, /str/ produced in 'straight/street', final consonants audible in 'left, next, past, stop'",
         "type": "pronunciation"
       },
       {
-        "criterion": "Handled the curveball (closed road, corrected step, bus-or-walk choice) and still finished with a usable route",
+        "criterion": "Coped with a curveball (closed road, bus-or-walk choice, fifteen/fifty) and still got usable directions without breaking down",
         "type": "stretch_b1"
       }
     ]
   },
   "register_culture_note": {
-    "en": "Asking a stranger for directions is a 15-second transaction in most English-speaking places. Open with 'Excuse me', ask one clear question, confirm what you heard, say thanks, and let the person go. You don't need a long apology or a formal title — 'Excuse me, how do I get to the station?' is already polite. Repeating the route back is not rude or doubting the person; it's what fluent speakers do, and it's your safety net when /l/ and /r/ sound similar.",
+    "en": "With strangers on the street, English is short and warm, not formal. 'Excuse me' at the start and 'Thanks a lot' at the end are enough politeness — you don't need long apologetic sentences, and the person will usually be walking while they answer. It is completely normal to interrupt someone briefly, and equally normal for them to say 'Sorry, I don't know' and keep going. Repeating the directions back ('So, straight then left?') is not rude — it is exactly what confident speakers do, and it is your safety net when the /l/ and /r/ are hard to hear.",
     "th": null,
     "do_dont": [
       {
-        "avoid": "Where is train station?",
-        "prefer": "Excuse me, how do I get to the train station?"
+        "avoid": "\"Turn light.\" (right sounds like light, or left sounds like reft)",
+        "prefer": "\"Turn LEFT.\" — tongue tip touching behind the top teeth, then say it again: \"left, not right.\""
       },
       {
-        "avoid": "Nodding and saying 'yes, yes' when you didn't catch the turn",
-        "prefer": "Sorry — left or right?"
+        "avoid": "\"Go sa-tate.\" / \"Go tate.\"",
+        "prefer": "\"Go straight.\" — build it s-t-r before the vowel; without /str/ the listener hears 'state' or 'great'."
       },
       {
-        "avoid": "Saying 'go stlaight' / 'go state'",
-        "prefer": "Go straight — hold the /str/ and let the listener hear it"
+        "avoid": "\"Take the third seat.\" (street with the cluster lost)",
+        "prefer": "\"Take the third street.\" — hold the /str/ and finish the /t/."
       },
       {
-        "avoid": "'Turn lef' with the /ft/ swallowed (sounds like 'let')",
-        "prefer": "Turn LEFT — release the final /t/"
+        "avoid": "Smiling and saying \"yes, yes\" when you didn't understand",
+        "prefer": "\"Sorry, did you say left or right?\" — asking again costs five seconds; guessing costs twenty minutes."
       },
       {
-        "avoid": "Ending with silence when you don't understand",
-        "prefer": "Could you show me on the map?"
+        "avoid": "\"Hey! You know station?\"",
+        "prefer": "\"Excuse me, do you know where the station is?\""
       },
       {
-        "avoid": "Grabbing or touching someone's arm to stop them",
-        "prefer": "Step into their eyeline and say 'Excuse me' first"
+        "avoid": "\"Where is bus stop?\" said while walking past someone",
+        "prefer": "Stop, make eye contact, then: \"Excuse me — where's the bus stop?\""
       }
     ],
-    "thai_cultural_note": "In Thailand, a stranger who doesn't know the way will often still offer a guess rather than leave you with nothing — saying 'I don't know' can feel unhelpful. In English-speaking contexts the opposite is expected: 'Sorry, I'm not from here' is a normal, acceptable answer, and you should treat it as a cue to thank the person and ask someone else rather than pressing them. The mirror of this matters for you too: when you haven't understood, saying 'yes' to be pleasant will send you the wrong way. Asking 'left or right?' is heard as sensible, not as questioning the other person's competence."
+    "thai_cultural_note": "In Thailand it can feel unkind to leave someone with no answer, so a stranger may offer a best guess rather than say 'I don't know'. In most English-speaking places the opposite is true: 'Sorry, I'm not from here' is a normal, helpful answer, and people expect YOU to check what you heard. Repeating the directions back and asking 'left or right?' will not be read as doubting the person or making them lose face — it reads as sensible. Also, don't wait for the other person to check that you understood; you are expected to do that yourself before you walk away."
   },
   "can_do_checkpoints": [
     {
       "cefr": "A2",
-      "statement": "I can stop a stranger politely and ask how to get to a place."
+      "statement": "I can stop a stranger politely and ask where a place is."
     },
     {
       "cefr": "A2",
-      "statement": "I can understand and follow a two-step route (straight + one turn) with a landmark."
+      "statement": "I can understand and follow a simple two-step route (go straight, turn left/right at the corner)."
     },
     {
       "cefr": "A2",
-      "statement": "I can ask how far it is and understand an answer in minutes."
+      "statement": "I can ask if a place is far and understand an answer in minutes."
     },
     {
       "cefr": "A2",
-      "statement": "I can repeat a route back to check I understood it."
+      "statement": "I can repeat directions back to check I understood."
     },
     {
       "cefr": "B1",
-      "statement": "I can follow a three-or-four-step route with ordinals ('the third street on the right') and confirm the details."
+      "statement": "I can understand a longer route with an ordinal street, a landmark and a position word (behind/opposite)."
     },
     {
       "cefr": "B1",
-      "statement": "I can cope when the route changes — a closed road, a correction, or a choice between walking and the bus — and still leave with a usable route."
+      "statement": "I can handle a problem — a closed road, a moved bus stop, or fifteen vs fifty — by asking follow-up questions."
     },
     {
       "cefr": "B1",
-      "statement": "I can give simple directions to someone else using landmarks and position words."
+      "statement": "I can choose between walking and taking a bus and ask where the stop is."
     },
     {
-      "cefr": "Sound",
-      "statement": "My 'left' and 'right' are clearly different, my /str/ in 'straight' and 'street' is audible, and my final consonants in 'left', 'next' and 'past' don't disappear."
+      "cefr": "sound",
+      "statement": "My 'left' and 'right' are clearly different, my /str/ in 'straight' and 'street' is complete, and my final consonants in 'left, next, past, stop' are audible."
     }
   ],
   "gamification": {
     "xp_per_substep": true,
     "unlocks": [
-      "Landmark Spotter — used five different landmarks in one roleplay",
-      "Read-Back Pro — confirmed the full route correctly three times in a row",
-      "Detour Survivor — completed a B1 roleplay with the closed-road curveball",
-      "No Wrong Turns — 10 consecutive correct left/right listening items",
-      "Unlocks next unit: taking_a_taxi / public_transport"
+      "Landmark Hunter — complete the guided roleplay without using a hint",
+      "Left/Right Streak — 10 correct left/right minimal-pair calls in a row",
+      "Detour Survivor — finish a free roleplay with the closed-road curveball",
+      "Unlocks next scenario: taking_a_taxi_or_rideshare",
+      "Unlocks next scenario: buying_a_bus_or_train_ticket"
     ],
     "sound_meters": [
-      "r_l",
-      "str_cluster",
-      "final_consonants"
+      {
+        "sound": "r_l",
+        "label": "Left / Right accuracy"
+      },
+      {
+        "sound": "str_cluster",
+        "label": "/str/ cluster (straight, street)"
+      },
+      {
+        "sound": "final_consonants",
+        "label": "Final consonants (left, next, past, stop)"
+      }
     ]
   },
   "_review_status": {

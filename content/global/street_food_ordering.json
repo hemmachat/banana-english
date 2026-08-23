@@ -1,0 +1,912 @@
+{
+  "scenario_id": "street_food_ordering",
+  "locale": "global",
+  "title_en": "Ordering Street Food",
+  "title_th": "การสั่งอาหารริมทาง",
+  "tier": 1,
+  "cefr_range": [
+    "A2",
+    "B1"
+  ],
+  "prerequisites": [
+    "greetings_small_talk",
+    "numbers_and_prices",
+    "cafe_ordering_basics"
+  ],
+  "recycles": [
+    "numbers 1-100 and decimal prices",
+    "\"How much is it?\" / \"How much altogether?\"",
+    "polite requests: \"Can I get…, please\"",
+    "\"Sorry, could you say that again?\"",
+    "food and drink vocabulary",
+    "yes/no answers with a short reason (\"No bag, thanks\")"
+  ],
+  "register": "Casual-friendly, fast and transactional — short phrases, first-name-free, no honorifics; politeness carried by \"please/thanks\", not by long sentences",
+  "sound_target_box": {
+    "note_th": null,
+    "targets": [
+      {
+        "sound": "numbers",
+        "scoring_method": "phoneme",
+        "words_in_context": [
+          "fifteen fifty",
+          "eight fifty",
+          "two skewers",
+          "thirty-four",
+          "forty-three",
+          "twenty cents",
+          "about eight minutes"
+        ],
+        "minimal_pairs": [
+          [
+            "fifteen",
+            "fifty"
+          ],
+          [
+            "thirteen",
+            "thirty"
+          ],
+          [
+            "fourteen",
+            "forty"
+          ],
+          [
+            "sixteen",
+            "sixty"
+          ],
+          [
+            "eighteen",
+            "eighty"
+          ]
+        ],
+        "why_it_matters_here": "The vendor says the total once, over a noisy street, and you pay immediately. If your \"fifteen\" sounds like \"fifty\" when you repeat it back, you hand over the wrong money or argue about a price you actually agreed to — and if you hear order number \"thirty-four\" as \"forty-three\" you stand there while your food goes cold on the counter."
+      },
+      {
+        "sound": "final_consonants",
+        "scoring_method": "phoneme",
+        "words_in_context": [
+          "one pad thai",
+          "two pork skewers",
+          "add an egg",
+          "hot",
+          "rice",
+          "no bag, thanks",
+          "cash or card",
+          "takeaway"
+        ],
+        "minimal_pairs": [
+          [
+            "rice",
+            "rye"
+          ],
+          [
+            "pork",
+            "paw"
+          ],
+          [
+            "egg",
+            "edge"
+          ],
+          [
+            "back",
+            "bag"
+          ],
+          [
+            "hot",
+            "hop"
+          ],
+          [
+            "cash",
+            "cat"
+          ]
+        ],
+        "why_it_matters_here": "Street-food orders are one or two words long, so the final consonant carries the whole meaning. Drop the /s/ in \"rice\" and the vendor hears \"rye\"; drop the /g/ in \"egg\" and nothing gets added; say \"pork\" without the /k/ and you get pointed at the wrong tray. There is no second sentence to repair it — the vendor is already cooking."
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "en": "stall",
+      "th": "แผงขายของ ร้านเล็กๆ ในตลาดหรือในงาน",
+      "group": "place_and_people",
+      "audio_needed": true,
+      "audio": "/static/audio/global/stall.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "food truck",
+      "th": "food truck รถขายอาหาร จอดขายตามงานหรือริมถนน",
+      "group": "place_and_people",
+      "audio_needed": true,
+      "audio": "/static/audio/global/food-truck.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "vendor",
+      "th": "คนขาย เจ้าของร้าน",
+      "group": "place_and_people",
+      "audio_needed": true,
+      "audio": "/static/audio/global/vendor.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "queue / line",
+      "th": "แถว ต่อคิว — ที่ออสฯ พูดว่า queue บ่อยกว่า line",
+      "group": "place_and_people",
+      "audio_needed": true,
+      "audio": "/static/audio/global/queue-line.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "order number",
+      "th": "เลขที่สั่ง เขาจะเรียกเลขแล้วเราไปรับอาหาร",
+      "group": "place_and_people",
+      "audio_needed": true,
+      "audio": "/static/audio/global/order-number.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "noodles",
+      "th": "เส้น ก๋วยเตี๋ยว บะหมี่",
+      "group": "food_items",
+      "audio_needed": true,
+      "audio": "/static/audio/global/noodles.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "rice",
+      "th": "ข้าว",
+      "group": "food_items",
+      "audio_needed": true,
+      "audio": "/static/audio/global/rice.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "pork skewer",
+      "th": "หมูปิ้ง หมูเสียบไม้",
+      "group": "food_items",
+      "audio_needed": true,
+      "audio": "/static/audio/global/pork-skewer.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "chicken",
+      "th": "ไก่",
+      "group": "food_items",
+      "audio_needed": true,
+      "audio": "/static/audio/global/chicken.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "tofu",
+      "th": "เต้าหู้",
+      "group": "food_items",
+      "audio_needed": true,
+      "audio": "/static/audio/global/tofu.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "egg",
+      "th": "ไข่",
+      "group": "food_items",
+      "audio_needed": true,
+      "audio": "/static/audio/global/egg.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "cold water",
+      "th": "น้ำเย็น",
+      "group": "food_items",
+      "audio_needed": true,
+      "audio": "/static/audio/global/cold-water.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "mild",
+      "th": "เผ็ดน้อย เกือบไม่เผ็ด",
+      "group": "spice_level",
+      "audio_needed": true,
+      "audio": "/static/audio/global/mild.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "medium",
+      "th": "เผ็ดกลางๆ พอประมาณ",
+      "group": "spice_level",
+      "audio_needed": true,
+      "audio": "/static/audio/global/medium.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "hot / spicy",
+      "th": "เผ็ด",
+      "group": "spice_level",
+      "audio_needed": true,
+      "audio": "/static/audio/global/hot-spicy.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "not too spicy",
+      "th": "\"อย่าเผ็ดมากนะ\" บอกตอนสั่งได้เลย",
+      "group": "spice_level",
+      "audio_needed": true,
+      "audio": "/static/audio/global/not-too-spicy.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "a bit spicier",
+      "th": "\"ขอเผ็ดขึ้นอีกนิด\"",
+      "group": "spice_level",
+      "audio_needed": true,
+      "audio": "/static/audio/global/a-bit-spicier.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "no chilli",
+      "th": "ไม่ใส่พริก",
+      "group": "spice_level",
+      "audio_needed": true,
+      "audio": "/static/audio/global/no-chilli.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "takeaway",
+      "th": "takeaway = ห่อกลับ ที่ออสฯ ใช้คำนี้ ไม่ใช่ to go",
+      "group": "order_type_and_extras",
+      "audio_needed": true,
+      "audio": "/static/audio/global/takeaway.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "eat in / eat here",
+      "th": "กินที่ร้าน นั่งกินตรงนั้น",
+      "group": "order_type_and_extras",
+      "audio_needed": true,
+      "audio": "/static/audio/global/eat-in-eat-here.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "add an egg",
+      "th": "เพิ่มไข่ ปกติจ่ายเพิ่มนิดหน่อย",
+      "group": "order_type_and_extras",
+      "audio_needed": true,
+      "audio": "/static/audio/global/add-an-egg.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "extra sauce",
+      "th": "ขอซอสเพิ่ม",
+      "group": "order_type_and_extras",
+      "audio_needed": true,
+      "audio": "/static/audio/global/extra-sauce.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "no peanuts",
+      "th": "ไม่ใส่ถั่ว — ถ้าแพ้ถั่ว ต้องบอกให้ชัด",
+      "group": "order_type_and_extras",
+      "audio_needed": true,
+      "audio": "/static/audio/global/no-peanuts.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "a bag",
+      "th": "ถุง หลายร้านคิดเงินถุงละประมาณ 15 เซ็นต์",
+      "group": "order_type_and_extras",
+      "audio_needed": true,
+      "audio": "/static/audio/global/a-bag.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "how much altogether",
+      "th": "\"ทั้งหมดเท่าไหร่\"",
+      "group": "money",
+      "audio_needed": true,
+      "audio": "/static/audio/global/how-much-altogether.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "cash or card",
+      "th": "จ่ายเงินสดหรือบัตร เขาจะถามแบบนี้ตอนจ่าย",
+      "group": "money",
+      "audio_needed": true,
+      "audio": "/static/audio/global/cash-or-card.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "surcharge",
+      "th": "surcharge คือเงินที่ร้านบวกเพิ่มเวลารูดบัตร ปกติ 1–2% ถ้าไม่อยากจ่ายก็ใช้เงินสด",
+      "group": "money",
+      "audio_needed": true,
+      "audio": "/static/audio/global/surcharge.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "change",
+      "th": "เงินทอน",
+      "group": "money",
+      "audio_needed": true,
+      "audio": "/static/audio/global/change.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "sold out",
+      "th": "ขายหมดแล้ว",
+      "group": "problems",
+      "audio_needed": true,
+      "audio": "/static/audio/global/sold-out.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "How long is the wait?",
+      "th": "\"ต้องรอนานไหม\" ถามได้เลยก่อนต่อคิว",
+      "group": "problems",
+      "audio_needed": true,
+      "audio": "/static/audio/global/how-long-is-the-wait.mp3",
+      "th_status": "draft_unverified"
+    }
+  ],
+  "model_dialogues": [
+    {
+      "cefr": "A2",
+      "label": "A2 — One order at a noodle stall (everything goes to plan)",
+      "lines": [
+        {
+          "speaker": "Vendor",
+          "text": "Hi there! What can I get you?",
+          "audio": "/static/audio/global/hi-there-what-can-i-get-you.mp3",
+          "th": "หวัดดีครับ! รับอะไรดีครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Customer",
+          "text": "One pad thai, please.",
+          "audio": "/static/audio/global/one-pad-thai-please.mp3",
+          "th": "ขอผัดไทยหนึ่งที่",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Vendor",
+          "text": "Spicy or not spicy?",
+          "audio": "/static/audio/global/spicy-or-not-spicy.mp3",
+          "th": "เอาเผ็ดไหม",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Customer",
+          "text": "Not too spicy, please.",
+          "audio": "/static/audio/global/not-too-spicy-please.mp3",
+          "th": "ขอไม่เผ็ดมากนะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Vendor",
+          "text": "No worries. Eat in or takeaway?",
+          "audio": "/static/audio/global/no-worries-eat-in-or-takeaway.mp3",
+          "th": "ได้เลย ทานที่ร้านหรือใส่กล่องกลับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Customer",
+          "text": "Takeaway. Can I add an egg?",
+          "audio": "/static/audio/global/takeaway-can-i-add-an-egg.mp3",
+          "th": "ใส่กล่องกลับ เพิ่มไข่ได้ไหม",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Vendor",
+          "text": "Sure. That's eight fifty altogether.",
+          "audio": "/static/audio/global/sure-that-s-eight-fifty-altogether.mp3",
+          "th": "ได้ รวมแปดเหรียญห้าสิบ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Customer",
+          "text": "Sorry — eight fifty or eight fifteen?",
+          "audio": "/static/audio/global/sorry-eight-fifty-or-eight-fifteen.mp3",
+          "th": "โทษที แปดเหรียญห้าสิบ หรือแปดเหรียญสิบห้า",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Vendor",
+          "text": "Eight fifty. Cash or card?",
+          "audio": "/static/audio/global/eight-fifty-cash-or-card.mp3",
+          "th": "แปดเหรียญห้าสิบ จ่ายเงินสดหรือบัตร",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Customer",
+          "text": "Cash. Here you go.",
+          "audio": "/static/audio/global/cash-here-you-go.mp3",
+          "th": "เงินสด นี่ครับ",
+          "th_status": "draft_unverified"
+        }
+      ],
+      "shadow_focus_lines": [
+        {
+          "text": "One pad thai, please.",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/one-pad-thai-please.mp3"
+        },
+        {
+          "text": "Not too spicy, please.",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/not-too-spicy-please.mp3"
+        },
+        {
+          "text": "Can I add an egg?",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/can-i-add-an-egg.mp3"
+        },
+        {
+          "text": "Eight fifty or eight fifteen?",
+          "targets": [
+            "numbers"
+          ],
+          "audio": "/static/audio/global/eight-fifty-or-eight-fifteen.mp3"
+        }
+      ]
+    },
+    {
+      "cefr": "B1",
+      "label": "B1 — Same stall, but sold out, mild \"medium\", a card surcharge and a call-out number",
+      "lines": [
+        {
+          "speaker": "Vendor",
+          "text": "G'day! You right to order?",
+          "audio": "/static/audio/global/g-day-you-right-to-order.mp3",
+          "th": "หวัดดี! พร้อมสั่งยัง",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Customer",
+          "text": "Yes. Two chicken skewers, please.",
+          "audio": "/static/audio/global/yes-two-chicken-skewers-please.mp3",
+          "th": "พร้อมแล้ว ขอไก่ปิ้งสองไม้",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Vendor",
+          "text": "Sorry, chicken's sold out. I've got pork or tofu.",
+          "audio": "/static/audio/global/sorry-chicken-s-sold-out-i-ve-got-pork-or-tofu.mp3",
+          "th": "โทษที ไก่หมดแล้ว เหลือหมูกับเต้าหู้",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Customer",
+          "text": "Pork, then. Two pork skewers.",
+          "audio": "/static/audio/global/pork-then-two-pork-skewers.mp3",
+          "th": "งั้นเอาหมู หมูปิ้งสองไม้",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Vendor",
+          "text": "Sweet. How spicy — mild, medium, or hot?",
+          "audio": "/static/audio/global/sweet-how-spicy-mild-medium-or-hot.mp3",
+          "th": "โอเค เอาเผ็ดแค่ไหน เผ็ดน้อย กลาง หรือเผ็ดมาก",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Customer",
+          "text": "Medium, please. Not too spicy.",
+          "audio": "/static/audio/global/medium-please-not-too-spicy.mp3",
+          "th": "เอาเผ็ดกลาง อย่าให้เผ็ดเกินไปนะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Vendor",
+          "text": "Fair warning, our medium is pretty mild.",
+          "audio": "/static/audio/global/fair-warning-our-medium-is-pretty-mild.mp3",
+          "th": "บอกไว้ก่อนนะ เผ็ดกลางของร้านเราออกจะอ่อนไปหน่อย",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Customer",
+          "text": "Okay. Can you make it spicier?",
+          "audio": "/static/audio/global/okay-can-you-make-it-spicier.mp3",
+          "th": "งั้นทำให้เผ็ดขึ้นอีกหน่อยได้ไหม",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Vendor",
+          "text": "Will do. Anything else? Rice is two fifty extra.",
+          "audio": "/static/audio/global/will-do-anything-else-rice-is-two-fifty-extra.mp3",
+          "th": "ได้เลย เอาอย่างอื่นอีกไหม ข้าวเพิ่มสองเหรียญห้าสิบ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Customer",
+          "text": "One rice, and a cold water.",
+          "audio": "/static/audio/global/one-rice-and-a-cold-water.mp3",
+          "th": "ขอข้าวหนึ่ง กับน้ำเย็นหนึ่ง",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Vendor",
+          "text": "Righto. That comes to fifteen fifty.",
+          "audio": "/static/audio/global/righto-that-comes-to-fifteen-fifty.mp3",
+          "th": "ได้เลย ทั้งหมดสิบห้าเหรียญห้าสิบ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Customer",
+          "text": "Sorry, fifteen fifty or fifty fifteen?",
+          "audio": "/static/audio/global/sorry-fifteen-fifty-or-fifty-fifteen.mp3",
+          "th": "โทษที สิบห้าเหรียญห้าสิบ หรือห้าสิบเหรียญสิบห้า",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Vendor",
+          "text": "Fifteen dollars fifty. One, five, point five zero.",
+          "audio": "/static/audio/global/fifteen-dollars-fifty-one-five-point-five-zero.mp3",
+          "th": "สิบห้าเหรียญห้าสิบ หนึ่ง-ห้า จุด ห้า-ศูนย์",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Customer",
+          "text": "Got it. Do you take card?",
+          "audio": "/static/audio/global/got-it-do-you-take-card.mp3",
+          "th": "อ๋อ เข้าใจแล้ว รับบัตรไหม",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Vendor",
+          "text": "Card's fine, but there's a fifty-cent surcharge under twenty.",
+          "audio": "/static/audio/global/card-s-fine-but-there-s-a-fifty-cent-surcharge-under-twenty.mp3",
+          "th": "บัตรได้ แต่ถ้าไม่ถึงยี่สิบเหรียญ บวกค่าธรรมเนียมห้าสิบเซ็นต์",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Customer",
+          "text": "That's okay. Card, please.",
+          "audio": "/static/audio/global/that-s-okay-card-please.mp3",
+          "th": "ไม่เป็นไร จ่ายบัตรนะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Vendor",
+          "text": "Beauty. A bag's twenty cents — do you want one?",
+          "audio": "/static/audio/global/beauty-a-bag-s-twenty-cents-do-you-want-one.mp3",
+          "th": "เยี่ยม ถุงใบละยี่สิบเซ็นต์ เอาไหม",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Customer",
+          "text": "No bag, thanks. How long is the wait?",
+          "audio": "/static/audio/global/no-bag-thanks-how-long-is-the-wait.mp3",
+          "th": "ไม่เอาถุง ขอบคุณ รอนานไหม",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Vendor",
+          "text": "About eight minutes. I'll call number thirty-four.",
+          "audio": "/static/audio/global/about-eight-minutes-i-ll-call-number-thirty-four.mp3",
+          "th": "ประมาณแปดนาที เดี๋ยวเรียกเบอร์สามสิบสี่",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Customer",
+          "text": "Thirty-four, not forty-three? Thanks.",
+          "audio": "/static/audio/global/thirty-four-not-forty-three-thanks.mp3",
+          "th": "สามสิบสี่ ไม่ใช่สี่สิบสามใช่ไหม ขอบคุณ",
+          "th_status": "draft_unverified"
+        }
+      ],
+      "shadow_focus_lines": [
+        {
+          "text": "Two pork skewers, please.",
+          "targets": [
+            "numbers",
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/two-pork-skewers-please.mp3"
+        },
+        {
+          "text": "Can you make it spicier?",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/can-you-make-it-spicier.mp3"
+        },
+        {
+          "text": "Fifteen fifty or fifty fifteen?",
+          "targets": [
+            "numbers"
+          ],
+          "audio": "/static/audio/global/fifteen-fifty-or-fifty-fifteen.mp3"
+        },
+        {
+          "text": "Thirty-four, not forty-three?",
+          "targets": [
+            "numbers"
+          ],
+          "audio": "/static/audio/global/thirty-four-not-forty-three.mp3"
+        }
+      ]
+    }
+  ],
+  "chunk_drills": [
+    {
+      "label": "Placing the order (quantity + item)",
+      "pattern": "[Number] + [item], please. / Can I get [number] + [item], please?",
+      "examples": [
+        "One pad thai, please.",
+        "Two pork skewers, please.",
+        "Can I get three spring rolls, please?",
+        "One rice and a cold water, please."
+      ],
+      "spiralled_grammar": "Recycles numbers 1-20 and plural -s; the plural /s/ and /z/ is itself a final-consonant target (skewers, rolls, noodles)."
+    },
+    {
+      "label": "Setting the spice level",
+      "pattern": "Not too [adjective], please. / Can you make it [comparative]? / No [ingredient], please.",
+      "examples": [
+        "Not too spicy, please.",
+        "Mild, please.",
+        "Can you make it spicier?",
+        "No chilli, please.",
+        "No peanuts — I'm allergic."
+      ],
+      "spiralled_grammar": "Comparative -er (spicier, hotter) recycled from describing preferences; 'not too + adj' as a softener."
+    },
+    {
+      "label": "Extras and swaps",
+      "pattern": "Can I add [a/an + item]? / With extra [item]. / Without [item].",
+      "examples": [
+        "Can I add an egg?",
+        "With extra sauce, please.",
+        "Without coriander, please.",
+        "Can I swap the chicken for tofu?"
+      ],
+      "spiralled_grammar": "a/an before vowel sounds (an egg); recycles 'with/without' from café ordering."
+    },
+    {
+      "label": "Eat in or takeaway",
+      "pattern": "Takeaway, please. / Eat in, thanks. / No bag, thanks.",
+      "examples": [
+        "Takeaway, please.",
+        "Eat here, thanks.",
+        "No bag, thanks.",
+        "Can I have a fork, please?"
+      ],
+      "spiralled_grammar": "One-chunk answers to a two-option question — recycles short-answer strategy from shop and café units."
+    },
+    {
+      "label": "Price, checking and repair",
+      "pattern": "How much is [item]? / How much altogether? / Sorry, was that [number] or [number]?",
+      "examples": [
+        "How much is the pad thai?",
+        "How much altogether?",
+        "Sorry, was that fifteen or fifty?",
+        "Sorry, could you say that again?",
+        "Do you take card?"
+      ],
+      "spiralled_grammar": "Recycles 'How much…?' and price numbers; adds the 'X or Y?' repair question used across all transaction units."
+    },
+    {
+      "label": "Waiting and collecting",
+      "pattern": "How long is the wait? / What number am I? / Did you say [number]?",
+      "examples": [
+        "How long is the wait?",
+        "What number am I?",
+        "Did you say thirty-four?",
+        "Is that mine?"
+      ],
+      "spiralled_grammar": "Recycles time expressions (about ten minutes) and the teen/ty number contrast."
+    }
+  ],
+  "listening_items": [
+    {
+      "audio_text": "That's fourteen twenty for the two of them.",
+      "channel": "food_truck_window, engine and street noise",
+      "question": "How much do you pay?",
+      "answer": "14.20 (fourteen dollars twenty)",
+      "distractor_focus": "forty twenty / fourteen twelve — teen vs ty and the second number"
+    },
+    {
+      "audio_text": "Sorry, the chicken's finished. Pork or tofu?",
+      "channel": "busy stall, face to face",
+      "question": "What can you still order?",
+      "answer": "Pork or tofu (no chicken left)",
+      "distractor_focus": "hearing 'finished' as an approval; missing the two options offered"
+    },
+    {
+      "audio_text": "Medium here is pretty hot, so maybe go mild the first time.",
+      "channel": "stall, vendor leaning over the counter",
+      "question": "What does the vendor recommend?",
+      "answer": "Order mild this time",
+      "distractor_focus": "mild vs medium; 'pretty hot' meaning 'quite hot', not 'nice and hot'"
+    },
+    {
+      "audio_text": "Number thirty-eight! Pad thai, no peanuts!",
+      "channel": "order-number call-out over a noisy night market",
+      "question": "Is order 83 with peanuts ready?",
+      "answer": "No — it's number 38, and it has no peanuts",
+      "distractor_focus": "thirty-eight vs eighty-three; missing the 'no' before peanuts"
+    },
+    {
+      "audio_text": "Cash only, mate. There's an ATM behind the drinks stall.",
+      "channel": "stall, vendor pointing away",
+      "question": "Can you pay by card?",
+      "answer": "No — cash only; the ATM is behind the drinks stall",
+      "distractor_focus": "'cash only' heard as 'cash or card'; final /sh/ in cash"
+    },
+    {
+      "audio_text": "It'll be about fifteen minutes, we're flat out.",
+      "channel": "stall with a long queue",
+      "question": "How long is the wait?",
+      "answer": "About 15 minutes",
+      "distractor_focus": "fifteen vs fifty minutes"
+    }
+  ],
+  "guided_roleplay": {
+    "learner_role": "You are hungry at a busy night-market food stall. Order one main dish with the spice level you actually want, add one extra, check the price, and find out when it's ready.",
+    "flow": [
+      "Step 1 — Open: greet and order. \"Hi. One pad thai, please.\"",
+      "Step 2 — Spice level: answer the vendor's question with a clear level. \"Not too spicy, please.\"",
+      "Step 3 — Extras: add or remove one thing. \"Can I add an egg?\" / \"No peanuts, please.\"",
+      "Step 4 — Eat in or takeaway: choose one. \"Takeaway, please.\"",
+      "Step 5 — Money: ask the total and repeat the number back. \"How much altogether?\" → \"Eight fifty?\"",
+      "Step 6 — Pay: cash or card, and refuse or accept a bag. \"Card, please. No bag, thanks.\"",
+      "Step 7 — Collect: ask about the wait and your number. \"How long is the wait?\" → \"Thirty-four, not forty-three?\""
+    ],
+    "sentence_frames": [
+      "One / Two ______, please.",
+      "Not too spicy, please.",
+      "Can you make it spicier?",
+      "Can I add an egg?",
+      "No ______, please.",
+      "Takeaway, please. / Eat here, thanks.",
+      "How much altogether?",
+      "Sorry, was that ______ or ______?",
+      "Do you take card?",
+      "No bag, thanks.",
+      "How long is the wait?",
+      "Did you say number ______?"
+    ],
+    "hints_available": true
+  },
+  "free_roleplay": {
+    "ai_persona": "A friendly, fast-talking street-food vendor at a packed evening market. Speaks in short chunks, uses casual fillers ('no worries', 'righto', 'you right?'), talks over sizzling noise, and never waits long for an answer. Warm but efficient — repeats things if asked, but only if asked.",
+    "a2_behavior": "Sticks to the standard sequence: takes the order, asks spice level, asks eat in or takeaway, states one clear total, takes payment, gives an order number. Uses simple numbers under twenty and confirms the learner's repeat-back.",
+    "b1_curveballs": [
+      "The item the learner wants is sold out — offers two alternatives and asks them to choose quickly.",
+      "Says the total fast and unclearly ('fifteen fifty'), then tests whether the learner repeats it back correctly.",
+      "Warns that 'medium' at this stall is much hotter (or much milder) than expected and asks the learner to decide again.",
+      "Cash only, or a card surcharge for orders under twenty — the learner must react and still pay.",
+      "Charges extra for rice, sauce or a bag, so the total goes up after the learner already heard a price.",
+      "Calls a number that sounds like the learner's ('forty-three' vs 'thirty-four') and lets them almost take the wrong order.",
+      "Asks a question the learner didn't prepare: 'Anything to drink?' or 'You want it cut up?'"
+    ],
+    "roleplay_rubric": [
+      {
+        "criterion": "Ordered a specific item with a quantity, audibly (number + item + please)",
+        "type": "required"
+      },
+      {
+        "criterion": "Stated a spice level or asked for it to be changed ('not too spicy' / 'a bit spicier')",
+        "type": "required"
+      },
+      {
+        "criterion": "Handled the money step: asked the total and repeated the number back before paying",
+        "type": "required"
+      },
+      {
+        "criterion": "Chose takeaway or eat in and dealt with the extras question (bag / drink / extra rice)",
+        "type": "required"
+      },
+      {
+        "criterion": "Used at least one repair phrase when unsure ('Sorry, was that fifteen or fifty?' / 'Could you say that again?')",
+        "type": "required"
+      },
+      {
+        "criterion": "Pronunciation: teen/ty numbers distinct, and final consonants audible in rice, pork, egg, bag, cash",
+        "type": "pronunciation"
+      },
+      {
+        "criterion": "Register stayed short and casual-friendly — 'please/thanks' rather than long formal sentences",
+        "type": "required"
+      },
+      {
+        "criterion": "Coped with an off-script curveball (sold out, surcharge, wrong number called) and still finished the order",
+        "type": "stretch_b1"
+      }
+    ]
+  },
+  "register_culture_note": {
+    "en": "Street-food ordering is the fastest register in this course. Vendors want the shortest usable answer: 'Two pork skewers, please' — not 'Excuse me sir, I would like to order two pieces of pork.' Politeness lives in one word: please, thanks, cheers. Being brief is not rude here; being slow is what causes stress, because there's a queue behind you. Decide before you reach the counter, then say your order in one breath. The two things you must say clearly are the number and the last sound of the food word — that's what the vendor actually listens for.",
+    "th": null,
+    "do_dont": [
+      {
+        "avoid": "\"No spicy.\"",
+        "prefer": "\"Not too spicy, please.\" (or \"No chilli, please.\")"
+      },
+      {
+        "avoid": "\"I want two chicken.\"",
+        "prefer": "\"Two chicken skewers, please.\""
+      },
+      {
+        "avoid": "Saying \"ri-\" with no /s/ so it sounds like \"rye\"",
+        "prefer": "\"Rice\" — let the /s/ finish before you stop"
+      },
+      {
+        "avoid": "Nodding when you didn't catch the price",
+        "prefer": "\"Sorry, was that fifteen or fifty?\""
+      },
+      {
+        "avoid": "\"Egg\" said as \"eh\" — the extra never gets added",
+        "prefer": "\"Can I add an egg?\" with the /g/ landing"
+      },
+      {
+        "avoid": "\"Can you give me discount?\"",
+        "prefer": "\"How much altogether?\" — prices are fixed"
+      }
+    ],
+    "thai_cultural_note": "Two habits from Thai markets don't travel. First, haggling: at street stalls and food trucks outside Thailand prices are fixed and posted, and asking for a discount reads as odd rather than friendly. Second, pointing-and-nodding: in Thailand you can often just point at the tray and hold up fingers, and the vendor sorts it out. Abroad the vendor usually can't see the food from where you stand and will ask spice level, size, extras and payment out loud — so you have to speak. Also, saying a plain 'Two skewers, please' with no softening is completely normal and not impolite; you do not need an apology before every request."
+  },
+  "can_do_checkpoints": [
+    {
+      "cefr": "A2",
+      "statement": "I can order a specific dish with a quantity at a street-food stall."
+    },
+    {
+      "cefr": "A2",
+      "statement": "I can say the spice level I want, including 'not too spicy'."
+    },
+    {
+      "cefr": "A2",
+      "statement": "I can choose takeaway or eat in and add one extra, like an egg."
+    },
+    {
+      "cefr": "A2",
+      "statement": "I can ask the total, repeat the price back, and pay by cash or card."
+    },
+    {
+      "cefr": "B1",
+      "statement": "I can react when my dish is sold out and choose an alternative on the spot."
+    },
+    {
+      "cefr": "B1",
+      "statement": "I can handle an unexpected extra charge (bag, rice, card surcharge) and confirm the new total."
+    },
+    {
+      "cefr": "B1",
+      "statement": "I can check my order number and ask how long the wait is."
+    },
+    {
+      "cefr": "Sound",
+      "statement": "My teen/ty numbers are distinguishable and my final consonants (rice, pork, egg, bag, cash) are audible over street noise."
+    }
+  ],
+  "gamification": {
+    "xp_per_substep": true,
+    "unlocks": [
+      "Night Market badge — complete the A2 dialogue with all four shadow lines above threshold",
+      "Sold Out! badge — finish a free roleplay where your first choice is unavailable",
+      "Exact Change badge — repeat back three prices correctly in a row",
+      "Order Number badge — pass all teen/ty listening items with no errors",
+      "Unlocks next unit: ordering at a sit-down restaurant"
+    ],
+    "sound_meters": [
+      {
+        "sound": "numbers",
+        "display": "Teen vs Ty meter — tracks fifteen/fifty, thirteen/thirty, fourteen/forty accuracy across drills and roleplay"
+      },
+      {
+        "sound": "final_consonants",
+        "display": "Last Sound meter — tracks audible finals in rice, pork, egg, bag, cash, hot"
+      }
+    ]
+  },
+  "_review_status": {
+    "thai_strings": "DRAFT - machine-generated, tagged th_status=draft_unverified. A native Thai speaker must review every string and set th_status='reviewed'.",
+    "facts": "UNVERIFIED - generated content, needs a local fact-check before shipping",
+    "generated_by": "claude-opus-5"
+  }
+}

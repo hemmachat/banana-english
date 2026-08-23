@@ -1,0 +1,857 @@
+{
+  "scenario_id": "cafe_coffee_order",
+  "locale": "global",
+  "title_en": "Ordering Coffee",
+  "title_th": "การสั่งกาแฟ",
+  "tier": 1,
+  "cefr_range": [
+    "A2",
+    "B1"
+  ],
+  "prerequisites": [
+    "greetings_small_talk",
+    "numbers_and_prices",
+    "polite_requests"
+  ],
+  "recycles": [
+    "greetings and 'How are you?' small talk",
+    "numbers and prices ('That's five twenty')",
+    "'How much is that?'",
+    "'Can I get…' / 'Could I have…' polite requests",
+    "clarification: 'Sorry, could you say that again?'",
+    "'thanks' / 'no worries' closings"
+  ],
+  "register": "Casual-polite service register: short, friendly, first-name-free; direct requests with 'please' are normal and expected.",
+  "sound_target_box": {
+    "note_th": null,
+    "targets": [
+      {
+        "sound": "final_consonants",
+        "scoring_method": "phoneme",
+        "words_in_context": [
+          "iced (iced latte)",
+          "milk (oat milk)",
+          "large",
+          "size",
+          "hot",
+          "cup",
+          "cash",
+          "card",
+          "small"
+        ],
+        "minimal_pairs": [
+          [
+            "ice",
+            "iced"
+          ],
+          [
+            "milk",
+            "mill"
+          ],
+          [
+            "hot",
+            "hop"
+          ],
+          [
+            "cup",
+            "cut"
+          ],
+          [
+            "size",
+            "side"
+          ],
+          [
+            "card",
+            "car"
+          ]
+        ],
+        "why_it_matters_here": "Thai unreleased finals delete the /st/ in 'iced' and the /lk/ in 'milk'. A barista who hears 'ice latte' with no /t/ often serves a HOT latte with ice on the side, and 'oat mil…' with no /k/ gets read as 'oat', 'old' or nothing at all — so you pay for a drink you can't drink and have to argue about it in a queue."
+      },
+      {
+        "sound": "vowel_glides",
+        "scoring_method": "phoneme",
+        "words_in_context": [
+          "oat milk",
+          "no sugar",
+          "soy milk",
+          "iced",
+          "takeaway",
+          "medium",
+          "cold brew"
+        ],
+        "minimal_pairs": [
+          [
+            "oat",
+            "ought"
+          ],
+          [
+            "coat",
+            "caught"
+          ],
+          [
+            "no",
+            "now"
+          ],
+          [
+            "so",
+            "saw"
+          ],
+          [
+            "day",
+            "die"
+          ],
+          [
+            "soy",
+            "saw"
+          ]
+        ],
+        "why_it_matters_here": "Thai flattens the /oʊ/ and /aɪ/ glides, so 'oat milk' comes out as 'hot milk' or 'ought milk' and 'no sugar' as 'now sugar'. If you are dairy-intolerant or vegan, a flat 'oat' hands you a cow's-milk latte; a flat 'no' in 'no sugar' is the difference between an unsweetened drink and three pumps of syrup."
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "en": "small / medium / large",
+      "th": "เล็ก / กลาง / ใหญ่ — ร้านกาแฟที่นี่หลายร้านไม่มี small ด้วยซ้ำ มีแค่ regular กับ large",
+      "group": "size",
+      "audio_needed": true,
+      "audio": "/static/audio/global/small-medium-large.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "regular",
+      "th": "ขนาดธรรมดา แก้วมาตรฐานของร้าน ถ้าไม่รู้จะสั่งไซซ์ไหน บอก regular ไปก่อนได้",
+      "group": "size",
+      "audio_needed": true,
+      "audio": "/static/audio/global/regular.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "hot",
+      "th": "ร้อน",
+      "group": "temperature",
+      "audio_needed": true,
+      "audio": "/static/audio/global/hot.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "iced",
+      "th": "เย็น ใส่น้ำแข็ง เช่น iced latte = ลาเต้เย็น",
+      "group": "temperature",
+      "audio_needed": true,
+      "audio": "/static/audio/global/iced.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "extra hot",
+      "th": "ร้อนพิเศษ ให้เขาตีนมร้อนกว่าปกติ สั่งได้ถ้าชอบร้อนจัด",
+      "group": "temperature",
+      "audio_needed": true,
+      "audio": "/static/audio/global/extra-hot.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "latte",
+      "th": "กาแฟใส่นมเยอะ รสนุ่ม ฟองนมบางๆ",
+      "group": "drinks",
+      "audio_needed": true,
+      "audio": "/static/audio/global/latte.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "flat white",
+      "th": "คล้ายลาเต้แต่นมน้อยกว่า รสกาแฟเข้มกว่า เป็นเมนูที่คนออสเตรเลียสั่งกันเยอะที่สุด",
+      "group": "drinks",
+      "audio_needed": true,
+      "audio": "/static/audio/global/flat-white.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "americano",
+      "th": "เอสเพรสโซ่เติมน้ำร้อน ไม่ใส่นม ที่ออสเตรเลียบางร้านเรียก long black",
+      "group": "drinks",
+      "audio_needed": true,
+      "audio": "/static/audio/global/americano.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "cold brew",
+      "th": "กาแฟสกัดเย็น แช่ไว้หลายชั่วโมง ไม่ใช่กาแฟร้อนเทใส่น้ำแข็ง รสนุ่มกว่าและเข้มกว่า",
+      "group": "drinks",
+      "audio_needed": true,
+      "audio": "/static/audio/global/cold-brew.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "oat milk",
+      "th": "นมข้าวโอ๊ต ส่วนใหญ่บวกเงินเพิ่ม",
+      "group": "milk_options",
+      "audio_needed": true,
+      "audio": "/static/audio/global/oat-milk.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "soy milk",
+      "th": "นมถั่วเหลือง",
+      "group": "milk_options",
+      "audio_needed": true,
+      "audio": "/static/audio/global/soy-milk.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "almond milk",
+      "th": "นมอัลมอนด์",
+      "group": "milk_options",
+      "audio_needed": true,
+      "audio": "/static/audio/global/almond-milk.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "full cream / skim milk",
+      "th": "นมสดไขมันเต็ม / นมพร่องไขมัน ถ้าไม่บอกอะไร เขาจะใส่ full cream ให้",
+      "group": "milk_options",
+      "audio_needed": true,
+      "audio": "/static/audio/global/full-cream-skim-milk.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "less sugar",
+      "th": "หวานน้อย",
+      "group": "sweetness",
+      "audio_needed": true,
+      "audio": "/static/audio/global/less-sugar.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "no sugar",
+      "th": "ไม่ใส่น้ำตาล กาแฟที่นี่ปกติไม่ใส่น้ำตาลอยู่แล้ว ถ้าอยากหวานต้องบอกเอง",
+      "group": "sweetness",
+      "audio_needed": true,
+      "audio": "/static/audio/global/no-sugar.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "not too sweet",
+      "th": "\"อย่าหวานมากนะ\" ใช้ตอนสั่งเครื่องดื่มที่มีไซรัป",
+      "group": "sweetness",
+      "audio_needed": true,
+      "audio": "/static/audio/global/not-too-sweet.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "one pump of syrup",
+      "th": "ไซรัปหนึ่งกด บอกจำนวนได้ เช่น one pump = หวานนิดเดียว",
+      "group": "sweetness",
+      "audio_needed": true,
+      "audio": "/static/audio/global/one-pump-of-syrup.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "for here",
+      "th": "กินที่ร้าน เขาจะเสิร์ฟใส่ถ้วยจริง บางร้านพูดว่า have here หรือ dine in",
+      "group": "service",
+      "audio_needed": true,
+      "audio": "/static/audio/global/for-here.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "to go / takeaway",
+      "th": "เอากลับ ใส่แก้วกระดาษ คนออสเตรเลียพูด takeaway มากกว่า to go",
+      "group": "service",
+      "audio_needed": true,
+      "audio": "/static/audio/global/to-go-takeaway.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "name for the order",
+      "th": "เขาถามชื่อไว้เขียนบนแก้วแล้วเรียกตอนเสร็จ บอกชื่อสั้นๆ ที่ฝรั่งออกเสียงง่ายก็ได้",
+      "group": "service",
+      "audio_needed": true,
+      "audio": "/static/audio/global/name-for-the-order.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "card or cash",
+      "th": "จ่ายบัตรหรือเงินสด ร้านส่วนใหญ่ที่นี่รับบัตรหมด บางร้านไม่รับเงินสดเลย",
+      "group": "payment",
+      "audio_needed": true,
+      "audio": "/static/audio/global/card-or-cash.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "tap (contactless)",
+      "th": "แตะบัตรหรือมือถือ ไม่ต้องเสียบ ไม่ต้องกดรหัส ถ้าไม่เกิน $100",
+      "group": "payment",
+      "audio_needed": true,
+      "audio": "/static/audio/global/tap-contactless.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "receipt",
+      "th": "ใบเสร็จ เขาจะถามว่าเอาไหม ไม่เอาก็ตอบ \"no thanks\" ได้เลย",
+      "group": "payment",
+      "audio_needed": true,
+      "audio": "/static/audio/global/receipt.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "we're out of…",
+      "th": "\"ของหมด\" เช่น oat milk หมด เราต้องเลือกอย่างอื่นแทน",
+      "group": "problems",
+      "audio_needed": true,
+      "audio": "/static/audio/global/we-re-out-of.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "extra fifty cents",
+      "th": "บวกเพิ่ม 50 เซนต์ ปกติคิดเพิ่มตอนเปลี่ยนเป็นนมทางเลือก หรืออัพไซซ์",
+      "group": "payment",
+      "audio_needed": true,
+      "audio": "/static/audio/global/extra-fifty-cents.mp3",
+      "th_status": "draft_unverified"
+    }
+  ],
+  "model_dialogues": [
+    {
+      "cefr": "A2",
+      "label": "Standard counter order — size, milk, sweetness, here or to go",
+      "lines": [
+        {
+          "speaker": "Barista",
+          "text": "Hi there! What can I get you?",
+          "audio": "/static/audio/global/hi-there-what-can-i-get-you.mp3",
+          "th": "สวัสดีค่ะ รับอะไรดีคะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Customer",
+          "text": "Can I get a large iced latte, please?",
+          "audio": "/static/audio/global/can-i-get-a-large-iced-latte-please.mp3",
+          "th": "ขอลาเต้เย็นแก้วใหญ่หนึ่งแก้วครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Barista",
+          "text": "Sure. Any milk preference?",
+          "audio": "/static/audio/global/sure-any-milk-preference.mp3",
+          "th": "ได้เลยค่ะ ใช้นมอะไรดีคะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Customer",
+          "text": "Oat milk, please. And less sugar.",
+          "audio": "/static/audio/global/oat-milk-please-and-less-sugar.mp3",
+          "th": "ขอนมโอ๊ตครับ แล้วก็หวานน้อยด้วย",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Barista",
+          "text": "No worries. For here or to go?",
+          "audio": "/static/audio/global/no-worries-for-here-or-to-go.mp3",
+          "th": "ได้เลยค่ะ นั่งทานที่ร้าน หรือใส่กลับคะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Customer",
+          "text": "To go, thanks.",
+          "audio": "/static/audio/global/to-go-thanks.mp3",
+          "th": "ใส่กลับครับ ขอบคุณครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Barista",
+          "text": "That's five twenty. Name for the order?",
+          "audio": "/static/audio/global/that-s-five-twenty-name-for-the-order.mp3",
+          "th": "ห้าเหรียญยี่สิบค่ะ ขอชื่อด้วยค่ะ (ไว้เรียกตอนเครื่องดื่มเสร็จ)",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Customer",
+          "text": "It's Nok. N-O-K.",
+          "audio": "/static/audio/global/it-s-nok-n-o-k.mp3",
+          "th": "นกค่ะ N-O-K",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Barista",
+          "text": "Perfect. About three minutes, Nok.",
+          "audio": "/static/audio/global/perfect-about-three-minutes-nok.mp3",
+          "th": "โอเคค่ะ อีกประมาณสามนาทีนะคะ คุณนก",
+          "th_status": "draft_unverified"
+        }
+      ],
+      "shadow_focus_lines": [
+        {
+          "text": "a large iced latte",
+          "targets": [
+            "final_consonants",
+            "vowel_glides"
+          ],
+          "audio": "/static/audio/global/a-large-iced-latte.mp3"
+        },
+        {
+          "text": "oat milk, please",
+          "targets": [
+            "vowel_glides",
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/oat-milk-please.mp3"
+        },
+        {
+          "text": "less sugar, thanks",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/less-sugar-thanks.mp3"
+        },
+        {
+          "text": "to go, thanks",
+          "targets": [
+            "vowel_glides"
+          ],
+          "audio": "/static/audio/global/to-go-thanks.mp3"
+        }
+      ]
+    },
+    {
+      "cefr": "B1",
+      "label": "Same cafe, everything goes slightly wrong — out of oat milk, extra charge, card reader down",
+      "lines": [
+        {
+          "speaker": "Barista",
+          "text": "Morning! What can I get started for you?",
+          "audio": "/static/audio/global/morning-what-can-i-get-started-for-you.mp3",
+          "th": "อรุณสวัสดิ์ค่ะ รับอะไรดีคะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Customer",
+          "text": "Can I get a medium latte with oat milk?",
+          "audio": "/static/audio/global/can-i-get-a-medium-latte-with-oat-milk.mp3",
+          "th": "ขอลาเต้แก้วกลาง ใส่นมโอ๊ตครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Barista",
+          "text": "Ah, sorry — we've just run out of oat. Soy or almond okay?",
+          "audio": "/static/audio/global/ah-sorry-we-ve-just-run-out-of-oat-soy-or-almond-okay.mp3",
+          "th": "โอ๊ะ ขอโทษค่ะ นมโอ๊ตเพิ่งหมดพอดี เอานมถั่วเหลืองหรือนมอัลมอนด์แทนได้ไหมคะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Customer",
+          "text": "Sorry, could you say that again?",
+          "audio": "/static/audio/global/sorry-could-you-say-that-again.mp3",
+          "th": "ขอโทษครับ พูดอีกทีได้ไหมครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Barista",
+          "text": "No oat milk today. We've got soy milk or almond milk.",
+          "audio": "/static/audio/global/no-oat-milk-today-we-ve-got-soy-milk-or-almond-milk.mp3",
+          "th": "วันนี้ไม่มีนมโอ๊ตค่ะ มีแค่นมถั่วเหลืองกับนมอัลมอนด์",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Customer",
+          "text": "Almond, then. Is it extra?",
+          "audio": "/static/audio/global/almond-then-is-it-extra.mp3",
+          "th": "งั้นเอาอัลมอนด์ครับ ต้องจ่ายเพิ่มไหมครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Barista",
+          "text": "Fifty cents extra on the alternative milks. Hot or iced?",
+          "audio": "/static/audio/global/fifty-cents-extra-on-the-alternative-milks-hot-or-iced.mp3",
+          "th": "ถ้าเปลี่ยนเป็นนมชนิดอื่น บวกเพิ่ม 50 เซ็นต์ค่ะ เอาร้อนหรือเย็นคะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Customer",
+          "text": "Iced, please. Not too sweet.",
+          "audio": "/static/audio/global/iced-please-not-too-sweet.mp3",
+          "th": "เย็นครับ ไม่ต้องหวานมาก",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Barista",
+          "text": "So one pump of syrup instead of two?",
+          "audio": "/static/audio/global/so-one-pump-of-syrup-instead-of-two.mp3",
+          "th": "งั้นใส่ไซรัปปั๊มเดียว จากปกติสองปั๊มนะคะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Customer",
+          "text": "Yes, one pump is fine.",
+          "audio": "/static/audio/global/yes-one-pump-is-fine.mp3",
+          "th": "ครับ ปั๊มเดียวพอครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Barista",
+          "text": "Anything to eat? The banana bread's just out of the oven.",
+          "audio": "/static/audio/global/anything-to-eat-the-banana-bread-s-just-out-of-the-oven.mp3",
+          "th": "รับอะไรทานเล่นไหมคะ บานาน่าเบรดเพิ่งออกจากเตาเลย",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Customer",
+          "text": "No, thanks. Just the drink.",
+          "audio": "/static/audio/global/no-thanks-just-the-drink.mp3",
+          "th": "ไม่ครับ ขอแค่เครื่องดื่ม",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Barista",
+          "text": "That's six fifty all up. Card or cash?",
+          "audio": "/static/audio/global/that-s-six-fifty-all-up-card-or-cash.mp3",
+          "th": "รวมหกเหรียญห้าสิบค่ะ จ่ายบัตรหรือเงินสดคะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Customer",
+          "text": "Card. Can I tap?",
+          "audio": "/static/audio/global/card-can-i-tap.mp3",
+          "th": "บัตรครับ แตะจ่ายได้ไหมครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Barista",
+          "text": "Tap's down this morning, sorry — chip and PIN today.",
+          "audio": "/static/audio/global/tap-s-down-this-morning-sorry-chip-and-pin-today.mp3",
+          "th": "เช้านี้ระบบแตะจ่ายเสียค่ะ ขอโทษด้วยนะคะ วันนี้ต้องเสียบบัตรแล้วกด PIN",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Customer",
+          "text": "Okay, one second.",
+          "audio": "/static/audio/global/okay-one-second.mp3",
+          "th": "โอเคครับ แป๊บนึงนะครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Barista",
+          "text": "Beautiful, that's gone through. For here or takeaway?",
+          "audio": "/static/audio/global/beautiful-that-s-gone-through-for-here-or-takeaway.mp3",
+          "th": "เรียบร้อยค่ะ ตัดเงินผ่านแล้ว นั่งทานที่ร้านหรือใส่กลับคะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Customer",
+          "text": "For here, please.",
+          "audio": "/static/audio/global/for-here-please.mp3",
+          "th": "นั่งทานที่ร้านครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Barista",
+          "text": "Grab a seat and I'll bring it over.",
+          "audio": "/static/audio/global/grab-a-seat-and-i-ll-bring-it-over.mp3",
+          "th": "นั่งรอได้เลยค่ะ เดี๋ยวยกไปเสิร์ฟให้",
+          "th_status": "draft_unverified"
+        }
+      ],
+      "shadow_focus_lines": [
+        {
+          "text": "almond, then — is it extra?",
+          "targets": [
+            "final_consonants",
+            "vowel_glides"
+          ],
+          "audio": "/static/audio/global/almond-then-is-it-extra.mp3"
+        },
+        {
+          "text": "iced, please, not too sweet",
+          "targets": [
+            "final_consonants",
+            "vowel_glides"
+          ],
+          "audio": "/static/audio/global/iced-please-not-too-sweet.mp3"
+        },
+        {
+          "text": "one pump is fine",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/one-pump-is-fine.mp3"
+        },
+        {
+          "text": "for here, please",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/for-here-please.mp3"
+        }
+      ]
+    }
+  ],
+  "chunk_drills": [
+    {
+      "label": "The core order line",
+      "pattern": "Can I get a + [size] + [hot/iced] + [drink], please?",
+      "examples": [
+        "Can I get a small hot latte, please?",
+        "Can I get a large iced americano, please?",
+        "Could I have a medium flat white, please?",
+        "Can I get a cold brew, please?"
+      ],
+      "spiralled_grammar": "Recycles the 'Can I get / Could I have…' polite request from ordering food; adjective order (size before temperature before drink) practised as a fixed chunk, not a rule."
+    },
+    {
+      "label": "Milk and sweetness add-ons",
+      "pattern": "with [milk] / [less / no] sugar / not too sweet",
+      "examples": [
+        "With oat milk, please.",
+        "With soy, please.",
+        "Less sugar, thanks.",
+        "No sugar at all.",
+        "Not too sweet, please.",
+        "One pump of syrup, please."
+      ],
+      "spiralled_grammar": "Prepositional 'with + noun' add-on and quantifier 'less / no' — recycled from food ordering ('with rice', 'no chilli')."
+    },
+    {
+      "label": "For here or to go",
+      "pattern": "[For here] / [To go / Takeaway], please.",
+      "examples": [
+        "For here, please.",
+        "To go, thanks.",
+        "Takeaway, please.",
+        "Sorry — to go, actually."
+      ],
+      "spiralled_grammar": "Short elliptical answers (no full sentence needed) — the natural service-counter reply pattern."
+    },
+    {
+      "label": "Price, payment and change of mind",
+      "pattern": "How much is that? / Card, please. / Can I tap?",
+      "examples": [
+        "How much is that?",
+        "Sorry, how much?",
+        "Card, please.",
+        "Cash, thanks.",
+        "Can I tap?",
+        "Can I get a receipt?"
+      ],
+      "spiralled_grammar": "Recycles numbers and prices ('five twenty', 'six fifty') and the 'How much…?' question from shopping."
+    },
+    {
+      "label": "Fixing a misunderstanding at the counter",
+      "pattern": "Sorry, could you say that again? / Sorry, did you say [A] or [B]?",
+      "examples": [
+        "Sorry, could you say that again?",
+        "Sorry, did you say small or large?",
+        "Sorry, did you say six fifty or six fifteen?",
+        "Sorry, I asked for oat milk.",
+        "Is oat milk extra?"
+      ],
+      "spiralled_grammar": "Recycled clarification formulas plus 'or' alternative questions; repairing an order politely without apologising excessively."
+    }
+  ],
+  "listening_items": [
+    {
+      "audio_text": "That's four fifteen, thanks.",
+      "channel": "counter, background espresso grinder",
+      "question": "How much do you pay?",
+      "answer": "$4.15",
+      "distractor_focus": "four fifteen vs four fifty — final /n/ + stress on the teen number"
+    },
+    {
+      "audio_text": "Sorry, we're out of oat — soy or almond?",
+      "channel": "counter, spoken fast",
+      "question": "Which milk is NOT available?",
+      "answer": "Oat milk",
+      "distractor_focus": "oat /oʊ/ flattened toward 'ought'; learners mishear 'out of oat' as 'out of it'"
+    },
+    {
+      "audio_text": "Was that a large iced latte or a large hot latte?",
+      "channel": "counter check-back",
+      "question": "What is the barista unsure about?",
+      "answer": "Whether the drink is iced or hot",
+      "distractor_focus": "iced /aɪst/ vs ice / hot — final cluster and glide"
+    },
+    {
+      "audio_text": "One flat white for here, and a small cold brew to go.",
+      "channel": "barista repeating an order back",
+      "question": "Which drink is takeaway?",
+      "answer": "The small cold brew",
+      "distractor_focus": "'for here' vs 'to go' attached to the wrong drink; final /d/ in 'cold'"
+    },
+    {
+      "audio_text": "Name for the order? … Sorry, could you spell that?",
+      "channel": "counter, noisy queue",
+      "question": "What does the barista want you to do?",
+      "answer": "Spell your name",
+      "distractor_focus": "'spell that' vs 'say that' — final /l/ + /s/ cluster"
+    },
+    {
+      "audio_text": "Tap's not working today, sorry — chip and PIN.",
+      "channel": "payment terminal, quiet mumble",
+      "question": "How can you pay with your card?",
+      "answer": "Insert the card and enter your PIN (no contactless)",
+      "distractor_focus": "'tap's not working' heard as 'that's not working'; final /p/ + /s/"
+    }
+  ],
+  "guided_roleplay": {
+    "learner_role": "Customer ordering one coffee at a busy cafe counter, with on-screen frames and a hint button",
+    "flow": [
+      "1. Greet and open: respond to 'Hi, what can I get you?'",
+      "2. Give the core order: size + hot/iced + drink",
+      "3. Customise: milk choice + sweetness ('oat milk, less sugar')",
+      "4. Handle one check-back question ('Hot or iced?' / 'Which size?') and confirm clearly",
+      "5. Answer 'for here or to go?'",
+      "6. Hear the price, pay, and give a name for the order",
+      "7. Ask one wrap-up question: how long it will take, or where to wait"
+    ],
+    "sentence_frames": [
+      "Can I get a ___ ___ ___, please?",
+      "With ___ milk, please.",
+      "Less sugar, thanks. / No sugar, please.",
+      "Iced, please. / Hot, please.",
+      "For here, please. / To go, thanks.",
+      "Sorry, could you say that again?",
+      "Sorry, how much?",
+      "Card, please. / Cash, thanks.",
+      "It's ___. (name)",
+      "How long will it be?"
+    ],
+    "hints_available": true
+  },
+  "free_roleplay": {
+    "ai_persona": "A friendly, slightly rushed barista at a busy morning cafe. Speaks fast, uses short service phrases ('what can I get you', 'no worries', 'all good'), repeats orders back, and keeps the queue moving. Never rude, never switches to slow textbook English unless the learner asks.",
+    "a2_behavior": "Sticks to the standard sequence: order → milk → sweetness → for here or to go → price → name. Repeats back clearly, accepts one-word answers, and offers the price twice if the learner hesitates.",
+    "b1_curveballs": [
+      "Out of oat milk — offers soy or almond, and mentions a 50c surcharge the learner must notice and respond to.",
+      "Mishears the size: brings up 'so that's a small?' when the learner asked for a large — learner must correct politely.",
+      "Card machine is contactless-only / down — learner must switch payment method.",
+      "Upsell: 'Do you want to make it a large for 80 cents more?' — learner must accept or decline clearly.",
+      "Wrong drink handed over ('one hot latte!') when the learner ordered iced — learner must repair the order.",
+      "Asks for a name and then asks the learner to spell it in a noisy queue."
+    ],
+    "roleplay_rubric": [
+      {
+        "criterion": "Gave a complete order: size + hot/iced + drink, understandable on the first try",
+        "type": "required"
+      },
+      {
+        "criterion": "Specified milk and sweetness ('oat milk', 'less sugar') without prompting",
+        "type": "required"
+      },
+      {
+        "criterion": "Answered 'for here or to go?' correctly and paid without breaking down",
+        "type": "required"
+      },
+      {
+        "criterion": "Used at least one clarification or repair line ('Sorry, could you say that again?', 'Sorry, I asked for iced')",
+        "type": "required"
+      },
+      {
+        "criterion": "Register stayed casual-polite: short phrases with 'please/thanks', no over-apologising or over-formal language",
+        "type": "required"
+      },
+      {
+        "criterion": "Pronunciation: final consonants in 'iced', 'milk', 'large', 'card' audible, and 'oat'/'no' glides distinct from 'hot'/'now'",
+        "type": "pronunciation"
+      },
+      {
+        "criterion": "Coped with a curveball (out of stock, surcharge, wrong drink, card issue) and still finished the order",
+        "type": "stretch_b1"
+      }
+    ]
+  },
+  "register_culture_note": {
+    "en": "Cafe English is short, fast and friendly. Full sentences are not expected — 'Large iced latte, oat milk, thanks' is a perfect order. 'Please' and 'thanks' do all the politeness work; you do not need extra softening. It is completely normal to customise your drink (less sugar, different milk, extra shot) and to ask the price — baristas do this all day and will not think you are difficult.",
+    "th": null,
+    "do_dont": [
+      {
+        "avoid": "I want coffee.",
+        "prefer": "Can I get a large iced latte, please?"
+      },
+      {
+        "avoid": "Ice latte. (no /t/, no /s/)",
+        "prefer": "Iced latte — say the final -st clearly, or add 'cold, not hot' to be safe."
+      },
+      {
+        "avoid": "Oat mil… (final /k/ dropped)",
+        "prefer": "Oat milk — release the /k/, or say 'oat, not dairy'."
+      },
+      {
+        "avoid": "Not sweet too much.",
+        "prefer": "Not too sweet, please. / Less sugar, thanks."
+      },
+      {
+        "avoid": "Standing silent when the barista says a price you didn't catch.",
+        "prefer": "Sorry, how much? / Sorry, could you say that again?"
+      },
+      {
+        "avoid": "Excuse me sir, I would like to request one cup of coffee.",
+        "prefer": "Hi — can I get a flat white, please?"
+      }
+    ],
+    "thai_cultural_note": "In Thailand it is common to accept the drink as made and quietly fix it yourself (add ice, add sugar, say nothing if it's wrong). In most English-speaking cafes, saying something immediately is normal and expected — 'Sorry, I asked for iced' gets a cheerful remake, not annoyance. Waiting until you have left means you keep the drink you can't drink. Customising is also standard, not fussy: staff assume everyone has a milk and sugar preference and will ask you for it."
+  },
+  "can_do_checkpoints": [
+    {
+      "cefr": "A2",
+      "statement": "I can order a coffee with size and temperature ('a large iced latte, please')."
+    },
+    {
+      "cefr": "A2",
+      "statement": "I can ask for a specific milk and sweetness ('oat milk, less sugar')."
+    },
+    {
+      "cefr": "A2",
+      "statement": "I can answer 'for here or to go?', understand the price, and give my name."
+    },
+    {
+      "cefr": "B1",
+      "statement": "I can handle a problem — out of stock, a surcharge, or the wrong drink — and still complete my order politely."
+    },
+    {
+      "cefr": "B1",
+      "statement": "I can ask for clarification about the price or the options and confirm what I heard."
+    },
+    {
+      "cefr": "Sound",
+      "statement": "My final consonants in 'iced', 'milk', 'large' and 'card' are audible, and 'oat' / 'no' don't sound like 'hot' / 'now'."
+    }
+  ],
+  "gamification": {
+    "xp_per_substep": true,
+    "unlocks": [
+      "Barista Badge: complete the A2 order with no hints",
+      "Custom Order: use three customisations in one line (size + milk + sweetness)",
+      "Repair Kit: successfully fix a wrong drink in free roleplay",
+      "Rush Hour: finish the B1 dialogue at natural speed",
+      "Unlocks next scenario: ordering food at a counter / takeaway"
+    ],
+    "sound_meters": [
+      {
+        "sound": "final_consonants",
+        "tracked_words": [
+          "iced",
+          "milk",
+          "large",
+          "card",
+          "hot",
+          "cup"
+        ]
+      },
+      {
+        "sound": "vowel_glides",
+        "tracked_words": [
+          "oat",
+          "no",
+          "soy",
+          "iced",
+          "takeaway",
+          "cold"
+        ]
+      }
+    ]
+  },
+  "_review_status": {
+    "thai_strings": "DRAFT - machine-generated, tagged th_status=draft_unverified. A native Thai speaker must review every string and set th_status='reviewed'.",
+    "facts": "UNVERIFIED - generated content, needs a local fact-check before shipping",
+    "generated_by": "claude-opus-5"
+  }
+}

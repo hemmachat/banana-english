@@ -1,0 +1,836 @@
+{
+  "scenario_id": "market_bargaining",
+  "locale": "global",
+  "title_en": "Bargaining at the Market",
+  "title_th": "การต่อราคาที่ตลาด",
+  "tier": 1,
+  "cefr_range": [
+    "A2",
+    "B1"
+  ],
+  "prerequisites": [
+    "greetings_small_talk",
+    "numbers_and_money"
+  ],
+  "recycles": [
+    "numbers 1-1000",
+    "\"How much is it?\" / \"How much for these?\"",
+    "polite requests: \"Can you...?\" / \"Could you...?\"",
+    "quantities: a kilo, a box, two of them",
+    "clarification: \"Sorry, could you say that again?\"",
+    "thanking and closing: \"Thanks a lot.\" / \"See you.\""
+  ],
+  "register": "Casual-friendly. Short sentences, first-name-free, light humour. Firm but never aggressive — you are haggling with a person you may see again next week.",
+  "sound_target_box": {
+    "note_th": null,
+    "targets": [
+      {
+        "sound": "numbers",
+        "scoring_method": "phoneme",
+        "words_in_context": [
+          "fifteen or fifty?",
+          "thirteen baht each",
+          "eighty in cash",
+          "a hundred and twenty a box",
+          "two kilos, please",
+          "forty-five"
+        ],
+        "minimal_pairs": [
+          [
+            "fifteen",
+            "fifty"
+          ],
+          [
+            "thirteen",
+            "thirty"
+          ],
+          [
+            "sixteen",
+            "sixty"
+          ],
+          [
+            "eighteen",
+            "eighty"
+          ],
+          [
+            "nineteen",
+            "ninety"
+          ]
+        ],
+        "why_it_matters_here": "The whole transaction is a number. If your \"fifteen\" sounds like \"fifty\" the vendor hands you change for the wrong price, or you agree to pay more than three times what you meant. Thai speakers under-stress the -teen ending and drop the final /n/, so the two words collapse into one. Stress the second syllable and finish the /n/: fif-TEEN."
+      },
+      {
+        "sound": "final_consonants",
+        "scoring_method": "phoneme",
+        "words_in_context": [
+          "How much?",
+          "It's too expensive.",
+          "Do you take card?",
+          "cash only",
+          "one box",
+          "cheaper",
+          "a bit less",
+          "two kilos"
+        ],
+        "minimal_pairs": [
+          [
+            "card",
+            "car"
+          ],
+          [
+            "cash",
+            "cat"
+          ],
+          [
+            "price",
+            "prize"
+          ],
+          [
+            "bag",
+            "back"
+          ],
+          [
+            "half",
+            "have"
+          ],
+          [
+            "cheap",
+            "cheat"
+          ]
+        ],
+        "why_it_matters_here": "Thai finals are unreleased, so \"card\" becomes \"car\" and \"cash\" becomes \"cat\" — at a stall that means the vendor doesn't know whether you're paying, asking about parking, or nothing at all. \"Less\" without the /s/ sounds like \"let\", and \"box\" without /ks/ sounds like \"bought\", which changes what you're buying. Release the last sound, even quietly."
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "en": "How much is it?",
+      "th": "ราคาเท่าไหร่ — ใช้ถามของชิ้นเดียวที่กำลังชี้อยู่",
+      "group": "asking the price",
+      "audio_needed": true,
+      "audio": "/static/audio/global/how-much-is-it.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "How much for these?",
+      "th": "พวกนี้เท่าไหร่ — ถามราคาของหลายชิ้นรวมกัน",
+      "group": "asking the price",
+      "audio_needed": true,
+      "audio": "/static/audio/global/how-much-for-these.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "each",
+      "th": "อันละ / ชิ้นละ เช่น $2 each = อันละ 2 เหรียญ",
+      "group": "asking the price",
+      "audio_needed": true,
+      "audio": "/static/audio/global/each.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "a kilo",
+      "th": "กิโลละ เช่น $5 a kilo = กิโลละ 5 เหรียญ ผักผลไม้ที่นี่ขายเป็นกิโล",
+      "group": "quantities",
+      "audio_needed": true,
+      "audio": "/static/audio/global/a-kilo.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "half a kilo",
+      "th": "ครึ่งกิโล = 500 กรัม",
+      "group": "quantities",
+      "audio_needed": true,
+      "audio": "/static/audio/global/half-a-kilo.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "a box",
+      "th": "หนึ่งกล่อง เช่น a box of strawberries",
+      "group": "quantities",
+      "audio_needed": true,
+      "audio": "/static/audio/global/a-box.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "a bag",
+      "th": "หนึ่งถุง",
+      "group": "quantities",
+      "audio_needed": true,
+      "audio": "/static/audio/global/a-bag.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "two of them",
+      "th": "เอาสองอัน — ชี้ของแล้วบอกจำนวนได้เลย",
+      "group": "quantities",
+      "audio_needed": true,
+      "audio": "/static/audio/global/two-of-them.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "expensive",
+      "th": "แพง",
+      "group": "bargaining",
+      "audio_needed": true,
+      "audio": "/static/audio/global/expensive.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "too expensive",
+      "th": "แพงไป — บอกแบบนี้คนขายรู้ว่าเราคิดว่าไม่คุ้ม",
+      "group": "bargaining",
+      "audio_needed": true,
+      "audio": "/static/audio/global/too-expensive.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "cheaper",
+      "th": "ถูกกว่านี้ เช่น Anything cheaper? = มีอันที่ถูกกว่านี้ไหม",
+      "group": "bargaining",
+      "audio_needed": true,
+      "audio": "/static/audio/global/cheaper.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "Can you lower it?",
+      "th": "ลดได้ไหม — ถามได้ที่ตลาดนัด ร้านผลไม้เล็กๆ แต่ซุปเปอร์ฯ ใหญ่เขาไม่ต่อราคากัน",
+      "group": "bargaining",
+      "audio_needed": true,
+      "audio": "/static/audio/global/can-you-lower-it.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "a bit less",
+      "th": "ขอลดนิดนึง",
+      "group": "bargaining",
+      "audio_needed": true,
+      "audio": "/static/audio/global/a-bit-less.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "discount",
+      "th": "ส่วนลด",
+      "group": "bargaining",
+      "audio_needed": true,
+      "audio": "/static/audio/global/discount.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "That's my best price.",
+      "th": "ราคานี้ดีที่สุดแล้ว — คนขายพูดแบบนี้คือลดไม่ได้อีก ไม่ต้องต่อต่อ",
+      "group": "bargaining",
+      "audio_needed": true,
+      "audio": "/static/audio/global/that-s-my-best-price.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "cash only",
+      "th": "รับเงินสดอย่างเดียว รูดบัตรไม่ได้ ร้านเล็กๆ ในตลาดเจอบ่อย",
+      "group": "paying",
+      "audio_needed": true,
+      "audio": "/static/audio/global/cash-only.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "Do you take card?",
+      "th": "รูดบัตรได้ไหม",
+      "group": "paying",
+      "audio_needed": true,
+      "audio": "/static/audio/global/do-you-take-card.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "change",
+      "th": "เงินทอน",
+      "group": "paying",
+      "audio_needed": true,
+      "audio": "/static/audio/global/change.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "a note / a coin",
+      "th": "แบงก์ / เหรียญ",
+      "group": "paying",
+      "audio_needed": true,
+      "audio": "/static/audio/global/a-note-a-coin.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "fresh",
+      "th": "สด",
+      "group": "describing goods",
+      "audio_needed": true,
+      "audio": "/static/audio/global/fresh.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "ripe",
+      "th": "สุกแล้ว กินได้เลย ถ้ายังไม่สุกพูดว่า not ripe yet",
+      "group": "describing goods",
+      "audio_needed": true,
+      "audio": "/static/audio/global/ripe.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "the small one / the big one",
+      "th": "อันเล็ก / อันใหญ่",
+      "group": "describing goods",
+      "audio_needed": true,
+      "audio": "/static/audio/global/the-small-one-the-big-one.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "I'll take it.",
+      "th": "เอาอันนี้แหละ — บอกว่าตกลงซื้อ",
+      "group": "closing the deal",
+      "audio_needed": true,
+      "audio": "/static/audio/global/i-ll-take-it.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "Maybe next time.",
+      "th": "ไว้คราวหน้าละกัน — ปฏิเสธแบบสุภาพ ไม่ต้องอธิบายเหตุผล",
+      "group": "closing the deal",
+      "audio_needed": true,
+      "audio": "/static/audio/global/maybe-next-time.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "Sorry, how much again?",
+      "th": "ขอโทษ เท่าไหร่นะ — ฟังไม่ทัน ถามซ้ำได้ ไม่แปลกเลย",
+      "group": "clarifying",
+      "audio_needed": true,
+      "audio": "/static/audio/global/sorry-how-much-again.mp3",
+      "th_status": "draft_unverified"
+    }
+  ],
+  "model_dialogues": [
+    {
+      "cefr": "A2",
+      "label": "Buying mangoes — a straight, friendly haggle",
+      "lines": [
+        {
+          "speaker": "Vendor",
+          "text": "Hello! Have a look — the mangoes are really fresh today.",
+          "audio": "/static/audio/global/hello-have-a-look-the-mangoes-are-really-fresh-today.mp3",
+          "th": "สวัสดีครับ! ลองดูก่อน มะม่วงวันนี้สดมากเลย",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "You",
+          "text": "How much for these?",
+          "audio": "/static/audio/global/how-much-for-these.mp3",
+          "th": "อันนี้เท่าไหร่คะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Vendor",
+          "text": "Fifty a kilo.",
+          "audio": "/static/audio/global/fifty-a-kilo.mp3",
+          "th": "โลละห้าสิบ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "You",
+          "text": "Sorry — fifteen or fifty?",
+          "audio": "/static/audio/global/sorry-fifteen-or-fifty.mp3",
+          "th": "ขอโทษนะ สิบห้าหรือห้าสิบ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Vendor",
+          "text": "Five-zero. Fifty a kilo.",
+          "audio": "/static/audio/global/five-zero-fifty-a-kilo.mp3",
+          "th": "ห้า-ศูนย์ ห้าสิบ โลละห้าสิบ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "You",
+          "text": "That's a bit expensive. Can you do forty?",
+          "audio": "/static/audio/global/that-s-a-bit-expensive-can-you-do-forty.mp3",
+          "th": "แพงไปนิดนึงนะ สี่สิบได้ไหม",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Vendor",
+          "text": "Forty-five, and I'll pick you the good ones.",
+          "audio": "/static/audio/global/forty-five-and-i-ll-pick-you-the-good-ones.mp3",
+          "th": "สี่สิบห้า แล้วเดี๋ยวเลือกลูกสวยๆ ให้",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "You",
+          "text": "Okay. Two kilos, please.",
+          "audio": "/static/audio/global/okay-two-kilos-please.mp3",
+          "th": "โอเค เอาสองโลค่ะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Vendor",
+          "text": "Ninety, then. Here's your bag.",
+          "audio": "/static/audio/global/ninety-then-here-s-your-bag.mp3",
+          "th": "งั้นเก้าสิบนะ นี่ถุงครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "You",
+          "text": "Thanks a lot.",
+          "audio": "/static/audio/global/thanks-a-lot.mp3",
+          "th": "ขอบคุณมากค่ะ",
+          "th_status": "draft_unverified"
+        }
+      ],
+      "shadow_focus_lines": [
+        {
+          "text": "How much for these?",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/how-much-for-these.mp3"
+        },
+        {
+          "text": "Sorry — fifteen or fifty?",
+          "targets": [
+            "numbers",
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/sorry-fifteen-or-fifty.mp3"
+        },
+        {
+          "text": "That's a bit expensive.",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/that-s-a-bit-expensive.mp3"
+        },
+        {
+          "text": "Two kilos, please.",
+          "targets": [
+            "numbers",
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/two-kilos-please.mp3"
+        }
+      ]
+    },
+    {
+      "cefr": "B1",
+      "label": "Strawberries — the price is per box, the vendor pushes a bundle, and it turns out to be cash only",
+      "lines": [
+        {
+          "speaker": "Vendor",
+          "text": "Morning! What are you after today?",
+          "audio": "/static/audio/global/morning-what-are-you-after-today.mp3",
+          "th": "สวัสดีตอนเช้า! วันนี้หาอะไรอยู่ครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "You",
+          "text": "How much are the strawberries?",
+          "audio": "/static/audio/global/how-much-are-the-strawberries.mp3",
+          "th": "สตรอว์เบอร์รี่เท่าไหร่คะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Vendor",
+          "text": "A hundred and twenty a box.",
+          "audio": "/static/audio/global/a-hundred-and-twenty-a-box.mp3",
+          "th": "กล่องละร้อยยี่สิบ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "You",
+          "text": "A hundred and twenty? That's a lot.",
+          "audio": "/static/audio/global/a-hundred-and-twenty-that-s-a-lot.mp3",
+          "th": "ร้อยยี่สิบเหรอ แพงไปนะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Vendor",
+          "text": "They came in this morning, love. Feel how firm they are.",
+          "audio": "/static/audio/global/they-came-in-this-morning-love-feel-how-firm-they-are.mp3",
+          "th": "เพิ่งมาถึงเมื่อเช้านี้เอง ลองจับดูสิ แน่นมาก",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "You",
+          "text": "Can you lower it a bit?",
+          "audio": "/static/audio/global/can-you-lower-it-a-bit.mp3",
+          "th": "ลดหน่อยได้ไหมคะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Vendor",
+          "text": "Tell you what — take two boxes and I'll do two hundred.",
+          "audio": "/static/audio/global/tell-you-what-take-two-boxes-and-i-ll-do-two-hundred.mp3",
+          "th": "เอางี้นะ เอาสองกล่อง คิดสองร้อย",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "You",
+          "text": "Sorry, two hundred for both?",
+          "audio": "/static/audio/global/sorry-two-hundred-for-both.mp3",
+          "th": "ขอโทษนะ สองร้อยทั้งสองกล่องเหรอ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Vendor",
+          "text": "For both. That's a hundred each, so you're saving forty.",
+          "audio": "/static/audio/global/for-both-that-s-a-hundred-each-so-you-re-saving-forty.mp3",
+          "th": "ทั้งสองกล่องเลย ตกกล่องละร้อย ประหยัดไปสี่สิบนะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "You",
+          "text": "I only need one box.",
+          "audio": "/static/audio/global/i-only-need-one-box.mp3",
+          "th": "หนูเอากล่องเดียวพอค่ะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Vendor",
+          "text": "One box then. A hundred and fifteen. That's my best price.",
+          "audio": "/static/audio/global/one-box-then-a-hundred-and-fifteen-that-s-my-best-price.mp3",
+          "th": "งั้นกล่องเดียว ร้อยสิบห้า ถูกสุดแล้วนะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "You",
+          "text": "Okay. Do you take card?",
+          "audio": "/static/audio/global/okay-do-you-take-card.mp3",
+          "th": "โอเคค่ะ รับบัตรไหมคะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Vendor",
+          "text": "Cash only, sorry. There's a cash machine by the gate.",
+          "audio": "/static/audio/global/cash-only-sorry-there-s-a-cash-machine-by-the-gate.mp3",
+          "th": "รับแต่เงินสด ขอโทษด้วย มีตู้ ATM อยู่ตรงประตูทางเข้า",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "You",
+          "text": "Hmm. I've only got eighty in cash.",
+          "audio": "/static/audio/global/hmm-i-ve-only-got-eighty-in-cash.mp3",
+          "th": "อืม...มีเงินสดแค่แปดสิบเองค่ะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Vendor",
+          "text": "Eighty? Then take the small box — that one's eighty-five.",
+          "audio": "/static/audio/global/eighty-then-take-the-small-box-that-one-s-eighty-five.mp3",
+          "th": "แปดสิบเหรอ งั้นเอากล่องเล็กสิ กล่องนั้นแปดสิบห้า",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "You",
+          "text": "Eighty-five? Can you do eighty?",
+          "audio": "/static/audio/global/eighty-five-can-you-do-eighty.mp3",
+          "th": "แปดสิบห้าเหรอคะ แปดสิบได้ไหม",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Vendor",
+          "text": "Go on then, eighty. But you come back next week, yeah?",
+          "audio": "/static/audio/global/go-on-then-eighty-but-you-come-back-next-week-yeah.mp3",
+          "th": "เอาก็เอา แปดสิบ แต่อาทิตย์หน้ามาอีกนะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "You",
+          "text": "Deal. Here you go.",
+          "audio": "/static/audio/global/deal-here-you-go.mp3",
+          "th": "ตกลงค่ะ นี่ค่ะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Vendor",
+          "text": "Cheers. Careful, the bag's a bit heavy.",
+          "audio": "/static/audio/global/cheers-careful-the-bag-s-a-bit-heavy.mp3",
+          "th": "ขอบคุณครับ ระวังนะ ถุงหนักนิดนึง",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "You",
+          "text": "Thanks a lot. See you next week.",
+          "audio": "/static/audio/global/thanks-a-lot-see-you-next-week.mp3",
+          "th": "ขอบคุณมากค่ะ อาทิตย์หน้าเจอกัน",
+          "th_status": "draft_unverified"
+        }
+      ],
+      "shadow_focus_lines": [
+        {
+          "text": "Can you lower it a bit?",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/can-you-lower-it-a-bit.mp3"
+        },
+        {
+          "text": "Sorry, two hundred for both?",
+          "targets": [
+            "numbers",
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/sorry-two-hundred-for-both.mp3"
+        },
+        {
+          "text": "Do you take card?",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/do-you-take-card.mp3"
+        },
+        {
+          "text": "I've only got eighty.",
+          "targets": [
+            "numbers",
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/i-ve-only-got-eighty.mp3"
+        }
+      ]
+    }
+  ],
+  "chunk_drills": [
+    {
+      "label": "Asking the price (and the unit)",
+      "pattern": "How much + is it / are these / for these / for a kilo?",
+      "examples": [
+        "How much is it?",
+        "How much are these?",
+        "How much for a kilo?",
+        "How much for two?",
+        "Is that each or for the box?"
+      ],
+      "spiralled_grammar": "Recycles numbers and 'how much' from numbers_and_money; adds is/are agreement with singular vs plural items."
+    },
+    {
+      "label": "Confirming the number before you agree",
+      "pattern": "Sorry — [number] or [number]? / Sorry, how much again?",
+      "examples": [
+        "Sorry — fifteen or fifty?",
+        "Thirteen or thirty?",
+        "Sorry, how much again?",
+        "Two hundred for both?",
+        "Can you write it down?"
+      ],
+      "spiralled_grammar": "Recycles the clarification chunk from greetings_small_talk; the -teen/-ty contrast is the sound target doing real work."
+    },
+    {
+      "label": "Pushing the price down politely",
+      "pattern": "That's a bit expensive. Can you do [number]? / Can you lower it a bit?",
+      "examples": [
+        "That's a bit expensive.",
+        "Can you do forty?",
+        "Can you lower it a bit?",
+        "Is there a discount for two?",
+        "Anything cheaper?"
+      ],
+      "spiralled_grammar": "Recycles 'Can you...?' polite requests; introduces comparative 'cheaper' and softener 'a bit'."
+    },
+    {
+      "label": "Buying quantities",
+      "pattern": "I'll take + [number] + [unit] + please.",
+      "examples": [
+        "I'll take two kilos, please.",
+        "I'll take one box.",
+        "Half a kilo, please.",
+        "Just one, thanks.",
+        "Two of the small ones."
+      ],
+      "spiralled_grammar": "Recycles counting and quantity nouns; drills plural /s/ and /z/ finals (kilos, ones, boxes)."
+    },
+    {
+      "label": "Paying and walking away",
+      "pattern": "Do you take card? / Cash only? / I'll leave it, thanks.",
+      "examples": [
+        "Do you take card?",
+        "Cash only?",
+        "Have you got change for a hundred?",
+        "Okay, I'll take it.",
+        "Maybe next time, thanks."
+      ],
+      "spiralled_grammar": "Recycles closing formulas; teaches the face-saving exit that keeps the register friendly."
+    }
+  ],
+  "listening_items": [
+    {
+      "audio_text": "These are fifty a kilo, but I'll do two kilos for ninety.",
+      "channel": "face-to-face, noisy market",
+      "question": "How much is one kilo, and how much for two?",
+      "answer": "Fifty for one kilo; ninety for two kilos.",
+      "distractor_focus": "fifty vs fifteen — a learner who mishears pays 15 and expects change"
+    },
+    {
+      "audio_text": "Thirteen each, or thirty for three.",
+      "channel": "face-to-face",
+      "question": "What is the price of one item?",
+      "answer": "Thirteen.",
+      "distractor_focus": "thirteen vs thirty in the same sentence; stress on the second syllable is the only clue"
+    },
+    {
+      "audio_text": "Sorry, cash only — there's a machine just past the fish stall.",
+      "channel": "face-to-face",
+      "question": "Can you pay by card? Where do you go?",
+      "answer": "No, cash only. Go to the cash machine past the fish stall.",
+      "distractor_focus": "final consonants: cash/cat, past/pass"
+    },
+    {
+      "audio_text": "That's eighty-five for the small box and a hundred and fifteen for the big one.",
+      "channel": "face-to-face",
+      "question": "How much is the big box?",
+      "answer": "A hundred and fifteen.",
+      "distractor_focus": "fifteen vs fifty inside a longer number; eighty vs eighteen"
+    },
+    {
+      "audio_text": "Best I can do is sixty. Below that I'm losing money, love.",
+      "channel": "face-to-face",
+      "question": "Will the vendor go lower than sixty?",
+      "answer": "No — sixty is the final price.",
+      "distractor_focus": "sixty vs sixteen; recognising 'best I can do' as a stop signal"
+    }
+  ],
+  "guided_roleplay": {
+    "learner_role": "A shopper at a busy market stall buying fruit, with on-screen frames and a hint button.",
+    "flow": [
+      "Step 1 — Open: greet the vendor and ask the price ('How much for these?').",
+      "Step 2 — Confirm the number: repeat it back or ask 'Fifteen or fifty?' before agreeing.",
+      "Step 3 — Check the unit: 'Is that each or for the kilo?'",
+      "Step 4 — Bargain once: 'That's a bit expensive. Can you do [number]?'",
+      "Step 5 — Handle the counter-offer: accept, split the difference, or say 'Maybe next time.'",
+      "Step 6 — State the quantity: 'I'll take two kilos, please.'",
+      "Step 7 — Pay: 'Do you take card?' / hand over cash and check the change.",
+      "Step 8 — Close warmly: 'Thanks a lot. See you.'"
+    ],
+    "sentence_frames": [
+      "How much for these?",
+      "Sorry — ______ or ______?",
+      "Is that each or for the kilo?",
+      "That's a bit expensive.",
+      "Can you do ______?",
+      "Can you lower it a bit?",
+      "I'll take ______, please.",
+      "Do you take card?",
+      "Have you got change for a hundred?",
+      "Okay, I'll take it. / Maybe next time, thanks."
+    ],
+    "hints_available": true
+  },
+  "free_roleplay": {
+    "ai_persona": "A cheerful, fast-talking market vendor who has said these prices five hundred times today. Warm, a bit teasing, uses short phrases and background noise. Never rude, but does not repeat a number unless asked.",
+    "a2_behavior": "States a clear price per kilo, accepts one round of bargaining, meets the learner near the middle, takes cash, gives change, says goodbye. Repeats the number slowly if the learner asks.",
+    "b1_curveballs": [
+      "The price is per piece, not per kilo — the learner must notice and ask 'Is that each?'",
+      "Bundle push: 'Two boxes for two hundred' when the learner only wants one.",
+      "Cash only, and the learner doesn't have enough — must downsize the order or find a machine.",
+      "Vendor says a fast number in the -teen/-ty danger zone ('fifteen-fifty for the lot') and the learner must confirm it.",
+      "Vendor refuses: 'That's my best price' — learner must either accept or walk away politely.",
+      "Wrong change is handed back and the learner must point it out without being rude."
+    ],
+    "roleplay_rubric": [
+      {
+        "criterion": "Asked the price and the unit (each / per kilo / per box)",
+        "type": "required"
+      },
+      {
+        "criterion": "Confirmed or repeated back the number before agreeing to pay",
+        "type": "required"
+      },
+      {
+        "criterion": "Made at least one polite bargaining move ('a bit expensive' / 'Can you do X?')",
+        "type": "required"
+      },
+      {
+        "criterion": "Stated a clear quantity and completed or politely declined the purchase",
+        "type": "required"
+      },
+      {
+        "criterion": "Register stayed friendly — no bare commands, no aggression, closed with thanks",
+        "type": "required"
+      },
+      {
+        "criterion": "Pronunciation: -teen vs -ty numbers and final consonants (card, cash, box, less) intelligible without repair",
+        "type": "pronunciation"
+      },
+      {
+        "criterion": "Handled the curveball — wrong unit, bundle push, cash-only, or wrong change — and still finished the transaction",
+        "type": "stretch_b1"
+      }
+    ]
+  },
+  "register_culture_note": {
+    "en": "Market bargaining in English-speaking markets is friendly, fast and short. You get one or two moves, not five. Soften every push with 'a bit' or 'Can you...?' — 'That's a bit expensive, can you do forty?' works; 'Too expensive! Cheaper!' sounds like an order. Always confirm the number out loud before you agree: repeating '\"Fifty? Okay\" is normal and vendors expect it. If the price won't move, 'Maybe next time, thanks' lets you leave without anyone losing face.",
+    "th": null,
+    "do_dont": [
+      {
+        "avoid": "\"Fifty.\" (said with an unreleased final /n/ so it sounds like \"fifteen\")",
+        "prefer": "\"Fif-TEEN\" with stress on the second syllable and a clear /n/ — or say \"one-five\" to be safe."
+      },
+      {
+        "avoid": "\"You take car?\" (dropped /d/)",
+        "prefer": "\"Do you take card?\" — release the /d/ or the vendor thinks you're asking about parking."
+      },
+      {
+        "avoid": "\"Cheaper! Cheaper!\"",
+        "prefer": "\"Can you lower it a bit?\""
+      },
+      {
+        "avoid": "Silently nodding at a price you didn't hear",
+        "prefer": "\"Sorry, how much again?\" — asking twice costs nothing; paying triple does."
+      },
+      {
+        "avoid": "\"Give me two kilo.\"",
+        "prefer": "\"I'll take two kilos, please.\""
+      }
+    ],
+    "thai_cultural_note": "In many Thai markets, bargaining is a slow, smiling, several-round conversation, and a low first counter-offer is completely normal. In most English-speaking markets the culture is different: prices at supermarkets and chain shops are fixed and haggling there is genuinely odd, while at street markets, weekend markets and antique stalls one polite counter-offer is welcome — but a very low one can read as an insult rather than an opening. The safe move is to name a number about ten to fifteen percent below the asking price, once, and accept the answer. Also: walking away with a friendly 'Maybe next time' is not rude and does not damage the relationship — vendors do it to each other all day."
+  },
+  "can_do_checkpoints": [
+    {
+      "cefr": "A2",
+      "statement": "I can ask how much something costs and whether the price is each or per kilo."
+    },
+    {
+      "cefr": "A2",
+      "statement": "I can hear and confirm a price, including telling fifteen from fifty."
+    },
+    {
+      "cefr": "A2",
+      "statement": "I can say a price is a bit expensive and offer a lower number politely."
+    },
+    {
+      "cefr": "A2",
+      "statement": "I can state a quantity, pay, and thank the vendor."
+    },
+    {
+      "cefr": "B1",
+      "statement": "I can handle a bundle offer or a cash-only stall and change my order on the spot."
+    },
+    {
+      "cefr": "B1",
+      "statement": "I can point out wrong change or accept a final price and leave politely."
+    },
+    {
+      "cefr": "Sound",
+      "statement": "My -teen/-ty numbers and my final consonants (card, cash, box, less) are clear enough that the vendor gets the price right first time."
+    }
+  ],
+  "gamification": {
+    "xp_per_substep": true,
+    "unlocks": [
+      "street_food_ordering",
+      "returns_and_refunds",
+      "taxi_and_fares"
+    ],
+    "sound_meters": [
+      "numbers (-teen vs -ty accuracy across the unit)",
+      "final_consonants (release rate on card, cash, box, less, kilos)"
+    ]
+  },
+  "_review_status": {
+    "thai_strings": "DRAFT - machine-generated, tagged th_status=draft_unverified. A native Thai speaker must review every string and set th_status='reviewed'.",
+    "facts": "UNVERIFIED - generated content, needs a local fact-check before shipping",
+    "generated_by": "claude-opus-5"
+  }
+}

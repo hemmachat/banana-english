@@ -1,0 +1,825 @@
+{
+  "scenario_id": "seven_eleven_convenience",
+  "locale": "global",
+  "title_en": "At 7-Eleven",
+  "title_th": "ที่ร้านสะดวกซื้อ",
+  "tier": 1,
+  "cefr_range": [
+    "A2",
+    "B1"
+  ],
+  "prerequisites": [
+    "greetings_small_talk",
+    "numbers_money_basics"
+  ],
+  "recycles": [
+    "numbers 1-100 and prices (thirteen vs thirty)",
+    "'How much is it?' / 'How much altogether?'",
+    "'Do you have...?'",
+    "please / thanks / no thanks short answers",
+    "'Sorry, could you say that again?'",
+    "'Can I pay by card?' from paying at a cafe"
+  ],
+  "register": "Casual-friendly transactional — short sentences, 'please' and 'thanks', first-name-free, fast",
+  "sound_target_box": {
+    "note_th": null,
+    "targets": [
+      {
+        "sound": "final_consonants",
+        "scoring_method": "phoneme",
+        "words_in_context": [
+          "bag ('Do you want a bag?')",
+          "card ('I'll pay by card.')",
+          "hot / cold ('Is it hot?')",
+          "cup ('a large cup')",
+          "milk ('Do you have oat milk?')",
+          "heat it up",
+          "receipt",
+          "cash",
+          "bottle of water",
+          "half"
+        ],
+        "minimal_pairs": [
+          [
+            "bag",
+            "back"
+          ],
+          [
+            "card",
+            "car"
+          ],
+          [
+            "cold",
+            "coal"
+          ],
+          [
+            "cup",
+            "cut"
+          ],
+          [
+            "milk",
+            "mill"
+          ],
+          [
+            "hot",
+            "hop"
+          ],
+          [
+            "cash",
+            "cat"
+          ]
+        ],
+        "why_it_matters_here": "Thai unreleased finals turn 'card' into 'car' and 'bag' into 'back' at a counter with a queue behind you. If the clerk hears 'car' they will not open the card reader, and if 'bag' sounds like 'back' they hand you nothing and your hot food goes straight into your hands. 'Cold' heard as 'coal' or 'hot' heard as 'hop' means the wrong drink or an unheated meal you cannot return."
+      },
+      {
+        "sound": "numbers",
+        "scoring_method": "phoneme",
+        "words_in_context": [
+          "thirteen fifty",
+          "fifteen cents for a bag",
+          "seven ninety on the shelf",
+          "thirty seconds in the microwave",
+          "two coffees",
+          "a five-dollar note",
+          "eight fifteen",
+          "sixty cents change"
+        ],
+        "minimal_pairs": [
+          [
+            "thirteen",
+            "thirty"
+          ],
+          [
+            "fifteen",
+            "fifty"
+          ],
+          [
+            "fourteen",
+            "forty"
+          ],
+          [
+            "sixteen",
+            "sixty"
+          ],
+          [
+            "nineteen",
+            "ninety"
+          ]
+        ],
+        "why_it_matters_here": "Prices and microwave times are the only numbers in this whole scenario, and both hurt when wrong. 'Fifteen' said with Thai stress sounds like 'fifty' — you hand over the wrong money or argue about a price that was never charged. Saying 'thirty seconds' as 'thirteen seconds' gets you a cold pie; hearing 'thirteen fifty' as 'thirty fifty' makes you pull out a note that embarrasses you in front of the queue."
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "en": "convenience store / corner shop",
+      "th": "ร้านสะดวกซื้อเล็กๆ แถวบ้าน แบบ 7-Eleven หรือร้านชำหัวมุมถนน เปิดดึก ของแพงกว่าซุปเปอร์นิดหน่อย",
+      "group": "place",
+      "audio_needed": true,
+      "audio": "/static/audio/global/convenience-store-corner-shop.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "counter",
+      "th": "เคาน์เตอร์ ตรงที่ยืนจ่ายเงิน",
+      "group": "place",
+      "audio_needed": true,
+      "audio": "/static/audio/global/counter.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "the microwave",
+      "th": "ไมโครเวฟ หลายร้านมีตั้งไว้ให้ลูกค้าอุ่นของเอง",
+      "group": "place",
+      "audio_needed": true,
+      "audio": "/static/audio/global/the-microwave.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "the fridge / the freezer",
+      "th": "ตู้เย็น / ช่องแช่แข็ง ที่เก็บของเย็นกับไอศกรีม",
+      "group": "place",
+      "audio_needed": true,
+      "audio": "/static/audio/global/the-fridge-the-freezer.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "hot food",
+      "th": "อาหารร้อนพร้อมกิน พวกพาย ไส้กรอกม้วน ที่อุ่นไว้แล้ว",
+      "group": "items",
+      "audio_needed": true,
+      "audio": "/static/audio/global/hot-food.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "a bottle of water",
+      "th": "น้ำเปล่าหนึ่งขวด",
+      "group": "items",
+      "audio_needed": true,
+      "audio": "/static/audio/global/a-bottle-of-water.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "a cup of coffee",
+      "th": "กาแฟหนึ่งแก้ว",
+      "group": "items",
+      "audio_needed": true,
+      "audio": "/static/audio/global/a-cup-of-coffee.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "a pack of gum",
+      "th": "หมากฝรั่งหนึ่งห่อ",
+      "group": "items",
+      "audio_needed": true,
+      "audio": "/static/audio/global/a-pack-of-gum.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "a sandwich",
+      "th": "แซนด์วิช",
+      "group": "items",
+      "audio_needed": true,
+      "audio": "/static/audio/global/a-sandwich.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "a phone charger",
+      "th": "ที่ชาร์จโทรศัพท์",
+      "group": "items",
+      "audio_needed": true,
+      "audio": "/static/audio/global/a-phone-charger.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "heat it up / warm it up",
+      "th": "อุ่นให้หน่อย ใช้ตอนขอให้พนักงานเอาเข้าไมโครเวฟให้",
+      "group": "hot_and_cold",
+      "audio_needed": true,
+      "audio": "/static/audio/global/heat-it-up-warm-it-up.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "hot / cold",
+      "th": "ร้อน / เย็น ใช้บอกว่าอยากได้แบบไหน",
+      "group": "hot_and_cold",
+      "audio_needed": true,
+      "audio": "/static/audio/global/hot-cold.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "in the microwave for thirty seconds",
+      "th": "เข้าไมโครเวฟสามสิบวินาที บอกเวลาไปเลยจะง่ายกว่า",
+      "group": "hot_and_cold",
+      "audio_needed": true,
+      "audio": "/static/audio/global/in-the-microwave-for-thirty-seconds.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "a bag / a plastic bag",
+      "th": "ถุง / ถุงพลาสติก ที่ออสฯ ส่วนใหญ่ต้องจ่ายเพิ่มประมาณ 15-25 เซ็นต์ พกถุงไปเองประหยัดกว่า",
+      "group": "checkout",
+      "audio_needed": true,
+      "audio": "/static/audio/global/a-bag-a-plastic-bag.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "a receipt",
+      "th": "ใบเสร็จ เก็บไว้เผื่อต้องเอาของมาคืน",
+      "group": "checkout",
+      "audio_needed": true,
+      "audio": "/static/audio/global/a-receipt.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "change",
+      "th": "เงินทอน",
+      "group": "checkout",
+      "audio_needed": true,
+      "audio": "/static/audio/global/change.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "the total / altogether",
+      "th": "ยอดรวมทั้งหมด เวลาพนักงานบอกว่าต้องจ่ายเท่าไหร่",
+      "group": "checkout",
+      "audio_needed": true,
+      "audio": "/static/audio/global/the-total-altogether.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "pay by card / tap",
+      "th": "จ่ายด้วยบัตร \"tap\" คือแตะบัตรหรือมือถือที่เครื่อง ไม่ต้องเสียบ ไม่ต้องกดรหัส ถ้าไม่เกิน $100",
+      "group": "payment",
+      "audio_needed": true,
+      "audio": "/static/audio/global/pay-by-card-tap.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "pay cash",
+      "th": "จ่ายเงินสด บางร้านซื้อน้อยๆ ไม่รับบัตร หรือคิดค่าธรรมเนียมเพิ่ม",
+      "group": "payment",
+      "audio_needed": true,
+      "audio": "/static/audio/global/pay-cash.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "declined",
+      "th": "บัตรไม่ผ่าน เครื่องขึ้นว่าปฏิเสธ อาจเงินไม่พอหรือบัตรมีปัญหา ลองใบอื่นหรือจ่ายสดแทน",
+      "group": "payment",
+      "audio_needed": true,
+      "audio": "/static/audio/global/declined.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "out of stock / we're out of...",
+      "th": "ของหมด ไม่มีขายแล้ว",
+      "group": "problems",
+      "audio_needed": true,
+      "audio": "/static/audio/global/out-of-stock-we-re-out-of.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "the shelf price",
+      "th": "ราคาที่ติดอยู่ที่ชั้นวาง บางทีไม่ตรงกับตอนคิดเงิน ถ้าไม่ตรงบอกพนักงานได้เลย",
+      "group": "problems",
+      "audio_needed": true,
+      "audio": "/static/audio/global/the-shelf-price.mp3",
+      "th_status": "draft_unverified"
+    }
+  ],
+  "model_dialogues": [
+    {
+      "cefr": "A2",
+      "label": "A2 — Hot snack, two coffees, no bag",
+      "lines": [
+        {
+          "speaker": "Clerk",
+          "text": "Hi, how's it going?",
+          "audio": "/static/audio/global/hi-how-s-it-going.mp3",
+          "th": "หวัดดี เป็นไงบ้าง",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Good, thanks. Can you heat this up?",
+          "audio": "/static/audio/global/good-thanks-can-you-heat-this-up.mp3",
+          "th": "สบายดี ขอบคุณ ช่วยอุ่นอันนี้ให้หน่อยได้ไหม",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Clerk",
+          "text": "Sure. Anything else?",
+          "audio": "/static/audio/global/sure-anything-else.mp3",
+          "th": "ได้เลย เอาอย่างอื่นอีกไหม",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Two coffees, please.",
+          "audio": "/static/audio/global/two-coffees-please.mp3",
+          "th": "ขอกาแฟสองแก้ว",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Clerk",
+          "text": "That's thirteen fifty. Do you want a bag?",
+          "audio": "/static/audio/global/that-s-thirteen-fifty-do-you-want-a-bag.mp3",
+          "th": "13.50 นะ เอาถุงด้วยไหม",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "No bag, thanks.",
+          "audio": "/static/audio/global/no-bag-thanks.mp3",
+          "th": "ไม่เอาถุง ขอบคุณ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Clerk",
+          "text": "Cash or card?",
+          "audio": "/static/audio/global/cash-or-card.mp3",
+          "th": "จ่ายเงินสดหรือบัตร",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "I'll pay by card.",
+          "audio": "/static/audio/global/i-ll-pay-by-card.mp3",
+          "th": "จ่ายบัตร",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Clerk",
+          "text": "Tap there. All good — receipt?",
+          "audio": "/static/audio/global/tap-there-all-good-receipt.mp3",
+          "th": "แตะตรงนั้นเลย เรียบร้อย เอาใบเสร็จไหม",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Yes, please. Thanks a lot.",
+          "audio": "/static/audio/global/yes-please-thanks-a-lot.mp3",
+          "th": "เอาด้วย ขอบคุณมาก",
+          "th_status": "draft_unverified"
+        }
+      ],
+      "shadow_focus_lines": [
+        {
+          "text": "Can you heat this up?",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/can-you-heat-this-up.mp3"
+        },
+        {
+          "text": "That's thirteen fifty.",
+          "targets": [
+            "numbers",
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/that-s-thirteen-fifty.mp3"
+        },
+        {
+          "text": "No bag, thanks.",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/no-bag-thanks.mp3"
+        },
+        {
+          "text": "I'll pay by card.",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/i-ll-pay-by-card.mp3"
+        }
+      ]
+    },
+    {
+      "cefr": "B1",
+      "label": "B1 — Bag charge, wrong shelf price, and a declined card",
+      "lines": [
+        {
+          "speaker": "Clerk",
+          "text": "Hi there. Ready to go?",
+          "audio": "/static/audio/global/hi-there-ready-to-go.mp3",
+          "th": "สวัสดี เอาแค่นี้ใช่ไหม",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Yes. Can you heat the pie up?",
+          "audio": "/static/audio/global/yes-can-you-heat-the-pie-up.mp3",
+          "th": "ใช่ ช่วยอุ่นพายให้หน่อยได้ไหม",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Clerk",
+          "text": "No worries. Thirty seconds or a minute?",
+          "audio": "/static/audio/global/no-worries-thirty-seconds-or-a-minute.mp3",
+          "th": "ได้เลย เอา 30 วินาที หรือ 1 นาที",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Thirty seconds, please.",
+          "audio": "/static/audio/global/thirty-seconds-please.mp3",
+          "th": "30 วินาทีพอ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Clerk",
+          "text": "Righto. Anything else with that?",
+          "audio": "/static/audio/global/righto-anything-else-with-that.mp3",
+          "th": "โอเค เอาอะไรเพิ่มอีกไหม",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "One bottle of water. And a bag.",
+          "audio": "/static/audio/global/one-bottle-of-water-and-a-bag.mp3",
+          "th": "ขอน้ำหนึ่งขวด แล้วก็ถุงด้วย",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Clerk",
+          "text": "Bags are fifteen cents now — still want one?",
+          "audio": "/static/audio/global/bags-are-fifteen-cents-now-still-want-one.mp3",
+          "th": "ตอนนี้ถุงคิด 15 เซ็นต์นะ ยังเอาอยู่ไหม",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Sorry, fifteen or fifty?",
+          "audio": "/static/audio/global/sorry-fifteen-or-fifty.mp3",
+          "th": "ขอโทษ 15 หรือ 50",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Clerk",
+          "text": "One five. Fifteen cents.",
+          "audio": "/static/audio/global/one-five-fifteen-cents.mp3",
+          "th": "หนึ่ง-ห้า 15 เซ็นต์",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Okay, one bag, please.",
+          "audio": "/static/audio/global/okay-one-bag-please.mp3",
+          "th": "โอเค งั้นขอถุงหนึ่งใบ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Clerk",
+          "text": "That comes to nine forty.",
+          "audio": "/static/audio/global/that-comes-to-nine-forty.mp3",
+          "th": "รวมเป็น 9.40",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "The shelf said seven ninety.",
+          "audio": "/static/audio/global/the-shelf-said-seven-ninety.mp3",
+          "th": "ที่ชั้นวางเขียนไว้ 7.90 นี่",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Clerk",
+          "text": "Ah, that price is the small pie. This one's the large.",
+          "audio": "/static/audio/global/ah-that-price-is-the-small-pie-this-one-s-the-large.mp3",
+          "th": "อ๋อ ราคานั้นของพายอันเล็ก อันนี้อันใหญ่",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Can I get the small one?",
+          "audio": "/static/audio/global/can-i-get-the-small-one.mp3",
+          "th": "ขอเปลี่ยนเป็นอันเล็กได้ไหม",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Clerk",
+          "text": "Sure, I'll swap it. So that's eight fifteen.",
+          "audio": "/static/audio/global/sure-i-ll-swap-it-so-that-s-eight-fifteen.mp3",
+          "th": "ได้เลย เดี๋ยวเปลี่ยนให้ งั้นเป็น 8.15",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "I'll tap my card.",
+          "audio": "/static/audio/global/i-ll-tap-my-card.mp3",
+          "th": "เดี๋ยวแตะบัตรนะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Clerk",
+          "text": "Hmm — it's declined. Try again?",
+          "audio": "/static/audio/global/hmm-it-s-declined-try-again.mp3",
+          "th": "เอ๊ะ บัตรไม่ผ่าน ลองใหม่อีกทีไหม",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Let me try another card.",
+          "audio": "/static/audio/global/let-me-try-another-card.mp3",
+          "th": "ขอลองบัตรอีกใบ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Clerk",
+          "text": "That one went through. Receipt in the bag?",
+          "audio": "/static/audio/global/that-one-went-through-receipt-in-the-bag.mp3",
+          "th": "ใบนี้ผ่านแล้ว ใส่ใบเสร็จลงถุงเลยไหม",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "No, thanks. Have a good one.",
+          "audio": "/static/audio/global/no-thanks-have-a-good-one.mp3",
+          "th": "ไม่เป็นไร ขอบคุณ โชคดีนะ",
+          "th_status": "draft_unverified"
+        }
+      ],
+      "shadow_focus_lines": [
+        {
+          "text": "Thirty seconds, please.",
+          "targets": [
+            "numbers",
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/thirty-seconds-please.mp3"
+        },
+        {
+          "text": "Sorry, fifteen or fifty?",
+          "targets": [
+            "numbers"
+          ],
+          "audio": "/static/audio/global/sorry-fifteen-or-fifty.mp3"
+        },
+        {
+          "text": "The shelf said seven ninety.",
+          "targets": [
+            "numbers",
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/the-shelf-said-seven-ninety.mp3"
+        },
+        {
+          "text": "Let me try another card.",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/let-me-try-another-card.mp3"
+        }
+      ]
+    }
+  ],
+  "chunk_drills": [
+    {
+      "label": "Asking staff to heat food",
+      "pattern": "Can you / Could you + heat + this / it + up (, please)?",
+      "examples": [
+        "Can you heat this up?",
+        "Could you heat it up, please?",
+        "Can you warm the sandwich up?",
+        "Not too hot, please."
+      ],
+      "spiralled_grammar": "Polite requests with can/could — recycled from ordering at a cafe; note the two-part verb 'heat ... up'."
+    },
+    {
+      "label": "Asking if the store has something",
+      "pattern": "Do you have + any / a / this?",
+      "examples": [
+        "Do you have any hot food?",
+        "Do you have a phone charger?",
+        "Do you have this in a large cup?",
+        "Do you have cold water?"
+      ],
+      "spiralled_grammar": "any + uncountable/plural vs a + singular — recycled from shopping and cafe units."
+    },
+    {
+      "label": "Answering 'Do you want a bag?'",
+      "pattern": "Yes, one + noun + please. / No + noun + thanks.",
+      "examples": [
+        "Yes, one bag, please.",
+        "No bag, thanks.",
+        "A small bag, please.",
+        "No receipt, thanks."
+      ],
+      "spiralled_grammar": "Short answers with please/thanks — you must answer out loud, not nod."
+    },
+    {
+      "label": "Checking a price you didn't catch",
+      "pattern": "Sorry, + how much? / did you say A or B?",
+      "examples": [
+        "Sorry, how much altogether?",
+        "Sorry, thirteen or thirty?",
+        "Did you say fifteen or fifty?",
+        "Could you say that again?"
+      ],
+      "spiralled_grammar": "Alternative questions with 'or' (rising then falling) — recycled clarification chunk."
+    },
+    {
+      "label": "Paying",
+      "pattern": "I'll pay + by card / cash. / Can I pay by...?",
+      "examples": [
+        "I'll pay by card.",
+        "Can I pay cash?",
+        "Do you take cards?",
+        "Can I tap?"
+      ],
+      "spiralled_grammar": "'I'll' for on-the-spot decisions; can for permission."
+    },
+    {
+      "label": "Quantities and containers",
+      "pattern": "number / a + container + of + noun, please",
+      "examples": [
+        "Two coffees, please.",
+        "A bottle of water, please.",
+        "A pack of gum, please.",
+        "Three of these, please."
+      ],
+      "spiralled_grammar": "Plural -s on countables ('two coffees') vs container phrases for uncountables — the final -s is scored."
+    }
+  ],
+  "listening_items": [
+    {
+      "audio_text": "That'll be thirteen forty, thanks.",
+      "channel": "at the counter, fridge hum and door chime in background",
+      "question": "How much do you pay?",
+      "answer": "13.40",
+      "distractor_focus": "thirteen vs thirty; forty vs fourteen"
+    },
+    {
+      "audio_text": "Do you want that heated up?",
+      "channel": "clerk speaking quickly while scanning",
+      "question": "What is the clerk offering to do?",
+      "answer": "Heat up (warm) your food",
+      "distractor_focus": "'heated up' reduced to /hiːdɪdʌp/ — learners expect 'hot'"
+    },
+    {
+      "audio_text": "Sorry, we're out of the hot dogs. The sausage rolls are ready in five minutes.",
+      "channel": "clerk turning away toward the hot cabinet",
+      "question": "What can you buy, and when?",
+      "answer": "Sausage rolls, in five minutes (no hot dogs)",
+      "distractor_focus": "'out of' = none left, not 'outside'; final -s on 'rolls'"
+    },
+    {
+      "audio_text": "Bags are fifteen cents each now.",
+      "channel": "counter, learner holding a full basket",
+      "question": "How much is one bag?",
+      "answer": "15 cents",
+      "distractor_focus": "fifteen vs fifty"
+    },
+    {
+      "audio_text": "Card's been declined — have you got another one, or cash?",
+      "channel": "card terminal beeping, clerk lowering voice",
+      "question": "What is the problem, and what are your two options?",
+      "answer": "The card didn't work; use another card or pay cash",
+      "distractor_focus": "final consonants in 'card' / 'declined' / 'cash'"
+    }
+  ],
+  "guided_roleplay": {
+    "learner_role": "A customer buying a hot pie, a drink, and one small item at a busy convenience store",
+    "flow": [
+      "Step 1 — Greet the clerk and put your items on the counter.",
+      "Step 2 — Ask if they have the item you can't find ('Do you have any hot food?').",
+      "Step 3 — Ask them to heat your food up and say how long.",
+      "Step 4 — Answer the bag question out loud (yes or no).",
+      "Step 5 — Listen to the total and repeat it back or ask 'Sorry, how much?'",
+      "Step 6 — Say how you'll pay (card or cash) and tap/hand over the money.",
+      "Step 7 — Take or refuse the receipt and close ('Thanks, have a good one.')"
+    ],
+    "sentence_frames": [
+      "Do you have any ___?",
+      "Can you heat this up, please?",
+      "Thirty seconds, please.",
+      "No bag, thanks. / Yes, one bag, please.",
+      "Sorry, how much altogether?",
+      "Did you say ___ or ___?",
+      "I'll pay by card. / Can I pay cash?",
+      "No receipt, thanks."
+    ],
+    "hints_available": true
+  },
+  "free_roleplay": {
+    "ai_persona": "A quick, friendly night-shift convenience store clerk. Talks fast, uses short phrases ('Anything else?', 'No worries', 'Righto'), is never rude but never slows down unless asked.",
+    "a2_behavior": "Runs the standard sequence: greeting → 'Anything else?' → 'Do you want that heated up?' → total → 'Bag?' → 'Cash or card?' → 'Receipt?'. Accepts short learner answers and repeats the total once if asked.",
+    "b1_curveballs": [
+      "The item is out of stock and the clerk offers a substitute ('We're out of the chicken one — ham okay?').",
+      "The shelf price and the register price don't match; the learner must point it out.",
+      "Bags now cost money — the clerk asks whether the learner still wants one.",
+      "The card is declined and the learner must offer another card or cash.",
+      "There's a minimum card spend ('Card's five dollars minimum, sorry').",
+      "The microwave is broken, so the food can't be heated — the learner must decide.",
+      "The clerk asks a fast add-on question: 'Do you want the two-for-one on drinks?'",
+      "The clerk gives the wrong change and the learner must say so politely."
+    ],
+    "roleplay_rubric": [
+      {
+        "criterion": "Completed the transaction: asked for/found the items, heated food, paid, and closed the conversation",
+        "type": "required"
+      },
+      {
+        "criterion": "Answered the bag and receipt questions out loud with a clear yes/no + please/thanks (no silent nodding)",
+        "type": "required"
+      },
+      {
+        "criterion": "Understood or checked the total — repeated it back or asked 'Sorry, how much?' / 'fifteen or fifty?'",
+        "type": "required"
+      },
+      {
+        "criterion": "Stated a payment method clearly ('I'll pay by card' / 'Can I pay cash?')",
+        "type": "required"
+      },
+      {
+        "criterion": "Used at least one clarification question when the clerk spoke too fast",
+        "type": "required"
+      },
+      {
+        "criterion": "Register stayed casual-polite and brief — no over-formal 'I would like to request', no bare commands",
+        "type": "required"
+      },
+      {
+        "criterion": "Pronunciation: final consonants in bag / card / hot / cup / cash audible, and price and time numbers (thirteen vs thirty, fifteen vs fifty) intelligible on first hearing",
+        "type": "pronunciation"
+      },
+      {
+        "criterion": "Handled the curveball (out of stock, price mismatch, declined card, wrong change) without abandoning the conversation, and negotiated an outcome",
+        "type": "stretch_b1"
+      }
+    ]
+  },
+  "register_culture_note": {
+    "en": "Convenience store English is fast, short and friendly. Full sentences slow the queue down: 'No bag, thanks' is better than 'I do not want to have a plastic bag.' Say 'please' and 'thanks', keep your answers to two or three words, and speak up — the clerk is often looking at the register, not at you. Asking about a price, a shelf tag, or your change is completely normal and not confrontational.",
+    "th": null,
+    "do_dont": [
+      {
+        "avoid": "Nodding or smiling when asked 'Do you want a bag?'",
+        "prefer": "Saying it out loud: 'Yes, one bag, please.' / 'No bag, thanks.' — the clerk is usually looking down."
+      },
+      {
+        "avoid": "'Give me two coffee.'",
+        "prefer": "'Two coffees, please.' — the plural -s and 'please' are both doing work."
+      },
+      {
+        "avoid": "'I pay car.' (final -d dropped)",
+        "prefer": "'I'll pay by card.' — release the /d/ or the clerk waits for cash."
+      },
+      {
+        "avoid": "'Heat.' / pointing at the microwave silently",
+        "prefer": "'Can you heat this up, please?'"
+      },
+      {
+        "avoid": "Staying silent when the change looks wrong",
+        "prefer": "'Sorry, I think I gave you twenty.' — polite and completely acceptable."
+      }
+    ],
+    "thai_cultural_note": "In Thailand, 7-Eleven staff run a fixed script and usually bag and heat things for you automatically, so a customer can get through the whole transaction with almost no speech. In most other countries the bag costs money and nothing is heated unless you ask, so the same silence leaves you with a cold pie and no bag. Speaking up to check a price or a total is also read as normal customer behaviour, not as doubting the staff member's honesty."
+  },
+  "can_do_checkpoints": [
+    {
+      "cefr": "A2",
+      "statement": "I can ask whether the store has something and ask the clerk to heat my food up."
+    },
+    {
+      "cefr": "A2",
+      "statement": "I can answer 'Do you want a bag?' and 'Receipt?' clearly and politely."
+    },
+    {
+      "cefr": "A2",
+      "statement": "I can understand a spoken price and say how I want to pay."
+    },
+    {
+      "cefr": "B1",
+      "statement": "I can check a price I didn't catch and query a shelf price that doesn't match the register."
+    },
+    {
+      "cefr": "B1",
+      "statement": "I can handle a problem at the counter — out of stock, a declined card, or wrong change — and finish the purchase."
+    },
+    {
+      "cefr": "Sound",
+      "statement": "My final consonants (bag, card, hot, cup, cash) and my prices and times (thirteen/thirty, fifteen/fifty) are understood the first time."
+    }
+  ],
+  "gamification": {
+    "xp_per_substep": true,
+    "unlocks": [
+      "Badge: Bag Refuser — declined a bag out loud three times",
+      "Badge: Exact Change — repeated three spoken totals back correctly",
+      "Badge: Thirty Not Thirteen — cleared the number minimal-pair drill",
+      "Unlocks: 'Ordering coffee to go' and 'Buying a SIM card / top-up'"
+    ],
+    "sound_meters": [
+      "final_consonants",
+      "numbers"
+    ]
+  },
+  "_review_status": {
+    "thai_strings": "DRAFT - machine-generated, tagged th_status=draft_unverified. A native Thai speaker must review every string and set th_status='reviewed'.",
+    "facts": "UNVERIFIED - generated content, needs a local fact-check before shipping",
+    "generated_by": "claude-opus-5"
+  }
+}

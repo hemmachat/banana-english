@@ -1,0 +1,800 @@
+{
+  "scenario_id": "bts_mrt_skytrain",
+  "locale": "global",
+  "title_en": "Taking the BTS / MRT",
+  "title_th": "การขึ้นรถไฟฟ้า",
+  "tier": 1,
+  "cefr_range": [
+    "A2",
+    "B1"
+  ],
+  "prerequisites": [
+    "greetings_small_talk",
+    "numbers_and_prices",
+    "asking_for_repetition"
+  ],
+  "recycles": [
+    "numbers 1–100 and hundreds",
+    "telling the time / 'how long?'",
+    "'How much is it?'",
+    "'Excuse me' + polite request",
+    "'Sorry, could you say that again?'",
+    "left / right / straight ahead"
+  ],
+  "register": "Casual-polite service encounter — short, direct questions to busy transit staff; no heavy formality, but 'excuse me' and 'please' are expected",
+  "sound_target_box": {
+    "note_th": null,
+    "targets": [
+      {
+        "sound": "final_consonants",
+        "scoring_method": "phoneme",
+        "words_in_context": [
+          "card",
+          "exit",
+          "next",
+          "stop",
+          "gate",
+          "top up",
+          "left",
+          "twelve",
+          "closed",
+          "walk"
+        ],
+        "minimal_pairs": [
+          [
+            "card",
+            "car"
+          ],
+          [
+            "card",
+            "cart"
+          ],
+          [
+            "right",
+            "ride"
+          ],
+          [
+            "back",
+            "bag"
+          ],
+          [
+            "light",
+            "lie"
+          ],
+          [
+            "train",
+            "tray"
+          ],
+          [
+            "stop",
+            "store"
+          ]
+        ],
+        "why_it_matters_here": "Thai finals are unreleased, so 'card' becomes 'car' and 'exit two' loses its /t/. At a ticket window the staff member hears 'car' and points you to the taxi rank; at the gate, 'my card won't work' sounds like 'my car won't work'. Miss the /t/ on 'exit' and 'next' and you get off at the wrong station with no one to ask."
+      },
+      {
+        "sound": "numbers",
+        "scoring_method": "phoneme",
+        "words_in_context": [
+          "fifteen",
+          "fifty",
+          "thirteen",
+          "thirty",
+          "three hundred",
+          "exit four",
+          "twelve baht",
+          "platform two",
+          "five minutes"
+        ],
+        "minimal_pairs": [
+          [
+            "fifteen",
+            "fifty"
+          ],
+          [
+            "thirteen",
+            "thirty"
+          ],
+          [
+            "fourteen",
+            "forty"
+          ],
+          [
+            "nineteen",
+            "ninety"
+          ],
+          [
+            "sixteen",
+            "sixty"
+          ]
+        ],
+        "why_it_matters_here": "Fares, top-up amounts, exit numbers, platform numbers and station counts are all numbers, and the -teen/-ty contrast lives in the final consonant plus stress. Ask to top up 'fifteen' when you mean 'fifty' and you can't get through the gate; hear 'exit forty' instead of 'exit fourteen' and you walk fifteen minutes the wrong way."
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "en": "ticket machine",
+      "th": "ตู้ขายตั๋วอัตโนมัติ กดซื้อเองได้ ใส่เหรียญหรือแตะบัตร",
+      "group": "places_and_things",
+      "audio_needed": true,
+      "audio": "/static/audio/global/ticket-machine.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "ticket window / counter",
+      "th": "ช่องขายตั๋วที่มีเจ้าหน้าที่นั่งอยู่ ถามอะไรได้",
+      "group": "places_and_things",
+      "audio_needed": true,
+      "audio": "/static/audio/global/ticket-window-counter.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "gate (ticket gate)",
+      "th": "ประตูที่ต้องแตะบัตรหรือสอดตั๋วก่อนเข้า-ออก",
+      "group": "places_and_things",
+      "audio_needed": true,
+      "audio": "/static/audio/global/gate-ticket-gate.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "platform",
+      "th": "ชานชาลา ที่ยืนรอรถไฟ",
+      "group": "places_and_things",
+      "audio_needed": true,
+      "audio": "/static/audio/global/platform.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "exit (exit two)",
+      "th": "ทางออก เช่น exit two คือทางออกที่ 2 — ป้ายบอกทางที่นี่ใช้เลขเหมือนบ้านเรา",
+      "group": "places_and_things",
+      "audio_needed": true,
+      "audio": "/static/audio/global/exit-exit-two.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "interchange / change here",
+      "th": "สถานีที่ต้องลงไปเปลี่ยนสาย ถ้าเขาบอก change here คือลงตรงนี้แล้วต่อขบวนอื่น",
+      "group": "places_and_things",
+      "audio_needed": true,
+      "audio": "/static/audio/global/interchange-change-here.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "stored-value card (Rabbit card)",
+      "th": "บัตรเติมเงินแบบบัตรแรบบิท ที่ออสฯ คือบัตรแบบ Opal/Myki แตะเข้าแตะออก ไม่ต้องซื้อตั๋วทุกครั้ง",
+      "group": "cards_and_money",
+      "audio_needed": true,
+      "audio": "/static/audio/global/stored-value-card-rabbit-card.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "top up",
+      "th": "เติมเงินเข้าบัตร ทำได้ที่ตู้ ที่เคาน์เตอร์ หรือในแอป",
+      "group": "cards_and_money",
+      "audio_needed": true,
+      "audio": "/static/audio/global/top-up.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "balance",
+      "th": "เงินคงเหลือในบัตร เช็กได้ที่ตู้หรือตอนแตะออกจะขึ้นให้ดู",
+      "group": "cards_and_money",
+      "audio_needed": true,
+      "audio": "/static/audio/global/balance.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "single-journey ticket",
+      "th": "ตั๋วเที่ยวเดียว ใช้ครั้งเดียวจบ เหมาะกับคนไม่มีบัตร",
+      "group": "cards_and_money",
+      "audio_needed": true,
+      "audio": "/static/audio/global/single-journey-ticket.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "fare",
+      "th": "ค่าโดยสาร ที่นี่คิดตามระยะทางและช่วงเวลา ชั่วโมงเร่งด่วนแพงกว่า",
+      "group": "cards_and_money",
+      "audio_needed": true,
+      "audio": "/static/audio/global/fare.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "line (green line / blue line)",
+      "th": "สายรถไฟ เขาเรียกตามสีหรือตามชื่อ เช่น green line คือสายสีเขียว",
+      "group": "directions",
+      "audio_needed": true,
+      "audio": "/static/audio/global/line-green-line-blue-line.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "next station",
+      "th": "สถานีถัดไป ประกาศในขบวนจะบอกทุกครั้ง ฟังคำว่า next station ไว้",
+      "group": "directions",
+      "audio_needed": true,
+      "audio": "/static/audio/global/next-station.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "last stop / terminates at",
+      "th": "สถานีปลายทาง ถ้าเขาบอก this train terminates at… คือรถไปสุดแค่นั้น ต้องลงทุกคน",
+      "group": "directions",
+      "audio_needed": true,
+      "audio": "/static/audio/global/last-stop-terminates-at.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "how many stops",
+      "th": "อีกกี่สถานี ถามว่า how many stops to…? ได้เลย คนที่นี่ตอบให้ปกติ",
+      "group": "directions",
+      "audio_needed": true,
+      "audio": "/static/audio/global/how-many-stops.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "walkway / skywalk",
+      "th": "ทางเดินเชื่อม บางที่เป็นทางลอย เดินจากสถานีไปห้างหรืออีกสายได้เลยไม่ต้องลงถนน",
+      "group": "directions",
+      "audio_needed": true,
+      "audio": "/static/audio/global/walkway-skywalk.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "the gate won't open",
+      "th": "ประตูไม่เปิด ส่วนใหญ่เพราะเงินในบัตรไม่พอ หรือแตะไม่ติด ให้ไปหาเจ้าหน้าที่ที่ประตูข้างๆ",
+      "group": "problems",
+      "audio_needed": true,
+      "audio": "/static/audio/global/the-gate-won-t-open.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "closed for maintenance",
+      "th": "ปิดปรับปรุง บางทีปิดทั้งสายวันเสาร์อาทิตย์ แล้วมีรถบัสมารับแทน (เขาเรียก replacement bus)",
+      "group": "problems",
+      "audio_needed": true,
+      "audio": "/static/audio/global/closed-for-maintenance.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "mind the gap",
+      "th": "ประกาศเตือนให้ระวังช่องว่างระหว่างรถกับชานชาลา ตอนก้าวขึ้นก้าวลง",
+      "group": "announcements",
+      "audio_needed": true,
+      "audio": "/static/audio/global/mind-the-gap.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "alight / get off",
+      "th": "ลงจากรถ เป็นคำทางการที่ใช้ในประกาศ พูดกันจริงๆ ใช้ get off",
+      "group": "announcements",
+      "audio_needed": true,
+      "audio": "/static/audio/global/alight-get-off.mp3",
+      "th_status": "draft_unverified"
+    }
+  ],
+  "model_dialogues": [
+    {
+      "cefr": "A2",
+      "label": "Topping up at the ticket window and finding the right line",
+      "lines": [
+        {
+          "speaker": "Staff",
+          "text": "Hi there, how can I help?",
+          "audio": "/static/audio/global/hi-there-how-can-i-help.mp3",
+          "th": "สวัสดีค่ะ ให้ช่วยอะไรดีคะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "I'd like to top up my card, please.",
+          "audio": "/static/audio/global/i-d-like-to-top-up-my-card-please.mp3",
+          "th": "ขอเติมเงินในบัตรหน่อยครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Staff",
+          "text": "Sure. How much?",
+          "audio": "/static/audio/global/sure-how-much.mp3",
+          "th": "ได้ค่ะ เติมเท่าไหร่คะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Three hundred baht.",
+          "audio": "/static/audio/global/three-hundred-baht.mp3",
+          "th": "สามร้อยบาทครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Staff",
+          "text": "Three hundred. Here's your card back.",
+          "audio": "/static/audio/global/three-hundred-here-s-your-card-back.mp3",
+          "th": "สามร้อยนะคะ นี่บัตรคืนค่ะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Thanks. Which line goes to Siam?",
+          "audio": "/static/audio/global/thanks-which-line-goes-to-siam.mp3",
+          "th": "ขอบคุณครับ แล้วไปสยามต้องขึ้นสายไหน",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Staff",
+          "text": "The green line. It's four stops from here.",
+          "audio": "/static/audio/global/the-green-line-it-s-four-stops-from-here.mp3",
+          "th": "สายสีเขียวค่ะ จากนี่อีกสี่สถานี",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Four stops. Which platform?",
+          "audio": "/static/audio/global/four-stops-which-platform.mp3",
+          "th": "สี่สถานี แล้วชานชาลาไหนครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Staff",
+          "text": "Platform two — up the escalator, on the left.",
+          "audio": "/static/audio/global/platform-two-up-the-escalator-on-the-left.mp3",
+          "th": "ชานชาลาสองค่ะ ขึ้นบันไดเลื่อนไป อยู่ทางซ้าย",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Platform two. Thank you!",
+          "audio": "/static/audio/global/platform-two-thank-you.mp3",
+          "th": "ชานชาลาสอง ขอบคุณครับ",
+          "th_status": "draft_unverified"
+        }
+      ],
+      "shadow_focus_lines": [
+        {
+          "text": "Top up my card, please.",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/top-up-my-card-please.mp3"
+        },
+        {
+          "text": "Three hundred baht.",
+          "targets": [
+            "numbers",
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/three-hundred-baht.mp3"
+        },
+        {
+          "text": "Which line goes to Siam?",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/which-line-goes-to-siam.mp3"
+        },
+        {
+          "text": "Four stops, platform two.",
+          "targets": [
+            "numbers",
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/four-stops-platform-two.mp3"
+        }
+      ]
+    },
+    {
+      "cefr": "B1",
+      "label": "The gate won't open — low balance, a closed interchange, and the wrong exit",
+      "lines": [
+        {
+          "speaker": "Learner",
+          "text": "Excuse me, the gate won't open.",
+          "audio": "/static/audio/global/excuse-me-the-gate-won-t-open.mp3",
+          "th": "ขอโทษครับ ประตูไม่เปิด",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Staff",
+          "text": "Let me tap it here. Ah — you've only got twelve baht left.",
+          "audio": "/static/audio/global/let-me-tap-it-here-ah-you-ve-only-got-twelve-baht-left.mp3",
+          "th": "ขอแตะดูหน่อยนะคะ อ๋อ เหลือแค่สิบสองบาทเอง",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Only twelve? I topped up yesterday.",
+          "audio": "/static/audio/global/only-twelve-i-topped-up-yesterday.mp3",
+          "th": "แค่สิบสองเองเหรอ ผมเพิ่งเติมไปเมื่อวานนี้เอง",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Staff",
+          "text": "The trip from the airport took most of it. You'll need at least fifty to get to Asok.",
+          "audio": "/static/audio/global/the-trip-from-the-airport-took-most-of-it-you-ll-need-at-lea.mp3",
+          "th": "ขามาจากสนามบินกินไปเกือบหมดค่ะ จะไปอโศกต้องมีอย่างน้อยห้าสิบ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Okay. Can I top up here?",
+          "audio": "/static/audio/global/okay-can-i-top-up-here.mp3",
+          "th": "โอเคครับ เติมตรงนี้ได้ไหม",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Staff",
+          "text": "Not at the gate. The machine's over there, next to the map.",
+          "audio": "/static/audio/global/not-at-the-gate-the-machine-s-over-there-next-to-the-map.mp3",
+          "th": "ตรงประตูไม่ได้ค่ะ ตู้อยู่ตรงโน้น ข้างๆ แผนที่",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Sorry, next to the map?",
+          "audio": "/static/audio/global/sorry-next-to-the-map.mp3",
+          "th": "ขอโทษครับ ข้างแผนที่ใช่ไหม",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Staff",
+          "text": "That's right. It takes cash or card — twenty and fifty baht notes.",
+          "audio": "/static/audio/global/that-s-right-it-takes-cash-or-card-twenty-and-fifty-baht-not.mp3",
+          "th": "ใช่ค่ะ ใช้ได้ทั้งเงินสดและบัตร แบงก์ยี่สิบกับห้าสิบ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Got it. Is Asok on this line?",
+          "audio": "/static/audio/global/got-it-is-asok-on-this-line.mp3",
+          "th": "เข้าใจแล้วครับ แล้วอโศกอยู่สายนี้ไหม",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Staff",
+          "text": "No, this is the blue line. Normally you'd change at Sukhumvit, but the interchange is closed for maintenance today.",
+          "audio": "/static/audio/global/no-this-is-the-blue-line-normally-you-d-change-at-sukhumvit-.mp3",
+          "th": "ไม่ค่ะ นี่สายสีน้ำเงิน ปกติต้องไปเปลี่ยนสายที่สุขุมวิท แต่วันนี้จุดเชื่อมปิดซ่อม",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Closed? So how do I get there?",
+          "audio": "/static/audio/global/closed-so-how-do-i-get-there.mp3",
+          "th": "ปิดเหรอครับ แล้วผมจะไปยังไงดี",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Staff",
+          "text": "Go one more stop to Phetchaburi and walk across, or take the number thirteen bus outside exit three.",
+          "audio": "/static/audio/global/go-one-more-stop-to-phetchaburi-and-walk-across-or-take-the-.mp3",
+          "th": "นั่งต่ออีกสถานีไปเพชรบุรีแล้วเดินข้ามไป หรือขึ้นรถเมล์สายสิบสามหน้าทางออกสามก็ได้",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Sorry, could you say that again, slowly?",
+          "audio": "/static/audio/global/sorry-could-you-say-that-again-slowly.mp3",
+          "th": "ขอโทษครับ พูดอีกทีช้าๆ ได้ไหม",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Staff",
+          "text": "One more stop to Phetchaburi, then walk. It's about five minutes.",
+          "audio": "/static/audio/global/one-more-stop-to-phetchaburi-then-walk-it-s-about-five-minut.mp3",
+          "th": "นั่งต่ออีกหนึ่งสถานีไปเพชรบุรี แล้วเดินเอา ประมาณห้านาทีค่ะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Five minutes. Which exit for the walkway?",
+          "audio": "/static/audio/global/five-minutes-which-exit-for-the-walkway.mp3",
+          "th": "ห้านาที แล้วทางเดินนี่ออกทางออกไหนครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Staff",
+          "text": "Exit two. Just follow the signs to the skywalk.",
+          "audio": "/static/audio/global/exit-two-just-follow-the-signs-to-the-skywalk.mp3",
+          "th": "ทางออกสองค่ะ เดินตามป้าย skywalk ไปเลย",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Exit two, not exit three?",
+          "audio": "/static/audio/global/exit-two-not-exit-three.mp3",
+          "th": "ทางออกสอง ไม่ใช่ทางออกสามใช่ไหมครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Staff",
+          "text": "Exit two for the walkway. Exit three is the bus stop.",
+          "audio": "/static/audio/global/exit-two-for-the-walkway-exit-three-is-the-bus-stop.mp3",
+          "th": "ทางออกสองคือทางเดินค่ะ ส่วนทางออกสามคือป้ายรถเมล์",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Thanks a lot. That really helps.",
+          "audio": "/static/audio/global/thanks-a-lot-that-really-helps.mp3",
+          "th": "ขอบคุณมากครับ ช่วยได้เยอะเลย",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Staff",
+          "text": "No worries. Mind the gap when you board.",
+          "audio": "/static/audio/global/no-worries-mind-the-gap-when-you-board.mp3",
+          "th": "ไม่เป็นไรค่ะ ตอนขึ้นรถระวังช่องว่างด้วยนะคะ",
+          "th_status": "draft_unverified"
+        }
+      ],
+      "shadow_focus_lines": [
+        {
+          "text": "The gate won't open.",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/the-gate-won-t-open.mp3"
+        },
+        {
+          "text": "Only twelve baht left?",
+          "targets": [
+            "numbers",
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/only-twelve-baht-left.mp3"
+        },
+        {
+          "text": "Exit two, not exit three?",
+          "targets": [
+            "numbers",
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/exit-two-not-exit-three.mp3"
+        },
+        {
+          "text": "Could you say that again?",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/could-you-say-that-again.mp3"
+        }
+      ]
+    }
+  ],
+  "chunk_drills": [
+    {
+      "label": "Asking for the right line",
+      "pattern": "Which line goes to ___?",
+      "examples": [
+        "Which line goes to Siam?",
+        "Which line goes to the airport?",
+        "Which line goes to the hospital?",
+        "Is this the right line for Asok?"
+      ],
+      "spiralled_grammar": "Wh- question with present simple 'goes'; recycles place names and 'Is this the right ___ for ___?' from directions"
+    },
+    {
+      "label": "Topping up (numbers under pressure)",
+      "pattern": "Top up ___ baht, please. / How much is left on my card?",
+      "examples": [
+        "Top up fifty baht, please.",
+        "Top up three hundred, please.",
+        "How much is left on my card?",
+        "Can I pay by card?"
+      ],
+      "spiralled_grammar": "Recycles 'How much…?' and the numbers set; drills the -teen/-ty contrast inside a real transaction"
+    },
+    {
+      "label": "Counting stops and time",
+      "pattern": "How many stops to ___? / How long does it take?",
+      "examples": [
+        "How many stops to Mo Chit?",
+        "It's four stops.",
+        "How long does it take?",
+        "About fifteen minutes."
+      ],
+      "spiralled_grammar": "Recycles time expressions and 'It takes ___ minutes'; final /s/ on 'stops' and 'minutes'"
+    },
+    {
+      "label": "Exits and landmarks",
+      "pattern": "Which exit for ___?",
+      "examples": [
+        "Which exit for the mall?",
+        "Which exit for the bus stop?",
+        "Exit two or exit three?",
+        "Where's exit four?"
+      ],
+      "spiralled_grammar": "Recycles 'Where's…?' and place vocabulary; number + final /t/ in 'exit'"
+    },
+    {
+      "label": "Something's wrong / getting help",
+      "pattern": "Excuse me, ___ won't ___ .",
+      "examples": [
+        "Excuse me, the gate won't open.",
+        "My card won't work.",
+        "The machine won't take my note.",
+        "Sorry, could you say that again?"
+      ],
+      "spiralled_grammar": "Negative 'won't' + base verb; recycles the clarification chunk used in every unit"
+    }
+  ],
+  "listening_items": [
+    {
+      "audio_text": "Next station: Asok. Change here for the MRT Blue Line.",
+      "channel": "on-train PA announcement",
+      "question": "What can you change to at this station?",
+      "answer": "The MRT Blue Line",
+      "distractor_focus": "Station name vs line name; the unreleased /k/ in 'Asok' and the final /nj/ of 'change'"
+    },
+    {
+      "audio_text": "This train terminates at Mo Chit. All passengers please alight at the next station.",
+      "channel": "on-train PA announcement",
+      "question": "Do you need to get off the train? Where?",
+      "answer": "Yes — everyone gets off at the next station, Mo Chit (the last stop)",
+      "distractor_focus": "'terminates' / 'alight' as unfamiliar announcement words; 'next' final cluster /kst/"
+    },
+    {
+      "audio_text": "That's a hundred and fifty baht altogether — fifty in change.",
+      "channel": "ticket window",
+      "question": "How much do you pay?",
+      "answer": "150 baht",
+      "distractor_focus": "fifteen vs fifty; 'a hundred and fifty' heard as 'a hundred and fifteen'"
+    },
+    {
+      "audio_text": "Take exit four for the mall. Exit fourteen is on the other side of the road.",
+      "channel": "staff face-to-face at the concourse",
+      "question": "Which exit takes you to the mall?",
+      "answer": "Exit four",
+      "distractor_focus": "four vs fourteen vs forty — stress on the final syllable"
+    },
+    {
+      "audio_text": "Trains run every three minutes, so don't push. The last train leaves at twelve thirty.",
+      "channel": "platform PA announcement",
+      "question": "What time is the last train?",
+      "answer": "12:30 (twelve thirty)",
+      "distractor_focus": "thirteen vs thirty; 'three' vs 'thirty' minutes"
+    }
+  ],
+  "guided_roleplay": {
+    "learner_role": "A commuter at a busy metro station with a nearly empty travel card, trying to reach a station on another line",
+    "flow": [
+      "Step 1 — At the machine or window: greet and ask to top up a specific amount ('Top up a hundred baht, please').",
+      "Step 2 — Confirm the amount and the balance back ('A hundred? Yes. How much is on it now?').",
+      "Step 3 — Ask which line goes to your destination and how many stops.",
+      "Step 4 — Ask which platform, and repeat the number back to check ('Platform two?').",
+      "Step 5 — Handle one problem: the gate doesn't open, or the fare is higher than you expected. Say what's wrong in one short sentence.",
+      "Step 6 — Ask which exit you need at the far end, and confirm the exit number before you walk away."
+    ],
+    "sentence_frames": [
+      "Excuse me, could I top up ___ baht?",
+      "How much is left on my card?",
+      "Which line goes to ___?",
+      "How many stops is it?",
+      "Which platform?",
+      "Sorry — platform two or platform three?",
+      "Excuse me, the gate won't open.",
+      "Which exit for ___?",
+      "Sorry, could you say that again, slowly?",
+      "Exit ___ — thank you."
+    ],
+    "hints_available": true
+  },
+  "free_roleplay": {
+    "ai_persona": "Sam, a station staff member at a busy interchange. Friendly and helpful but slightly rushed, speaks at natural speed with short answers, uses real transit words ('top up', 'change at', 'terminates', 'concourse'). Never switches to Thai; will slow down and repeat if asked directly.",
+    "a2_behavior": "Sticks to the standard sequence: takes the top-up, states the amount and the new balance, names the line, the number of stops and the platform, and gives one exit number. Repeats any number once if the learner asks.",
+    "b1_curveballs": [
+      "The top-up machine is out of order — the learner must go to the window on the other side of the concourse and explain what they need again.",
+      "The card is blocked or the gate won't open; Sam asks 'When did you last top up?' and 'How much did you put on?'",
+      "The direct line is suspended, so the learner must change lines or take a shuttle bus, and confirm the bus number.",
+      "Sam offers a choice: 'Single ticket is forty-five, or you can put fifty on the card — which do you want?'",
+      "Sam gives the exit as a letter plus a number ('Exit A3') or names a landmark the learner doesn't know, forcing a clarification question.",
+      "Sam mishears the destination and starts giving directions to a similar-sounding station; the learner must correct him politely."
+    ],
+    "roleplay_rubric": [
+      {
+        "criterion": "Completed the core sub-steps: topped up (or bought a ticket), found the correct line, confirmed the platform, and asked about the exit",
+        "type": "required"
+      },
+      {
+        "criterion": "Stated and confirmed at least two numbers accurately (amount, stops, platform or exit) so the listener could act on them",
+        "type": "required"
+      },
+      {
+        "criterion": "Reported the problem in one clear short sentence ('The gate won't open' / 'My card won't work')",
+        "type": "required"
+      },
+      {
+        "criterion": "Asked at least one clarification question instead of nodding ('Sorry, could you say that again?' / 'Exit two or exit three?')",
+        "type": "required"
+      },
+      {
+        "criterion": "Register stayed casual-polite: opened with 'Excuse me', kept requests short, thanked the staff member",
+        "type": "required"
+      },
+      {
+        "criterion": "Pronunciation: final consonants audible on 'card', 'exit', 'next', 'stop', 'left'; -teen vs -ty numbers intelligible without repetition",
+        "type": "pronunciation"
+      },
+      {
+        "criterion": "Stretch (B1): handled an off-script curveball — a closed line, a broken machine, or a wrong destination — and reached the destination without breaking down",
+        "type": "stretch_b1"
+      }
+    ]
+  },
+  "register_culture_note": {
+    "en": "Transit staff are busy and answer in short bursts. Lead with 'Excuse me', then one clear question — long polite preambles get cut off. It is completely normal to repeat a number back ('Platform two?') or to ask someone to say it again; staff prefer that to a passenger who walks off in the wrong direction. Announcements are usually played once, so listen for the pattern: 'Next station… change here for…'",
+    "th": null,
+    "do_dont": [
+      {
+        "avoid": "Saying 'card' with no final /d/ (sounds like 'car')",
+        "prefer": "Release the /d/: 'My card, please' — or hold the card up while you say it"
+      },
+      {
+        "avoid": "'I want top up.'",
+        "prefer": "'Could I top up fifty baht, please?'"
+      },
+      {
+        "avoid": "Saying 'fifteen' with stress on the first syllable (heard as 'fifty')",
+        "prefer": "Stress the end — 'fifTEEN' — and confirm: 'Fifteen, one-five.'"
+      },
+      {
+        "avoid": "'Where Siam?'",
+        "prefer": "'Which line goes to Siam?'"
+      },
+      {
+        "avoid": "Smiling and nodding when you didn't catch the exit number",
+        "prefer": "'Sorry, exit two or exit three?'"
+      }
+    ],
+    "thai_cultural_note": "Many Thai speakers nod and say 'yes, yes' rather than make a busy staff member repeat themselves — the kreng-jai instinct not to be a bother. In a station this backfires: the staff member assumes you understood and turns to the next passenger, and you end up at the wrong exit with no one to ask. Asking someone to repeat a number is treated as normal, efficient behaviour, not rudeness. Also note that outside Thailand the exit system varies — some cities use letters (Exit A) or street names instead of numbers — so always read the number or letter back before you walk."
+  },
+  "can_do_checkpoints": [
+    {
+      "cefr": "A2",
+      "statement": "I can top up my travel card and say the amount clearly."
+    },
+    {
+      "cefr": "A2",
+      "statement": "I can ask which line goes to a station and how many stops it is."
+    },
+    {
+      "cefr": "A2",
+      "statement": "I can ask which platform and which exit I need, and repeat the number back to check."
+    },
+    {
+      "cefr": "A2",
+      "statement": "I can understand a simple 'next station / change here' announcement."
+    },
+    {
+      "cefr": "B1",
+      "statement": "I can explain a problem at the gate (low balance, card not working) and follow the staff member's solution."
+    },
+    {
+      "cefr": "B1",
+      "statement": "I can cope when the route changes — a closed interchange or a shuttle bus — by asking follow-up questions until I know what to do."
+    },
+    {
+      "cefr": "Sound",
+      "statement": "My final consonants ('card', 'exit', 'next', 'stop') are audible, and my -teen/-ty numbers are understood the first time."
+    }
+  ],
+  "gamification": {
+    "xp_per_substep": true,
+    "unlocks": [
+      "buying_intercity_train_tickets",
+      "taking_a_taxi_or_ride_hailing",
+      "asking_for_directions_on_the_street",
+      "airport_transfer_and_check_in"
+    ],
+    "sound_meters": [
+      "final_consonants",
+      "numbers"
+    ]
+  },
+  "_review_status": {
+    "thai_strings": "DRAFT - machine-generated, tagged th_status=draft_unverified. A native Thai speaker must review every string and set th_status='reviewed'.",
+    "facts": "UNVERIFIED - generated content, needs a local fact-check before shipping",
+    "generated_by": "claude-opus-5"
+  }
+}

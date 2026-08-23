@@ -1,0 +1,844 @@
+{
+  "scenario_id": "fast_food_combo",
+  "locale": "global",
+  "title_en": "Fast Food Ordering",
+  "title_th": "การสั่งฟาสต์ฟู้ด",
+  "tier": 1,
+  "cefr_range": [
+    "A2",
+    "B1"
+  ],
+  "prerequisites": [
+    "greetings_small_talk",
+    "numbers_and_prices",
+    "cafe_coffee_order"
+  ],
+  "recycles": [
+    "numbers 1-100 and prices ('How much is it?')",
+    "polite requests: 'Can I get… please?' / 'Could I have…?'",
+    "sizes: small / medium / large",
+    "clarification: 'Sorry, could you say that again?' / 'Did you say X or Y?'",
+    "yes/no answers and short confirmations: 'That's it, thanks.'"
+  ],
+  "register": "Casual-polite, fast and transactional (counter and drive-thru staff are friendly but rushed; first names are not used)",
+  "sound_target_box": {
+    "note_th": null,
+    "targets": [
+      {
+        "sound": "final_consonants",
+        "scoring_method": "phoneme",
+        "words_in_context": [
+          "large",
+          "no ice",
+          "fries",
+          "nuggets",
+          "sauce",
+          "meal",
+          "milkshake",
+          "receipt",
+          "to go"
+        ],
+        "minimal_pairs": [
+          [
+            "ice",
+            "eye"
+          ],
+          [
+            "fries",
+            "fry"
+          ],
+          [
+            "salt",
+            "saw"
+          ],
+          [
+            "large",
+            "lard"
+          ],
+          [
+            "meal",
+            "me"
+          ],
+          [
+            "sauce",
+            "saw"
+          ]
+        ],
+        "why_it_matters_here": "Thai finals are unreleased, so 'no ice' comes out as 'no eye' and the cashier hears nothing at all — you get a cup packed with ice. 'Large' without the /dʒ/ sounds like 'lar' and staff default to a small. At a drive-thru speaker there is no face to read and no time to repeat, so a dropped final consonant is a wrong order you pay for."
+      },
+      {
+        "sound": "numbers",
+        "scoring_method": "phoneme",
+        "words_in_context": [
+          "combo number five",
+          "two number sixes",
+          "fourteen fifty",
+          "twenty-eight forty",
+          "order number thirty-two",
+          "thirteen or thirty"
+        ],
+        "minimal_pairs": [
+          [
+            "thirteen",
+            "thirty"
+          ],
+          [
+            "fifteen",
+            "fifty"
+          ],
+          [
+            "fourteen",
+            "forty"
+          ],
+          [
+            "nineteen",
+            "ninety"
+          ],
+          [
+            "eighteen",
+            "eighty"
+          ]
+        ],
+        "why_it_matters_here": "Teen/ty confusion here costs money and food: say 'combo thirteen' when you mean 'thirty' and you eat the wrong meal; hear 'fifteen' when the total is 'fifty' and you hand over the wrong cash at a queue that is already moving. Order numbers are called out once over a loud speaker — mishear 'thirty-two' as 'thirteen-two' and your food sits on the counter going cold."
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "en": "combo / meal / set",
+      "th": "ชุดเซ็ต — เบอร์เกอร์ + เฟรนช์ฟรายส์ + น้ำ ขายรวมกัน ถูกกว่าสั่งแยก",
+      "group": "menu structure",
+      "audio_needed": true,
+      "audio": "/static/audio/global/combo-meal-set.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "combo number five",
+      "th": "\"ขอเซ็ตเบอร์ 5\" — ในเมนูจะมีเลขกำกับแต่ละเซ็ต บอกเลขอย่างเดียวก็พอ ไม่ต้องอ่านชื่อยาวๆ",
+      "group": "menu structure",
+      "audio_needed": true,
+      "audio": "/static/audio/global/combo-number-five.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "side",
+      "th": "ของกินแกล้ม/ของเคียง เช่น เฟรนช์ฟรายส์ สลัด นักเก็ต ที่มากับเซ็ต",
+      "group": "menu structure",
+      "audio_needed": true,
+      "audio": "/static/audio/global/side.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "cheeseburger",
+      "th": "ชีสเบอร์เกอร์ — เนื้อวัวกับชีส",
+      "group": "food items",
+      "audio_needed": true,
+      "audio": "/static/audio/global/cheeseburger.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "chicken burger",
+      "th": "เบอร์เกอร์ไก่",
+      "group": "food items",
+      "audio_needed": true,
+      "audio": "/static/audio/global/chicken-burger.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "fries / chips",
+      "th": "ที่ออสเตรเลียเรียก chips เป็นหลัก แต่ร้านฟาสต์ฟู้ดอเมริกันจะเขียน fries — อย่างเดียวกัน มันฝรั่งทอดแท่ง",
+      "group": "food items",
+      "audio_needed": true,
+      "audio": "/static/audio/global/fries-chips.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "nuggets",
+      "th": "นักเก็ตไก่ — เขาจะถามว่าเอากี่ชิ้น 6, 10, 20",
+      "group": "food items",
+      "audio_needed": true,
+      "audio": "/static/audio/global/nuggets.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "milkshake",
+      "th": "มิลค์เชค นมปั่นข้นๆ",
+      "group": "drinks",
+      "audio_needed": true,
+      "audio": "/static/audio/global/milkshake.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "Coke",
+      "th": "โค้ก — ถ้าอยากได้แบบไม่มีน้ำตาลบอก Coke Zero หรือ Diet Coke",
+      "group": "drinks",
+      "audio_needed": true,
+      "audio": "/static/audio/global/coke.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "bottled water",
+      "th": "น้ำเปล่าขวด — ต้องจ่ายเงิน ไม่ฟรี",
+      "group": "drinks",
+      "audio_needed": true,
+      "audio": "/static/audio/global/bottled-water.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "small / medium / large",
+      "th": "เล็ก / กลาง / ใหญ่ — เขาจะถามขนาดตอนสั่งน้ำกับเฟรนช์ฟรายส์เสมอ",
+      "group": "sizes",
+      "audio_needed": true,
+      "audio": "/static/audio/global/small-medium-large.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "regular",
+      "th": "ขนาดปกติ/ธรรมดา ไม่เพิ่มไม่ลด ถ้าไม่รู้จะเอาอะไรก็ตอบคำนี้ได้",
+      "group": "sizes",
+      "audio_needed": true,
+      "audio": "/static/audio/global/regular.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "make it large / upsize",
+      "th": "\"ขอไซซ์ใหญ่\" — เขามักถามว่าอยากอัพไซซ์ไหม จ่ายเพิ่มนิดหน่อยได้เยอะขึ้น ไม่เอาก็บอก No thanks",
+      "group": "sizes",
+      "audio_needed": true,
+      "audio": "/static/audio/global/make-it-large-upsize.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "for here or to go?",
+      "th": "\"กินที่ร้านหรือเอากลับ?\" — คำถามที่จะโดนถามแทบทุกครั้ง ตอบ Here หรือ Takeaway สั้นๆ ก็พอ",
+      "group": "service questions",
+      "audio_needed": true,
+      "audio": "/static/audio/global/for-here-or-to-go.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "eat in / takeaway",
+      "th": "กินที่ร้าน / เอากลับบ้าน — ที่ออสฯ ใช้คำว่า takeaway ไม่ใช่ to go แบบอเมริกัน",
+      "group": "service questions",
+      "audio_needed": true,
+      "audio": "/static/audio/global/eat-in-takeaway.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "drive-thru",
+      "th": "ช่องซื้อแบบขับรถผ่าน สั่งทางไมค์แล้วไปรับของที่หน้าต่าง ไม่ต้องลงจากรถ",
+      "group": "service questions",
+      "audio_needed": true,
+      "audio": "/static/audio/global/drive-thru.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "no ice",
+      "th": "ไม่ใส่น้ำแข็ง — ได้น้ำเยอะกว่าเดิมด้วย",
+      "group": "customising",
+      "audio_needed": true,
+      "audio": "/static/audio/global/no-ice.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "no onions",
+      "th": "ไม่เอาหอมใหญ่",
+      "group": "customising",
+      "audio_needed": true,
+      "audio": "/static/audio/global/no-onions.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "extra sauce",
+      "th": "ขอซอสเพิ่ม — บางร้านคิดเงินซองละ 50 เซ็นต์",
+      "group": "customising",
+      "audio_needed": true,
+      "audio": "/static/audio/global/extra-sauce.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "on the side",
+      "th": "ขอแยก ไม่ต้องราดมา เช่น ซอสแยกถ้วย",
+      "group": "customising",
+      "audio_needed": true,
+      "audio": "/static/audio/global/on-the-side.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "sold out",
+      "th": "ของหมด — เขาจะบอกว่า Sorry, we're sold out of that แปลว่าต้องเลือกอย่างอื่น",
+      "group": "problems",
+      "audio_needed": true,
+      "audio": "/static/audio/global/sold-out.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "That's not what I ordered",
+      "th": "\"นี่ไม่ใช่ที่ผม/ดิฉันสั่ง\" — พูดได้เลย ไม่ต้องเกรงใจ เอาใบเสร็จให้เขาดูแล้วเขาจะเปลี่ยนให้",
+      "group": "problems",
+      "audio_needed": true,
+      "audio": "/static/audio/global/that-s-not-what-i-ordered.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "order number",
+      "th": "เลขคิว — เขาจะขานเลขหรือขึ้นจอ รอจนเห็นเลขตัวเองแล้วค่อยไปรับ",
+      "group": "paying and collecting",
+      "audio_needed": true,
+      "audio": "/static/audio/global/order-number.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "receipt",
+      "th": "ใบเสร็จ — เก็บไว้ก่อน เผื่อของขาดหรือได้ผิด จะได้มีหลักฐาน",
+      "group": "paying and collecting",
+      "audio_needed": true,
+      "audio": "/static/audio/global/receipt.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "card or cash",
+      "th": "\"จ่ายบัตรหรือเงินสด?\" — ร้านส่วนใหญ่ที่นี่รับบัตร แตะจ่ายได้เลย",
+      "group": "paying and collecting",
+      "audio_needed": true,
+      "audio": "/static/audio/global/card-or-cash.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "tray / bag",
+      "th": "ถาด (กินที่ร้าน) / ถุง (เอากลับ) — เขาจะจัดให้ตามที่เราตอบว่ากินที่ไหน",
+      "group": "paying and collecting",
+      "audio_needed": true,
+      "audio": "/static/audio/global/tray-bag.mp3",
+      "th_status": "draft_unverified"
+    }
+  ],
+  "model_dialogues": [
+    {
+      "cefr": "A2",
+      "label": "At the counter — a standard combo order",
+      "lines": [
+        {
+          "speaker": "Cashier",
+          "text": "Hi there, what can I get you?",
+          "audio": "/static/audio/global/hi-there-what-can-i-get-you.mp3",
+          "th": "สวัสดีค่ะ รับอะไรดีคะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Customer",
+          "text": "Can I get a chicken burger combo, please?",
+          "audio": "/static/audio/global/can-i-get-a-chicken-burger-combo-please.mp3",
+          "th": "ขอชุดเบอร์เกอร์ไก่หนึ่งชุดครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Cashier",
+          "text": "Sure. Small, medium or large?",
+          "audio": "/static/audio/global/sure-small-medium-or-large.mp3",
+          "th": "ได้ค่ะ เอาไซซ์เล็ก กลาง หรือใหญ่คะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Customer",
+          "text": "A large combo, please. And no ice in the Coke.",
+          "audio": "/static/audio/global/a-large-combo-please-and-no-ice-in-the-coke.mp3",
+          "th": "เอาชุดใหญ่ครับ แล้วโค้กไม่ใส่น้ำแข็งนะครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Cashier",
+          "text": "No ice, got it. For here or to go?",
+          "audio": "/static/audio/global/no-ice-got-it-for-here-or-to-go.mp3",
+          "th": "ไม่ใส่น้ำแข็ง โอเคค่ะ ทานที่ร้านหรือใส่ห่อกลับคะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Customer",
+          "text": "To go, please.",
+          "audio": "/static/audio/global/to-go-please.mp3",
+          "th": "ห่อกลับครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Cashier",
+          "text": "That's fourteen fifty. Order number thirty-two.",
+          "audio": "/static/audio/global/that-s-fourteen-fifty-order-number-thirty-two.mp3",
+          "th": "14.50 นะคะ คิวที่ 32 ค่ะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Customer",
+          "text": "Sorry — thirty-two or thirteen?",
+          "audio": "/static/audio/global/sorry-thirty-two-or-thirteen.mp3",
+          "th": "ขอโทษครับ 32 หรือ 13 ครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Cashier",
+          "text": "Three, two. Thirty-two. We'll call it out.",
+          "audio": "/static/audio/global/three-two-thirty-two-we-ll-call-it-out.mp3",
+          "th": "สาม-สอง ค่ะ สามสิบสอง เดี๋ยวเรียกนะคะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Customer",
+          "text": "Thanks a lot.",
+          "audio": "/static/audio/global/thanks-a-lot.mp3",
+          "th": "ขอบคุณมากครับ",
+          "th_status": "draft_unverified"
+        }
+      ],
+      "shadow_focus_lines": [
+        {
+          "text": "A large combo, please.",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/a-large-combo-please.mp3"
+        },
+        {
+          "text": "No ice in the Coke.",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/no-ice-in-the-coke.mp3"
+        },
+        {
+          "text": "That's fourteen fifty.",
+          "targets": [
+            "numbers",
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/that-s-fourteen-fifty.mp3"
+        },
+        {
+          "text": "Thirty-two or thirteen?",
+          "targets": [
+            "numbers",
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/thirty-two-or-thirteen.mp3"
+        }
+      ]
+    },
+    {
+      "cefr": "B1",
+      "label": "Drive-thru — item sold out, an upsell, and a price you have to check",
+      "lines": [
+        {
+          "speaker": "Speaker (staff)",
+          "text": "Welcome to Burger Stop, order when you're ready.",
+          "audio": "/static/audio/global/welcome-to-burger-stop-order-when-you-re-ready.mp3",
+          "th": "ยินดีต้อนรับสู่ Burger Stop ค่ะ พร้อมสั่งเมื่อไหร่บอกได้เลย",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Customer",
+          "text": "Hi, can I get two combo number fives?",
+          "audio": "/static/audio/global/hi-can-i-get-two-combo-number-fives.mp3",
+          "th": "สวัสดีครับ ขอชุดเบอร์ 5 สองชุดครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Speaker (staff)",
+          "text": "Sorry, number five's sold out — that's the fish burger. Anything else?",
+          "audio": "/static/audio/global/sorry-number-five-s-sold-out-that-s-the-fish-burger-anything.mp3",
+          "th": "ขอโทษค่ะ เบอร์ 5 หมดแล้ว อันนั้นเบอร์เกอร์ปลาน่ะค่ะ รับอย่างอื่นแทนไหมคะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Customer",
+          "text": "Oh. What's number six?",
+          "audio": "/static/audio/global/oh-what-s-number-six.mp3",
+          "th": "อ้าว งั้นเบอร์ 6 คืออะไรครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Speaker (staff)",
+          "text": "Number six is the double cheeseburger meal.",
+          "audio": "/static/audio/global/number-six-is-the-double-cheeseburger-meal.mp3",
+          "th": "เบอร์ 6 เป็นชุดดับเบิลชีสเบอร์เกอร์ค่ะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Customer",
+          "text": "Okay, two number sixes, please.",
+          "audio": "/static/audio/global/okay-two-number-sixes-please.mp3",
+          "th": "โอเค งั้นเอาเบอร์ 6 สองชุดครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Speaker (staff)",
+          "text": "Large or regular?",
+          "audio": "/static/audio/global/large-or-regular.mp3",
+          "th": "ไซซ์ใหญ่หรือธรรมดาคะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Customer",
+          "text": "One large, one regular.",
+          "audio": "/static/audio/global/one-large-one-regular.mp3",
+          "th": "ใหญ่หนึ่ง ธรรมดาหนึ่งครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Speaker (staff)",
+          "text": "Want to make both large? It's only a dollar fifty more.",
+          "audio": "/static/audio/global/want-to-make-both-large-it-s-only-a-dollar-fifty-more.mp3",
+          "th": "อัพเป็นใหญ่ทั้งสองชุดไหมคะ เพิ่มแค่ดอลลาร์ห้าสิบเองค่ะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Customer",
+          "text": "No thanks, just the one.",
+          "audio": "/static/audio/global/no-thanks-just-the-one.mp3",
+          "th": "ไม่เป็นไรครับ เอาใหญ่แค่ชุดเดียวพอ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Speaker (staff)",
+          "text": "No worries. Drinks with those?",
+          "audio": "/static/audio/global/no-worries-drinks-with-those.mp3",
+          "th": "ได้ค่ะ แล้วเครื่องดื่มล่ะคะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Customer",
+          "text": "A Coke with no ice, and a water.",
+          "audio": "/static/audio/global/a-coke-with-no-ice-and-a-water.mp3",
+          "th": "โค้กไม่ใส่น้ำแข็งหนึ่ง กับน้ำเปล่าหนึ่งครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Speaker (staff)",
+          "text": "Any sauce with the fries?",
+          "audio": "/static/audio/global/any-sauce-with-the-fries.mp3",
+          "th": "เฟรนช์ฟรายรับซอสด้วยไหมคะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Customer",
+          "text": "Yes — two ketchup, please.",
+          "audio": "/static/audio/global/yes-two-ketchup-please.mp3",
+          "th": "เอาครับ ซอสมะเขือเทศสองซองครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Speaker (staff)",
+          "text": "That's twenty-eight forty at the window.",
+          "audio": "/static/audio/global/that-s-twenty-eight-forty-at-the-window.mp3",
+          "th": "ทั้งหมด 28.40 จ่ายที่ช่องหน้าต่างนะคะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Customer",
+          "text": "Sorry, twenty-eight or twenty-nine?",
+          "audio": "/static/audio/global/sorry-twenty-eight-or-twenty-nine.mp3",
+          "th": "ขอโทษครับ 28 หรือ 29 ครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Speaker (staff)",
+          "text": "Twenty-eight forty. Two-eight, four-zero.",
+          "audio": "/static/audio/global/twenty-eight-forty-two-eight-four-zero.mp3",
+          "th": "28.40 ค่ะ สอง-แปด จุด สี่-ศูนย์",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Customer",
+          "text": "Got it. Did you get the water?",
+          "audio": "/static/audio/global/got-it-did-you-get-the-water.mp3",
+          "th": "โอเคครับ แล้วน้ำเปล่าได้ใส่ให้ไหมครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Speaker (staff)",
+          "text": "Yep — one Coke, no ice, one water. Drive around, please.",
+          "audio": "/static/audio/global/yep-one-coke-no-ice-one-water-drive-around-please.mp3",
+          "th": "ใส่แล้วค่ะ โค้กไม่ใส่น้ำแข็งหนึ่ง น้ำเปล่าหนึ่ง ขับไปรอที่ช่องหน้าเลยนะคะ",
+          "th_status": "draft_unverified"
+        }
+      ],
+      "shadow_focus_lines": [
+        {
+          "text": "Two number sixes, please.",
+          "targets": [
+            "numbers",
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/two-number-sixes-please.mp3"
+        },
+        {
+          "text": "One large, one regular.",
+          "targets": [
+            "final_consonants",
+            "numbers"
+          ],
+          "audio": "/static/audio/global/one-large-one-regular.mp3"
+        },
+        {
+          "text": "A Coke with no ice.",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/a-coke-with-no-ice.mp3"
+        },
+        {
+          "text": "Twenty-eight or twenty-nine?",
+          "targets": [
+            "numbers",
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/twenty-eight-or-twenty-nine.mp3"
+        }
+      ]
+    }
+  ],
+  "chunk_drills": [
+    {
+      "label": "Ordering by item or by number",
+      "pattern": "Can I get + (a / two) + [item OR number] + please",
+      "examples": [
+        "Can I get a cheeseburger combo, please?",
+        "Can I get combo number three, please?",
+        "Can I get two number sixes, please?",
+        "Could I have six nuggets, please?"
+      ],
+      "spiralled_grammar": "Recycles polite request 'Can I get… please?' from cafe_coffee_order, plus plural -s as an audible final consonant (sixes, nuggets, fries)."
+    },
+    {
+      "label": "Size and upsizing",
+      "pattern": "[size] + please / Can you make it + [size]?",
+      "examples": [
+        "A large combo, please.",
+        "Medium, please — not large.",
+        "Can you make it large?",
+        "One large, one regular."
+      ],
+      "spiralled_grammar": "Recycles small/medium/large from drinks ordering; drills the final /dʒ/ in 'large' that Thai speakers drop."
+    },
+    {
+      "label": "Customising your order",
+      "pattern": "No + [thing] / Extra + [thing] / [thing] on the side",
+      "examples": [
+        "No ice, please.",
+        "No onions on the burger.",
+        "Extra sauce, please.",
+        "Can I get the sauce on the side?"
+      ],
+      "spiralled_grammar": "Negative determiner 'no + noun' (no article), contrasted with 'not' — 'No ice' NOT 'I don't want ice'."
+    },
+    {
+      "label": "For here or to go",
+      "pattern": "For here / To go / It's takeaway",
+      "examples": [
+        "To go, please.",
+        "For here, thanks.",
+        "It's takeaway.",
+        "Sorry — for here, please."
+      ],
+      "spiralled_grammar": "Short answers to alternative questions; recycles 'please/thanks' politeness tags."
+    },
+    {
+      "label": "Checking a number or a price",
+      "pattern": "Sorry, did you say + [number] + or + [number]?",
+      "examples": [
+        "Sorry, did you say thirteen or thirty?",
+        "Sorry, fifteen or fifty?",
+        "Is that fourteen fifty?",
+        "Could you say the total again, please?"
+      ],
+      "spiralled_grammar": "Recycles clarification questions from phone_call_basics; reported-speech opener 'did you say…' with rising-falling contrast on teen/ty."
+    }
+  ],
+  "listening_items": [
+    {
+      "audio_text": "That'll be thirteen twenty. Order number fifty.",
+      "channel": "counter, busy restaurant background",
+      "question": "How much is the total, and what is the order number?",
+      "answer": "$13.20, order number 50",
+      "distractor_focus": "thirteen vs thirty; fifty vs fifteen"
+    },
+    {
+      "audio_text": "Sorry, the milkshake machine's down. Do you want a Coke instead?",
+      "channel": "drive-thru speaker, low quality",
+      "question": "What can't you order, and what is offered instead?",
+      "answer": "No milkshake; a Coke is offered instead",
+      "distractor_focus": "final consonants in 'milkshake' and 'down' lost through speaker distortion"
+    },
+    {
+      "audio_text": "Is that for here or to go?",
+      "channel": "counter",
+      "question": "What is the cashier asking?",
+      "answer": "Whether you are eating in the restaurant or taking the food away",
+      "distractor_focus": "'for here' vs 'four here'; unreleased final /r/ and /k/ in 'to go' vs 'to go?'"
+    },
+    {
+      "audio_text": "Two large fries, one regular. No salt on the large ones.",
+      "channel": "kitchen call-out",
+      "question": "How many large fries, and what is the special request?",
+      "answer": "Two large fries; no salt on the large ones",
+      "distractor_focus": "fries vs fry; salt vs saw; large vs lard"
+    },
+    {
+      "audio_text": "Number ninety, your order's ready at counter four.",
+      "channel": "order-number announcement over PA",
+      "question": "Which number was called, and where do you collect?",
+      "answer": "Number 90, at counter 4",
+      "distractor_focus": "ninety vs nineteen; four vs forty"
+    },
+    {
+      "audio_text": "Sorry mate, we're out of nuggets. Want chips instead?",
+      "channel": "counter, staff speaking fast",
+      "question": "What is unavailable, and what is offered?",
+      "answer": "Nuggets are sold out; chips (fries) are offered",
+      "distractor_focus": "'out of nuggets' — linked final consonants make the key word hard to catch"
+    }
+  ],
+  "guided_roleplay": {
+    "learner_role": "Customer ordering a combo at a fast-food counter, with on-screen frames and a hint button",
+    "flow": [
+      "Step 1 — Open the order: greet and say what you want ('Hi, can I get…?').",
+      "Step 2 — Answer the size question: choose small, medium or large clearly.",
+      "Step 3 — Customise: ask for one change (no ice / no onions / extra sauce).",
+      "Step 4 — Answer 'For here or to go?' in three words or fewer.",
+      "Step 5 — Handle the money: hear the total, check it if unsure ('Sorry, thirteen or thirty?'), say card or cash.",
+      "Step 6 — Collect: catch your order number and confirm the bag ('Did you get the water?')."
+    ],
+    "sentence_frames": [
+      "Can I get ___, please?",
+      "A large ___, please.",
+      "No ice, please.",
+      "To go, please. / For here, thanks.",
+      "Sorry, did you say ___ or ___?",
+      "Card, please.",
+      "Did you get the ___?",
+      "That's it, thanks."
+    ],
+    "hints_available": true
+  },
+  "free_roleplay": {
+    "ai_persona": "A friendly but rushed fast-food cashier at lunchtime. Speaks quickly, uses short chunks ('What can I get you?', 'Size?', 'For here or to go?'), never uses names, and moves the queue along. Repeats once if asked, slightly slower.",
+    "a2_behavior": "Stays on the standard script: takes the order, asks size, asks for here or to go, gives a clear total and an order number, waits for the learner to finish each turn.",
+    "b1_curveballs": [
+      "The item the learner ordered is sold out — offers an alternative the learner must ask about.",
+      "Upsells: 'Make it large for a dollar fifty more?' — the learner must accept or refuse politely.",
+      "Says the total fast and quietly, forcing the learner to ask 'Sorry, did you say thirty or thirteen?'",
+      "Asks an unexpected question: 'Any sauce with that?' or 'Is that a meal or just the burger?'",
+      "Hands over the bag with one item missing — the learner must notice and say so ('Sorry, I ordered a water too.').",
+      "The card machine fails: 'Sorry, cash only right now.'"
+    ],
+    "roleplay_rubric": [
+      {
+        "criterion": "Placed a complete order: item + size + (drink or side) without the AI having to guess",
+        "type": "required"
+      },
+      {
+        "criterion": "Answered 'For here or to go?' correctly and audibly",
+        "type": "required"
+      },
+      {
+        "criterion": "Made at least one customisation request ('no ice', 'no onions', 'extra sauce')",
+        "type": "required"
+      },
+      {
+        "criterion": "Understood the total and the order number, or asked a clarification question to check them",
+        "type": "required"
+      },
+      {
+        "criterion": "Kept register casual-polite: used 'please'/'thanks', short turns, no over-formal phrasing",
+        "type": "required"
+      },
+      {
+        "criterion": "Pronunciation: final consonants audible in 'large', 'no ice', 'fries', 'to go'; teen/ty numbers distinguishable",
+        "type": "pronunciation"
+      },
+      {
+        "criterion": "Coped with an off-script problem (sold-out item, upsell, missing item, cash only) and finished the order anyway",
+        "type": "stretch_b1"
+      }
+    ]
+  },
+  "register_culture_note": {
+    "en": "Fast-food English is short, fast and casual. Staff use clipped chunks ('Size?', 'For here or to go?') and expect three-to-five-word answers. Politeness lives in one word — 'please' or 'thanks' — not in long sentences. Full formal sentences slow the queue and actually sound odd; a short 'A large combo, please' is perfect. Asking staff to repeat is completely normal, and asking about the price is normal too.",
+    "th": null,
+    "do_dont": [
+      {
+        "avoid": "'No ice' said as 'no eye' (final /s/ dropped) — staff hear nothing and fill the cup with ice.",
+        "prefer": "Push the final /s/ out: 'no ICE-s', slightly longer than feels natural."
+      },
+      {
+        "avoid": "'Lar' for 'large' — the /dʒ/ disappears and you are served a small.",
+        "prefer": "'Large, please' with the ending released, or say 'the big one' as a backup."
+      },
+      {
+        "avoid": "'Same same' or pointing while silent.",
+        "prefer": "'The same, please' or 'One of those, please.'"
+      },
+      {
+        "avoid": "'I want a burger.' — grammatical but sounds blunt at a counter.",
+        "prefer": "'Can I get a burger, please?'"
+      },
+      {
+        "avoid": "Nodding when you did not catch the total, then handing over the wrong money.",
+        "prefer": "'Sorry, did you say thirteen or thirty?'"
+      },
+      {
+        "avoid": "Saying 'thirty' with no stress difference from 'thirteen'.",
+        "prefer": "Stress the first syllable and stop: THIR-ty; stress the second and hold the /n/: thir-TEEN."
+      }
+    ],
+    "thai_cultural_note": "In Thailand a polite ending particle (ครับ/ค่ะ) carries the politeness, so a bare 'I want large' can feel complete to a Thai speaker — but in English the politeness has to move into the words themselves ('Can I get… please?'). The other real difference is asking staff to repeat: many Thai learners stay quiet to avoid causing trouble for a busy worker, but here saying 'Sorry, thirteen or thirty?' is expected, takes two seconds, and is far less trouble than a wrong order. Note too that 'no ice' is a normal and common request abroad — you do not need to explain or apologise for it."
+  },
+  "can_do_checkpoints": [
+    {
+      "cefr": "A2",
+      "statement": "I can order a combo by name or by number and choose a size."
+    },
+    {
+      "cefr": "A2",
+      "statement": "I can answer 'For here or to go?' and ask for one change, like 'no ice'."
+    },
+    {
+      "cefr": "A2",
+      "statement": "I can understand the total and my order number, and ask to hear them again."
+    },
+    {
+      "cefr": "B1",
+      "statement": "I can cope when an item is sold out, ask what an alternative is, and reorder."
+    },
+    {
+      "cefr": "B1",
+      "statement": "I can politely refuse an upsell and check that nothing is missing from my bag."
+    },
+    {
+      "cefr": "Sound",
+      "statement": "My final consonants ('large', 'no ice', 'fries') and my teen/ty numbers are clear enough for a drive-thru speaker."
+    }
+  ],
+  "gamification": {
+    "xp_per_substep": true,
+    "unlocks": [
+      "Drive-thru Mode (speaker distortion added to the AI voice)",
+      "Rush Hour (cashier speaks 20% faster)",
+      "Sold Out! (random item removed from the menu mid-order)",
+      "Bag Check (spot the missing item)"
+    ],
+    "sound_meters": [
+      {
+        "sound": "final_consonants",
+        "display": "Endings meter — tracks released finals in 'large', 'ice', 'fries', 'to go'"
+      },
+      {
+        "sound": "numbers",
+        "display": "Teen/Ty meter — tracks thirteen/thirty, fifteen/fifty accuracy across totals and order numbers"
+      }
+    ]
+  },
+  "_review_status": {
+    "thai_strings": "DRAFT - machine-generated, tagged th_status=draft_unverified. A native Thai speaker must review every string and set th_status='reviewed'.",
+    "facts": "UNVERIFIED - generated content, needs a local fact-check before shipping",
+    "generated_by": "claude-opus-5"
+  }
+}

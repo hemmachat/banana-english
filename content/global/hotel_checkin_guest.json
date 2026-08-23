@@ -1,0 +1,881 @@
+{
+  "scenario_id": "hotel_checkin_guest",
+  "locale": "global",
+  "title_en": "Hotel Check-in / Check-out (as Guest)",
+  "title_th": "การเช็คอิน/เช็คเอาต์ (แขก)",
+  "tier": 1,
+  "cefr_range": [
+    "A2",
+    "B1"
+  ],
+  "prerequisites": [
+    "greetings_small_talk",
+    "numbers_and_time",
+    "phone_call_basics"
+  ],
+  "recycles": [
+    "numbers (room numbers, prices, floors)",
+    "telling the time / dates ('until Friday', 'half past seven')",
+    "'How much is it?' / paying by card or cash",
+    "spelling your name and giving personal details",
+    "clarification requests ('Sorry, could you say that again?')",
+    "polite requests with 'Could I…' / 'Can I…'"
+  ],
+  "register": "Polite-neutral service English: friendly, short sentences, 'please' and 'thanks' on every request; staff may be casual, guest stays courteous but direct.",
+  "sound_target_box": {
+    "note_th": null,
+    "targets": [
+      {
+        "sound": "final_consonants",
+        "scoring_method": "phoneme",
+        "words_in_context": [
+          "I have a reservation — booked online",
+          "three nights",
+          "key card",
+          "passport",
+          "checkout time",
+          "can I leave my bags",
+          "receipt",
+          "front desk",
+          "paid by card"
+        ],
+        "minimal_pairs": [
+          [
+            "card",
+            "car"
+          ],
+          [
+            "nights",
+            "night"
+          ],
+          [
+            "booked",
+            "book"
+          ],
+          [
+            "bags",
+            "bag"
+          ],
+          [
+            "desk",
+            "deck"
+          ],
+          [
+            "paid",
+            "pay"
+          ],
+          [
+            "left",
+            "let"
+          ]
+        ],
+        "why_it_matters_here": "Thai speakers drop or unrelease final consonants, so 'key card' becomes 'key car' (the clerk hears a parking question), 'I booked online' becomes 'I book online' (sounds like you want to book now, not that you already have a reservation), and 'three nights' becomes 'three night' — which staff often hear as 'tonight', so you get charged for one night and lose your room on day two.",
+        "scoring_method_note": null
+      },
+      {
+        "sound": "numbers",
+        "scoring_method": "phoneme",
+        "words_in_context": [
+          "room five-one-two",
+          "three nights",
+          "fifth floor",
+          "checkout is at eleven",
+          "three hundred and twenty",
+          "tag number nineteen",
+          "breakfast from seven to ten"
+        ],
+        "minimal_pairs": [
+          [
+            "thirteen",
+            "thirty"
+          ],
+          [
+            "fifteen",
+            "fifty"
+          ],
+          [
+            "fourteen",
+            "forty"
+          ],
+          [
+            "nineteen",
+            "ninety"
+          ],
+          [
+            "eighteen",
+            "eighty"
+          ],
+          [
+            "sixteen",
+            "sixty"
+          ]
+        ],
+        "why_it_matters_here": "Teen/ty confusion at a front desk costs money and time: 'fifteen' heard as 'fifty' turns a $15 late-checkout fee into $50 on your bill, and room 'three-fourteen' heard as 'three-forty' sends you to the wrong door with a card that won't open it. Final -n in 'thirteen' and stress on the second syllable are what make the difference audible.",
+        "scoring_method_note": null
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "en": "reservation / booking",
+      "th": "การจองห้องไว้ล่วงหน้า พอไปถึงบอกชื่อที่ใช้จองได้เลย",
+      "group": "arriving",
+      "audio_needed": true,
+      "audio": "/static/audio/global/reservation-booking.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "check in",
+      "th": "เช็คอิน = ตอนไปถึงโรงแรม แจ้งชื่อ ให้เขาลงทะเบียน แล้วรับกุญแจห้อง",
+      "group": "arriving",
+      "audio_needed": true,
+      "audio": "/static/audio/global/check-in.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "front desk / reception",
+      "th": "เคาน์เตอร์ด้านหน้าโรงแรม ติดต่อเรื่องห้อง ถามอะไรก็ถามตรงนี้",
+      "group": "arriving",
+      "audio_needed": true,
+      "audio": "/static/audio/global/front-desk-reception.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "passport / ID",
+      "th": "พาสปอร์ตหรือบัตรที่มีรูป โรงแรมมักขอดูตอนเช็คอิน",
+      "group": "arriving",
+      "audio_needed": true,
+      "audio": "/static/audio/global/passport-id.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "key card",
+      "th": "การ์ดเปิดห้อง แตะแล้วประตูเปิด บางที่ต้องเสียบไว้ไฟถึงติด",
+      "group": "arriving",
+      "audio_needed": true,
+      "audio": "/static/audio/global/key-card.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "single room / double room / twin room",
+      "th": "เตียงเดี่ยว / เตียงใหญ่นอนสองคน / สองเตียงแยกกัน",
+      "group": "room types",
+      "audio_needed": true,
+      "audio": "/static/audio/global/single-room-double-room-twin-room.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "three nights",
+      "th": "พักสามคืน โรงแรมนับเป็น 'คืน' ไม่ใช่วัน",
+      "group": "room types",
+      "audio_needed": true,
+      "audio": "/static/audio/global/three-nights.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "floor (fifth floor)",
+      "th": "ชั้น เช่น ชั้นห้า ที่นี่ชั้นล่างสุดเรียก ground floor ไม่ใช่ชั้น 1",
+      "group": "room types",
+      "audio_needed": true,
+      "audio": "/static/audio/global/floor-fifth-floor.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "lift / elevator",
+      "th": "ลิฟต์ ที่ออสเตรเลียคนพูดว่า lift กันเกือบทั้งหมด",
+      "group": "room types",
+      "audio_needed": true,
+      "audio": "/static/audio/global/lift-elevator.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "breakfast is included",
+      "th": "รวมอาหารเช้าแล้ว ไม่ต้องจ่ายเพิ่มตอนไปกิน",
+      "group": "services",
+      "audio_needed": true,
+      "audio": "/static/audio/global/breakfast-is-included.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "Wi-Fi password",
+      "th": "รหัส Wi-Fi ขอที่เคาน์เตอร์ได้ บางที่พิมพ์ไว้บนการ์ดห้อง",
+      "group": "services",
+      "audio_needed": true,
+      "audio": "/static/audio/global/wi-fi-password.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "wake-up call",
+      "th": "ให้โรงแรมโทรปลุกตามเวลาที่เราบอกไว้",
+      "group": "services",
+      "audio_needed": true,
+      "audio": "/static/audio/global/wake-up-call.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "check out",
+      "th": "เช็คเอาท์ = คืนห้อง คืนการ์ด เคลียร์ค่าใช้จ่ายก่อนออก",
+      "group": "leaving",
+      "audio_needed": true,
+      "audio": "/static/audio/global/check-out.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "checkout time",
+      "th": "เวลาที่ต้องออกจากห้อง ส่วนใหญ่ 10 โมงเช้า เลยแล้วอาจโดนคิดเงิน",
+      "group": "leaving",
+      "audio_needed": true,
+      "audio": "/static/audio/global/checkout-time.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "late checkout",
+      "th": "ขอออกช้ากว่าเวลาปกติ ต้องถามก่อน บางที่ฟรี บางที่คิดเพิ่ม",
+      "group": "leaving",
+      "audio_needed": true,
+      "audio": "/static/audio/global/late-checkout.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "luggage storage / leave my bags",
+      "th": "ฝากกระเป๋าไว้ที่โรงแรม เช็คเอาท์แล้วแต่ยังไม่ไปไหน ค่อยมารับทีหลัง",
+      "group": "leaving",
+      "audio_needed": true,
+      "audio": "/static/audio/global/luggage-storage-leave-my-bags.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "luggage tag",
+      "th": "ป้ายที่เขาติดกระเป๋าตอนฝาก มีเบอร์ไว้ยืนยันตอนมารับ",
+      "group": "leaving",
+      "audio_needed": true,
+      "audio": "/static/audio/global/luggage-tag.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "the bill",
+      "th": "บิล ยอดรวมทั้งหมดที่ต้องจ่าย",
+      "group": "money",
+      "audio_needed": true,
+      "audio": "/static/audio/global/the-bill.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "deposit",
+      "th": "เงินมัดจำ โรงแรมกันวงเงินในบัตรไว้ก่อน ถ้าไม่มีอะไรเสียหายเดี๋ยวคืนให้ อาจใช้เวลาไม่กี่วัน",
+      "group": "money",
+      "audio_needed": true,
+      "audio": "/static/audio/global/deposit.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "extra charge",
+      "th": "ค่าใช้จ่ายที่บวกเพิ่มนอกจากค่าห้อง เช่น ของในห้อง ที่จอดรถ",
+      "group": "money",
+      "audio_needed": true,
+      "audio": "/static/audio/global/extra-charge.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "minibar",
+      "th": "ตู้เย็นเล็กในห้อง ของข้างในไม่ฟรี หยิบกินเมื่อไหร่โดนคิดเงินตอนเช็คเอาท์",
+      "group": "money",
+      "audio_needed": true,
+      "audio": "/static/audio/global/minibar.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "receipt",
+      "th": "ใบเสร็จ เก็บไว้เผื่อต้องเคลมหรือเบิกคืน",
+      "group": "money",
+      "audio_needed": true,
+      "audio": "/static/audio/global/receipt.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "pay by card / pay cash",
+      "th": "จ่ายด้วยบัตรหรือเงินสด ที่ออสฯ ส่วนใหญ่ใช้บัตร บางที่จ่ายบัตรมีค่าธรรมเนียมนิดหน่อย เรียกว่า surcharge",
+      "group": "money",
+      "audio_needed": true,
+      "audio": "/static/audio/global/pay-by-card-pay-cash.mp3",
+      "th_status": "draft_unverified"
+    }
+  ],
+  "model_dialogues": [
+    {
+      "cefr": "A2",
+      "label": "Standard check-in with a reservation",
+      "lines": [
+        {
+          "speaker": "Receptionist",
+          "text": "Good afternoon! Checking in?",
+          "audio": "/static/audio/global/good-afternoon-checking-in.mp3",
+          "th": "สวัสดีตอนบ่ายค่ะ มาเช็คอินใช่ไหมคะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Guest",
+          "text": "Yes. I have a reservation. The name's Nan Wongsa.",
+          "audio": "/static/audio/global/yes-i-have-a-reservation-the-name-s-nan-wongsa.mp3",
+          "th": "ใช่ครับ จองไว้แล้ว ชื่อ นันท์ วงศา",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Receptionist",
+          "text": "Let me check… Wongsa. Three nights, one double room?",
+          "audio": "/static/audio/global/let-me-check-wongsa-three-nights-one-double-room.mp3",
+          "th": "ขอเช็คแป๊บนะคะ… วงศา สามคืน ห้องเตียงใหญ่หนึ่งห้องใช่ไหมคะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Guest",
+          "text": "Yes, three nights.",
+          "audio": "/static/audio/global/yes-three-nights.mp3",
+          "th": "ใช่ครับ สามคืน",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Receptionist",
+          "text": "Great. Could I see your passport, please?",
+          "audio": "/static/audio/global/great-could-i-see-your-passport-please.mp3",
+          "th": "ได้ค่ะ ขอดูพาสปอร์ตหน่อยนะคะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Guest",
+          "text": "Here you go.",
+          "audio": "/static/audio/global/here-you-go.mp3",
+          "th": "นี่ครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Receptionist",
+          "text": "Thanks. You're in room five-one-two, on the fifth floor. Breakfast is from seven to ten.",
+          "audio": "/static/audio/global/thanks-you-re-in-room-five-one-two-on-the-fifth-floor-breakf.mp3",
+          "th": "ขอบคุณค่ะ ห้อง 512 อยู่ชั้นห้า อาหารเช้าเสิร์ฟตั้งแต่เจ็ดโมงถึงสิบโมงค่ะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Guest",
+          "text": "Sorry, what time is checkout?",
+          "audio": "/static/audio/global/sorry-what-time-is-checkout.mp3",
+          "th": "ขอโทษครับ เช็คเอาท์กี่โมงเหรอครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Receptionist",
+          "text": "Eleven o'clock. Here's your key card — the lift is on your right.",
+          "audio": "/static/audio/global/eleven-o-clock-here-s-your-key-card-the-lift-is-on-your-righ.mp3",
+          "th": "สิบเอ็ดโมงค่ะ นี่คีย์การ์ด ลิฟต์อยู่ทางขวามือค่ะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Guest",
+          "text": "Room five-one-two. Thank you.",
+          "audio": "/static/audio/global/room-five-one-two-thank-you.mp3",
+          "th": "ห้อง 512 นะครับ ขอบคุณครับ",
+          "th_status": "draft_unverified"
+        }
+      ],
+      "shadow_focus_lines": [
+        {
+          "text": "I have a reservation.",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/i-have-a-reservation.mp3"
+        },
+        {
+          "text": "Yes, three nights.",
+          "targets": [
+            "final_consonants",
+            "numbers"
+          ],
+          "audio": "/static/audio/global/yes-three-nights.mp3"
+        },
+        {
+          "text": "What time is checkout?",
+          "targets": [
+            "final_consonants",
+            "numbers"
+          ],
+          "audio": "/static/audio/global/what-time-is-checkout.mp3"
+        },
+        {
+          "text": "Room five-one-two.",
+          "targets": [
+            "numbers"
+          ],
+          "audio": "/static/audio/global/room-five-one-two.mp3"
+        }
+      ]
+    },
+    {
+      "cefr": "B1",
+      "label": "Check-out with a wrong charge, then storing bags",
+      "lines": [
+        {
+          "speaker": "Receptionist",
+          "text": "Good morning! Checking out?",
+          "audio": "/static/audio/global/good-morning-checking-out.mp3",
+          "th": "สวัสดีตอนเช้าค่ะ มาเช็คเอาท์ใช่ไหมคะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Guest",
+          "text": "Yes, please. Room three-one-four.",
+          "audio": "/static/audio/global/yes-please-room-three-one-four.mp3",
+          "th": "ใช่ครับ ห้อง 314",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Receptionist",
+          "text": "Three-one-four… got it. How was your stay?",
+          "audio": "/static/audio/global/three-one-four-got-it-how-was-your-stay.mp3",
+          "th": "314… ได้ค่ะ พักสบายดีไหมคะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Guest",
+          "text": "Really good, thanks. Very quiet room.",
+          "audio": "/static/audio/global/really-good-thanks-very-quiet-room.mp3",
+          "th": "ดีมากเลยครับ ห้องเงียบดี",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Receptionist",
+          "text": "Glad to hear it. Here's your bill — four nights, plus the minibar.",
+          "audio": "/static/audio/global/glad-to-hear-it-here-s-your-bill-four-nights-plus-the-miniba.mp3",
+          "th": "ดีใจที่ได้ยินแบบนั้นค่ะ นี่บิลนะคะ สี่คืน บวกค่ามินิบาร์ค่ะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Guest",
+          "text": "Sorry, the minibar? I didn't use it.",
+          "audio": "/static/audio/global/sorry-the-minibar-i-didn-t-use-it.mp3",
+          "th": "เอ๊ะ มินิบาร์เหรอครับ ผมไม่ได้ใช้นะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Receptionist",
+          "text": "It's showing two waters and a beer, charged on Tuesday night.",
+          "audio": "/static/audio/global/it-s-showing-two-waters-and-a-beer-charged-on-tuesday-night.mp3",
+          "th": "ในระบบขึ้นว่าน้ำสองขวดกับเบียร์หนึ่ง คิดเมื่อคืนวันอังคารค่ะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Guest",
+          "text": "That's not mine. Could you check again?",
+          "audio": "/static/audio/global/that-s-not-mine-could-you-check-again.mp3",
+          "th": "ไม่ใช่ของผมนะครับ ช่วยเช็คอีกทีได้ไหมครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Receptionist",
+          "text": "No problem, let me have a look… Ah, that was room three-four-one. Sorry about that.",
+          "audio": "/static/audio/global/no-problem-let-me-have-a-look-ah-that-was-room-three-four-on.mp3",
+          "th": "ได้ค่ะ ขอดูก่อนนะคะ… อ๋อ อันนั้นของห้อง 341 ค่ะ ขอโทษด้วยนะคะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Guest",
+          "text": "No worries. So how much is it now?",
+          "audio": "/static/audio/global/no-worries-so-how-much-is-it-now.mp3",
+          "th": "ไม่เป็นไรครับ แล้วตอนนี้เท่าไหร่ครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Receptionist",
+          "text": "Four nights at eighty, so three hundred and twenty in total.",
+          "audio": "/static/audio/global/four-nights-at-eighty-so-three-hundred-and-twenty-in-total.mp3",
+          "th": "สี่คืน คืนละแปดสิบ รวมเป็นสามร้อยยี่สิบค่ะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Guest",
+          "text": "Three-two-zero. Can I pay by card?",
+          "audio": "/static/audio/global/three-two-zero-can-i-pay-by-card.mp3",
+          "th": "320 นะครับ จ่ายบัตรได้ไหมครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Receptionist",
+          "text": "Of course. Tap or insert, whichever you like… all done. Receipt?",
+          "audio": "/static/audio/global/of-course-tap-or-insert-whichever-you-like-all-done-receipt.mp3",
+          "th": "ได้ค่ะ จะแตะหรือเสียบก็ได้ค่ะ… เรียบร้อยค่ะ รับใบเสร็จไหมคะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Guest",
+          "text": "Yes, please. And can I leave my bags here?",
+          "audio": "/static/audio/global/yes-please-and-can-i-leave-my-bags-here.mp3",
+          "th": "เอาครับ แล้วขอฝากกระเป๋าไว้ตรงนี้ได้ไหมครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Receptionist",
+          "text": "Sure, until six. What time's your flight?",
+          "audio": "/static/audio/global/sure-until-six-what-time-s-your-flight.mp3",
+          "th": "ได้ค่ะ ฝากได้ถึงหกโมงเย็น ไฟลท์กี่โมงคะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Guest",
+          "text": "Half past seven. I'll come back at five.",
+          "audio": "/static/audio/global/half-past-seven-i-ll-come-back-at-five.mp3",
+          "th": "ทุ่มครึ่งครับ เดี๋ยวผมกลับมารับตอนห้าโมง",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Receptionist",
+          "text": "Perfect. Here's your tag — number nineteen. Don't lose it.",
+          "audio": "/static/audio/global/perfect-here-s-your-tag-number-nineteen-don-t-lose-it.mp3",
+          "th": "ดีเลยค่ะ นี่ป้ายรับกระเป๋า เบอร์ 19 อย่าทำหายนะคะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Guest",
+          "text": "Nineteen. Got it. Thanks a lot.",
+          "audio": "/static/audio/global/nineteen-got-it-thanks-a-lot.mp3",
+          "th": "19 นะครับ รับทราบ ขอบคุณมากครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Receptionist",
+          "text": "Enjoy your last day!",
+          "audio": "/static/audio/global/enjoy-your-last-day.mp3",
+          "th": "ขอให้สนุกกับวันสุดท้ายนะคะ",
+          "th_status": "draft_unverified"
+        }
+      ],
+      "shadow_focus_lines": [
+        {
+          "text": "Could you check again?",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/could-you-check-again.mp3"
+        },
+        {
+          "text": "Can I pay by card?",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/can-i-pay-by-card.mp3"
+        },
+        {
+          "text": "Can I leave my bags?",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/can-i-leave-my-bags.mp3"
+        },
+        {
+          "text": "Nineteen. Got it.",
+          "targets": [
+            "numbers",
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/nineteen-got-it.mp3"
+        }
+      ]
+    }
+  ],
+  "chunk_drills": [
+    {
+      "label": "Announcing yourself at check-in",
+      "pattern": "I have a reservation. The name's ___.",
+      "examples": [
+        "I have a reservation. The name's Somchai.",
+        "I have a booking for tonight. The name's Nan.",
+        "I booked online — two nights, under Wongsa."
+      ],
+      "spiralled_grammar": "Present simple + possessive 'the name's'; recycles spelling your name and giving personal details."
+    },
+    {
+      "label": "Saying how long you're staying (final -s and -ts)",
+      "pattern": "___ night(s), from ___ to ___.",
+      "examples": [
+        "Three nights, from Friday to Monday.",
+        "One night only.",
+        "Two nights, checking out on the fifteenth."
+      ],
+      "spiralled_grammar": "Countable nouns with plural -s; recycles dates and days of the week."
+    },
+    {
+      "label": "The money questions",
+      "pattern": "Is ___ included? / How much is ___? / Can I pay by ___?",
+      "examples": [
+        "Is breakfast included?",
+        "How much is the deposit?",
+        "Is there an extra charge for late checkout?",
+        "Can I pay by card?"
+      ],
+      "spiralled_grammar": "Yes/no questions with 'is there'; recycles 'How much?' and prices."
+    },
+    {
+      "label": "Asking about time (checkout, breakfast, storage)",
+      "pattern": "What time is / does ___?",
+      "examples": [
+        "What time is checkout?",
+        "What time does breakfast start?",
+        "How late can I leave my bags?"
+      ],
+      "spiralled_grammar": "Wh- questions with 'do/does'; recycles clock times."
+    },
+    {
+      "label": "Polite requests at the desk",
+      "pattern": "Could I / Can I ___, please?",
+      "examples": [
+        "Could I have a wake-up call at six?",
+        "Can I leave my bags here?",
+        "Could I get a receipt, please?",
+        "Could I have a room on a higher floor?"
+      ],
+      "spiralled_grammar": "Modal 'could/can' for requests; recycles polite service language."
+    },
+    {
+      "label": "Checking a number back (repair strategy)",
+      "pattern": "Sorry — ___ or ___? / So that's ___, right?",
+      "examples": [
+        "Sorry — thirteen or thirty?",
+        "So that's room three-one-four, right?",
+        "Fifteen dollars, not fifty?"
+      ],
+      "spiralled_grammar": "Tag-style confirmation questions; recycles clarification requests and numbers."
+    },
+    {
+      "label": "Reporting a problem calmly",
+      "pattern": "I think there's a mistake — I didn't ___.",
+      "examples": [
+        "I think there's a mistake — I didn't use the minibar.",
+        "Sorry, I booked a twin room, not a double.",
+        "The air con isn't working. Could someone have a look?"
+      ],
+      "spiralled_grammar": "Past simple negative 'didn't + verb'; recycles describing a problem."
+    }
+  ],
+  "listening_items": [
+    {
+      "audio_text": "You're in room three-fourteen, on the third floor. The lift is behind you.",
+      "channel": "front desk, face to face",
+      "question": "What is the room number and the floor?",
+      "answer": "Room 314, third floor",
+      "distractor_focus": "three-fourteen vs three-forty; 'third' vs 'thirty'"
+    },
+    {
+      "audio_text": "Checkout is at eleven, but late checkout until two is fifteen dollars.",
+      "channel": "front desk, face to face",
+      "question": "How much is late checkout?",
+      "answer": "Fifteen dollars (until 2 p.m.)",
+      "distractor_focus": "fifteen vs fifty"
+    },
+    {
+      "audio_text": "Sorry, the room isn't ready yet. Could you come back at half past one?",
+      "channel": "front desk, noisy lobby",
+      "question": "What should the guest do?",
+      "answer": "Come back at 1:30 — the room isn't ready",
+      "distractor_focus": "'isn't ready' vs 'is ready'; half past one vs one"
+    },
+    {
+      "audio_text": "Hi, this is reception. We have your booking for two nights, arriving on the thirteenth.",
+      "channel": "phone",
+      "question": "How many nights, and what date do they arrive?",
+      "answer": "Two nights, arriving on the 13th",
+      "distractor_focus": "thirteenth vs thirtieth; 'two nights' vs 'tonight'"
+    },
+    {
+      "audio_text": "We can hold your bags until six. Just show this tag when you come back.",
+      "channel": "front desk, face to face",
+      "question": "Until what time can the bags stay, and what do you need to bring back?",
+      "answer": "Until 6 p.m.; bring the luggage tag",
+      "distractor_focus": "'tag' vs 'bag'; final consonants in tag/bags"
+    },
+    {
+      "audio_text": "There's a deposit of fifty on the card, and we release it after checkout.",
+      "channel": "front desk, face to face",
+      "question": "How much is the deposit and when do you get it back?",
+      "answer": "Fifty; released after checkout",
+      "distractor_focus": "fifty vs fifteen; 'card' vs 'car'"
+    }
+  ],
+  "guided_roleplay": {
+    "learner_role": "Hotel guest arriving alone with a three-night booking, then checking out the next-to-last morning with an early-evening flight",
+    "flow": [
+      "1. Arrive at reception, greet, and say you have a reservation with your name.",
+      "2. Confirm the details out loud: how many nights, what room type.",
+      "3. Hand over your passport and answer 'How will you be paying?'",
+      "4. Ask two service questions: 'Is breakfast included?' and 'What time is checkout?'",
+      "5. Repeat the room number and floor back to the clerk to confirm.",
+      "6. (Check-out day) Say you're checking out and give your room number.",
+      "7. Look at the bill and query one item you don't recognise.",
+      "8. Pay, ask for a receipt, and ask to leave your bags until the evening.",
+      "9. Confirm the tag number and the pick-up time."
+    ],
+    "sentence_frames": [
+      "I have a reservation. The name's ___.",
+      "___ nights, one ___ room.",
+      "Here's my passport.",
+      "Is breakfast included?",
+      "What time is checkout?",
+      "Sorry — ___ or ___?",
+      "So that's room ___, right?",
+      "I'm checking out. Room ___.",
+      "I think there's a mistake — I didn't ___.",
+      "Can I pay by card?",
+      "Could I get a receipt, please?",
+      "Can I leave my bags here until ___?"
+    ],
+    "hints_available": true
+  },
+  "free_roleplay": {
+    "ai_persona": "Friendly but busy front-desk receptionist at a mid-range city hotel. Uses short, natural service phrases ('No worries', 'Bear with me', 'All done'), speaks at normal speed, and says numbers quickly the first time — but will slow down and repeat if the learner asks.",
+    "a2_behavior": "Sticks to the standard script: confirms the booking, asks for passport and card, gives the room number, floor, breakfast time and checkout time, and answers 'Is breakfast included?' directly. At check-out, reads the total, takes the card, gives a receipt, and agrees to store bags.",
+    "b1_curveballs": [
+      "The room isn't ready yet — offers 1:30 pick-up and asks if the guest wants to leave bags in the meantime.",
+      "The booking shows a twin room, not the double the guest booked — the guest has to explain the mistake.",
+      "Asks for a deposit: 'We'll put a hold of fifty on your card, released after checkout.'",
+      "The bill has an extra minibar or breakfast charge the guest didn't use.",
+      "Says numbers fast and slightly ambiguously ('three-fourteen', 'fifteen') and only clarifies if asked.",
+      "Luggage storage closes at six but the guest's flight means coming back at seven — needs negotiating.",
+      "Offers a late checkout for a fee and asks 'Do you want it?' — the guest must decide and confirm the price."
+    ],
+    "roleplay_rubric": [
+      {
+        "criterion": "Stated the reservation and gave name, nights and room type without being asked twice",
+        "type": "required"
+      },
+      {
+        "criterion": "Asked at least two service questions (breakfast / checkout time / Wi-Fi / bag storage)",
+        "type": "required"
+      },
+      {
+        "criterion": "Confirmed key numbers back to the clerk (room number, price, tag number, time)",
+        "type": "required"
+      },
+      {
+        "criterion": "Used a clarification or repair move when a number or instruction was unclear ('Sorry — thirteen or thirty?')",
+        "type": "required"
+      },
+      {
+        "criterion": "Completed check-out: understood the total, paid, and asked for a receipt",
+        "type": "required"
+      },
+      {
+        "criterion": "Register stayed polite-neutral — requests with 'Could I / Can I', thanks at the end, no bare imperatives",
+        "type": "required"
+      },
+      {
+        "criterion": "Pronunciation: final consonants audible in 'card', 'bags', 'nights', 'booked'; teen/ty numbers distinguishable",
+        "type": "pronunciation"
+      },
+      {
+        "criterion": "Handled an off-script problem (wrong charge, room not ready, bag pick-up after closing) and reached a solution without breaking down",
+        "type": "stretch_b1"
+      }
+    ]
+  },
+  "register_culture_note": {
+    "en": "Hotel front desks run on short, friendly, transactional English. You do not need long apologetic sentences — 'Hi, I have a reservation, the name's Nan' is perfect. Two habits matter more than grammar: (1) repeat numbers back ('So that's room three-fourteen?'), which staff expect and find helpful, and (2) ask about money and rules up front — deposit, breakfast, checkout time, late-checkout fee. Querying a charge on your bill is completely normal and is not treated as an accusation; say 'I think there's a mistake' rather than staying silent and paying.",
+    "th": null,
+    "do_dont": [
+      {
+        "avoid": "Give me the key.",
+        "prefer": "Could I have the key card, please?"
+      },
+      {
+        "avoid": "I book online. (past event said with no final -d)",
+        "prefer": "I booked online — I have a reservation."
+      },
+      {
+        "avoid": "Three night. (dropped -ts, heard as 'tonight')",
+        "prefer": "Three nights, please."
+      },
+      {
+        "avoid": "Where is my car? (meaning 'card')",
+        "prefer": "Where is my key card?"
+      },
+      {
+        "avoid": "Fifty? (when you mean fifteen, with flat stress)",
+        "prefer": "Sorry — fifteen or fifty?"
+      },
+      {
+        "avoid": "Silently paying a charge you don't recognise.",
+        "prefer": "I think there's a mistake — I didn't use the minibar."
+      }
+    ],
+    "thai_cultural_note": "In Thailand it can feel more comfortable to accept what the desk says and sort out problems quietly, especially over a small amount of money. In most international hotels the opposite is expected: staff assume guests will check the bill and speak up on the spot, and once you have paid and left, fixing a wrong charge is much harder. Asking 'Could you check that again?' at the desk is a routine, low-conflict request — the clerk will usually thank you for catching it."
+  },
+  "can_do_checkpoints": [
+    {
+      "cefr": "A2",
+      "statement": "I can check in by saying I have a reservation, giving my name, and confirming how many nights."
+    },
+    {
+      "cefr": "A2",
+      "statement": "I can understand and repeat back my room number, floor, breakfast time and checkout time."
+    },
+    {
+      "cefr": "A2",
+      "statement": "I can ask 'Is breakfast included?', 'What time is checkout?' and 'Can I pay by card?'"
+    },
+    {
+      "cefr": "A2",
+      "statement": "I can ask to leave my bags at the desk and confirm when I'll come back."
+    },
+    {
+      "cefr": "B1",
+      "statement": "I can query an item on my bill politely and reach an agreement about what I owe."
+    },
+    {
+      "cefr": "B1",
+      "statement": "I can handle an unexpected situation at the desk — room not ready, wrong room type, deposit, late pick-up — and negotiate an alternative."
+    },
+    {
+      "cefr": "Sound",
+      "statement": "My final consonants in 'card', 'bags', 'nights' and 'booked' are audible, and staff hear the difference between thirteen and thirty."
+    }
+  ],
+  "gamification": {
+    "xp_per_substep": true,
+    "unlocks": [
+      "Badge: 'Checked In' — completed the A2 check-in roleplay with all details confirmed",
+      "Badge: 'Number Checker' — repeated back 5 numbers correctly in one roleplay",
+      "Badge: 'Bill Detective' — resolved the wrong-charge curveball at B1",
+      "Badge: 'Bags Sorted' — negotiated luggage storage past closing time",
+      "Next scenario unlock: hotel_problem_complaint",
+      "Next scenario unlock: taxi_to_airport"
+    ],
+    "sound_meters": [
+      {
+        "sound": "final_consonants",
+        "target_score": 70,
+        "tracked_words": [
+          "card",
+          "bags",
+          "nights",
+          "booked",
+          "receipt",
+          "desk"
+        ]
+      },
+      {
+        "sound": "numbers",
+        "target_score": 70,
+        "tracked_words": [
+          "thirteen",
+          "thirty",
+          "fifteen",
+          "fifty",
+          "nineteen",
+          "fourteen"
+        ]
+      }
+    ]
+  },
+  "_review_status": {
+    "thai_strings": "DRAFT - machine-generated, tagged th_status=draft_unverified. A native Thai speaker must review every string and set th_status='reviewed'.",
+    "facts": "UNVERIFIED - generated content, needs a local fact-check before shipping",
+    "generated_by": "claude-opus-5"
+  }
+}

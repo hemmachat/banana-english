@@ -38,3 +38,12 @@ create table if not exists attempts (
 
 create index if not exists attempts_user_time_idx  on attempts (user_id, created_at desc);
 create index if not exists attempts_user_sound_idx on attempts (user_id, sound_target);
+
+-- Scenarios the locale pack drops from the core registry: Thailand-resident content that makes no
+-- sense abroad (BTS/MRT, songthaew, 90-day reporting). Without this, an en-AU learner is offered
+-- lessons about the Bangkok Skytrain.
+create table if not exists locale_drops (
+    locale      text not null,
+    scenario_id text not null,
+    primary key (locale, scenario_id)
+);

@@ -1,0 +1,895 @@
+{
+  "scenario_id": "ordering_at_restaurant",
+  "locale": "global",
+  "title_en": "Ordering at a Restaurant",
+  "title_th": "การสั่งอาหารที่ร้าน",
+  "tier": 1,
+  "cefr_range": [
+    "A2",
+    "B1"
+  ],
+  "prerequisites": [
+    "greetings_small_talk",
+    "numbers_and_prices",
+    "polite_requests_basics"
+  ],
+  "recycles": [
+    "numbers 1-100",
+    "prices and 'How much is it?'",
+    "time and dates",
+    "greetings and 'thank you'",
+    "'Sorry, could you say that again?'",
+    "food and drink vocabulary",
+    "'I'd like…' from shopping"
+  ],
+  "register": "Casual-polite (friendly service register: first names not used, but 'please', 'thanks', 'sorry' carry the politeness — not grammar formality)",
+  "sound_target_box": {
+    "note_th": null,
+    "targets": [
+      {
+        "sound": "final_consonants",
+        "scoring_method": "phoneme",
+        "words_in_context": [
+          "fried rice",
+          "no ice",
+          "the bill",
+          "salt",
+          "grilled fish",
+          "peanuts",
+          "separate bills",
+          "still water",
+          "cold",
+          "plate"
+        ],
+        "minimal_pairs": [
+          [
+            "rice",
+            "rye"
+          ],
+          [
+            "ice",
+            "eye"
+          ],
+          [
+            "bill",
+            "bin"
+          ],
+          [
+            "salt",
+            "saw"
+          ],
+          [
+            "cold",
+            "coal"
+          ],
+          [
+            "fried",
+            "fry"
+          ],
+          [
+            "plate",
+            "play"
+          ],
+          [
+            "milk",
+            "mill"
+          ]
+        ],
+        "why_it_matters_here": "The whole order lives in the last sound. Drop the /d/ and /s/ and 'fried rice' becomes 'fry rye'; 'no ice' becomes 'no eye'; 'the bill' becomes 'the bin'. A vanished final consonant here means the wrong plate arrives — and you still pay for it.",
+        "scoring_method_note": null
+      },
+      {
+        "sound": "th",
+        "scoring_method": "minimal_pair",
+        "words_in_context": [
+          "three people",
+          "thanks",
+          "I think that's not mine",
+          "the menu",
+          "both of us",
+          "thirty"
+        ],
+        "minimal_pairs": [
+          [
+            "three",
+            "tree"
+          ],
+          [
+            "thin",
+            "tin"
+          ],
+          [
+            "thanks",
+            "tanks"
+          ],
+          [
+            "mouth",
+            "mouse"
+          ],
+          [
+            "both",
+            "boat"
+          ],
+          [
+            "thigh",
+            "tie"
+          ],
+          [
+            "they",
+            "day"
+          ],
+          [
+            "then",
+            "den"
+          ]
+        ],
+        "why_it_matters_here": "'Three people' heard as 'tree people' gets you the wrong table, and 'three coffees' heard as 'tree coffees' gets you the wrong bill. 'Thanks' and 'that's' are the two lines you say most in a meal — if they sound like 'tanks' and 'dat's', every turn starts with a repair."
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "en": "menu",
+      "th": "เมนู รายการอาหาร",
+      "group": "the place and the people",
+      "audio_needed": true,
+      "audio": "/static/audio/global/menu.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "server / waiter",
+      "th": "พนักงานเสิร์ฟ ที่ออสเตรเลียเรียก server หรือ waiter ก็ได้",
+      "group": "the place and the people",
+      "audio_needed": true,
+      "audio": "/static/audio/global/server-waiter.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "a table for two",
+      "th": "โต๊ะสำหรับสองคน ใช้ตอนเดินเข้าร้านแล้วเขาถามว่ามากี่คน",
+      "group": "the place and the people",
+      "audio_needed": true,
+      "audio": "/static/audio/global/a-table-for-two.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "booking / reservation",
+      "th": "การจองโต๊ะล่วงหน้า ร้านดังๆ ควรจองก่อน",
+      "group": "the place and the people",
+      "audio_needed": true,
+      "audio": "/static/audio/global/booking-reservation.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "the special",
+      "th": "เมนูพิเศษของวันนั้น ไม่ได้อยู่ในเมนูปกติ ส่วนใหญ่ราคาดีกว่า",
+      "group": "the place and the people",
+      "audio_needed": true,
+      "audio": "/static/audio/global/the-special.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "starter",
+      "th": "อาหารจานแรก กินเรียกน้ำย่อยก่อนจานหลัก",
+      "group": "parts of the meal",
+      "audio_needed": true,
+      "audio": "/static/audio/global/starter.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "main (main course)",
+      "th": "จานหลัก อาหารจานใหญ่ที่เป็นมื้อจริงๆ",
+      "group": "parts of the meal",
+      "audio_needed": true,
+      "audio": "/static/audio/global/main-main-course.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "side",
+      "th": "เครื่องเคียง สั่งเพิ่มข้างๆ เช่น เฟรนช์ฟรายส์ สลัด",
+      "group": "parts of the meal",
+      "audio_needed": true,
+      "audio": "/static/audio/global/side.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "dessert",
+      "th": "ของหวาน กินปิดท้าย",
+      "group": "parts of the meal",
+      "audio_needed": true,
+      "audio": "/static/audio/global/dessert.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "still water / sparkling water",
+      "th": "น้ำเปล่าธรรมดา / น้ำแร่มีฟอง เวลาสั่งน้ำเขาจะถามแบบนี้ ถ้าไม่อยากเสียเงินบอกว่าขอ tap water คือน้ำก๊อก ฟรี",
+      "group": "drinks",
+      "audio_needed": true,
+      "audio": "/static/audio/global/still-water-sparkling-water.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "no ice",
+      "th": "ไม่ใส่น้ำแข็ง",
+      "group": "drinks",
+      "audio_needed": true,
+      "audio": "/static/audio/global/no-ice.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "fried rice",
+      "th": "ข้าวผัด",
+      "group": "food words that need final sounds",
+      "audio_needed": true,
+      "audio": "/static/audio/global/fried-rice.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "grilled fish",
+      "th": "ปลาย่าง",
+      "group": "food words that need final sounds",
+      "audio_needed": true,
+      "audio": "/static/audio/global/grilled-fish.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "salad",
+      "th": "สลัด",
+      "group": "food words that need final sounds",
+      "audio_needed": true,
+      "audio": "/static/audio/global/salad.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "peanuts",
+      "th": "ถั่วลิสง คนแพ้เยอะ ถ้าแพ้ต้องบอกร้านทุกครั้ง",
+      "group": "food words that need final sounds",
+      "audio_needed": true,
+      "audio": "/static/audio/global/peanuts.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "I'd like…",
+      "th": "ขอ... ใช้ตอนสั่งอาหาร สุภาพกำลังดี",
+      "group": "ordering",
+      "audio_needed": true,
+      "audio": "/static/audio/global/i-d-like.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "I'll have…",
+      "th": "เอา... อันนี้ ใช้สั่งแบบสั้นๆ ง่ายๆ ไม่ได้ห้วน",
+      "group": "ordering",
+      "audio_needed": true,
+      "audio": "/static/audio/global/i-ll-have.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "What do you recommend?",
+      "th": "มีอะไรแนะนำบ้าง ถามพนักงานเวลาเลือกไม่ถูก",
+      "group": "ordering",
+      "audio_needed": true,
+      "audio": "/static/audio/global/what-do-you-recommend.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "to share",
+      "th": "สั่งมาแบ่งกันกิน บอกพนักงานได้ เขาจะเอาจานเปล่ามาให้",
+      "group": "ordering",
+      "audio_needed": true,
+      "audio": "/static/audio/global/to-share.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "I'm allergic to…",
+      "th": "ฉันแพ้... สำคัญมาก ต้องบอกให้ชัด ร้านที่นี่รับเรื่องแพ้อาหารจริงจัง",
+      "group": "problems and safety",
+      "audio_needed": true,
+      "audio": "/static/audio/global/i-m-allergic-to.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "sold out / it's off tonight",
+      "th": "ขายหมดแล้ว คืนนี้ไม่มี พนักงานมักพูดว่า sorry, it's off tonight",
+      "group": "problems and safety",
+      "audio_needed": true,
+      "audio": "/static/audio/global/sold-out-it-s-off-tonight.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "This isn't what I ordered.",
+      "th": "อันนี้ไม่ใช่ที่สั่ง บอกได้เลย ไม่เสียมารยาท เขาจะเปลี่ยนให้",
+      "group": "problems and safety",
+      "audio_needed": true,
+      "audio": "/static/audio/global/this-isn-t-what-i-ordered.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "the bill / the check",
+      "th": "บิล ใบเก็บเงิน ที่ออสเตรเลียพูดว่า bill ส่วน check เป็นแบบอเมริกัน",
+      "group": "paying",
+      "audio_needed": true,
+      "audio": "/static/audio/global/the-bill-the-check.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "separate bills",
+      "th": "แยกบิล จ่ายคนละส่วน บอกก่อนได้ว่า can we split the bill",
+      "group": "paying",
+      "audio_needed": true,
+      "audio": "/static/audio/global/separate-bills.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "Can I pay by card?",
+      "th": "จ่ายด้วยบัตรได้ไหม ที่นี่ใช้บัตรได้เกือบทุกร้าน บางร้านคิดค่าธรรมเนียมบัตรนิดหน่อย",
+      "group": "paying",
+      "audio_needed": true,
+      "audio": "/static/audio/global/can-i-pay-by-card.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "Keep the change.",
+      "th": "ไม่ต้องทอน ที่ออสเตรเลียไม่จำเป็นต้องให้ทิป ให้ก็ได้ถ้าประทับใจ",
+      "group": "paying",
+      "audio_needed": true,
+      "audio": "/static/audio/global/keep-the-change.mp3",
+      "th_status": "draft_unverified"
+    }
+  ],
+  "model_dialogues": [
+    {
+      "cefr": "A2",
+      "label": "A2 — A straightforward dinner order (scripted, everything goes to plan)",
+      "lines": [
+        {
+          "speaker": "Server",
+          "text": "Hi there! Table for how many?",
+          "audio": "/static/audio/global/hi-there-table-for-how-many.mp3",
+          "th": "สวัสดีค่ะ! กี่ท่านคะ?",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Customer",
+          "text": "Three people, please.",
+          "audio": "/static/audio/global/three-people-please.mp3",
+          "th": "สามคนครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Server",
+          "text": "Right this way. Here's the menu.",
+          "audio": "/static/audio/global/right-this-way-here-s-the-menu.mp3",
+          "th": "เชิญทางนี้เลยค่ะ นี่เมนูค่ะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Server",
+          "text": "Are you ready to order?",
+          "audio": "/static/audio/global/are-you-ready-to-order.mp3",
+          "th": "พร้อมสั่งหรือยังคะ?",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Customer",
+          "text": "Yes. I'd like the chicken curry.",
+          "audio": "/static/audio/global/yes-i-d-like-the-chicken-curry.mp3",
+          "th": "พร้อมแล้วครับ ขอแกงกะหรี่ไก่",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Server",
+          "text": "Sure. Anything to drink?",
+          "audio": "/static/audio/global/sure-anything-to-drink.mp3",
+          "th": "ได้ค่ะ รับเครื่องดื่มอะไรไหมคะ?",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Customer",
+          "text": "Just water. No ice, thanks.",
+          "audio": "/static/audio/global/just-water-no-ice-thanks.mp3",
+          "th": "เอาน้ำเปล่าพอ ไม่ใส่น้ำแข็งนะครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Customer",
+          "text": "And what do you recommend for dessert?",
+          "audio": "/static/audio/global/and-what-do-you-recommend-for-dessert.mp3",
+          "th": "แล้วของหวานมีอะไรแนะนำบ้างครับ?",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Server",
+          "text": "The mango cheesecake is really good.",
+          "audio": "/static/audio/global/the-mango-cheesecake-is-really-good.mp3",
+          "th": "ชีสเค้กมะม่วงอร่อยมากค่ะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Customer (after the meal)",
+          "text": "Excuse me — could we get the bill?",
+          "audio": "/static/audio/global/excuse-me-could-we-get-the-bill.mp3",
+          "th": "ขอโทษครับ — ขอบิลหน่อยได้ไหมครับ?",
+          "th_status": "draft_unverified"
+        }
+      ],
+      "shadow_focus_lines": [
+        {
+          "text": "Three people, please.",
+          "targets": [
+            "th",
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/three-people-please.mp3"
+        },
+        {
+          "text": "I'd like the chicken curry.",
+          "targets": [
+            "final_consonants",
+            "th"
+          ],
+          "audio": "/static/audio/global/i-d-like-the-chicken-curry.mp3"
+        },
+        {
+          "text": "No ice, thanks.",
+          "targets": [
+            "final_consonants",
+            "th"
+          ],
+          "audio": "/static/audio/global/no-ice-thanks.mp3"
+        },
+        {
+          "text": "Could we get the bill?",
+          "targets": [
+            "final_consonants",
+            "th"
+          ],
+          "audio": "/static/audio/global/could-we-get-the-bill.mp3"
+        }
+      ]
+    },
+    {
+      "cefr": "B1",
+      "label": "B1 — Same restaurant, three things go wrong (sold out, allergy check, wrong dish)",
+      "lines": [
+        {
+          "speaker": "Server",
+          "text": "Evening! Just the two of you?",
+          "audio": "/static/audio/global/evening-just-the-two-of-you.mp3",
+          "th": "สวัสดีตอนเย็นค่ะ! สองท่านใช่ไหมคะ?",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Customer",
+          "text": "Yes, two please.",
+          "audio": "/static/audio/global/yes-two-please.mp3",
+          "th": "ใช่ครับ สองคน",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Server",
+          "text": "You're in luck — there's a table by the window. Here's the menu.",
+          "audio": "/static/audio/global/you-re-in-luck-there-s-a-table-by-the-window-here-s-the-menu.mp3",
+          "th": "โชคดีนะคะ พอดีมีโต๊ะริมหน้าต่างว่าง นี่เมนูค่ะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Customer",
+          "text": "Thanks. Could we get two waters?",
+          "audio": "/static/audio/global/thanks-could-we-get-two-waters.mp3",
+          "th": "ขอบคุณครับ ขอน้ำเปล่าสองแก้วได้ไหมครับ?",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Server",
+          "text": "Sparkling or still?",
+          "audio": "/static/audio/global/sparkling-or-still.mp3",
+          "th": "เอาแบบมีฟอง (sparkling) หรือน้ำเปล่าธรรมดาคะ?",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Customer",
+          "text": "Still, thanks.",
+          "audio": "/static/audio/global/still-thanks.mp3",
+          "th": "ธรรมดาครับ ขอบคุณ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Server",
+          "text": "No worries. Ready to order, or do you need a minute?",
+          "audio": "/static/audio/global/no-worries-ready-to-order-or-do-you-need-a-minute.mp3",
+          "th": "ได้เลยค่ะ พร้อมสั่งเลยไหม หรือขอเวลาดูเมนูอีกสักครู่คะ?",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Customer",
+          "text": "We're ready. I'd like the grilled fish.",
+          "audio": "/static/audio/global/we-re-ready-i-d-like-the-grilled-fish.mp3",
+          "th": "พร้อมแล้วครับ ขอปลาย่าง",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Server",
+          "text": "Ah, sorry — the fish is off tonight. We've sold out.",
+          "audio": "/static/audio/global/ah-sorry-the-fish-is-off-tonight-we-ve-sold-out.mp3",
+          "th": "อุ๊ย ขอโทษด้วยค่ะ — คืนนี้ปลาหมดแล้วค่ะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Customer",
+          "text": "Oh. What do you recommend instead?",
+          "audio": "/static/audio/global/oh-what-do-you-recommend-instead.mp3",
+          "th": "อ้าว งั้นมีอะไรแนะนำแทนไหมครับ?",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Server",
+          "text": "The lamb's popular, or the mushroom risotto if you want something lighter.",
+          "audio": "/static/audio/global/the-lamb-s-popular-or-the-mushroom-risotto-if-you-want-somet.mp3",
+          "th": "เนื้อแกะคนสั่งเยอะค่ะ หรือถ้าอยากได้อะไรเบาๆ ก็ริซอตโต้เห็ดค่ะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Customer",
+          "text": "I'll take the risotto. Does it have peanuts?",
+          "audio": "/static/audio/global/i-ll-take-the-risotto-does-it-have-peanuts.mp3",
+          "th": "เอาริซอตโต้ละกันครับ มีถั่วลิสงไหมครับ?",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Server",
+          "text": "No peanuts, but there's cream in it. Any allergies I should know about?",
+          "audio": "/static/audio/global/no-peanuts-but-there-s-cream-in-it-any-allergies-i-should-kn.mp3",
+          "th": "ไม่มีถั่วค่ะ แต่ใส่ครีม มีแพ้อะไรที่ต้องบอกครัวไหมคะ?",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Customer",
+          "text": "I'm allergic to shellfish.",
+          "audio": "/static/audio/global/i-m-allergic-to-shellfish.mp3",
+          "th": "ผมแพ้อาหารทะเลพวกกุ้งหอยปูครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Server",
+          "text": "Got it — I'll let the kitchen know.",
+          "audio": "/static/audio/global/got-it-i-ll-let-the-kitchen-know.mp3",
+          "th": "รับทราบค่ะ — เดี๋ยวบอกทางครัวให้นะคะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Server (a few minutes later)",
+          "text": "Here we are — one lamb.",
+          "audio": "/static/audio/global/here-we-are-one-lamb.mp3",
+          "th": "นี่ค่ะ — เนื้อแกะหนึ่งที่",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Customer",
+          "text": "Sorry, I think that's not mine. I ordered the risotto.",
+          "audio": "/static/audio/global/sorry-i-think-that-s-not-mine-i-ordered-the-risotto.mp3",
+          "th": "ขอโทษครับ อันนี้ไม่ใช่ของผมนะ ผมสั่งริซอตโต้ครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Server",
+          "text": "Oh, my mistake. I'll fix that right now.",
+          "audio": "/static/audio/global/oh-my-mistake-i-ll-fix-that-right-now.mp3",
+          "th": "อ๋อ ขอโทษค่ะ ผิดเอง เดี๋ยวเปลี่ยนให้เลยนะคะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Customer",
+          "text": "Thanks. Could we get separate bills after?",
+          "audio": "/static/audio/global/thanks-could-we-get-separate-bills-after.mp3",
+          "th": "ขอบคุณครับ แล้วเดี๋ยวขอแยกบิลได้ไหมครับ?",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Server",
+          "text": "Of course. Back in a moment.",
+          "audio": "/static/audio/global/of-course-back-in-a-moment.mp3",
+          "th": "ได้เลยค่ะ สักครู่นะคะ",
+          "th_status": "draft_unverified"
+        }
+      ],
+      "shadow_focus_lines": [
+        {
+          "text": "I'd like the grilled fish.",
+          "targets": [
+            "final_consonants",
+            "th"
+          ],
+          "audio": "/static/audio/global/i-d-like-the-grilled-fish.mp3"
+        },
+        {
+          "text": "Does it have peanuts?",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/does-it-have-peanuts.mp3"
+        },
+        {
+          "text": "I think that's not mine.",
+          "targets": [
+            "th",
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/i-think-that-s-not-mine.mp3"
+        },
+        {
+          "text": "Could we get separate bills?",
+          "targets": [
+            "final_consonants",
+            "th"
+          ],
+          "audio": "/static/audio/global/could-we-get-separate-bills.mp3"
+        }
+      ]
+    }
+  ],
+  "chunk_drills": [
+    {
+      "label": "Ordering politely — the safe opener",
+      "pattern": "I'd like (the) ___, please. / I'll have (the) ___.",
+      "examples": [
+        "I'd like the fried rice, please.",
+        "I'll have the grilled fish.",
+        "I'd like a coffee, no sugar.",
+        "I'll have the same, thanks."
+      ],
+      "spiralled_grammar": "'would like' as a fixed polite chunk (recycled from shopping) — never taught as conditional grammar; contrast with the blunt 'I want'."
+    },
+    {
+      "label": "Asking for things at the table",
+      "pattern": "Could we get ___, please? / Could I have ___?",
+      "examples": [
+        "Could we get two waters, please?",
+        "Could I have some salt?",
+        "Could we get the bill?",
+        "Could we get separate bills?"
+      ],
+      "spiralled_grammar": "'could' for requests (recycled from phone/service units); final /d/ + /t/ cluster in 'could we get' is the pronunciation load."
+    },
+    {
+      "label": "Getting help choosing",
+      "pattern": "What do you recommend? / Which one is ___? / Is the ___ spicy?",
+      "examples": [
+        "What do you recommend?",
+        "What's the special today?",
+        "Which one is bigger?",
+        "Is the curry very spicy?"
+      ],
+      "spiralled_grammar": "Wh- questions with 'do' + comparative adjectives (recycled from shopping comparisons)."
+    },
+    {
+      "label": "Food safety — allergies and ingredients",
+      "pattern": "Does it have ___ in it? / I'm allergic to ___. / No ___, please.",
+      "examples": [
+        "Does it have peanuts in it?",
+        "Does this have fish sauce in it?",
+        "I'm allergic to shellfish.",
+        "No ice, please.",
+        "No salt on the fries, please."
+      ],
+      "spiralled_grammar": "'Does it have…?' present-simple question with 'do' support; 'be allergic to + noun' as a fixed safety chunk."
+    },
+    {
+      "label": "Soft complaining — fixing a problem without a fight",
+      "pattern": "Sorry, I think ___. / This isn't what I ordered.",
+      "examples": [
+        "Sorry, I think that's not mine.",
+        "Sorry, I think this is the wrong one.",
+        "Sorry, I think there's a mistake in the bill.",
+        "This isn't what I ordered — I had the risotto."
+      ],
+      "spiralled_grammar": "Hedging with 'Sorry, I think…' (recycled from the clarification chunk 'Sorry, could you say that again?'); /θ/ in 'think' + /ð/ in 'that's' back to back."
+    },
+    {
+      "label": "Numbers at the table",
+      "pattern": "A table for ___. / ___ of these, please. / How much is ___?",
+      "examples": [
+        "A table for three.",
+        "Three coffees, please.",
+        "Two of these, please.",
+        "How much is the set menu?"
+      ],
+      "spiralled_grammar": "Numbers and prices recycled; the three/tree and thirty/thirteen contrasts from the sound box are drilled inside real ordering turns."
+    }
+  ],
+  "listening_items": [
+    {
+      "audio_text": "Sorry, we're fully booked until eight, but I could do six thirty if that works.",
+      "channel": "phone booking, background restaurant noise",
+      "question": "What time can you get a table?",
+      "answer": "6:30 (six thirty) — eight is fully booked",
+      "distractor_focus": "thirty vs thirteen; hearing the earlier time, not the first time mentioned"
+    },
+    {
+      "audio_text": "That comes with rice or chips — which would you like?",
+      "channel": "server at the table",
+      "question": "What two choices do you have?",
+      "answer": "Rice or chips",
+      "distractor_focus": "final /s/ in 'rice' — 'rice' vs 'rye'; 'chips' vs 'chip'"
+    },
+    {
+      "audio_text": "The soup's off tonight, I'm afraid. Can I get you the salad instead?",
+      "channel": "server at the table, busy dining room",
+      "question": "Which dish is not available, and what is offered instead?",
+      "answer": "The soup is not available; the salad is offered instead",
+      "distractor_focus": "'off tonight' = sold out, not 'switched off'; final /p/ in 'soup' vs 'Sue'"
+    },
+    {
+      "audio_text": "Your table will be ready in fifteen minutes — you're welcome to wait at the bar.",
+      "channel": "host at the front desk",
+      "question": "How long is the wait?",
+      "answer": "15 minutes",
+      "distractor_focus": "fifteen vs fifty; final /n/ + stress on the second syllable"
+    },
+    {
+      "audio_text": "That's thirty-two fifty altogether. Are you paying together or separately?",
+      "channel": "server at the table, card machine beeping",
+      "question": "What is the total, and what is the server asking?",
+      "answer": "$32.50; the server asks if you are paying together or separately",
+      "distractor_focus": "thirty vs thirteen; 'separately' heard as a yes/no question"
+    }
+  ],
+  "guided_roleplay": {
+    "learner_role": "You are a customer arriving for dinner with one friend. You have a shellfish allergy and you want to pay for your own food.",
+    "flow": [
+      "1. Arrive and ask for a table: say how many people.",
+      "2. Ask for drinks and answer the 'sparkling or still?' question.",
+      "3. Order a main using 'I'd like the ___'.",
+      "4. Handle the news that your dish is sold out — ask what the server recommends and choose again.",
+      "5. Check ingredients and state your allergy clearly.",
+      "6. The wrong dish arrives: say so politely with 'Sorry, I think that's not mine.'",
+      "7. Ask for the bill and ask for separate bills; ask if you can pay by card."
+    ],
+    "sentence_frames": [
+      "A table for two, please.",
+      "Could we get two waters?",
+      "Still, thanks.",
+      "I'd like the ___, please.",
+      "What do you recommend instead?",
+      "I'll take the ___.",
+      "Does it have ___ in it?",
+      "I'm allergic to shellfish.",
+      "Sorry, I think that's not mine.",
+      "Could we get separate bills?",
+      "Can I pay by card?",
+      "Sorry, could you say that again?"
+    ],
+    "hints_available": true
+  },
+  "free_roleplay": {
+    "ai_persona": "A friendly, slightly rushed restaurant server on a busy Friday night. Warm, uses 'no worries', 'lovely', 'I'm afraid'; speaks at natural speed and checks back mid-meal. Never mocks errors; repeats or slows down once if the learner asks.",
+    "a2_behavior": "Stays on the standard script: seats the learner, takes a drink order, takes a food order, brings the food, brings the bill. Accepts short answers, offers a simple binary choice ('sparkling or still?'), and confirms the order back to the learner.",
+    "b1_curveballs": [
+      "The dish the learner orders is sold out — the server offers two alternatives and the learner must choose and ask a question about one of them.",
+      "The server asks about allergies and dietary needs directly: 'Anything you can't eat?'",
+      "The wrong dish is delivered to the table and the learner must say so politely without apologising away the problem.",
+      "The server offers the special of the day at speed with a price ('the special's the sea bass, thirty-two fifty') and the learner must ask for a repeat or the price.",
+      "There's a service charge already on the bill and the server asks 'together or separate?' — the learner must query the extra line and ask to split.",
+      "The card machine is down: 'Sorry, cash only tonight' — the learner must cope and ask where the nearest ATM is."
+    ],
+    "roleplay_rubric": [
+      {
+        "criterion": "Ordered a main and a drink using 'I'd like…' / 'I'll have…' without switching to bare 'I want'",
+        "type": "required"
+      },
+      {
+        "criterion": "Asked at least one menu question ('What do you recommend?' / 'Does it have ___ in it?' / 'What's the special?')",
+        "type": "required"
+      },
+      {
+        "criterion": "Stated the allergy or dietary need clearly, naming the food ('I'm allergic to shellfish'), not vaguely",
+        "type": "required"
+      },
+      {
+        "criterion": "Asked for the bill and handled payment (separate bills / card or cash) to the end of the interaction",
+        "type": "required"
+      },
+      {
+        "criterion": "Used at least one clarification move when the server was fast or unclear ('Sorry, could you say that again?')",
+        "type": "required"
+      },
+      {
+        "criterion": "Stayed casual-polite: 'please', 'thanks', 'sorry' present; no commands ('Give me…'), no over-formality",
+        "type": "required"
+      },
+      {
+        "criterion": "Pronunciation: final consonants audible in 'rice', 'ice', 'bill', 'fish', 'peanuts'; 'th' clear in 'three', 'thanks', 'that's' — server never mishears the order or the number",
+        "type": "pronunciation"
+      },
+      {
+        "criterion": "Coped with an off-script curveball (sold out / wrong dish / cash only / extra charge) and repaired it politely without abandoning the conversation",
+        "type": "stretch_b1"
+      }
+    ]
+  },
+  "register_culture_note": {
+    "en": "Restaurant English is casual-polite. The politeness is carried by 'please', 'thanks', 'sorry' and by 'I'd like' / 'Could I have' — not by long formal sentences. Servers are peers doing a job: you don't need to be deferential, but you also don't give commands. You get the server's attention with eye contact and a small raised hand plus 'Excuse me', not by calling out or clicking fingers. Saying there's a problem is normal and expected: 'Sorry, I think that's not mine' fixes it in one turn, and no one loses face.",
+    "th": null,
+    "do_dont": [
+      {
+        "avoid": "I want fried rice.",
+        "prefer": "I'd like the fried rice, please."
+      },
+      {
+        "avoid": "'fry rye' (dropping the /d/ and the /s/)",
+        "prefer": "'fried rice' with the /d/ and /s/ both landing — otherwise the server writes down the wrong dish"
+      },
+      {
+        "avoid": "'tree coffees' (th → t)",
+        "prefer": "'three coffees' — 'tree' is heard as a count of one, or as nothing, and you get the wrong number on the bill"
+      },
+      {
+        "avoid": "Waiter! / clicking fingers / calling across the room",
+        "prefer": "Excuse me — when you have a minute?"
+      },
+      {
+        "avoid": "Give me the bill.",
+        "prefer": "Could we get the bill, please?"
+      },
+      {
+        "avoid": "Saying nothing when the wrong dish arrives and eating it",
+        "prefer": "Sorry, I think that's not mine — I ordered the risotto."
+      },
+      {
+        "avoid": "'no eye' (dropping the /s/ in 'ice')",
+        "prefer": "'no ice' — say the /s/, or your drink arrives full of ice"
+      }
+    ],
+    "thai_cultural_note": "Two habits from eating out in Thailand don't transfer. First, ordering is usually individual, not communal: each person picks their own main and the plates are not automatically shared, so 'What are we all having?' isn't the default question — you order for yourself. Second, splitting the bill by what each person ate is completely normal and asking for separate bills is a routine request, not a loss of face; the Thai pattern where the most senior or the inviting person quietly pays for everyone is not assumed. And when something is wrong with the order, saying so immediately is treated as helpful, not as making trouble — staff would rather fix it than have you eat food you didn't want."
+  },
+  "can_do_checkpoints": [
+    {
+      "cefr": "A2",
+      "statement": "I can ask for a table, say how many people, and order a drink."
+    },
+    {
+      "cefr": "A2",
+      "statement": "I can order food with 'I'd like…' and ask 'What do you recommend?'"
+    },
+    {
+      "cefr": "A2",
+      "statement": "I can ask for the bill and ask if I can pay by card."
+    },
+    {
+      "cefr": "B1",
+      "statement": "I can check ingredients, state an allergy clearly, and choose again when my dish is sold out."
+    },
+    {
+      "cefr": "B1",
+      "statement": "I can politely say the wrong dish or the wrong amount has arrived, and get it fixed."
+    },
+    {
+      "cefr": "B1",
+      "statement": "I can ask for separate bills and query an extra charge on the bill."
+    },
+    {
+      "cefr": "Sound",
+      "statement": "My final consonants ('rice', 'ice', 'bill', 'fish') and my 'th' ('three', 'thanks', 'that's') are clear enough that the server takes my order right the first time."
+    }
+  ],
+  "gamification": {
+    "xp_per_substep": true,
+    "unlocks": [
+      "badge_first_order_no_repeats",
+      "badge_allergy_stated_clearly",
+      "badge_wrong_dish_fixed_politely",
+      "roleplay_mode_busy_friday_night",
+      "next_scenario_cafe_coffee_order",
+      "next_scenario_paying_and_splitting_the_bill"
+    ],
+    "sound_meters": [
+      "final_consonants",
+      "th"
+    ]
+  },
+  "_review_status": {
+    "thai_strings": "DRAFT - machine-generated, tagged th_status=draft_unverified. A native Thai speaker must review every string and set th_status='reviewed'.",
+    "facts": "UNVERIFIED - generated content, needs a local fact-check before shipping",
+    "generated_by": "claude-opus-5"
+  }
+}

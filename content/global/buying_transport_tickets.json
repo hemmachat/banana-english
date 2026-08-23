@@ -1,0 +1,862 @@
+{
+  "scenario_id": "buying_transport_tickets",
+  "locale": "global",
+  "title_en": "Buying Travel Tickets",
+  "title_th": "การซื้อตั๋วเดินทาง",
+  "tier": 1,
+  "cefr_range": [
+    "A2",
+    "B1"
+  ],
+  "prerequisites": [
+    "greetings_small_talk",
+    "numbers_and_money_basics",
+    "telling_the_time"
+  ],
+  "recycles": [
+    "numbers 1-100",
+    "times and dates",
+    "How much is it?",
+    "please / thank you",
+    "Sorry, could you say that again?",
+    "yes/no short answers",
+    "Where is...?"
+  ],
+  "register": "Polite-transactional (short, fast, service-counter English; friendly but efficient)",
+  "sound_target_box": {
+    "note_th": null,
+    "targets": [
+      {
+        "sound": "numbers",
+        "scoring_method": "phoneme",
+        "words_in_context": [
+          "fourteen fifty",
+          "nine forty",
+          "platform three",
+          "ten fifteen",
+          "eight minutes",
+          "thirty-four eighty",
+          "platform six, then twelve",
+          "the seventeen fifteen to Westport"
+        ],
+        "minimal_pairs": [
+          [
+            "thirteen",
+            "thirty"
+          ],
+          [
+            "fourteen",
+            "forty"
+          ],
+          [
+            "fifteen",
+            "fifty"
+          ],
+          [
+            "sixteen",
+            "sixty"
+          ],
+          [
+            "nineteen",
+            "ninety"
+          ]
+        ],
+        "why_it_matters_here": "If 'fifteen' comes out as 'fifty', the clerk charges you the wrong fare or you wait on the platform for a train that left 45 minutes ago. Thai speakers commonly drop the final -n and put stress on the first syllable of teen-numbers, which makes them sound exactly like the -ty numbers. Repeating the number back is the whole safety net here."
+      },
+      {
+        "sound": "clusters",
+        "scoring_method": "phoneme",
+        "words_in_context": [
+          "train",
+          "platform",
+          "ticket",
+          "please",
+          "return trip",
+          "next stop",
+          "broken",
+          "credit card",
+          "twelve",
+          "last train",
+          "straight ahead"
+        ],
+        "minimal_pairs": [
+          [
+            "train",
+            "rain"
+          ],
+          [
+            "stand",
+            "sand"
+          ],
+          [
+            "stop",
+            "top"
+          ],
+          [
+            "flight",
+            "fight"
+          ],
+          [
+            "please",
+            "peas"
+          ],
+          [
+            "next",
+            "neck"
+          ]
+        ],
+        "why_it_matters_here": "Thai does not allow /tr/, /pl/, /st/, /kst/ clusters, so 'train' becomes 'tain/rain' and 'platform' becomes 'patform'. At a noisy counter or through a glass window the clerk has one guess. 'Which platform?' misheard as 'Which pat form?' gets you a blank stare; 'the next stop' heard as 'the neck top' gets you off at the wrong station."
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "en": "ticket",
+      "th": "ตั๋ว",
+      "group": "ticket types",
+      "audio_needed": true,
+      "audio": "/static/audio/global/ticket.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "one-way (single)",
+      "th": "ตั๋วเที่ยวเดียว ไปอย่างเดียว ไม่รวมขากลับ",
+      "group": "ticket types",
+      "audio_needed": true,
+      "audio": "/static/audio/global/one-way-single.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "return (round trip)",
+      "th": "ตั๋วไปกลับ ใบเดียวใช้ได้ทั้งขาไปขากลับ มักถูกกว่าซื้อแยก",
+      "group": "ticket types",
+      "audio_needed": true,
+      "audio": "/static/audio/global/return-round-trip.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "day pass",
+      "th": "day pass จ่ายทีเดียว ขึ้นได้ทั้งวันไม่จำกัดเที่ยว",
+      "group": "ticket types",
+      "audio_needed": true,
+      "audio": "/static/audio/global/day-pass.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "student / concession fare",
+      "th": "concession fare คือราคาลดสำหรับนักเรียน คนสูงอายุ หรือคนถือบัตร concession ต้องมีบัตรติดตัวไว้โชว์",
+      "group": "ticket types",
+      "audio_needed": true,
+      "audio": "/static/audio/global/student-concession-fare.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "platform",
+      "th": "platform คือชานชาลาที่ยืนรอรถไฟ เขาเรียกเป็นเบอร์ เช่น platform 3",
+      "group": "places at the station",
+      "audio_needed": true,
+      "audio": "/static/audio/global/platform.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "ticket machine",
+      "th": "ตู้ขายตั๋วอัตโนมัติ กดเอง จ่ายด้วยบัตรหรือเหรียญ",
+      "group": "places at the station",
+      "audio_needed": true,
+      "audio": "/static/audio/global/ticket-machine.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "ticket counter / window",
+      "th": "ช่องขายตั๋วที่มีคนนั่งอยู่ ถามได้ถ้าไม่แน่ใจ",
+      "group": "places at the station",
+      "audio_needed": true,
+      "audio": "/static/audio/global/ticket-counter-window.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "departure board",
+      "th": "จอใหญ่ในสถานี บอกว่ารถขบวนไหนออกกี่โมง ชานชาลาไหน",
+      "group": "places at the station",
+      "audio_needed": true,
+      "audio": "/static/audio/global/departure-board.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "the next stop",
+      "th": "ป้ายหน้า สถานีต่อไป",
+      "group": "places at the station",
+      "audio_needed": true,
+      "audio": "/static/audio/global/the-next-stop.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "train",
+      "th": "รถไฟ",
+      "group": "transport",
+      "audio_needed": true,
+      "audio": "/static/audio/global/train.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "coach / long-distance bus",
+      "th": "coach คือรถบัสวิ่งไกลข้ามเมือง ไม่ใช่รถเมล์ในเมือง",
+      "group": "transport",
+      "audio_needed": true,
+      "audio": "/static/audio/global/coach-long-distance-bus.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "connection (change trains)",
+      "th": "ต้องต่อรถ คือลงแล้วเปลี่ยนไปขึ้นอีกขบวน",
+      "group": "transport",
+      "audio_needed": true,
+      "audio": "/static/audio/global/connection-change-trains.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "direct (no change)",
+      "th": "ตรงถึงเลย ไม่ต้องเปลี่ยนรถระหว่างทาง",
+      "group": "transport",
+      "audio_needed": true,
+      "audio": "/static/audio/global/direct-no-change.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "the last train",
+      "th": "รถไฟเที่ยวสุดท้ายของวัน ตกแล้วคือหมดเลย",
+      "group": "transport",
+      "audio_needed": true,
+      "audio": "/static/audio/global/the-last-train.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "departs at / leaves at",
+      "th": "ออกเวลา... ใช้บอกเวลารถออก",
+      "group": "times & numbers",
+      "audio_needed": true,
+      "audio": "/static/audio/global/departs-at-leaves-at.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "fifteen / fifty",
+      "th": "fifteen (15) กับ fifty (50) เสียงคล้ายกันมาก fifTEEN เน้นพยางค์หลัง FIFty เน้นพยางค์หน้า ไม่แน่ใจให้ถามซ้ำ",
+      "group": "times & numbers",
+      "audio_needed": true,
+      "audio": "/static/audio/global/fifteen-fifty.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "half an hour",
+      "th": "ครึ่งชั่วโมง 30 นาที",
+      "group": "times & numbers",
+      "audio_needed": true,
+      "audio": "/static/audio/global/half-an-hour.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "fare",
+      "th": "ค่าโดยสาร ค่าตั๋ว",
+      "group": "payment",
+      "audio_needed": true,
+      "audio": "/static/audio/global/fare.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "card or cash",
+      "th": "จ่ายบัตรหรือเงินสด เขาถามตอนคิดเงิน",
+      "group": "payment",
+      "audio_needed": true,
+      "audio": "/static/audio/global/card-or-cash.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "change (money back)",
+      "th": "เงินทอน",
+      "group": "payment",
+      "audio_needed": true,
+      "audio": "/static/audio/global/change-money-back.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "receipt",
+      "th": "ใบเสร็จ เก็บไว้ เผื่อต้องขอเงินคืนทีหลัง",
+      "group": "payment",
+      "audio_needed": true,
+      "audio": "/static/audio/global/receipt.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "refund",
+      "th": "ขอเงินคืน เช่น ตอนรถยกเลิกหรือซื้อตั๋วผิด",
+      "group": "problems",
+      "audio_needed": true,
+      "audio": "/static/audio/global/refund.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "out of order / not working",
+      "th": "เสีย ใช้ไม่ได้ เห็นป้ายนี้ติดที่ตู้ตั๋วบ่อย",
+      "group": "problems",
+      "audio_needed": true,
+      "audio": "/static/audio/global/out-of-order-not-working.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "delayed",
+      "th": "รถช้า มาไม่ตรงเวลา",
+      "group": "problems",
+      "audio_needed": true,
+      "audio": "/static/audio/global/delayed.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "cancelled",
+      "th": "ยกเลิก ขบวนนี้ไม่มาแล้ว ต้องรอขบวนถัดไป",
+      "group": "problems",
+      "audio_needed": true,
+      "audio": "/static/audio/global/cancelled.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "platform change",
+      "th": "เปลี่ยนชานชาลา เขาประกาศให้ย้ายไปรออีกที่ ต้องคอยฟังประกาศ",
+      "group": "problems",
+      "audio_needed": true,
+      "audio": "/static/audio/global/platform-change.mp3",
+      "th_status": "draft_unverified"
+    }
+  ],
+  "model_dialogues": [
+    {
+      "cefr": "A2",
+      "label": "A2 — Buying a return ticket at the counter (everything goes normally)",
+      "lines": [
+        {
+          "speaker": "Clerk",
+          "text": "Hi there. Where are you going today?",
+          "audio": "/static/audio/global/hi-there-where-are-you-going-today.mp3",
+          "th": "สวัสดีครับ วันนี้จะไปไหนครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "To Riverside, please.",
+          "audio": "/static/audio/global/to-riverside-please.mp3",
+          "th": "ไป Riverside ค่ะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Clerk",
+          "text": "One-way or return?",
+          "audio": "/static/audio/global/one-way-or-return.mp3",
+          "th": "เที่ยวเดียว หรือไป-กลับครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "A return ticket, please. How much is it?",
+          "audio": "/static/audio/global/a-return-ticket-please-how-much-is-it.mp3",
+          "th": "ขอตั๋วไป-กลับค่ะ เท่าไหร่คะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Clerk",
+          "text": "That's fourteen fifty.",
+          "audio": "/static/audio/global/that-s-fourteen-fifty.mp3",
+          "th": "14.50 ครับ (สิบสี่ดอลลาร์ห้าสิบเซนต์)",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Fourteen fifty. Here you go.",
+          "audio": "/static/audio/global/fourteen-fifty-here-you-go.mp3",
+          "th": "14.50 นะคะ นี่ค่ะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Clerk",
+          "text": "Thanks. Here's your ticket and your change.",
+          "audio": "/static/audio/global/thanks-here-s-your-ticket-and-your-change.mp3",
+          "th": "ขอบคุณครับ นี่ตั๋วกับเงินทอนครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "What platform, please?",
+          "audio": "/static/audio/global/what-platform-please.mp3",
+          "th": "ชานชาลาไหนคะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Clerk",
+          "text": "Platform three. The train leaves at nine forty.",
+          "audio": "/static/audio/global/platform-three-the-train-leaves-at-nine-forty.mp3",
+          "th": "ชานชาลา 3 ครับ รถออก 9.40",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Platform three, nine forty. Thank you!",
+          "audio": "/static/audio/global/platform-three-nine-forty-thank-you.mp3",
+          "th": "ชานชาลา 3, 9.40 นะคะ ขอบคุณค่ะ",
+          "th_status": "draft_unverified"
+        }
+      ],
+      "shadow_focus_lines": [
+        {
+          "text": "A return ticket, please.",
+          "targets": [
+            "clusters"
+          ],
+          "audio": "/static/audio/global/a-return-ticket-please.mp3"
+        },
+        {
+          "text": "That's fourteen fifty.",
+          "targets": [
+            "numbers",
+            "clusters"
+          ],
+          "audio": "/static/audio/global/that-s-fourteen-fifty.mp3"
+        },
+        {
+          "text": "What platform, please?",
+          "targets": [
+            "clusters"
+          ],
+          "audio": "/static/audio/global/what-platform-please.mp3"
+        },
+        {
+          "text": "The train leaves at nine forty.",
+          "targets": [
+            "clusters",
+            "numbers"
+          ],
+          "audio": "/static/audio/global/the-train-leaves-at-nine-forty.mp3"
+        }
+      ]
+    },
+    {
+      "cefr": "B1",
+      "label": "B1 — The ticket machine is broken, and there's no direct train",
+      "lines": [
+        {
+          "speaker": "Staff",
+          "text": "Morning. You right there?",
+          "audio": "/static/audio/global/morning-you-right-there.mp3",
+          "th": "สวัสดีครับ ต้องการอะไรครับ (You right there? เป็นคำทักแบบออสเตรเลีย แปลว่า 'มีอะไรให้ช่วยไหม')",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "The machine is broken. It took my card.",
+          "audio": "/static/audio/global/the-machine-is-broken-it-took-my-card.mp3",
+          "th": "เครื่องมันเสียค่ะ มันดูดบัตรฉันไป",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Staff",
+          "text": "Ah, that one's been playing up all week. Which ticket did you want?",
+          "audio": "/static/audio/global/ah-that-one-s-been-playing-up-all-week-which-ticket-did-you-.mp3",
+          "th": "อ๋อ ตัวนั้นมันงอแงมาทั้งอาทิตย์แล้ว แล้วจะเอาตั๋วแบบไหนครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "A return to Westport, please.",
+          "audio": "/static/audio/global/a-return-to-westport-please.mp3",
+          "th": "ขอตั๋วไป-กลับ Westport ค่ะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Staff",
+          "text": "No direct train at this time of day, I'm afraid. You'll have to change at Kingsbridge.",
+          "audio": "/static/audio/global/no-direct-train-at-this-time-of-day-i-m-afraid-you-ll-have-t.mp3",
+          "th": "ช่วงเวลานี้ไม่มีรถตรงนะครับ ต้องไปต่อรถที่ Kingsbridge",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Sorry, change where?",
+          "audio": "/static/audio/global/sorry-change-where.mp3",
+          "th": "ขอโทษค่ะ ต่อรถที่ไหนนะคะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Staff",
+          "text": "Kingsbridge. You board here on platform six, then the connection goes from platform twelve.",
+          "audio": "/static/audio/global/kingsbridge-you-board-here-on-platform-six-then-the-connecti.mp3",
+          "th": "Kingsbridge ครับ ขึ้นที่ชานชาลา 6 ตรงนี้ แล้วรถต่อออกจากชานชาลา 12",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Platform six, then twelve. What time is the connection?",
+          "audio": "/static/audio/global/platform-six-then-twelve-what-time-is-the-connection.mp3",
+          "th": "ชานชาลา 6 แล้วต่อ 12 นะคะ รถต่อออกกี่โมงคะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Staff",
+          "text": "Ten fifteen. You've got eight minutes to change over.",
+          "audio": "/static/audio/global/ten-fifteen-you-ve-got-eight-minutes-to-change-over.mp3",
+          "th": "10.15 ครับ มีเวลาเปลี่ยนรถ 8 นาที",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Only eight minutes? Is that enough?",
+          "audio": "/static/audio/global/only-eight-minutes-is-that-enough.mp3",
+          "th": "แค่ 8 นาทีเองเหรอคะ พอเหรอ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Staff",
+          "text": "It's tight, but it's the next platform across. Just don't stop for coffee.",
+          "audio": "/static/audio/global/it-s-tight-but-it-s-the-next-platform-across-just-don-t-stop.mp3",
+          "th": "ก็กระชั้นอยู่ แต่เป็นชานชาลาถัดไปเลย แค่อย่าแวะซื้อกาแฟก็พอ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Okay. And how much is the return?",
+          "audio": "/static/audio/global/okay-and-how-much-is-the-return.mp3",
+          "th": "โอเคค่ะ แล้วตั๋วไป-กลับเท่าไหร่คะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Staff",
+          "text": "Thirty-four eighty. Card or cash?",
+          "audio": "/static/audio/global/thirty-four-eighty-card-or-cash.mp3",
+          "th": "34.80 ครับ จ่ายบัตรหรือเงินสดครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Thirty-four eighty, is that right? Card, please.",
+          "audio": "/static/audio/global/thirty-four-eighty-is-that-right-card-please.mp3",
+          "th": "34.80 ใช่ไหมคะ ขอจ่ายบัตรค่ะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Staff",
+          "text": "That's it. Tap here when you're ready.",
+          "audio": "/static/audio/global/that-s-it-tap-here-when-you-re-ready.mp3",
+          "th": "ใช่ครับ แตะตรงนี้ได้เลยครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Can I get my other card back? From the machine.",
+          "audio": "/static/audio/global/can-i-get-my-other-card-back-from-the-machine.mp3",
+          "th": "ขอบัตรอีกใบคืนได้ไหมคะ ใบที่อยู่ในเครื่องน่ะค่ะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Staff",
+          "text": "Not today, sorry. Fill in this form, post it, and they'll send it out to you.",
+          "audio": "/static/audio/global/not-today-sorry-fill-in-this-form-post-it-and-they-ll-send-i.mp3",
+          "th": "วันนี้ไม่ได้ครับ ขอโทษด้วย กรอกฟอร์มใบนี้ แล้วส่งไปรษณีย์ไป เดี๋ยวเขาส่งบัตรมาให้ที่บ้าน",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Sorry, could you say that again, slowly?",
+          "audio": "/static/audio/global/sorry-could-you-say-that-again-slowly.mp3",
+          "th": "ขอโทษค่ะ พูดอีกทีช้าๆ ได้ไหมคะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Staff",
+          "text": "Take the form, fill it in, put it in the post. Card comes back in about ten days.",
+          "audio": "/static/audio/global/take-the-form-fill-it-in-put-it-in-the-post-card-comes-back-.mp3",
+          "th": "เอาฟอร์มไป กรอกให้เรียบร้อย แล้วส่งไปรษณีย์ บัตรจะกลับมาประมาณ 10 วันครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner",
+          "text": "Got it. Thank you very much.",
+          "audio": "/static/audio/global/got-it-thank-you-very-much.mp3",
+          "th": "เข้าใจแล้วค่ะ ขอบคุณมากค่ะ",
+          "th_status": "draft_unverified"
+        }
+      ],
+      "shadow_focus_lines": [
+        {
+          "text": "The machine is broken.",
+          "targets": [
+            "clusters"
+          ],
+          "audio": "/static/audio/global/the-machine-is-broken.mp3"
+        },
+        {
+          "text": "Platform six, then twelve.",
+          "targets": [
+            "clusters",
+            "numbers"
+          ],
+          "audio": "/static/audio/global/platform-six-then-twelve.mp3"
+        },
+        {
+          "text": "Thirty-four eighty, is that right?",
+          "targets": [
+            "numbers"
+          ],
+          "audio": "/static/audio/global/thirty-four-eighty-is-that-right.mp3"
+        },
+        {
+          "text": "Could you say that again?",
+          "targets": [
+            "clusters"
+          ],
+          "audio": "/static/audio/global/could-you-say-that-again.mp3"
+        }
+      ]
+    }
+  ],
+  "chunk_drills": [
+    {
+      "label": "Ask for the ticket you actually want",
+      "pattern": "A [one-way / return / day pass] to ___, please.",
+      "examples": [
+        "A one-way to Central, please.",
+        "A return to Riverside, please.",
+        "Two returns to Westport, please.",
+        "A day pass, please."
+      ],
+      "spiralled_grammar": "Polite request with 'please'; a/two + noun; recycles place names and numbers 1-10"
+    },
+    {
+      "label": "Ask the price (recycled 'How much?')",
+      "pattern": "How much is a ___ to ___?",
+      "examples": [
+        "How much is a return to Westport?",
+        "How much is a day pass?",
+        "Is there a student fare?",
+        "Is it cheaper after nine?"
+      ],
+      "spiralled_grammar": "How much + be; yes/no questions with 'Is there...?'"
+    },
+    {
+      "label": "Time and platform",
+      "pattern": "What time does the ___ leave? / Which platform for ___?",
+      "examples": [
+        "What time does the next train leave?",
+        "Which platform for Kingsbridge?",
+        "Is this the right platform for Central?",
+        "What time is the last train back?"
+      ],
+      "spiralled_grammar": "Present simple questions with do/does; recycles clock times"
+    },
+    {
+      "label": "Repeat the number back (the safety net)",
+      "pattern": "___, is that right? / Sorry, did you say ___ or ___?",
+      "examples": [
+        "Platform three, is that right?",
+        "Sorry, did you say thirteen or thirty?",
+        "Fifteen fifty — nine forty. Got it.",
+        "Sorry, did you say fifteen or fifty?"
+      ],
+      "spiralled_grammar": "Tag-style confirmation; 'or' alternative questions; recycles numbers 13-90"
+    },
+    {
+      "label": "When something goes wrong",
+      "pattern": "The ___ isn't working. / Can I get a refund?",
+      "examples": [
+        "The machine isn't working.",
+        "It took my card.",
+        "Can I get a refund?",
+        "My train was cancelled — what should I do?"
+      ],
+      "spiralled_grammar": "Negative present continuous ('isn't working'); past simple for a problem that happened"
+    },
+    {
+      "label": "Buy time and ask again",
+      "pattern": "Sorry, could you say that again / more slowly?",
+      "examples": [
+        "Sorry, could you say that again?",
+        "Could you say that more slowly, please?",
+        "Sorry, change where?",
+        "Could you write it down?"
+      ],
+      "spiralled_grammar": "'Could you...?' polite request; recycled from phone and shopping units"
+    }
+  ],
+  "listening_items": [
+    {
+      "audio_text": "The seventeen fifteen service to Westport will depart from platform nine, not platform five. Platform nine.",
+      "channel": "station PA announcement, echoey, slightly fast",
+      "question": "Which platform is the train leaving from now?",
+      "answer": "Platform nine (it changed from platform five).",
+      "distractor_focus": "nine vs five; seventeen fifteen vs seventeen fifty"
+    },
+    {
+      "audio_text": "That's a return to Riverside — thirty-four eighty, please. Card or cash?",
+      "channel": "ticket counter, behind glass, background noise",
+      "question": "How much is the ticket?",
+      "answer": "Thirty-four eighty (34.80).",
+      "distractor_focus": "thirty-four vs forty-four; eighty vs eighteen"
+    },
+    {
+      "audio_text": "There's no direct train, so you'll change at Kingsbridge. Board here on platform six, then the connection is platform twelve, at ten fifteen.",
+      "channel": "staff, natural speed, unscripted rhythm",
+      "question": "Where does the passenger change trains, and from which platform does the second train leave?",
+      "answer": "Change at Kingsbridge; the connection leaves from platform twelve.",
+      "distractor_focus": "six vs twelve (which platform is which); ten fifteen vs ten fifty"
+    },
+    {
+      "audio_text": "Sorry, the machine's out of order. You'll need to buy your ticket at the window near the main entrance.",
+      "channel": "staff member walking past, casual",
+      "question": "Where should the traveller buy the ticket?",
+      "answer": "At the ticket window near the main entrance.",
+      "distractor_focus": "'out of order' = broken, not 'in order'; hearing the cluster in 'window' vs 'winder'"
+    },
+    {
+      "audio_text": "The last train back is at eleven thirteen, so don't miss it — after that it's a taxi.",
+      "channel": "friend / colleague, informal, fast",
+      "question": "What time is the last train back?",
+      "answer": "Eleven thirteen (11:13).",
+      "distractor_focus": "thirteen vs thirty (11:13 vs 11:30)"
+    }
+  ],
+  "guided_roleplay": {
+    "learner_role": "A traveller buying a ticket at a station, first at the machine and then at the counter, with on-screen frames and a hint button",
+    "flow": [
+      "Step 1 — Try the ticket machine; it's out of order. Go to the counter and open with a greeting.",
+      "Step 2 — Say your destination and ticket type: 'A return to Westport, please.'",
+      "Step 3 — Ask the price and pay: 'How much is it?' → repeat the number back before you pay.",
+      "Step 4 — Ask about time and platform: 'What time does it leave?' / 'Which platform?'",
+      "Step 5 — Repeat the platform and time back to confirm, and ask one clarification question if you missed anything.",
+      "Step 6 — Handle one problem: the machine took your card, or the platform has changed. Ask what to do next."
+    ],
+    "sentence_frames": [
+      "A [one-way / return] to ___, please.",
+      "How much is it?",
+      "___, is that right?",
+      "What time does it leave?",
+      "Which platform, please?",
+      "Sorry, did you say ___ or ___?",
+      "The machine isn't working. It took my card.",
+      "Sorry, could you say that again, slowly?",
+      "Thank you very much."
+    ],
+    "hints_available": true
+  },
+  "free_roleplay": {
+    "ai_persona": "A busy but friendly ticket clerk at a city station. Speaks at natural speed, uses short service-counter English ('You right there?', 'Card or cash?'), doesn't slow down unless the learner asks, and never repeats a number twice unless requested.",
+    "a2_behavior": "Stays on the standard script: asks destination, one-way or return, states a clear price, takes payment, gives the platform and departure time. Accepts short learner answers and confirms numbers when the learner repeats them back.",
+    "b1_curveballs": [
+      "There is no direct train — the learner must change at another station and catch a connection with only a few minutes to spare.",
+      "The platform is announced, then changed a minute later ('Actually, make that platform nine').",
+      "The ticket machine kept the learner's card; the clerk explains a refund form and a ten-day wait.",
+      "Only cash is accepted at this window today, and the learner has a card.",
+      "The next train is cancelled; the clerk offers a later train or a bus replacement and the learner must choose.",
+      "The clerk asks an unexpected question: 'Do you want the off-peak fare? It's cheaper but you can't travel before ten.'"
+    ],
+    "roleplay_rubric": [
+      {
+        "criterion": "Asked for the correct ticket type (one-way / return / day pass) to the correct destination",
+        "type": "required"
+      },
+      {
+        "criterion": "Asked the price and repeated the amount back before paying",
+        "type": "required"
+      },
+      {
+        "criterion": "Asked for and correctly confirmed the departure time AND the platform number",
+        "type": "required"
+      },
+      {
+        "criterion": "Used at least one clarification question ('Sorry, could you say that again?' / 'Did you say thirteen or thirty?') when information was unclear",
+        "type": "required"
+      },
+      {
+        "criterion": "Stayed polite-transactional: short requests with 'please' and 'thank you', no over-formality, no bare commands",
+        "type": "required"
+      },
+      {
+        "criterion": "Pronunciation: teen/ty numbers distinguishable (fifteen vs fifty), and clusters in 'train', 'platform', 'ticket', 'please' produced clearly enough for a clerk behind glass",
+        "type": "pronunciation"
+      },
+      {
+        "criterion": "Coped with an off-script problem (broken machine, connection with a tight change, platform change, cash-only, cancellation) without abandoning the conversation, and confirmed the new plan",
+        "type": "stretch_b1"
+      }
+    ]
+  },
+  "register_culture_note": {
+    "en": "Ticket counters run on speed. Staff expect a compact request in this order: ticket type + destination + please ('A return to Westport, please'). Full sentences like 'Excuse me sir, I would like to request one ticket' are not more polite — they slow the queue and often confuse the clerk. Politeness lives in 'please', 'thanks', and tone of voice, not in length. It is completely normal and expected to repeat numbers back and to ask staff to say something again; nobody thinks less of you for it.",
+    "th": null,
+    "do_dont": [
+      {
+        "avoid": "Ticket. Westport.",
+        "prefer": "A return to Westport, please."
+      },
+      {
+        "avoid": "Give me one ticket.",
+        "prefer": "One ticket to Central, please."
+      },
+      {
+        "avoid": "Nodding and saying 'yes' when you didn't catch the platform.",
+        "prefer": "Sorry, which platform was that?"
+      },
+      {
+        "avoid": "'Fifty' when you mean 15 (first-syllable stress, no final -n).",
+        "prefer": "'Fif-TEEN' — stress the second syllable and finish the -n."
+      },
+      {
+        "avoid": "'Pat-form nine' / 'tain at nine forty'.",
+        "prefer": "'PLAT-form nine' / 'the TRAIN at nine forty' — start the /pl/ and /tr/ clusters cleanly."
+      },
+      {
+        "avoid": "Walking away unsure and hoping the departure board will explain.",
+        "prefer": "Could you write the platform down for me?"
+      }
+    ],
+    "thai_cultural_note": "In Thailand many local trips are bought with a spoken destination and a fixed, familiar fare — the ticket type barely varies. In most English-speaking systems the clerk cannot proceed until you choose: one-way or return, peak or off-peak, adult or concession. Deciding out loud is part of the transaction, not fussiness. A second real difference: platforms are reassigned minutes before departure and the change is announced only over the PA, so travellers are expected to actively re-check and ask staff. Asking a clerk to repeat a number is routine service behaviour here, not an imposition on their time."
+  },
+  "can_do_checkpoints": [
+    {
+      "cefr": "A2",
+      "statement": "I can ask for a one-way or return ticket to a destination and pay for it."
+    },
+    {
+      "cefr": "A2",
+      "statement": "I can ask how much a ticket costs and repeat the price back correctly."
+    },
+    {
+      "cefr": "A2",
+      "statement": "I can ask what time the train leaves and which platform it goes from."
+    },
+    {
+      "cefr": "B1",
+      "statement": "I can understand a journey with a change of train and confirm the connecting platform and time."
+    },
+    {
+      "cefr": "B1",
+      "statement": "I can report a problem (broken machine, card kept, cancelled train) and ask what to do next."
+    },
+    {
+      "cefr": "Sound",
+      "statement": "My teen/ty numbers (fifteen vs fifty) and my clusters in 'train', 'platform', 'please' are clear enough for a clerk behind glass."
+    }
+  ],
+  "gamification": {
+    "xp_per_substep": true,
+    "unlocks": [
+      "Airport check-in and boarding",
+      "Asking for directions on the way to the station",
+      "Booking tickets by phone",
+      "Handling a delay or refund claim"
+    ],
+    "sound_meters": [
+      "numbers",
+      "clusters"
+    ]
+  },
+  "_review_status": {
+    "thai_strings": "DRAFT - machine-generated, tagged th_status=draft_unverified. A native Thai speaker must review every string and set th_status='reviewed'.",
+    "facts": "UNVERIFIED - generated content, needs a local fact-check before shipping",
+    "generated_by": "claude-opus-5"
+  }
+}

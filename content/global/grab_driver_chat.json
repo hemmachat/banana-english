@@ -1,0 +1,918 @@
+{
+  "scenario_id": "grab_driver_chat",
+  "locale": "global",
+  "title_en": "Driving Passengers (as Grab/Taxi Driver)",
+  "title_th": "การรับผู้โดยสาร (คนขับ)",
+  "tier": 1,
+  "cefr_range": [
+    "A2",
+    "B1"
+  ],
+  "prerequisites": [
+    "greetings_small_talk",
+    "numbers_and_prices",
+    "directions_left_right"
+  ],
+  "recycles": [
+    "numbers, times and durations ('about twenty-five minutes')",
+    "greetings and light small talk ('Where are you from?')",
+    "asking about money ('How much?', 'Cash or card?')",
+    "giving and following directions (left / right / straight / after the bridge)",
+    "apologising and offering an alternative ('Sorry, I can't… but I can…')",
+    "clarification requests ('Sorry, could you say that again?')"
+  ],
+  "register": "Casual-polite service register. The driver is friendly and brief: short confirmations, no heavy formality, no 'sir/madam' chains. Warm but not chatty unless the passenger opens the conversation.",
+  "sound_target_box": {
+    "note_th": null,
+    "targets": [
+      {
+        "sound": "final_consonants",
+        "scoring_method": "phoneme",
+        "words_in_context": [
+          "right",
+          "left",
+          "next",
+          "stop",
+          "wait",
+          "card",
+          "cash",
+          "airport",
+          "seatbelt",
+          "closed",
+          "front gate",
+          "first stop"
+        ],
+        "minimal_pairs": [
+          [
+            "right",
+            "ride"
+          ],
+          [
+            "cart",
+            "card"
+          ],
+          [
+            "back",
+            "bag"
+          ],
+          [
+            "belt",
+            "bell"
+          ],
+          [
+            "next",
+            "neck"
+          ],
+          [
+            "wait",
+            "way"
+          ]
+        ],
+        "why_it_matters_here": "Thai unreleased finals make 'left' sound like 'leff' and 'right' like 'rye' — at a junction the passenger cannot tell which turn you just announced and you take the wrong exit. Worse for money: 'card' without the /d/ is heard as 'car', so a passenger who asks 'Can I pay by card?' thinks you answered about the vehicle, and you end up in a payment argument at the kerb."
+      },
+      {
+        "sound": "r_l",
+        "scoring_method": "phoneme",
+        "words_in_context": [
+          "right",
+          "left",
+          "ring road",
+          "traffic light",
+          "arrive",
+          "Riverside Mall",
+          "terminal",
+          "railway station",
+          "Green Road",
+          "pharmacy"
+        ],
+        "minimal_pairs": [
+          [
+            "right",
+            "light"
+          ],
+          [
+            "road",
+            "load"
+          ],
+          [
+            "rate",
+            "late"
+          ],
+          [
+            "arrive",
+            "alive"
+          ],
+          [
+            "pray",
+            "play"
+          ],
+          [
+            "correct",
+            "collect"
+          ]
+        ],
+        "why_it_matters_here": "'Turn right' and 'turn light' are both plausible in a car ('the light' = traffic light), so an /r/→/l/ slip is not just an accent, it is a wrong instruction. Street and landmark names are the other cost: 'Riverside' said as 'Livesite' or 'Green Road' as 'Green Load' means the passenger cannot confirm you understood the destination, and they cancel the ride."
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "en": "passenger",
+      "th": "ผู้โดยสาร คือคนที่นั่งรถ ไม่ใช่คนขับ",
+      "group": "people_and_ride",
+      "audio_needed": true,
+      "audio": "/static/audio/global/passenger.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "pick-up point",
+      "th": "จุดที่คนขับมารับเรา ในแอปจะบอกไว้ว่ายืนรอตรงไหน",
+      "group": "people_and_ride",
+      "audio_needed": true,
+      "audio": "/static/audio/global/pick-up-point.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "drop-off",
+      "th": "จุดลงรถ ที่ที่คนขับจอดให้เราลง",
+      "group": "people_and_ride",
+      "audio_needed": true,
+      "audio": "/static/audio/global/drop-off.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "the pin (in the app)",
+      "th": "หมุดในแอป จุดสีๆ บนแผนที่ที่บอกว่าเราอยู่ตรงไหน ถ้าหมุดผิดที่ ลากย้ายได้",
+      "group": "people_and_ride",
+      "audio_needed": true,
+      "audio": "/static/audio/global/the-pin-in-the-app.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "seatbelt",
+      "th": "เข็มขัดนิรภัย ที่ออสเตรเลียต้องคาดทุกคน นั่งหลังก็ต้องคาด ไม่คาดโดนปรับ",
+      "group": "people_and_ride",
+      "audio_needed": true,
+      "audio": "/static/audio/global/seatbelt.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "boot / trunk (for bags)",
+      "th": "boot คือท้ายรถ ที่ไว้ใส่กระเป๋า (คนอเมริกันเรียก trunk)",
+      "group": "people_and_ride",
+      "audio_needed": true,
+      "audio": "/static/audio/global/boot-trunk-for-bags.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "turn left",
+      "th": "เลี้ยวซ้าย",
+      "group": "route",
+      "audio_needed": true,
+      "audio": "/static/audio/global/turn-left.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "turn right",
+      "th": "เลี้ยวขวา",
+      "group": "route",
+      "audio_needed": true,
+      "audio": "/static/audio/global/turn-right.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "go straight",
+      "th": "ตรงไป ไม่ต้องเลี้ยว",
+      "group": "route",
+      "audio_needed": true,
+      "audio": "/static/audio/global/go-straight.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "the ring road",
+      "th": "ถนนวงแหวนรอบเมือง อ้อมหน่อยแต่รถมักไหลกว่า",
+      "group": "route",
+      "audio_needed": true,
+      "audio": "/static/audio/global/the-ring-road.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "traffic light",
+      "th": "ไฟแดง ไฟจราจร ใช้บอกทางได้ เช่น เลี้ยวที่ไฟแดงหน้า",
+      "group": "route",
+      "audio_needed": true,
+      "audio": "/static/audio/global/traffic-light.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "the bridge",
+      "th": "สะพาน ใช้เป็นจุดสังเกตบอกทางได้",
+      "group": "route",
+      "audio_needed": true,
+      "audio": "/static/audio/global/the-bridge.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "the corner",
+      "th": "หัวมุมถนน ตรงที่ถนนสองสายมาบรรจบ บอกให้จอดตรงมุมก็ได้",
+      "group": "route",
+      "audio_needed": true,
+      "audio": "/static/audio/global/the-corner.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "shortcut",
+      "th": "ทางลัด เส้นที่ใกล้กว่า คนขับบางคนชอบใช้",
+      "group": "route",
+      "audio_needed": true,
+      "audio": "/static/audio/global/shortcut.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "road closed",
+      "th": "ถนนปิด ไปไม่ได้ ต้องอ้อม เจอบ่อยตอนมีงานซ่อมถนน",
+      "group": "problems",
+      "audio_needed": true,
+      "audio": "/static/audio/global/road-closed.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "heavy traffic / a traffic jam",
+      "th": "รถติด รถเยอะ ไปช้า ถ้านัดหมอควรเผื่อเวลา",
+      "group": "problems",
+      "audio_needed": true,
+      "audio": "/static/audio/global/heavy-traffic-a-traffic-jam.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "an extra stop",
+      "th": "แวะเพิ่มอีกจุด ต้องบอกคนขับก่อน และค่ารถจะเพิ่มขึ้น",
+      "group": "problems",
+      "audio_needed": true,
+      "audio": "/static/audio/global/an-extra-stop.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "wrong address",
+      "th": "ที่อยู่ผิด ใส่ผิดในแอป รีบบอกคนขับเลย อย่ารอ",
+      "group": "problems",
+      "audio_needed": true,
+      "audio": "/static/audio/global/wrong-address.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "cash",
+      "th": "เงินสด แต่รถ Uber ส่วนใหญ่จ่ายผ่านแอป ไม่รับเงินสด",
+      "group": "money",
+      "audio_needed": true,
+      "audio": "/static/audio/global/cash.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "card",
+      "th": "บัตร บัตรเครดิตหรือเดบิต ที่นี่ใช้บัตรกันเกือบทุกที่",
+      "group": "money",
+      "audio_needed": true,
+      "audio": "/static/audio/global/card.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "change (money back)",
+      "th": "เงินทอน ถ้าจ่ายเงินสดแล้วให้เกิน เขาต้องทอนคืน",
+      "group": "money",
+      "audio_needed": true,
+      "audio": "/static/audio/global/change-money-back.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "the fare",
+      "th": "ค่าโดยสาร ค่ารถที่เราต้องจ่าย",
+      "group": "money",
+      "audio_needed": true,
+      "audio": "/static/audio/global/the-fare.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "the app updates the price",
+      "th": "แอปคิดราคาใหม่ให้เอง ถ้าเปลี่ยนเส้นทางหรือแวะเพิ่ม ราคาจะขยับ ไม่ต้องเถียงกับคนขับ",
+      "group": "money",
+      "audio_needed": true,
+      "audio": "/static/audio/global/the-app-updates-the-price.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "air-con",
+      "th": "แอร์ ขอเปิดหรือขอปรับได้ ไม่ต้องเกรงใจ",
+      "group": "comfort_small_talk",
+      "audio_needed": true,
+      "audio": "/static/audio/global/air-con.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "first time here?",
+      "th": "คนขับถามเล่นๆ ว่า มาที่นี่ครั้งแรกเหรอ แค่ชวนคุย ตอบสั้นๆ ก็พอ",
+      "group": "comfort_small_talk",
+      "audio_needed": true,
+      "audio": "/static/audio/global/first-time-here.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "we're here",
+      "th": "ถึงแล้วนะ คนขับบอกว่าถึงที่หมายแล้ว",
+      "group": "arrival",
+      "audio_needed": true,
+      "audio": "/static/audio/global/we-re-here.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "main entrance",
+      "th": "ประตูหน้า ทางเข้าใหญ่ของตึก บอกคนขับได้ว่าจอดตรงประตูหน้า",
+      "group": "arrival",
+      "audio_needed": true,
+      "audio": "/static/audio/global/main-entrance.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "Have a good one!",
+      "th": "คำลาแบบออสซี่ ประมาณว่า โชคดีนะ ตอบกลับว่า You too! ก็พอ",
+      "group": "arrival",
+      "audio_needed": true,
+      "audio": "/static/audio/global/have-a-good-one.mp3",
+      "th_status": "draft_unverified"
+    }
+  ],
+  "model_dialogues": [
+    {
+      "cefr": "A2",
+      "label": "A clean airport run — pick up, confirm, arrive",
+      "lines": [
+        {
+          "speaker": "Driver (you)",
+          "text": "Hi, are you Anna? Going to the airport?",
+          "audio": "/static/audio/global/hi-are-you-anna-going-to-the-airport.mp3",
+          "th": "สวัสดีครับ คุณ Anna ใช่ไหม ไปสนามบินใช่ไหมครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Passenger",
+          "text": "Yes, that's me. Terminal 2, please.",
+          "audio": "/static/audio/global/yes-that-s-me-terminal-2-please.mp3",
+          "th": "ใช่ค่ะ ไป Terminal 2 นะคะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Driver (you)",
+          "text": "Terminal 2, okay. Please put your seatbelt on.",
+          "audio": "/static/audio/global/terminal-2-okay-please-put-your-seatbelt-on.mp3",
+          "th": "Terminal 2 นะครับ ได้เลย คาดเข็มขัดด้วยนะครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Passenger",
+          "text": "Sure. How long will it take?",
+          "audio": "/static/audio/global/sure-how-long-will-it-take.mp3",
+          "th": "ได้ค่ะ ใช้เวลานานไหมคะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Driver (you)",
+          "text": "About thirty minutes. The traffic is light now.",
+          "audio": "/static/audio/global/about-thirty-minutes-the-traffic-is-light-now.mp3",
+          "th": "ประมาณสามสิบนาที ตอนนี้รถไม่ค่อยติด",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Passenger",
+          "text": "Great, thanks.",
+          "audio": "/static/audio/global/great-thanks.mp3",
+          "th": "ดีเลย ขอบคุณค่ะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Driver (you)",
+          "text": "Is the air-con okay?",
+          "audio": "/static/audio/global/is-the-air-con-okay.mp3",
+          "th": "แอร์โอเคไหมครับ เย็นพอไหม",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Passenger",
+          "text": "It's fine, thank you.",
+          "audio": "/static/audio/global/it-s-fine-thank-you.mp3",
+          "th": "โอเคค่ะ ขอบคุณ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Driver (you)",
+          "text": "Okay, we're here — Terminal 2, departures.",
+          "audio": "/static/audio/global/okay-we-re-here-terminal-2-departures.mp3",
+          "th": "ถึงแล้วครับ Terminal 2 ฝั่งขาออก",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Passenger",
+          "text": "Perfect. Thanks a lot!",
+          "audio": "/static/audio/global/perfect-thanks-a-lot.mp3",
+          "th": "เยี่ยมเลย ขอบคุณมากค่ะ",
+          "th_status": "draft_unverified"
+        }
+      ],
+      "shadow_focus_lines": [
+        {
+          "text": "Going to the airport?",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/going-to-the-airport.mp3"
+        },
+        {
+          "text": "Please put your seatbelt on.",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/please-put-your-seatbelt-on.mp3"
+        },
+        {
+          "text": "The traffic is light now.",
+          "targets": [
+            "r_l",
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/the-traffic-is-light-now.mp3"
+        },
+        {
+          "text": "We're here — Terminal 2.",
+          "targets": [
+            "r_l",
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/we-re-here-terminal-2.mp3"
+        }
+      ]
+    },
+    {
+      "cefr": "B1",
+      "label": "Wrong pin, a closed road, and a change of plan",
+      "lines": [
+        {
+          "speaker": "Driver (you)",
+          "text": "Hi, are you Daniel? White car, near the front gate.",
+          "audio": "/static/audio/global/hi-are-you-daniel-white-car-near-the-front-gate.mp3",
+          "th": "สวัสดีครับ คุณ Daniel ใช่ไหม ผมรถสีขาว จอดอยู่ใกล้ประตูหน้า",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Passenger",
+          "text": "Hi! Yeah — sorry, I'm on the other side, by the coffee shop.",
+          "audio": "/static/audio/global/hi-yeah-sorry-i-m-on-the-other-side-by-the-coffee-shop.mp3",
+          "th": "สวัสดีครับ ใช่ครับ — โทษที ผมอยู่อีกฝั่ง ตรงร้านกาแฟ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Driver (you)",
+          "text": "No problem. I'll come around. Two minutes.",
+          "audio": "/static/audio/global/no-problem-i-ll-come-around-two-minutes.mp3",
+          "th": "ไม่เป็นไรครับ เดี๋ยวผมวนไปรับ สักสองนาที",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Passenger",
+          "text": "Thanks. (gets in) Okay — Central Station, right?",
+          "audio": "/static/audio/global/thanks-gets-in-okay-central-station-right.mp3",
+          "th": "ขอบคุณครับ (ขึ้นรถ) โอเค ไป Central Station ใช่ไหมครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Driver (you)",
+          "text": "The app says Riverside Mall. Which one do you want?",
+          "audio": "/static/audio/global/the-app-says-riverside-mall-which-one-do-you-want.mp3",
+          "th": "ในแอปขึ้นว่า Riverside Mall นะครับ ตกลงจะไปที่ไหนดี",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Passenger",
+          "text": "Oh, sorry — the pin is wrong. Central Station, please.",
+          "audio": "/static/audio/global/oh-sorry-the-pin-is-wrong-central-station-please.mp3",
+          "th": "อ๋อ โทษที ปักหมุดผิด ไป Central Station ครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Driver (you)",
+          "text": "Okay. Can you change it in the app? Then the price is correct.",
+          "audio": "/static/audio/global/okay-can-you-change-it-in-the-app-then-the-price-is-correct.mp3",
+          "th": "โอเคครับ ช่วยแก้ในแอปให้หน่อยได้ไหม ราคาจะได้ตรง",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Passenger",
+          "text": "Done. Is it far?",
+          "audio": "/static/audio/global/done-is-it-far.mp3",
+          "th": "แก้แล้วครับ ไกลไหม",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Driver (you)",
+          "text": "About twenty-five minutes. Left turn, then the ring road.",
+          "audio": "/static/audio/global/about-twenty-five-minutes-left-turn-then-the-ring-road.mp3",
+          "th": "ประมาณยี่สิบห้านาที เลี้ยวซ้ายแล้วขึ้นถนนวงแหวน",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Passenger",
+          "text": "Actually — can we stop at a pharmacy? Just five minutes.",
+          "audio": "/static/audio/global/actually-can-we-stop-at-a-pharmacy-just-five-minutes.mp3",
+          "th": "เอ่อ ขอแวะร้านขายยาหน่อยได้ไหมครับ แค่ห้านาทีเอง",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Driver (you)",
+          "text": "Sure. There's one on Green Road. Is that okay?",
+          "audio": "/static/audio/global/sure-there-s-one-on-green-road-is-that-okay.mp3",
+          "th": "ได้ครับ มีร้านนึงอยู่ถนน Green Road โอเคไหม",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Passenger",
+          "text": "Perfect, thanks.",
+          "audio": "/static/audio/global/perfect-thanks.mp3",
+          "th": "ดีเลย ขอบคุณครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Driver (you)",
+          "text": "Sorry — this road is closed. I'll take the bridge instead.",
+          "audio": "/static/audio/global/sorry-this-road-is-closed-i-ll-take-the-bridge-instead.mp3",
+          "th": "โทษทีครับ ถนนเส้นนี้ปิด ผมขอไปทางสะพานแทนนะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Passenger",
+          "text": "Hmm. Will that cost more?",
+          "audio": "/static/audio/global/hmm-will-that-cost-more.mp3",
+          "th": "อืม แล้วจะแพงขึ้นไหมครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Driver (you)",
+          "text": "A little. The app updates the price.",
+          "audio": "/static/audio/global/a-little-the-app-updates-the-price.mp3",
+          "th": "นิดหน่อยครับ แอปมันจะอัปเดตราคาให้เอง",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Passenger",
+          "text": "Okay, no worries. Do you take card?",
+          "audio": "/static/audio/global/okay-no-worries-do-you-take-card.mp3",
+          "th": "โอเคครับ ไม่เป็นไร รับบัตรไหมครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Driver (you)",
+          "text": "Card is fine, or cash.",
+          "audio": "/static/audio/global/card-is-fine-or-cash.mp3",
+          "th": "บัตรก็ได้ครับ หรือเงินสดก็ได้",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Passenger",
+          "text": "Card, please. Can you drop me at the main entrance?",
+          "audio": "/static/audio/global/card-please-can-you-drop-me-at-the-main-entrance.mp3",
+          "th": "ขอจ่ายบัตรครับ ส่งตรงทางเข้าหลักได้ไหม",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Driver (you)",
+          "text": "Yes. We're here — main entrance. Don't forget your bag.",
+          "audio": "/static/audio/global/yes-we-re-here-main-entrance-don-t-forget-your-bag.mp3",
+          "th": "ได้ครับ ถึงแล้ว ทางเข้าหลัก อย่าลืมกระเป๋านะครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Passenger",
+          "text": "Got it. Thanks so much — have a good one!",
+          "audio": "/static/audio/global/got-it-thanks-so-much-have-a-good-one.mp3",
+          "th": "ได้แล้วครับ ขอบคุณมาก ๆ ขอให้เป็นวันที่ดีนะครับ",
+          "th_status": "draft_unverified"
+        }
+      ],
+      "shadow_focus_lines": [
+        {
+          "text": "I'll come around. Two minutes.",
+          "targets": [
+            "r_l",
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/i-ll-come-around-two-minutes.mp3"
+        },
+        {
+          "text": "Left turn, then the ring road.",
+          "targets": [
+            "r_l",
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/left-turn-then-the-ring-road.mp3"
+        },
+        {
+          "text": "Sorry, this road is closed.",
+          "targets": [
+            "r_l",
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/sorry-this-road-is-closed.mp3"
+        },
+        {
+          "text": "Card is fine, or cash.",
+          "targets": [
+            "final_consonants"
+          ],
+          "audio": "/static/audio/global/card-is-fine-or-cash.mp3"
+        }
+      ]
+    }
+  ],
+  "chunk_drills": [
+    {
+      "label": "Confirm the passenger and the destination",
+      "pattern": "Are you ___? / Going to ___?",
+      "examples": [
+        "Hi, are you Anna?",
+        "Are you Daniel? White car, near the front gate.",
+        "Going to the airport?",
+        "Central Station, right?"
+      ],
+      "spiralled_grammar": "Yes/no questions with 'are you' + rising intonation, recycled from greetings_small_talk; short elliptical questions typical of service talk."
+    },
+    {
+      "label": "Say the route out loud (left / right drill)",
+      "pattern": "___ turn, then ___. / Turn ___ after ___.",
+      "examples": [
+        "Left turn, then the ring road.",
+        "Turn right after the bridge.",
+        "Straight, then left at the traffic light.",
+        "It's the second building on the left."
+      ],
+      "spiralled_grammar": "Sequencing with 'then' and 'after' + place, recycled from directions_left_right. Every example forces an /r/–/l/ contrast in one breath."
+    },
+    {
+      "label": "Estimate the time",
+      "pattern": "About ___ minutes. / It depends on the traffic.",
+      "examples": [
+        "About thirty minutes.",
+        "About twenty-five minutes, maybe more.",
+        "Fifteen minutes if the road is clear.",
+        "It depends on the traffic."
+      ],
+      "spiralled_grammar": "Approximation with 'about' + numbers, recycled from numbers_and_prices; first conditional lite ('if the road is clear')."
+    },
+    {
+      "label": "Problem + alternative (never a bare 'cannot')",
+      "pattern": "Sorry, I can't ___. I'll ___ instead. / Is that okay?",
+      "examples": [
+        "Sorry, this road is closed. I'll take the bridge instead.",
+        "Sorry, I can't stop here. I'll stop after the corner.",
+        "Sorry, I can't wait here. I'll come around.",
+        "There's a pharmacy on Green Road. Is that okay?"
+      ],
+      "spiralled_grammar": "'can't' + verb for refusal, 'I'll' for an on-the-spot offer, closing check question — recycles apologising and offering an alternative."
+    },
+    {
+      "label": "Money and the app",
+      "pattern": "Cash or card? / The app updates the price.",
+      "examples": [
+        "Card is fine, or cash.",
+        "Do you have change?",
+        "The app updates the price. Don't worry.",
+        "Can you change the pin in the app?"
+      ],
+      "spiralled_grammar": "Recycles 'How much?' / payment language; present simple for how a system works."
+    },
+    {
+      "label": "Light small talk (safe topics only)",
+      "pattern": "First time in ___? / Where are you from? / How long are you staying?",
+      "examples": [
+        "First time here?",
+        "Where are you from?",
+        "How long are you staying?",
+        "The traffic is bad on Fridays."
+      ],
+      "spiralled_grammar": "Wh- questions in present simple and present continuous, recycled from greetings_small_talk."
+    },
+    {
+      "label": "Arrival and hand-off",
+      "pattern": "We're here — ___. / Is here okay, or a bit further?",
+      "examples": [
+        "We're here — main entrance.",
+        "Is here okay, or a bit further?",
+        "Don't forget your bag.",
+        "Have a good one!"
+      ],
+      "spiralled_grammar": "Contracted 'we're' + place; alternative question with 'or'; negative imperative for a reminder."
+    }
+  ],
+  "listening_items": [
+    {
+      "audio_text": "Hi, I'm the one in the blue jacket — I'm at the back gate, not the front.",
+      "channel": "phone_call",
+      "question": "Where is the passenger waiting?",
+      "answer": "At the back gate.",
+      "distractor_focus": "back vs front; the final /k/ in 'back' — if it drops, 'back gate' and 'bag gate' blur."
+    },
+    {
+      "audio_text": "Can you drop me at the corner, just before the traffic lights?",
+      "channel": "in_car_back_seat",
+      "question": "Where does the passenger want to get out?",
+      "answer": "At the corner, before the traffic lights.",
+      "distractor_focus": "before vs after; 'lights' vs 'rights' (r_l) and the final /ts/ cluster."
+    },
+    {
+      "audio_text": "Turn right after the bridge, then it's the second building on the left.",
+      "channel": "in_car_back_seat",
+      "question": "Which side is the building on?",
+      "answer": "On the left.",
+      "distractor_focus": "right vs left in the same sentence — pure /r/–/l/ discrimination under road noise."
+    },
+    {
+      "audio_text": "Sorry, I'll be down in fifteen minutes. Fifteen, not fifty.",
+      "channel": "phone_call",
+      "question": "How long do you have to wait?",
+      "answer": "Fifteen minutes.",
+      "distractor_focus": "fifteen vs fifty — final /n/ plus stress placement, recycled from numbers_and_prices."
+    },
+    {
+      "audio_text": "Actually, can we stop at the ATM first? Then the station.",
+      "channel": "in_car_back_seat",
+      "question": "Where does the passenger want to go first?",
+      "answer": "To the ATM, then the station.",
+      "distractor_focus": "first vs then (order of stops); the /st/ cluster in 'first' and 'station'."
+    },
+    {
+      "audio_text": "Do you take card? I've only got a big note.",
+      "channel": "in_car_back_seat",
+      "question": "How does the passenger want to pay?",
+      "answer": "By card — they only have a large banknote for cash.",
+      "distractor_focus": "card vs car; cash vs card final consonants."
+    }
+  ],
+  "guided_roleplay": {
+    "learner_role": "You are the driver. A passenger has just booked a ride to the airport. Screen frames and a hint button are available at every step.",
+    "flow": [
+      "Step 1 — Find the passenger: greet, confirm the name, say where your car is. ('Hi, are you Anna? White car, near the front gate.')",
+      "Step 2 — Confirm the destination out loud and check it against the app. ('Going to the airport? Terminal 2, right?')",
+      "Step 3 — Settle them in: seatbelt, bags, air-con. ('Please put your seatbelt on.' / 'Is the air-con okay?')",
+      "Step 4 — State the route and the time. ('Left turn, then the ring road. About thirty minutes.')",
+      "Step 5 — Handle one problem: heavy traffic, a closed road, or a request for an extra stop. Apologise + offer an alternative.",
+      "Step 6 — Payment: answer 'cash or card?' and explain that the app updates the price.",
+      "Step 7 — Arrive and hand off. ('We're here — main entrance. Don't forget your bag.')"
+    ],
+    "sentence_frames": [
+      "Hi, are you ___?",
+      "Going to ___?",
+      "Please put your seatbelt on.",
+      "About ___ minutes. It depends on the traffic.",
+      "___ turn, then the ring road.",
+      "Sorry, this road is closed. I'll take ___ instead.",
+      "There's one on ___ Road. Is that okay?",
+      "Card is fine, or cash.",
+      "The app updates the price.",
+      "Sorry, could you say that again?",
+      "We're here — ___. Don't forget your bag."
+    ],
+    "hints_available": true
+  },
+  "free_roleplay": {
+    "ai_persona": "Priya — a friendly international passenger in her 30s, in a mild hurry, sitting in the back seat. Speaks at natural speed, uses contractions and 'actually / no worries / can we…', and reacts realistically if the driver's 'left/right' or 'card/cash' is unclear (she asks 'Sorry, left or right?').",
+    "a2_behavior": "Priya stays on the standard script: she confirms her name, gives the destination once, answers 'how long?', accepts the route, chats for one turn about where she's from, pays by card, and thanks the driver at the drop-off. She repeats slowly if asked.",
+    "b1_curveballs": [
+      "The app pin is on the wrong side of the building — she is standing somewhere else and describes the spot.",
+      "Mid-ride she changes the destination ('Actually, can we go to Central Station instead?').",
+      "She asks for an extra stop at a pharmacy or ATM and asks how much extra it will cost.",
+      "A road is closed and she wants to know if the detour will make her late for a flight.",
+      "She only has a large banknote and asks if the driver has change.",
+      "She asks a personal small-talk question back ('How long have you been driving?') and expects a real answer.",
+      "She asks the driver to hurry, and the driver must politely refuse ('Sorry, I can't go faster here — but the ring road is clear.').",
+      "At the drop-off she realises she left something on the seat and asks the driver to wait."
+    ],
+    "roleplay_rubric": [
+      {
+        "criterion": "Confirmed the passenger's name AND the destination out loud before driving off",
+        "type": "required"
+      },
+      {
+        "criterion": "Stated the route and a time estimate using 'left/right + then' and 'about ___ minutes'",
+        "type": "required"
+      },
+      {
+        "criterion": "Handled one problem with apology + alternative instead of a bare 'cannot' or silence",
+        "type": "required"
+      },
+      {
+        "criterion": "Answered the payment question clearly (cash / card / the app updates the price)",
+        "type": "required"
+      },
+      {
+        "criterion": "Closed the ride: 'we're here' + location + a reminder or friendly sign-off",
+        "type": "required"
+      },
+      {
+        "criterion": "Asked at least one clarification question when the passenger was unclear ('Sorry, could you say that again?')",
+        "type": "required"
+      },
+      {
+        "criterion": "Pronunciation: 'left' and 'right' distinguishable, final consonants audible on card / cash / next / stop, road and place names intelligible on first try",
+        "type": "pronunciation"
+      },
+      {
+        "criterion": "Stretch (B1): coped with a mid-ride change — new destination, extra stop, closed road or no change for a big note — and kept the conversation going without freezing",
+        "type": "stretch_b1"
+      }
+    ]
+  },
+  "register_culture_note": {
+    "en": "Driver English is short, warm and functional. Confirm, don't lecture: 'Are you Anna? Going to the airport?' is friendlier than a full formal sentence. Say the route out loud once so the passenger can correct you early — international passengers expect this and it protects you from a bad rating later. When something goes wrong, apologise and immediately offer an option ('Sorry, this road is closed. I'll take the bridge instead.'). Silence after a problem reads as 'the driver didn't understand', not as politeness.",
+    "th": null,
+    "do_dont": [
+      {
+        "avoid": "You go where?",
+        "prefer": "Where are you going? / Going to the airport?"
+      },
+      {
+        "avoid": "Same same.",
+        "prefer": "Yes, it's the same road."
+      },
+      {
+        "avoid": "Cannot.",
+        "prefer": "Sorry, I can't stop here — I'll stop just after the corner."
+      },
+      {
+        "avoid": "Money? / You pay me.",
+        "prefer": "Cash or card?"
+      },
+      {
+        "avoid": "Nodding and driving when you didn't understand the address",
+        "prefer": "Sorry, could you show me on the map?"
+      },
+      {
+        "avoid": "Mmm… (long silence when the road is closed)",
+        "prefer": "Sorry, this road is closed. I'll take the bridge — about five minutes more."
+      },
+      {
+        "avoid": "Turn light. / Green Load.",
+        "prefer": "Turn right. / Green Road. (say it again slowly if they look confused)"
+      }
+    ],
+    "thai_cultural_note": "Two real differences, not stereotypes. (1) Small-talk range: questions like 'Are you married?', 'How old are you?' or 'How much do you earn?' are ordinary friendly openers in Thai and are meant kindly, but many international passengers read them as intrusive from a stranger. Safe, welcome topics: traffic, weather, where they're from, how long they're staying, food recommendations. (2) Saying no: Thai service style often avoids a direct refusal, so a driver may agree vaguely and then not do the thing. Passengers from many countries trust a clear 'Sorry, I can't do that, but I can ___' far more than a soft yes — the direct version is polite, not rude, when it comes with an alternative."
+  },
+  "can_do_checkpoints": [
+    {
+      "cefr": "A2",
+      "statement": "I can greet a passenger, confirm their name and say where my car is."
+    },
+    {
+      "cefr": "A2",
+      "statement": "I can confirm the destination out loud and give a time estimate ('about thirty minutes')."
+    },
+    {
+      "cefr": "A2",
+      "statement": "I can ask about the seatbelt, the air-con, and cash or card."
+    },
+    {
+      "cefr": "A2",
+      "statement": "I can announce arrival and remind the passenger about their bag."
+    },
+    {
+      "cefr": "B1",
+      "statement": "I can describe my route (left / right / then / after) and explain a detour when a road is closed."
+    },
+    {
+      "cefr": "B1",
+      "statement": "I can handle a mid-ride change — a new destination, an extra stop, or a payment problem — and ask for clarification when I don't understand."
+    },
+    {
+      "cefr": "B1",
+      "statement": "I can refuse a request politely and immediately offer an alternative."
+    },
+    {
+      "cefr": "Sound",
+      "statement": "My 'left' and 'right' are clearly different, and my final consonants on card, cash, next, stop and airport are audible to a passenger in a noisy car."
+    }
+  ],
+  "gamification": {
+    "xp_per_substep": true,
+    "unlocks": [
+      "Five-Star Pick-Up (confirm name + destination on the first try, three rides in a row)",
+      "Detour Pro (handle a closed road with apology + alternative)",
+      "Airport Run badge (complete the full A2 dialogue with no hints)",
+      "Curveball Driver (survive three different B1 curveballs in free roleplay)",
+      "Night Shift set (unlocks a harder, noisier listening pack)"
+    ],
+    "sound_meters": [
+      "final_consonants",
+      "r_l"
+    ]
+  },
+  "_review_status": {
+    "thai_strings": "DRAFT - machine-generated, tagged th_status=draft_unverified. A native Thai speaker must review every string and set th_status='reviewed'.",
+    "facts": "UNVERIFIED - generated content, needs a local fact-check before shipping",
+    "generated_by": "claude-opus-5"
+  }
+}

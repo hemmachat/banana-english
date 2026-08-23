@@ -1,0 +1,825 @@
+{
+  "scenario_id": "currency_exchange",
+  "locale": "global",
+  "title_en": "Currency Exchange",
+  "title_th": "การแลกเงิน",
+  "tier": 1,
+  "cefr_range": [
+    "A2",
+    "B1"
+  ],
+  "prerequisites": [
+    "greetings_small_talk",
+    "numbers_and_prices",
+    "shopping_paying"
+  ],
+  "recycles": [
+    "numbers 1–1,000,000 and decimals",
+    "\"How much is it?\" / \"How much in total?\"",
+    "polite requests: \"Could I have…, please?\"",
+    "clarification: \"Sorry, could you say that again?\"",
+    "time and dates (\"today's rate\", \"until 5 p.m.\")",
+    "ID / document words from travel and admin units (passport, sign here)"
+  ],
+  "register": "Neutral-polite service counter English: short, direct, transactional, with 'please' and 'sorry' doing all the politeness work.",
+  "sound_target_box": {
+    "note_th": null,
+    "targets": [
+      {
+        "sound": "numbers",
+        "scoring_method": "phoneme",
+        "words_in_context": [
+          "thirteen / thirty",
+          "fifteen / fifty",
+          "sixteen thousand nine hundred",
+          "three hundred dollars",
+          "thirty-three point five zero",
+          "four hundred and fifty euros",
+          "two hundred baht fee"
+        ],
+        "minimal_pairs": [
+          [
+            "thirteen",
+            "thirty"
+          ],
+          [
+            "fifteen",
+            "fifty"
+          ],
+          [
+            "sixteen",
+            "sixty"
+          ],
+          [
+            "fourteen",
+            "forty"
+          ],
+          [
+            "nineteen",
+            "ninety"
+          ]
+        ],
+        "why_it_matters_here": "The teller repeats the amount once before counting the cash. If your 'fifteen thousand' sounds like 'fifty thousand', you either get refused or you sign for the wrong amount — and once you leave the counter, most exchange booths will not correct it. Thai speakers stress the wrong syllable and drop the final -n of -teen, which is exactly the difference the teller is listening for."
+      },
+      {
+        "sound": "th",
+        "scoring_method": "minimal_pair",
+        "words_in_context": [
+          "three hundred",
+          "three thousand",
+          "thirty-three",
+          "thirty-eight point two",
+          "what's the rate",
+          "I thought it was free",
+          "thanks",
+          "this note"
+        ],
+        "minimal_pairs": [
+          [
+            "three",
+            "tree"
+          ],
+          [
+            "thirty",
+            "dirty"
+          ],
+          [
+            "thanks",
+            "tanks"
+          ],
+          [
+            "thin",
+            "tin"
+          ],
+          [
+            "path",
+            "pat"
+          ]
+        ],
+        "why_it_matters_here": "Almost every big number at this counter starts with /θ/: three, thirty, thousand. 'Tree tousand' is the single most common reason a teller counts out the wrong pile of cash and has to start again — or hands you 3,000 when you asked for 13,000. 'Thirty' heard as 'dirty' also kills the rate question ('thirty-three point five')."
+      }
+    ]
+  },
+  "vocabulary": [
+    {
+      "en": "currency exchange / money changer",
+      "th": "ร้านแลกเงิน ที่ออสฯ มักเขียนว่า Currency Exchange หรือ Money Exchange",
+      "group": "place & people",
+      "audio_needed": true,
+      "audio": "/static/audio/global/currency-exchange-money-changer.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "counter",
+      "th": "เคาน์เตอร์ ตรงที่เราไปยืนคุยกับพนักงาน",
+      "group": "place & people",
+      "audio_needed": true,
+      "audio": "/static/audio/global/counter.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "teller / cashier",
+      "th": "พนักงานที่นั่งรับเงิน-จ่ายเงินหลังเคาน์เตอร์",
+      "group": "place & people",
+      "audio_needed": true,
+      "audio": "/static/audio/global/teller-cashier.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "rate (exchange rate)",
+      "th": "เรตแลกเงิน ว่า 1 ดอลลาร์ได้กี่บาท แต่ละร้านไม่เท่ากัน เทียบก่อนแลกได้",
+      "group": "money words",
+      "audio_needed": true,
+      "audio": "/static/audio/global/rate-exchange-rate.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "commission / fee",
+      "th": "ค่าธรรมเนียมที่ร้านหักไป บางร้านบอกว่า no commission แต่ไปบวกซ่อนในเรตแทน ดูยอดที่ได้จริงดีกว่า",
+      "group": "money words",
+      "audio_needed": true,
+      "audio": "/static/audio/global/commission-fee.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "cash",
+      "th": "เงินสด",
+      "group": "money words",
+      "audio_needed": true,
+      "audio": "/static/audio/global/cash.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "notes / bills",
+      "th": "แบงก์ ที่ออสฯ ใช้คำว่า notes ส่วน bills เป็นคำอเมริกัน เขาเข้าใจแต่ไม่ค่อยพูด",
+      "group": "money words",
+      "audio_needed": true,
+      "audio": "/static/audio/global/notes-bills.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "coins",
+      "th": "เหรียญ",
+      "group": "money words",
+      "audio_needed": true,
+      "audio": "/static/audio/global/coins.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "small notes",
+      "th": "แบงก์ย่อย เช่น แบงก์ 5 แบงก์ 10 บอกเขาได้ว่าอยากได้ย่อยๆ จะใช้ง่ายกว่า",
+      "group": "money words",
+      "audio_needed": true,
+      "audio": "/static/audio/global/small-notes.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "change (the money back)",
+      "th": "เงินทอน",
+      "group": "money words",
+      "audio_needed": true,
+      "audio": "/static/audio/global/change-the-money-back.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "receipt",
+      "th": "ใบเสร็จ ควรขอเก็บไว้ทุกครั้ง เผื่อยอดผิดจะได้ไปเคลม",
+      "group": "money words",
+      "audio_needed": true,
+      "audio": "/static/audio/global/receipt.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "passport",
+      "th": "พาสปอร์ต ที่ออสฯ แลกเงินต้องแสดงบัตรประชาชนหรือพาสปอร์ตเกือบทุกที่",
+      "group": "documents",
+      "audio_needed": true,
+      "audio": "/static/audio/global/passport.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "sign here",
+      "th": "\"เซ็นตรงนี้นะ\" เขาจะชี้จุดให้เซ็น",
+      "group": "documents",
+      "audio_needed": true,
+      "audio": "/static/audio/global/sign-here.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "baht",
+      "th": "บาท",
+      "group": "currencies",
+      "audio_needed": true,
+      "audio": "/static/audio/global/baht.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "dollars",
+      "th": "ดอลลาร์",
+      "group": "currencies",
+      "audio_needed": true,
+      "audio": "/static/audio/global/dollars.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "euros",
+      "th": "ยูโร",
+      "group": "currencies",
+      "audio_needed": true,
+      "audio": "/static/audio/global/euros.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "point (33.50 = thirty-three point five zero)",
+      "th": "จุด ใช้ตอนอ่านทศนิยม 33.50 อ่านว่า thirty-three point five zero ไม่ต้องพูดคำว่า dollar ตรงกลาง",
+      "group": "numbers & rates",
+      "audio_needed": true,
+      "audio": "/static/audio/global/point-33-50-thirty-three-point-five-zero.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "thousand",
+      "th": "พัน",
+      "group": "numbers & rates",
+      "audio_needed": true,
+      "audio": "/static/audio/global/thousand.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "hundred",
+      "th": "ร้อย",
+      "group": "numbers & rates",
+      "audio_needed": true,
+      "audio": "/static/audio/global/hundred.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "in total / altogether",
+      "th": "รวมทั้งหมด ถามว่า How much in total? คือ ทั้งหมดเท่าไหร่",
+      "group": "numbers & rates",
+      "audio_needed": true,
+      "audio": "/static/audio/global/in-total-altogether.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "torn note",
+      "th": "แบงก์ขาด ร้านมักไม่รับ หรือรับแต่กดเรตลง เช็กแบงก์ก่อนเอาไปแลก",
+      "group": "problems",
+      "audio_needed": true,
+      "audio": "/static/audio/global/torn-note.mp3",
+      "th_status": "draft_unverified"
+    },
+    {
+      "en": "It's short / it's not enough",
+      "th": "เงินขาด ไม่ครบ ถ้านับแล้วได้ไม่ครบ พูดได้เลยว่า Sorry, I think it's short",
+      "group": "problems",
+      "audio_needed": true,
+      "audio": "/static/audio/global/it-s-short-it-s-not-enough.mp3",
+      "th_status": "draft_unverified"
+    }
+  ],
+  "model_dialogues": [
+    {
+      "cefr": "A2",
+      "label": "A2 — A straightforward exchange at the counter",
+      "lines": [
+        {
+          "speaker": "Learner (customer)",
+          "text": "Hi. I'd like to change some money, please.",
+          "audio": "/static/audio/global/hi-i-d-like-to-change-some-money-please.mp3",
+          "th": "สวัสดีครับ ขอแลกเงินหน่อยครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Teller",
+          "text": "Sure. Which currency?",
+          "audio": "/static/audio/global/sure-which-currency.mp3",
+          "th": "ได้ค่ะ จะแลกสกุลไหนคะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner (customer)",
+          "text": "US dollars to baht. What's the rate today?",
+          "audio": "/static/audio/global/us-dollars-to-baht-what-s-the-rate-today.mp3",
+          "th": "ดอลลาร์สหรัฐเป็นบาทครับ วันนี้เรตเท่าไหร่",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Teller",
+          "text": "Thirty-three point five zero for hundred-dollar notes.",
+          "audio": "/static/audio/global/thirty-three-point-five-zero-for-hundred-dollar-notes.mp3",
+          "th": "แบงก์ร้อย เรต 33.50 ค่ะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner (customer)",
+          "text": "Okay. Three hundred dollars, please.",
+          "audio": "/static/audio/global/okay-three-hundred-dollars-please.mp3",
+          "th": "โอเค ขอแลก 300 ดอลลาร์ครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Teller",
+          "text": "Can I see your passport?",
+          "audio": "/static/audio/global/can-i-see-your-passport.mp3",
+          "th": "ขอดูพาสปอร์ตหน่อยค่ะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner (customer)",
+          "text": "Here you go. Can I have small notes?",
+          "audio": "/static/audio/global/here-you-go-can-i-have-small-notes.mp3",
+          "th": "นี่ครับ ขอเป็นแบงก์ย่อยได้ไหมครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Teller",
+          "text": "No problem. That's ten thousand and fifty baht. Please count it.",
+          "audio": "/static/audio/global/no-problem-that-s-ten-thousand-and-fifty-baht-please-count-i.mp3",
+          "th": "ได้ค่ะ ทั้งหมด 10,050 บาท นับดูก่อนนะคะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner (customer)",
+          "text": "Ten thousand and fifty. Thanks.",
+          "audio": "/static/audio/global/ten-thousand-and-fifty-thanks.mp3",
+          "th": "หมื่นห้าสิบ ขอบคุณครับ",
+          "th_status": "draft_unverified"
+        }
+      ],
+      "shadow_focus_lines": [
+        {
+          "text": "What's the rate today?",
+          "targets": [
+            "th"
+          ],
+          "audio": "/static/audio/global/what-s-the-rate-today.mp3"
+        },
+        {
+          "text": "Three hundred dollars, please.",
+          "targets": [
+            "th",
+            "numbers"
+          ],
+          "audio": "/static/audio/global/three-hundred-dollars-please.mp3"
+        },
+        {
+          "text": "Thirty-three point five zero",
+          "targets": [
+            "th",
+            "numbers"
+          ],
+          "audio": "/static/audio/global/thirty-three-point-five-zero.mp3"
+        },
+        {
+          "text": "Ten thousand and fifty baht",
+          "targets": [
+            "th",
+            "numbers"
+          ],
+          "audio": "/static/audio/global/ten-thousand-and-fifty-baht.mp3"
+        }
+      ]
+    },
+    {
+      "cefr": "B1",
+      "label": "B1 — Same counter, but there's a fee, a torn note, and a number you have to check",
+      "lines": [
+        {
+          "speaker": "Teller",
+          "text": "Morning. What can I do for you?",
+          "audio": "/static/audio/global/morning-what-can-i-do-for-you.mp3",
+          "th": "สวัสดีตอนเช้าค่ะ ให้ช่วยอะไรดีคะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner (customer)",
+          "text": "I'd like to change euros to baht.",
+          "audio": "/static/audio/global/i-d-like-to-change-euros-to-baht.mp3",
+          "th": "อยากแลกยูโรเป็นบาทครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Teller",
+          "text": "How much are you changing today?",
+          "audio": "/static/audio/global/how-much-are-you-changing-today.mp3",
+          "th": "วันนี้จะแลกเท่าไหร่คะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner (customer)",
+          "text": "Five hundred euros.",
+          "audio": "/static/audio/global/five-hundred-euros.mp3",
+          "th": "500 ยูโรครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Teller",
+          "text": "Right. The rate is thirty-eight point two, and there's a two hundred baht fee.",
+          "audio": "/static/audio/global/right-the-rate-is-thirty-eight-point-two-and-there-s-a-two-h.mp3",
+          "th": "ค่ะ เรต 38.2 แล้วมีค่าธรรมเนียม 200 บาทนะคะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner (customer)",
+          "text": "Sorry, a fee? I thought it was free.",
+          "audio": "/static/audio/global/sorry-a-fee-i-thought-it-was-free.mp3",
+          "th": "เอ๊ะ มีค่าธรรมเนียมด้วยเหรอครับ นึกว่าฟรี",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Teller",
+          "text": "It's free over a thousand euros. Under that, we charge two hundred baht.",
+          "audio": "/static/audio/global/it-s-free-over-a-thousand-euros-under-that-we-charge-two-hun.mp3",
+          "th": "ถ้าเกิน 1,000 ยูโรถึงจะฟรีค่ะ ต่ำกว่านั้นคิด 200 บาท",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner (customer)",
+          "text": "Okay, I understand.",
+          "audio": "/static/audio/global/okay-i-understand.mp3",
+          "th": "อ๋อ เข้าใจแล้วครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Teller",
+          "text": "One more thing — this fifty-euro note is torn. I can't take it, sorry.",
+          "audio": "/static/audio/global/one-more-thing-this-fifty-euro-note-is-torn-i-can-t-take-it-.mp3",
+          "th": "อีกอย่างนะคะ แบงก์ 50 ยูโรใบนี้ขาด รับไม่ได้ค่ะ ขอโทษด้วยนะคะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner (customer)",
+          "text": "Oh. Can I use this one instead?",
+          "audio": "/static/audio/global/oh-can-i-use-this-one-instead.mp3",
+          "th": "อ้าว งั้นใช้ใบนี้แทนได้ไหมครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Teller",
+          "text": "That's fine. So four hundred and fifty euros.",
+          "audio": "/static/audio/global/that-s-fine-so-four-hundred-and-fifty-euros.mp3",
+          "th": "ใบนี้ได้ค่ะ งั้นเป็น 450 ยูโรนะคะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner (customer)",
+          "text": "How much is that in baht?",
+          "audio": "/static/audio/global/how-much-is-that-in-baht.mp3",
+          "th": "คิดเป็นเงินบาทเท่าไหร่ครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Teller",
+          "text": "Seventeen thousand one hundred and ninety, minus the fee — sixteen thousand nine hundred and ninety.",
+          "audio": "/static/audio/global/seventeen-thousand-one-hundred-and-ninety-minus-the-fee-sixt.mp3",
+          "th": "17,190 หักค่าธรรมเนียมแล้วเหลือ 16,990 ค่ะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner (customer)",
+          "text": "Sorry, could you say that again?",
+          "audio": "/static/audio/global/sorry-could-you-say-that-again.mp3",
+          "th": "ขอโทษครับ พูดอีกทีได้ไหมครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Teller",
+          "text": "Sixteen thousand, nine hundred and ninety baht.",
+          "audio": "/static/audio/global/sixteen-thousand-nine-hundred-and-ninety-baht.mp3",
+          "th": "หนึ่งหมื่นหกพันเก้าร้อยเก้าสิบบาทค่ะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner (customer)",
+          "text": "Sixteen thousand nine hundred and ninety. Okay.",
+          "audio": "/static/audio/global/sixteen-thousand-nine-hundred-and-ninety-okay.mp3",
+          "th": "หมื่นหกพันเก้าร้อยเก้าสิบ โอเคครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Teller",
+          "text": "How would you like it?",
+          "audio": "/static/audio/global/how-would-you-like-it.mp3",
+          "th": "รับเป็นแบงก์แบบไหนดีคะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner (customer)",
+          "text": "Small notes, hundreds please.",
+          "audio": "/static/audio/global/small-notes-hundreds-please.mp3",
+          "th": "ขอแบงก์ย่อย แบงก์ร้อยครับ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Teller",
+          "text": "Here you are. Please count it, then sign here. That's your receipt.",
+          "audio": "/static/audio/global/here-you-are-please-count-it-then-sign-here-that-s-your-rece.mp3",
+          "th": "นี่ค่ะ นับดูก่อนนะคะ แล้วเซ็นตรงนี้ นี่ใบเสร็จค่ะ",
+          "th_status": "draft_unverified"
+        },
+        {
+          "speaker": "Learner (customer)",
+          "text": "Thanks a lot.",
+          "audio": "/static/audio/global/thanks-a-lot.mp3",
+          "th": "ขอบคุณมากครับ",
+          "th_status": "draft_unverified"
+        }
+      ],
+      "shadow_focus_lines": [
+        {
+          "text": "I thought it was free.",
+          "targets": [
+            "th"
+          ],
+          "audio": "/static/audio/global/i-thought-it-was-free.mp3"
+        },
+        {
+          "text": "Thirty-eight point two",
+          "targets": [
+            "th",
+            "numbers"
+          ],
+          "audio": "/static/audio/global/thirty-eight-point-two.mp3"
+        },
+        {
+          "text": "Sixteen thousand nine hundred",
+          "targets": [
+            "numbers",
+            "th"
+          ],
+          "audio": "/static/audio/global/sixteen-thousand-nine-hundred.mp3"
+        },
+        {
+          "text": "Small notes, hundreds please",
+          "targets": [
+            "numbers"
+          ],
+          "audio": "/static/audio/global/small-notes-hundreds-please.mp3"
+        }
+      ]
+    }
+  ],
+  "chunk_drills": [
+    {
+      "label": "Asking the rate",
+      "pattern": "What's the rate for ___ (today)?",
+      "examples": [
+        "What's the rate for dollars today?",
+        "What's the rate for euros?",
+        "What's the rate for hundred-dollar notes?",
+        "Is the rate the same for small notes?"
+      ],
+      "spiralled_grammar": "wh-question with 'what's' + noun; recycled from 'What's the price?' in the shopping unit"
+    },
+    {
+      "label": "Stating the amount and direction",
+      "pattern": "I'd like to change ___ (currency) into ___ (currency).",
+      "examples": [
+        "I'd like to change three hundred dollars into baht.",
+        "I'd like to change some euros, please.",
+        "I'd like to change thirteen thousand baht into dollars.",
+        "Can I change fifty dollars?"
+      ],
+      "spiralled_grammar": "'I'd like to' + verb for polite requests; number + currency word order"
+    },
+    {
+      "label": "Checking the number back (safety habit)",
+      "pattern": "So that's ___, right?",
+      "examples": [
+        "So that's sixteen thousand nine hundred, right?",
+        "So that's fifteen, not fifty?",
+        "Sixteen thousand nine hundred and ninety. Is that correct?",
+        "Sorry, thirteen or thirty?"
+      ],
+      "spiralled_grammar": "tag-style confirmation with 'right?'; contrastive stress on the -teen/-ty pair"
+    },
+    {
+      "label": "Asking about fees",
+      "pattern": "Is there a ___? / How much is the ___?",
+      "examples": [
+        "Is there a fee?",
+        "Is there any commission?",
+        "How much is the fee?",
+        "Is the fee included?"
+      ],
+      "spiralled_grammar": "'there is' questions; recycled 'How much…?' from prices"
+    },
+    {
+      "label": "Asking for the denominations you need",
+      "pattern": "Could I have ___, please?",
+      "examples": [
+        "Could I have small notes, please?",
+        "Could I have some hundreds?",
+        "Could I have three thousand in small notes?",
+        "No coins, please."
+      ],
+      "spiralled_grammar": "'Could I have…?' polite request, recycled from ordering food"
+    },
+    {
+      "label": "Repair and clarification",
+      "pattern": "Sorry, could you ___ (again / more slowly / write it down)?",
+      "examples": [
+        "Sorry, could you say that again?",
+        "Could you say it more slowly, please?",
+        "Could you write the number down?",
+        "Sorry, I didn't catch the rate."
+      ],
+      "spiralled_grammar": "'could you' requests; spiralled from the phone-call and clinic units"
+    }
+  ],
+  "listening_items": [
+    {
+      "audio_text": "Today's rate is thirty-three point five zero. For fifty-dollar notes it's thirty-two point eight.",
+      "channel": "teller, face-to-face at the counter",
+      "question": "What is the rate for fifty-dollar notes?",
+      "answer": "32.80",
+      "distractor_focus": "thirty-three vs thirty-two; 'point five zero' vs 'point eight'"
+    },
+    {
+      "audio_text": "That comes to fifteen thousand four hundred baht, minus a two hundred baht fee.",
+      "channel": "teller, face-to-face at the counter",
+      "question": "How much does the customer receive in the end?",
+      "answer": "15,200 baht",
+      "distractor_focus": "fifteen vs fifty; hearing 'minus' and subtracting the fee"
+    },
+    {
+      "audio_text": "Sorry, we can't take that note — it's torn. Do you have another one?",
+      "channel": "teller, face-to-face at the counter",
+      "question": "Why can't the teller accept the note?",
+      "answer": "It is torn / damaged.",
+      "distractor_focus": "'torn' vs 'ten'; assuming a fee problem instead of a note problem"
+    },
+    {
+      "audio_text": "The counter closes at five thirty, but the machine outside is open twenty-four hours.",
+      "channel": "recorded announcement / staff notice at the door",
+      "question": "What time does the counter close?",
+      "answer": "5:30 p.m.",
+      "distractor_focus": "five thirty vs five thirteen; 'twenty-four' as a distractor number"
+    },
+    {
+      "audio_text": "How would you like it — thirteen hundreds, or three thousands and the rest in hundreds?",
+      "channel": "teller, face-to-face at the counter",
+      "question": "What is the teller asking about?",
+      "answer": "Which size of notes the customer wants.",
+      "distractor_focus": "thirteen vs thirty; 'three thousands' vs 'three thousand'"
+    },
+    {
+      "audio_text": "There's no commission on amounts over a thousand euros.",
+      "channel": "teller, face-to-face at the counter",
+      "question": "When is there no commission?",
+      "answer": "When you change more than 1,000 euros.",
+      "distractor_focus": "'no commission' vs 'low commission'; over vs under"
+    }
+  ],
+  "guided_roleplay": {
+    "learner_role": "A traveller changing money at an exchange counter, with on-screen frames and a hint button.",
+    "flow": [
+      "Step 1 — Open: greet and say what you want ('I'd like to change some money, please.')",
+      "Step 2 — Ask the rate ('What's the rate for dollars today?') and listen for the decimal.",
+      "Step 3 — Ask about the fee ('Is there a fee?') before you agree.",
+      "Step 4 — State the amount and hand over your passport ('Three hundred dollars, please.').",
+      "Step 5 — Ask for the notes you want ('Could I have small notes, please?').",
+      "Step 6 — Repeat the total back to check it ('So that's ten thousand and fifty, right?').",
+      "Step 7 — Count the cash, ask for the receipt, and close ('Thanks a lot.')."
+    ],
+    "sentence_frames": [
+      "I'd like to change ___ into ___, please.",
+      "What's the rate for ___ today?",
+      "Is there a fee?",
+      "Could I have small notes, please?",
+      "So that's ___, right?",
+      "Sorry, could you say that again?",
+      "Could you write the number down?",
+      "Can I have the receipt, please?"
+    ],
+    "hints_available": true
+  },
+  "free_roleplay": {
+    "ai_persona": "A busy but friendly exchange-counter teller. Speaks fast, quotes rates as decimals, repeats totals only once unless asked, and expects the customer to count the cash at the counter.",
+    "a2_behavior": "Sticks to the standard flow: which currency, how much, passport, rate, total, denominations, receipt. Says numbers clearly and repeats them on request.",
+    "b1_curveballs": [
+      "Quotes a lower rate for small notes than for hundred-dollar notes and asks which the customer has.",
+      "Adds a commission fee the learner didn't expect and explains the threshold ('free over a thousand').",
+      "Refuses one banknote because it's torn or marked, and asks for another.",
+      "Hands over a total that is short by one note, then asks the learner to count it — the learner must say 'Sorry, it's short — I count fifteen thousand, not sixteen.'",
+      "Says the total once, quickly, with a -teen/-ty number ('nineteen thousand ninety') and moves on unless the learner asks for a repeat.",
+      "Says the machine can't do small notes today and offers coins or larger notes instead."
+    ],
+    "roleplay_rubric": [
+      {
+        "criterion": "Completed the transaction: stated currency, amount, gave ID, received cash and receipt.",
+        "type": "required"
+      },
+      {
+        "criterion": "Asked the rate AND asked about a fee before agreeing to the exchange.",
+        "type": "required"
+      },
+      {
+        "criterion": "Repeated the total back to the teller to confirm it, or asked for a repeat when unsure.",
+        "type": "required"
+      },
+      {
+        "criterion": "Asked for the denominations needed ('small notes', 'hundreds', 'no coins').",
+        "type": "required"
+      },
+      {
+        "criterion": "Stayed neutral-polite: used 'please' and 'sorry', no bare commands like 'Give me small money'.",
+        "type": "required"
+      },
+      {
+        "criterion": "Pronunciation: 'three / thirty / thousand' clear (th), and -teen vs -ty distinguishable in the totals.",
+        "type": "pronunciation"
+      },
+      {
+        "criterion": "Handled a curveball (fee, torn note, short count, or a fast number) without abandoning the transaction.",
+        "type": "stretch_b1"
+      }
+    ]
+  },
+  "register_culture_note": {
+    "en": "Exchange counters run on short, flat, transactional English. Politeness comes from 'please', 'sorry' and 'could', not from long sentences or titles. You do not need to say 'sir/madam' — it can sound oddly formal. Two questions are completely normal and expected everywhere: 'What's the rate?' and 'Is there a fee?'. Asking them is not rude and not distrustful; a teller who is annoyed by them is the exception. Rates at a counter are fixed — you can compare booths, but you don't bargain.",
+    "th": null,
+    "do_dont": [
+      {
+        "avoid": "Change money.",
+        "prefer": "I'd like to change some money, please."
+      },
+      {
+        "avoid": "Give me small money.",
+        "prefer": "Could I have small notes, please?"
+      },
+      {
+        "avoid": "How much baht?",
+        "prefer": "How much is that in baht?"
+      },
+      {
+        "avoid": "Nodding and saying 'yes' when you didn't catch the total.",
+        "prefer": "Sorry, could you say that again?"
+      },
+      {
+        "avoid": "Tree tousand baht.",
+        "prefer": "Three thousand baht. (tongue between the teeth on 'three' and 'thousand')"
+      },
+      {
+        "avoid": "Saying 'fifty' when you mean 'fifteen'.",
+        "prefer": "Fif-TEEN — stress the second part and finish the -n."
+      },
+      {
+        "avoid": "Discount for me?",
+        "prefer": "Is the rate better for larger amounts?"
+      }
+    ],
+    "thai_cultural_note": "Many Thai learners take the cash, say thank you and step away, then count it — because querying an amount at the counter can feel like accusing the staff. At an exchange counter the opposite is true: tellers usually ask you to count the money in front of them, and once you leave the counter almost no booth will fix a short count. Counting the notes and saying 'Sorry, I count fifteen thousand, not sixteen' is standard, expected behaviour, and it protects you rather than embarrassing anyone."
+  },
+  "can_do_checkpoints": [
+    {
+      "cefr": "A2",
+      "statement": "I can say which currency I want to change and how much."
+    },
+    {
+      "cefr": "A2",
+      "statement": "I can ask for today's rate and ask whether there is a fee."
+    },
+    {
+      "cefr": "A2",
+      "statement": "I can ask for the kind of notes I want and ask for a receipt."
+    },
+    {
+      "cefr": "B1",
+      "statement": "I can repeat a total back to check it and ask the teller to repeat or write down a number I didn't catch."
+    },
+    {
+      "cefr": "B1",
+      "statement": "I can deal with a problem at the counter — an unexpected fee, a refused note, or a short count — and finish the transaction."
+    },
+    {
+      "cefr": "Sound",
+      "statement": "My 'three / thirty / thousand' is heard as th, not t or d, and my -teen numbers are not mistaken for -ty."
+    }
+  ],
+  "gamification": {
+    "xp_per_substep": true,
+    "unlocks": [
+      "Rate Reader — correctly hear five decimal rates in a row",
+      "Count Check — spot the short count in the B1 roleplay",
+      "No Surprises — ask about the fee before agreeing, three sessions running",
+      "Small Notes Pro — successfully request denominations without a hint"
+    ],
+    "sound_meters": [
+      {
+        "sound": "numbers",
+        "display": "-teen vs -ty accuracy meter across all totals spoken in the unit"
+      },
+      {
+        "sound": "th",
+        "display": "three / thirty / thousand minimal-pair meter (pass = teller-side word recognition, not a raw score)"
+      }
+    ]
+  },
+  "_review_status": {
+    "thai_strings": "DRAFT - machine-generated, tagged th_status=draft_unverified. A native Thai speaker must review every string and set th_status='reviewed'.",
+    "facts": "UNVERIFIED - generated content, needs a local fact-check before shipping",
+    "generated_by": "claude-opus-5"
+  }
+}

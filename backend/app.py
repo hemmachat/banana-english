@@ -61,14 +61,18 @@ def list_scenarios():
     """Core content plus the user's locale pack; the pack wins on a shared scenario_id."""
     locale = request.args.get("locale", "en-AU")
     rows = db().execute("""
-        select distinct on (scenario_id)
-               scenario_id, locale,
-               data->>'title_en' as title_en, data->>'title_th' as title_th,
-               (data->>'tier')::int as tier, data->'cefr_range' as cefr_range
-          from units
-         where locale in ('global', %s)
-         order by scenario_id, (locale = 'global')   -- false sorts first, so the pack wins
-    """, (locale,)).fetchall()
+        select distinct on (u.scenario_id)
+               u.scenario_id, u.locale,
+               u.data->>'title_en' as title_en, u.data->>'title_th' as title_th,
+               (u.data->>'tier')::int as tier, u.data->'cefr_range' as cefr_range
+          from units u
+         where u.locale in ('global', %s)
+           -- a locale pack can drop core scenarios that don't exist in that country
+           and not exists (select 1 from locale_drops d
+                            where d.locale = %s and d.scenario_id = u.scenario_id
+                              and u.locale = 'global')
+         order by u.scenario_id, (u.locale = 'global')   -- false sorts first, so the pack wins
+    """, (locale, locale)).fetchall()
     return jsonify(rows)
 
 
@@ -76,10 +80,13 @@ def list_scenarios():
 def get_scenario(scenario_id):
     locale = request.args.get("locale", "en-AU")
     row = db().execute("""
-        select data from units
-         where scenario_id = %s and locale in ('global', %s)
-         order by (locale = 'global') limit 1
-    """, (scenario_id, locale)).fetchone()
+        select u.data from units u
+         where u.scenario_id = %s and u.locale in ('global', %s)
+           and not exists (select 1 from locale_drops d
+                            where d.locale = %s and d.scenario_id = u.scenario_id
+                              and u.locale = 'global')
+         order by (u.locale = 'global') limit 1
+    """, (scenario_id, locale, locale)).fetchone()
     if not row:
         return {"error": "not found"}, 404
     return jsonify(row["data"])
