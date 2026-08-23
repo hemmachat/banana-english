@@ -139,7 +139,7 @@
       "group": "opening_and_closing",
       "audio_needed": true,
       "audio": "/static/audio/global/excuse-me.mp3",
-      "th_status": "draft_unverified"
+      "th_status": "reviewed"
     },
     {
       "en": "thanks a lot",
@@ -147,7 +147,7 @@
       "group": "opening_and_closing",
       "audio_needed": true,
       "audio": "/static/audio/global/thanks-a-lot.mp3",
-      "th_status": "draft_unverified"
+      "th_status": "reviewed"
     },
     {
       "en": "no worries",
@@ -155,7 +155,7 @@
       "group": "opening_and_closing",
       "audio_needed": true,
       "audio": "/static/audio/global/no-worries.mp3",
-      "th_status": "draft_unverified"
+      "th_status": "reviewed"
     },
     {
       "en": "go straight",
@@ -163,7 +163,7 @@
       "group": "directions",
       "audio_needed": true,
       "audio": "/static/audio/global/go-straight.mp3",
-      "th_status": "draft_unverified"
+      "th_status": "reviewed"
     },
     {
       "en": "turn left",
@@ -171,7 +171,7 @@
       "group": "directions",
       "audio_needed": true,
       "audio": "/static/audio/global/turn-left.mp3",
-      "th_status": "draft_unverified"
+      "th_status": "reviewed"
     },
     {
       "en": "turn right",
@@ -179,7 +179,7 @@
       "group": "directions",
       "audio_needed": true,
       "audio": "/static/audio/global/turn-right.mp3",
-      "th_status": "draft_unverified"
+      "th_status": "reviewed"
     },
     {
       "en": "at the corner",
@@ -187,7 +187,7 @@
       "group": "directions",
       "audio_needed": true,
       "audio": "/static/audio/global/at-the-corner.mp3",
-      "th_status": "draft_unverified"
+      "th_status": "reviewed"
     },
     {
       "en": "the next street",
@@ -195,7 +195,7 @@
       "group": "directions",
       "audio_needed": true,
       "audio": "/static/audio/global/the-next-street.mp3",
-      "th_status": "draft_unverified"
+      "th_status": "reviewed"
     },
     {
       "en": "two blocks",
@@ -203,7 +203,7 @@
       "group": "directions",
       "audio_needed": true,
       "audio": "/static/audio/global/two-blocks.mp3",
-      "th_status": "draft_unverified"
+      "th_status": "reviewed"
     },
     {
       "en": "cross the road",
@@ -211,7 +211,7 @@
       "group": "directions",
       "audio_needed": true,
       "audio": "/static/audio/global/cross-the-road.mp3",
-      "th_status": "draft_unverified"
+      "th_status": "reviewed"
     },
     {
       "en": "the traffic lights",
@@ -219,7 +219,7 @@
       "group": "landmarks",
       "audio_needed": true,
       "audio": "/static/audio/global/the-traffic-lights.mp3",
-      "th_status": "draft_unverified"
+      "th_status": "reviewed"
     },
     {
       "en": "the 7-Eleven",
@@ -227,7 +227,7 @@
       "group": "landmarks",
       "audio_needed": true,
       "audio": "/static/audio/global/the-7-eleven.mp3",
-      "th_status": "draft_unverified"
+      "th_status": "reviewed"
     },
     {
       "en": "the market",
@@ -235,7 +235,7 @@
       "group": "landmarks",
       "audio_needed": true,
       "audio": "/static/audio/global/the-market.mp3",
-      "th_status": "draft_unverified"
+      "th_status": "reviewed"
     },
     {
       "en": "the bus stop",
@@ -243,7 +243,7 @@
       "group": "landmarks",
       "audio_needed": true,
       "audio": "/static/audio/global/the-bus-stop.mp3",
-      "th_status": "draft_unverified"
+      "th_status": "reviewed"
     },
     {
       "en": "the train station",
@@ -251,7 +251,7 @@
       "group": "landmarks",
       "audio_needed": true,
       "audio": "/static/audio/global/the-train-station.mp3",
-      "th_status": "draft_unverified"
+      "th_status": "reviewed"
     },
     {
       "en": "the pharmacy",
@@ -259,7 +259,7 @@
       "group": "landmarks",
       "audio_needed": true,
       "audio": "/static/audio/global/the-pharmacy.mp3",
-      "th_status": "draft_unverified"
+      "th_status": "reviewed"
     },
     {
       "en": "next to",
@@ -267,7 +267,7 @@
       "group": "position_words",
       "audio_needed": true,
       "audio": "/static/audio/global/next-to.mp3",
-      "th_status": "draft_unverified"
+      "th_status": "reviewed"
     },
     {
       "en": "opposite / across from",
@@ -275,7 +275,7 @@
       "group": "position_words",
       "audio_needed": true,
       "audio": "/static/audio/global/opposite-across-from.mp3",
-      "th_status": "draft_unverified"
+      "th_status": "reviewed"
     },
     {
       "en": "behind",
@@ -283,7 +283,7 @@
       "group": "position_words",
       "audio_needed": true,
       "audio": "/static/audio/global/behind.mp3",
-      "th_status": "draft_unverified"
+      "th_status": "reviewed"
     },
     {
       "en": "in front of",
@@ -291,7 +291,7 @@
       "group": "position_words",
       "audio_needed": true,
       "audio": "/static/audio/global/in-front-of.mp3",
-      "th_status": "draft_unverified"
+      "th_status": "reviewed"
     },
     {
       "en": "on your left",
@@ -299,7 +299,7 @@
       "group": "position_words",
       "audio_needed": true,
       "audio": "/static/audio/global/on-your-left.mp3",
-      "th_status": "draft_unverified"
+      "th_status": "reviewed"
     },
     {
       "en": "Is it far?",
@@ -307,7 +307,7 @@
       "group": "distance_and_time",
       "audio_needed": true,
       "audio": "/static/audio/global/is-it-far.mp3",
-      "th_status": "draft_unverified"
+      "th_status": "reviewed"
     },
     {
       "en": "about ten minutes",
@@ -315,7 +315,7 @@
       "group": "distance_and_time",
       "audio_needed": true,
       "audio": "/static/audio/global/about-ten-minutes.mp3",
-      "th_status": "draft_unverified"
+      "th_status": "reviewed"
     },
     {
       "en": "walking distance",
@@ -323,7 +323,7 @@
       "group": "distance_and_time",
       "audio_needed": true,
       "audio": "/static/audio/global/walking-distance.mp3",
-      "th_status": "draft_unverified"
+      "th_status": "reviewed"
     },
     {
       "en": "the road is closed",
@@ -331,7 +331,7 @@
       "group": "problems",
       "audio_needed": true,
       "audio": "/static/audio/global/the-road-is-closed.mp3",
-      "th_status": "draft_unverified"
+      "th_status": "reviewed"
     },
     {
       "en": "road works",
@@ -339,7 +339,7 @@
       "group": "problems",
       "audio_needed": true,
       "audio": "/static/audio/global/road-works.mp3",
-      "th_status": "draft_unverified"
+      "th_status": "reviewed"
     },
     {
       "en": "I'm lost",
@@ -347,7 +347,7 @@
       "group": "problems",
       "audio_needed": true,
       "audio": "/static/audio/global/i-m-lost.mp3",
-      "th_status": "draft_unverified"
+      "th_status": "reviewed"
     },
     {
       "en": "Sorry, could you say that again?",
@@ -355,7 +355,7 @@
       "group": "clarifying",
       "audio_needed": true,
       "audio": "/static/audio/global/sorry-could-you-say-that-again.mp3",
-      "th_status": "draft_unverified"
+      "th_status": "reviewed"
     },
     {
       "en": "Left or right?",
@@ -363,7 +363,7 @@
       "group": "clarifying",
       "audio_needed": true,
       "audio": "/static/audio/global/left-or-right.mp3",
-      "th_status": "draft_unverified"
+      "th_status": "reviewed"
     },
     {
       "en": "Could you show me on the map?",
@@ -371,7 +371,7 @@
       "group": "clarifying",
       "audio_needed": true,
       "audio": "/static/audio/global/could-you-show-me-on-the-map.mp3",
-      "th_status": "draft_unverified"
+      "th_status": "reviewed"
     }
   ],
   "model_dialogues": [
@@ -384,56 +384,56 @@
           "text": "Excuse me, is there a pharmacy near here?",
           "audio": "/static/audio/global/excuse-me-is-there-a-pharmacy-near-here.mp3",
           "th": "ขอโทษนะคะ แถวนี้มีร้านขายยาไหม",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         },
         {
           "speaker": "Passer-by",
           "text": "Yeah, there's one on Green Street.",
           "audio": "/static/audio/global/yeah-there-s-one-on-green-street.mp3",
           "th": "มีสิ อยู่ถนน Green Street",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         },
         {
           "speaker": "Learner",
           "text": "Sorry, how do I get there?",
           "audio": "/static/audio/global/sorry-how-do-i-get-there.mp3",
           "th": "ขอโทษนะ ไปยังไงเหรอ",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         },
         {
           "speaker": "Passer-by",
           "text": "Go straight, then turn left at the corner.",
           "audio": "/static/audio/global/go-straight-then-turn-left-at-the-corner.mp3",
           "th": "ตรงไปเลย แล้วพอถึงหัวมุมก็เลี้ยวซ้าย",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         },
         {
           "speaker": "Learner",
           "text": "Turn left at the corner. Is it far?",
           "audio": "/static/audio/global/turn-left-at-the-corner-is-it-far.mp3",
           "th": "เลี้ยวซ้ายตรงหัวมุม ไกลไหม",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         },
         {
           "speaker": "Passer-by",
           "text": "No, about five minutes. It's next to the 7-Eleven.",
           "audio": "/static/audio/global/no-about-five-minutes-it-s-next-to-the-7-eleven.mp3",
           "th": "ไม่ไกล ประมาณห้านาที อยู่ติดกับ 7-Eleven",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         },
         {
           "speaker": "Learner",
           "text": "Next to the 7-Eleven. Thanks a lot!",
           "audio": "/static/audio/global/next-to-the-7-eleven-thanks-a-lot.mp3",
           "th": "อยู่ข้าง ๆ 7-Eleven ขอบคุณมากเลย",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         },
         {
           "speaker": "Passer-by",
           "text": "No worries. Good luck.",
           "audio": "/static/audio/global/no-worries-good-luck.mp3",
           "th": "ไม่เป็นไร โชคดีนะ",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         }
       ],
       "shadow_focus_lines": [
@@ -480,126 +480,126 @@
           "text": "Excuse me, sorry — I'm looking for the train station.",
           "audio": "/static/audio/global/excuse-me-sorry-i-m-looking-for-the-train-station.mp3",
           "th": "ขอโทษนะคะ พอดีหาสถานีรถไฟอยู่",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         },
         {
           "speaker": "Local",
           "text": "The train station? That's a fair walk from here, mate.",
           "audio": "/static/audio/global/the-train-station-that-s-a-fair-walk-from-here-mate.mp3",
           "th": "สถานีรถไฟเหรอ เดินจากนี่ไกลอยู่นะ (mate = คำเรียกแบบเป็นกันเองของคนออสซี่)",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         },
         {
           "speaker": "Learner",
           "text": "That's okay. Which way?",
           "audio": "/static/audio/global/that-s-okay-which-way.mp3",
           "th": "ไม่เป็นไร ไปทางไหนเหรอ",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         },
         {
           "speaker": "Local",
           "text": "Normally you'd go straight down Rail Road and turn right at the end. But that street's closed today — road works.",
           "audio": "/static/audio/global/normally-you-d-go-straight-down-rail-road-and-turn-right-at-.mp3",
           "th": "ปกติก็ตรงไปตามถนน Rail Road แล้วเลี้ยวขวาตรงสุดถนน แต่วันนี้ถนนปิด กำลังซ่อมถนนอยู่",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         },
         {
           "speaker": "Learner",
           "text": "Sorry, the street is closed?",
           "audio": "/static/audio/global/sorry-the-street-is-closed.mp3",
           "th": "ขอโทษนะ ถนนปิดเหรอ",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         },
         {
           "speaker": "Local",
           "text": "Yeah, they're digging it up. You can't walk through.",
           "audio": "/static/audio/global/yeah-they-re-digging-it-up-you-can-t-walk-through.mp3",
           "th": "ใช่ เขาขุดถนนอยู่ เดินผ่านไม่ได้",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         },
         {
           "speaker": "Learner",
           "text": "So what should I do?",
           "audio": "/static/audio/global/so-what-should-i-do.mp3",
           "th": "แล้วต้องทำยังไงล่ะ",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         },
         {
           "speaker": "Local",
           "text": "Go left at the traffic lights, then take the third street on your right.",
           "audio": "/static/audio/global/go-left-at-the-traffic-lights-then-take-the-third-street-on-.mp3",
           "th": "เลี้ยวซ้ายตรงไฟแดง แล้วเข้าซอยที่สามทางขวามือ",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         },
         {
           "speaker": "Learner",
           "text": "The third street on the right. Then what?",
           "audio": "/static/audio/global/the-third-street-on-the-right-then-what.mp3",
           "th": "ถนนที่สามทางขวา แล้วยังไงต่อ",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         },
         {
           "speaker": "Local",
           "text": "Follow that street past the market. The station's behind the market, on the left.",
           "audio": "/static/audio/global/follow-that-street-past-the-market-the-station-s-behind-the-.mp3",
           "th": "เดินตามถนนนั้นไป ผ่านตลาด สถานีอยู่หลังตลาด ทางซ้ายมือ",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         },
         {
           "speaker": "Learner",
           "text": "Behind the market. Is it far?",
           "audio": "/static/audio/global/behind-the-market-is-it-far.mp3",
           "th": "อยู่หลังตลาด ไกลไหม",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         },
         {
           "speaker": "Local",
           "text": "Fifteen, twenty minutes walking. Or the number 8 bus goes straight there.",
           "audio": "/static/audio/global/fifteen-twenty-minutes-walking-or-the-number-8-bus-goes-stra.mp3",
           "th": "เดินสักสิบห้าถึงยี่สิบนาที หรือจะนั่งรถเมล์สาย 8 ก็ไปถึงเลย",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         },
         {
           "speaker": "Learner",
           "text": "Sorry — fifteen or fifty?",
           "audio": "/static/audio/global/sorry-fifteen-or-fifty.mp3",
           "th": "ขอโทษนะ สิบห้าหรือห้าสิบ (fifteen กับ fifty ฟังคล้ายกันมาก)",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         },
         {
           "speaker": "Local",
           "text": "Fifteen. One-five.",
           "audio": "/static/audio/global/fifteen-one-five.mp3",
           "th": "สิบห้า หนึ่ง-ห้า",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         },
         {
           "speaker": "Learner",
           "text": "Okay. Where's the bus stop?",
           "audio": "/static/audio/global/okay-where-s-the-bus-stop.mp3",
           "th": "โอเค แล้วป้ายรถเมล์อยู่ไหน",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         },
         {
           "speaker": "Local",
           "text": "Just across the road, in front of the 7-Eleven.",
           "audio": "/static/audio/global/just-across-the-road-in-front-of-the-7-eleven.mp3",
           "th": "อยู่ฝั่งตรงข้ามถนนนี่แหละ หน้า 7-Eleven",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         },
         {
           "speaker": "Learner",
           "text": "Across the road. Got it — thanks a lot!",
           "audio": "/static/audio/global/across-the-road-got-it-thanks-a-lot.mp3",
           "th": "ข้ามถนนไป เข้าใจแล้ว ขอบคุณมากเลย",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         },
         {
           "speaker": "Local",
           "text": "No worries. You'll be right.",
           "audio": "/static/audio/global/no-worries-you-ll-be-right.mp3",
           "th": "ไม่เป็นไร เดี๋ยวก็ถึงเอง (You'll be right = สำนวนออสซี่ แปลว่าไม่ต้องห่วง เอาอยู่)",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         }
       ],
       "shadow_focus_lines": [
@@ -900,7 +900,7 @@
     ]
   },
   "_review_status": {
-    "thai_strings": "DRAFT - machine-generated, tagged th_status=draft_unverified. A native Thai speaker must review every string and set th_status='reviewed'.",
+    "thai_strings": "REVIEWED by a native speaker",
     "facts": "UNVERIFIED - generated content, needs a local fact-check before shipping",
     "generated_by": "claude-opus-5"
   }

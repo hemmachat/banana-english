@@ -150,7 +150,7 @@
       "group": "people_places",
       "audio_needed": true,
       "audio": "/static/audio/en-AU/gp.mp3",
-      "th_status": "draft_unverified"
+      "th_status": "reviewed"
     },
     {
       "en": "reception",
@@ -158,7 +158,7 @@
       "group": "people_places",
       "audio_needed": true,
       "audio": "/static/audio/en-AU/reception.mp3",
-      "th_status": "draft_unverified"
+      "th_status": "reviewed"
     },
     {
       "en": "the clinic / the surgery",
@@ -166,7 +166,7 @@
       "group": "people_places",
       "audio_needed": true,
       "audio": "/static/audio/en-AU/the-clinic-the-surgery.mp3",
-      "th_status": "draft_unverified"
+      "th_status": "reviewed"
     },
     {
       "en": "the chemist",
@@ -174,7 +174,7 @@
       "group": "people_places",
       "audio_needed": true,
       "audio": "/static/audio/en-AU/the-chemist.mp3",
-      "th_status": "draft_unverified"
+      "th_status": "reviewed"
     },
     {
       "en": "pathology",
@@ -182,7 +182,7 @@
       "group": "people_places",
       "audio_needed": true,
       "audio": "/static/audio/en-AU/pathology.mp3",
-      "th_status": "draft_unverified"
+      "th_status": "reviewed"
     },
     {
       "en": "Medicare card",
@@ -190,7 +190,7 @@
       "group": "medicare",
       "audio_needed": true,
       "audio": "/static/audio/en-AU/medicare-card.mp3",
-      "th_status": "draft_unverified"
+      "th_status": "reviewed"
     },
     {
       "en": "bulk billed",
@@ -198,7 +198,7 @@
       "group": "medicare",
       "audio_needed": true,
       "audio": "/static/audio/en-AU/bulk-billed.mp3",
-      "th_status": "draft_unverified"
+      "th_status": "reviewed"
     },
     {
       "en": "gap fee / out-of-pocket",
@@ -206,7 +206,7 @@
       "group": "medicare",
       "audio_needed": true,
       "audio": "/static/audio/en-AU/gap-fee-out-of-pocket.mp3",
-      "th_status": "draft_unverified"
+      "th_status": "reviewed"
     },
     {
       "en": "referral",
@@ -214,7 +214,7 @@
       "group": "medicare",
       "audio_needed": true,
       "audio": "/static/audio/en-AU/referral.mp3",
-      "th_status": "draft_unverified"
+      "th_status": "reviewed"
     },
     {
       "en": "fever",
@@ -222,7 +222,7 @@
       "group": "symptoms",
       "audio_needed": true,
       "audio": "/static/audio/en-AU/fever.mp3",
-      "th_status": "draft_unverified"
+      "th_status": "reviewed"
     },
     {
       "en": "cough",
@@ -230,7 +230,7 @@
       "group": "symptoms",
       "audio_needed": true,
       "audio": "/static/audio/en-AU/cough.mp3",
-      "th_status": "draft_unverified"
+      "th_status": "reviewed"
     },
     {
       "en": "sore throat",
@@ -238,7 +238,7 @@
       "group": "symptoms",
       "audio_needed": true,
       "audio": "/static/audio/en-AU/sore-throat.mp3",
-      "th_status": "draft_unverified"
+      "th_status": "reviewed"
     },
     {
       "en": "rash",
@@ -246,7 +246,7 @@
       "group": "symptoms",
       "audio_needed": true,
       "audio": "/static/audio/en-AU/rash.mp3",
-      "th_status": "draft_unverified"
+      "th_status": "reviewed"
     },
     {
       "en": "run-down",
@@ -254,7 +254,7 @@
       "group": "symptoms",
       "audio_needed": true,
       "audio": "/static/audio/en-AU/run-down.mp3",
-      "th_status": "draft_unverified"
+      "th_status": "reviewed"
     },
     {
       "en": "script (prescription)",
@@ -262,7 +262,7 @@
       "group": "outcomes",
       "audio_needed": true,
       "audio": "/static/audio/en-AU/script-prescription.mp3",
-      "th_status": "draft_unverified"
+      "th_status": "reviewed"
     },
     {
       "en": "blood test",
@@ -270,7 +270,7 @@
       "group": "outcomes",
       "audio_needed": true,
       "audio": "/static/audio/en-AU/blood-test.mp3",
-      "th_status": "draft_unverified"
+      "th_status": "reviewed"
     },
     {
       "en": "follow-up",
@@ -278,7 +278,7 @@
       "group": "outcomes",
       "audio_needed": true,
       "audio": "/static/audio/en-AU/follow-up.mp3",
-      "th_status": "draft_unverified"
+      "th_status": "reviewed"
     }
   ],
   "model_dialogues": [
@@ -291,7 +291,7 @@
           "text": "Hi there! Have you got your Medicare card?",
           "audio": "/static/audio/en-AU/hi-there-have-you-got-your-medicare-card.mp3",
           "th": "สวัสดีค่ะ มีบัตร Medicare มาด้วยไหมคะ",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         },
         {
           "speaker": "patient",
@@ -304,21 +304,21 @@
           ],
           "ceiling_voices": 4,
           "th": "มีค่ะ นี่เลย แล้วที่นี่ bulk billed ใช่ไหมคะ (คือ Medicare จ่ายให้หมด เราไม่ต้องควักเงินเอง)",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         },
         {
           "speaker": "reception",
           "text": "It is, no charge today. Take a seat, the doctor won't be long.",
           "audio": "/static/audio/en-AU/it-is-no-charge-today-take-a-seat-the-doctor-won-t-be-long.mp3",
           "th": "ใช่ค่ะ วันนี้ไม่เสียสักบาท นั่งรอก่อนนะคะ เดี๋ยวหมอเรียก ไม่นาน",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         },
         {
           "speaker": "gp",
           "text": "G'day, what brings you in today?",
           "audio": "/static/audio/en-AU/g-day-what-brings-you-in-today.mp3",
           "th": "สวัสดีครับ วันนี้มาด้วยเรื่องอะไรครับ",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         },
         {
           "speaker": "patient",
@@ -331,14 +331,14 @@
           ],
           "ceiling_voices": 4,
           "th": "เจ็บคอแล้วก็มีไข้มาสามวันแล้วค่ะ",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         },
         {
           "speaker": "gp",
           "text": "Let's have a look. It's a throat infection. I'll write you a script - take it twice a day for five days.",
           "audio": "/static/audio/en-AU/let-s-have-a-look-it-s-a-throat-infection-i-ll-write-you-a-s.mp3",
           "th": "ขอดูหน่อยนะ… คออักเสบติดเชื้อ เดี๋ยวเขียน script ให้ (ใบสั่งยาไปซื้อที่ร้านยา) กินวันละ 2 ครั้ง 5 วัน",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         },
         {
           "speaker": "patient",
@@ -351,7 +351,7 @@
           ],
           "ceiling_voices": 4,
           "th": "ขอบคุณค่ะ แถวนี้ chemist (ร้านขายยา) ที่ใกล้สุดอยู่ตรงไหนคะ",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         }
       ],
       "shadow_focus_lines": [
@@ -421,7 +421,7 @@
           "text": "Morning! Have you been here before? I'll just need your Medicare card.",
           "audio": "/static/audio/en-AU/morning-have-you-been-here-before-i-ll-just-need-your-medica.mp3",
           "th": "อรุณสวัสดิ์ค่ะ เคยมาที่นี่ไหมคะ ขอบัตร Medicare หน่อยนะคะ",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         },
         {
           "speaker": "patient",
@@ -434,14 +434,14 @@
           ],
           "ceiling_voices": 4,
           "th": "นี่ค่ะ ขอโทษนะคะ ต้องจ่าย gap fee ไหม (ส่วนต่างที่เราต้องจ่ายเองเพิ่ม)",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         },
         {
           "speaker": "reception",
           "text": "There is, yeah — we don't bulk bill. It's forty dollars after the Medicare rebate.",
           "audio": "/static/audio/en-AU/there-is-yeah-we-don-t-bulk-bill-it-s-forty-dollars-after-th.mp3",
           "th": "มีค่ะ ที่นี่ไม่ได้ bulk bill หัก Medicare rebate (เงินที่ Medicare คืนให้) แล้ว ต้องจ่ายเพิ่มอีก 40 เหรียญ",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         },
         {
           "speaker": "patient",
@@ -454,21 +454,21 @@
           ],
           "ceiling_voices": 4,
           "th": "โอเคค่ะ จ่ายตอนนี้เลย หรือจ่ายทีหลัง",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         },
         {
           "speaker": "reception",
           "text": "After you see the doctor. Take a seat, she won't be long.",
           "audio": "/static/audio/en-AU/after-you-see-the-doctor-take-a-seat-she-won-t-be-long.mp3",
           "th": "จ่ายหลังเจอหมอค่ะ นั่งรอก่อนนะคะ เดี๋ยวคุณหมอเรียก ไม่นาน",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         },
         {
           "speaker": "gp",
           "text": "G'day, I'm Dr Ellis. What's been going on?",
           "audio": "/static/audio/en-AU/g-day-i-m-dr-ellis-what-s-been-going-on.mp3",
           "th": "สวัสดีครับ ผมหมอ Ellis เป็นอะไรมาครับ",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         },
         {
           "speaker": "patient",
@@ -481,14 +481,14 @@
           ],
           "ceiling_voices": 4,
           "th": "เจ็บคอมาประมาณอาทิตย์นึงแล้วค่ะ แล้วก็เพลียมาก ไม่มีแรงเลย",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         },
         {
           "speaker": "gp",
           "text": "A week's a fair while. Any fever with it, and is it hard to swallow?",
           "audio": "/static/audio/en-AU/a-week-s-a-fair-while-any-fever-with-it-and-is-it-hard-to-sw.mp3",
           "th": "อาทิตย์นึงก็นานอยู่นะ มีไข้ด้วยไหม แล้วกลืนลำบากรึเปล่า",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         },
         {
           "speaker": "patient",
@@ -501,14 +501,14 @@
           ],
           "ceiling_voices": 4,
           "th": "กลืนแล้วเจ็บค่ะ แล้วเสาร์อาทิตย์ที่ผ่านมารู้สึกเหมือนมีไข้ด้วย",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         },
         {
           "speaker": "gp",
           "text": "Right. Are you allergic to anything — penicillin, any medications?",
           "audio": "/static/audio/en-AU/right-are-you-allergic-to-anything-penicillin-any-medication.mp3",
           "th": "โอเค แล้วแพ้อะไรไหม เช่น penicillin หรือยาตัวอื่น",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         },
         {
           "speaker": "patient",
@@ -521,14 +521,14 @@
           ],
           "ceiling_voices": 4,
           "th": "แพ้ penicillin ค่ะ กินแล้วขึ้นผื่น",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         },
         {
           "speaker": "gp",
           "text": "Good to know, I'll avoid that. I'd like a blood test to rule a few things out, and I'll refer you to an ENT specialist if it doesn't settle.",
           "audio": "/static/audio/en-AU/good-to-know-i-ll-avoid-that-i-d-like-a-blood-test-to-rule-a.mp3",
           "th": "ดีที่บอก เดี๋ยวเลี่ยงให้ ผมอยากให้ไปเจาะเลือดตรวจก่อน จะได้ตัดโรคอื่นออก แล้วถ้ายังไม่ดีขึ้น เดี๋ยวเขียน refer ส่งไปหาหมอเฉพาะทาง ENT (หู คอ จมูก) ให้",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         },
         {
           "speaker": "patient",
@@ -541,14 +541,14 @@
           ],
           "ceiling_voices": 4,
           "th": "ขอโทษนะคะ ใบ referral นี่คืออะไรคะ ต้องมีถึงจะไปหาหมอเฉพาะทางได้เหรอ",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         },
         {
           "speaker": "gp",
           "text": "You do — without it Medicare won't cover the visit. I'll print it now, and it's valid for twelve months.",
           "audio": "/static/audio/en-AU/you-do-without-it-medicare-won-t-cover-the-visit-i-ll-print-.mp3",
           "th": "ต้องมีครับ ถ้าไม่มี Medicare จะไม่ช่วยจ่ายค่าตรวจให้ เดี๋ยวปริ้นให้เลย ใช้ได้ 12 เดือน",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         },
         {
           "speaker": "patient",
@@ -561,14 +561,14 @@
           ],
           "ceiling_voices": 4,
           "th": "แล้วเจาะเลือดต้องไปที่ไหนคะ",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         },
         {
           "speaker": "gp",
           "text": "Pathology's on the ground floor. Take the form down, no appointment needed. Results in a couple of days.",
           "audio": "/static/audio/en-AU/pathology-s-on-the-ground-floor-take-the-form-down-no-appoin.mp3",
           "th": "Pathology (แล็บตรวจเลือด) อยู่ชั้นล่าง ถือใบนี้ลงไปยื่นได้เลย ไม่ต้องนัด ผลออกประมาณสองสามวัน",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         },
         {
           "speaker": "patient",
@@ -581,7 +581,7 @@
           ],
           "ceiling_voices": 4,
           "th": "รบกวนเขียนให้หน่อยได้ไหมคะ",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         }
       ],
       "shadow_focus_lines": [
@@ -843,7 +843,7 @@
     ]
   },
   "_review_status": {
-    "thai_strings": "DRAFT - machine-generated, tagged th_status=draft_unverified. A native Thai speaker must review every string and set th_status='reviewed'.",
+    "thai_strings": "REVIEWED by a native speaker",
     "au_facts": "UNVERIFIED - author-level knowledge of Medicare/bulk billing/referrals; needs local fact-check before shipping"
   }
 }

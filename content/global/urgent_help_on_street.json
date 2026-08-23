@@ -132,7 +132,7 @@
       "group": "shout words",
       "audio_needed": true,
       "audio": "/static/audio/global/help.mp3",
-      "th_status": "draft_unverified"
+      "th_status": "reviewed"
     },
     {
       "en": "ambulance",
@@ -140,7 +140,7 @@
       "group": "services",
       "audio_needed": true,
       "audio": "/static/audio/global/ambulance.mp3",
-      "th_status": "draft_unverified"
+      "th_status": "reviewed"
     },
     {
       "en": "police",
@@ -148,7 +148,7 @@
       "group": "services",
       "audio_needed": true,
       "audio": "/static/audio/global/police.mp3",
-      "th_status": "draft_unverified"
+      "th_status": "reviewed"
     },
     {
       "en": "fire brigade",
@@ -156,7 +156,7 @@
       "group": "services",
       "audio_needed": true,
       "audio": "/static/audio/global/fire-brigade.mp3",
-      "th_status": "draft_unverified"
+      "th_status": "reviewed"
     },
     {
       "en": "emergency number",
@@ -164,7 +164,7 @@
       "group": "services",
       "audio_needed": true,
       "audio": "/static/audio/global/emergency-number.mp3",
-      "th_status": "draft_unverified"
+      "th_status": "reviewed"
     },
     {
       "en": "operator",
@@ -172,7 +172,7 @@
       "group": "services",
       "audio_needed": true,
       "audio": "/static/audio/global/operator.mp3",
-      "th_status": "draft_unverified"
+      "th_status": "reviewed"
     },
     {
       "en": "an accident",
@@ -180,7 +180,7 @@
       "group": "what happened",
       "audio_needed": true,
       "audio": "/static/audio/global/an-accident.mp3",
-      "th_status": "draft_unverified"
+      "th_status": "reviewed"
     },
     {
       "en": "a crash",
@@ -188,7 +188,7 @@
       "group": "what happened",
       "audio_needed": true,
       "audio": "/static/audio/global/a-crash.mp3",
-      "th_status": "draft_unverified"
+      "th_status": "reviewed"
     },
     {
       "en": "a fire",
@@ -196,7 +196,7 @@
       "group": "what happened",
       "audio_needed": true,
       "audio": "/static/audio/global/a-fire.mp3",
-      "th_status": "draft_unverified"
+      "th_status": "reviewed"
     },
     {
       "en": "He fell.",
@@ -204,7 +204,7 @@
       "group": "what happened",
       "audio_needed": true,
       "audio": "/static/audio/global/he-fell.mp3",
-      "th_status": "draft_unverified"
+      "th_status": "reviewed"
     },
     {
       "en": "Someone's hurt.",
@@ -212,7 +212,7 @@
       "group": "what happened",
       "audio_needed": true,
       "audio": "/static/audio/global/someone-s-hurt.mp3",
-      "th_status": "draft_unverified"
+      "th_status": "reviewed"
     },
     {
       "en": "bleeding",
@@ -220,7 +220,7 @@
       "group": "condition",
       "audio_needed": true,
       "audio": "/static/audio/global/bleeding.mp3",
-      "th_status": "draft_unverified"
+      "th_status": "reviewed"
     },
     {
       "en": "breathing",
@@ -228,7 +228,7 @@
       "group": "condition",
       "audio_needed": true,
       "audio": "/static/audio/global/breathing.mp3",
-      "th_status": "draft_unverified"
+      "th_status": "reviewed"
     },
     {
       "en": "awake / conscious",
@@ -236,7 +236,7 @@
       "group": "condition",
       "audio_needed": true,
       "audio": "/static/audio/global/awake-conscious.mp3",
-      "th_status": "draft_unverified"
+      "th_status": "reviewed"
     },
     {
       "en": "He can't move.",
@@ -244,7 +244,7 @@
       "group": "condition",
       "audio_needed": true,
       "audio": "/static/audio/global/he-can-t-move.mp3",
-      "th_status": "draft_unverified"
+      "th_status": "reviewed"
     },
     {
       "en": "on the street",
@@ -252,7 +252,7 @@
       "group": "location",
       "audio_needed": true,
       "audio": "/static/audio/global/on-the-street.mp3",
-      "th_status": "draft_unverified"
+      "th_status": "reviewed"
     },
     {
       "en": "near the bus stop",
@@ -260,7 +260,7 @@
       "group": "location",
       "audio_needed": true,
       "audio": "/static/audio/global/near-the-bus-stop.mp3",
-      "th_status": "draft_unverified"
+      "th_status": "reviewed"
     },
     {
       "en": "on the corner",
@@ -268,7 +268,7 @@
       "group": "location",
       "audio_needed": true,
       "audio": "/static/audio/global/on-the-corner.mp3",
-      "th_status": "draft_unverified"
+      "th_status": "reviewed"
     },
     {
       "en": "cross street",
@@ -276,7 +276,7 @@
       "group": "location",
       "audio_needed": true,
       "audio": "/static/audio/global/cross-street.mp3",
-      "th_status": "draft_unverified"
+      "th_status": "reviewed"
     },
     {
       "en": "Stay on the line.",
@@ -284,7 +284,7 @@
       "group": "operator instructions",
       "audio_needed": true,
       "audio": "/static/audio/global/stay-on-the-line.mp3",
-      "th_status": "draft_unverified"
+      "th_status": "reviewed"
     },
     {
       "en": "Don't move him.",
@@ -292,7 +292,7 @@
       "group": "operator instructions",
       "audio_needed": true,
       "audio": "/static/audio/global/don-t-move-him.mp3",
-      "th_status": "draft_unverified"
+      "th_status": "reviewed"
     },
     {
       "en": "Press hard.",
@@ -300,7 +300,7 @@
       "group": "operator instructions",
       "audio_needed": true,
       "audio": "/static/audio/global/press-hard.mp3",
-      "th_status": "draft_unverified"
+      "th_status": "reviewed"
     },
     {
       "en": "Hurry, please.",
@@ -308,7 +308,7 @@
       "group": "shout words",
       "audio_needed": true,
       "audio": "/static/audio/global/hurry-please.mp3",
-      "th_status": "draft_unverified"
+      "th_status": "reviewed"
     },
     {
       "en": "Sorry, could you repeat that?",
@@ -316,7 +316,7 @@
       "group": "clarification",
       "audio_needed": true,
       "audio": "/static/audio/global/sorry-could-you-repeat-that.mp3",
-      "th_status": "draft_unverified"
+      "th_status": "reviewed"
     }
   ],
   "model_dialogues": [
@@ -329,63 +329,63 @@
           "text": "Help! Please help!",
           "audio": "/static/audio/global/help-please-help.mp3",
           "th": "ช่วยด้วย! ช่วยหน่อย!",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         },
         {
           "speaker": "Passer-by",
           "text": "What's wrong? Are you okay?",
           "audio": "/static/audio/global/what-s-wrong-are-you-okay.mp3",
           "th": "เกิดอะไรขึ้น ไหวมั้ย",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         },
         {
           "speaker": "Learner (bystander)",
           "text": "A man fell. He's hurt.",
           "audio": "/static/audio/global/a-man-fell-he-s-hurt.mp3",
           "th": "มีผู้ชายล้ม เขาเจ็บ",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         },
         {
           "speaker": "Passer-by",
           "text": "Where is he?",
           "audio": "/static/audio/global/where-is-he.mp3",
           "th": "เขาอยู่ไหน",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         },
         {
           "speaker": "Learner (bystander)",
           "text": "Here, on the street. Call an ambulance!",
           "audio": "/static/audio/global/here-on-the-street-call-an-ambulance.mp3",
           "th": "ตรงนี้ บนถนน เรียกรถพยาบาลเร็ว!",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         },
         {
           "speaker": "Passer-by",
           "text": "Okay, I'm calling now. Is he breathing?",
           "audio": "/static/audio/global/okay-i-m-calling-now-is-he-breathing.mp3",
           "th": "ได้ กำลังโทรอยู่ เขาหายใจอยู่มั้ย",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         },
         {
           "speaker": "Learner (bystander)",
           "text": "Yes, he's breathing. His head is bleeding.",
           "audio": "/static/audio/global/yes-he-s-breathing-his-head-is-bleeding.mp3",
           "th": "หายใจอยู่ แต่หัวเลือดออก",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         },
         {
           "speaker": "Passer-by",
           "text": "Don't move him. Stay with him.",
           "audio": "/static/audio/global/don-t-move-him-stay-with-him.mp3",
           "th": "อย่าขยับเขานะ อยู่กับเขาไว้",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         },
         {
           "speaker": "Learner (bystander)",
           "text": "Okay. Please hurry.",
           "audio": "/static/audio/global/okay-please-hurry.mp3",
           "th": "ได้ รีบหน่อยนะ",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         }
       ],
       "shadow_focus_lines": [
@@ -432,126 +432,126 @@
           "text": "Emergency services. Do you need police, fire or ambulance?",
           "audio": "/static/audio/global/emergency-services-do-you-need-police-fire-or-ambulance.mp3",
           "th": "หน่วยฉุกเฉินค่ะ ต้องการตำรวจ รถดับเพลิง หรือรถพยาบาลคะ",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         },
         {
           "speaker": "Learner (caller)",
           "text": "Ambulance, please. There's been a crash.",
           "audio": "/static/audio/global/ambulance-please-there-s-been-a-crash.mp3",
           "th": "รถพยาบาลครับ มีรถชนกัน",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         },
         {
           "speaker": "Operator",
           "text": "Stay calm, I'm sending help. What's your exact location?",
           "audio": "/static/audio/global/stay-calm-i-m-sending-help-what-s-your-exact-location.mp3",
           "th": "ใจเย็นนะคะ กำลังส่งคนไป อยู่ตรงไหนแน่ชัดคะ",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         },
         {
           "speaker": "Learner (caller)",
           "text": "I'm on Green Road, near a bus stop.",
           "audio": "/static/audio/global/i-m-on-green-road-near-a-bus-stop.mp3",
           "th": "อยู่ถนน Green Road ใกล้ๆ ป้ายรถเมล์",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         },
         {
           "speaker": "Operator",
           "text": "Green Road. Do you know the cross street?",
           "audio": "/static/audio/global/green-road-do-you-know-the-cross-street.mp3",
           "th": "Green Road นะคะ รู้มั้ยว่าตัดกับถนนอะไร",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         },
         {
           "speaker": "Learner (caller)",
           "text": "Sorry, I don't know. There's a pharmacy on the corner.",
           "audio": "/static/audio/global/sorry-i-don-t-know-there-s-a-pharmacy-on-the-corner.mp3",
           "th": "ขอโทษครับ ไม่รู้ แต่ตรงหัวมุมมีร้านขายยา",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         },
         {
           "speaker": "Operator",
           "text": "That's fine, that's enough. How many people are hurt?",
           "audio": "/static/audio/global/that-s-fine-that-s-enough-how-many-people-are-hurt.mp3",
           "th": "ไม่เป็นไรค่ะ แค่นี้พอ มีคนเจ็บกี่คนคะ",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         },
         {
           "speaker": "Learner (caller)",
           "text": "Two. One is walking. One can't move.",
           "audio": "/static/audio/global/two-one-is-walking-one-can-t-move.mp3",
           "th": "สองคน คนนึงเดินได้ อีกคนขยับไม่ได้",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         },
         {
           "speaker": "Operator",
           "text": "The one who can't move — is he awake and talking to you?",
           "audio": "/static/audio/global/the-one-who-can-t-move-is-he-awake-and-talking-to-you.mp3",
           "th": "คนที่ขยับไม่ได้ — เขารู้สึกตัวมั้ย พูดกับคุณได้มั้ยคะ",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         },
         {
           "speaker": "Learner (caller)",
           "text": "He's awake, but he can't speak clearly.",
           "audio": "/static/audio/global/he-s-awake-but-he-can-t-speak-clearly.mp3",
           "th": "รู้สึกตัวอยู่ แต่พูดไม่ค่อยชัด",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         },
         {
           "speaker": "Operator",
           "text": "Right. Don't move him at all. Is he bleeding?",
           "audio": "/static/audio/global/right-don-t-move-him-at-all-is-he-bleeding.mp3",
           "th": "โอเคค่ะ อย่าขยับเขาเลยนะ เขาเลือดออกมั้ยคะ",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         },
         {
           "speaker": "Learner (caller)",
           "text": "Yes, his leg is bleeding a lot.",
           "audio": "/static/audio/global/yes-his-leg-is-bleeding-a-lot.mp3",
           "th": "ออกครับ ขาเลือดออกเยอะเลย",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         },
         {
           "speaker": "Operator",
           "text": "Press on the leg with a cloth, firmly. Can you do that?",
           "audio": "/static/audio/global/press-on-the-leg-with-a-cloth-firmly-can-you-do-that.mp3",
           "th": "เอาผ้ากดที่ขาไว้ กดแรงๆ นะคะ ทำได้มั้ย",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         },
         {
           "speaker": "Learner (caller)",
           "text": "Sorry, could you repeat that? Press with what?",
           "audio": "/static/audio/global/sorry-could-you-repeat-that-press-with-what.mp3",
           "th": "ขอโทษครับ พูดอีกทีได้มั้ย ให้กดด้วยอะไรนะ",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         },
         {
           "speaker": "Operator",
           "text": "A cloth — a shirt, a scarf, anything. Press hard and don't stop.",
           "audio": "/static/audio/global/a-cloth-a-shirt-a-scarf-anything-press-hard-and-don-t-stop.mp3",
           "th": "ผ้าค่ะ — เสื้อ ผ้าพันคอ อะไรก็ได้ กดแรงๆ แล้วอย่าปล่อยนะ",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         },
         {
           "speaker": "Learner (caller)",
           "text": "Okay, I'm pressing now.",
           "audio": "/static/audio/global/okay-i-m-pressing-now.mp3",
           "th": "โอเค กำลังกดอยู่",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         },
         {
           "speaker": "Operator",
           "text": "Good. The ambulance is three minutes away. Stay on the line.",
           "audio": "/static/audio/global/good-the-ambulance-is-three-minutes-away-stay-on-the-line.mp3",
           "th": "ดีค่ะ รถพยาบาลอีกสามนาทีถึง อย่าเพิ่งวางสายนะคะ",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         },
         {
           "speaker": "Learner (caller)",
           "text": "I'll stay. Please tell them to hurry.",
           "audio": "/static/audio/global/i-ll-stay-please-tell-them-to-hurry.mp3",
           "th": "ไม่วางครับ ช่วยบอกให้เขารีบหน่อย",
-          "th_status": "draft_unverified"
+          "th_status": "reviewed"
         }
       ],
       "shadow_focus_lines": [
@@ -855,7 +855,7 @@
     ]
   },
   "_review_status": {
-    "thai_strings": "DRAFT - machine-generated, tagged th_status=draft_unverified. A native Thai speaker must review every string and set th_status='reviewed'.",
+    "thai_strings": "REVIEWED by a native speaker",
     "facts": "UNVERIFIED - generated content, needs a local fact-check before shipping",
     "generated_by": "claude-opus-5"
   }

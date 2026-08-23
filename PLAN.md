@@ -23,9 +23,10 @@ calibrated ceilings, en-AU audio and drafted Thai. An en-AU learner resolves to 
 **The three things actually blocking progress**, none of which are code:
 
 1. **[HUMAN]** Review the drafted Thai. **Approach validated 2026-08-23** (founder spot-checked: quality
-   and the keep-AU-terms-in-English decision are right), but 1,461 strings across 27 units are still
-   `draft_unverified`. Clear them incrementally: `backend/mark_reviewed.py <scenario_id>`, `--status` to
-   see what's left. Start with the units you'd put in front of a tester.
+   and the keep-AU-terms-in-English decision are right). **3 units cleared 2026-08-24** — founder read
+   `au_gp_appointment`, `asking_directions` and `urgent_help_on_street` line by line and judged the Thai
+   better than expected. **1,313 strings across the other 24 units are still `draft_unverified`.**
+   Clear them incrementally: `backend/mark_reviewed.py <scenario_id>`, `--status` to see what's left.
 2. **[HUMAN]** Sit with 2–3 lower-proficiency Thai Australians: will they speak, and why not AMEP?
 3. **[HUMAN]** Fact-check the AU claims (Medicare, bulk billing, referral validity, pathology walk-in).
 
@@ -300,7 +301,8 @@ key that future country packs should follow.
 - [x] **Tier 1 core generated** — 26 units, all valid, $7.80. Next: the AU pack (25, ~$8), then Tier 2 (51, ~$18).
 - [x] **[HUMAN]** Read 5 generated units end to end — **done 2026-08-24**. Outcome: `market_bargaining`
       is Thailand-only (AU retail has fixed prices) and is now in the AU pack's `drops_from_core`.
-      **UK/US packs will need the same drop.** Overall quality verdict still to be recorded here.
+      **UK/US packs will need the same drop.** Thai quality judged good (better than expected); the
+      *English* pedagogical verdict — do these read like the flagship or like a textbook — is still open.
 - [ ] Fill in the remaining 4 unit stages in the client once one full unit is worth completing.
 - [x] Gamification UI — **done early in Step 2**: streak (minutes spoken), XP, sound meters, 8 derived
       achievements, end-of-session summary. All read from `attempts`; no extra tables, and the
