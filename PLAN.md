@@ -12,7 +12,7 @@ this plan assumes. Ordered by **risk retired per day of work**, not by architect
 |---|---|
 | 0 · Speech spike | **Technical verdict GO.** Human half outstanding: lower-proficiency speakers, the AMEP question |
 | 1 · Backend | **Done.** Flask + Postgres, three tables, `backend/test_api.py` green |
-| 2 · Web slice | **Done.** All five stages run. One risk left: iPhone Safari |
+| 2 · Web slice | **Done and validated on a real iPhone.** No technical risks left |
 | 3 · Real users | Blocked on the two Step 0 human items and the Thai review |
 | 4 · Generator | Not started — and now better informed by what Step 2 revealed |
 | 5 · Scale | Not started. Gamification already done early |
@@ -23,7 +23,7 @@ this plan assumes. Ordered by **risk retired per day of work**, not by architect
 2. **[HUMAN]** Sit with 2–3 lower-proficiency Thai Australians: will they speak, and why not AMEP?
 3. **[HUMAN]** Fact-check the AU claims (Medicare, bulk billing, referral validity, pathology walk-in).
 
-**The one technical risk left in Step 2:** iPhone Safari. Everything so far was tested on a laptop mic.
+**Step 2 has no technical risks left** — validated end to end on a real iPhone, mic included.
 
 **What testing changed** (details in `spike/README.md` §6b–6e — read before touching scoring):
 `/θ/` needs minimal pairs, not phoneme scoring · every phoneme has its own ceiling and it isn't 100 ·
@@ -166,7 +166,9 @@ The middle stages are content plumbing; they prove nothing new.
 Two risks from the original plan disappear with it: the Azure Speech **JavaScript SDK** streams mic audio
 straight from the browser, so there is no m4a-vs-webm conversion and no upload round-trip.
 
-- [ ] **THE LAST OPEN STEP-2 RISK** — load the app on a real iPhone in Safari over the ngrok HTTPS URL
+- [x] **iPhone Safari validated 2026-08-23** — mic, scoring, roleplay and voice all work on a real
+      device. Two iOS-specific bugs found and fixed (see §"iOS Safari rules" below). Original task:
+      load the app on a real iPhone in Safari over the ngrok HTTPS URL
       and confirm mic permission + streaming assessment actually work. There are documented iOS Safari
       quirks (permission prompt timing, events stalling after grant). If it fails, fall back to
       `MediaRecorder` + server-side upload — which reinstates the audio-format work, so find out now.
@@ -198,6 +200,18 @@ straight from the browser, so there is no m4a-vs-webm conversion and no upload r
       you get nothing for.
 - [x] Account recovery — **restore codes** (`UWLX-A7RA`), no email server needed. Original rationale: device-uuid-only means a reinstall
       wipes their streak and progress, which is user-visible data loss in a retention product.
+
+### iOS Safari rules — apply to every screen from here on
+
+Both found on the first real-device test; neither shows up on a laptop.
+
+1. **Claim the microphone synchronously inside the tap handler.** iOS only grants `getUserMedia`
+   when it is reached without an intervening `await`. Fetching the speech token first broke the
+   gesture chain and iOS refused the mic *silently*, with no error. Keep a warm token; claim the
+   mic as the first statement in the handler; reuse the granted stream for the session.
+2. **44px minimum touch targets.** Buttons with `padding: 3px 0` were unclickable by thumb while
+   looking perfect under a mouse pointer. Also set `touch-action: manipulation` to drop Safari's
+   300ms double-tap-zoom delay.
 
 ### Surfaced by testing, not yet done
 

@@ -15,8 +15,9 @@
         box-shadow:0 1px 3px rgba(0,0,0,.09)}
   h2{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:#8a7f7a;margin:0 0 10px}
   .vocab{display:flex;flex-wrap:wrap;gap:7px}
-  .vocab button{background:var(--cream);color:var(--char);border-radius:999px;padding:7px 13px;
-                font-size:14px;font-weight:500;display:inline-flex;gap:6px;align-items:center}
+  .vocab button{background:var(--cream);color:var(--char);border-radius:16px;padding:10px 14px;
+                font-size:14px;font-weight:500;display:inline-flex;gap:6px;align-items:center;
+                min-height:44px}
   .vocab button.playing{background:var(--orange);color:#fff}
   .listen{background:#fff;color:var(--orange);border:1.5px solid var(--orange);padding:9px 14px;margin-right:8px}
   .listen.playing{background:var(--orange);color:#fff}
@@ -24,8 +25,10 @@
   .line{border-top:1px solid #f0ebe6;padding:13px 0}.line:first-of-type{border-top:0}
   .line p{margin:0 0 9px;font-size:19px;font-weight:600}
   .tags{font-size:12px;color:#8a7f7a;margin-left:6px;font-weight:400}
-  button{font:inherit;border:0;border-radius:10px;padding:11px 17px;background:var(--orange);
-         color:#fff;font-weight:600;cursor:pointer;-webkit-tap-highlight-color:transparent}
+  button{font:inherit;border:0;border-radius:10px;padding:13px 18px;background:var(--orange);
+         color:#fff;font-weight:600;cursor:pointer;-webkit-tap-highlight-color:transparent;
+         min-height:44px;touch-action:manipulation}
+  button:active{opacity:.75}
   button:disabled{opacity:.45}
   button.rec{background:var(--coral)}
   .res{margin-top:9px;font-size:14px;display:none}
@@ -62,7 +65,8 @@
   .msg.me{background:var(--orange);color:#fff;margin-left:auto;border-bottom-right-radius:5px}
   .msg.sys{background:none;color:#8a7f7a;font-size:13px;text-align:center;max-width:100%}
   .lvl{display:inline-flex;gap:0;border:1.5px solid var(--orange);border-radius:9px;overflow:hidden}
-  .lvl button{background:#fff;color:var(--orange);padding:6px 14px;border-radius:0;font-size:14px}
+  .lvl button{background:#fff;color:var(--orange);padding:10px 16px;border-radius:0;font-size:14px;
+              min-height:44px}
   .lvl button.on{background:var(--orange);color:#fff}
   .crit{padding:11px 0;border-top:1px solid #f0ebe6;font-size:14px;display:flex;gap:10px}
   .crit .tick{flex:0 0 auto;width:21px;height:21px;border-radius:50%;display:grid;place-items:center;
@@ -74,7 +78,9 @@
        border-radius:0 8px 8px 0;margin:6px 0;font-size:14px}
   .said b,.try b{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.06em;
                  color:#8a7f7a;font-weight:700;margin-bottom:2px}
-  .say-btn{background:none;color:var(--orange);padding:2px 0;font-size:13px;font-weight:600}
+  .say-btn{background:none;color:var(--orange);font-size:14px;font-weight:600;
+           min-height:44px;display:inline-flex;align-items:center}
+  .say-btn:active{opacity:.5}
   .result{text-align:center;padding:18px 0 6px}
   .ring{width:118px;height:118px;margin:0 auto 10px;border-radius:50%;display:grid;place-items:center;
         background:conic-gradient(var(--green) calc(var(--p)*1%), #eee 0)}
@@ -98,15 +104,21 @@
   .who{font-size:11px;text-transform:uppercase;letter-spacing:.07em;color:#8a7f7a;font-weight:700;
        margin-bottom:3px}
   .dlg.you .who{color:var(--coral)}
-  .dlg p{margin:0 0 7px;font-size:16px;line-height:1.45}
-  .mini{background:none;color:var(--orange);padding:3px 0;font-size:13px;font-weight:600;margin-right:14px}
+  .dlg p{margin:0 0 4px;font-size:16px;line-height:1.45}
+  .dlg > div:last-of-type{display:flex;flex-wrap:wrap;align-items:center}
+  /* 44px minimum touch target (Apple HIG) - these were ~18px and unclickable on a phone */
+  .mini{background:none;color:var(--orange);font-size:14px;font-weight:600;
+        min-height:44px;padding:0 14px 0 0;display:inline-flex;align-items:center}
+  .mini + .mini{padding-left:14px;border-left:1px solid #e6ded6}
+  .mini:active{opacity:.5}
   .th{font-size:14px;color:#6b625d;line-height:1.55;margin:2px 0 6px}
   body.nothai .th{display:none}
   .vocab button{flex-direction:column;align-items:flex-start;text-align:left;max-width:100%}
   .vocab .th{font-size:12.5px;margin:2px 0 0;white-space:normal}
   .draft{font-size:10px;background:#ffe0c2;color:#a35a12;border-radius:4px;padding:1px 5px;
          margin-left:6px;font-weight:700;letter-spacing:.03em;vertical-align:1px}
-  .thtoggle{background:none;color:var(--orange);font-size:13px;padding:4px 0}
+  .thtoggle{background:none;color:var(--orange);font-size:14px;min-height:44px;min-width:56px;
+            display:inline-flex;align-items:center;justify-content:flex-end}
   .dots i{display:inline-block;width:7px;height:7px;border-radius:50%;background:#bbb;margin-right:3px;
           animation:bl 1.2s infinite}
   .dots i:nth-child(2){animation-delay:.2s}.dots i:nth-child(3){animation-delay:.4s}
@@ -172,9 +184,29 @@ async function identify() {
   return id;
 }
 
-async function speechConfig() {
-  // token is short-lived; refetch per attempt rather than caching and handling expiry
+// iOS Safari only grants the mic when getUserMedia is reached SYNCHRONOUSLY from a user tap.
+// An `await` before it (e.g. fetching the speech token) breaks the gesture chain and the request
+// is silently refused. So: keep a warm token, and claim the mic first thing on tap.
+let TOKEN_CACHE = null;
+async function warmToken() {
+  if (TOKEN_CACHE && Date.now() - TOKEN_CACHE.at < 8 * 60 * 1000) return TOKEN_CACHE;
   const t = await api('/speech-token');
+  TOKEN_CACHE = {...t, at: Date.now()};
+  return TOKEN_CACHE;
+}
+
+let MIC = null;                       // the granted stream, reused for the whole session
+function claimMic() {
+  // MUST be called synchronously inside the tap handler - do not await anything before this
+  if (MIC && MIC.active) return Promise.resolve(MIC);
+  if (!navigator.mediaDevices?.getUserMedia) {
+    return Promise.reject(new Error('This browser has no microphone access. Try Safari or Chrome.'));
+  }
+  return navigator.mediaDevices.getUserMedia({audio: true}).then(st => (MIC = st));
+}
+
+async function speechConfig() {
+  const t = await warmToken();
   const c = SDK.SpeechConfig.fromAuthorizationToken(t.token, t.region);
   c.speechRecognitionLanguage = 'en-AU';
   return c;
@@ -201,6 +233,7 @@ function shadow(line, opts) {
   let session = null;               // non-null while recording
 
   async function begin() {
+    const micReq = claimMic();          // first thing, synchronously in the tap - iOS requires it
     btn.classList.add('rec'); btn.textContent = '⏹ Stop';
     res.className = 'res';
     const t0 = Date.now();
@@ -216,10 +249,11 @@ function shadow(line, opts) {
       session = null;
       btn.classList.remove('rec'); btn.textContent = '🎤 Record again';
       try { rec && rec.close(); } catch (e) {}
-      if (err) { show(null, err); } else { show(result, null, (Date.now() - t0) / 1000); }
+      if (err) { show(null, micError(err)); } else { show(result, null, (Date.now() - t0) / 1000); }
     };
 
     try {
+      await micReq;
       const cfg = await speechConfig();
       // end the utterance quickly after a short line instead of waiting on the default timeout
       try { cfg.setProperty(SDK.PropertyId.Speech_SegmentationSilenceTimeoutMs, '800'); } catch (e) {}
@@ -396,6 +430,15 @@ function renderProfile(p) {
 // --- free roleplay ---------------------------------------------------------------------------
 const RP = {messages: [], level: 'A2', busy: false, started: null, session: null};
 
+function micError(e) {
+  const m = String(e && e.message || e);
+  if (/denied|NotAllowed/i.test(m))
+    return 'Microphone blocked. In Safari: tap “AA” in the address bar → Website Settings → ' +
+           'Microphone → Allow, then reload.';
+  if (/NotFound|NotReadable/i.test(m)) return 'No microphone found. Close other apps using it.';
+  return m;
+}
+
 function bubble(cls, text) {
   const c = document.getElementById('chat');
   c.appendChild($(`<div class="msg ${cls}">${text}</div>`));
@@ -449,6 +492,7 @@ async function rpListen() {
   if (RP.session) { RP.session.stop(); return; }      // second tap = stop and send
   if (RP.busy) return;
 
+  const micReq = claimMic();            // first thing, synchronously in the tap - iOS requires it
   RP.busy = true;
   RP.started = RP.started || Date.now();
   const t0 = Date.now();
@@ -465,7 +509,7 @@ async function rpListen() {
     RP.session = null;
     btn.classList.remove('rec'); btn.textContent = '🎤 Speak';
     try { rec && rec.close(); } catch (e) {}
-    if (err) bubble('sys', err);
+    if (err) bubble('sys', micError(err));
     else if (!said) bubble('sys', "Didn't catch that — tap Speak and try again.");
     else { btn.textContent = '…'; await rpTurn(said); btn.textContent = '🎤 Speak'; }
     RP.busy = false;
@@ -710,6 +754,8 @@ function applyThai(on) {
     let thaiOn = true;
     try { thaiOn = localStorage.getItem('papaya_thai') !== '0'; } catch (e) {}
     applyThai(thaiOn);
+    ['touchstart', 'mousedown'].forEach(ev =>
+      document.addEventListener(ev, () => warmToken().catch(() => {}), {once: true}));
     document.getElementById('thToggle').onclick = () => {
       thaiOn = !thaiOn; applyThai(thaiOn);
     };

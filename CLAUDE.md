@@ -94,7 +94,9 @@ product gross-margin negative; they cannot be retrofitted onto users who already
 ## 5. Tech stack (decided)
 
 - **Backend**: Flask + PostgreSQL, hosted on DigitalOcean — the founder's existing, proven stack for other products.
-- **Client: web first, native later.** A mobile-web page (plain HTML/JS served by Flask, Azure Speech
+- **Client: web first, native later.** *(Validated on a real iPhone 2026-08-23 — mic, scoring, roleplay
+  and voice all work in iOS Safari over HTTPS. Two iOS rules to keep: claim the mic synchronously inside
+  the tap handler — any `await` first makes iOS refuse it silently — and keep touch targets at 44px.)* A mobile-web page (plain HTML/JS served by Flask, Azure Speech
   **JS SDK** in the browser, short-lived speech tokens minted server-side) tests everything the early
   steps need without Expo, app review, or the store cut. React Native (Expo) comes only once retention
   is proven and push notifications start earning their build cost. ⚠️ The Azure JS SDK has documented
